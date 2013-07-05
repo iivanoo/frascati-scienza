@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* STANDARD FOR MOBILE */
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;
+                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* END STANDARD MOBILE */
+
+/* START STRUCTURE */
+
+#mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+}
+
+#navbar {
+    background-color: green;
+    position: absolute;
+    height: 44px;
+    width: 100%;
+    left: 0;
+    bottom: 0;  
+}
+
+#titlebar {
+    background-color: red;
+    position: absolute;
+    height: 44px;
+    width: 100%;
+    left: 0;
+    top: 0;  
+    text-align: center;
+}
+
+#title {
+    margin: 0 auto;
+    width: 60%;
+    text-overflow: ellipsis;
+    font-size: medium;
+    line-height: 44px;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+#content {
+    position: relative;
+    height: calc(100% - 44px - 44px);
+    width: 100%;
+    left: 0;
+    top: 44px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#backbutton {
+    position:absolute;
+    left: 0;
+    top: 0;
+    margin: 3px;
+    height: 38px;
+    color: black;
+    background-color: yellow;
+    text-align: center;
+    line-height: 38px;
+}
+
+/* END STRUCTURE */
