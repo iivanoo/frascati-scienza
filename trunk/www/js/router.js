@@ -1,10 +1,10 @@
-define(["jquery", "underscore", "backbone", "views/TestView", "views/StructureView"],
-    function ($, _, Backbone, TestView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/StructureView"],
+    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
       routes: {
-        "": "structure",
+        "": "cover",
         "frascatiscienza": "frascatiScienza"
       },
 
@@ -12,17 +12,31 @@ define(["jquery", "underscore", "backbone", "views/TestView", "views/StructureVi
         this.currentView = undefined;
       },
 
-      structure: function () {
+      cover: function () {
+        if(localStorage.getItem("language")) {
+          this.frascatiScienza();
+        }
+        var page = new CoverView();
+        page.render();
+        $("body").append($(page.el)); 
+      },
+
+      showStructure: function () {
         if(!this.structureView) {
           this.structureView = new StructureView();
           this.structureView.render();
         }
-        this.frascatiScienza();
       },
 
       frascatiScienza: function () {
-        var page = new TestView();
+        if(!this.structureView) {
+          this.showStructure();
+        }
+        var page = new FrascatiScienzaView();
         this.changePage(page);
+        if(!Data.newDataChecked && Data.newDataAvailable()) {
+          Data.checkNewData();
+        }
       },
 
       changePage: function (page) {

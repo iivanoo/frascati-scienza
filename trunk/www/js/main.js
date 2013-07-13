@@ -7,7 +7,8 @@ require.config({
     async: '../lib/require/async',
     handlebars: '../lib/handlebars/handlebars',
     templates: '../templates',
-    leaflet: '../lib/leaflet/leaflet'
+    leaflet: '../lib/leaflet/leaflet',
+    datamanager: 'datamanager'
   },
   shim: {
     'jquery': {
@@ -29,12 +30,16 @@ require.config({
   }
 });
 
-// We launch the App
-require(['underscore', 'backbone', 'router'],
-    function (_, Backbone, AppRouter) {
+var db = openDatabase("data", "", "data", 2048*2048);
 
+// We launch the App
+require(['underscore', 'backbone', 'router', 'datamanager'],
+    function (_, Backbone, AppRouter, Data) {
       document.addEventListener("deviceready", run, false);
       function run() {
+        if(!localStorage.getItem("dataLoaded")) {
+          Data.loadLocalData();
+        }
         new AppRouter();
         Backbone.history.start();
       }
