@@ -1,20 +1,20 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/test.html"],
+define(["jquery", "underscore", "backbone", "handlebars", "text!templates/legenda.html"],
     function ($, _, Backbone, Handlebars, template) {
 
-    var TestView = Backbone.View.extend({
+    var LegendaView = Backbone.View.extend({
 
         initialize: function() {
-            this.title = "testView";
+            this.title = "Legenda";
           },
 
         template: Handlebars.compile(template),
 
-        render: function (eventName) {
+        render: function () {
           $(this.el).html(this.template({}));
           return this;
         }
       });
 
-    return TestView;
+    return LegendaView;
 
   });
