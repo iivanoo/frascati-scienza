@@ -1,11 +1,14 @@
-define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/StructureView"],
-    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
+    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, SponsorListView, AgendaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
       routes: {
         "": "cover",
-        "frascatiscienza": "frascatiScienza"
+        "frascatiscienza": "frascatiScienza",
+        "enti": "enti",
+        "sponsor": "sponsor",
+        "agenda": "agenda"
       },
 
       initialize: function () {
@@ -15,10 +18,26 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       cover: function () {
         if(localStorage.getItem("language")) {
           this.frascatiScienza();
+        } else {
+          var page = new CoverView();
+          page.render();
+          $("body").append($(page.el)); 
         }
-        var page = new CoverView();
-        page.render();
-        $("body").append($(page.el)); 
+      },
+
+      enti: function () {
+        var page = new EntiListView();
+        this.changePage(page); 
+      },
+
+      sponsor: function () {
+        var page = new SponsorListView();
+        this.changePage(page); 
+      },
+
+      agenda: function () {
+        var page = new AgendaView();
+        this.changePage(page); 
       },
 
       showStructure: function () {
@@ -29,7 +48,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       frascatiScienza: function () {
+        var c = $("#cover");
         if(!this.structureView) {
+          $("#cover").remove();
           this.showStructure();
         }
         var page = new FrascatiScienzaView();
