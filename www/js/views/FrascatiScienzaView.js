@@ -3,17 +3,30 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/frasca
 
     var FrascatiScienzaView = Backbone.View.extend({
 
-        initialize: function() {
-            this.title = "Frascati Scienza";
-          },
+      events: {
+          "touchend #enti": "enti",
+          "touchend #sponsor": "sponsor"
+      },
 
-        template: Handlebars.compile(template),
+      initialize: function() {
+        this.title = "Frascati Scienza";
+      },
 
-        render: function (eventName) {
-          $(this.el).html(this.template({}));
-          return this;
-        }
-      });
+      template: Handlebars.compile(template),
+
+      render: function () {
+        $(this.el).html(this.template({}));
+        return this;
+      },
+
+      enti: function(event) {
+        Backbone.history.navigate("enti", {trigger: true});
+      },
+
+      sponsor: function(event) {
+        Backbone.history.navigate("sponsor", {trigger: true});
+      },
+    });
 
     return FrascatiScienzaView;
 

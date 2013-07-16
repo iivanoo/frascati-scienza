@@ -23,7 +23,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         template: Handlebars.compile(template),
 
-        render: function (eventName) {
+        render: function () {
           this.title = "Test";
           $(this.el).html(this.template({}));
           $('body').append($(this.el));

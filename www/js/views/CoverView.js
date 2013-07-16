@@ -3,6 +3,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/cover.
 
     var CoverView = Backbone.View.extend({
 
+        id: "cover", 
+
         events: {
           "touchend .language": "chooseLanguage"
         },
@@ -14,7 +16,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/cover.
 
         template: Handlebars.compile(template),
 
-        render: function (eventName) {
+        render: function () {
           $(this.el).html(this.template({}));
           return this;
         }
