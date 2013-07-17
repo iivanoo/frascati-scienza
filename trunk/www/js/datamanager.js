@@ -21,7 +21,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       if (buttonIndex == 1) {
         if (localStorage.getItem("language") === "eng") {
           // TODO download English data
-        } else {
+        } else { 
           // TODO download Italian data 
         }
       }
