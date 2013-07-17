@@ -1,4 +1,4 @@
-var data = {
+{
   timestamp: "timestamp (in formato Unix) di quando è stato creato questo file JSON"
   frascatiscienza: "testo descrittivo di Frascati Scienza",
   imgfrascatiscienza: "http://url",
@@ -9,10 +9,10 @@ var data = {
     logo: "http://url",
     sito: "http://url",
     eventi: ["id_evento_a", "id_evento_b", "id_evento_c"],
-    chisiamo: {testo: "", immagine: "http://url"},
-    storia: {testo: "", immagine: "http://url"},
-    miglioriamo: {testo: "", immagine: "http://url"},
-    contatti: {immagine: "http://url"},
+    chisiamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    storia: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    miglioriamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     rss: "url_feed_rss",
     luogo: {lat: "", lon: ""}
   }],
@@ -40,13 +40,13 @@ var data = {
     introduzione: "testo intro",
     tappe: [{ // è una lista di tappe, qui ne ho messo una solo per brevità
       id: "id univoco tappa",
-      nome: "nome_sponsor",
-      introduzione: "testo descrizione evento",
+      nome: "nome_tappa",
+      introduzione: "testo descrizione tappa",
       immagine: "http://url",
-      domande: ["testo domanda 1", "testo domanda 2", "testo domanda 3", "testo domanda 4"],
-      indicedomandagiusta: 1, // indice della domanda giusta nella lista domande
-      feedback: "testo del feedback"
+      domanda: "teso domanda",
+      risposte: ["testo domanda 1", "testo domanda 2", "testo domanda 3", "testo domanda 4"],
+      indicerispostegiusta: 1 // indice della risposta giusta nella lista domande
       }
     }]
   }
-};
+}
