@@ -37,9 +37,11 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
     function (_, Backbone, AppRouter, Data) {
       document.addEventListener("deviceready", run, false);
       function run() {
+// TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
+        Data.initialize();
         if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
-        }
+        } 
         new AppRouter();
         Backbone.history.start();
       }
