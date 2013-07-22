@@ -24,6 +24,21 @@ body {
 
 /* END STANDARD MOBILE */
 
+/* CUSTOM FONTS */
+
+@font-face {
+
+font-family:'Dax';
+src: url('../fonts/DaxBold.ttf') format('truetype');
+
+}
+
+
+
+/* END CUSTOM FONTS */
+
+
+
 /* START STRUCTURE */
 
 #mainContainer {
@@ -37,23 +52,75 @@ body {
 }
 
 #navbar {
-    background-color: green;
+    background-color: #000;
     position: absolute;
-    height: 44px;
+    height: 60px;
     width: 100%;
     left: 0;
     bottom: 0;  
+    z-index: 5;
+
+}
+
+#button_list{
+	width: 100%;
+	
+}
+
+
+.button_list_element{
+	text-align: center;
+	float: left;
+	width:25%;
+    margin-left: 0px;
+	margin-top: 0px;
+}
+
+#button_list img{
+	width:100%;
 }
 
 #titlebar {
-    background-color: tomato;
+	font-family:'Dax';
+	text-shadow:1px 1px 0px #000;
+	color: white;
     position: absolute;
     height: 44px;
     width: 100%;
     left: 0;
     top: 0;  
     text-align: center;
+    z-index: 5;
 }
+
+		/* variazioni colore #titlebar */
+		
+		.frascatiscienze_top{
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+			
+			background: -webkit-linear-gradient(top, rgb(177,28,28),rgb(174,23,23));
+		 
+		  }
+		  
+		.nottericerca_top{
+				box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+				background: -webkit-linear-gradient(top, rgb(36,97,152),rgb(29,80,127));			 
+		  }  
+		  
+		.cacciatesoro_top{
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+			background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+		}  
+		  
+		
+		.agenda_top{
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+			background: -webkit-linear-gradient(top, rgb(170,26,137),rgb(145,21,115));
+		}
+
+		/* end variazioni #titlebar */
+
+
 
 #title {
     margin: 0 auto;
@@ -69,7 +136,7 @@ body {
 
 #content {
     position: relative;
-    height: calc(100% - 44px - 44px);
+    height: calc(100% - 44px - 60px);
     width: 100%;
     left: 0;
     top: 44px;
@@ -81,12 +148,168 @@ body {
     position:absolute;
     left: 0;
     top: 0;
-    margin: 3px;
-    height: 38px;
-    color: black;
-    background-color: yellow;
+    margin: 5px;
+    height: 30px;
+    width: 40px;
+    color: white;
+    border-color: #fff;
+    border-right: 0.5px solid;
     text-align: center;
     line-height: 38px;
 }
 
+#backbutton img{
+	margin-top: 7px;
+	width: 50%;
+}
+
 /* END STRUCTURA */
+
+
+/* COVER */
+
+#wrapper_cover{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-image: url("../img/stars_back_cover.png");
+	
+}
+
+
+#titlebar_cover {
+    background-color: #fff;
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;  
+    text-align: center;
+    box-shadow:0px 2px 1px #990000;
+}
+
+#logo_cover{
+	background-image: url("../img/logo_grigio_cover.png");
+	background-repeat:no-repeat;
+	width: 200px;
+	height: 60px;
+	margin: auto;
+	margin-top: 5px;
+	
+}
+
+#content_cover {
+    position: relative;
+    height: calc(100% - 75px);
+    width: 100%;
+    left: 0;
+    top: 75px;
+   
+    overflow-x: hidden;
+}
+
+#content_cover a{
+	color: white;
+		
+}
+
+#logo_spun{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	background-position: 50% 20%;
+	background-size: 100%;
+	background-image: url("../img/spun_logo_cover.png");
+	background-repeat: no-repeat;
+}
+
+#lang{
+	font-family:'Dax';
+	text-shadow:1px 1px 0px #000;
+	font-size: 1.5em;
+	color: white;
+	margin-left: 80%;
+}
+
+.language{
+	display: inline-block;
+	float: left;
+}
+
+#logo_reg_lazio{
+margin-left: 80%;	
+}
+
+#logo_reg_lazio img{
+	width:75px;
+}
+
+/* END COVER */
+
+
+
+
+#frascati_scienza_wrapper{
+	margin-top: 15px;
+	height: 100%;
+		
+	
+}
+
+#coverimage_block{
+	text-align: center;	
+	}
+
+#coverimage_block img{
+	
+	width: 90%;
+	
+}
+
+#caption_block{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 90%;
+	font-size: 1em;
+	line-height: 1.5em;	
+}
+
+#caption_block h2{
+	font-size: 1em;
+	
+}
+
+#caption_content{
+	text-align: justify;
+	
+	
+}
+
+#cassetto{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+	-webkit-transition: bottom 1s;
+}
+
+	.elem_cass{
+		border-top: solid 1px #fff;
+		padding-left: 5%;
+		padding-top: 0.5em;
+		width: 100%;
+		font-family: 'Dax';
+		font-size: 1.2em;
+		height: 40px;
+		background-color: #888888;
+		color: white;
+	}
