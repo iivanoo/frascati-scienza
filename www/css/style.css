@@ -31,6 +31,7 @@ body {
 font-family:'Dax';
 src: url('../fonts/DaxBold.ttf') format('truetype');
 
+
 }
 
 
@@ -53,8 +54,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #navbar {
     background-color: #000;
-    position: absolute;
-    height: 60px;
+    position: fixed;
+    height: 44px;
     width: 100%;
     left: 0;
     bottom: 0;  
@@ -67,8 +68,16 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	
 }
 
+.nonvisibile{
+	display: none;
+}
+
+.spacer_button img{
+	display: none;
+}
 
 .button_list_element{
+	
 	text-align: center;
 	float: left;
 	width:25%;
@@ -77,14 +86,16 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 #button_list img{
-	width:100%;
+	height:38px;
+	
 }
 
 #titlebar {
 	font-family:'Dax';
 	text-shadow:1px 1px 0px #000;
+	font-weight: lighter;
 	color: white;
-    position: absolute;
+    position: fixed;
     height: 44px;
     width: 100%;
     left: 0;
@@ -136,7 +147,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #content {
     position: relative;
-    height: calc(100% - 44px - 60px);
+    height: calc(100% - 44px - 44px);
     width: 100%;
     left: 0;
     top: 44px;
@@ -186,7 +197,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #titlebar_cover {
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     height: 75px;
     width: 100%;
     left: 0;
@@ -223,28 +234,42 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #logo_spun{
 	width: 80%;
 	height: 80%;
-	margin: auto;
-	background-position: 50% 20%;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-position: 50% 20%;
 	background-size: 100%;
 	background-image: url("../img/spun_logo_cover.png");
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+}
+
+#logo_spun img{
+	width: 100%;
 }
 
 #lang{
 	font-family:'Dax';
+	font-weight: lighter;
 	text-shadow:1px 1px 0px #000;
 	font-size: 1.5em;
 	color: white;
-	margin-left: 80%;
+	margin-top: 20px;
+	margin-left: 75%;
+	
 }
 
 .language{
 	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
 	float: left;
 }
 
+#ita{
+	border-right: 1px solid #fff;
+}
+
 #logo_reg_lazio{
-margin-left: 80%;	
+	margin-left: 75%;
 }
 
 #logo_reg_lazio img{
@@ -277,6 +302,7 @@ margin-left: 80%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 120px;
 	
 	width: 90%;
 	font-size: 1em;
@@ -285,22 +311,48 @@ margin-left: 80%;
 
 #caption_block h2{
 	font-size: 1em;
+	font-family: 'Dax';
+	font-weight: lighter;
+	
 	
 }
 
 #caption_content{
 	text-align: justify;
 	
+}
+
+.readmore{
+	font-family: 'Dax';
+	font-size: 1.2em;
+	margin-left: 80%;
 	
 }
+
 
 #cassetto{
 	width: 100%;
 	position: fixed;
-	bottom: 0;
-	z-index: 2;
+	bottom:-60px;
+	z-index: 5;
 	-webkit-transition: bottom 1s;
+	box-shadow:0px -2px 10px #ccc;
 }
+
+.aperto{
+	bottom:44px;
+
+}
+
+	.top_cass{
+		padding-top: 5px;
+		text-align: center;
+		height: 30px;
+		background-color: white;
+		width: 100%;
+		border-bottom: 2px solid #000;		
+	}
+
 
 	.elem_cass{
 		border-top: solid 1px #fff;
@@ -309,7 +361,11 @@ margin-left: 80%;
 		width: 100%;
 		font-family: 'Dax';
 		font-size: 1.2em;
-		height: 40px;
+		height: 44px;
 		background-color: #888888;
 		color: white;
 	}
+	
+
+
+	
