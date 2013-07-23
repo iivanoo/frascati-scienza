@@ -279,26 +279,26 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* END COVER */
 
 
+/* frascati scienza */
 
-
-#frascati_scienza_wrapper{
+.default_wrapper{
 	margin-top: 15px;
 	height: 100%;
 		
 	
 }
 
-#coverimage_block{
+.default_coverimage_block{
 	text-align: center;	
 	}
 
-#coverimage_block img{
+.default_coverimage_block img{
 	
 	width: 90%;
 	
 }
 
-#caption_block{
+.caption_block{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -309,7 +309,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	line-height: 1.5em;	
 }
 
-#caption_block h2{
+.caption_block h2{
 	font-size: 1em;
 	font-family: 'Dax';
 	font-weight: lighter;
@@ -317,7 +317,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	
 }
 
-#caption_content{
+.caption_content{
 	text-align: justify;
 	
 }
@@ -366,6 +366,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 		color: white;
 	}
 	
+/* frascati scienza */
 
+/* enti picasso */
 
 	
