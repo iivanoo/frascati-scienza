@@ -4,6 +4,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/frasca
     var FrascatiScienzaView = Backbone.View.extend({
 
       events: {
+          "touchend #cassetto": "cassetto",
           "touchend #enti": "enti",
           "touchend #sponsor": "sponsor"
       },
@@ -22,6 +23,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/frasca
           $("#backbutton").hide();
         }
         return this;
+      },
+
+      cassetto: function(event) {
+        var element = document.getElementById(event.currentTarget.id);
+        element.classList.toggle("chiuso");
+        element.classList.toggle("aperto");
       },
 
       enti: function(event) {

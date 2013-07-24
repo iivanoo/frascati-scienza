@@ -6,7 +6,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         id: "mainContainer", 
 
         events: {
-          "touchend #backbutton": "goBack"
+          "touchend #backbutton": "goBack",
+          "touchend #frascati": "frascati",
+          "touchend #eventi": "eventi",
+          "touchend #caccia": "caccia",
+          "touchend #agenda": "agenda",
         },
 
         initialize: function() {
@@ -28,6 +32,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           $(this.el).html(this.template({}));
           $('body').append($(this.el));
           return this;
+        },
+
+        frascati: function(event) {
+          Backbone.history.navigate("frascati", {trigger: true});
+        },
+        eventi: function(event) {
+          Backbone.history.navigate("eventi", {trigger: true});
+        },
+        caccia: function(event) {
+          Backbone.history.navigate("caccia", {trigger: true});
+        },
+        agenda: function(event) {
+          Backbone.history.navigate("agenda", {trigger: true});
         }
       });
 
