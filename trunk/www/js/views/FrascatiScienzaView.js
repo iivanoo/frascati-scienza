@@ -34,6 +34,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/frasca
             }
           }
         }
+        
         return this;
       },
 
