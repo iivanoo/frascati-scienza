@@ -7,7 +7,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         events: {
           "touchend #backbutton": "goBack",
-          "touchend #frascati": "frascati",
+          "touchend #frascatiscienza": "frascatiscienza",
           "touchend #eventi": "eventi",
           "touchend #caccia": "caccia",
           "touchend #agenda": "agenda",
@@ -34,8 +34,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           return this;
         },
 
-        frascati: function(event) {
-          Backbone.history.navigate("frascati", {trigger: true});
+        frascatiscienza: function(event) {
+          Backbone.history.navigate("frascatiscienza", {trigger: true});
         },
         eventi: function(event) {
           Backbone.history.navigate("eventi", {trigger: true});
