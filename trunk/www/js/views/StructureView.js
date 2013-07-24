@@ -7,10 +7,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         events: {
           "touchend #backbutton": "goBack",
-          "touchend #frascatiscienza": "frascatiscienza",
-          "touchend #eventi": "eventi",
-          "touchend #caccia": "caccia",
-          "touchend #agenda": "agenda",
+          "touchend #frascatiscienza #frascatiscienzaInactive": "frascatiscienza",
+          "touchend #eventi #eventiInactive": "eventi",
+          "touchend #caccia #cacciaInactive": "caccia",
+          "touchend #agenda #agendaInactive": "agenda",
         },
 
         initialize: function() {
