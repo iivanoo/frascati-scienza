@@ -7,10 +7,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         events: {
           "touchend #backbutton": "goBack",
-          "touchend #frascatiscienza #frascatiscienzaInactive": "frascatiscienza",
-          "touchend #eventi #eventiInactive": "eventi",
-          "touchend #caccia #cacciaInactive": "caccia",
-          "touchend #agenda #agendaInactive": "agenda",
+          "touchend #frascatiscienza": "frascatiscienza",
+          "touchend #eventi": "eventi",
+          "touchend #caccia": "caccia",
+          "touchend #agenda": "agenda",
+          "touchend #frascatiscienzaInactive": "frascatiscienza",
+          "touchend #eventiInactive": "eventi",
+          "touchend #cacciaInactive": "caccia",
+          "touchend #agendaInactive": "agenda",
         },
 
         initialize: function() {
