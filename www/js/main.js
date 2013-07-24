@@ -8,7 +8,8 @@ require.config({
     handlebars: '../lib/handlebars/handlebars',
     templates: '../templates',
     leaflet: '../lib/leaflet/leaflet',
-    datamanager: 'datamanager'
+    datamanager: 'datamanager',
+    spin: '../lib/spin/spin'
   },
   shim: {
     'jquery': {
@@ -39,14 +40,17 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
       String.prototype.endsWith = function(suffix) {
           return this.indexOf(suffix, this.length - suffix.length) !== -1;
       };
-      
+
       document.addEventListener("deviceready", run, false);
       function run() {
-// TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
+        // TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
         Data.initialize();
+        debugger;
         if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
-        } 
+        } else {
+          Data.loadDbData();
+        }
         new AppRouter();
         Backbone.history.start();
       }

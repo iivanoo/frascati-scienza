@@ -42,11 +42,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         this.changePage(page); 
       },
 
-      frascati: function () {
-        var page = new FrascatiScienzaView();
-        this.changePage(page); 
-      },
-
       eventi: function () {
         // TODO 
       },
@@ -63,7 +58,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       frascatiScienza: function () {
-        var c = $("#cover");
         if(!this.structureView) {
           $("#cover").remove();
           this.showStructure();
