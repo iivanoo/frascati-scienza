@@ -333,11 +333,16 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #cassetto{
 	width: 100%;
 	position: fixed;
-	bottom:-60px;
+	
 	z-index: 5;
 	-webkit-transition: bottom 1s;
 	box-shadow:0px -2px 10px #ccc;
 }
+
+.chiuso{
+	bottom: -60px;
+}
+
 
 .aperto{
 	bottom:44px;
@@ -369,5 +374,79 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* frascati scienza */
 
 /* enti picasso */
+
+.ente_sx{
+	width:50%;
+	background-color: white;
+}
+
+.ente_dx{
+	width:50%;
+	margin-left:50%;
+	background-color: red;
+}
+
+
+/* enti picasso end */
+
+
+
+/* lista */
+
+.defaultlist_wrapper{
+	top:0px;
+	height: 100%;
+	}
+
+.row_wrapper{
+	height: 80px;
+	width:100%;
+	
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.img_wrapper{
+float: left;
+	height: 70px;
+	width: 80px;
+	display: block;
+}
+
+.img_wrapper img{
+	width: 60px;
+	
+}
+
+
+.textlist_wrapper{
+	display: block;
+	width: calc(100% - 70px - 40px);
+	
+	
+}
+
+.textlist_title{
+	margin: 0px;
+	padding:0px;
+	font-size: 11px;
+	height: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: 'Dax';
+}
+
+.textlist_content{
+	margin: 0px;
+	padding:0px;
+	font-size: 11px;
+	height: 3.6em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 60px;
+	
+}
+
+/* lista */ 
 
 	
