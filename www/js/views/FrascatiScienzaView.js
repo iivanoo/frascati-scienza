@@ -22,6 +22,18 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/frasca
         if(Backbone.history.history.length <= 1) {
           $("#backbutton").hide();
         }
+        var elements = document.getElementsByClassName("button_list_element");
+        for(var i=0; i<elements.length; i++) {
+          if(elements[i].id == "frascatiscienza") {
+            elements[i].classList.remove("nonvisibile");
+          } else {
+            if(!elements[i].id.endsWith("Inactive") || elements[i].id == "frascatiscienzaInactive") {
+              elements[i].classList.add("nonvisibile");
+            } else {
+              elements[i].classList.remove("nonvisibile");
+            }
+          }
+        }
         return this;
       },
 

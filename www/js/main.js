@@ -35,6 +35,11 @@ var db = openDatabase("data", "", "data", 2048*2048);
 // We launch the App
 require(['underscore', 'backbone', 'router', 'datamanager'],
     function (_, Backbone, AppRouter, Data) {
+
+      String.prototype.endsWith = function(suffix) {
+          return this.indexOf(suffix, this.length - suffix.length) !== -1;
+      };
+      
       document.addEventListener("deviceready", run, false);
       function run() {
 // TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale

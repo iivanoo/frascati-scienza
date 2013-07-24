@@ -43,7 +43,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       frascati: function () {
-        var page = new AgendaView();
+        var page = new FrascatiScienzaView();
         this.changePage(page); 
       },
 
