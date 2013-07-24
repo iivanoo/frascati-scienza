@@ -42,9 +42,13 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         this.changePage(page); 
       },
 
-      eventi: function () {
-        var page = new EventiListView();
+      frascati: function () {
+        var page = new AgendaView();
         this.changePage(page); 
+      },
+
+      eventi: function () {
+        // TODO 
       },
 
       caccia: function () {
