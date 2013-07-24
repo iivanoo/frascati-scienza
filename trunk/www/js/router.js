@@ -8,7 +8,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "frascatiscienza": "frascatiScienza",
         "enti": "enti",
         "sponsor": "sponsor",
-        "agenda": "agenda"
+        "agenda": "agenda",
+        "eventi": "eventi",
+        "caccia": "caccia"
       },
 
       initialize: function () {
@@ -38,6 +40,15 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       agenda: function () {
         var page = new AgendaView();
         this.changePage(page); 
+      },
+
+      eventi: function () {
+        var page = new EventiListView();
+        this.changePage(page); 
+      },
+
+      caccia: function () {
+        // TODO
       },
 
       showStructure: function () {

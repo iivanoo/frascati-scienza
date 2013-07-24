@@ -16,7 +16,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     checkDataReady: function() {
       if((this.enti.length > 0) && (this.eventi.length > 0) && (this.sponsors.length > 0)) {
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
-        this.trigger("dataReady");
+        //this.trigger("dataReady");
       }
     },
     loadLocalData: function() {

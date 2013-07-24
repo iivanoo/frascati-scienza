@@ -5,6 +5,12 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         model: Evento,
 
+        events: {
+          "touchend #cassetto": "cassetto",
+          "touchend #enti": "enti",
+          "touchend #sponsor": "sponsor"
+        },
+
         initialize: function() {
             //
           },
