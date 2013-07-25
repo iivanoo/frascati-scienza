@@ -394,7 +394,9 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* lista */
 
 .defaultlist_wrapper{
-	background-color: #f4f4f4;	
+	float: left;
+	background-color: #f4f4f4;
+	margin-bottom: 44px;	
 	}
 
 .row_wrapper{
