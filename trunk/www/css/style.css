@@ -146,8 +146,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 #content {
-    position: relative;
-    height: calc(100% - 44px - 44px);
+    position: absolute;
+    /*height: calc(100% - 44px - 44px);*/
     width: 100%;
     left: 0;
     top: 44px;
@@ -394,34 +394,39 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* lista */
 
 .defaultlist_wrapper{
-	top:0px;
-	height: 100%;
+	background-color: #f4f4f4;	
 	}
 
 .row_wrapper{
+	float: left;
 	height: 80px;
 	width:100%;
-	
+	display: block;
 	background-color: #f4f4f4;
 	border-bottom: 1px solid #9f9f9f;
 }
 
 .img_wrapper{
-float: left;
-	height: 70px;
-	width: 80px;
+	padding-top: 10px;
+	text-align: center;
+	float:left;
+	height: 80px;
+	width: 60px;
 	display: block;
 }
 
 .img_wrapper img{
-	width: 60px;
-	
+	height:50px;	
 }
 
 
 .textlist_wrapper{
+	padding-top: 10px;
+	float:left;
+	width:65%;
+	min-width: 120px;
 	display: block;
-	width: calc(100% - 70px - 40px);
+	
 	
 	
 }
@@ -429,24 +434,40 @@ float: left;
 .textlist_title{
 	margin: 0px;
 	padding:0px;
-	font-size: 11px;
+	font-size: 10px;
 	height: 12px;
-	overflow: hidden;
+	overflow-x:hidden;
 	text-overflow: ellipsis;
 	font-family: 'Dax';
 }
 
 .textlist_content{
+	
+	display: block;
 	margin: 0px;
 	padding:0px;
-	font-size: 11px;
-	height: 3.6em;
-	overflow: hidden;
+	font-size: 10px;
+	overflow-y: hidden;
 	text-overflow: ellipsis;
-	height: 60px;
+	text-align: justify;
+	height: 55px;
 	
 }
 
+.arrow_wrapper{
+	padding-top: 30px;
+	padding-left: 12px;
+	float: left;
+	display: block;
+	right: 0px;
+	width:40px;
+	height:80px;
+	
+}
+
+.arrow_wrapper img{
+	width: 50%;
+}
 /* lista */ 
 
 	
