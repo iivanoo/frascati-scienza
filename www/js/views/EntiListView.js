@@ -1,22 +1,27 @@
-define(["jquery", "underscore", "backbone", "collections/Enti", "handlebars", "text!templates/entilist.html"],
-    function ($, _, Backbone, Enti, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListItemView", "datamanager", "handlebars"], function($, _, Backbone, Enti, EntiListItemView, Data, Handlebars) {
 
-    var EntiListView = Backbone.View.extend({
+  var EntiListView = Backbone.View.extend({
 
-        model: Enti,
+    model: Enti,
 
-        initialize: function() {
-            this.title = "Enti";
-          },
+    className: "defaultlist_wrapper",
 
-        template: Handlebars.compile(template),
+    initialize: function() {
+      this.title = "Enti";
+      this.model = Data.enti;
+    },
 
-        render: function () {
-          $(this.el).html(this.template({}));
-          return this;
-        }
-      });
-
-    return EntiListView;
-
+    render: function() {
+      $(this.el).empty();
+      for (var i = 0; i < this.model.length; i++) {
+        $(this.el).append(new EntiListItemView({
+          model: this.model.at(i)
+        }).render().el);
+      }
+      return this;
+    }
   });
+
+  return EntiListView;
+
+});

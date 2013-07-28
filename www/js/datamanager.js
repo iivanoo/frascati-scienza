@@ -125,7 +125,6 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           self.sponsors.create(currentElement);
         }
       }
-
       // chiudi Spinner
       this.spinner.stop();
     }

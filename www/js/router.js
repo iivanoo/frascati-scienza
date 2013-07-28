@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
-    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, SponsorListView, AgendaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
+    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, EventiListView, EventoView, SponsorListView, AgendaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -10,7 +10,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "sponsor": "sponsor",
         "agenda": "agenda",
         "eventi": "eventi",
-        "caccia": "caccia"
+        "caccia": "caccia",
+        "enti/:id": "enteDetails",
+        "eventi/:id": "eventoDetails"
       },
 
       initialize: function () {
@@ -28,7 +30,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       enti: function () {
-        var page = new EntiListView();
+        var page = new EntiListView({model: Data.enti});
         this.changePage(page); 
       },
 
@@ -42,8 +44,25 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         this.changePage(page); 
       },
 
+      enteDetails: function(id) {
+        var ente = Data.enti.get(id);
+        var enteView = new EnteView({
+          model: ente
+        });
+        this.changePage(enteView);
+      },
+
+      eventoDetails: function(id) {
+        var evento = Data.eventi.get(id);
+        var eventoView = new EevntoView({
+          model: evento
+        });
+        this.changePage(eventoView);
+      },
+
       eventi: function () {
-        // TODO 
+        var page = new EventiListView({model: Data.eventi});
+        this.changePage(page); 
       },
 
       caccia: function () {

@@ -6,7 +6,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         model: Evento,
 
         initialize: function() {
-            this.title = model.get("titolo");
+            this.title = this.model.get("titolo");
         },
 
         template: Handlebars.compile(template),
