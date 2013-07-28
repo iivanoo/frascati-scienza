@@ -8,7 +8,6 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
 
     initialize: function() {
       this.title = "Enti";
-      this.model = Data.enti;
     },
 
     render: function() {
