@@ -15,9 +15,35 @@ define({
     contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     rss: "url_feed_rss",
     luogo: {lat: "42.36812", lon: "13.350607"}
+  },
+  { // è una lista di elementi, qui ne ho messo uno solo per brevità
+    id: "ente2",
+    titolo: "nome_ente",
+    descrizione: "testo descrizione ente",
+    logo: "http://url",
+    sito: "http://url",
+    eventi: ["evento1"],
+    chisiamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    storia: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    miglioriamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    rss: "url_feed_rss",
+    luogo: {lat: "42.36812", lon: "13.350607"}
   }],
   eventi: [{ // è una lista di elementi, qui ne ho messo uno solo per brevità
     id: "evento2",
+    titolo: "titolo_evento",
+    timestamp: "1374410958", //data evento (in formato Unix)"
+    descrizione: "testo descrizione evento",
+    immagine: "http://url",
+    video: "http://url",
+    nottericercatori: true, // vale true se l'evento fa parte del programma della Notte dei Ricercatori, false altrimenti
+    tag: ["Tutti", "QR", "astronomia"], // lista dei tag dell'evento (vedi Legenda in Storyboard)
+    ente: "ente1",
+    luogo: {lat: "42.36812", lon: "13.350607"}
+  },
+  { // è una lista di elementi, qui ne ho messo uno solo per brevità
+    id: "evento3",
     titolo: "titolo_evento",
     timestamp: "1374410958", //data evento (in formato Unix)"
     descrizione: "testo descrizione evento",
