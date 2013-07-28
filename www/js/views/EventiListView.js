@@ -9,7 +9,6 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         initialize: function() {
             this.title = "Eventi";
-            this.model = Data.eventi;
           },
 
         render: function () {

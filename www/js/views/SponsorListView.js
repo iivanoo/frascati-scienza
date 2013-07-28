@@ -1,9 +1,11 @@
-define(["jquery", "underscore", "backbone", "collections/Sponsors", "handlebars", "text!templates/sponsorlist.html"],
-    function ($, _, Backbone, Sponsors, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "collections/Sponsors", "views/SponsorListItemView", "handlebars", "text!templates/sponsorlist.html"],
+    function ($, _, Backbone, Sponsors, SponsorListItemView, Handlebars, template) {
 
     var SponsorView = Backbone.View.extend({
 
         model: Sponsors,
+
+        className: "defaultlist_wrapper",
 
         initialize: function() {
             this.title = "Sponsor";
@@ -12,7 +14,12 @@ define(["jquery", "underscore", "backbone", "collections/Sponsors", "handlebars"
         template: Handlebars.compile(template),
 
         render: function () {
-          $(this.el).html(this.template({}));
+          $(this.el).empty();
+          for (var i = 0; i < this.model.length; i++) {
+            $(this.el).append(new SponsorListItemView({
+              model: this.model.at(i)
+            }).render().el);
+          }
           return this;
         }
       });

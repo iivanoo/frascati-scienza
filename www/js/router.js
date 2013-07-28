@@ -35,7 +35,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       sponsor: function () {
-        var page = new SponsorListView();
+        var page = new SponsorListView({model: Data.sponsors});
         this.changePage(page); 
       },
 
