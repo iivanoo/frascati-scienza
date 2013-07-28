@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiListItemView", "datamanager", "handlebars"],
-    function ($, _, Backbone, Eventi, EventiListItemView, Data, Handlebars) {
+define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiListItemView", "datamanager", "handlebars", "text!templates/eventilist.html"],
+    function ($, _, Backbone, Eventi, EventiListItemView, Data, Handlebars, template) {
 
     var EventiListView = Backbone.View.extend({
 
@@ -7,17 +7,21 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         className: "defaultlist_wrapper",
 
+        template: Handlebars.compile(template),
+
         initialize: function() {
             this.title = "Eventi";
           },
 
         render: function () {
-          $(this.el).empty();
-          for (var i = 0; i < this.model.length; i++) {
+          $(this.el).html(this.template({}));
+          // TODO popolare con la lista degli enti
+          /*for (var i = 0; i < this.model.length; i++) {
             $(this.el).append(new EventiListItemView({
               model: this.model.at(i)
             }).render().el);
-          }
+          }*/
+          return this;
         }
       });
 
