@@ -85,6 +85,15 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	margin-top: 0px;
 }
 
+.button_list_element_small{
+	
+	text-align: center;
+	float: left;
+	width:12.5%;
+    margin-left: 0px;
+	margin-top: 0px;
+}
+
 #button_list img{
 	height:38px;
 	
@@ -472,4 +481,44 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 /* lista */ 
 
+
+.symbols_wrapper{
+}
+
+.symbol{
+	display: block;
+	width:60px;
+	height:60px;
+	float: left;
+}
+
+	.ad_famiglia{
+		background-image: url('img/symbol_green.png');
+	}
+	
+	.ad_tutti{
+		background-image: url('img/symbol_blue.png');
+	}
+	
+	.ad_ragazzi{
+		background-image: url('img/symbol_orange.png');
+	}
+	
+	.ad_fisica{
+		background-image: url('img/symbol_atomo.png');
+	}	
+	
+	.ad_astronomia{
+		background-image: url('img/symbol_pianeta.png');
+	}
+	
+	.ad_biologia{
+		background-image: url('img/symbol_provetta.png');
+	}
+	
+	.ad_qrcode{
+		background-image: url('img/symbol_qr.png');
+	}
+	
+	
 	
