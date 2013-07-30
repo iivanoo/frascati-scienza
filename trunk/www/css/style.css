@@ -403,14 +403,14 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* lista */
 
 .defaultlist_wrapper{
-	float: left;
+	
 	background-color: #f4f4f4;
 	margin-bottom: 44px;	
 	}
 
 .row_wrapper{
-	float: left;
-	height: 80px;
+	
+	height: 100px; /*80px*/
 	width:100%;
 	display: block;
 	background-color: #f4f4f4;
@@ -434,7 +434,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .textlist_wrapper{
 	padding-top: 10px;
 	float:left;
-	width:65%;
+	width:60%;
 	min-width: 120px;
 	display: block;
 	
@@ -482,43 +482,184 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 /* lista */ 
 
 
-.symbols_wrapper{
+
+/* lista eventi */
+
+.greybar{
+	padding-top: 8px;
+	padding-left: 5px;
+	background: -webkit-linear-gradient(top, rgb(153,153,153), rgb(102,102,102));
+	display: block;
+	font-family: 'Dax';
+	color: white;
+	font-size: 12px;
+	height: 22px;
+	
 }
 
-.symbol{
+.event_row_wrapper{
+	
+	height: 110px; /*80px*/
+	width:100%;
 	display: block;
-	width:60px;
-	height:60px;
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #9f9f9f;
+}
+
+.eventlist_wrapper{
+	padding-top: 10px;
+	float:left;
+	width:80%;
+	min-width: 120px;
+	display: block;
+}
+
+
+.eventlist_title{
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 15px;
+	height: 18px;
+	overflow-x:hidden;
+	text-overflow: ellipsis;
+	font-family: 'Dax';
 	float: left;
 }
 
+.eventlist_time{
+	margin-top: 2px;
+
+	padding:0px;
+	font-size: 12px;
+	height: 18px;
+	overflow-x:hidden;
+	text-overflow: ellipsis;
+}
+
+.eventlist_content{
+	
+	display: block;
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	height: 55px;
+	
+}
+
+
+
+
+
+.symbols_wrapper{
+	margin-top: -25px;
+	height: 50px;
+	}
+
+.symbol{
+	width:40px;
+	height:40px;
+	display: inline-block;
+	
+}
+
 	.ad_famiglia{
-		background-image: url('img/symbol_green.png');
+		background-image: url('../img/symbol_green.png');
+		background-size: 40px 40px;
 	}
 	
 	.ad_tutti{
-		background-image: url('img/symbol_blue.png');
+		background-image: url('../img/symbol_blue.png');
+		background-size: 40px 40px;
 	}
 	
 	.ad_ragazzi{
-		background-image: url('img/symbol_orange.png');
+		background-image: url('../img/symbol_orange.png');
+		background-size: 40px 40px;
 	}
 	
 	.ad_fisica{
-		background-image: url('img/symbol_atomo.png');
+		background-image: url('../img/symbol_atomo.png');
+		background-size: 40px 40px;
 	}	
 	
 	.ad_astronomia{
-		background-image: url('img/symbol_pianeta.png');
+		background-image: url('../img/symbol_pianeta.png');
+		background-size: 40px 40px;
 	}
 	
 	.ad_biologia{
-		background-image: url('img/symbol_provetta.png');
+		background-image: url('../img/symbol_provetta.png');
+		background-size: 40px 40px;
 	}
 	
 	.ad_qrcode{
-		background-image: url('img/symbol_qr.png');
+		background-image: url('../img/symbol_qr.png');
+		background-size: 40px 40px;
 	}
 	
+	
+	
+.sfoglia_wrapper{
+	display: block;
+	text-align: center;
+	width:100%;
+	height: 40px;
+	background-color: white;
+	border-bottom: 1px solid #9f9f9f;
+	
+	
+}
+
+.block_sfoglia{
+	
+	margin-left: auto;
+	display: inline-block;
+	height: 60px;
+}
+
+.day_back{
+	margin-top: 7px;
+	width:50px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	
+	
+}
+
+.date{
+
+	vertical-align: middle;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+
+.day_next{
+	width:50px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	
+}
+
+
+.event_arrow_wrapper{
+
+display: inline-block;
+width: 40px;
+margin-top: 45px;
+margin-left: 20px;
+	
+}
+
+.event_arrow_wrapper img{
+	width: 50%;
+}
+
 	
 	
