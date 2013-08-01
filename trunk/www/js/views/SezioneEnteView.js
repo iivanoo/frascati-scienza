@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!templates/sezioneenteview.html"],
+define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!templates/sezioneente.html"],
     function ($, _, Backbone, Ente, Handlebars, template) {
 
     var SezioneEnteView = Backbone.View.extend({

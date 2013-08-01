@@ -24,9 +24,21 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         },
 
         enteSxTop: function () {
-          var path = "sezioneEnte/chisiamo/" + this.model.cid;
+          var path = "sezioneEnte/chisiamo/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
-        }
+        },
+        enteSxBottom: function () {
+          var path = "sezioneEnte/contatti/" + this.model.get("__id");
+          Backbone.history.navigate(path, {trigger: true});
+        },
+        enteDxTop: function () {
+          var path = "sezioneEnte/storia/" + this.model.get("__id");
+          Backbone.history.navigate(path, {trigger: true});
+        },
+        enteDxBottom: function () {
+          var path = "sezioneEnte/miglioriamo/" + this.model.get("__id");
+          Backbone.history.navigate(path, {trigger: true});
+        },
       });
 
     return EnteView;

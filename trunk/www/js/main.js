@@ -31,7 +31,7 @@ require.config({
   }
 });
 
-var db = openDatabase("data", "", "data", 2048*2048);
+var db = openDatabase("data", "1", "data", 2048*2048);
 
 // We launch the App
 require(['underscore', 'backbone', 'router', 'datamanager'],
@@ -51,7 +51,9 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
         } else {
           Data.loadDbData();
         }
-        new AppRouter();
-        Backbone.history.start();
+        var router = new AppRouter();
+        Data.on("dataReady", function() {
+          Backbone.history.start();
+        });
       }
   });
