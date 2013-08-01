@@ -3,9 +3,9 @@ define({
   frascatiscienza: "testo descrittivo di Frascati Scienza",
   imgfrascatiscienza: "http://url",
   enti: [{ // è una lista di elementi, qui ne ho messo uno solo per brevità
-    id: "ente1",
-    titolo: "nome_ente",
-    descrizione: "testo descrizione ente",
+    id: "Frascati_Scienza",
+    titolo: "Frascati Scienza",
+    descrizione: "ciao Frascati",
     logo: "http://url",
     sito: "http://url",
     eventi: ["evento1"],
