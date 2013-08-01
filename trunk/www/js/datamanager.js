@@ -6,6 +6,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     sponsors: new Sponsors,
     newDataChecked: false,
     spinner: undefined,
+    frascatiscienza: undefined,
+    imgfrascatiscienza: undefined,
 
     initialize: function() {
       var opts = {
@@ -32,6 +34,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.sponsors.on('reset', this.checkDataReady, this);
     },
     loadDbData: function() {
+      debugger;
       // visualizza Spinner
       var target = document.getElementById('content');
       this.spinner.spin(target);
@@ -84,11 +87,15 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     },
     newDataAvailable: function() {
       var result = false;
+      var url;
       if (localStorage.getItem("language") === "eng") {
-        // TODO check English data available
+        url = 'urlEnglish';
       } else {
-        // TODO check Italian data available
+        url = 'urlItalian';
       }
+      $.getJSON('urlItalian', function(response) {
+        staticData = response;
+      });
       return result;
     },
     updateDb: function(data, clearDb) {
@@ -106,6 +113,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
 
       function createData() {
         var currentElement;
+        self.frascatiscienza = data.frascatiscienza;
+        self.imgfrascatiscienza = data.imgfrascatiscienza;
         for(var i=0; i<data.enti.length; i++) {
           currentElement = data.enti[i];
           currentElement.__id = currentElement.id;

@@ -90,7 +90,12 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
           $("#cover").remove();
           this.showStructure();
         }
-        var page = new FrascatiScienzaView();
+        var frascatiModel =  Data.enti.findWhere({__id :"Frascati_Scienza"});
+        if(frascatiModel) {
+          frascatiModel.set("frascatiscienza", Data.frascatiscienza);
+          frascatiModel.set("imgfrascatiscienza", Data.imgfrascatiscienza);
+        }
+        var page = new FrascatiScienzaView({model: frascatiModel});
         this.changePage(page);
         if(!Data.newDataChecked && Data.newDataAvailable()) {
           Data.checkNewData();
