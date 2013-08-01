@@ -13,6 +13,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "caccia": "caccia",
         "enti/:id": "enteDetails",
         "sezioneEnte/chisiamo/:id": "sezioneEnte",
+        "sezioneEnte/storia/:id": "sezioneEnte",
+        "sezioneEnte/contatti/:id": "sezioneEnte",
+        "sezioneEnte/miglioriamo/:id": "sezioneEnte",
         "eventi/:id": "eventoDetails"
       },
 
@@ -54,7 +57,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       sezioneEnte: function(id) {
-        var ente = Data.enti.get(id);
+        var ente = Data.enti.findWhere({__id: id});
         var sezioneEnteView = new SezioneEnteView({
           model: ente
         });

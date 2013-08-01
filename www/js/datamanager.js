@@ -34,10 +34,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.sponsors.on('reset', this.checkDataReady, this);
     },
     loadDbData: function() {
-      debugger;
       // visualizza Spinner
       var target = document.getElementById('content');
       this.spinner.spin(target);
+      this.frascatiscienza = localStorage.getItem("frascatiscienza");
+      this.imgfrascatiscienza = localStorage.getItem("imgfrascatiscienza");
       this.enti.fetch({reset: true});
       this.eventi.fetch({reset: true});
       this.sponsors.fetch({reset: true});
@@ -45,6 +46,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     checkDataReady: function() {
       if((this.enti.length > 0) && (this.eventi.length > 0) && (this.sponsors.length > 0)) {
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
+        // è dopo aver scatenato questo evento che faccio partire il routing
+        this.trigger("dataReady");
         // chiudi Spinner
         this.spinner.stop();
       }
@@ -54,7 +57,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       var target = document.getElementById('content');
       this.spinner.spin(target);
       var staticData = require("staticdata");
-      this.updateDb(staticData, false);
+      this.updateDb(staticData, true);
       localStorage.setItem("dataLoaded" , "yes");
     },
     checkNewData: function() {
@@ -115,6 +118,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         var currentElement;
         self.frascatiscienza = data.frascatiscienza;
         self.imgfrascatiscienza = data.imgfrascatiscienza;
+        localStorage.setItem("frascatiscienza" , self.frascatiscienza);
+        localStorage.setItem("imgfrascatiscienza" , self.imgfrascatiscienza);
         for(var i=0; i<data.enti.length; i++) {
           currentElement = data.enti[i];
           currentElement.__id = currentElement.id;
@@ -139,6 +144,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     }
   };
 
+  _.extend(Data, Backbone.Events);
   return Data;
 
 });

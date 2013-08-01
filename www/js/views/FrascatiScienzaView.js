@@ -19,6 +19,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       template: Handlebars.compile(template),
 
       render: function () {
+        debugger;
         $(this.el).html(this.template(this.model.toJSON()));
         var a = Backbone.history.history.length;
         // se siamo in Frascati Scienza e non siamo passati da cover, allora il back è nascosto
