@@ -12,10 +12,10 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "eventi": "eventi",
         "caccia": "caccia",
         "enti/:id": "enteDetails",
-        "sezioneEnte/chisiamo/:id": "sezioneEnte",
-        "sezioneEnte/storia/:id": "sezioneEnte",
-        "sezioneEnte/contatti/:id": "sezioneEnte",
-        "sezioneEnte/miglioriamo/:id": "sezioneEnte",
+        "sezioneEnte/chisiamo/:id": "sezioneEnteChiSiamo",
+        "sezioneEnte/storia/:id": "sezioneEnteStoria",
+        "sezioneEnte/contatti/:id": "sezioneEnteContatti",
+        "sezioneEnte/miglioriamo/:id": "sezioneEnteMiglioriamo",
         "eventi/:id": "eventoDetails"
       },
 
@@ -56,8 +56,35 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         this.changePage(enteView);
       },
 
-      sezioneEnte: function(id) {
+      sezioneEnteChiSiamo: function(id) {
         var ente = Data.enti.findWhere({__id: id});
+        ente.set("tipo", "chisiamo");
+        var sezioneEnteView = new SezioneEnteView({
+          model: ente
+        });
+        this.changePage(sezioneEnteView);
+      },
+
+      sezioneEnteStoria: function(id) {
+        var ente = Data.enti.findWhere({__id: id});
+        ente.set("tipo", "storia");
+        var sezioneEnteView = new SezioneEnteView({
+          model: ente
+        });
+        this.changePage(sezioneEnteView);
+      },
+
+      sezioneEnteContatti: function(id) {
+        var ente = Data.enti.findWhere({__id: id});
+        var rssEnteView = new RssEnteView({
+          model: ente
+        });
+        this.changePage(rssEnteView);
+      },
+
+      sezioneEnteMiglioriamo: function(id) {
+        var ente = Data.enti.findWhere({__id: id});
+        ente.set("tipo", "miglioriamo");
         var sezioneEnteView = new SezioneEnteView({
           model: ente
         });
