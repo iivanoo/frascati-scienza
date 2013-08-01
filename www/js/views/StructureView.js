@@ -39,15 +39,27 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         },
 
         frascatiscienza: function(event) {
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("frascatiscienze_top");
           Backbone.history.navigate("frascatiscienza", {trigger: true});
         },
         eventi: function(event) {
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("nottericerca_top");
           Backbone.history.navigate("eventi", {trigger: true});
         },
         caccia: function(event) {
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("cacciatesoro_top");
           Backbone.history.navigate("caccia", {trigger: true});
         },
         agenda: function(event) {
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("agenda_top");
           Backbone.history.navigate("agenda", {trigger: true});
         }
       });

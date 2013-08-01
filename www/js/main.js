@@ -42,6 +42,7 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
       };
 
       document.addEventListener("deviceready", run, false);
+
       function run() {
         // TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
         Data.initialize();
