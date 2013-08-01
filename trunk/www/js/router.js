@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
-    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, EventiListView, EventoView, SponsorListView, AgendaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
+    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, EventiListView, EventoView, SponsorListView, AgendaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -12,6 +12,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "eventi": "eventi",
         "caccia": "caccia",
         "enti/:id": "enteDetails",
+        "sezioneEnte/chisiamo/:id": "sezioneEnte",
         "eventi/:id": "eventoDetails"
       },
 
@@ -50,6 +51,14 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
           model: ente
         });
         this.changePage(enteView);
+      },
+
+      sezioneEnte: function(id) {
+        var ente = Data.enti.get(id);
+        var sezioneEnteView = new SezioneEnteView({
+          model: ente
+        });
+        this.changePage(sezioneEnteView);
       },
 
       eventoDetails: function(id) {

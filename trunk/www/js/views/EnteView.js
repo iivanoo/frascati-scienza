@@ -5,6 +5,13 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
 
         model: Ente,
 
+        events: {
+          "touchend #ente_sx_top": "enteSxTop",
+          "touchend #ente_sx_bottom": "enteSxBottom",
+          "touchend #ente_dx_top": "enteDxTop",
+          "touchend #ente_dx_bottom": "enteDxBottom"
+        },
+
         initialize: function() {
             this.title = this.model.get("titolo");
         },
@@ -14,6 +21,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         render: function () {
           $(this.el).html(this.template({}));
           return this;
+        },
+
+        enteSxTop: function () {
+          var path = "sezioneEnte/chisiamo/" + this.model.cid;
+          Backbone.history.navigate(path, {trigger: true});
         }
       });
 
