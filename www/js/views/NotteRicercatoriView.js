@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/nottericercatori.html"],
+/*define(["jquery", "underscore", "backbone", "handlebars", "text!templates/nottericercatori.html"],
     function ($, _, Backbone, Handlebars, template) {
 
     var NotteRicercatoriView = Backbone.View.extend({
@@ -29,4 +29,4 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/notter
 
     return NotteRicercatoriView;
 
-  });
+  });*/

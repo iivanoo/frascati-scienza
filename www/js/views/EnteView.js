@@ -12,6 +12,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           "touchend #ente_dx_bottom": "enteDxBottom"
         },
 
+        className: "default_wrapper",
+
         initialize: function() {
             this.title = this.model.get("titolo");
         },
