@@ -13,6 +13,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
 
         render: function () {
           $(this.el).html(this.template({}));
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("agenda_top");
           var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "agenda") {
