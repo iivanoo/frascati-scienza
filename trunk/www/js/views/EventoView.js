@@ -5,6 +5,8 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         model: Evento,
 
+        className: "default_wrapper",
+
         initialize: function() {
             this.title = this.model.get("titolo");
         },

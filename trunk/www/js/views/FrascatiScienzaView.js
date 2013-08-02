@@ -5,6 +5,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
 
       model: Ente,
 
+      className: "default_wrapper",
+
       events: {
           "touchend #cassetto": "cassetto",
           "touchend #enti": "enti",

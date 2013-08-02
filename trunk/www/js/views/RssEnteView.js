@@ -5,6 +5,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
 
         model: Ente,
 
+        className: "default_wrapper",
+
         initialize: function() {
             this.title = model.get("titolo");
           },

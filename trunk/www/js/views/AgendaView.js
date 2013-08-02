@@ -7,6 +7,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
             this.title = "Agenda Personale";
         },
 
+        className: "default_wrapper",
+
         template: Handlebars.compile(template),
 
         render: function () {

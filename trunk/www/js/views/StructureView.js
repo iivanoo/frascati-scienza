@@ -9,11 +9,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #backbutton": "goBack",
           "touchend #frascatiscienza": "frascatiscienza",
           "touchend #eventi": "eventi",
-          "touchend #caccia": "caccia",
+/*          "touchend #caccia": "caccia",*/
           "touchend #agenda": "agenda",
           "touchend #frascatiscienzaInactive": "frascatiscienza",
           "touchend #eventiInactive": "eventi",
-          "touchend #cacciaInactive": "caccia",
+/*          "touchend #cacciaInactive": "caccia",*/
           "touchend #agendaInactive": "agenda",
         },
 
@@ -50,12 +50,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           el.addClass("nottericerca_top");
           Backbone.history.navigate("eventi", {trigger: true});
         },
-        caccia: function(event) {
+
+/*        caccia: function(event) {
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
           Backbone.history.navigate("caccia", {trigger: true});
-        },
+        },*/
+        
         agenda: function(event) {
           var el = $("#titlebar");
           el.removeClass();
