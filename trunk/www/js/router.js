@@ -30,6 +30,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
           var page = new CoverView();
           page.render();
           $("body").append($(page.el)); 
+          $('#content_cover').css({
+            'height': $(window).height() - 75
+          });
         }
       },
 
