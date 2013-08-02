@@ -15,6 +15,9 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         render: function () {
           $(this.el).html(this.template({}));
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("nottericerca_top");
           // TODO popolare con la lista degli enti
           /*for (var i = 0; i < this.model.length; i++) {
             $(this.el).append(new EventiListItemView({
