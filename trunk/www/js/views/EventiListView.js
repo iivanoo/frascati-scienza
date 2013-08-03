@@ -18,12 +18,11 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("nottericerca_top");
-          // TODO popolare con la lista degli enti
-          /*for (var i = 0; i < this.model.length; i++) {
+          for (var i = 0; i < this.model.length; i++) {
             $(this.el).append(new EventiListItemView({
               model: this.model.at(i)
             }).render().el);
-          }*/
+          }
           return this;
         }
       });

@@ -1,18 +1,26 @@
+{{#if immagine}}
 	<div class="default_coverimage_block">
-		<img src="fs/frascati_cover.jpg">
+		<img src="{{ immagine }}">
 	</div>
-		
+{{else}}
+	{{#if video}}
+	<div class="default_coverimage_block">
+		<video>
+		  <source src="{{ video }}" type="video/mp4">
+		</video>
+	</div>
+	{{/if}}
+{{/if}}	
 	
 	<div class="greybar">
-		 Testo finto
+		 {{ titolo }}
 	</div>
 	
 	<div class="caption_block">
 	
 		<div class="caption_content">
-			<h1>Titolo finto</h1>
 			<p>
-				testo ente, meglio conosciuto come testo finto.
+				{{ testo }}
 			</p>
 			
 		</div>

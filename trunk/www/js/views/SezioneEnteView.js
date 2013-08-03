@@ -8,13 +8,33 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         className: "default_wrapper",
 
         initialize: function() {
-            this.title = "Frascati Scienza";
+            this.title = this.model.get("titolo");
           },
 
         template: Handlebars.compile(template),
 
         render: function () {
-          $(this.el).html(this.template({}));
+          var tipo = this.model.get("tipo");
+          var tipoText = "";
+          switch (tipo) {
+            case "chisiamo":
+              tipoText = "Chi siamo e per cosa lavoriamo";
+              break;
+            case "storia":
+              tipoText = "La nostra storia";
+              break;
+            case "miglioriamo":
+              tipoText = "Come miglioriamo la tua vita";
+          }
+          var context = {titolo: tipoText, testo: this.model.get(tipo).testo};
+          if(this.model.get(tipo).immagine) {
+            context.immagine = this.model.get(tipo).immagine;
+          } else {
+            if(this.model.get(tipo).video) {
+              context.video = this.model.get(tipo).video;
+            }
+          }
+          $(this.el).html(this.template(context));
           return this;
         }
       });

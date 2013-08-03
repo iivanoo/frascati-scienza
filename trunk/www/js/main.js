@@ -51,9 +51,9 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
         } else {
           Data.loadDbData();
         }
-        var router = new AppRouter();
         Data.on("dataReady", function() {
           Backbone.history.start();
         });
+        var router = new AppRouter();
       }
   });
