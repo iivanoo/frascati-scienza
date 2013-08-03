@@ -10,7 +10,7 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         className: "row_wrapper",
 
         events: {
-          //
+          "touchend .row_wrapper": "openUrl"
         },
 
         initialize: function() {
@@ -22,10 +22,12 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         render: function () {
           $(this.el).empty();
           var rss = this.model.toJSON();
-          rss.cid = this.model.get("__id");
           $(this.el).html(this.template(rss));
-          $(this.el).attr("id", this.model.get("__id"));
           return this;
+        },
+
+        openUrl: function (event) {
+          debugger;
         }
       });
 
