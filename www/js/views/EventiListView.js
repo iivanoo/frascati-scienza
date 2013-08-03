@@ -14,6 +14,11 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           },
 
         render: function () {
+          // gestione nav bar
+          document.getElementById("volatile").classList.add("nonvisibile");
+          document.getElementById("legenda").classList.remove("nonvisibile");
+          document.getElementById("ricerca").classList.remove("nonvisibile");
+          // fine gestione nav bar
           $(this.el).html(this.template({}));
           var el = $("#titlebar");
           el.removeClass();

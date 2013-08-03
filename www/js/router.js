@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/StructureView"],
-    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/StructureView"],
+    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -16,7 +16,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "sezioneEnte/storia/:id": "sezioneEnteStoria",
         "sezioneEnte/contatti/:id": "sezioneEnteContatti",
         "sezioneEnte/miglioriamo/:id": "sezioneEnteMiglioriamo",
-        "eventi/:id": "eventoDetails"
+        "eventi/:id": "eventoDetails",
+        "legenda": "legenda"
       },
 
       initialize: function () {
@@ -116,6 +117,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
           }
         }
         var page = new EventiListView({model: Data.eventi});
+        this.changePage(page); 
+      },
+
+      legenda: function () {
+        var page = new LegendaView();
         this.changePage(page); 
       },
 
