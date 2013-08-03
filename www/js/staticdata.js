@@ -13,7 +13,7 @@ define({
     storia: {testo: "BBB", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     miglioriamo: {testo: "CCC", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
-    rss: "url_feed_rss",
+    rss: "http://www.infn.it/rss/comunicati.xml.php",
     luogo: {lat: "42.36812", lon: "13.350607"}
   },
   { // è una lista di elementi, qui ne ho messo uno solo per brevità
@@ -27,7 +27,7 @@ define({
     storia: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     miglioriamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
-    rss: "url_feed_rss",
+    rss: "http://www.frascatiscienza.it/feed/",
     luogo: {lat: "42.36812", lon: "13.350607"}
   }],
   eventi: [{ // è una lista di elementi, qui ne ho messo uno solo per brevità
