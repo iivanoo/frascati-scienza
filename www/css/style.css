@@ -753,6 +753,15 @@ margin-left: 20px;
 	width: 100%;
 }
 
+.simple_element_row{
+	
+	width:100%;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
 
 
 /* AGENDA */
@@ -762,7 +771,7 @@ margin-left: 20px;
 	
 }
 
-.simple_element_row{
+.simple_element_row_agenda{
 	
 	width:100%;
 	padding-right: 44px;
