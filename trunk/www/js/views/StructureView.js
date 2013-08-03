@@ -15,6 +15,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #eventiInactive": "eventi",
 /*          "touchend #cacciaInactive": "caccia",*/
           "touchend #agendaInactive": "agenda",
+          "touchend #legenda": "legenda"
         },
 
         initialize: function() {
@@ -54,6 +55,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         
         agenda: function(event) {
           Backbone.history.navigate("agenda", {trigger: true});
+        },
+
+        legenda: function(event) {
+          Backbone.history.navigate("legenda", {trigger: true});
         }
       });
 

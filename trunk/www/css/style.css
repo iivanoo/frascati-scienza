@@ -91,7 +91,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .button_list_element_small{
 	
 	text-align: center;
-	float: left;
+	float: right;
 	width:12.5%;
     margin-left: 0px;
 	margin-top: 0px;
