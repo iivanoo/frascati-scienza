@@ -8,13 +8,16 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         className: "default_wrapper",
 
         initialize: function() {
-            this.title = model.get("titolo");
+            this.title = this.model.get("titolo");
           },
 
         template: Handlebars.compile(template),
 
         render: function () {
           $(this.el).html(this.template({}));
+
+          // var StrippedString = OriginalString.replace(/(<([^>]+)>)/ig,"");
+
           return this;
         }
       });

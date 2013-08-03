@@ -7,7 +7,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         tagName: "div",
 
-        className: "row_wrapper",
+        className: "event_row_wrapper",
 
         events: {
           "touchend": "goToEvento"

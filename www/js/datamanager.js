@@ -8,6 +8,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     spinner: undefined,
     frascatiscienza: undefined,
     imgfrascatiscienza: undefined,
+    staticData: undefined,
 
     initialize: function() {
       var opts = {
@@ -73,7 +74,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         // visualizza Spinner
         var target = document.getElementById('content');
         this.spinner.spin(target);
-        var staticData = undefined; // qui ci va il caricamento del JSON
+/*        var staticData = undefined; // qui ci va il caricamento del JSON
         if (localStorage.getItem("language") === "eng") {
           // TODO download English data
           $.getJSON('urlEnglish', function(response) {
@@ -84,8 +85,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           $.getJSON('urlItalian', function(response) {
             staticData = response;
           });
-        }
-        this.updateDb(staticData, true);
+        }*/
+        this.updateDb(this.staticData, true);
       }
     },
     newDataAvailable: function() {
@@ -96,8 +97,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       } else {
         url = 'urlItalian';
       }
-      $.getJSON('urlItalian', function(response) {
-        staticData = response;
+      $.getJSON(url, function(response) {
+        if(response.timestamp > localStorage.getItem("lastTimestamp")) {
+          result = true;
+          staticData = response;
+        }
       });
       return result;
     },
@@ -114,12 +118,14 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         createData();
       }
 
+      // data qui è accessibile dalla closure
       function createData() {
         var currentElement;
         self.frascatiscienza = data.frascatiscienza;
         self.imgfrascatiscienza = data.imgfrascatiscienza;
         localStorage.setItem("frascatiscienza" , self.frascatiscienza);
         localStorage.setItem("imgfrascatiscienza" , self.imgfrascatiscienza);
+        localStorage.setItem("lastTimestamp", data.timestamp);
         for(var i=0; i<data.enti.length; i++) {
           currentElement = data.enti[i];
           currentElement.__id = currentElement.id;
@@ -139,6 +145,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           self.sponsors.create(currentElement);
         }
       }
+      delete this.staticData;
       // chiudi Spinner
       this.spinner.stop();
     }

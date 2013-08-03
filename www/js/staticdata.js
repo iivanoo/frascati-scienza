@@ -9,9 +9,9 @@ define({
     logo: "http://url",
     sito: "http://url",
     eventi: ["evento1"],
-    chisiamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
-    storia: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
-    miglioriamo: {testo: "", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    chisiamo: {testo: "AAA", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    storia: {testo: "BBB", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
+    miglioriamo: {testo: "CCC", immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     contatti: {immagine: "http://url", immagineCopertina: "http://", video: "http://"},
     rss: "url_feed_rss",
     luogo: {lat: "42.36812", lon: "13.350607"}
