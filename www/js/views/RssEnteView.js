@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Rss", "collections/RssList", "handlebars", "text!templates/rssente.html"],
-    function ($, _, Backbone, Ente, Rss, RssList, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Rss", "collections/RssList", "views/RssListItemView", "handlebars", "text!templates/rssente.html"],
+    function ($, _, Backbone, Ente, Rss, RssList, RssListItemView, Handlebars, template) {
 
     var RssEnteView = Backbone.View.extend({
 
@@ -9,6 +9,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Rss", "collec
 
         initialize: function() {
             this.title = this.model.get("titolo");
+            this.on("inTheDom", this.fetchNews);
           },
 
         template: Handlebars.compile(template),
@@ -24,10 +25,17 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Rss", "collec
             }
           }
           $(this.el).html(this.template(context));
-
-          // var StrippedString = OriginalString.replace(/(<([^>]+)>)/ig,"");
-
           return this;
+        },
+
+        fetchNews: function () {
+          var news = new RssList();
+          news.populate(this.model.get("rss"));
+          var rssItemView;
+          for (var i = 0; i < news.length; i++) {
+            rssItemView = new RssListItemView({model: news.at(i)});
+            $(".rss_wrapper").append(rssItemView.render().el);
+          }
         }
       });
 
