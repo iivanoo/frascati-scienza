@@ -1,7 +1,7 @@
-define(["jquery", "underscore", "backbone"], function($, _, Backbone) {
-  var Ente = Backbone.Model.extend("Ente", {
+define(["jquery", "underscore", "models/EnteEvento", "backbone"], function($, _, EnteEvento, Backbone) {
+  var Ente = EnteEvento.extend("Ente", {
     defaults: {
-      titolo: undefined,
+      titolo: undefined
     }
   });
 

@@ -53,7 +53,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       enteDetails: function(id) {
-        var ente = Data.enti.get(id);
+        var ente = Data.enti.findWhere({"__id": id});
         var enteView = new EnteView({
           model: ente
         });
@@ -96,7 +96,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       eventoDetails: function(id) {
-        var evento = Data.eventi.get(id);
+        var evento = Data.eventi.findWhere({"__id": id});
         var eventoView = new EventoView({
           model: evento
         });

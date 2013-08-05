@@ -30,7 +30,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         },
 
         goToEvento: function() {
-          var path = "eventi/" + this.model.cid;
+          var path = "eventi/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
 
