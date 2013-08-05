@@ -32,8 +32,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.spinner = new Spinner(opts);
       
       // settiamo nel local storage la lista dei preferiti
-      var agenda = {"enti": {}, "eventi": {}};
       if(!localStorage.getItem("agenda")) {
+        var agenda = {"enti": {}, "eventi": {}};
         localStorage.setItem("agenda", JSON.stringify(agenda));
       } 
 
