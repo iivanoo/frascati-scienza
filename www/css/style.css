@@ -91,7 +91,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .button_list_element_small{
 	
 	text-align: center;
-	float: right;
+	float: left;
 	width:12.5%;
     margin-left: 0px;
 	margin-top: 0px;
@@ -558,12 +558,14 @@ margin-bottom: 15px;
 	}
 
 .symbol{
+	float: left;
+	margin: 10px;
 	width:40px;
 	height:40px;
 	display: inline-block;
 	
 }
-
+/*
 	.ad_famiglia{
 		background-image: url('../img/symbol_green.png');
 		background-size: 40px 40px;
@@ -592,6 +594,55 @@ margin-bottom: 15px;
 	.ad_biologia{
 		background-image: url('../img/symbol_provetta.png');
 		background-size: 40px 40px;
+	}
+	*/
+	
+	.ad_giovani{
+		background-image: url('../img/symbol_giovani.png');
+		background-size: 40px 40px;
+	}
+	
+	
+	.ad_pubblicogenerale{
+		background-image: url('../img/symbol_pubblicogenerale.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_medie{
+		background-image: url('../img/symbol_scuolemedie.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_elementari{
+		background-image: url('../img/symbol_scuolaelementare.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_superiori{
+		background-image: url('../img/symbol_scuolesuperiori.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_aperitivi{
+		background-image: url('../img/symbol_aperitiviscientifici.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_giochiscientifici{
+		background-image: url('../img/symbol_giochiscientifici.png');
+		background-size: 40px 40px;
+	}
+	
+	.ad_laboratori{
+		background-image: url('../img/symbol_laboratori.png');
+		background-size: 40px 40px;
+		
+	}
+
+	.ad_seminari{
+		background-image: url('../img/symbol_laboratori.png');
+		background-size: 40px 40px;
+		
 	}
 	
 	.ad_qrcode{
@@ -837,5 +888,8 @@ float: right;
 .ruotatesto{
 	-webkit-transform: rotate(270deg);
 }
+
+
+
 
 
