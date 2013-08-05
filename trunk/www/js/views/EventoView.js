@@ -41,6 +41,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           var agenda = JSON.parse(localStorage.getItem("agenda"));
           agenda.eventi[this.model.get("__id")] = this.model.toJSON();
           localStorage.setItem("agenda", JSON.stringify(agenda));
+          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda');
         }
       });
 

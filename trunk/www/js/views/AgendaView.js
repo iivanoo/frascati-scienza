@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda.html"],
-    function ($, _, Backbone, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemView", "models/Ente", "models/Evento", "text!templates/agenda.html"],
+    function ($, _, Backbone, Handlebars, AgendaListItemView, Ente, Evento, template) {
 
     var AgendaView = Backbone.View.extend({
 
@@ -10,6 +10,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
         className: "default_wrapper",
 
         template: Handlebars.compile(template),
+
+        events: {
+          "touchend #ling_eventi": "showEventi",
+          "touchend #ling_enti": "showEnti"
+        },
 
         render: function () {
           // gestione nav bar
@@ -31,11 +36,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
               }
             }
           }
-/*          for (var i = 0; i < this.model.length; i++) {
-            $(this.el).append(new SponsorListItemView({
-              model: this.model.at(i)
-            }).render().el);
-          }*/
+          this.on("inTheDom", this.showEnti);
           return this;
         },
 
@@ -44,6 +45,28 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
           var functions = document.getElementsByClassName("button_list_element_small");
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
+          }
+        },
+
+        showEnti: function() {
+          var enti = JSON.parse(localStorage.getItem("agenda")).enti;
+          $("#agenda_wrapper_content").empty();
+          for (var key in enti) {
+            var currentEnte = enti[key];
+            $("#agenda_wrapper_content").append(new AgendaListItemView({
+              model: new Ente(currentEnte)
+            }).render().el);
+          }
+        },
+
+        showEventi: function() {
+          var eventi = JSON.parse(localStorage.getItem("agenda")).eventi;
+          $("#agenda_wrapper_content").empty();
+          for (var key in eventi) {
+            var currentEvento = eventi[key];
+            $("#agenda_wrapper_content").append(new AgendaListItemView({
+              model: new Evento(currentEvento)
+            }).render().el);
           }
         }
       });
