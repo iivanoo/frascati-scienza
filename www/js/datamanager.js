@@ -36,7 +36,6 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         var agenda = {"enti": {}, "eventi": {}};
         localStorage.setItem("agenda", JSON.stringify(agenda));
       } 
-
       this.enti.on('reset', this.checkDataReady, this);
       this.eventi.on('reset', this.checkDataReady, this);
       this.sponsors.on('reset', this.checkDataReady, this);
@@ -152,9 +151,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           self.sponsors.create(currentElement);
         }
       }
-      delete this.staticData;
+      setTimeout(function(){self.checkDataReady();},1000);
+
       // chiudi Spinner
-      this.spinner.stop();
+      self.spinner.stop();
     }
   };
 

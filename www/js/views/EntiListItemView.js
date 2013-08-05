@@ -29,7 +29,6 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         },
 
         goToEnte: function(event) {
-          debugger;
           var path = "enti/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         }
