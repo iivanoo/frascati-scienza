@@ -408,10 +408,10 @@ margin-bottom: 15px;
 	}
 
 .row_wrapper{
-	
-	height: 100px; /*80px*/
+	padding-top: 10px;
+	/* height: 100px; 80px*/
 	width:100%;
-	display: block;
+	display: inline-block;
 	background-color: #f4f4f4;
 	border-bottom: 1px solid #9f9f9f;
 }
@@ -477,6 +477,33 @@ margin-bottom: 15px;
 
 .arrow_wrapper img{
 	width: 50%;
+}
+
+
+
+
+
+
+.icon_map_sponsor{
+
+	display: inline-block;
+	background-image: url('../img/map_sponsor_ic.png');
+	background-size: auto 40px;
+	background-repeat: no-repeat;
+		height: 40px;
+		width: 40px;
+
+	
+}
+
+
+.icon_www_sponsor{
+	display: inline-block;
+	background-image: url('../img/www_sponsor_ic.png');
+	background-size: auto 40px;
+	background-repeat: no-repeat;
+		height: 40px;
+		width: 40px;
 }
 /* lista */ 
 
@@ -794,7 +821,7 @@ margin-left: 20px;
 
 
 .eventi_ente{
-	z-index: 2;
+z-index: 2;
 position: fixed;
 left: 35%;
 top: 50px;
