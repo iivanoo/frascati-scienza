@@ -15,10 +15,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         render: function () {
           // gestione nav bar
-          document.getElementById("volatile").classList.add("nonvisibile");
-          document.getElementById("legenda").classList.remove("nonvisibile");
-          document.getElementById("ricerca").classList.remove("nonvisibile");
-          // fine gestione nav bar
+          this.updateNavbar();
+
           $(this.el).html(this.template({}));
           var el = $("#titlebar");
           el.removeClass();
@@ -29,6 +27,22 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             }).render().el);
           }
           return this;
+        },
+
+        updateNavbar: function () {
+          document.getElementById("volatile").classList.add("nonvisibile");
+          var functions = document.getElementsByClassName("button_list_element_small");
+          for(var i=0; i< functions.length; i++) {
+            if(functions[i].id == "legenda") {
+              functions[i].classList.remove("nonvisibile");
+              continue;
+            }
+            if(functions[i].id == "ricerca") {
+              functions[i].classList.remove("nonvisibile");
+              continue;
+            }
+            functions[i].classList.add("nonvisibile");
+          }
         }
       });
 

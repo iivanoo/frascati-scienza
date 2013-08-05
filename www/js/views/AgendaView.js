@@ -12,6 +12,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
         template: Handlebars.compile(template),
 
         render: function () {
+          // gestione nav bar
+          this.updateNavbar();
+
           $(this.el).html(this.template({}));
           var el = $("#titlebar");
           el.removeClass();
@@ -29,6 +32,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
             }
           }
           return this;
+        },
+
+        updateNavbar: function () {
+          document.getElementById("volatile").classList.remove("nonvisibile");
+          var functions = document.getElementsByClassName("button_list_element_small");
+          for(var i=0; i< functions.length; i++) {
+            functions[i].classList.add("nonvisibile");
+          }
         }
       });
 
