@@ -67,6 +67,12 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           var path = "sezioneEnte/miglioriamo/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
+
+        addAgenda: function (event) {
+          var agenda = JSON.parse(localStorage.getItem("agenda"));
+          agenda.enti[this.model.get("__id")] = this.model.toJSON();
+          localStorage.setItem("agenda", JSON.stringify(agenda));
+        }
       });
 
     return EnteView;

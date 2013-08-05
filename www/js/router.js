@@ -158,6 +158,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
            this.currentView.remove();
         }
         this.currentView = page;
+        this.structureView.currentView = page;
         page.render();
         this.structureView.$el.find("#content").append($(page.el));
         this.currentView.trigger("inTheDom");

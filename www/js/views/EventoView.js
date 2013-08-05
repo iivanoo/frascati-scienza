@@ -35,6 +35,12 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
             }
             functions[i].classList.add("nonvisibile");
           }
+        },
+
+        addAgenda: function (event) {
+          var agenda = JSON.parse(localStorage.getItem("agenda"));
+          agenda.eventi[this.model.get("__id")] = this.model.toJSON();
+          localStorage.setItem("agenda", JSON.stringify(agenda));
         }
       });
 

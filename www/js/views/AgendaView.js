@@ -16,9 +16,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
           this.updateNavbar();
 
           $(this.el).html(this.template({}));
-          var el = $("#titlebar");
-          el.removeClass();
-          el.addClass("agenda_top");
+          var elem = $("#titlebar");
+          elem.removeClass();
+          elem.addClass("agenda_top");
           var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "agenda") {
@@ -31,6 +31,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/agenda
               }
             }
           }
+/*          for (var i = 0; i < this.model.length; i++) {
+            $(this.el).append(new SponsorListItemView({
+              model: this.model.at(i)
+            }).render().el);
+          }*/
           return this;
         },
 
