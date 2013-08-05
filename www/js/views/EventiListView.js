@@ -9,6 +9,14 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         template: Handlebars.compile(template),
 
+        events: {
+          "touchend .day_back": "dayBack",
+          "touchend .day_next": "dayNext"
+        }, 
+
+        // 21 settembre 1:00
+        currentDay: 1379725200,
+
         initialize: function() {
             this.title = "Eventi";
             this.on("inTheDom", this.addEvents);
@@ -41,23 +49,35 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           }
         },
 
-        addEvents: function(day) {
-          var notteWrapper =  $("#notte_wrapper");
-          var altriWrapper =  $("#altri_wrapper");
+        addEvents: function() {
+          var notteWrapper =  $("#notte_wrapper").empty();
+          var altriWrapper =  $("#altri_wrapper").empty();
           var wrapper;
-          var a = this.model.search(1374410958, 1374410958);
-          debugger;
-          for (var i = 0; i < this.model.length; i++) {
-            if(this.model.at(i).get("nottericercatori")) {
-              wrapper = notteWrapper;
-            } else {
-              wrapper = altriWrapper;
-            }
-            wrapper.append(new EventiListItemView({
-              model: this.model.at(i)
+
+          var filteredModel = this.model.search(this.currentDay, this.currentDay + 86400000).toArray();
+          for (var i = 0; i < filteredModel.length; i++) {
+            notteWrapper.append(new EventiListItemView({
+              model: filteredModel[i]
             }).render().el);
           }
-        }
+          // popoliamo la lista degli altri eventi
+          var otherEvents = this.model.where({nottericercatori: false});
+          for(var i=0; i<otherEvents.length; i++) {
+            altriWrapper.append(new EventiListItemView({
+              model: otherEvents[i]
+            }).render().el);
+          }
+        },
+
+        dayBack: function(event) {
+          this.currentDay = this.currentDay - 86400000;
+          this.addEvents();
+        },
+
+        dayNext: function(event) {
+          this.currentDay = this.currentDay + 86400000;
+          this.addEvents();
+        },
       });
 
     return EventiListView;

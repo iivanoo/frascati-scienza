@@ -37,7 +37,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         convertDate: function(unix) {
           var date = new Date(unix * 1000);
           var hours = date.getHours();
-          var minutes = date.getMinutes();
+          var minutes = (date.getMinutes() < 10? '0' : '') + date.getMinutes();
           return (hours + ':' + minutes);
         }
       });

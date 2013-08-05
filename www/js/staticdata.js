@@ -33,7 +33,7 @@ define({
   eventi: [{ // è una lista di elementi, qui ne ho messo uno solo per brevità
     id: "evento2",
     titolo: "titolo_evento",
-    timestamp: "1374410955", //data evento (in formato Unix)"
+    timestamp: "1379786400", //data evento (in formato Unix)"
     descrizione: "testo descrizione evento",
     immagine: "http://url",
     video: "http://url",
