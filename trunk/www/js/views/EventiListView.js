@@ -14,11 +14,10 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           "touchend .day_next": "dayNext"
         }, 
 
-        // 21 settembre 1:00
-        currentDay: 1379725200,
-
         initialize: function() {
             this.title = "Eventi";
+            // 21 settembre 1:00
+            this.currentDay = 1379725200;
             this.on("inTheDom", this.addEvents);
           },
 
@@ -54,15 +53,26 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var altriWrapper =  $("#altri_wrapper").empty();
           var wrapper;
 
-          var filteredModel = this.model.search(this.currentDay, this.currentDay + 86400000).toArray();
+          var dateName = document.getElementsByClassName("date")[0];
+          var date = new Date(this.currentDay * 1000);
+          var months = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio',
+'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre','dicembre'];
+          dateName.innerHTML = date.getDate() + " " + months[date.getMonth()].toUpperCase();
+
+          var filteredModel = this.model.search(this.currentDay, this.currentDay + 86400).toArray();
           for (var i = 0; i < filteredModel.length; i++) {
-            notteWrapper.append(new EventiListItemView({
-              model: filteredModel[i]
-            }).render().el);
+            if(!filteredModel[i].nottericercatori) {
+              notteWrapper.append(new EventiListItemView({
+                model: filteredModel[i]
+              }).render().el);
+          }
           }
           // popoliamo la lista degli altri eventi
           var otherEvents = this.model.where({nottericercatori: false});
           for(var i=0; i<otherEvents.length; i++) {
+            var date = new Date(otherEvents[i].get("timestamp") * 1000);
+            var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+            otherEvents[i].set("date", dateString);
             altriWrapper.append(new EventiListItemView({
               model: otherEvents[i]
             }).render().el);
@@ -70,12 +80,12 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         },
 
         dayBack: function(event) {
-          this.currentDay = this.currentDay - 86400000;
+          this.currentDay = this.currentDay - 86400;
           this.addEvents();
         },
 
         dayNext: function(event) {
-          this.currentDay = this.currentDay + 86400000;
+          this.currentDay = this.currentDay + 86400;
           this.addEvents();
         },
       });
