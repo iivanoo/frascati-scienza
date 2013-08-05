@@ -96,7 +96,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
       },
 
       eventoDetails: function(id) {
-        debugger;
         var evento = Data.eventi.get(id);
         var eventoView = new EventoView({
           model: evento
