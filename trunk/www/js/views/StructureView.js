@@ -15,11 +15,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #eventiInactive": "eventi",
 /*          "touchend #cacciaInactive": "caccia",*/
           "touchend #agendaInactive": "agenda",
-          "touchend #legenda": "legenda"
+          "touchend #legenda": "legenda",
+          "touchend #aggiungiAgenda": "addAgenda"
         },
 
         initialize: function() {
           this.on("updateTitle", this.updateTitle);
+          this.currentView = undefined;
         },
 
         goBack: function () {
@@ -59,6 +61,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         legenda: function(event) {
           Backbone.history.navigate("legenda", {trigger: true});
+        },
+
+        addAgenda: function(event) {
+          this.currentView.addAgenda(event);
         }
       });
 
