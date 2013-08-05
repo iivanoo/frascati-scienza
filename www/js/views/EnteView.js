@@ -25,6 +25,9 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           this.updateNavbar();
 
           $(this.el).html(this.template({}));
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("nottericerca_top");
           return this;
         },
 

@@ -11,6 +11,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         initialize: function() {
             this.title = "Eventi";
+            this.on("inTheDom", this.addEvents);
           },
 
         render: function () {
@@ -21,11 +22,6 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("nottericerca_top");
-          for (var i = 0; i < this.model.length; i++) {
-            $(this.el).append(new EventiListItemView({
-              model: this.model.at(i)
-            }).render().el);
-          }
           return this;
         },
 
@@ -42,6 +38,24 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
               continue;
             }
             functions[i].classList.add("nonvisibile");
+          }
+        },
+
+        addEvents: function(day) {
+          var notteWrapper =  $("#notte_wrapper");
+          var altriWrapper =  $("#altri_wrapper");
+          var wrapper;
+          var a = this.model.search(1374410958, 1374410958);
+          debugger;
+          for (var i = 0; i < this.model.length; i++) {
+            if(this.model.at(i).get("nottericercatori")) {
+              wrapper = notteWrapper;
+            } else {
+              wrapper = altriWrapper;
+            }
+            wrapper.append(new EventiListItemView({
+              model: this.model.at(i)
+            }).render().el);
           }
         }
       });

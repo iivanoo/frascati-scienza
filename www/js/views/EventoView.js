@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text!templates/ente.html"],
+define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text!templates/evento.html"],
     function ($, _, Backbone, Evento, Handlebars, template) {
 
     var EnteView = Backbone.View.extend({

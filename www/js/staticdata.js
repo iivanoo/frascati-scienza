@@ -33,7 +33,7 @@ define({
   eventi: [{ // è una lista di elementi, qui ne ho messo uno solo per brevità
     id: "evento2",
     titolo: "titolo_evento",
-    timestamp: "1374410958", //data evento (in formato Unix)"
+    timestamp: "1374410955", //data evento (in formato Unix)"
     descrizione: "testo descrizione evento",
     immagine: "http://url",
     video: "http://url",
@@ -49,7 +49,7 @@ define({
     descrizione: "testo descrizione evento",
     immagine: "http://url",
     video: "http://url",
-    nottericercatori: true, // vale true se l'evento fa parte del programma della Notte dei Ricercatori, false altrimenti
+    nottericercatori: false, // vale true se l'evento fa parte del programma della Notte dei Ricercatori, false altrimenti
     tag: ["Tutti", "QR", "astronomia"], // lista dei tag dell'evento (vedi Legenda in Storyboard)
     ente: "ente1",
     luogo: {lat: "42.36812", lon: "13.350607"}
