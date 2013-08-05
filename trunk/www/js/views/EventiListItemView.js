@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text!templates/entilistitem.html"],
+define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text!templates/eventilistitem.html"],
     function ($, _, Backbone, Evento, Handlebars, template) {
 
     var EventiListItemView = Backbone.View.extend({
@@ -23,6 +23,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           $(this.el).empty();
           var evento = this.model.toJSON();
           evento.cid = this.model.get("__id");
+          evento.time = this.convertDate(this.model.get("timestamp"));
           $(this.el).html(this.template(evento));
           $(this.el).attr("id", this.model.get("__id"));
           return this;
@@ -31,6 +32,13 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         goToEvento: function() {
           var path = "eventi/" + this.model.cid;
           Backbone.history.navigate(path, {trigger: true});
+        },
+
+        convertDate: function(unix) {
+          var date = new Date(unix * 1000);
+          var hours = date.getHours();
+          var minutes = date.getMinutes();
+          return (hours + ':' + minutes);
         }
       });
 

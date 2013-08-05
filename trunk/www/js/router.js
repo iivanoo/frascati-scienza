@@ -97,7 +97,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
 
       eventoDetails: function(id) {
         var evento = Data.eventi.get(id);
-        var eventoView = new EevntoView({
+        var eventoView = new EventoView({
           model: evento
         });
         this.changePage(eventoView);
