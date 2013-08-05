@@ -46,11 +46,12 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
       function run() {
         // TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
         Data.initialize();
-        if(!localStorage.getItem("dataLoaded")) {
+/*        if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
         } else {
           Data.loadDbData();
-        }
+        }*/
+        Data.loadLocalData();
         Data.on("dataReady", function() {
           Backbone.history.start();
         });
