@@ -11,11 +11,16 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "tex
 
         events: {
           "touchend .icon_map_sponsor": "showMappa",
-          "touchend .icon_www_sponsor": "showSito"
+          "touchend .icon_www_sponsor": "showSito",
+          "touchmove": "touchMove"
         },
 
         initialize: function() {
-            //
+          this.moving = false;
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         template: Handlebars.compile(template),
@@ -30,10 +35,18 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "tex
         },
 
         showMappa: function() {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           Backbone.history.navigate("mappaSponsor/" + this.model.get("__id"), {trigger: true});
         },
 
         showSito: function(event) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           window.open(this.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi');
         },
       });
