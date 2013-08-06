@@ -211,6 +211,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       changePage: function (page) {
+        if(Backbone.history.history.length < 2) {
+          $("#backbutton").hide();
+        } else {
+          $("#backbutton").show();
+        }
         if(this.currentView) {
            this.currentView.remove();
         }

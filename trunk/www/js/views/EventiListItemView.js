@@ -10,12 +10,17 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         className: "event_row_wrapper",
 
         events: {
-          "touchend": "goToEvento"
+          "touchend": "goToEvento",
+          "touchmove": "touchMove"
         },
 
         initialize: function() {
-            //
+            this.moving = false;
           },
+
+        touchMove: function() {
+          this.moving = true;
+        },
 
         template: Handlebars.compile(template),
 
@@ -30,6 +35,10 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         },
 
         goToEvento: function() {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "eventi/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
