@@ -27,7 +27,7 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         },
 
         openUrl: function (event) {
-          debugger;
+          window.open(this.model.get("link"), '_blank', 'location=yes,closebuttoncaption=chiudi');
         }
       });
 
