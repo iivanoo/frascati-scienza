@@ -10,11 +10,16 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
         className: "simple_element_row_agenda",
 
         initialize: function() {
-            //
+          this.moving = false;
         },
 
         events: {
-          "touchend": "goToDetail"
+          "touchend": "goToDetail",
+          "touchmove": "touchMove"
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         template: Handlebars.compile(template),
@@ -29,6 +34,10 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
         },
 
         goToDetail: function(event) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           if(this.model.get("eventi")) {
             // è un ente
             var path = "enti/" + event.target.id;

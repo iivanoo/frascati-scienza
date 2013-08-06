@@ -10,12 +10,17 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         className: "row_wrapper",
 
         events: {
-          "touchend": "goToEnte"
+          "touchend": "goToEnte",
+          "touchmove": "touchMove"
         },
 
         initialize: function() {
-            //
-          },
+          this.moving = false;
+        },
+
+        touchMove: function() {
+          this.moving = true;
+        },
 
         template: Handlebars.compile(template),
 
@@ -29,6 +34,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         },
 
         goToEnte: function(event) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "enti/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         }

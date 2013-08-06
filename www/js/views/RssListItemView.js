@@ -10,12 +10,17 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         className: "row_wrapper",
 
         events: {
-          "touchend .row_wrapper": "openUrl"
+          "touchend .row_wrapper": "openUrl",
+          "touchmove": "touchMove"
         },
 
         initialize: function() {
-            //
-          },
+          this.moving = false;
+        },
+
+        touchMove: function() {
+          this.moving = true;
+        },
 
         template: Handlebars.compile(template),
 
@@ -27,6 +32,10 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         },
 
         openUrl: function (event) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           window.open(this.model.get("link"), '_blank', 'location=yes,closebuttoncaption=chiudi');
         }
       });

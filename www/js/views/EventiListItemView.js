@@ -15,8 +15,8 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         },
 
         initialize: function() {
-            this.moving = false;
-          },
+          this.moving = false;
+        },
 
         touchMove: function() {
           this.moving = true;

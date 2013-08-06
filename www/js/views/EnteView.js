@@ -10,13 +10,19 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           "touchend #ente_sx_bottom": "enteSxBottom",
           "touchend #ente_dx_top": "enteDxTop",
           "touchend #ente_dx_bottom": "enteDxBottom",
-          "touchend .eventi_ente": "eventi"
+          "touchend .eventi_ente": "eventi",
+          "touchmove": "touchMove"
         },
 
         className: "default_wrapper",
 
         initialize: function() {
             this.title = this.model.get("titolo");
+            this.moving = false;
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         template: Handlebars.compile(template),
@@ -53,23 +59,43 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         },
 
         enteSxTop: function () {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "sezioneEnte/chisiamo/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
         enteSxBottom: function () {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "sezioneEnte/contatti/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
         enteDxTop: function () {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "sezioneEnte/storia/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
         enteDxBottom: function () {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "sezioneEnte/miglioriamo/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
 
         eventi: function () {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var path = "eventiEnte/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },

@@ -5,6 +5,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
 
         initialize: function() {
             this.title = "Agenda Personale";
+            this.moving = false;
         },
 
         className: "default_wrapper",
@@ -13,7 +14,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
 
         events: {
           "touchend #ling_eventi": "showEventi",
-          "touchend #ling_enti": "showEnti"
+          "touchend #ling_enti": "showEnti",
+          "touchmove": "touchMove"
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         render: function () {
@@ -49,6 +55,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         },
 
         showEnti: function() {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var enti = JSON.parse(localStorage.getItem("agenda")).enti;
           $("#agenda_wrapper_content").empty();
           for (var key in enti) {
@@ -60,6 +70,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         },
 
         showEventi: function() {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
           var eventi = JSON.parse(localStorage.getItem("agenda")).eventi;
           $("#agenda_wrapper_content").empty();
           for (var key in eventi) {

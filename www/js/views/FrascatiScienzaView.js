@@ -11,11 +11,17 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
           "touchend #cassetto": "cassetto",
           "touchend #enti": "enti",
           "touchend #sponsor": "sponsor",
-          "touchend #continua_frascati": "continua"
+          "touchend #continua_frascati": "continua",
+          "touchmove": "touchMove"
       },
 
       initialize: function() {
         this.title = "Frascati Scienza";
+        this.moving = false;
+      },
+
+      touchMove: function() {
+        this.moving = true;
       },
 
       template: Handlebars.compile(template),
@@ -54,22 +60,38 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       },
 
       cassetto: function(event) {
+        if(this.moving) {
+            this.moving = false;
+            return;
+        } 
         var element = document.getElementById(event.currentTarget.id);
         element.classList.toggle("chiuso");
         element.classList.toggle("aperto");
       },
 
       enti: function(event) {
+        if(this.moving) {
+            this.moving = false;
+            return;
+        } 
         Backbone.history.navigate("enti", {trigger: true});
         $("#backbutton").show();
       },
 
       sponsor: function(event) {
+        if(this.moving) {
+            this.moving = false;
+            return;
+        } 
         Backbone.history.navigate("sponsor", {trigger: true});
         $("#backbutton").show();
       },
 
       continua: function(event) {
+        if(this.moving) {
+            this.moving = false;
+            return;
+          } 
         Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
         $("#backbutton").show();
       },
