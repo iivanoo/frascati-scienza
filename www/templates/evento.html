@@ -13,19 +13,19 @@
 {{/if}}	
 
 	<div class="greybar">
-		{{ titolo }}
+		{{{ titolo }}}
 	</div>
 	
 	
 	<div class="caption_block">
 		<div class="caption_content">
-	<p> {{ descrizione }} </p>
+	<p> {{{ descrizione }}} </p>
 
 	
 	<div class="symbols_wrapper">
-			<div class="symbol ad_famiglia"></div>
-			<div class="symbol ad_fisica"></div>
-			<div class="symbol ad_qrcode"></div>
+		{{#each tag}}
+  			<div class="symbol {{ this }}"></div>
+  		{{/each}}
 		</div>
 	
 		</div>

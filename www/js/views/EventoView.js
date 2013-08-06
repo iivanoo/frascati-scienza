@@ -16,6 +16,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         render: function () {
           // gestione nav bar
           this.updateNavbar();
+          this.model.set("descrizione", this.model.get("descrizione").replace(/(<([^>]+)>)/ig,""));
 
           $(this.el).html(this.template(this.model.toJSON()));
           return this;

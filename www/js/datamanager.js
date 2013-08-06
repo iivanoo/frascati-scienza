@@ -127,6 +127,21 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
 
       // data qui è accessibile dalla closure
       function createData() {
+
+        // gli underscore li aggiungiamo direttamente nel datamanager quando carichiamo i vari eventi
+        var tagClasses = {
+          Giovani: "ad_giovani", 
+          Pubblico_Generale: "ad_pubblicogenerale",
+          Scuole_Medie: "ad_medie",
+          Scuole_Elementari: "ad_elementari",
+          Scuole_Superiori: "ad_superiori",
+          Aperitivo_Scientifico: "ad_aperitivi",
+          Giochi_Scientifici: "ad_giochiscientifici",
+          Laboratorio: "ad_laboratori",
+          Seminario: "ad_seminari",
+          QR_code: "ad_qrcode"
+        };
+
         var currentElement;
         self.frascatiscienza = data.frascatiscienza;
         self.imgfrascatiscienza = data.imgfrascatiscienza;
@@ -142,6 +157,9 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         for(var i=0; i<eventi.eventi.length; i++) {
           currentElement = eventi.eventi[i];
           currentElement.__id = currentElement.id;
+          for(var j=0; j < currentElement.tag.length; j++) {
+            currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
+          }
           if(currentElement.macroevento == 193) {
             currentElement.nottericercatori = true;
           } else {
