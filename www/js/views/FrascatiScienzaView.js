@@ -29,9 +29,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
         el.removeClass();
         el.addClass("frascatiscienze_top");
         // se siamo in Frascati Scienza e non siamo passati da cover, allora il back è nascosto
-        if(Backbone.history.history.length <= 1) {
-          $("#backbutton").hide();
-        }
         var elements = document.getElementsByClassName("button_list_element");
         for(var i=0; i<elements.length; i++) {
           if(elements[i].id == "frascatiscienza") {
