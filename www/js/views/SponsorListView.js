@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "collections/Sponsors", "views/SponsorListItemView", "handlebars", "text!templates/sponsorlist.html"],
-    function ($, _, Backbone, Sponsors, SponsorListItemView, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "collections/Sponsors", "views/SponsorListItemView", "handlebars"],
+    function ($, _, Backbone, Sponsors, SponsorListItemView, Handlebars) {
 
     var SponsorView = Backbone.View.extend({
 
@@ -10,8 +10,6 @@ define(["jquery", "underscore", "backbone", "collections/Sponsors", "views/Spons
         initialize: function() {
             this.title = "Sponsor";
           },
-
-        template: Handlebars.compile(template),
 
         render: function () {
           // gestione nav bar
