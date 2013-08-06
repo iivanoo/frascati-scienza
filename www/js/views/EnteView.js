@@ -9,7 +9,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           "touchend #ente_sx_top": "enteSxTop",
           "touchend #ente_sx_bottom": "enteSxBottom",
           "touchend #ente_dx_top": "enteDxTop",
-          "touchend #ente_dx_bottom": "enteDxBottom"
+          "touchend #ente_dx_bottom": "enteDxBottom",
+          "touchend .eventi_ente": "eventi"
         },
 
         className: "default_wrapper",
@@ -65,6 +66,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         },
         enteDxBottom: function () {
           var path = "sezioneEnte/miglioriamo/" + this.model.get("__id");
+          Backbone.history.navigate(path, {trigger: true});
+        },
+
+        eventi: function () {
+          var path = "eventiEnte/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
 

@@ -73,7 +73,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       },
 
       continua: function(event) {
-        Backbone.history.navigate("enti/" + this.model.cid, {trigger: true});
+        Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
         $("#backbutton").show();
       },
     });
