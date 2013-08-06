@@ -9,6 +9,11 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "tex
 
         className: "row_wrapper",
 
+        events: {
+          "touchend .icon_map_sponsor": "showMappa",
+          "touchend .icon_www_sponsor": "showSito"
+        },
+
         initialize: function() {
             //
         },
@@ -22,7 +27,15 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "tex
           $(this.el).html(this.template(sponsor));
           $(this.el).attr("id", this.model.get("__id"));
           return this;
-        }
+        },
+
+        showMappa: function() {
+          Backbone.history.navigate("mappaSponsor/" + this.model.get("__id"), {trigger: true});
+        },
+
+        showSito: function(event) {
+          window.open(this.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi');
+        },
       });
 
     return SponsorListItemView;

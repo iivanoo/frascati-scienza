@@ -15,11 +15,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         }, 
 
         initialize: function() {
+          if(!this.title) {
             this.title = "Eventi";
-            // 21 settembre 1:00
-            this.currentDay = 1379725200;
-            this.on("inTheDom", this.addEvents);
-          },
+          }
+          // 21 settembre 1:00
+          this.currentDay = 1379725200;
+          this.on("inTheDom", this.addEvents);
+        },
 
         render: function () {
           // gestione nav bar

@@ -16,7 +16,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 /*          "touchend #cacciaInactive": "caccia",*/
           "touchend #agendaInactive": "agenda",
           "touchend #legenda": "legenda",
-          "touchend #aggiungiAgenda": "addAgenda"
+          "touchend #aggiungiAgenda": "addAgenda",
+          "touchend #www": "showSito",
+          "touchend #mappa": "showMappa"
         },
 
         initialize: function() {
@@ -65,7 +67,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
 
         addAgenda: function(event) {
           this.currentView.addAgenda(event);
-        }
+        },
+        showSito: function(event) {
+          window.open(this.currentView.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi');
+        },
+        showMappa: function(event) {
+          Backbone.history.navigate("mappa", {trigger: true});
+        },
       });
 
     return StructureView;

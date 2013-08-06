@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "staticdata"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "staticdata", "staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
@@ -64,7 +64,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       var target = document.getElementById('content');
       this.spinner.spin(target);
       var staticData = require("staticdata");
-      this.updateDb(staticData, true);
+      var staticEventi = require("staticeventi");
+      this.updateDb(staticData, staticEventi, true);
       localStorage.setItem("dataLoaded" , "yes");
     },
     checkNewData: function() {
@@ -111,7 +112,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       });
       return result;
     },
-    updateDb: function(data, clearDb) {
+    updateDb: function(data, eventi, clearDb) {
       var self = this;
       if(clearDb) {
         // cancello tutti i record delle tabelle
@@ -138,9 +139,14 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           delete currentElement.id;
           self.enti.create(currentElement);
         }
-        for(var i=0; i<data.eventi.length; i++) {
-          currentElement = data.eventi[i];
+        for(var i=0; i<eventi.eventi.length; i++) {
+          currentElement = eventi.eventi[i];
           currentElement.__id = currentElement.id;
+          if(currentElement.macroevento == 193) {
+            currentElement.nottericercatori = true;
+          } else {
+            currentElement.nottericercatori = false;
+          }
           delete currentElement.id;
           self.eventi.create(currentElement);
         }

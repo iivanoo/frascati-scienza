@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/StructureView"],
-    function ($, _, Backbone, Data, CoverView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/Mappa", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, MappaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -17,7 +17,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         "sezioneEnte/contatti/:id": "sezioneEnteContatti",
         "sezioneEnte/miglioriamo/:id": "sezioneEnteMiglioriamo",
         "eventi/:id": "eventoDetails",
-        "legenda": "legenda"
+        "eventiEnte/:id": "eventiEnte",
+        "eventiCerca/:keyword": "eventiCerca",
+        "legenda": "legenda",
+        "mappa": "mappa",
+        "mappaSponsor/:id": "mappaSponsor"
       },
 
       initialize: function () {
@@ -120,8 +124,61 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
         this.changePage(page); 
       },
 
+      eventiEnte: function (id) {
+        var elements = document.getElementsByClassName("button_list_element");
+        for(var i=0; i<elements.length; i++) {
+          if(elements[i].id == "eventi") {
+            elements[i].classList.remove("nonvisibile");
+          } else {
+            if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
+              elements[i].classList.add("nonvisibile");
+            } else {
+              elements[i].classList.remove("nonvisibile");
+            }
+          }
+        }
+        var filteredEventi = Data.eventi.getByEnte(id).toArray();
+        var page = new EventiListView({model: new Eventi(filteredEventi)});
+        page.title = "Eventi " + Data.enti.findWhere({"__id": id}).get("titolo");
+        this.changePage(page); 
+      },
+
+      eventiCerca: function (keyword) {
+        var elements = document.getElementsByClassName("button_list_element");
+        for(var i=0; i<elements.length; i++) {
+          if(elements[i].id == "eventi") {
+            elements[i].classList.remove("nonvisibile");
+          } else {
+            if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
+              elements[i].classList.add("nonvisibile");
+            } else {
+              elements[i].classList.remove("nonvisibile");
+            }
+          }
+        }
+        var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
+        var page = new EventiListView({model: new Eventi(filteredEventi)});
+        page.title = '"'  + keyword + '"';
+        this.changePage(page); 
+      },
+
       legenda: function () {
         var page = new LegendaView();
+        this.changePage(page); 
+      },
+
+      mappa: function () {
+        var page = new MappaView({
+          model: this.currentView.model
+        });
+        this.changePage(page); 
+      },
+
+      mappaSponsor: function (id) {
+        var sponsor = Data.sponsors.findWhere({"__id": id});
+        var page = new MappaView({
+          model: sponsor
+        });
         this.changePage(page); 
       },
 
@@ -141,7 +198,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "views/CoverView", "v
           $("#cover").remove();
           this.showStructure();
         }
-        var frascatiModel =  Data.enti.findWhere({__id :"Frascati_Scienza"});
+        var frascatiModel =  Data.enti.findWhere({__id :"frascati-scienza"});
         if(frascatiModel) {
           frascatiModel.set("frascatiscienza", Data.frascatiscienza);
           frascatiModel.set("imgfrascatiscienza", Data.imgfrascatiscienza);
