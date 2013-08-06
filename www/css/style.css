@@ -63,6 +63,10 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 }
 
+#volatile{
+	text-align: right;
+}
+
 #button_list{
 	width: 100%;
 	
@@ -453,7 +457,7 @@ margin-bottom: 15px;
 .textlist_wrapper_legenda{
 	padding-top: 10px;
 	float:left;
-	width:55%;
+	width:75%;
 	min-width: 120px;
 	display: block;
 	
@@ -540,6 +544,10 @@ margin-bottom: 15px;
 	color: white;
 	font-size: 12px;
 	height: 22px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+
 	
 }
 
@@ -564,9 +572,9 @@ margin-bottom: 15px;
 .eventlist_title{
 	margin-left: 5px;
 	margin-right: 5px;
-	font-size: 15px;
-	height: 18px;
-	overflow-x:hidden;
+	font-size: 1em;
+	white-space: nowrap;
+	overflow:hidden;
 	text-overflow: ellipsis;
 	font-family: 'Dax';
 	
@@ -578,8 +586,9 @@ margin-bottom: 15px;
 	padding:0px;
 	font-size: 12px;
 	height: 18px;
-	overflow-x:hidden;
+	overflow:hidden;
 	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .eventlist_content{
@@ -588,7 +597,7 @@ margin-bottom: 15px;
 	margin: 0px;
 	padding-left: 5px;
 	font-size: 10px;
-	overflow-y: hidden;
+	overflow:hidden;
 	text-overflow: ellipsis;
 	text-align: justify;
 	height: 55px;
@@ -596,11 +605,8 @@ margin-bottom: 15px;
 }
 
 
-
-
-
 .symbols_wrapper{
-	margin-top: -25px;
+	/*margin-top: -25px;*/
 	height: 50px;
 	}
 
