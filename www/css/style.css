@@ -63,8 +63,9 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 }
 
-#volatile{
-	text-align: right;
+.tasti_dx{
+	float: right;
+	display: inline-block;	
 }
 
 #button_list{
@@ -96,7 +97,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	
 	text-align: center;
 	float: left;
-	width:12.5%;
+	/*width:12.5%;*/
     margin-left: 0px;
 	margin-top: 0px;
 }
