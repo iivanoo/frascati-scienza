@@ -1,0 +1,27 @@
+{{#if immagine}}
+	<div class="default_coverimage_block">
+		<img src="{{ immagine }}">
+	</div>
+{{else}}
+	{{#if video}}
+	<div class="default_coverimage_block">
+		<video>
+		  <source src="{{ video }}" type="video/mp4">
+		</video>
+	</div>
+	{{/if}}
+{{/if}}	
+	
+	<div class="greybar">
+		 {{ titolo }} 
+	</div>
+	
+	<div class="caption_block">
+	
+		<div class="caption_content">
+			<p>
+				{{ testo }}
+			</p>
+			
+		</div>
+	</div>
