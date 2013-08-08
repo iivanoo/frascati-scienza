@@ -173,13 +173,11 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #content {
     position: relative;
    /* height: calc(100% - 44px - 44px);*/
-	-webkit-overflow-scrolling: touch;
-
     width: 100%;
     left: 0;
     top: 44px;
     bottom:44px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -313,13 +311,14 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .default_wrapper{
 	/*margin-top: 15px;*/
 	height: 100%;
+	overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 
 .default_wrapper_fixed{
 	/*margin-top: 15px;*/
 	height: 100%;
-	-webkit-overflow: hidden;
+	overflow: hidden;
     -webkit-overflow-scrolling: auto;
 }
 
@@ -424,6 +423,7 @@ margin-bottom: 15px;
 /* lista */
 
 .defaultlist_wrapper{
+	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	background-color: #f4f4f4;
 	/*margin-bottom: 44px;	*/
