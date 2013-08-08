@@ -7,6 +7,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/legend
             this.title = "Legenda";
           },
 
+        className: "defaultlist_wrapper",
+
         template: Handlebars.compile(template),
 
         render: function () {
