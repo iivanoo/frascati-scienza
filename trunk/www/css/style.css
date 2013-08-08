@@ -172,6 +172,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #content {
     position: relative;
+    -webkit-overflow-scrolling: touch;
    /* height: calc(100% - 44px - 44px);*/
     
     width: 100%;

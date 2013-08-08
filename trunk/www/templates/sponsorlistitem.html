@@ -1,7 +1,7 @@
 <!-- row item -->
 		{{#if immagine}}
 		<div class="img_wrapper">
-			<img src="{{ immagine }}">
+			<img src="{{ immagine }}" onerror="ImgError(this);">
 		</div>
 		{{/if}}	
 		<div class="textlist_wrapper">
