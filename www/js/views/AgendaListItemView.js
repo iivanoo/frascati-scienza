@@ -11,15 +11,26 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
 
         initialize: function() {
           this.moving = false;
+          this.touchEnded = false;
         },
 
         events: {
           "touchend": "goToDetail",
-          "touchmove": "touchMove"
+          "touchmove": "touchMove",
+          "touchstart": "touchStart"
         },
 
         touchMove: function() {
           this.moving = true;
+        },
+
+        touchStart: function() {
+/*          var self = this;
+          setTimeout(function(){
+            if(!self.touchEnded && !self.moving) {
+              debugger;
+            }
+          }, 1000); */
         },
 
         template: Handlebars.compile(template),
@@ -34,10 +45,12 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
         },
 
         goToDetail: function(event) {
+          debugger;
           if(this.moving) {
             this.moving = false;
             return;
           } 
+          this.touchEnded = true;
           if(this.model.get("eventi")) {
             // è un ente
             var path = "enti/" + event.target.id;
