@@ -7,6 +7,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/legend
             this.title = "Legenda";
           },
 
+        className: "defaultlist_wrapper",
+
         template: Handlebars.compile(template),
 
         render: function () {
@@ -14,6 +16,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/legend
           this.updateNavbar();
 
           $(this.el).html(this.template({}));
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("nottericerca_top");
           return this;
         },
 

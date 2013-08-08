@@ -16,7 +16,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         render: function () {
           // gestione nav bar
           this.updateNavbar();
-          this.model.set("descrizione", this.model.get("descrizione").replace(/(<([^>]+)>)/ig,""));
+          this.model.set("descrizione", this.model.get("descrizione").strip());
 
           $(this.el).html(this.template(this.model.toJSON()));
           return this;
@@ -42,7 +42,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           var agenda = JSON.parse(localStorage.getItem("agenda"));
           agenda.eventi[this.model.get("__id")] = this.model.toJSON();
           localStorage.setItem("agenda", JSON.stringify(agenda));
-          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda');
+          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "");
         }
       });
 
