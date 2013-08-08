@@ -34,7 +34,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           $(this.el).html(this.template({}));
           var el = $("#titlebar");
           el.removeClass();
-          el.addClass("nottericerca_top");
+          el.addClass("frascatiscienze_top");
           return this;
         },
 
