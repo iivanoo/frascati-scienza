@@ -18,7 +18,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #legenda": "legenda",
           "touchend #aggiungiAgenda": "addAgenda",
           "touchend #www": "showSito",
-          "touchend #mappa": "showMappa"
+          "touchend #mappa": "showMappa",
+          "touchend #ricerca": "ricerca"
         },
 
         initialize: function() {
@@ -75,6 +76,18 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         showMappa: function(event) {
           Backbone.history.navigate("mappa", {trigger: true});
         },
+
+        ricerca: function(event) {
+          navigator.notification.prompt("Cerca negli eventi", function(results) {
+            if(results.buttonIndex == 1) {
+              if(results.input1) {
+                Backbone.history.navigate("eventiCerca/" + results.input1.strip(), {trigger: true});
+              } else {
+                Backbone.history.navigate("eventi", {trigger: true});
+              }
+            }
+          }, "Cerca", ["OK","Annulla"], "cerca...")
+        }
       });
 
     return StructureView;
