@@ -27,7 +27,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "leaf
 
         addMap: function() {
           var options ={center: new L.LatLng(this.model.get("luogo").lat, this.model.get("luogo").lon),
-            zoom: 13
+            zoom: 16
           };
           var map = L.map('map', options);
 
@@ -42,10 +42,12 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "leaf
             L.marker([position.coords.latitude, position.coords.longitude], {icon: positionIcon}).addTo(map);
           }, function() {});
 
-          L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>',
               maxZoom: 20
-          }).addTo(map);    
+          });
+
+          map.addLayer(layer);    
         }
       });
 
