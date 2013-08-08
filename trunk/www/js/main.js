@@ -52,6 +52,13 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
           return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
       };
 
+      Object.prototype.isEmpty = function() {
+        for (var prop in this) {
+            if (this.hasOwnProperty(prop)) return false;
+        }
+        return true;
+      };
+
       document.addEventListener("deviceready", run, false);
 
       function run() {
