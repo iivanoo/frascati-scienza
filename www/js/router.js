@@ -211,7 +211,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       changePage: function (page) {
-        var contentClasses = document.getElementbyId("content").classList;
+        var contentClasses = document.getElementById("content").classList;
         if((page instanceof EnteView) || (page instanceof FrascatiScienzaView)) {
           contentClasses.add("not_scrollable");
           contentClasses.remove("scrollable");
