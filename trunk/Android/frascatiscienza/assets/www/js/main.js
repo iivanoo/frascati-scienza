@@ -33,12 +33,23 @@ require.config({
 
 var db = openDatabase("data", "1", "data", 2048*2048);
 
+function ImgError(source){
+  empty1x1png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=";
+  source.src = "data:image/png;base64," + empty1x1png;
+  source.onerror = "";
+  return true;
+}
+
 // We launch the App
 require(['underscore', 'backbone', 'router', 'datamanager'],
     function (_, Backbone, AppRouter, Data) {
 
       String.prototype.endsWith = function(suffix) {
           return this.indexOf(suffix, this.length - suffix.length) !== -1;
+      };
+
+      String.prototype.strip = function() {
+          return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
       };
 
       document.addEventListener("deviceready", run, false);

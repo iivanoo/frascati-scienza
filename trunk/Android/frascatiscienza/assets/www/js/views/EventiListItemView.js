@@ -26,6 +26,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         render: function () {
           $(this.el).empty();
+          this.model.set("descrizione", this.model.get("descrizione").strip());
           var evento = this.model.toJSON();
           evento.cid = this.model.get("__id");
           evento.time = this.convertDate(this.model.get("timestamp"));

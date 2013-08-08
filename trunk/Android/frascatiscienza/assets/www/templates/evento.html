@@ -1,6 +1,7 @@
 {{#if immagine}}
 	<div class="default_coverimage_block">
-		<img src="{{ immagine }}">
+		<img src="{{ immagine }}" onerror="ImgError(this);">
+
 	</div>
 {{else}}
 	{{#if video}}

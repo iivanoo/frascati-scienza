@@ -10,7 +10,7 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
         className: "row_wrapper",
 
         events: {
-          "touchend .row_wrapper": "openUrl",
+          "touchend": "openUrl",
           "touchmove": "touchMove"
         },
 
