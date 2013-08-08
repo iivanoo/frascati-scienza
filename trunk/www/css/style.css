@@ -103,7 +103,10 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 #button_list img{
-	height:38px;
+	/*height:38px;*/
+	
+	height: 43px;
+	margin-left: -8px;
 	
 }
 
@@ -610,7 +613,7 @@ margin-bottom: 15px;
 }
 
 .eventlist_content{
-	
+	/*
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -619,7 +622,16 @@ margin-bottom: 15px;
 	text-overflow: ellipsis;
 	text-align: justify;
 	height: 55px;
+	*/
 	
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	max-height: 22px;
+	line-height: 11px;
 }
 
 .eventlist_dots{
@@ -913,8 +925,71 @@ font-family: 'dax';
 }
 
 
+.rss_list_title{
+	margin-left: 5px;
+	font-size: 11px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	
+	
+}
+
+.rss_list_content{
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	max-height: 22px;
+	line-height: 11px;
+	
+}
+
+.rss_list_dots{
+	
+	display: block;
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	text-align: right;
+	height: 10px;
+	margin-right: -10px;
+	margin-top: -12px;
+	margin-bottom: 20px;
+}
+
+
+.rss_element_row{
+	width: 100%;
+float: left;
+box-sizing: border-box;
+}
+
+
+
 
 /* AGENDA */
+
+#agenda_empty{
+	
+text-align: justify;
+font-size: 1.2em;
+height: inherit;
+top: 44px;
+color: white;
+position: fixed;
+z-index: 10;
+line-height: 1.5em;
+padding-left: 10px;
+padding-right: 20px;
+background: rgba(10,10,10,0.9);
+}
+
+
 
 .agenda_wrapper_content{
 	position: relative;
@@ -945,14 +1020,51 @@ font-family: 'dax';
 }
 
 .simple_text_list{
+	width:70%;
+	min-width: 120px;
+	display: inline-block;
+
 	font-size: 11px;
 	float: left;
-	padding-left: 10px;
+
+}
+
+.agenda_list_title{
+	margin-left: 5px;
+	font-size: 11px;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	
 	
 }
 
+.agenda_list_content{
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	max-height: 22px;
+	line-height: 11px;
+	
+}
 
-
+.agenda_list_dots{
+	
+	display: block;
+	margin: 0px;
+	padding-left: 5px;
+	font-size: 10px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	text-align: right;
+	height: 10px;
+	margin-right: -10px;
+	margin-top: -12px;
+	margin-bottom: 20px;
+}
 
 
 .simple_text_list h2{
