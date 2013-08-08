@@ -14,7 +14,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           "touchmove": "touchMove"
         },
 
-        className: "default_wrapper_fixed",
+        className: "default_wrapper",
 
         initialize: function() {
             this.title = this.model.get("titolo");
