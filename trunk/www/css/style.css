@@ -172,7 +172,6 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #content {
     position: relative;
-    -webkit-overflow-scrolling: touch;
    /* height: calc(100% - 44px - 44px);*/
     
     width: 100%;
@@ -313,8 +312,13 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .default_wrapper{
 	/*margin-top: 15px;*/
 	height: 100%;
-		
-	
+    -webkit-overflow-scrolling: touch;
+}
+
+.default_wrapper_fixed{
+	/*margin-top: 15px;*/
+	height: 100%;
+    -webkit-overflow-scrolling: auto;
 }
 
 .default_coverimage_block{
@@ -418,7 +422,7 @@ margin-bottom: 15px;
 /* lista */
 
 .defaultlist_wrapper{
-	
+	-webkit-overflow-scrolling: touch;
 	background-color: #f4f4f4;
 	/*margin-bottom: 44px;	*/
 	}
@@ -913,7 +917,7 @@ font-family: 'dax';
 
 .agenda_wrapper_content{
 	position: relative;
-	
+	-webkit-overflow-scrolling: touch;
 }
 
 .simple_element_row_agenda{
