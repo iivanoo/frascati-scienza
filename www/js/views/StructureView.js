@@ -55,7 +55,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         },
 
         caccia: function(event) {
-            navigator.notification.alert('La caccia al tesoro sarà disponibile a breve!', function() {}, "");
+            navigator.notification.alert('La caccia al tesoro sarà disponibile a breve!', function() {}, "Coming soon");
             // Backbone.history.navigate("caccia", {trigger: true});
         },
         
