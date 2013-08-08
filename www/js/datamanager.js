@@ -12,10 +12,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
 
     initialize: function() {
       var opts = {
-        lines: 13, // The number of lines to draw
-        length: 20, // The length of each line
-        width: 10, // The line thickness
-        radius: 20, // The radius of the inner circle
+        lines: 5, // The number of lines to draw
+        length: 15, // The length of each line
+        width: 5, // The line thickness
+        radius: 15, // The radius of the inner circle
         corners: 1, // Corner roundness (0..1)
         rotate: 0, // The rotation offset
         direction: 1, // 1: clockwise, -1: counterclockwise

@@ -65,7 +65,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             this.moving = false;
             return;
           } 
-          if(!this.preferiti.enti && !this.preferiti.eventi) {
+          if((this.preferiti.enti.isEmpty()) && (this.preferiti.eventi.isEmpty())) {
             document.getElementById("agenda_empty").classList.remove("nonvisibile");
           }
           var enti = this.preferiti.enti;
