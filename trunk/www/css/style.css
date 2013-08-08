@@ -318,6 +318,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .default_wrapper_fixed{
 	/*margin-top: 15px;*/
 	height: 100%;
+	-webkit-overflow: hidden;
     -webkit-overflow-scrolling: auto;
 }
 
