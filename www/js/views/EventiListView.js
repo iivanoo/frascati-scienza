@@ -11,8 +11,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         events: {
           "touchend .day_back": "dayBack",
-          "touchend .day_next": "dayNext",
-          "touchend #ricerca": "ricerca"
+          "touchend .day_next": "dayNext"
         }, 
 
         initialize: function() {
@@ -90,14 +89,6 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         dayNext: function(event) {
           this.currentDay = this.currentDay + 86400;
           this.addEvents();
-        },
-
-        ricerca: function(event) {
-          navigator.notification.prompt("Cerca negli eventi", function(results) {
-            if(results.buttonIndex == 1 && results.input1) {
-              Backbone.history.navigate("eventiCerca/" + results.input1.strip(), {trigger: true});
-            }
-          }, "Cerca", ["OK","Annulla"], "cerca...")
         }
       });
 
