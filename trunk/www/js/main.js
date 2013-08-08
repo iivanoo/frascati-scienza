@@ -48,6 +48,10 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
           return this.indexOf(suffix, this.length - suffix.length) !== -1;
       };
 
+      String.prototype.strip = function() {
+          return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
+      };
+
       document.addEventListener("deviceready", run, false);
 
       function run() {
