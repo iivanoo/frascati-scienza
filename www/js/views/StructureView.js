@@ -9,11 +9,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #backbutton": "goBack",
           "touchend #frascatiscienza": "frascatiscienza",
           "touchend #eventi": "eventi",
-/*          "touchend #caccia": "caccia",*/
+          "touchend #caccia": "caccia",
           "touchend #agenda": "agenda",
           "touchend #frascatiscienzaInactive": "frascatiscienza",
           "touchend #eventiInactive": "eventi",
-/*          "touchend #cacciaInactive": "caccia",*/
+          "touchend #cacciaInactive": "caccia",
           "touchend #agendaInactive": "agenda",
           "touchend #legenda": "legenda",
           "touchend #aggiungiAgenda": "addAgenda",
@@ -53,9 +53,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           Backbone.history.navigate("eventi", {trigger: true});
         },
 
-/*        caccia: function(event) {
-            Backbone.history.navigate("caccia", {trigger: true});
-        },*/
+        caccia: function(event) {
+            navigator.notification.alert('La caccia al tesoro sarà disponibile a breve!', function() {}, "");
+            // Backbone.history.navigate("caccia", {trigger: true});
+        },
         
         agenda: function(event) {
           Backbone.history.navigate("agenda", {trigger: true});
