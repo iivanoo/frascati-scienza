@@ -182,6 +182,14 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     overflow-x: hidden;
 }
 
+.scrollable {
+   -webkit-overflow-scrolling: touch;
+}
+
+.not_scrollable {
+	   -webkit-overflow-scrolling: auto;
+}
+
 #backbutton {
     position:absolute;
     left: -4px;
