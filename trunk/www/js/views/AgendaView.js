@@ -65,11 +65,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             this.moving = false;
             return;
           } 
-          if((this.preferiti.enti.isEmpty()) && (this.preferiti.eventi.isEmpty())) {
+          if((isEmpty(this.preferiti.enti)) && (isEmpty(this.preferiti.eventi))) {
             document.getElementById("agenda_empty").classList.remove("nonvisibile");
           }
           var enti = this.preferiti.enti;
           $("#agenda_wrapper_content").empty();
+          debugger;
+
           for (var key in enti) {
             var currentEnte = enti[key];
             $("#agenda_wrapper_content").append(new AgendaListItemView({

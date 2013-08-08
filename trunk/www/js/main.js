@@ -40,6 +40,13 @@ function ImgError(source){
   return true;
 }
 
+var isEmpty = function(obj) {
+        for (var prop in obj) {
+            if (obj.hasOwnProperty(prop)) return false;
+        }
+        return true;
+      };
+
 // We launch the App
 require(['underscore', 'backbone', 'router', 'datamanager'],
     function (_, Backbone, AppRouter, Data) {
@@ -50,13 +57,6 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
 
       String.prototype.strip = function() {
           return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
-      };
-
-      Object.prototype.isEmpty = function() {
-        for (var prop in this) {
-            if (this.hasOwnProperty(prop)) return false;
-        }
-        return true;
       };
 
       document.addEventListener("deviceready", run, false);
