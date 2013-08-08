@@ -6,6 +6,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         initialize: function() {
             this.title = "Agenda Personale";
             this.moving = false;
+            this.preferiti = JSON.parse(localStorage.getItem("agenda"));
         },
 
         className: "default_wrapper",
@@ -15,7 +16,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         events: {
           "touchend #ling_eventi": "showEventi",
           "touchend #ling_enti": "showEnti",
-          "touchmove": "touchMove"
+          "touchmove": "touchMove",
+          "touchend #agenda_empty": "chiudiAgendaEmpty"
         },
 
         touchMove: function() {
@@ -42,7 +44,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
               }
             }
           }
-          this.on("inTheDom", this.showEnti);
+           this.on("inTheDom", this.showEnti);
           return this;
         },
 
@@ -54,12 +56,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
           }
         },
 
+        chiudiAgendaEmpty: function(event) {
+          document.getElementById("agenda_empty").classList.add("nonvisibile");
+        },
+
         showEnti: function() {
           if(this.moving) {
             this.moving = false;
             return;
           } 
-          var enti = JSON.parse(localStorage.getItem("agenda")).enti;
+          if(!this.preferiti.enti && !this.preferiti.eventi) {
+            document.getElementById("agenda_empty").classList.remove("nonvisibile");
+          }
+          var enti = this.preferiti.enti;
           $("#agenda_wrapper_content").empty();
           for (var key in enti) {
             var currentEnte = enti[key];
@@ -74,7 +83,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             this.moving = false;
             return;
           } 
-          var eventi = JSON.parse(localStorage.getItem("agenda")).eventi;
+          var eventi = this.preferiti.eventi;
           $("#agenda_wrapper_content").empty();
           for (var key in eventi) {
             var currentEvento = eventi[key];
