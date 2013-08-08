@@ -11,7 +11,6 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
 
         initialize: function() {
           this.moving = false;
-          this.touchEnded = false;
         },
 
         events: {
@@ -22,15 +21,6 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
 
         touchMove: function() {
           this.moving = true;
-        },
-
-        touchStart: function() {
-/*          var self = this;
-          setTimeout(function(){
-            if(!self.touchEnded && !self.moving) {
-              debugger;
-            }
-          }, 1000); */
         },
 
         template: Handlebars.compile(template),
@@ -45,20 +35,52 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
         },
 
         goToDetail: function(event) {
-          debugger;
           if(this.moving) {
             this.moving = false;
             return;
           } 
-          this.touchEnded = true;
-          if(this.model.get("eventi")) {
-            // è un ente
-            var path = "enti/" + event.target.id;
+          var now = new Date().getMilliseconds();
+          var self = this;
+          if(this.lastTouch && (now - this.lastTouch <= 300)) {
+            clearTimeout(this.timer);
+            this.manageDoubleTap();
+            this.lastTouch = undefined;
           } else {
-            // è un evento
-            var path = "eventi/" + event.target.id;
+            this.lastTouch = now;
+            this.timer = setTimeout(function(){
+               if(self.model.get("eventi")) {
+                // è un ente
+                var path = "enti/" + self.model.get("__id");
+              } else {
+                // è un evento
+                var path = "eventi/" + self.model.get("__id");
+              }
+              Backbone.history.navigate(path, {trigger: true});
+            },301);
           }
-          Backbone.history.navigate(path, {trigger: true});
+        },
+
+        manageDoubleTap: function() {
+          navigator.notification.confirm(
+                    'Sei sicuro di voler eliminare "' + this.model.get("titolo") + '" dalla tua agenda personale?',
+                     function(buttonIndex) {
+                      debugger;
+                        if(buttonIndex == 1) {
+                          var preferiti = JSON.parse(localStorage.getItem("agenda"));
+                          if(this.model.get("eventi")) {
+                            // è un ente
+                            delete preferiti.enti[this.model.get("__id")];
+                          } else {
+                            // è un evento
+                            delete preferiti.eventi[this.model.get("__id")];
+                          }
+                          localStorage.setItem("agenda", JSON.stringify(preferiti));
+                          this.remove();
+                        }
+                        self.on("touchend", self.goToDetail);
+                     }, 
+                    'Conferma',
+                    'Si,No');
         }
       });
 

@@ -16,8 +16,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         events: {
           "touchend #ling_eventi": "showEventi",
           "touchend #ling_enti": "showEnti",
-          "touchmove": "touchMove",
-          "touchend #agenda_empty": "chiudiAgendaEmpty"
+          "touchmove": "touchMove"
         },
 
         touchMove: function() {
@@ -44,7 +43,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
               }
             }
           }
-           this.on("inTheDom", this.showEnti);
+          this.on("inTheDom", this.showEnti);
           return this;
         },
 
@@ -54,10 +53,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
           }
-        },
-
-        chiudiAgendaEmpty: function(event) {
-          document.getElementById("agenda_empty").classList.add("nonvisibile");
         },
 
         showEnti: function() {
@@ -70,13 +65,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
           }
           var enti = this.preferiti.enti;
           $("#agenda_wrapper_content").empty();
-          debugger;
-
           for (var key in enti) {
             var currentEnte = enti[key];
-            $("#agenda_wrapper_content").append(new AgendaListItemView({
+            var view = new AgendaListItemView({
               model: new Ente(currentEnte)
-            }).render().el);
+            });
+            $("#agenda_wrapper_content").append(view.render().el);
+            view.trigger("inTheDom");
           }
         },
 
@@ -89,9 +84,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
           $("#agenda_wrapper_content").empty();
           for (var key in eventi) {
             var currentEvento = eventi[key];
-            $("#agenda_wrapper_content").append(new AgendaListItemView({
+            var view = new AgendaListItemView({
               model: new Evento(currentEvento)
-            }).render().el);
+            });
+            $("#agenda_wrapper_content").append(view.render().el);
+            view.trigger("inTheDom");
           }
         }
       });
