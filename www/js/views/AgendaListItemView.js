@@ -61,23 +61,23 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
         },
 
         manageDoubleTap: function() {
+          var self = this;
           navigator.notification.confirm(
                     'Sei sicuro di voler eliminare "' + this.model.get("titolo") + '" dalla tua agenda personale?',
                      function(buttonIndex) {
                       debugger;
                         if(buttonIndex == 1) {
                           var preferiti = JSON.parse(localStorage.getItem("agenda"));
-                          if(this.model.get("eventi")) {
+                          if(self.model.get("eventi")) {
                             // è un ente
-                            delete preferiti.enti[this.model.get("__id")];
+                            delete preferiti.enti[self.model.get("__id")];
                           } else {
                             // è un evento
-                            delete preferiti.eventi[this.model.get("__id")];
+                            delete preferiti.eventi[self.model.get("__id")];
                           }
                           localStorage.setItem("agenda", JSON.stringify(preferiti));
-                          this.remove();
+                          self.remove();
                         }
-                        self.on("touchend", self.goToDetail);
                      }, 
                     'Conferma',
                     'Si,No');
