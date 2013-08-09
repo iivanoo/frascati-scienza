@@ -386,7 +386,7 @@ margin-bottom: 15px;
 }
 
 .chiuso{
-	bottom: -60px;
+	bottom: -16px;
 }
 
 
@@ -975,7 +975,7 @@ box-sizing: border-box;
 /* AGENDA */
 
 #agenda_empty{
-	
+visibility: visible;	
 text-align: justify;
 font-size: 1.2em;
 height: inherit;
