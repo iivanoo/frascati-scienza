@@ -20,14 +20,14 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "io.cordova.helloCordova"
         version   = "2.0.0">
-    <name>Hello Cordova</name>
+    <name>Scienziati per una notte ed oltre</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+		Frascati Scienza
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
+    <author href="www.ivanomalavolta.com" email="ivanomalavolta@gmail.com">
+        Frascati Scienza
     </author>
 
     <access origin="*"/>
@@ -88,9 +88,6 @@
     </feature>
     <feature name="Battery">
       <param name="android-package" value="org.apache.cordova.BatteryListener"/>
-    </feature>
-    <feature name="SplashScreen">
-      <param name="android-package" value="org.apache.cordova.SplashScreen"/>
     </feature>
     <feature name="Echo">
       <param name="android-package" value="org.apache.cordova.Echo"/>
