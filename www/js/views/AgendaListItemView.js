@@ -48,7 +48,7 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
           } else {
             this.lastTouch = now;
             this.timer = setTimeout(function(){
-               if(self.model.get("eventi")) {
+               if(self.model.get("chisiamo")) {
                 // è un ente
                 var path = "enti/" + self.model.get("__id");
               } else {
