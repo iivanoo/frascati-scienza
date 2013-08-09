@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    jquery: '../lib/jquery/zepto',
+    jquery: '../lib/jquery/jquery-1.9.1.min', //'../lib/jquery/zepto',
     underscore: '../lib/underscore/underscore-min',
     backbone: "../lib/backbone/backbone",
     text: '../lib/require/text-1.0.6',
@@ -65,12 +65,21 @@ require(['underscore', 'backbone', 'router', 'datamanager'],
         // TODO check in che ordine andiamo a prenderci i dati e quando facciamo le query nel DB locale
         Data.initialize();
         var router = new AppRouter();
-        Data.loadLocalData();
 /*
         if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
         } else {
           Data.loadDbData();
+        }*/
+        Data.loadLocalData();
+        // qui controlliamo se ci sono dati nuovi
+/*        if(navigator.connection.type != Connection.NONE) {
+          //if(!Data.newDataChecked && Data.newDataAvailable()) {
+          //  Data.checkNewData();
+          //}
+          Data.loadLocalData();
+        } else {
+          Data.downloadNewData();
         }*/
 
         Data.on("dataReady", function() {

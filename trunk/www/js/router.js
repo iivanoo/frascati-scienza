@@ -205,9 +205,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         var page = new FrascatiScienzaView({model: frascatiModel});
         this.changePage(page);
-        if(!Data.newDataChecked && Data.newDataAvailable()) {
-          Data.checkNewData();
-        }
       },
 
       changePage: function (page) {

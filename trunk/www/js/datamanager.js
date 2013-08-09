@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "staticenti", "staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
@@ -9,6 +9,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     frascatiscienza: undefined,
     imgfrascatiscienza: undefined,
     staticEnti: undefined,
+    urlEnti_Eng: "TODO",
+    urlEventi_Eng: "TODO",
+    urlEnti_Ita: "TODO",
+    urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
 
     initialize: function() {
       var opts = {
@@ -63,40 +67,50 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       // visualizza Spinner
       var target = document.getElementById('content');
       this.spinner.spin(target);
-      var staticEnti = require("staticenti");
-      var staticEventi = require("staticeventi");
+      var staticEnti = require("../data/staticenti");
+      var staticEventi = require("../data/staticeventi");
       this.updateDb(staticEnti, staticEventi, true);
       localStorage.setItem("dataLoaded" , "yes");
     },
-    checkNewData: function() {
+/*    checkNewData: function() {
       newDataChecked = true;
       if (localStorage.getItem("language") === "eng") {
         navigator.notification.confirm('New data available, do you want to update it?', this.downloadNewData, 'New Data Available', 'Yes,No');
       } else {
         navigator.notification.confirm('Sono disponibili nuovi dati, vuoi scaricarli ora?', this.downloadNewData, 'Dati Aggiornati', 'Si,No');
       }
-    },
-    downloadNewData: function(buttonIndex) {
-      if (buttonIndex == 1) {
+    },*/
+    downloadNewData: function() {//buttonIndex) {
+      //if (buttonIndex == 1) {
         // visualizza Spinner
         var target = document.getElementById('content');
         this.spinner.spin(target);
-/*        var staticData = undefined; // qui ci va il caricamento del JSON
+        self = this;
+        $.ajaxSetup({
+          async: false
+        });
         if (localStorage.getItem("language") === "eng") {
-          // TODO download English data
-          $.getJSON('urlEnglish', function(response) {
-            staticData = response;
+          $.getJSON(this.urlEnti_Eng, function(response) {
+            self.staticEnti = response;
+          });
+          $.getJSON(this.urlEventi_Eng, function(response) {
+            self.staticEventi = response;
           });
         } else { 
-          // TODO download Italian data 
-          $.getJSON('urlItalian', function(response) {
-            staticData = response;
+          $.getJSON(this.urlEnti_Ita, function(response) {
+            self.staticEnti = response;
           });
-        }*/
+          $.getJSON(this.urlEventi_Ita, function(response) {
+            self.staticEventi = response;
+          });
+        }
+        $.ajaxSetup({
+          async: true
+        });
         this.updateDb(this.staticEnti, this.staticEventi, true);
-      }
+      //}
     },
-    newDataAvailable: function() {
+/*    newDataAvailable: function() {
       var result = false;
       var url;
       if (localStorage.getItem("language") === "eng") {
@@ -111,8 +125,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         }
       });
       return result;
-    },
-    updateDb: function(data, eventi, clearDb) {
+    },*/
+    updateDb: function(enti, eventi, clearDb) {
       var self = this;
       if(clearDb) {
         // cancello tutti i record delle tabelle
@@ -125,7 +139,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         createData();
       }
 
-      // data qui è accessibile dalla closure
+      // enti e eventi qui sono accessibili dalla closure
       function createData() {
 
         // gli underscore li aggiungiamo direttamente nel datamanager quando carichiamo i vari eventi
@@ -143,13 +157,13 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         };
 
         var currentElement;
-        self.frascatiscienza = data.frascatiscienza;
-        self.imgfrascatiscienza = data.imgfrascatiscienza;
+        self.frascatiscienza = enti.frascatiscienza;
+        self.imgfrascatiscienza = enti.imgfrascatiscienza;
         localStorage.setItem("frascatiscienza" , self.frascatiscienza);
         localStorage.setItem("imgfrascatiscienza" , self.imgfrascatiscienza);
-        localStorage.setItem("lastTimestamp", data.timestamp);
-        for(var i=0; i<data.enti.length; i++) {
-          currentElement = data.enti[i];
+        localStorage.setItem("lastTimestamp", enti.timestamp);
+        for(var i=0; i<enti.enti.length; i++) {
+          currentElement = enti.enti[i];
           currentElement.__id = currentElement.id;
           delete currentElement.id;
           self.enti.create(currentElement);

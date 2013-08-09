@@ -46,8 +46,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
               elements[i].classList.remove("nonvisibile");
             }
           }
-        }
-        
+        }        
         return this;
       },
 
