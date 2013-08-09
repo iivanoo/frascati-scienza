@@ -17,7 +17,6 @@ define(["jquery", "underscore", "backbone", "models/Evento"],
 
     getByEnte: function(ente) {
       return _(this.filter(function(data) {
-          debugger;
           return data.get("organizzatori").toString().indexOf(ente) != -1;
         }));
     },
