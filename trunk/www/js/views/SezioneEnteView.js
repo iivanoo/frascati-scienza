@@ -27,7 +27,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
               tipoText = "La nostra storia";
               break;
             case "miglioriamo":
-              tipoText = "Come miglioriamo la tua vita";
+              tipoText = "Per te";
           }
           var context = {titolo: tipoText, testo: this.model.get(tipo).testo};
           if(this.model.get(tipo).immagine) {
