@@ -137,7 +137,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
             }
           }
         }
-        debugger;
         var filteredEventi = Data.eventi.getByEnte(id).toArray();
         var page = new EventiListView({model: new Eventi(filteredEventi)});
         page.title = "Eventi " + Data.enti.findWhere({"__id": id}).get("titolo");
