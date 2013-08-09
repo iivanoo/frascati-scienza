@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "staticdata", "staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "staticenti", "staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
@@ -8,7 +8,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     spinner: undefined,
     frascatiscienza: undefined,
     imgfrascatiscienza: undefined,
-    staticData: undefined,
+    staticEnti: undefined,
 
     initialize: function() {
       var opts = {
@@ -63,9 +63,9 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       // visualizza Spinner
       var target = document.getElementById('content');
       this.spinner.spin(target);
-      var staticData = require("staticdata");
+      var staticEnti = require("staticenti");
       var staticEventi = require("staticeventi");
-      this.updateDb(staticData, staticEventi, true);
+      this.updateDb(staticEnti, staticEventi, true);
       localStorage.setItem("dataLoaded" , "yes");
     },
     checkNewData: function() {
@@ -93,7 +93,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
             staticData = response;
           });
         }*/
-        this.updateDb(this.staticData, true);
+        this.updateDb(this.staticEnti, this.staticEventi, true);
       }
     },
     newDataAvailable: function() {
