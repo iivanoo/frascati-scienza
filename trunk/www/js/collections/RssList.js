@@ -3,21 +3,32 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
 
     var RssList = Backbone.Collection.extend({
         model: Rss,
-        populate: function (feedUrl) {
+        populate: function (feedUrl, view) {
+        	// visualizza Spinner
+          	var target = document.getElementById('content');
+          	view.spinner.spin(target);
         	var xmlhttp = new XMLHttpRequest();
-        	xmlhttp.open("GET",feedUrl,false);
-			xmlhttp.send();
-			var feed =xmlhttp.responseXML;
-			var news = feed.getElementsByTagName("item");
-			var title, description, link;
-			for(var i=0; i<news.length; i++) {
-				title = news[i].getElementsByTagName("title")[0].textContent.strip();
-				description = news[i].getElementsByTagName("description")[0].textContent.strip();
-				link = news[i].getElementsByTagName("link")[0].textContent.strip();
-				if(title && description && link) {
-					this.create({title: title, description: description, link: link});
+        	var self = this;
+        	xmlhttp.onreadystatechange = function() {
+			  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			    var feed = xmlhttp.responseXML;
+				var news = feed.getElementsByTagName("item");
+				var title, description, link;
+				for(var i=0; i<news.length; i++) {
+					title = news[i].getElementsByTagName("title")[0].textContent.strip();
+					description = news[i].getElementsByTagName("description")[0].textContent.strip();
+					link = news[i].getElementsByTagName("link")[0].textContent.strip();
+					if(title && description && link) {
+						self.create({title: title, description: description, link: link});
+					}
 				}
+				view.showNews(self);
+			  }
+			  // chiudi Spinner
+              view.spinner.stop();
 			}
+        	xmlhttp.open("GET", feedUrl, true);
+			xmlhttp.send();
         }
       });
 

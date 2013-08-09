@@ -74,21 +74,17 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
         },
 
         fetchNews: function () {
-          // visualizza Spinner
-          var target = document.getElementById('content');
-          this.spinner.spin(target);
           var self = this;
+          var news = new RssList();
+          news.populate(self.model.get("rss"), self);
+        },
 
-          setTimeout(function(){
-            var news = new RssList();
-            news.populate(self.model.get("rss"));
-            var rssItemView;
-            for (var i = 0; i < news.length; i++) {
-              rssItemView = new RssListItemView({model: news.at(i)});
-              $(".rss_wrapper").append(rssItemView.render().el);
-            }
-            // chiudi Spinner
-            self.spinner.stop();}, 1000);  
+        showNews: function (news) {
+          var rssItemView;
+          for (var i = 0; i < news.length; i++) {
+            rssItemView = new RssListItemView({model: news.at(i)});
+            $(".rss_wrapper").append(rssItemView.render().el);
+          }
         }
       });
 

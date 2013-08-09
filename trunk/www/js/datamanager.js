@@ -3,7 +3,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
   var Data = {
     enti: new Enti,
     eventi: new Eventi,
-    sponsors: new Sponsors,
+    // sponsors: new Sponsors,
     newDataChecked: false,
     spinner: undefined,
     frascatiscienza: undefined,
@@ -38,7 +38,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       } 
       this.enti.on('reset', this.checkDataReady, this);
       this.eventi.on('reset', this.checkDataReady, this);
-      this.sponsors.on('reset', this.checkDataReady, this);
+      // this.sponsors.on('reset', this.checkDataReady, this);
     },
     loadDbData: function() {
       // visualizza Spinner
@@ -48,10 +48,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.imgfrascatiscienza = localStorage.getItem("imgfrascatiscienza");
       this.enti.fetch({reset: true});
       this.eventi.fetch({reset: true});
-      this.sponsors.fetch({reset: true});
+      // this.sponsors.fetch({reset: true});
     },
     checkDataReady: function() {
-      if((this.enti.length > 0) && (this.eventi.length > 0) && (this.sponsors.length > 0)) {
+      if((this.enti.length > 0) && (this.eventi.length > 0)) { // && (this.sponsors.length > 0)) {
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
         // è dopo aver scatenato questo evento che faccio partire il routing
         this.trigger("dataReady");
@@ -119,7 +119,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         db.transaction(function(tx) {
           tx.executeSql("DELETE FROM enti");
           tx.executeSql("DELETE FROM eventi");
-          tx.executeSql("DELETE FROM sponsors");
+          // tx.executeSql("DELETE FROM sponsors");
         }, function() {}, createData);
       } else {
         createData();
@@ -168,12 +168,12 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           delete currentElement.id;
           self.eventi.create(currentElement);
         }
-        for(var i=0; i<data.sponsors.length; i++) {
+/*        for(var i=0; i<data.sponsors.length; i++) {
           currentElement = data.sponsors[i];
           currentElement.__id = currentElement.id;
           delete currentElement.id;
           self.sponsors.create(currentElement);
-        }
+        }*/
       }
       setTimeout(function(){self.checkDataReady();},1000);
 
