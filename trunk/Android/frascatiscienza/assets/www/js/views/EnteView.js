@@ -31,7 +31,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           // gestione nav bar
           this.updateNavbar();
 
-          $(this.el).html(this.template({}));
+          $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("frascatiscienze_top");
@@ -71,6 +71,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
             this.moving = false;
             return;
           } 
+          if(navigator.connection.type == Connection.NONE) {
+            navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
+            return;
+          }
           var path = "sezioneEnte/contatti/" + this.model.get("__id");
           Backbone.history.navigate(path, {trigger: true});
         },
