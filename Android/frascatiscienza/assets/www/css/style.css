@@ -103,11 +103,10 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 #button_list img{
-	/*height:38px;*/
-	
-	height: 43px;
-	margin-left: -8px;
-	
+ 
+ height: 47px;
+ margin-left: -8px;
+ margin-top:-2px;
 }
 
 #titlebar {
@@ -338,6 +337,12 @@ margin-bottom: 15px;
 	
 }
 
+.default_coverimage_block video {
+	
+	width: 90%;
+	
+}
+
 .caption_block{
 	display: block;
 	margin-left: auto;
@@ -491,7 +496,7 @@ margin-bottom: 15px;
 .textlist_title{
 	margin: 0px;
 	padding:0px;
-	font-size: 10px;
+	font-size: 12px;
 	/*height: 12px;*/
 	overflow-x:hidden;
 	text-overflow: ellipsis;
@@ -512,13 +517,13 @@ margin-bottom: 15px;
 }
 
 .arrow_wrapper{
-	margin-top: 35px;
+	margin-top: 25px;
 	padding-left: 12px;
 	float:right;
 	display: block;
 	right: 0px;
 	width:40px;
-	height:80px;
+	height:55px;
 	
 }
 
