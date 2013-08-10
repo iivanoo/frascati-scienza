@@ -30,11 +30,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
               tipoText = "Per te";
           }
           var context = {titolo: tipoText, testo: this.model.get(tipo).testo};
-          if(this.model.get(tipo).immagine) {
-            context.immagine = this.model.get(tipo).immagine;
+          if(this.model.get(tipo).video) {
+            context.video = this.model.get(tipo).video;
           } else {
-            if(this.model.get(tipo).video) {
-              context.video = this.model.get(tipo).video;
+            if(this.model.get(tipo).immagine) {
+              context.immagine = this.model.get(tipo).immagine;
             }
           }
           $(this.el).html(this.template(context));
