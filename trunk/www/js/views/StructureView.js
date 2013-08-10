@@ -50,8 +50,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         frascatiscienza: function(event) {
           Backbone.history.navigate("frascatiscienza", {trigger: true});
         },
+
         eventi: function(event) {
-          Backbone.history.navigate("eventi", {trigger: true});
+          Backbone.history.navigate("intronotte", {trigger: true});
         },
 
         caccia: function(event) {
