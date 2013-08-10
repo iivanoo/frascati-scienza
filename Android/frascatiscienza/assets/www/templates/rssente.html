@@ -1,13 +1,13 @@
-{{#if immagine}}
+{{#if video}}
 	<div class="default_coverimage_block">
-		<img src="{{ immagine }}" onerror="ImgError(this);">
-	</div>
+			<video>
+			  <source src="{{ video }}" type="video/mp4">
+			</video>
+		</div>
 {{else}}
-	{{#if video}}
-	<div class="default_coverimage_block">
-		<video>
-		  <source src="{{ video }}" type="video/mp4">
-		</video>
+	{{#if immagine}}
+		<div class="default_coverimage_block">
+		<img src="{{ immagine }}" onerror="ImgError(this);">
 	</div>
 	{{/if}}
 {{/if}}	
