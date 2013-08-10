@@ -8,7 +8,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       className: "default_wrapper",
 
       events: {
-          "touchend #cassetto": "cassetto",
+          "touchend #pulsanteCassetto": "cassetto",
           "touchend #enti": "enti",
           "touchend #sponsor": "sponsor",
           "touchend #continua_frascati": "continua",
@@ -63,7 +63,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
             this.moving = false;
             return;
         } 
-        var element = document.getElementById(event.currentTarget.id);
+        var element = document.getElementById("cassetto");
         element.classList.toggle("chiuso");
         element.classList.toggle("aperto");
       },

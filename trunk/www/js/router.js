@@ -228,8 +228,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.structureView.currentView = page;
         page.render();
         this.structureView.$el.find("#content").append($(page.el));
-        this.currentView.trigger("inTheDom");
         this.structureView.trigger("updateTitle", page);
+        this.currentView.trigger("inTheDom");
       }
 
     });
