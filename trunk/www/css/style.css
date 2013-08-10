@@ -338,6 +338,12 @@ margin-bottom: 15px;
 	
 }
 
+.default_coverimage_block video {
+	
+	width: 90%;
+	
+}
+
 .caption_block{
 	display: block;
 	margin-left: auto;
