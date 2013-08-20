@@ -1,6 +1,6 @@
 define({
   timestamp: "1376010000", // timestamp (in formato Unix) di quando è stato creato questo file JSON
-  frascatiscienza: "Una “caccia alla scienza”, un flash mob, una settimana di “viaggi scientifici” tra i beni architettonici e culturali di Roma e dintorni e poi caffè e aperitivi scientifici, esperimenti a cielo aperto, musei universitari e sedi degli enti internazionali di ricerca aperti a tutti. È la “Settimana della Scienza” organizzata dall'Associazione Frascati Scienza in colloborazione con gli enti di ricerca del polo tuscolano e l'Assessorato alla Cultura della Regione Lazio e il Comune di Frascati. Un'ottava edizione innovativa, sin dall'evento di lancio del 21 settembre 2013, la Caccia alla Scienza e al ricercatore organizzata in piazza di San Lorenzo in Lucina, nel cuore di Roma.",
+  frascatiscienza: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino.",
   imgfrascatiscienza: "./pics/frascatiscienzacover.jpg",
   enti: [{ 
     id: "frascati-scienza",

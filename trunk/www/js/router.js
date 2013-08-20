@@ -235,6 +235,10 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.structureView.currentView = page;
         page.render();
         this.structureView.$el.find("#content").append($(page.el));
+/*        var listWrapper = document.getElementById("defaultlist_wrapper");
+        if(listWrapper && listWrapper.length > 0) {
+          listWrapper[0].scrollTo(0, 0);
+        }*/
         this.structureView.trigger("updateTitle", page);
         this.currentView.trigger("inTheDom");
       }
