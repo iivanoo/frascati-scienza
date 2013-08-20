@@ -436,6 +436,8 @@ margin-bottom: 15px;
 .defaultlist_wrapper{
 	-webkit-overflow-scrolling: touch;
 	background-color: #f4f4f4;
+	overflow: scroll;
+	height: 100%;
 	/*margin-bottom: 44px;	*/
 	}
 
