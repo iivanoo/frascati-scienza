@@ -42,7 +42,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           $(this.el).html(this.template({}));
           $('body').append($(this.el));
           $('#content').css({
-            'height': $(window).height() - 88
+            'height': $(window).height() - 104
           });
           return this;
         },
