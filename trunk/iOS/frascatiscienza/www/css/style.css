@@ -205,7 +205,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     border-right: 0.1px solid;*/
     text-align: center;
     line-height: 38px;
-    background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
 }
 
 #backbutton img{
@@ -825,7 +825,7 @@ margin-left: 20px;
 	font-family: 'dax';
 	position: absolute;
 	bottom: 0;
-	font-size: 11px;
+	font-size: 1.2em;	
 	margin-bottom: 15px;
 	padding: 5px;
 	padding-bottom: 10px;
