@@ -212,6 +212,26 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	width: 50%;
 }
 
+.eventi_ente_butt{
+	position:absolute;
+	padding-left: 4px;
+	padding-right: 6px;
+
+    right: -3px;
+    font-size: 1em;
+    top: -3px;
+    margin: 4px;
+    height: 43px;
+    width: 43px;
+    color: white;
+   /* border-color: #fff;
+    border-right: 0.1px solid;*/
+    text-align: center;
+    line-height: 38px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 /* END STRUCTURA */
 
 
