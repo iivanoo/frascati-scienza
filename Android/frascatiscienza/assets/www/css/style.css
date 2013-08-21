@@ -15,7 +15,7 @@ body {
                   /* prevent copy paste, to allow, change 'none' to 'text' */
     background-attachment: fixed;
     font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    /*font-size: 12px;*/
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -55,7 +55,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #navbar {
     background-color: #000;
     position: fixed;
-    height: 44px;
+    height: 60px;
     width: 100%;
     left: 0;
     bottom: 0;  
@@ -94,7 +94,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 .button_list_element_small{
-	
+
 	text-align: center;
 	float: left;
 	/*width:12.5%;*/
@@ -104,7 +104,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 #button_list img{
  
- height: 47px;
+ height: 60px;
  margin-left: -8px;
  margin-top:-2px;
 }
@@ -179,7 +179,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     width: 100%;
     left: 0;
     top: 44px;
-    bottom:44px;
+    bottom: 60px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -343,6 +343,13 @@ margin-bottom: 15px;
 	
 }
 
+@media screen and (min-device-width: 630px) {
+	.caption_block{
+		font-size: 1.6em;
+	}
+}
+
+
 .caption_block{
 	display: block;
 	margin-left: auto;
@@ -350,7 +357,7 @@ margin-bottom: 15px;
 	margin-bottom: 120px;
 	
 	width: 90%;
-	font-size: 1em;
+	font-size: .9em;
 	line-height: 1.5em;	
 }
 
@@ -393,12 +400,12 @@ margin-bottom: 15px;
 }
 
 .chiuso{
-	bottom: -16px;
+	bottom: 0px;
 }
 
 
 .aperto{
-	bottom:44px;
+	bottom: 60px;
 
 }
 
@@ -820,11 +827,18 @@ margin-left: 20px;
 
 /* enti picasso */
 
+
+@media screen and (min-device-width: 630px) {
+	.ente_link{
+		font-size: 1.6em;
+	}
+}
+
 .ente_link{
 	font-family: 'dax';
 	position: absolute;
 	bottom: 0;
-	font-size: 11px;
+   /* font-size: 1.2em;*/
 	margin-bottom: 15px;
 	padding: 5px;
 	padding-bottom: 10px;
