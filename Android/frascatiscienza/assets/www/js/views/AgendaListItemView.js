@@ -68,7 +68,7 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
                       debugger;
                         if(buttonIndex == 1) {
                           var preferiti = JSON.parse(localStorage.getItem("agenda"));
-                          if(self.model.get("eventi")) {
+                          if(self.model.get("chisiamo")) {
                             // è un ente
                             delete preferiti.enti[self.model.get("__id")];
                           } else {
