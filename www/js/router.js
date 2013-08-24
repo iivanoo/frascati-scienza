@@ -196,8 +196,10 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       frascatiScienza: function () {
         if(!this.structureView) {
+          Data.startupData();
           $("#cover").remove();
           this.showStructure();
+          return;
         }
         var frascatiModel =  Data.enti.findWhere({__id :"frascati-scienza"});
         if(frascatiModel) {

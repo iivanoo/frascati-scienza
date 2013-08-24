@@ -11,30 +11,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     staticEnti: undefined,
     urlEnti_Eng: "TODO",
     urlEventi_Eng: "TODO",
-    urlEnti_Ita: "TODO",
+    urlEnti_Ita: "http://www.di.univaq.it/malavolta/files/frascatiEnti.json",
     urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
 
-    initialize: function() {
-      var opts = {
-        lines: 5, // The number of lines to draw
-        length: 15, // The length of each line
-        width: 5, // The line thickness
-        radius: 15, // The radius of the inner circle
-        corners: 1, // Corner roundness (0..1)
-        rotate: 0, // The rotation offset
-        direction: 1, // 1: clockwise, -1: counterclockwise
-        color: '#000', // #rgb or #rrggbb
-        speed: 1, // Rounds per second
-        trail: 60, // Afterglow percentage
-        shadow: false, // Whether to render a shadow
-        hwaccel: false, // Whether to use hardware acceleration
-        className: 'spinner', // The CSS class to assign to the spinner
-        zIndex: 2e9, // The z-index (defaults to 2000000000)
-        top: 'auto', // Top position relative to parent in px
-        left: 'auto' // Left position relative to parent in px
-      };
-      this.spinner = new Spinner(opts);
-      
+    initialize: function() {    
       // settiamo nel local storage la lista dei preferiti
       if(!localStorage.getItem("agenda")) {
         var agenda = {"enti": {}, "eventi": {}};
@@ -44,6 +24,44 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.eventi.on('reset', this.checkDataReady, this);
       // this.sponsors.on('reset', this.checkDataReady, this);
     },
+
+    startupData: function() {
+      var opts = {
+          lines: 5, // The number of lines to draw
+          length: 15, // The length of each line
+          width: 5, // The line thickness
+          radius: 15, // The radius of the inner circle
+          corners: 1, // Corner roundness (0..1)
+          rotate: 0, // The rotation offset
+          direction: 1, // 1: clockwise, -1: counterclockwise
+          color: '#000', // #rgb or #rrggbb
+          speed: 1, // Rounds per second
+          trail: 60, // Afterglow percentage
+          shadow: false, // Whether to render a shadow
+          hwaccel: false, // Whether to use hardware acceleration
+          className: 'spinner', // The CSS class to assign to the spinner
+          zIndex: 2e9, // The z-index (defaults to 2000000000)
+          top: '150px', // Top position relative to parent in px
+          left: 'auto' // Left position relative to parent in px
+        };
+
+      var spinner = new Spinner(opts);
+      setTimeout(function(){spinner.spin(document.getElementsByTagName("body")[0]);}, 20);
+      // qui controlliamo se ci sono dati nuovi
+      if(navigator.connection.type == Connection.NONE) {
+        //if(!Data.newDataChecked && Data.newDataAvailable()) {
+        //  Data.checkNewData();
+        //}
+        this.loadLocalData();
+      } else {
+        this.downloadNewData();
+      }
+      this.on("dataReady", function() {
+        spinner.stop();
+        Backbone.history.navigate("frascatiscienza", {trigger: true});
+      });
+    },
+
     loadDbData: function() {
       // visualizza Spinner
       var target = document.getElementById('content');
@@ -59,14 +77,9 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
         // è dopo aver scatenato questo evento che faccio partire il routing
         this.trigger("dataReady");
-        // chiudi Spinner
-        this.spinner.stop();
       }
     },
     loadLocalData: function() {
-      // visualizza Spinner
-      var target = document.getElementById('content');
-      this.spinner.spin(target);
       var staticEnti = require("../data/staticenti");
       var staticEventi = require("../data/staticeventi");
       this.updateDb(staticEnti, staticEventi, true);
@@ -82,14 +95,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     },*/
     downloadNewData: function() {//buttonIndex) {
       //if (buttonIndex == 1) {
-        // visualizza Spinner
-        var target = document.getElementById('content');
-        this.spinner.spin(target);
         self = this;
         $.ajaxSetup({
           async: false
         });
-        if (localStorage.getItem("language") === "eng") {
+        if (localStorage.getItem("language") == "eng") {
           $.getJSON(this.urlEnti_Eng, function(response) {
             self.staticEnti = response;
           });
@@ -99,6 +109,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         } else { 
           $.getJSON(this.urlEnti_Ita, function(response) {
             self.staticEnti = response;
+          }).fail(function( jqxhr, textStatus, error ) {
+            debugger;
           });
           $.getJSON(this.urlEventi_Ita, function(response) {
             self.staticEventi = response;
@@ -190,9 +202,6 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         }*/
       }
       setTimeout(function(){self.checkDataReady();},1000);
-
-      // chiudi Spinner
-      self.spinner.stop();
     }
   };
 
