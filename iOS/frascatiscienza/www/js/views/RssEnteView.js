@@ -87,6 +87,13 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
             rssItemView = new RssListItemView({model: news.at(i)});
             $(".rss_wrapper").append(rssItemView.render().el);
           }
+        },
+
+        addAgenda: function (event) {
+          var agenda = JSON.parse(localStorage.getItem("agenda"));
+          agenda.enti[this.model.get("__id")] = this.model.toJSON();
+          localStorage.setItem("agenda", JSON.stringify(agenda));
+          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "Agenda");
         }
       });
 

@@ -62,6 +62,13 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
             }
             functions[i].classList.add("nonvisibile");
           }
+        },
+
+        addAgenda: function (event) {
+          var agenda = JSON.parse(localStorage.getItem("agenda"));
+          agenda.enti[this.model.get("__id")] = this.model.toJSON();
+          localStorage.setItem("agenda", JSON.stringify(agenda));
+          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "Agenda");
         }
       });
 

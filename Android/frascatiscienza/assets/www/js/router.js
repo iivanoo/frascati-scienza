@@ -21,7 +21,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "eventiCerca/:keyword": "eventiCerca",
         "legenda": "legenda",
         "mappa": "mappa",
-        "mappaSponsor/:id": "mappaSponsor",
         "intronotte": "intronotte"
       },
 
@@ -179,14 +178,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       mappa: function () {
         var page = new MappaView({
           model: this.currentView.model
-        });
-        this.changePage(page); 
-      },
-
-      mappaSponsor: function (id) {
-        var sponsor = Data.sponsors.findWhere({"__id": id});
-        var page = new MappaView({
-          model: sponsor
         });
         this.changePage(page); 
       },
