@@ -70,6 +70,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             var view = new AgendaListItemView({
               model: new Ente(currentEnte)
             });
+            view.superView = this;
             $("#agenda_wrapper_content").append(view.render().el);
             view.trigger("inTheDom");
           }
