@@ -74,6 +74,7 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
                             // è un evento
                             delete preferiti.eventi[self.model.get("__id")];
                           }
+                          self.superView.preferiti = preferiti;
                           localStorage.setItem("agenda", JSON.stringify(preferiti));
                           self.remove();
                         }
