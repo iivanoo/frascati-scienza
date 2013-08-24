@@ -213,6 +213,27 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	width: 50%;
 }
 
+
+.eventi_ente_butt{
+	position:absolute;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	
+    right: -4px;
+    font-size: 1.1em;
+   top: -3px;
+    margin: 4px;
+    height: 43px;
+    width: 43px;    
+    color: white;
+   /* border-color: #fff;
+    border-right: 0.1px solid;*/
+    text-align: center;
+    line-height: 38px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* END STRUCTURA */
 
 
@@ -327,7 +348,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 .default_coverimage_block{
-/*margin-top: 15px; */
+/*margin-top: 15px;*/
 text-align: center;
 margin-bottom: 5px;
 	}
@@ -828,7 +849,7 @@ margin-left: 20px;
 	font-family: 'dax';
 	position: absolute;
 	bottom: 0;
-	font-size: 11px;
+	font-size: 1.2em;	
 	margin-bottom: 15px;
 	padding: 5px;
 	padding-bottom: 10px;
