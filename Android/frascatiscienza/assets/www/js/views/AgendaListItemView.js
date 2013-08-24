@@ -65,7 +65,6 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
           navigator.notification.confirm(
                     'Sei sicuro di voler eliminare "' + this.model.get("titolo") + '" dalla tua agenda personale?',
                      function(buttonIndex) {
-                      debugger;
                         if(buttonIndex == 1) {
                           var preferiti = JSON.parse(localStorage.getItem("agenda"));
                           if(self.model.get("chisiamo")) {
@@ -75,6 +74,7 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
                             // è un evento
                             delete preferiti.eventi[self.model.get("__id")];
                           }
+                          self.superView.preferiti = preferiti;
                           localStorage.setItem("agenda", JSON.stringify(preferiti));
                           self.remove();
                         }

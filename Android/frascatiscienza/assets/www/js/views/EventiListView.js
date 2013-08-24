@@ -32,6 +32,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           this.on("inTheDom", this.addEvents);
         },
 
+        getBaseTimestamp: function(unix) {
+          var date = new Date(unix * 1000);
+          date.setHours(4);
+          date.setMinutes(0);
+          return date.getTime() / 1000;
+        },
+
         render: function () {
           // gestione nav bar
           this.updateNavbar();
