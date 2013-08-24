@@ -19,7 +19,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           "touchend #aggiungiAgenda": "addAgenda",
           "touchend #www": "showSito",
           "touchend #mappa": "showMappa",
-          "touchend #ricerca": "ricerca"
+          "touchend #ricerca": "ricerca",
+          "touchend #eventi_ente_butt": "showEventi"
         },
 
         initialize: function() {
@@ -71,6 +72,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         addAgenda: function(event) {
           this.currentView.addAgenda(event);
         },
+
         showSito: function(event) {
           if(navigator.connection.type == Connection.NONE) {
             navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
@@ -78,8 +80,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
           }
           window.open(this.currentView.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi');
         },
+
         showMappa: function(event) {
           Backbone.history.navigate("mappa", {trigger: true});
+        },
+
+        showEventi: function(event) {
+          this.currentView.eventi();
         },
 
         ricerca: function(event) {
