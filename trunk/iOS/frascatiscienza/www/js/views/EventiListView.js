@@ -18,8 +18,17 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           if(!this.title) {
             this.title = "Eventi";
           }
-          // 21 settembre 1:00
-          this.currentDay = 1379725200;
+          var lastVisitedEventTimestamp = localStorage.getItem("lastVisitedEventTimestamp");
+          if(lastVisitedEventTimestamp) {
+            this.currentDay = this.getBaseTimestamp(lastVisitedEventTimestamp);
+          } else {
+            if(this.model.length > 0) {
+              this.currentDay = this.getBaseTimestamp(this.model.at(0).get("timestamp"));
+            } else {
+              // 21 settembre 1:00
+              this.currentDay = 1379725200;
+            }
+          }
           this.on("inTheDom", this.addEvents);
         },
 

@@ -8,7 +8,11 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         className: "default_wrapper",
 
         initialize: function() {
-            this.title = this.model.get("titolo");
+          this.title = this.model.get("titolo");
+          localStorage.setItem("lastVisitedEventTimestamp", this.model.get("timestamp"));
+          this.on("removed", function(e) {
+            localStorage.removeItem("lastVisitedEventTimestamp");
+          });
         },
 
         template: Handlebars.compile(template),
