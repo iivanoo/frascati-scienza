@@ -28,6 +28,7 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
               left: 'auto' // Left position relative to parent in px
             };
             this.spinner = new Spinner(opts);
+            this.spinnerStopped = false;
             this.on("inTheDom", this.fetchNews);
           },
 
@@ -75,13 +76,19 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
 
         fetchNews: function () {
           var self = this;
-          setTimeout(function(){self.spinner.spin(document.getElementById("rss_container"));}, 20);          
+          setTimeout(function(){
+            if(!self.spinnerStopped) {
+              self.spinner.spin(document.getElementById("rss_container"));
+            }
+          }, 20);          
           var news = new RssList();
           news.populate(self.model.get("rss"), self);
         },
 
         showNews: function (news) {
+          console.log("showNews");
           this.spinner.stop();
+          this.spinnerStopped = true;
           var rssItemView;
           for (var i = 0; i < news.length; i++) {
             rssItemView = new RssListItemView({model: news.at(i)});
