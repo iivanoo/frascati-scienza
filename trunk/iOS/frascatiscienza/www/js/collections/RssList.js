@@ -4,9 +4,6 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
     var RssList = Backbone.Collection.extend({
         model: Rss,
         populate: function (feedUrl, view) {
-        	// visualizza Spinner
-          	var target = document.getElementById('content');
-          	view.spinner.spin(target);
         	var xmlhttp = new XMLHttpRequest();
         	var self = this;
         	xmlhttp.onreadystatechange = function() {
@@ -24,8 +21,6 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
 				}
 				view.showNews(self);
 			  }
-			  // chiudi Spinner
-              view.spinner.stop();
 			}
         	xmlhttp.open("GET", feedUrl, true);
 			xmlhttp.send();

@@ -86,7 +86,6 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
         },
 
         showNews: function (news) {
-          console.log("showNews");
           this.spinner.stop();
           this.spinnerStopped = true;
           var rssItemView;
