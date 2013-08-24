@@ -68,6 +68,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           model: ente
         });
         this.changePage(enteView);
+        $('.default_wrapper').css({
+            'height': $(window).height() - 88
+        });
       },
 
       sezioneEnteChiSiamo: function(id) {
@@ -229,7 +232,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           $("#backbutton").show();
         }
         if(this.currentView) {
-           this.currentView.remove();
+          this.currentView.trigger("removed");
+          this.currentView.remove();
         }
         this.currentView = page;
         this.structureView.currentView = page;
