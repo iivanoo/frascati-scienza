@@ -14,9 +14,16 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
         }, 
 
         initialize: function() {
+          var self = this;
           if(!this.title) {
             this.title = "Ricerca Eventi";
           }
+          this.on("inTheDom", function() {
+            /*var da = new Date();
+            document.getElementById('da').value = da.format("dd/m/yyyy");
+            var a = new Date();
+            document.getElementById('a').value = a.format("dd/m/yyyy");*/
+          });
         },
 
         render: function () {
@@ -47,8 +54,15 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
         },
 
         cerca: function(e) {
-          var input1 = "Frascati";
-          Backbone.history.navigate("eventiCerca/" + input1.strip(), {trigger: true});
+          var keyword = document.getElementById("keyword").value;
+          var tag = document.getElementById("tag").value;
+          var organizzatore = document.getElementById("organizzatore").value;
+          var da = document.getElementById("da").value;
+          var a = document.getElementById("a").value;
+          alert(keyword + tag + organizzatore + da + a);
+          if((keyword + tag + organizzatore + da + a)) {
+            Backbone.history.navigate("eventiCerca/" + keyword.strip(), {trigger: true});
+          }
         }
       });
 
