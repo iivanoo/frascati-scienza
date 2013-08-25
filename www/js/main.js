@@ -64,6 +64,18 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
       function run() {        
         Data.initialize();
         var router = new AppRouter();
+        var b = document.getElementsByTagName("body")[0];
+        if(localStorage.getItem("language")) {
+          setTimeout(function(){Data.spinner.spin(b);}, 20);
+          setTimeout(function(){Data.startupData();}, 100);  
+          Data.on("dataReady", function() {
+            Data.spinner.stop();
+            Backbone.history.start();
+            // Backbone.history.navigate("frascatiscienza", {trigger: true});
+          });
+        } else {
+          Backbone.history.start();
+        }
 /*
         if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
@@ -81,7 +93,5 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
         } else {
           Data.downloadNewData();
         }*/
-
-        Backbone.history.start();
       }
   });
