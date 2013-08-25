@@ -26,7 +26,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
           localStorage.setItem("language" , event.currentTarget.id);
           setTimeout(function(){
             Data.startupData();
-          }, 100);         
+          }, 300);         
         },
 
         template: Handlebars.compile(template),

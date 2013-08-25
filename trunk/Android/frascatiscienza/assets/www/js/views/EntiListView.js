@@ -21,8 +21,8 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
         }).render().el);
       }
       var el = $("#titlebar");
-          el.removeClass();
-          el.addClass("frascatiscienze_top");
+      el.removeClass();
+      el.addClass("frascatiscienze_top");
       return this;
     },
 

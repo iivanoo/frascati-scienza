@@ -35,7 +35,7 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
           if(this.moving) {
             this.moving = false;
             return;
-          } 
+          }
           if(navigator.connection.type == Connection.NONE) {
             navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
             return;

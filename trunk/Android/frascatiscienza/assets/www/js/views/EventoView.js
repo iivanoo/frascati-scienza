@@ -10,7 +10,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         initialize: function() {
           this.title = this.model.get("titolo");
           localStorage.setItem("lastVisitedEventTimestamp", this.model.get("timestamp"));
-            this.on("removed", function(e) {
+          this.on("removed", function(e) {
             localStorage.removeItem("lastVisitedEventTimestamp");
           });
         },
