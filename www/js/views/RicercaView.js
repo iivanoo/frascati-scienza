@@ -54,13 +54,21 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
         },
 
         cerca: function(e) {
+          alert("1");
           var keyword = document.getElementById("keyword").value;
+          alert(keyword);
           var tag = document.getElementById("tag").value;
+          alert(tag);
           var organizzatore = document.getElementById("organizzatore").value;
+          alert(organizzatore);
           var da = document.getElementById("da").value;
+          alert(da);
           var a = document.getElementById("a").value;
+          alert(a);
           alert(keyword + tag + organizzatore + da + a);
-          Backbone.history.navigate("eventiCerca/" + keyword.strip(), {trigger: true});
+          if((keyword + tag + organizzatore + da + a)) {
+            Backbone.history.navigate("eventiCerca/" + keyword.strip(), {trigger: true});
+          }
         }
       });
 
