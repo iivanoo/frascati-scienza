@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/Mappa", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, MappaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, MappaView, RicercaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -21,7 +21,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "eventiCerca/:keyword": "eventiCerca",
         "legenda": "legenda",
         "mappa": "mappa",
-        "intronotte": "intronotte"
+        "intronotte": "intronotte",
+        "cerca": "cerca"
       },
 
       initialize: function () {
@@ -187,6 +188,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.changePage(page); 
       },
 
+      cerca: function () {
+        var page = new RicercaView();
+        this.changePage(page); 
+      },
+
       showStructure: function () {
         if(!this.structureView) {
           this.structureView = new StructureView();
@@ -224,7 +230,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         if(this.currentView) {
           this.currentView.trigger("removed");
-          this.currentView.remove();
+          this.currentView.remove(); 
         }
         this.currentView = page;
         this.structureView.currentView = page;
