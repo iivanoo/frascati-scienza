@@ -90,15 +90,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         },
 
         ricerca: function(event) {
-          navigator.notification.prompt("Cerca negli eventi", function(results) {
-            if(results.buttonIndex == 1) {
-              if(!results.input1 || results.input1 == "Visite...") {
-                Backbone.history.navigate("eventi", {trigger: true});
-              } else {
-                Backbone.history.navigate("eventiCerca/" + results.input1.strip(), {trigger: true});
-              }
-            }
-          }, "Cerca", ["OK","Annulla"], "Visite...")
+          Backbone.history.navigate("cerca", {trigger: true});
         }
       });
 
