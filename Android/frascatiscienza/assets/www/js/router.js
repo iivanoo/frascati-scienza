@@ -68,7 +68,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         });
         this.changePage(enteView);
         $('.default_wrapper').css({
-            'height': $(window).height() - 104
+            'height': $(window).height() - 88
         });
       },
 
@@ -224,7 +224,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         if(this.currentView) {
           this.currentView.trigger("removed");
-          this.currentView.remove();
+          this.currentView.remove(); 
         }
         this.currentView = page;
         this.structureView.currentView = page;

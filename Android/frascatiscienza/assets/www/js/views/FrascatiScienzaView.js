@@ -29,7 +29,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       render: function () {
         // gestione nav bar
         this.updateNavbar();
-
         $(this.el).html(this.template(this.model.toJSON()));
         var el = $("#titlebar");
         el.removeClass();
