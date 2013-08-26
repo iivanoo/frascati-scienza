@@ -1154,7 +1154,79 @@ margin-top: 60px;
     width: 100%;
 }
 
+/* RICERCA */
 
+#wrapper_ricerca{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#keyword{
+	width: 87%;
+}
+
+
+#tag{
+	width: 95%;
+	
+}
+
+#organizzatore{
+	width: 95%;
+}
+
+.ricerca_t1{
+	margin-top: 15px;
+	font-variant: normal;
+	font-family: 'dax';
+	font-size: 1.5em;
+	clear: left;
+}
+
+.ricerca_t2{
+	margin-top: 15px;
+	font-variant: normal;
+	font-family: 'dax';
+	font-size: 1.2em;
+	clear: left;
+}
+
+.data_ricerca input{
+	width: 87%;
+}
+
+#ricerca_button{
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding: .5em;
+	background-color: #e74c3c;
+	font-family: 'dax';
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	
+}
+
+#wrapper_ricerca select, input{
+    font-size: 1.2em;
+    background: white;
+    border: none;
+    color: #333;
+    padding: 12px;
+    margin-bottom: 5%;
+    -webkit-appearance: none;
+}
+
+.open_drop{
+	margin-bottom: -7px;
+	margin-left: -40px;
+	border-left: 1px solid #ccc;
+	padding-left: 5px;
+}
 
 
 
