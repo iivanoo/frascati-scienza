@@ -15,7 +15,8 @@ body {
                   /* prevent copy paste, to allow, change 'none' to 'text' */
     background-attachment: fixed;
     font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 1em;
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -140,6 +141,14 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 				
 				background: -webkit-linear-gradient(top, rgb(98,136,195),rgb(29,80,127));			 
 		  }  
+		  
+		  #continua_eventi{
+		  
+		  		box-shadow: 0 2px 0px rgba(0,0,0,.2);
+				border-radius: 5px;
+				background: -webkit-linear-gradient(top, rgb(98,136,195),rgb(29,80,127));
+			  
+		  }
 		  
 		.cacciatesoro_top{
 			/*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
@@ -333,7 +342,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 #logo_reg_lazio img{
-	width:75px;
+	width:60px;
 }
 
 /* END COVER */
@@ -352,6 +361,26 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 text-align: center;
 margin-bottom: 5px;
 	}
+	
+	
+.half_button{
+	color: white;
+	font-size: 1.5em;
+
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+	height: 50%;
+	margin-top: 20px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+			
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+	border-radius: 5px;
+	
+}	
 
 .default_coverimage_block img{
 	background: url('../res/loader.gif') no-repeat; 
@@ -395,6 +424,7 @@ margin-bottom: 5px;
 	font-size: 1.2em;
 }
 
+/*
 .readmore{
 	font-family: 'Dax';
 	font-size: 1.2em;
@@ -403,7 +433,27 @@ margin-bottom: 5px;
 
 	
 }
+*/
 
+
+.readmore{
+	text-align: center;
+	color: white;
+	font-family: 'Dax';
+	font-size: 1.2em;
+	margin-left: 60%;
+	padding: 5px;	
+}
+
+#continua_frascati{
+
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+			
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+	border-radius: 5px;
+
+	
+}
 
 #cassetto{
 	width: 100%;
@@ -457,7 +507,7 @@ margin-bottom: 5px;
 
 .defaultlist_wrapper{
 	-webkit-overflow-scrolling: touch;
-	background-color: #f4f4f4;
+	background-color: #fff;
 	overflow: scroll;
 	height: 100%;
 	/*margin-bottom: 44px;	*/
@@ -468,7 +518,7 @@ margin-bottom: 5px;
 	/* height: 100px; 80px*/
 	width:100%;
 	display: inline-block;
-	background-color: #f4f4f4;
+	background-color: #fff;
 	border-bottom: 1px solid #9f9f9f;
 }
 
@@ -476,14 +526,14 @@ margin-bottom: 5px;
 	padding-top: 10px;
 	text-align: center;
 	float:left;
-	height: 80px;
-	width: 60px;
+	height: 100px;
+	width: 100px;
 	display: block;
 	
 }
 
 .img_wrapper img{
-	height:50px;	
+	height:85px;	
 }
 
 
@@ -502,7 +552,7 @@ margin-bottom: 5px;
 	display: inline-block;
 	font-family: 'dax';
 	font-size: 1.5em;
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-top:10px;
 }
 
@@ -510,9 +560,9 @@ margin-bottom: 5px;
 .textlist_wrapper_legenda{
 	padding-top: 10px;
 	float:left;
-	width:75%;
-	min-width: 120px;
-	display: block;
+	width:60%;
+	min-width: 100px;
+	display: inline-block;
 	
 	
 	
@@ -521,7 +571,7 @@ margin-bottom: 5px;
 .textlist_title{
 	margin: 0px;
 	padding:0px;
-	font-size: 12px;
+	font-size: 1.2em;
 	/*height: 12px;*/
 	overflow-x:hidden;
 	text-overflow: ellipsis;
@@ -530,10 +580,10 @@ margin-bottom: 5px;
 
 .textlist_content{
 	
-	display: block;
+	display: inline-block;
 	margin: 0px;
 	padding:0px;
-	font-size: 10px;
+	font-size: 1em;
 	overflow-y: hidden;
 	text-overflow: ellipsis;
 	text-align: justify;
@@ -542,12 +592,12 @@ margin-bottom: 5px;
 }
 
 .arrow_wrapper{
-	margin-top: 25px;
-	padding-left: 12px;
+	margin-top: 35px;
+	padding-left: 5px;
 	float:right;
 	display: block;
 	right: 0px;
-	width:40px;
+	width:35px;
 	height:55px;
 	
 }
@@ -1201,7 +1251,7 @@ margin-top: 60px;
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
+	margin-bottom: 15px;	
 	padding: .5em;
 	background-color: #e74c3c;
 	font-family: 'dax';
