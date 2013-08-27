@@ -59,9 +59,23 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
           var organizzatore = document.getElementById("organizzatore").value;
           var da = document.getElementById("da").value;
           var a = document.getElementById("a").value;
-          alert(keyword + tag + organizzatore + da + a);
+          if(!keyword) {
+            keyword = "__NO";
+          }
+          if(!tag) {
+            tag = "__NO";
+          }
+          if(!organizzatore) {
+            organizzatore = "__NO";
+          }
+          if(!da) {
+            da = "__NO";
+          }
+          if(!a) {
+            a = "__NO";
+          }
           if((keyword + tag + organizzatore + da + a)) {
-            Backbone.history.navigate("eventiCerca/" + keyword.strip(), {trigger: true});
+            Backbone.history.navigate("eventiCerca/" + keyword.strip() + "/" + tag + "/" + organizzatore + "/" + da + "/" + a , {trigger: true});
           }
         }
       });
