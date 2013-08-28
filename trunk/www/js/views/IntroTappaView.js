@@ -1,16 +1,22 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia.html"],
-    function ($, _, Backbone, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!templates/introtappa.html"],
+    function ($, _, Backbone, Handlebars, Tappa, template) {
 
-    var CacciaView = Backbone.View.extend({
+    var IntroTappaView = Backbone.View.extend({
+
+        model: Tappa,
 
         events: {
-          "touchend #vai": "goToIntroCaccia",
+          "touchend #vaiDomanda": "vaiDomanda",
           "touchmove": "touchMove"
         },
 
         initialize: function() {
-            this.title = "Caccia al tesoro"; 
+            this.title = this.model.get("titolo");
             this.moving = false;
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         className: "default_wrapper",
@@ -21,7 +27,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
           // gestione nav bar
           this.updateNavbar();
 
-          $(this.el).html(this.template({}));
+          $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
@@ -48,15 +54,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
           }
         },
 
-        goToIntroCaccia: function (event) {
+        vaiDomanda: function (e) {
           if(this.moving) {
             this.moving = false;
             return;
-          }
-          Backbone.history.navigate("introcaccia", {trigger: true});
+          } 
+          Backbone.history.navigate("domandacaccia/" + this.model.id, {trigger: true});
         }
       });
 
-    return CacciaView;
+    return IntroTappaView;
 
   });
