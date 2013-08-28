@@ -1,8 +1,10 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi"], function($, _, Backbone, Ente, Evento, Sponsor, Enti, Eventi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Tappa", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi", "../data/statictappe"], 
+  function($, _, Backbone, Ente, Evento, Tappa, Sponsor, Enti, Eventi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
     eventi: new Eventi,
+    tappe: undefined,
     // sponsors: new Sponsors,
     newDataChecked: false,
     spinner: undefined,
@@ -44,7 +46,21 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       // this.sponsors.on('reset', this.checkDataReady, this);
     },
 
+    getTappaById: function(id) {
+      var i = 0;
+      while(i < this.tappe.length) {
+        if(this.tappe[i].id == id) {
+          var tappaModel = new Tappa(this.tappe[i]);
+          return tappaModel;
+        }
+        i++;
+      }
+      return undefined;
+    },
+
     startupData: function() {
+      var staticTappe = require("../data/statictappe");
+      this.tappe = staticTappe.tappe;
       // qui controlliamo se ci sono dati nuovi
       /*if(navigator.connection.type == Connection.NONE) {
         if(localStorage.getItem("dataLoaded")) {

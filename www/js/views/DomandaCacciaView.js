@@ -1,16 +1,22 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia.html"],
-    function ($, _, Backbone, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!templates/domandacaccia.html"],
+    function ($, _, Backbone, Handlebars, Tappa, template) {
 
-    var CacciaView = Backbone.View.extend({
+    var RisultatoCacciaView = Backbone.View.extend({
+
+        model: Tappa,
 
         events: {
-          "touchend #vai": "goToIntroCaccia",
+          "touchend .domanda": "domandaPressed",
           "touchmove": "touchMove"
         },
 
         initialize: function() {
-            this.title = "Caccia al tesoro"; 
-            this.moving = false;
+            this.title = this.model.get("titolo");
+            this.moving = false; 
+        },
+
+        touchMove: function() {
+          this.moving = true;
         },
 
         className: "default_wrapper",
@@ -21,7 +27,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
           // gestione nav bar
           this.updateNavbar();
 
-          $(this.el).html(this.template({}));
+          $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
@@ -48,15 +54,23 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
           }
         },
 
-        goToIntroCaccia: function (event) {
+        domandaPressed: function (e) {
           if(this.moving) {
             this.moving = false;
             return;
+          } 
+          var idDomanda = e.currentTarget.id.charAt(e.currentTarget.id.length - 1);
+          if(idDomanda == this.model.get("rispostacorretta")) {
+            // TODO gestire domanda corretta
+            console.log("ok");
+          } else {
+            // TODO gestire domanda sbagliata
+            console.log("no");
           }
-          Backbone.history.navigate("introcaccia", {trigger: true});
+          Backbone.history.navigate("risultatocaccia/" + this.model.id, {trigger: true});
         }
       });
 
-    return CacciaView;
+    return RisultatoCacciaView;
 
   });

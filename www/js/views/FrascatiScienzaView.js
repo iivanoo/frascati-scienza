@@ -99,7 +99,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
         if(this.moving) {
             this.moving = false;
             return;
-          } 
+        } 
         Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
         $("#backbutton").show();
       },
