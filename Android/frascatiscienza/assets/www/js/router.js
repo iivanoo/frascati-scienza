@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, MappaView, RicercaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, MappaView, RicercaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -10,7 +10,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "sponsor": "sponsor",
         "agenda": "agenda",
         "eventi": "eventi",
-        "caccia": "caccia",
         "enti/:id": "enteDetails",
         "sezioneEnte/chisiamo/:id": "sezioneEnteChiSiamo",
         "sezioneEnte/storia/:id": "sezioneEnteStoria",
@@ -22,7 +21,12 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "legenda": "legenda",
         "mappa": "mappa",
         "intronotte": "intronotte",
-        "cerca": "cerca"
+        "cerca": "cerca",
+        "caccia": "caccia",
+        "introcaccia": "introcaccia",
+        "introtappa/:id": "introtappa",
+        "domandacaccia/:id": "domandacaccia",
+        "risultatocaccia/:id": "risultatocaccia"
       },
 
       initialize: function () {
@@ -194,6 +198,51 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.changePage(page); 
       },
 
+      introcaccia: function () {
+        var page = new IntroCacciaView();
+        this.changePage(page); 
+        $("#backbutton").show();
+        $(".button_list_element").show(); 
+        $(".button_list_element_small").show();
+      },
+
+      introtappa: function (id) {
+        var tappa = Data.getTappaById(id);
+        if(tappa) {
+          var tappaView = new IntroTappaView({
+            model: tappa
+          });
+          this.changePage(tappaView); 
+          $("#backbutton").hide();
+          $(".button_list_element").hide(); 
+          $(".button_list_element_small").hide();
+        } else {
+          navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
+        }
+      },
+
+      domandacaccia: function (id) {
+        var tappa = Data.getTappaById(id);
+        var domandaView = new DomandaCacciaView({
+          model: tappa
+        });
+        this.changePage(domandaView);
+        $("#backbutton").hide();
+        $(".button_list_element").hide(); 
+        $(".button_list_element_small").hide();
+      },
+
+      risultatocaccia: function (id) {
+        var tappa = Data.getTappaById(id);
+        var risultatoView = new RisultatoCacciaView({
+          model: tappa
+        });
+        this.changePage(risultatoView); 
+        $("#backbutton").hide();
+        $(".button_list_element").hide(); 
+        $(".button_list_element_small").hide();
+      },
+
       cerca: function () {
         var page = new RicercaView();
         this.changePage(page); 
@@ -222,6 +271,15 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       changePage: function (page) {
         if((page instanceof CoverView)) {
+          return;
+        }
+        if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
+          return;
+        }
+        if((page instanceof DomandaCacciaView) && !(this.currentView instanceof IntroTappaView)) {
+          return;
+        }
+        if((page instanceof RisultatoCacciaView) && !(this.currentView instanceof DomandaCacciaView)) {
           return;
         }
         var contentClasses = document.getElementById("content").classList;
