@@ -40,7 +40,7 @@ define(["jquery", "underscore", "backbone", "models/Rss", "handlebars", "text!te
             navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
             return;
           } 
-          window.open(this.model.get("link"), '_blank', 'location=yes,closebuttoncaption=chiudi');
+          window.open(this.model.get("link"), '_blank', 'location=yes,closebuttoncaption=chiudi,EnableViewPortScale=yes');
         }
       });
 
