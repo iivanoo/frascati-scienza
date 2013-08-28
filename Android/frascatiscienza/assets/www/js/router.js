@@ -18,7 +18,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "sezioneEnte/miglioriamo/:id": "sezioneEnteMiglioriamo",
         "eventi/:id": "eventoDetails",
         "eventiEnte/:id": "eventiEnte",
-        "eventiCerca/:keyword": "eventiCerca",
+        "eventiCerca/:keyword/:tag/:organizzatore/:da/:a": "eventiCerca",
         "legenda": "legenda",
         "mappa": "mappa",
         "intronotte": "intronotte",
@@ -30,16 +30,16 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       cover: function () {
-        if(localStorage.getItem("language")) {
-          this.frascatiScienza();
-        } else {
+        // if(localStorage.getItem("language")) {
+        //   this.frascatiScienza();
+        // } else {
           var page = new CoverView();
           page.render();
           $("body").append($(page.el)); 
           $('#content_cover').css({
             'height': $(window).height() - 75
           });
-        }
+        // }
       },
 
       enti: function () {
@@ -152,7 +152,13 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.changePage(page); 
       },
 
-      eventiCerca: function (keyword) {
+      eventiCerca: function (keyword, tag, organizzatore, da, a) {
+        debugger;
+        // TODO
+        // filtra per data
+        // filtra per tag
+        // filtra per organizzatore
+        // filtra per descrizione
         var elements = document.getElementsByClassName("button_list_element");
         for(var i=0; i<elements.length; i++) {
           if(elements[i].id == "eventi") {
@@ -167,7 +173,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
         var page = new EventiListView({model: new Eventi(filteredEventi)});
-        page.title = '"'  + keyword + '"';
+        page.title = 'Risultati Ricerca';
         this.changePage(page); 
       },
 
@@ -215,15 +221,18 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       changePage: function (page) {
+        if((page instanceof CoverView)) {
+          return;
+        }
         var contentClasses = document.getElementById("content").classList;
-        if((page instanceof EnteView) || (page instanceof FrascatiScienzaView)) {
+        if((page instanceof EnteView)) {
           contentClasses.add("not_scrollable");
           contentClasses.remove("scrollable");
         } else {
           contentClasses.add("scrollable");
           contentClasses.remove("not_scrollable");
         }
-        if(Backbone.history.history.length < 2) {
+        if((page instanceof FrascatiScienzaView)) {
           $("#backbutton").hide();
         } else {
           $("#backbutton").show();
