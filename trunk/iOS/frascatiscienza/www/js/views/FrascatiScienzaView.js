@@ -8,15 +8,16 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       className: "default_wrapper",
 
       events: {
-          "touchend #pulsanteCassetto": "cassetto",
+          // "touchend #pulsanteCassetto": "cassetto",
           "touchend #enti": "enti",
+          "touchend #_eventi": "eventi",
           "touchend #sponsor": "sponsor",
           "touchend #continua_frascati": "continua",
           "touchmove": "touchMove"
       },
 
       initialize: function() {
-        this.title = "Frascati Scienza";
+        this.title = "Home";
         this.moving = false;
       },
 
@@ -29,7 +30,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       render: function () {
         // gestione nav bar
         this.updateNavbar();
-
         $(this.el).html(this.template(this.model.toJSON()));
         var el = $("#titlebar");
         el.removeClass();
@@ -58,15 +58,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
         }
       },
 
-      cassetto: function(event) {
-        if(this.moving) {
-            this.moving = false;
-            return;
-        } 
-        var element = document.getElementById("cassetto");
-        element.classList.toggle("chiuso");
-        element.classList.toggle("aperto");
-      },
+      // cassetto: function(event) {
+      //   if(this.moving) {
+      //       this.moving = false;
+      //       return;
+      //   } 
+      //   var element = document.getElementById("cassetto");
+      //   element.classList.toggle("chiuso");
+      //   element.classList.toggle("aperto");
+      // },
 
       enti: function(event) {
         if(this.moving) {
@@ -77,20 +77,29 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
         $("#backbutton").show();
       },
 
-      sponsor: function(event) {
+      eventi: function(event) {
         if(this.moving) {
             this.moving = false;
             return;
         } 
-        Backbone.history.navigate("sponsor", {trigger: true});
+        Backbone.history.navigate("eventi", {trigger: true});
         $("#backbutton").show();
       },
+
+      // sponsor: function(event) {
+      //   if(this.moving) {
+      //       this.moving = false;
+      //       return;
+      //   } 
+      //   Backbone.history.navigate("sponsor", {trigger: true});
+      //   $("#backbutton").show();
+      // },
 
       continua: function(event) {
         if(this.moving) {
             this.moving = false;
             return;
-          } 
+        } 
         Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
         $("#backbutton").show();
       },
