@@ -3,8 +3,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
 
     var CacciaView = Backbone.View.extend({
 
+        events: {
+          "touchend #vai": "goToIntroCaccia",
+          "touchmove": "touchMove"
+        },
+
         initialize: function() {
             this.title = "Caccia al tesoro"; 
+            this.moving = false;
         },
 
         className: "default_wrapper",
@@ -40,6 +46,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/caccia
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
           }
+        },
+
+        goToIntroCaccia: function (event) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          }
+          Backbone.history.navigate("introcaccia", {trigger: true});
         }
       });
 
