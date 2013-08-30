@@ -23,13 +23,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
 
         render: function () {
           // gestione nav bar
-          this.updateNavbar();
+          //this.updateNavbar();
 
           $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
-          var elements = document.getElementsByClassName("button_list_element");
+/*          var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "caccia") {
               elements[i].classList.remove("nonvisibile");
@@ -40,7 +40,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
                 elements[i].classList.remove("nonvisibile");
               }
             }
-          }
+          }*/
           return this;
         },
 
@@ -78,7 +78,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
         },
 
         procediPressed: function (e) {
-          Backbone.history.navigate("caccia/", {trigger: true});
+          Backbone.history.navigate("caccia", {trigger: true});
         }
       });
 
