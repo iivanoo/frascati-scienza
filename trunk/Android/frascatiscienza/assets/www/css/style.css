@@ -24,10 +24,12 @@ body {
 
 @media screen and (min-width: 480px) {
 
-body{font-size: 1.2em;} }
+    body{font-size: 1.2em;}
+}
 
 @media screen and (max-width: 479px) {
-body{font-size: .8em;}
+
+    body{font-size: .8em;}
 }
 
 
@@ -382,36 +384,50 @@ margin-bottom: 5px;
 
 }
 
-
+	
 .half_button{
 	color: white;
 	/*font-size: 1.5em;*/
 	font-family: 'dax';
 	display: inline-block;
 	width: 40%;
+	margin-right: 2px;
 	text-align: center;
 	height: 25%;
-	padding-top: 15px;
 	/*padding-bottom: 10%;*/
-	margin-top:30%;
+	margin-top:40%;
 	box-shadow: 0 2px 0px rgba(0,0,0,.2);
-
+			
 	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+	
+	
+}	
 
+.half_button img{
+	margin-top: 5px;
+	width: 25%;
+	display: inline-block;
+	vertical-align:middle;
+}
 
+.text_half{
+margin-top: 8px;
+vertical-align: middle;	
+display: inline-block;
+	
 }
 
 .default_coverimage_block img{
-	background: url('../res/loader.gif') no-repeat;
-	background-position: center;
-	min-height: 30%;
+	background: url('../res/loader.gif') no-repeat; 
+	background-position: center; 
+	min-height: 30%; 
 	width: 100%;
 }
 
 .default_coverimage_block video {
-
+	
 	width: 100%;
-
+	
 }
 
 .caption_block{
@@ -419,23 +435,23 @@ margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 120px;
-
+	
 	width: 90%;
 /*	font-size: 1em; */
-	line-height: 1.5em;
+	line-height: 1.5em;	
 }
 
 .caption_block h2{
 	/*font-size: 1em;*/
 	font-family: 'Dax';
-
-
+	
+	
 }
 
 .caption_content{
 	text-align: justify;
 	padding-bottom: 20px;
-
+	
 }
 
 .caption_content h1{
@@ -450,7 +466,7 @@ margin-bottom: 5px;
 	margin-left: 80%;
 	padding-bottom: 40px;
 
-
+	
 }
 */
 
@@ -461,17 +477,17 @@ margin-bottom: 5px;
 	font-family: 'Dax';
 	/*font-size: 1.2em;*/
 	margin-left: 60%;
-
+	
 }
 
 #continua_frascati{
 
 	box-shadow: 0 2px 0px rgba(0,0,0,.2);
-
+			
 	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
 	border-radius: 5px;
 
-
+	
 }
 
 #cassetto{
@@ -500,7 +516,7 @@ margin-bottom: 5px;
 		height: 30px;
 		background-color: white;
 		width: 100%;
-		border-bottom: 2px solid #000;
+		border-bottom: 2px solid #000;		
 	}
 
 
@@ -515,7 +531,7 @@ margin-bottom: 5px;
 		background-color: #888888;
 		color: white;
 	}
-
+	
 .backgr_buttons_home{
 	margin-top: 10px;
 	margin-left: auto;
@@ -525,11 +541,11 @@ margin-bottom: 5px;
 	width: 90%;
 	height: 40%;
 	background-position: 50% 50%;
-    background-size: 50%;
-    background-image: url("../img/stars_back_cover.png");
+    background-size: 100%;
+    background-image: url("../img/back_frasche.png");
     text-align: center;
-}
-
+}	
+	
 .backgr_buttons_rss{
 		margin-top: 10px;
 
@@ -543,8 +559,8 @@ margin-bottom: 5px;
     background-size: 100%;
     background-image: url("../img/contatto.jpg");
     text-align: center;
-}
-
+}	
+	
 /* frascati scienza */
 
 
@@ -577,11 +593,11 @@ margin-bottom: 5px;
 	height: 100px;
 	width: 100px;
 	display: block;
-
+	
 }
 
 .img_wrapper img{
-	height:85px;
+	height:85px;	
 }
 
 
@@ -591,9 +607,9 @@ margin-bottom: 5px;
 	width:55%;
 	min-width: 120px;
 	display: block;
-
-
-
+	
+	
+	
 }
 
 .legenda_title{
@@ -611,9 +627,9 @@ margin-bottom: 5px;
 	width:60%;
 	min-width: 100px;
 	display: inline-block;
-
-
-
+	
+	
+	
 }
 
 .textlist_title{
@@ -627,7 +643,7 @@ margin-bottom: 5px;
 }
 
 .textlist_content{
-
+	
 	display: inline-block;
 	margin: 0px;
 	padding:0px;
@@ -636,7 +652,7 @@ margin-bottom: 5px;
 	text-overflow: ellipsis;
 	text-align: left;
 	height: 4.2em;
-
+	
 }
 
 .arrow_wrapper{
@@ -648,7 +664,7 @@ margin-bottom: 5px;
 	right: 0px;
 	/*width:35px; */
 	height:55px;
-
+	
 }
 
 .arrow_wrapper img{
@@ -669,7 +685,7 @@ margin-bottom: 5px;
 		height: 40px;
 		width: 30px;
 
-
+	
 }
 
 
@@ -681,7 +697,7 @@ margin-bottom: 5px;
 		height: 40px;
 		width: 30px;
 }
-/* lista */
+/* lista */ 
 
 
 
@@ -701,11 +717,11 @@ margin-bottom: 5px;
 	overflow:hidden;
 	text-overflow: ellipsis;
 
-
+	
 }
 
 .event_row_wrapper{
-
+	
 	/* height: 110px; 80px*/
 	width:100%;
 	display: inline-block;
@@ -730,7 +746,7 @@ margin-bottom: 5px;
 	overflow:hidden;
 	text-overflow: ellipsis;
 	font-family: 'Dax';
-
+	
 }
 
 .eventlist_time{
@@ -755,7 +771,7 @@ margin-bottom: 5px;
 	text-align: justify;
 	height: 55px;
 	*/
-
+	
 	margin: 0px;
 	padding-left: 5px;
 	/*font-size: 10px;*/
@@ -767,7 +783,7 @@ margin-bottom: 5px;
 }
 
 .eventlist_dots{
-
+	
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -794,95 +810,95 @@ margin-bottom: 5px;
 	width:40px;
 	height:40px;
 	display: inline-block;
-
+	
 }
 /*
 	.ad_famiglia{
 		background-image: url('../img/symbol_green.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_tutti{
 		background-image: url('../img/symbol_blue.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_ragazzi{
 		background-image: url('../img/symbol_orange.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_fisica{
 		background-image: url('../img/symbol_atomo.png');
 		background-size: 40px 40px;
-	}
-
+	}	
+	
 	.ad_astronomia{
 		background-image: url('../img/symbol_pianeta.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_biologia{
 		background-image: url('../img/symbol_provetta.png');
 		background-size: 40px 40px;
 	}
 	*/
-
+	
 	.ad_giovani{
 		background-image: url('../img/symbol_giovani.png');
 		background-size: 40px 40px;
 	}
-
-
+	
+	
 	.ad_pubblicogenerale{
 		background-image: url('../img/symbol_pubblicogenerale.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_medie{
 		background-image: url('../img/symbol_scuolemedie.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_elementari{
 		background-image: url('../img/symbol_scuolaelementare.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_superiori{
 		background-image: url('../img/symbol_scuolesuperiori.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_aperitivi{
 		background-image: url('../img/symbol_aperitiviscientifici.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_giochiscientifici{
 		background-image: url('../img/symbol_giochiscientifici.png');
 		background-size: 40px 40px;
 	}
-
+	
 	.ad_laboratori{
 		background-image: url('../img/symbol_laboratori.png');
 		background-size: 40px 40px;
-
+		
 	}
 
 	.ad_seminari{
 		background-image: url('../img/symbol_seminario.png');
 		background-size: 40px 40px;
-
+		
 	}
-
+	
 	.ad_qrcode{
 		background-image: url('../img/symbol_qr.png');
 		background-size: 40px 40px;
 	}
-
-
-
+	
+	
+	
 .sfoglia_wrapper{
 	/*display: block;
 	text-align: center;*/
@@ -890,8 +906,8 @@ margin-bottom: 5px;
 	height: 40px;
 	background-color: white;
 	border-bottom: 1px solid #9f9f9f;
-
-
+	
+	
 }
 
 .block_sfoglia{
@@ -910,8 +926,8 @@ margin-top: 7px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
-
-
+	
+	
 }
 
 .date{
@@ -930,7 +946,7 @@ margin-top: 7px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
-
+	
 }
 
 
@@ -940,7 +956,7 @@ display: inline-block;
 width: 38px;
 margin-top: 60px;
 margin-left: 20px;
-
+	
 }
 
 .event_arrow_wrapper img{
@@ -954,7 +970,7 @@ margin-left: 20px;
 	font-family: 'dax';
 	position: absolute;
 	bottom: 0;
-	font-size: 1.2em;
+	font-size: 1.2em;	
 	margin-bottom: 15px;
 	padding: 5px;
 	padding-bottom: 10px;
@@ -984,9 +1000,9 @@ margin-left: 20px;
 	background-repeat:no-repeat;
 	background-position:center;
 	border-bottom: 2px inset #fff;
-
+	
 	/*background-color: #ccc;*/
-
+	
 }
 
 
@@ -999,7 +1015,7 @@ margin-left: 20px;
 	background-repeat:no-repeat;
 	background-position:center;
 
-
+	
 }
 
 
@@ -1008,19 +1024,19 @@ margin-left: 20px;
 	width:50%;
 	margin-left:50%;
 	border-left: 2px solid #fff;
-
+	
 }
 
 
 #ente_dx_top{
-	 position: relative;
+	 position: relative;	
 	width:100%;
 	height: 35%;
 	background-image: url('../pics/_blank/dx_top.png');
 	background-size: auto 100%;
 	background-repeat:no-repeat;
 	background-position:center;
-	border-bottom: 2px inset #fff;
+	border-bottom: 2px inset #fff;	
 }
 
 #ente_dx_bottom{
@@ -1030,7 +1046,7 @@ margin-left: 20px;
 	background-image: url('../pics/_blank/dx_bot.png');
 	background-size: auto 100%;
 	background-repeat:no-repeat;
-	background-position:center;
+	background-position:center;	
 }
 
 
@@ -1058,7 +1074,7 @@ font-family: 'dax';
 }
 
 .simple_element_row{
-
+	
 	width:100%;
 	float: left;
 	box-sizing: border-box;
@@ -1074,10 +1090,10 @@ font-family: 'dax';
 	overflow:hidden;
 	text-overflow: ellipsis;
 	font-weight: bold;
-
-
-
-
+	
+	
+	
+	
 }
 
 .rss_list_content{
@@ -1089,13 +1105,13 @@ font-family: 'dax';
 	/*text-align: justify;*/
 	/*max-height: 22px;*/
 	max-height: 2.5em;
-
+	
 	/*line-height: 11px;*/
-
+	
 }
 
 .rss_list_dots{
-
+	
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -1143,7 +1159,7 @@ float: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background: rgba(255,255,255,0.7);
-
+	
 }
 
 .agenda_title{
@@ -1158,7 +1174,7 @@ float: right;
 
 
 #agenda_empty{
-visibility: visible;
+visibility: visible;	
 text-align: left;
 font-size: 1.2em;
 height: inherit;
@@ -1200,8 +1216,8 @@ display: block;
 	background-color: #ccc;
 	right: 0;
 	height: 100%;
-
-
+	
+	
 }
 
 .simple_text_list{
@@ -1210,8 +1226,8 @@ display: block;
 	display: inline-block;
 	/*font-size: 12px;*/
 /*	float: left;*/
-
-
+	
+	
 	width: 75%;
 min-width: 120px;
 display: inline-block;
@@ -1227,8 +1243,8 @@ float: left;
 	white-space: nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
-
-
+	
+	
 }
 
 .agenda_list_content{
@@ -1240,11 +1256,11 @@ float: left;
 	text-align: left;
 	max-height: 2.4em;
 	/*line-height: 12px;*/
-
+	
 }
 
 .agenda_list_dots{
-
+	
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -1278,12 +1294,12 @@ float: left;
 	}
 
 #ling_eventi{
-	background-color: #3f6195;
+	background-color: #3f6195;	
 }
 
 
 #ling_enti{
-	background-color: #a4252a;
+	background-color: #a4252a;	
 }
 
 .agenda_arrow_wrapper{
@@ -1299,7 +1315,7 @@ float: right;
 .ruotatesto{
 	-webkit-transform: rotate(270deg);
 width: 40px;
-position: absolute;
+position: fixed;
 margin-top: 60px;
 }
 
@@ -1392,6 +1408,8 @@ margin-top: 60px;
 	border-left: 1px solid #ccc;
 	padding-left: 5px;
 }
+
+
 
 /* CACCIA */
 
