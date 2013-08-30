@@ -195,15 +195,15 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       caccia: function () {
         var page = new CacciaView();
+        $("#backbutton").show();
+        $(".button_list_element").css("visibility", "visible"); 
+        $(".button_list_element_small").css("visibility", "visible"); 
         this.changePage(page); 
       },
 
       introcaccia: function () {
         var page = new IntroCacciaView();
         this.changePage(page); 
-        $("#backbutton").show();
-        $(".button_list_element").show(); 
-        $(".button_list_element_small").show();
       },
 
       introtappa: function (id) {
@@ -214,8 +214,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           });
           this.changePage(tappaView); 
           $("#backbutton").hide();
-          $(".button_list_element").hide(); 
-          $(".button_list_element_small").hide();
+          $(".button_list_element").css("visibility", "hidden"); 
+          $(".button_list_element_small").css("visibility", "hidden");
         } else {
           navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
         }
@@ -228,8 +228,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         });
         this.changePage(domandaView);
         $("#backbutton").hide();
-        $(".button_list_element").hide(); 
-        $(".button_list_element_small").hide();
+        $(".button_list_element").css("visibility", "hidden");
+        $(".button_list_element_small").css("visibility", "hidden");
       },
 
       risultatocaccia: function (id) {
@@ -239,8 +239,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         });
         this.changePage(risultatoView); 
         $("#backbutton").hide();
-        $(".button_list_element").hide(); 
-        $(".button_list_element_small").hide();
+        $(".button_list_element").css("visibility", "hidden"); 
+        $(".button_list_element_small").css("visibility", "hidden");
       },
 
       cerca: function () {
@@ -271,6 +271,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       changePage: function (page) {
         if((page instanceof CoverView)) {
+          return;
+        }
+        if((page instanceof IntroCacciaView) && !(this.currentView instanceof CacciaView)) {
           return;
         }
         if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
