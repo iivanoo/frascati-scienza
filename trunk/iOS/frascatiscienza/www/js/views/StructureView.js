@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "handlebars", "text!templates/structure.html"],
-    function ($, _, Backbone, Handlebars, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienzaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "text!templates/structure.html"],
+    function ($, _, Backbone, Handlebars, FrascatiScienzaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, template) {
 
     var StructureView = Backbone.View.extend({
 
@@ -24,11 +24,35 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/struct
         },
 
         initialize: function() {
+          var self = this;
           this.on("updateTitle", this.updateTitle);
+          document.addEventListener("backbutton", function(e) {
+            if(e) {
+              e.preventDefault();
+            }
+            self.goBack(self);
+          }, false);
           this.currentView = undefined;
         },
 
-        goBack: function () {
+        goBack: function (self) {
+          var that = self ? self : this;
+          if(!that.currentView) {
+            return false;
+          }
+          if(that.currentView instanceof FrascatiScienzaView) {
+            return false;
+          }
+          if(that.currentView instanceof IntroTappaView) {
+            return false;
+          }
+          if(that.currentView instanceof DomandaCacciaView) {
+            return false;
+          }
+          if(that.currentView instanceof RisultatoCacciaView) {
+            Backbone.history.navigate("caccia", {trigger: true});
+            return false;
+          }
           window.history.back();
         },
 
