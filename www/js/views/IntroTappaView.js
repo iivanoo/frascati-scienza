@@ -7,6 +7,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
 
         events: {
           "touchend #vaiDomanda": "vaiDomanda",
+          "touchend #vaiFine": "vaiFineCaccia",
           "touchmove": "touchMove"
         },
 
@@ -60,6 +61,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             return;
           } 
           Backbone.history.navigate("domandacaccia/" + this.model.id, {trigger: true});
+        },
+
+        vaiFineCaccia: function (e) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
+          Backbone.history.navigate("finecaccia/", {trigger: true});
         }
       });
 

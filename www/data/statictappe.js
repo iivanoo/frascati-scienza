@@ -61,48 +61,59 @@ define({
     luogo: {lat: "41.898003", lon: "12.480388"}
   },
   { 
-    id: "tappaXXXX",
-    titolo: "XXXX",
-    video: "XXXX",
-    intro: [XXXX],
-    domanda: "XXXX",
-    risposte: ["XXXX", "XXXX", "XXXX","XXXX"],
-    rispostacorretta: "XXXX",
-    indicazione: "XXXX",
-    luogo: {lat: "XXXX", lon: "XXXX"}
+    id: "tappa5000",
+    titolo: "Tappa 5 – Palazzo Valentini",
+    video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/scena_5.mp4",
+    intro: ["Tra il 2006 ed il 2010 è stata restaurata la domus romana di età imperiale, ca IV secolo d. C., posta sotto Palazzo Valentini, appartenente a una potente famiglia romana dell5\'epoca.",
+        "Oggi è visitabile una ricostruzione multimediale che offre la vista a mosaici, pareti decorate, pavimenti in marmo, statue, giardini e le terme che erano parte di una struttura di alcune migliaia di metri quadrati.", 
+    ],
+    domanda: "Di che epoca è la Domus Romana trovata sotto Palazzo Valentini?",
+    risposte: ["IV sec d. C.", "XV sec d. C.", "III sec  a. C.","V sec a. C."],
+    rispostacorretta: "0",
+    indicazione: "Vai a Via Panisperna per incontrare Ottolenghi in uno dei laboratori con cui collaborava",
+    luogo: {lat: "41.896887", lon: "12.483582"}
   },
   { 
-    id: "tappaXXXX",
-    titolo: "XXXX",
-    video: "XXXX",
-    intro: [XXXX],
-    domanda: "XXXX",
-    risposte: ["XXXX", "XXXX", "XXXX","XXXX"],
-    rispostacorretta: "XXXX",
-    indicazione: "XXXX",
-    luogo: {lat: "XXXX", lon: "XXXX"}
+    id: "tappa6143",
+    titolo: "Tappa 6 – Via Panisperna",
+    video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/scena_6.mp4",
+    intro: ["Ottolenghi nasce nel 1861 ad Asti e si laurea in medicina e chirurgia a Torino a 23 anni. Allievo di Cesare Lombroso, creatore della disciplina della criminologia scientifica, studia inoltre Antropologia e Psichiatria. Nel 1902 nasce la Scuola Superiore di Polizia, uno dei suoi maggiori traguardi. Arriva a Roma nel 1903 dove prosegue il suo lavoro nella stesura di un metodo scientifico applicato alle indagini di polizia. Qui formalizza il \"Programma di Polizia Scientifica\" nel quale psicologia, medicina legale, antropologia e psichiatria trovavano applicazione concreta nel settore delle investigazioni, fino a quel momento lasciate \"all’intuito del funzionario di polizia\".", 
+        "Il 20 settembre 1870 avviene la presa di Roma, che l’anno dopo diverrà capitale. Il ministro Quintino Sella fa suo il concetto espresso da Mazzini e Garibaldi della Terza Roma, una capitale faro culturale e scientifico per il mondo. Si impegna per costruire uno Stato Italiano che \"chieda molto ai suoi cittadini, ma che sia capace di restituire anche molto\". Gli anni dell'unificazione non sono anni facili per l'economia, ma, qualunque taglio o imposta, non va mai ad intaccare l'investimento nell'Istruzione, la formazione e lo sviluppo delle scienze.",
+        "Nel giugno del 1872 fa promulgare un disegno di legge per il riordino delle Istituzioni Scientifiche e avvia la realizzazione di un Polo delle Scienze per ospitare gli Istituti di Chimica, Fisica e Matematica, a Via Panisperna 89/a, incaricando i migliori esponenti di queste discipline: il chimico Stanislao Cannizzaro, il fisico Pietro Blaserna ed il matematico Luigi Cremona."
+    ],
+    domanda: "Cosa sorgeva a via Panisperna 89/a?",
+    risposte: ["L’Istituto di Frenologia", "Il Polo scientifico di Chimica, Fisica e Matematica", "L’Istituto di Polizia Scientifica","Il Polo di ricerca della Polizia"],
+    rispostacorretta: "1",
+    indicazione: "Complimenti, hai risposto correttamente. Segui Samorì alla Biblioteca Casanatense per raccogliere altri indizi",
+    luogo: {lat: "41.896727", lon: "12.492333"}
   },
   { 
-    id: "tappaXXXX",
-    titolo: "XXXX",
-    video: "XXXX",
-    intro: [XXXX],
-    domanda: "XXXX",
-    risposte: ["XXXX", "XXXX", "XXXX","XXXX"],
-    rispostacorretta: "XXXX",
-    indicazione: "XXXX",
-    luogo: {lat: "XXXX", lon: "XXXX"}
+    id: "tappa7263",
+    titolo: "Tappa 7 – Biblioteca Casanatense",
+    video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/scena_7.mp4",
+    intro: ["Margarethe Traube Mengarini nasce a Berlino nel 1856 in una famiglia di scienziati ed intellettuali.",
+        "Fervente emancipazionista, è una delle prime due donne laureatesi in Scienze a Roma, nel 1883. Il suo spirito di iniziativa nell\'affrontare la cultura e la scienza, la portano a collaborare in vari laboratori, tra Roma, Napoli e Berlino.",
+        "Nella sua residenza vicino al Quirinale, istituì un circolo culturale che vantava la presenza di personaggi di spicco del mondo scientifico e culturale, Romano ed Europeo.",
+        "La biblioteca deve l'origine e il nome al card. Girolamo Casanate che, nel 1698, destinò la sua raccolta di 25.000 volumi e la somma di 160.000 scudi alla fondazione d'una grande biblioteca pubblica a Roma.",
+        "Tra i tesori conservati: un esemplare di \"Exultet\", rotolo miniato del medioevo meridionale (sec.XII), un gruppo di manoscritti appartenenti all'Ordine dei Templari, codici di argomento medico dei secoli XIII e XIV tra cui la Chirurgia attribuita tra il 1210 e il 1250 al maestro Rolando della Scuola Salernitana di medicina, il Tacuinum sanitatis, vero compendio di scienza naturale con le descrizioni di piante, animali e minerali e riferimenti alle loro virtù mediche e terapeutiche, e il Theatrum sanitatis, enciclopedia medica del sec. XV realizzato per il re Venceslao di Lussemburgo."
+    ],
+    domanda: "Come si chiama l\'enciclopedia medica realizzata per il re Venceslao conservata alla Biblioteca Casanatense?",
+    risposte: ["Exultet", "Tacuinum sanitatis", "Theatrum sanitatis","Chirurgia"],
+    rispostacorretta: "2",
+    indicazione: "Sei vicino a risolvere il mistero. Raggiungi Piazza Colonna e scoprirai la soluzione dell’enigma!",
+    luogo: {lat: "41.898823", lon: "12.479459"}
   },
   { 
-    id: "tappaXXXX",
-    titolo: "XXXX",
-    video: "XXXX",
-    intro: [XXXX],
-    domanda: "XXXX",
-    risposte: ["XXXX", "XXXX", "XXXX","XXXX"],
-    rispostacorretta: "XXXX",
-    indicazione: "XXXX",
-    luogo: {lat: "XXXX", lon: "XXXX"}
+    id: "tappa8123",
+    titolo: "Tappa 8 – Piazza Colonna",
+    video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/scena_8.mp4",
+    intro: ["Vito Volterra nasce nel 1860 con un talento innato per la matematica. A soli 13 anni, dopo aver letto Dalla Terra alla Luna di Verne, calcola la traiettoria balistica di una navicella, sottoposta all\'attrazione gravitazionale della Terra e della Luna.",
+        "Prima di giungere a Roma nel 1900, insegna a Torino e sviluppa una fitta rete di contatti internazionali. In quegli anni mette le basi per quello che diventerà il suo soprannome in tutte le università europee: \"Mr Scienza Italiana\".", 
+        "Diverrà famoso per i suoi lavori sull\'applicazione della Matematica alla Biologia, all'Economia e ad altre scienze \"meno teoriche\". Nel 1903 diviene senatore e inizia a lavorare alla costruzione di nuove Istituzioni Scientifiche Italiane sul modello europeo. Dopo la fine della Prima Guerra Mondiale avvia il percorso che porterà, nel 1923,  alla nascita del CNR, di cui sarà il primo presidente.",
+        "Durante una visita in Germania gli fu chiesto come mai gli scienziati, pur non conoscendosi e provenendo da paesi e culture diverse, si sentano subito amici tra loro. Rispose: \"Perchè hanno un amico in comune: la Scienza!\"",
+    ],
+    finale: true,
+    luogo: {lat: "41.900806", lon: "12.480349"}
   }
   ]
 });
