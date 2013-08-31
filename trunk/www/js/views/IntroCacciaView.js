@@ -72,7 +72,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
           var tappa = Data.getTappaById(result.text);
           if(tappa) {
             // TODO decommentare per controllare se il QR code era già stato scansionato
-/*            if(!localStorage.getItem("visitedDomande")) {
+            if(!localStorage.getItem("visitedDomande")) {
               var visited = {"visited": []};
               localStorage.setItem("visitedDomande", JSON.stringify(visited));
             }
@@ -80,11 +80,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
             for(var i=0; i<visitedDomande.length; i++) {
               if(visitedDomande[i] == result.text) {
                 navigator.notification.alert('Il QR code scansionato era già stato letto in precedenza.', function() {}, "Attenzione");
+                Backbone.history.navigate("risultatocaccia/" + result.text, {trigger: true});
                 return;
               }
             }
             visitedDomande.push(result.text);
-            localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); */
+            localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); 
             Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
           } else {
             navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");

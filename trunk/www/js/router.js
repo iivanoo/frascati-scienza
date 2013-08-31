@@ -195,11 +195,17 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       caccia: function () {
-        var page = new CacciaView();
-        $("#backbutton").show();
-        $(".button_list_element").css("visibility", "visible"); 
-        $(".button_list_element_small").css("visibility", "visible"); 
-        this.changePage(page); 
+        var visitedDomande = localStorage.getItem("visitedDomande");
+        // in totale abbiamo sempre 8 tappe 
+        if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
+          this.finecaccia();
+        } else {
+          var page = new CacciaView();
+          $("#backbutton").show();
+          $(".button_list_element").css("visibility", "visible"); 
+          $(".button_list_element_small").css("visibility", "visible"); 
+          this.changePage(page); 
+        }
       },
 
       finecaccia: function () {

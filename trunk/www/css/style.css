@@ -484,7 +484,8 @@ display: inline-block;
 	font-family: 'Dax';
 	/*font-size: 1.2em;*/
 	margin-left: 60%;
-	
+	/* IVANO ho aggiunto il padding per rendere il pulsante più tappabile*/
+	padding: 10px;
 }
 
 #continua_frascati{
@@ -1461,4 +1462,34 @@ margin-top: 60px;
 #counter{
 	display: inline-block;
 	width:50%
+}
+
+/* IVANO */
+
+#indicazione {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	width: 90%;
+}
+
+#procedi {
+	position: absolute;
+	bottom: 50px;
+}
+
+#vai {
+	margin: 0;
+}
+
+#totalScore {
+	width: 100%; 
+	text-align: center; 
+	margin-top: 10%; 
+	margin-bottom: 10%; 
+	font-size: 4em;
+	font-weight: bold;
 }
