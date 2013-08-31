@@ -72,8 +72,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                   var visitedDomande = JSON.parse(localStorage.getItem("visitedDomande")).visited;
                   for(var i=0; i<visitedDomande.length; i++) {
                     if(visitedDomande[i] == result.text) {
-                      navigator.notification.alert('Il QR code scansionato era già stato letto in precedenza.', function() {}, "Attenzione");
-                      Backbone.history.navigate("risultatocaccia/" + result.text, {trigger: true});
+                      navigator.notification.alert('Il QR code scansionato era già stato letto in precedenza.', function() {
+                        Backbone.history.navigate("risultatocaccia/" + result.text, {trigger: true});
+                      }, "Attenzione");
                       return;
                     }
                   }
