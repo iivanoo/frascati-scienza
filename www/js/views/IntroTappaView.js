@@ -68,7 +68,16 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             this.moving = false;
             return;
           } 
-          Backbone.history.navigate("finecaccia/", {trigger: true});
+          var visitedDomande = localStorage.getItem("visitedDomande");
+          // in totale abbiamo sempre 8 tappe 
+          if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
+            Backbone.history.navigate("finecaccia/", {trigger: true});
+          } else {
+            navigator.notification.alert('Attenzione, ti mancano delle tappe da completare!', function() {
+              Backbone.history.navigate("caccia/", {trigger: true});
+            }, "Attenzione");
+            //Backbone.history.navigate("caccia/", {trigger: true});
+          }
         }
       });
 
