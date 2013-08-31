@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, MappaView, RicercaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -26,7 +26,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "introcaccia": "introcaccia",
         "introtappa/:id": "introtappa",
         "domandacaccia/:id": "domandacaccia",
-        "risultatocaccia/:id": "risultatocaccia"
+        "risultatocaccia/:id": "risultatocaccia",
+        "finecaccia": "finecaccia"
       },
 
       initialize: function () {
@@ -195,6 +196,14 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       caccia: function () {
         var page = new CacciaView();
+        $("#backbutton").show();
+        $(".button_list_element").css("visibility", "visible"); 
+        $(".button_list_element_small").css("visibility", "visible"); 
+        this.changePage(page); 
+      },
+
+      finecaccia: function () {
+        var page = new FineCacciaView();
         $("#backbutton").show();
         $(".button_list_element").css("visibility", "visible"); 
         $(".button_list_element_small").css("visibility", "visible"); 

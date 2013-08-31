@@ -36,7 +36,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         },
 
         goBack: function (self) {
-          var that = self ? self : this;
+          var that = (self instanceof StructureView) ? self : this;
           if(!that.currentView) {
             return false;
           }
