@@ -60,7 +60,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                   "Result: " + result.text + "\n" +
                   "Format: " + result.format + "\n" +
                   "Cancelled: " + result.cancelled);
-              if(!cancelled) {
+              if(!result.cancelled) {
                 //Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
                 var tappa = Data.getTappaById(result.text);
                 if(tappa) {
