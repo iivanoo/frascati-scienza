@@ -398,9 +398,9 @@ margin-bottom: 5px;
 	font-family: 'dax';
 	display: inline-block;
 	width: 40%;
+	margin-right: 2px;
 	text-align: center;
 	height: 25%;
-	padding-top: 15px;
 	/*padding-bottom: 10%;*/
 	margin-top:30%;
 	box-shadow: 0 2px 0px rgba(0,0,0,.2);
@@ -409,6 +409,20 @@ margin-bottom: 5px;
 	
 	
 }	
+
+.half_button img{
+	margin-top: 5px;
+	width: 25%;
+	display: inline-block;
+	vertical-align:middle;
+}
+
+.text_half{
+margin-top: 8px;
+vertical-align: middle;	
+display: inline-block;
+	
+}
 
 .default_coverimage_block img{
 	background: url('../res/loader.gif') no-repeat; 
@@ -534,8 +548,8 @@ margin-bottom: 5px;
 	width: 90%;
 	height: 40%;
 	background-position: 50% 50%;
-    background-size: 50%;
-    background-image: url("../img/stars_back_cover.png");
+    background-size: 100%;
+    background-image: url("../img/back_frasche.png");
     text-align: center;
 }	
 	
