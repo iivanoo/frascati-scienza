@@ -1468,8 +1468,8 @@ margin-top: 60px;
 
 #indicazione {
 	position: absolute;
-	top: 5%;
-	left: 5%;
+	top: 0;
+	margin: 5%;
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
@@ -1477,6 +1477,7 @@ margin-top: 60px;
 
 #procedi {
 	position: absolute;
+	margin: 5%;
 	bottom: 50px;
 }
 
