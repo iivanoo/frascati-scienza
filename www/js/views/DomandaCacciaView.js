@@ -12,7 +12,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
 
         initialize: function() {
             this.title = this.model.get("titolo");
-            this.moving = false; 
+            this.moving = false;
+            this.on("inTheDom", this.start); 
+            this.seconds = parseInt(localStorage.getItem("cacciaSeconds"));
         },
 
         touchMove: function() {
@@ -54,6 +56,33 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           }
         },
 
+        start: function (event) {
+          // tempo in Unix time
+          this.startTimestamp = new Date().getTime();
+          var self = this;
+          var clockText = document.getElementById("clockText");
+
+          this.interval = window.setInterval(function() {
+            self.seconds++;
+            var now = new Date().getTime();
+            //var diff = Math.floor((now - self.startTimestamp) / 1000);
+            var hours   = Math.floor(self.seconds / 3600);
+            var minutes = Math.floor((self.seconds - (hours * 3600)) / 60);
+            var seconds = self.seconds - (hours * 3600) - (minutes * 60);
+
+            if (hours   < 10) {
+              hours   = "0"+hours;
+            }
+            if (minutes < 10) {
+              minutes = "0"+minutes;
+            }
+            if (seconds < 10) {
+              seconds = "0"+seconds;
+            }
+            clockText.innerHTML = hours + " : " + minutes + " : " + seconds;
+          }, 1000);
+        },
+
         domandaPressed: function (e) {
           if(this.moving) {
             this.moving = false;
@@ -61,13 +90,20 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           } 
           var idDomanda = e.currentTarget.id.charAt(e.currentTarget.id.length - 1);
           if(idDomanda == this.model.get("rispostacorretta")) {
-            // TODO gestire domanda corretta
-            console.log("ok");
+            // gestire domanda corretta
+            var self = this;
+            window.clearInterval(this.interval);
+            document.getElementById(e.currentTarget.id).classList.add("rvera");
+            localStorage.setItem("cacciaSeconds" , "" + this.seconds);
+            setTimeout(function(){
+              Backbone.history.navigate("risultatocaccia/" + self.model.id, {trigger: true});
+            }, 1000);
           } else {
-            // TODO gestire domanda sbagliata
-            console.log("no");
+            // gestire domanda sbagliata
+            document.getElementById(e.currentTarget.id).classList.add("rfalsa");
+            navigator.notification.vibrate(500);
+            this.seconds = this.seconds + 30;
           }
-          Backbone.history.navigate("risultatocaccia/" + this.model.id, {trigger: true});
         }
       });
 

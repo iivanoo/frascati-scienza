@@ -4,7 +4,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
     var RisultatoCacciaView = Backbone.View.extend({
 
         tagName: "div",
-        id: "map",
+        id: "mapContainer",
 
         model: Tappa,
 
