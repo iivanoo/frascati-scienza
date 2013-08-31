@@ -95,10 +95,10 @@ define({
         "Fervente emancipazionista, è una delle prime due donne laureatesi in Scienze a Roma, nel 1883. Il suo spirito di iniziativa nell\'affrontare la cultura e la scienza, la portano a collaborare in vari laboratori, tra Roma, Napoli e Berlino.",
         "Nella sua residenza vicino al Quirinale, istituì un circolo culturale che vantava la presenza di personaggi di spicco del mondo scientifico e culturale, Romano ed Europeo.",
         "La biblioteca deve l'origine e il nome al card. Girolamo Casanate che, nel 1698, destinò la sua raccolta di 25.000 volumi e la somma di 160.000 scudi alla fondazione d'una grande biblioteca pubblica a Roma.",
-        "Tra i tesori conservati: un esemplare di \"Exultet\", rotolo miniato del medioevo meridionale (sec.XII), un gruppo di manoscritti appartenenti all'Ordine dei Templari, codici di argomento medico dei secoli XIII e XIV tra cui la Chirurgia attribuita tra il 1210 e il 1250 al maestro Rolando della Scuola Salernitana di medicina, il Tacuinum sanitatis, vero compendio di scienza naturale con le descrizioni di piante, animali e minerali e riferimenti alle loro virtù mediche e terapeutiche, e il Theatrum sanitatis, enciclopedia medica del sec. XV realizzato per il re Venceslao di Lussemburgo."
+        "Tra i tesori conservati: un esemplare di \"Exultet\", rotolo miniato del medioevo meridionale (sec.XII), un gruppo di manoscritti appartenenti all'Ordine dei Templari, codici di argomento medico dei secoli XIII e XIV tra cui la Chirurgia attribuita tra il 1210 e il 1250 al maestro Rolando della Scuola Salernitana di medicina,  il Theatrum sanitatis, vero compendio di scienza naturale con le descrizioni di piante, animali e minerali e riferimenti alle loro virtù mediche e terapeutiche un\' enciclopedia medica del sec. XIV realizzato per il re Venceslao di Lussemburgo."
     ],
     domanda: "Come si chiama l\'enciclopedia medica realizzata per il re Venceslao conservata alla Biblioteca Casanatense?",
-    risposte: ["Exultet", "Tacuinum sanitatis", "Theatrum sanitatis","Chirurgia"],
+    risposte: ["Exultet", "Trattum sanitatis", "Theatrum sanitatis","Chirurgia"],
     rispostacorretta: "2",
     indicazione: "Sei vicino a risolvere il mistero. Raggiungi Piazza Colonna e scoprirai la soluzione dell’enigma!",
     luogo: {lat: "41.898823", lon: "12.479459"}
