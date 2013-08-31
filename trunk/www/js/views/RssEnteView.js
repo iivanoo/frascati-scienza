@@ -7,8 +7,8 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
 
         events: {
           "touchstart #tel": "tel",
-          "touchstart #email": "email"
-        }
+          "touchstart #mail": "mail"
+        },
 
         className: "default_wrapper",
 
