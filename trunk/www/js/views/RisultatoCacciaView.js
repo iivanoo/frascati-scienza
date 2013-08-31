@@ -78,7 +78,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
         },
 
         procediPressed: function (e) {
-          Backbone.history.navigate("caccia", {trigger: true});
+          Backbone.history.navigate("finecaccia", {trigger: true});
         }
       });
 
