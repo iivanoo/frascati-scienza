@@ -53,13 +53,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
             this.moving = false;
             return;
           }
-          scanner = cordova.require("cordova/plugin/BarcodeScanner");
+          /*scanner = cordova.require("cordova/plugin/BarcodeScanner");
           scanner.scan(
-            function (result) {
+            function (result) {*/
+              var result = {text: "tappa1234"};
               console.log("We got a barcode\n" +
                   "Result: " + result.text + "\n" +
                   "Format: " + result.format + "\n" +
                   "Cancelled: " + result.cancelled);
+              debugger;
               if(!result.cancelled) {
                 //Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
                 var tappa = Data.getTappaById(result.text);
@@ -85,12 +87,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                   navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
                 }
               }
-            },
+/*            },
             function (error) {
               navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
             }
-          );
-          //var result = {text: "tappa1234"};
+          ); */
         }
       });
 
