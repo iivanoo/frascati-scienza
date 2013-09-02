@@ -14,7 +14,6 @@
     <orderEntry type="jdk" jdkName="Android 4.2.2" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="cordova-2.9.0" level="project" />
-    <orderEntry type="module" module-name="CaptureActivity" />
   </component>
 </module>
 
