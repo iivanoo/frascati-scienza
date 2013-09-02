@@ -79,6 +79,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                       return;
                     }
                   }
+                  /* TODO decommentare per controllare l'ordine delle tappe
+                  var numberOfTappa = parseInt(result.text.replace("tappa", "").charAt(0));
+                  if(numberOfTappa != (visitedDomande.length - 1)) {
+                    navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
+                        Backbone.history.navigate("caccia", {trigger: true});
+                      }, "Attenzione");
+                      return;
+                  }*/
                   visitedDomande.push(result.text);
                   localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); 
                   Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
