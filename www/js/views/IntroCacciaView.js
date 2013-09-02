@@ -56,7 +56,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
           /*scanner = cordova.require("cordova/plugin/BarcodeScanner");
           scanner.scan(
             function (result) {*/
-              var result = {text: "tappa1234"};
+              var result = {text: "tappa8123"};
               console.log("We got a barcode\n" +
                   "Result: " + result.text + "\n" +
                   "Format: " + result.format + "\n" +
