@@ -7,6 +7,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
 
         events: {
           "touchend #vaiDomanda": "vaiDomanda",
+          "touchend #vaiFine": "vaiFineCaccia",
           "touchmove": "touchMove"
         },
 
@@ -25,13 +26,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
 
         render: function () {
           // gestione nav bar
-          this.updateNavbar();
+          //this.updateNavbar();
 
           $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
-          var elements = document.getElementsByClassName("button_list_element");
+/*          var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "caccia") {
               elements[i].classList.remove("nonvisibile");
@@ -42,7 +43,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
                 elements[i].classList.remove("nonvisibile");
               }
             }
-          }
+          }*/
           return this;
         },
 
@@ -60,6 +61,23 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             return;
           } 
           Backbone.history.navigate("domandacaccia/" + this.model.id, {trigger: true});
+        },
+
+        vaiFineCaccia: function (e) {
+          if(this.moving) {
+            this.moving = false;
+            return;
+          } 
+          var visitedDomande = localStorage.getItem("visitedDomande");
+          // in totale abbiamo sempre 8 tappe 
+          if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
+            Backbone.history.navigate("finecaccia/", {trigger: true});
+          } else {
+            navigator.notification.alert('Attenzione, ti mancano delle tappe da completare!', function() {
+              Backbone.history.navigate("caccia/", {trigger: true});
+            }, "Attenzione");
+            //Backbone.history.navigate("caccia/", {trigger: true});
+          }
         }
       });
 
