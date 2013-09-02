@@ -158,28 +158,56 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       eventiCerca: function (keyword, tag, organizzatore, da, a) {
-        debugger;
-        // TODO
-        // filtra per data
-        // filtra per tag
-        // filtra per organizzatore
+        var currentCollection = Data.eventi;
         // filtra per descrizione
-        var elements = document.getElementsByClassName("button_list_element");
-        for(var i=0; i<elements.length; i++) {
-          if(elements[i].id == "eventi") {
-            elements[i].classList.remove("nonvisibile");
-          } else {
-            if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
-              elements[i].classList.add("nonvisibile");
-            } else {
+        if(keyword != "__NO") {
+          currentCollection = new Eventi(Data.eventi.getByKeyword(keyword).toArray());
+        }
+        // filtra per tag
+        if((tag != "__NO") && currentCollection.length) {
+          currentCollection = new Eventi(currentCollection.getByTag(tag).toArray());
+        }
+        // filtra per organizzatore
+        if((organizzatore != "__NO") && currentCollection.length) {
+          currentCollection = new Eventi(currentCollection.getByEnte(organizzatore).toArray());
+        }
+        // filtra per data "DA"
+        if((da != "__NO") && currentCollection.length) {
+          da = parseDate(da).getTime() / 1000;
+          currentCollection = new Eventi(currentCollection.searchFrom(da).toArray());
+        }
+        // filtra per data "A"
+        if((a != "__NO") && currentCollection.length) {
+          a = parseDate(a).getTime() / 1000;
+          currentCollection = new Eventi(currentCollection.searchTo(a).toArray());
+        }
+
+        // parsiamo la data in questo formato: yyyy-mm-dd
+        function parseDate(data) {
+          var sezioni = data.split('-');
+          return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]); 
+        }
+
+        if(currentCollection.length) {
+          var elements = document.getElementsByClassName("button_list_element");
+          for(var i=0; i<elements.length; i++) {
+            if(elements[i].id == "eventi") {
               elements[i].classList.remove("nonvisibile");
+            } else {
+              if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
+                elements[i].classList.add("nonvisibile");
+              } else {
+                elements[i].classList.remove("nonvisibile");
+              }
             }
           }
+          // var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
+          var page = new EventiListView({model: currentCollection});
+          page.title = 'Risultati Ricerca';
+          this.changePage(page); 
+        } else {
+          navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
         }
-        var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
-        var page = new EventiListView({model: new Eventi(filteredEventi)});
-        page.title = 'Risultati Ricerca';
-        this.changePage(page); 
       },
 
       legenda: function () {
