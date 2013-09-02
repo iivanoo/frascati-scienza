@@ -68,7 +68,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           var clockText = document.getElementById("clockText");
 
           this.interval = window.setInterval(function() {
-            self.seconds++;
+            var currentTime  = new Date().getTime();
+            self.seconds = Math.floor(((currentTime - self.startTimestamp ) / 1000));
+            //self.seconds++;
             var now = new Date().getTime();
             //var diff = Math.floor((now - self.startTimestamp) / 1000);
             var hours   = Math.floor(self.seconds / 3600);
@@ -99,7 +101,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             var self = this;
             window.clearInterval(this.interval);
             document.getElementById(e.currentTarget.id).classList.add("rvera");
-            localStorage.setItem("cacciaSeconds" , "" + this.seconds);
+            localStorage.setItem("cacciaSeconds" , "" + (parseInt(localStorage.getItem("cacciaSeconds")) + this.seconds));
             setTimeout(function(){
               Backbone.history.navigate("risultatocaccia/" + self.model.id, {trigger: true});
             }, 1000);
@@ -107,7 +109,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             // gestire domanda sbagliata
             document.getElementById(e.currentTarget.id).classList.add("rfalsa");
             navigator.notification.vibrate(500);
-            this.seconds = this.seconds + 30;
+            // se sbagli, ti sposto lo startTimestamp indietro di 30 secondi
+            this.startTimestamp = this.startTimestamp - 30000;
           }
         }
       });
