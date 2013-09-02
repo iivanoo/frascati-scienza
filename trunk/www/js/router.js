@@ -290,7 +290,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       changePage: function (page) {
-        debugger;
         if((page instanceof CoverView)) {
           return;
         }
