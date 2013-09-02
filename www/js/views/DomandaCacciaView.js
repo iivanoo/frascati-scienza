@@ -29,6 +29,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           // gestione nav bar
           //this.updateNavbar();
 
+          this.model.set("risposta0", this.model.get("risposte")[0]);
+          this.model.set("risposta1", this.model.get("risposte")[1]);
+          this.model.set("risposta2", this.model.get("risposte")[2]);
+          this.model.set("risposta3", this.model.get("risposte")[3]);
+
           $(this.el).html(this.template(this.model.toJSON()));
           var el = $("#titlebar");
           el.removeClass();
