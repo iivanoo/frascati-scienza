@@ -5,6 +5,11 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
 
         model: Ente,
 
+        events: {
+          "touchstart #tel": "tel",
+          "touchstart #mail": "mail"
+        },
+
         className: "default_wrapper",
 
         initialize: function() {
@@ -47,6 +52,8 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
               context.video = contatti.video;
             }
           }
+          context.email = this.model.get("email");
+          context.telefono = this.model.get("telefono");
           $(this.el).html(this.template(context));
           var el = $("#titlebar");
           el.removeClass();
@@ -100,6 +107,14 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
           agenda.enti[this.model.get("__id")] = this.model.toJSON();
           localStorage.setItem("agenda", JSON.stringify(agenda));
           navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "Agenda");
+        },
+
+        tel: function (event) {
+          window.location.href = 'tel:' + this.model.get("telefono");
+        },
+
+        mail: function (event) {
+          window.location.href = 'mailto:' + this.model.get("email");
         }
       });
 
