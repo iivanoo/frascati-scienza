@@ -59,6 +59,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     },
 
     startupData: function() {
+      localStorage.setItem("cacciaSeconds" , "0");
       var staticTappe = require("../data/statictappe");
       this.tappe = staticTappe.tappe;
       // qui controlliamo se ci sono dati nuovi
