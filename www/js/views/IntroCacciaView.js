@@ -53,6 +53,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
             this.moving = false;
             return;
           }
+          // TODO decommentare per scannerizzare il QR code
           /*scanner = cordova.require("cordova/plugin/BarcodeScanner");
           scanner.scan(
             function (result) {*/
