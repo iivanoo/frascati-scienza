@@ -158,28 +158,56 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       eventiCerca: function (keyword, tag, organizzatore, da, a) {
-        debugger;
-        // TODO
-        // filtra per data
-        // filtra per tag
-        // filtra per organizzatore
+        var currentCollection = Data.eventi;
         // filtra per descrizione
-        var elements = document.getElementsByClassName("button_list_element");
-        for(var i=0; i<elements.length; i++) {
-          if(elements[i].id == "eventi") {
-            elements[i].classList.remove("nonvisibile");
-          } else {
-            if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
-              elements[i].classList.add("nonvisibile");
-            } else {
+        if(keyword != "__NO") {
+          currentCollection = new Eventi(Data.eventi.getByKeyword(keyword).toArray());
+        }
+        // filtra per tag
+        if((tag != "__NO") && currentCollection.length) {
+          currentCollection = new Eventi(currentCollection.getByTag(tag).toArray());
+        }
+        // filtra per organizzatore
+        if((organizzatore != "__NO") && currentCollection.length) {
+          currentCollection = new Eventi(currentCollection.getByEnte(organizzatore).toArray());
+        }
+        // filtra per data "DA"
+        if((da != "__NO") && currentCollection.length) {
+          da = parseDate(da).getTime() / 1000;
+          currentCollection = new Eventi(currentCollection.searchFrom(da).toArray());
+        }
+        // filtra per data "A"
+        if((a != "__NO") && currentCollection.length) {
+          a = parseDate(a).getTime() / 1000;
+          currentCollection = new Eventi(currentCollection.searchTo(a).toArray());
+        }
+
+        // parsiamo la data in questo formato: yyyy-mm-dd
+        function parseDate(data) {
+          var sezioni = data.split('-');
+          return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]); 
+        }
+
+        if(currentCollection.length) {
+          var elements = document.getElementsByClassName("button_list_element");
+          for(var i=0; i<elements.length; i++) {
+            if(elements[i].id == "eventi") {
               elements[i].classList.remove("nonvisibile");
+            } else {
+              if(!elements[i].id.endsWith("Inactive") || elements[i].id == "eventiInactive") {
+                elements[i].classList.add("nonvisibile");
+              } else {
+                elements[i].classList.remove("nonvisibile");
+              }
             }
           }
+          // var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
+          var page = new EventiListView({model: currentCollection});
+          page.title = 'Risultati Ricerca';
+          this.changePage(page); 
+        } else {
+          navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
         }
-        var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
-        var page = new EventiListView({model: new Eventi(filteredEventi)});
-        page.title = 'Risultati Ricerca';
-        this.changePage(page); 
       },
 
       legenda: function () {
@@ -201,19 +229,21 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           this.finecaccia();
         } else {
           var page = new CacciaView();
-          $("#backbutton").show();
-          $(".button_list_element").css("visibility", "visible"); 
-          $(".button_list_element_small").css("visibility", "visible"); 
-          this.changePage(page); 
+          if(this.changePage(page)) {
+            $("#backbutton").show();
+            $(".button_list_element").css("visibility", "visible"); 
+            $(".button_list_element_small").css("visibility", "visible"); 
+          }
         }
       },
 
       finecaccia: function () {
         var page = new FineCacciaView();
-        $("#backbutton").show();
-        $(".button_list_element").css("visibility", "visible"); 
-        $(".button_list_element_small").css("visibility", "visible"); 
-        this.changePage(page); 
+        if(this.changePage(page)) {
+          $("#backbutton").show();
+          $(".button_list_element").css("visibility", "visible"); 
+          $(".button_list_element_small").css("visibility", "visible"); 
+        }
       },
 
       introcaccia: function () {
@@ -227,10 +257,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           var tappaView = new IntroTappaView({
             model: tappa
           });
-          this.changePage(tappaView); 
-          $("#backbutton").hide();
-          $(".button_list_element").css("visibility", "hidden"); 
-          $(".button_list_element_small").css("visibility", "hidden");
+          if(this.changePage(tappaView)) {
+            $("#backbutton").hide();
+            $(".button_list_element").css("visibility", "hidden");
+            $(".button_list_element_small").css("visibility", "hidden");
+          }
         } else {
           navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
         }
@@ -241,10 +272,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var domandaView = new DomandaCacciaView({
           model: tappa
         });
-        this.changePage(domandaView);
-        $("#backbutton").hide();
-        $(".button_list_element").css("visibility", "hidden");
-        $(".button_list_element_small").css("visibility", "hidden");
+        if(this.changePage(domandaView)) {
+          $("#backbutton").hide();
+          $(".button_list_element").css("visibility", "hidden");
+          $(".button_list_element_small").css("visibility", "hidden");
+        }
       },
 
       risultatocaccia: function (id) {
@@ -252,10 +284,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var risultatoView = new RisultatoCacciaView({
           model: tappa
         });
-        this.changePage(risultatoView); 
-        $("#backbutton").hide();
-        $(".button_list_element").css("visibility", "hidden"); 
-        $(".button_list_element_small").css("visibility", "hidden");
+        if(this.changePage(risultatoView)) {
+          $("#backbutton").hide();
+          $(".button_list_element").css("visibility", "hidden");
+          $(".button_list_element_small").css("visibility", "hidden");
+        }
       },
 
       cerca: function () {
@@ -286,25 +319,27 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       changePage: function (page) {
         if((page instanceof CoverView)) {
-          return;
+          //return;
+          window.history.back();
+          return false;
         }
         if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
-          return;
+          return false;
         }
 /*        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return;
         }*/
         if((page instanceof IntroCacciaView) && !(this.currentView instanceof CacciaView)) {
-          return;
+          return false;
         }
         if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
-          return;
+          return false;
         }
         if((page instanceof DomandaCacciaView) && !(this.currentView instanceof IntroTappaView)) {
-          return;
+          return false;
         }
-        if((page instanceof RisultatoCacciaView) && !(this.currentView instanceof DomandaCacciaView)) {
-          return;
+        if((page instanceof RisultatoCacciaView) && !((this.currentView instanceof DomandaCacciaView) || (this.currentView instanceof IntroCacciaView))) {
+          return false;
         }
         var contentClasses = document.getElementById("content").classList;
         if((page instanceof EnteView)) {
@@ -329,6 +364,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.structureView.$el.find("#content").append($(page.el));
         this.structureView.trigger("updateTitle", page);
         this.currentView.trigger("inTheDom");
+        return true;
       }
 
     });

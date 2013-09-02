@@ -29,8 +29,9 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
         render: function () {
           // gestione nav bar
           this.updateNavbar();
+          var context = {enti: Data.enti.toJSON()};
 
-          $(this.el).html(this.template({}));
+          $(this.el).html(this.template(context));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("nottericerca_top");
@@ -59,6 +60,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "datamanager",
           var organizzatore = document.getElementById("organizzatore").value;
           var da = document.getElementById("da").value;
           var a = document.getElementById("a").value;
+
           if(!keyword) {
             keyword = "__NO";
           }

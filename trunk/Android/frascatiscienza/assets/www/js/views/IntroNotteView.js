@@ -6,18 +6,18 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/intron
       className: "default_wrapper",
 
       events: {
-          "touchend #continua_eventi": "continua",
-          "touchmove": "touchMove"
+          "touchstart #continua_eventi": "continua"
+          //"touchmove": "touchMove"
       },
 
       initialize: function() {
         this.title = "Notte dei ricercatori";
-        this.moving = false;
-      },
+        // this.moving = false;
+      }, /*
 
       touchMove: function() {
         this.moving = true;
-      },
+      },*/
 
       template: Handlebars.compile(template),
 
@@ -53,10 +53,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/intron
       },
 
       continua: function(event) {
-        if(this.moving) {
+/*        if(this.moving) {
             this.moving = false;
             return;
-          } 
+          } */
         Backbone.history.navigate("eventi", {trigger: true});
         $("#backbutton").show();
       },

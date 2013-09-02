@@ -25,7 +25,7 @@ define({
     domanda: "Quale tradizione romana legava il Collegio Romano alla Città?",
     risposte: ["Dal Collegio partivano i primi rintocchi di campana dopo l’alba", "Dal Collegio veniva dato il segnale per il colpo di cannone che segnava le 12 a Roma", "Nell’orto del Collegio si coltivavano i carciofi","Sul tetto della Chiesa di Sant’Ignazio era posta la statua della Lupa Capitolina"],
     rispostacorretta: "1",
-    indicazione: "Hai indovinato. Segui le ore di Galileo a Piazza della Minerva",
+    indicazione: "Hai indovinato. Segui le orme di Galileo a Piazza della Minerva",
     luogo: {lat: "41.899245", lon: "12.47965"}
   },
   { 

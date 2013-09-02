@@ -6,7 +6,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         id: "cover", 
 
         events: {
-          "touchend .language": "chooseLanguage"
+          // "touchend .language": "chooseLanguage"
+          "touchend": "chooseLanguage"
         },
 
         initialize: function () {
@@ -23,7 +24,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
             // Backbone.history.start();
             Backbone.history.navigate("frascatiscienza", {trigger: true});
           });
-          localStorage.setItem("language" , event.currentTarget.id);
+          // localStorage.setItem("language" , event.currentTarget.id);
+          localStorage.setItem("language" , "ita");
           setTimeout(function(){
             Data.startupData();
           }, 300);         

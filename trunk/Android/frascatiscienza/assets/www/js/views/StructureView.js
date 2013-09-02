@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienzaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "text!templates/structure.html"],
-    function ($, _, Backbone, Handlebars, FrascatiScienzaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienzaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "text!templates/structure.html"],
+    function ($, _, Backbone, Handlebars, FrascatiScienzaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, template) {
 
     var StructureView = Backbone.View.extend({
 
@@ -50,6 +50,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
             return false;
           }
           if(that.currentView instanceof RisultatoCacciaView) {
+            Backbone.history.navigate("caccia", {trigger: true});
+            return false;
+          }
+          if(that.currentView instanceof FineCacciaView) {
             Backbone.history.navigate("caccia", {trigger: true});
             return false;
           }
