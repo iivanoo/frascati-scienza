@@ -291,9 +291,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
           return;
         }
-        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
+/*        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return;
-        }
+        }*/
         if((page instanceof IntroCacciaView) && !(this.currentView instanceof CacciaView)) {
           return;
         }
