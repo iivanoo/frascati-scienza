@@ -9,21 +9,21 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
 
       events: {
           // "touchend #pulsanteCassetto": "cassetto",
-          "touchend #enti": "enti",
-          "touchend #_eventi": "eventi",
-          "touchend #sponsor": "sponsor",
-          "touchend #continua_frascati": "continua",
-          "touchmove": "touchMove"
+          "touchstart #enti": "enti",
+          "touchstart #_eventi": "eventi",
+          "touchstart #sponsor": "sponsor",
+          "touchstart #continua_frascati": "continua"
+          // "touchmove": "touchMove"
       },
 
       initialize: function() {
         this.title = "Home";
-        this.moving = false;
+        // this.moving = false;
       },
 
-      touchMove: function() {
+      /*touchMove: function() {
         this.moving = true;
-      },
+      },*/
 
       template: Handlebars.compile(template),
 
@@ -69,19 +69,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       // },
 
       enti: function(event) {
-        if(this.moving) {
+/*        if(this.moving) {
             this.moving = false;
             return;
-        } 
+        }*/ 
         Backbone.history.navigate("enti", {trigger: true});
         $("#backbutton").show();
       },
 
       eventi: function(event) {
-        if(this.moving) {
+/*        if(this.moving) {
             this.moving = false;
             return;
-        } 
+        } */
         Backbone.history.navigate("eventi", {trigger: true});
         $("#backbutton").show();
       },
@@ -96,10 +96,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       // },
 
       continua: function(event) {
-        if(this.moving) {
+/*        if(this.moving) {
             this.moving = false;
             return;
-        } 
+        } */
         Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
         $("#backbutton").show();
       },

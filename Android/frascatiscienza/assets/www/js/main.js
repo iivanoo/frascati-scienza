@@ -76,7 +76,7 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
         // } else {
         //   Backbone.history.start();
         // }
-        Backbone.history.start();
+        Backbone.history.start(); 
 
 /*
         if(!localStorage.getItem("dataLoaded")) {

@@ -7,8 +7,16 @@
 	</div>
 	<select id="tag" class="tag">
 	  <option value=""></option>
-	  <option value="ciao2">ciao2</option>
-	  <option value="ciao3">ciao3</option>
+		<option value="ad_giovani">Giovani</option>
+		<option value="ad_pubblicogenerale">Pubblico Generale</option>
+		<option value="ad_elementari">Scuole Elementari</option>
+		<option value="ad_medie">Scuole Medie</option>
+		<option value="ad_superiori">Scuole Superiori</option>
+		<option value="ad_qrcode">QR Code</option>
+		<option value="ad_aperitivi">Aperitivo Scientifico</option>
+		<option value="ad_giochiscientifici">Giochi Scientifici</option>
+		<option value="ad_laboratori">Laboratorio</option>
+		<option value="ad_seminari">Seminario</option>
 	</select>
 	<img class="open_drop" src="img/open_drop.png">
 
@@ -18,8 +26,9 @@
 	</div>
 	<select id="organizzatore" class="organizzatore">
 	  <option value=""></option>
-	  <option value="ciao2">ciao2</option>
-	  <option value="ciao3">ciao3</option>
+	  {{#each enti}}
+		<option value="{{ __id }}">{{ titolo }}</option>
+  	  {{/each}}
 	</select>
 	<img class="open_drop" src="img/open_drop.png">
 	
