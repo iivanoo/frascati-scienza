@@ -291,7 +291,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       changePage: function (page) {
         if((page instanceof CoverView)) {
-          return;
+          //return;
+          window.history.back();
+          return false;
         }
         if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
           return false;

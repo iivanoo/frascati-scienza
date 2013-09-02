@@ -62,8 +62,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         },
 
         start: function (event) {
-          // tempo in Unix time
-          this.startTimestamp = new Date().getTime();
+          // tempo in Unix time + i secondi delle domande precedenti
+          this.startTimestamp = new Date().getTime() - (this.seconds * 1000);
           var self = this;
           var clockText = document.getElementById("clockText");
 
