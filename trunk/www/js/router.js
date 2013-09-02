@@ -201,19 +201,21 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           this.finecaccia();
         } else {
           var page = new CacciaView();
-          $("#backbutton").show();
-          $(".button_list_element").css("visibility", "visible"); 
-          $(".button_list_element_small").css("visibility", "visible"); 
-          this.changePage(page); 
+          if(this.changePage(page)) {
+            $("#backbutton").show();
+            $(".button_list_element").css("visibility", "visible"); 
+            $(".button_list_element_small").css("visibility", "visible"); 
+          }
         }
       },
 
       finecaccia: function () {
         var page = new FineCacciaView();
-        $("#backbutton").show();
-        $(".button_list_element").css("visibility", "visible"); 
-        $(".button_list_element_small").css("visibility", "visible"); 
-        this.changePage(page); 
+        if(this.changePage(page)) {
+          $("#backbutton").show();
+          $(".button_list_element").css("visibility", "visible"); 
+          $(".button_list_element_small").css("visibility", "visible"); 
+        }
       },
 
       introcaccia: function () {
@@ -227,10 +229,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           var tappaView = new IntroTappaView({
             model: tappa
           });
-          this.changePage(tappaView); 
-          $("#backbutton").hide();
-          $(".button_list_element").css("visibility", "hidden"); 
-          $(".button_list_element_small").css("visibility", "hidden");
+          if(this.changePage(tappaView)) {
+            $("#backbutton").hide();
+            $(".button_list_element").css("visibility", "hidden");
+            $(".button_list_element_small").css("visibility", "hidden");
+          }
         } else {
           navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
         }
@@ -241,10 +244,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var domandaView = new DomandaCacciaView({
           model: tappa
         });
-        this.changePage(domandaView);
-        $("#backbutton").hide();
-        $(".button_list_element").css("visibility", "hidden");
-        $(".button_list_element_small").css("visibility", "hidden");
+        if(this.changePage(domandaView)) {
+          $("#backbutton").hide();
+          $(".button_list_element").css("visibility", "hidden");
+          $(".button_list_element_small").css("visibility", "hidden");
+        }
       },
 
       risultatocaccia: function (id) {
@@ -252,10 +256,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var risultatoView = new RisultatoCacciaView({
           model: tappa
         });
-        this.changePage(risultatoView); 
-        $("#backbutton").hide();
-        $(".button_list_element").css("visibility", "hidden"); 
-        $(".button_list_element_small").css("visibility", "hidden");
+        if(this.changePage(risultatoView)) {
+          $("#backbutton").hide();
+          $(".button_list_element").css("visibility", "hidden");
+          $(".button_list_element_small").css("visibility", "hidden");
+        }
       },
 
       cerca: function () {
@@ -285,26 +290,27 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       changePage: function (page) {
+        debugger;
         if((page instanceof CoverView)) {
           return;
         }
         if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
-          return;
+          return false;
         }
 /*        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return;
         }*/
         if((page instanceof IntroCacciaView) && !(this.currentView instanceof CacciaView)) {
-          return;
+          return false;
         }
         if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
-          return;
+          return false;
         }
         if((page instanceof DomandaCacciaView) && !(this.currentView instanceof IntroTappaView)) {
-          return;
+          return false;
         }
-        if((page instanceof RisultatoCacciaView) && !(this.currentView instanceof DomandaCacciaView)) {
-          return;
+        if((page instanceof RisultatoCacciaView) && !((this.currentView instanceof DomandaCacciaView) || (this.currentView instanceof IntroCacciaView))) {
+          return false;
         }
         var contentClasses = document.getElementById("content").classList;
         if((page instanceof EnteView)) {
@@ -329,6 +335,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         this.structureView.$el.find("#content").append($(page.el));
         this.structureView.trigger("updateTitle", page);
         this.currentView.trigger("inTheDom");
+        return true;
       }
 
     });
