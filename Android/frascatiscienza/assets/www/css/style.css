@@ -45,8 +45,6 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 }
 
-
-
 /* END CUSTOM FONTS */
 
 
@@ -1466,7 +1464,6 @@ margin-top: 60px;
 	width:50%
 }
 
-
 /* IVANO */
 
 #indicazione {
@@ -1476,6 +1473,12 @@ margin-top: 60px;
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
+	box-shadow: 0 3px 0px rgba(0,0,0,.2);
+}
+
+#qrcode{
+	margin-left: 60%;
+	text-align: center;
 }
 
 #procedi {
@@ -1489,10 +1492,37 @@ margin-top: 60px;
 }
 
 #totalScore {
+color: #e5c459;
+text-align: center;
+margin-top: 10%;
+margin-bottom: 10%;
+
+font-size: 3.5em;
+}
+
+
+.backgr_buttons_finecaccia{
+	/*margin-top: 10px;*/
+	margin-left: auto;
+	margin-right: auto;
+	bottom:0;
+	display: block;
 	width: 100%;
-	text-align: center;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	font-size: 4em;
-	font-weight: bold;
+	height: 40%;
+	background-position: 50% 50%;
+    background-size: 100%;
+    background-image: url("../img/vittoria.jpg");
+    text-align: center;
+}
+
+#wrap_risultato{
+margin-left: auto;
+margin-right: auto;
+background-color: #efefef;
+width: 90%;
+padding: .5em;
+box-shadow: 0 3px 0px rgba(0,0,0,.2);
+margin-top: 5%;
+
+
 }
