@@ -55,12 +55,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
           }*/
           scanner = cordova.require("cordova/plugin/BarcodeScanner");
           scanner.scan(
-            function (result) {*/
-              var result = {text: "tappa8123"};
-              console.log("We got a barcode\n" +
-                  "Result: " + result.text + "\n" +
-                  "Format: " + result.format + "\n" +
-                  "Cancelled: " + result.cancelled);
+            function (result) {
+              // var result = {text: "tappa8123"};
+              // console.log("We got a barcode\n" +
+              //     "Result: " + result.text + "\n" +
+              //     "Format: " + result.format + "\n" +
+              //     "Cancelled: " + result.cancelled);
               if(!result.cancelled) {
                 //Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
                 var tappa = Data.getTappaById(result.text);
@@ -80,7 +80,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                     }
                   }
                   var numberOfTappa = parseInt(result.text.replace("tappa", "").charAt(0));
-                  if(numberOfTappa != (visitedDomande.length - 1)) {
+                  if(numberOfTappa != (visitedDomande.length + 1)) {
                     navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
                         Backbone.history.navigate("caccia", {trigger: true});
                       }, "Attenzione");
