@@ -69,15 +69,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             return;
           } */
           var visitedDomande = localStorage.getItem("visitedDomande");
-          // TODO da decommetare l'if: in totale abbiamo sempre 8 tappe 
-          //if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
+          // in totale abbiamo sempre 8 tappe 
+          if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
             Backbone.history.navigate("finecaccia", {trigger: true});
-          /*} else {
+          } else {
             navigator.notification.alert('Attenzione, ti mancano delle tappe da completare!', function() {
               Backbone.history.navigate("caccia/", {trigger: true});
             }, "Attenzione");
             //Backbone.history.navigate("caccia/", {trigger: true});
-          }*/
+          }
         }
       });
 
