@@ -89,8 +89,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             if(!filteredModel[i].nottericercatori) {
               var item = new EventiListItemView({
                 model: filteredModel[i]
-              }).render().el;
-              notteWrapper.append(item);
+              });
+              notteWrapper.append(item.render().el);
               this.subviews.push(item);
             }
           }
@@ -102,8 +102,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             otherEvents[i].set("date", dateString);
             var item = new EventiListItemView({
               model: otherEvents[i]
-            }).render().el;
-            altriWrapper.append(item);
+            });
+            altriWrapper.append(item.render().el);
             this.subviews.push(item);
           }
         },
