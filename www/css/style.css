@@ -1496,9 +1496,10 @@ margin-top: 60px;
 
 #totalScore {
 color: #e5c459;
-	text-align: center;
+text-align: center;
 margin-top: 10%;
 margin-bottom: 10%;
+
 font-size: 3.5em;
 }
 
@@ -1518,7 +1519,9 @@ font-size: 3.5em;
 }
 
 #wrap_risultato{
-	background-color: #efefef;
+margin-left: auto;
+margin-right: auto;
+background-color: #efefef;
 width: 90%;
 padding: .5em;
 box-shadow: 0 3px 0px rgba(0,0,0,.2);
