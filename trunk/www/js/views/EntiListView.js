@@ -20,8 +20,8 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
       for (var i = 0; i < this.model.length; i++) {
         var item = new EntiListItemView({
           model: this.model.at(i)
-        }).render().el;
-        $(this.el).append(item);
+        });
+        $(this.el).append(item.render().el);
         this.subviews.push(item);
       }
       var el = $("#titlebar");
