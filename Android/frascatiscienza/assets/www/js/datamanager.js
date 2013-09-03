@@ -64,8 +64,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       }
       var staticTappe = require("../data/statictappe");
       this.tappe = staticTappe.tappe;
-      // TODO qui controlliamo se ci sono dati nuovi
-      /*if(navigator.connection.type == Connection.NONE) {
+      // qui controlliamo se ci sono dati nuovi
+      if(navigator.connection.type == Connection.NONE) {
         if(localStorage.getItem("dataLoaded")) {
           this.loadDbData();
         } else {
@@ -73,7 +73,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         }
       } else {
         this.downloadNewData();
-      }*/
+      }
       this.loadLocalData();
     },
 

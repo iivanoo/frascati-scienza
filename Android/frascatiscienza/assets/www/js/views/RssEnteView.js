@@ -13,29 +13,31 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
         className: "default_wrapper",
 
         initialize: function() {
-            this.title = this.model.get("titolo");
-            var opts = {
-              lines: 5, // The number of lines to draw
-              length: 15, // The length of each line
-              width: 5, // The line thickness
-              radius: 15, // The radius of the inner circle
-              corners: 1, // Corner roundness (0..1)
-              rotate: 0, // The rotation offset
-              direction: 1, // 1: clockwise, -1: counterclockwise
-              color: '#000', // #rgb or #rrggbb
-              speed: 1, // Rounds per second
-              trail: 60, // Afterglow percentage
-              shadow: false, // Whether to render a shadow
-              hwaccel: false, // Whether to use hardware acceleration
-              className: 'spinner', // The CSS class to assign to the spinner
-              zIndex: 2e9, // The z-index (defaults to 2000000000)
-              top: '20%', // Top position relative to parent in px
-              left: 'auto' // Left position relative to parent in px
-            };
-            this.spinner = new Spinner(opts);
-            this.spinnerStopped = false;
-            this.on("inTheDom", this.fetchNews);
-          },
+          this.title = this.model.get("titolo");
+          var opts = {
+            lines: 5, // The number of lines to draw
+            length: 15, // The length of each line
+            width: 5, // The line thickness
+            radius: 15, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            direction: 1, // 1: clockwise, -1: counterclockwise
+            color: '#000', // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: 'spinner', // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: '20%', // Top position relative to parent in px
+            left: 'auto' // Left position relative to parent in px
+          };
+          this.spinner = new Spinner(opts);
+          this.spinnerStopped = false;
+          this.on("inTheDom", this.fetchNews);
+          this.subviews = [];
+          this.on("removed", this.removed);
+        },
 
         template: Handlebars.compile(template),
 
@@ -59,6 +61,12 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
           el.removeClass();
           el.addClass("frascatiscienze_top");
           return this;
+        },
+
+        removed: function() {
+          for(var i=0; i<this.subviews.length; i++) {
+            this.subviews[i].remove();
+          }
         },
 
         updateNavbar: function () {
@@ -99,6 +107,7 @@ define(["jquery", "underscore", "backbone", "spin", "models/Ente", "models/Rss",
           for (var i = 0; i < news.length; i++) {
             rssItemView = new RssListItemView({model: news.at(i)});
             $(".rss_wrapper").append(rssItemView.render().el);
+            this.subviews.push(rssItemView);
           }
         },
 
