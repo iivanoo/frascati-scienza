@@ -13,7 +13,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     staticEnti: undefined,
     urlEnti_Eng: "TODO",
     urlEventi_Eng: "TODO",
-    urlEnti_Ita: "http://www.di.univaq.it/malavolta/files/frascatiEnti.json",
+    urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
     urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
 
     initialize: function() {
@@ -64,7 +64,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       }
       var staticTappe = require("../data/statictappe");
       this.tappe = staticTappe.tappe;
-      // qui controlliamo se ci sono dati nuovi
+      // TODO qui controlliamo se ci sono dati nuovi
       /*if(navigator.connection.type == Connection.NONE) {
         if(localStorage.getItem("dataLoaded")) {
           this.loadDbData();
