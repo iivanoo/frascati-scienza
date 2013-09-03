@@ -941,8 +941,8 @@ margin-top: 7px;
 .day_back img{
 	background: #efefef;
 border-radius: 30px;
-padding: 2px;
-width: 25px;
+padding: 5px;
+width: 20px;
 }
 
 .date{
@@ -967,8 +967,8 @@ width: 25px;
 .day_next img{
 	background: #efefef;
 border-radius: 30px;
-padding: 2px;
-width: 25px;
+padding: 5px;
+width: 20px;
 }
 
 
