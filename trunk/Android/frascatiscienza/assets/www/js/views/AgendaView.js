@@ -7,6 +7,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             this.title = "Agenda Personale";
             this.moving = false;
             this.preferiti = JSON.parse(localStorage.getItem("agenda"));
+            this.subviews = [];
+            this.on("removed", this.removed);
         },
 
         className: "default_wrapper",
@@ -21,6 +23,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
 
         touchMove: function() {
           this.moving = true;
+        },
+
+        removed: function() {
+          for(var i=0; i<this.subviews.length; i++) {
+            this.subviews[i].remove();
+          }
         },
 
         render: function () {
@@ -71,6 +79,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
               model: new Ente(currentEnte)
             });
             view.superView = this;
+            this.subviews.push(view);
             $("#agenda_wrapper_content").append(view.render().el);
             view.trigger("inTheDom");
           }
@@ -89,6 +98,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
               model: new Evento(currentEvento)
             });
             view.superView = this;
+            this.subviews.push(view);
             $("#agenda_wrapper_content").append(view.render().el);
             view.trigger("inTheDom");
           }
