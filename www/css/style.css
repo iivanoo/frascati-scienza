@@ -1476,6 +1476,12 @@ margin-top: 60px;
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
+	box-shadow: 0 3px 0px rgba(0,0,0,.2);
+}
+
+#qrcode{
+	margin-left: 60%;
+	text-align: center;
 }
 
 #procedi {
@@ -1489,12 +1495,11 @@ margin-top: 60px;
 }
 
 #totalScore {
-	width: 100%;
+color: #e5c459;
 	text-align: center;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	font-size: 4em;
-	font-weight: bold;
+margin-top: 10%;
+margin-bottom: 10%;
+font-size: 3.5em;
 }
 
 
@@ -1510,4 +1515,14 @@ margin-top: 60px;
     background-size: 100%;
     background-image: url("../img/vittoria.jpg");
     text-align: center;
-}	
+}
+
+#wrap_risultato{
+	background-color: #efefef;
+width: 90%;
+padding: .5em;
+box-shadow: 0 3px 0px rgba(0,0,0,.2);
+margin-top: 5%;
+	
+	
+}
