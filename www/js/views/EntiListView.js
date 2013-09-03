@@ -8,6 +8,8 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
 
     initialize: function() {
       this.title = "Enti";
+      this.subviews = [];
+      this.on("removed", this.removed);
     },
 
     render: function() {
@@ -16,14 +18,22 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
 
       $(this.el).empty();
       for (var i = 0; i < this.model.length; i++) {
-        $(this.el).append(new EntiListItemView({
+        var item = new EntiListItemView({
           model: this.model.at(i)
-        }).render().el);
+        }).render().el;
+        $(this.el).append(item);
+        this.subviews.push(item);
       }
       var el = $("#titlebar");
       el.removeClass();
       el.addClass("frascatiscienze_top");
       return this;
+    },
+
+    removed: function() {
+      for(var i=0; i<this.subviews.length; i++) {
+        this.subviews[i].remove();
+      }
     },
 
     updateNavbar: function () {

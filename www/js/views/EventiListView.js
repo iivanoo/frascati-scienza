@@ -30,6 +30,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             }
           }
           this.on("inTheDom", this.addEvents);
+          this.on("removed", this.removed);
+        },
+
+        removed: function() {
+          for(var i=0; i<this.subviews.length; i++) {
+            this.subviews[i].remove();
+          }
         },
 
         getBaseTimestamp: function(unix) {
@@ -80,10 +87,12 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var filteredModel = this.model.search(this.currentDay, this.currentDay + 86400).toArray();
           for (var i = 0; i < filteredModel.length; i++) {
             if(!filteredModel[i].nottericercatori) {
-              notteWrapper.append(new EventiListItemView({
+              var item = new EventiListItemView({
                 model: filteredModel[i]
-              }).render().el);
-          }
+              }).render().el;
+              notteWrapper.append(item);
+              this.subviews.push(item);
+            }
           }
           // popoliamo la lista degli altri eventi
           var otherEvents = this.model.where({nottericercatori: false});
@@ -91,9 +100,11 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             var date = new Date(otherEvents[i].get("timestamp") * 1000);
             var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
             otherEvents[i].set("date", dateString);
-            altriWrapper.append(new EventiListItemView({
+            var item = new EventiListItemView({
               model: otherEvents[i]
-            }).render().el);
+            }).render().el;
+            altriWrapper.append(item);
+            this.subviews.push(item);
           }
         },
 
