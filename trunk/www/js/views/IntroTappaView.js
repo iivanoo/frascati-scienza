@@ -6,19 +6,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         model: Tappa,
 
         events: {
-          "touchend #vaiDomanda": "vaiDomanda",
-          "touchend #vaiFine": "vaiFineCaccia",
-          "touchmove": "touchMove"
+          "touchstart #vaiDomanda": "vaiDomanda",
+          "touchstart #vaiFine": "vaiFineCaccia"
+          //"touchmove": "touchMove"
         },
 
         initialize: function() {
             this.title = this.model.get("titolo");
             this.moving = false;
         },
-
+/*
         touchMove: function() {
           this.moving = true;
-        },
+        },*/
 
         className: "default_wrapper",
 
@@ -64,10 +64,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         },
 
         vaiFineCaccia: function (e) {
-          if(this.moving) {
+/*          if(this.moving) {
             this.moving = false;
             return;
-          } 
+          } */
           var visitedDomande = localStorage.getItem("visitedDomande");
           // TODO da decommetare l'if: in totale abbiamo sempre 8 tappe 
           //if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {

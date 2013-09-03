@@ -4,13 +4,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
     var IntroCacciaView = Backbone.View.extend({
 
         events: {
-          "touchend #qrcode": "readqrcode",
-          "touchmove": "touchMove"
+          "touchstart #qrcode": "readqrcode"
+          // "touchmove": "touchMove"
         },
 
         initialize: function() {
             this.title = "Caccia al tesoro"; 
-            this.moving = false;
+            // this.moving = false;
         },
 
         className: "default_wrapper",
@@ -49,12 +49,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         },
 
         readqrcode: function (event) {
-          if(this.moving) {
+/*          if(this.moving) {
             this.moving = false;
             return;
-          }
-          // TODO decommentare per scannerizzare il QR code
-          /*scanner = cordova.require("cordova/plugin/BarcodeScanner");
+          }*/
+          scanner = cordova.require("cordova/plugin/BarcodeScanner");
           scanner.scan(
             function (result) {*/
               var result = {text: "tappa8123"};
@@ -80,14 +79,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                       return;
                     }
                   }
-                  /* TODO decommentare per controllare l'ordine delle tappe
                   var numberOfTappa = parseInt(result.text.replace("tappa", "").charAt(0));
                   if(numberOfTappa != (visitedDomande.length - 1)) {
                     navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
                         Backbone.history.navigate("caccia", {trigger: true});
                       }, "Attenzione");
                       return;
-                  }*/
+                  }
                   visitedDomande.push(result.text);
                   localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); 
                   Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
@@ -95,11 +93,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                   navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
                 }
               }
-/*            },
+            },
             function (error) {
               navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
             }
-          ); */
+          ); 
         }
       });
 
