@@ -909,7 +909,6 @@ display: inline-block;
 	
 	
 }
-
 .block_sfoglia{
 	display: inline-block;
 height: 60px;
@@ -926,8 +925,13 @@ margin-top: 7px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
-	
-	
+}
+
+.day_back img{
+	background: #efefef;
+border-radius: 30px;
+padding: 5px;
+width: 20px;
 }
 
 .date{
@@ -936,6 +940,7 @@ margin-top: 7px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
+	margin-top: -10px;
 
 }
 
@@ -946,8 +951,16 @@ margin-top: 7px;
 	height: 30px;
 	display: inline-block;
 	text-align: center;
-	background-color:#efefef;
+
 }
+
+.day_next img{
+	background: #efefef;
+border-radius: 30px;
+padding: 5px;
+width: 20px;
+}
+
 
 
 .event_arrow_wrapper{
