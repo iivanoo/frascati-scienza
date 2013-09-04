@@ -29,6 +29,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
               this.currentDay = 1379725200;
             }
           }
+          this.subviews = [];
           this.on("inTheDom", this.addEvents);
           this.on("removed", this.removed);
         },
