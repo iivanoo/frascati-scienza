@@ -41,7 +41,8 @@ define(["jquery", "underscore", "backbone", "models/Evento"],
 
     getByKeyword: function(keyword) {
       return _(this.filter(function(data) {
-          return data.get("descrizione").indexOf(keyword) != -1;
+          var result = ((data.get("descrizione").toLowerCase().indexOf(keyword.toLowerCase()) != -1) || (data.get("titolo").toLowerCase().indexOf(keyword.toLowerCase()) != -1));
+          return result;
         }));
     }
 
