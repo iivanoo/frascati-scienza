@@ -56,10 +56,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         },
 
         vaiDomanda: function (e) {
-          if(this.moving) {
+          /*if(this.moving) {
             this.moving = false;
             return;
-          } 
+          } */
           Backbone.history.navigate("domandacaccia/" + this.model.id, {trigger: true});
         },
 

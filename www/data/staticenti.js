@@ -127,7 +127,7 @@ define({
     titolo: "INGV",
     descrizione: "Istituto Nazionale di Geofisica e Vulcanologia ",
     logo: "./pics/ingv/logo.jpg",
-    sito: "www.ingv.it ",
+    sito: "www.ingv.it",
     email: "concetta.felli@ingv.it",
     telefono: "06518601",
     chisiamo: {testo: "L'Istituto Nazionale di Geofisica e Vulcanologia (INGV) è la più grande istituzione europea nel campo della geofisica e vulcanologia e una delle più grandi nel mondo. Nelle sale operative di Roma, Napoli e Catania, 24 ore su 24 si elaborano i dati ricevuti dalle reti segnaletiche sparse su tutto il territorio e intorno ai vulcani. Grazie a personale specializzato le informazioni ricevute sono inviate, quando serve, alla Protezione Civile e alle autorità preposte alla gestione delle emergenze. L’istituto collabora in molteplici progetti di ricerca nazionali e internazionali.", immagine: "./pics/ingv/chisiamo.jpg", immagineCopertina: "./pics/ingv/sx_top.png", video: ""},
