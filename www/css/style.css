@@ -25,10 +25,17 @@ body {
 
 @media screen and (min-width: 600px) { 
 
-body{font-size: 1.2em;} }
+body{font-size: 1.2em;} 
+
+.mincredits{
+	font-size: .6em;
+}
+
+}
 
 @media screen and (max-width: 599px) { 
 body{font-size: .8em;}
+
 }
 
 
@@ -372,6 +379,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	height: 100%;
 	width: 100%;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .default_coverimage_block{
