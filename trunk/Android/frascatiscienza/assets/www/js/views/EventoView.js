@@ -8,7 +8,12 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         className: "default_wrapper",
 
         initialize: function() {
-          this.title = this.model.get("titolo");
+          var date = new Date(this.model.get("timestamp") * 1000);
+          var gg, mm, aaaa;
+          gg = date.getDate() + "/";
+          mm = date.getMonth() + 1 + "/";
+          aaaa = date.getFullYear();
+          this.title = gg + mm + aaaa;
           localStorage.setItem("lastVisitedEventTimestamp", this.model.get("timestamp"));
           this.on("removed", function(e) {
             localStorage.removeItem("lastVisitedEventTimestamp");

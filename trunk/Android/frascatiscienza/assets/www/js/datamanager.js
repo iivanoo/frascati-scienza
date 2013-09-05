@@ -74,7 +74,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       } else {
         this.downloadNewData();
       }
-      // this.loadLocalData();
+      //this.loadLocalData();
     },
 
     loadDbData: function() {

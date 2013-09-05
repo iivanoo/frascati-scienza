@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -27,7 +27,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "introtappa/:id": "introtappa",
         "domandacaccia/:id": "domandacaccia",
         "risultatocaccia/:id": "risultatocaccia",
-        "finecaccia": "finecaccia"
+        "finecaccia": "finecaccia",
+        "partner": "partner"
       },
 
       initialize: function () {
@@ -160,6 +161,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       eventiCerca: function (keyword, tag, organizzatore, da, a) {
         var currentCollection = Data.eventi;
         // filtra per descrizione
+        debugger;
         if(keyword != "__NO") {
           currentCollection = new Eventi(Data.eventi.getByKeyword(keyword).toArray());
         }
@@ -188,7 +190,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]); 
         }
 
-        if(currentCollection.length) {
+        // if(currentCollection.length) {
           var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "eventi") {
@@ -205,13 +207,18 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           var page = new EventiListView({model: currentCollection});
           page.title = 'Risultati Ricerca';
           this.changePage(page); 
-        } else {
-          navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
-        }
+        //} else {
+          //navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
+        //}
       },
 
       legenda: function () {
         var page = new LegendaView();
+        this.changePage(page); 
+      },
+
+      partner: function () {
+        var page = new PartnerView();
         this.changePage(page); 
       },
 
@@ -329,7 +336,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 /*        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return;
         }*/
-        if((page instanceof IntroCacciaView) && !(this.currentView instanceof CacciaView)) {
+        if((page instanceof IntroCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return false;
         }
         if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
