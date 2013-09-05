@@ -82,7 +82,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
                   var numberOfTappa = parseInt(result.text.replace("tappa", "").charAt(0));
                   if(numberOfTappa != (visitedDomande.length + 1)) {
                     navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
-                        Backbone.history.navigate("caccia", {trigger: true});
+                        Backbone.history.navigate("introcaccia", {trigger: true});
                       }, "Attenzione");
                       return;
                   }
