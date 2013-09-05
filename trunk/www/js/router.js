@@ -160,6 +160,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       eventiCerca: function (keyword, tag, organizzatore, da, a) {
         var currentCollection = Data.eventi;
         // filtra per descrizione
+        debugger;
         if(keyword != "__NO") {
           currentCollection = new Eventi(Data.eventi.getByKeyword(keyword).toArray());
         }
@@ -188,7 +189,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]); 
         }
 
-        if(currentCollection.length) {
+        // if(currentCollection.length) {
           var elements = document.getElementsByClassName("button_list_element");
           for(var i=0; i<elements.length; i++) {
             if(elements[i].id == "eventi") {
@@ -205,9 +206,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           var page = new EventiListView({model: currentCollection});
           page.title = 'Risultati Ricerca';
           this.changePage(page); 
-        } else {
-          navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
-        }
+        //} else {
+          //navigator.notification.alert('La ricerca non ha prodotto alcun risultato, prova a usare altri parametri di ricerca.', function() {}, "Attenzione");
+        //}
       },
 
       legenda: function () {

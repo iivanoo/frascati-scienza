@@ -107,6 +107,9 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             altriWrapper.append(item.render().el);
             this.subviews.push(item);
           }
+          if((filteredModel.length == 0) && (otherEvents.length == 0)) {
+            navigator.notification.alert('Questa lista degli eventi è purtroppo vuota.', function() {}, "Attenzione");
+          }
         },
 
         dayBack: function(event) {
