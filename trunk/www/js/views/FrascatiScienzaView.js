@@ -11,7 +11,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
           // "touchend #pulsanteCassetto": "cassetto",
           "touchstart #enti": "enti",
           "touchstart #_eventi": "eventi",
-          "touchstart #sponsor": "sponsor",
+          "touchstart #partner": "partner",
           "touchstart #continua_frascati": "continua"
           // "touchmove": "touchMove"
       },
@@ -86,14 +86,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
         $("#backbutton").show();
       },
 
-      // sponsor: function(event) {
-      //   if(this.moving) {
-      //       this.moving = false;
-      //       return;
-      //   } 
-      //   Backbone.history.navigate("sponsor", {trigger: true});
-      //   $("#backbutton").show();
-      // },
+      partner: function(event) {
+        if(this.moving) {
+            this.moving = false;
+            return;
+        } 
+        Backbone.history.navigate("partner", {trigger: true});
+        $("#backbutton").show();
+      },
 
       continua: function(event) {
 /*        if(this.moving) {
