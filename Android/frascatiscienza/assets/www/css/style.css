@@ -24,16 +24,81 @@ body {
 
 @media screen and (min-width: 480px) {
 
-    body{font-size: 1.2em;}
-
-    .minicredits{
-    	font-size: .6em;
-    }
+    body{font-size: 1.2em;} 
+	
+	.minicredits{
+		font-size: .6em;
+	}
+	
+	.contattiTablet{
+		margin-left: auto;
+		margin-right: auto;
+		bottom:0;
+		display: block;
+		width: 100%;
+		height: 40%;
+		background-position: 50% 50%;
+	    background-size: 100%;
+	    background-image: url("../img/contatto.jpg");
+	    text-align: center;
+	
+	    -webkit-touch-callout: default;
+	    -webkit-text-size-adjust: default;
+	    -webkit-user-select: default;
+	}
+	
+	.contact_button{
+		color: white;
+		/*font-size: 1.5em;*/
+		font-family: 'dax';
+		display: inline-block;
+		width: 48%;
+		margin-right: 2px;
+		overflow: hidden;
+		text-align: center;
+		text-overflow: ellipsis;
+		height: 25%;
+		/*padding-bottom: 10%;*/
+		margin-top:32%;
+		box-shadow: 0 2px 0px rgba(0,0,0,.2);
+				
+		background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+		
+		
+	}
+	
+	.contact_button img{
+		margin-top: 5px;
+		width: 25%;
+		display: inline-block;
+		vertical-align:middle;
+	}	
+	
+	.contattiTel{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 479px) {
 
     body{font-size: .8em;}
+    
+    .contattiTel{
+		margin-left: auto;
+		margin-right: auto;
+		bottom:0;
+		display: block;
+		width: 100%;
+		height: 40%;
+		background-position: 50% 50%;
+	    background-size: 100%;
+	    background-image: url("../img/contatto.jpg");
+	    text-align: center;
+	}	
+	
+	.contattiTablet{
+		display: none;
+	}
 }
 
 
