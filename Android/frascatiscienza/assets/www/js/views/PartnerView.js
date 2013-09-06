@@ -9,7 +9,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/partne
         },
 
         initialize: function() {
-            this.title = "Sponsor";
+            this.title = "Partner";
             this.partners = {
               "asi": "http://www.asi.it/",
               "cnr": "http://www.cnr.it/",
