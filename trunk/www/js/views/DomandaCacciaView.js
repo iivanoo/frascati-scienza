@@ -63,6 +63,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
 
         start: function (event) {
           // tempo in Unix time + i secondi delle domande precedenti
+          this.oldSeconds = this.seconds;
           this.startTimestamp = new Date().getTime() - (this.seconds * 1000);
           var self = this;
           var clockText = document.getElementById("clockText");
@@ -101,7 +102,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
             var self = this;
             window.clearInterval(this.interval);
             document.getElementById(e.currentTarget.id).classList.add("rvera");
-            localStorage.setItem("cacciaSeconds" , "" + (parseInt(localStorage.getItem("cacciaSeconds")) + this.seconds));
+            var newSeconds = (parseInt(localStorage.getItem("cacciaSeconds")) + this.seconds) - this.oldSeconds;
+            localStorage.setItem("cacciaSeconds" , "" + newSeconds);
             setTimeout(function(){
               Backbone.history.navigate("risultatocaccia/" + self.model.id, {trigger: true});
             }, 1000);
