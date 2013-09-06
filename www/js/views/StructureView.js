@@ -50,7 +50,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
             return false;
           }
           if(that.currentView instanceof RisultatoCacciaView) {
-            Backbone.history.navigate("caccia", {trigger: true});
+            Backbone.history.navigate("introcaccia", {trigger: true});
             return false;
           }
           if(that.currentView instanceof FineCacciaView) {

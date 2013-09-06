@@ -255,7 +255,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       introcaccia: function () {
         var page = new IntroCacciaView();
-        this.changePage(page); 
+        if(this.changePage(page)) {
+          $("#backbutton").show();
+          $(".button_list_element").css("visibility", "visible"); 
+          $(".button_list_element_small").css("visibility", "visible"); 
+        }
       },
 
       introtappa: function (id) {
