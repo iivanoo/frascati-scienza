@@ -11,7 +11,7 @@ define({
     risposte: ["Università di Farmacologia", "Gilda degli Alchimisti", "Università degli Aromatari", "Università degli Speziali"],
     rispostacorretta: "2",
     indicazione: "Complimenti, ottima risposta, raggiungi Samorì a Sant’Ignazio",
-    luogo: {lat: "41.805966", lon: "12.680558"}
+    luogo: {lat: "41.899245", lon: "12.47965"}
   },
   { 
     id: "tappa2789",
@@ -26,7 +26,7 @@ define({
     risposte: ["Dal Collegio partivano i primi rintocchi di campana dopo l’alba", "Dal Collegio veniva dato il segnale per il colpo di cannone che segnava le 12 a Roma", "Nell’orto del Collegio si coltivavano i carciofi","Sul tetto della Chiesa di Sant’Ignazio era posta la statua della Lupa Capitolina"],
     rispostacorretta: "1",
     indicazione: "Hai indovinato. Segui le orme di Galileo a Piazza della Minerva",
-    luogo: {lat: "41.899245", lon: "12.47965"}
+    luogo: {lat: "41.897831", lon: "12.477357"}
   },
   { 
     id: "tappa3109",
@@ -42,7 +42,7 @@ define({
     risposte: ["1609", "1633", "1632","1732"],
     rispostacorretta: "1",
     indicazione: "Risposta corretta. Vai a Piazza del Collegio Romano",
-    luogo: {lat: "41.897831", lon: "12.477357"}
+    luogo: {lat: "41.898003", lon: "12.480388"}
   },
   { 
     id: "tappa4961",
@@ -58,7 +58,7 @@ define({
     risposte: ["I denti di una sirena", "Il tridente di Nettuno", "La coda di una sirena","Una statua di Padre Kircher"],
     rispostacorretta: "2",
     indicazione: "Bravo. Segui le indicazioni di Elena e cerca di raggiungere Ottolenghi a Palazzo Valentini",
-    luogo: {lat: "41.898003", lon: "12.480388"}
+    luogo: {lat: "41.896887", lon: "12.483582"}
   },
   { 
     id: "tappa5000",
@@ -71,7 +71,7 @@ define({
     risposte: ["IV sec d. C.", "XV sec d. C.", "III sec  a. C.","V sec a. C."],
     rispostacorretta: "0",
     indicazione: "Vai a Via Panisperna per incontrare Ottolenghi in uno dei laboratori con cui collaborava",
-    luogo: {lat: "41.896887", lon: "12.483582"}
+    luogo: {lat: "41.896727", lon: "12.492333"}
   },
   { 
     id: "tappa6143",
@@ -85,7 +85,7 @@ define({
     risposte: ["L’Istituto di Frenologia", "Il Polo scientifico di Chimica, Fisica e Matematica", "L’Istituto di Polizia Scientifica","Il Polo di ricerca della Polizia"],
     rispostacorretta: "1",
     indicazione: "Complimenti, hai risposto correttamente. Segui Samorì alla Biblioteca Casanatense per raccogliere altri indizi",
-    luogo: {lat: "41.896727", lon: "12.492333"}
+    luogo: {lat: "41.898823", lon: "12.479459"}
   },
   { 
     id: "tappa7263",
@@ -101,7 +101,7 @@ define({
     risposte: ["Exultet", "Trattum sanitatis", "Theatrum sanitatis","Chirurgia"],
     rispostacorretta: "2",
     indicazione: "Sei vicino a risolvere il mistero. Raggiungi Piazza Colonna e scoprirai la soluzione dell’enigma!",
-    luogo: {lat: "41.898823", lon: "12.479459"}
+    luogo: {lat: "41.900806", lon: "12.480349"}
   },
   { 
     id: "tappa8123",
@@ -112,8 +112,7 @@ define({
         "Diverrà famoso per i suoi lavori sull\'applicazione della Matematica alla Biologia, all'Economia e ad altre scienze \"meno teoriche\". Nel 1903 diviene senatore e inizia a lavorare alla costruzione di nuove Istituzioni Scientifiche Italiane sul modello europeo. Dopo la fine della Prima Guerra Mondiale avvia il percorso che porterà, nel 1923,  alla nascita del CNR, di cui sarà il primo presidente.",
         "Durante una visita in Germania gli fu chiesto come mai gli scienziati, pur non conoscendosi e provenendo da paesi e culture diverse, si sentano subito amici tra loro. Rispose: \"Perchè hanno un amico in comune: la Scienza!\"",
     ],
-    finale: true,
-    luogo: {lat: "41.900806", lon: "12.480349"}
+    finale: true
   }
   ]
 });
