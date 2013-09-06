@@ -43,8 +43,7 @@ body {
 	    text-align: center;
 	
 	    -webkit-touch-callout: default;
-	    -webkit-text-size-adjust: default;
-	    -webkit-user-select: default;
+	    -webkit-user-select: text;
 	}
 	
 	.contact_button{
