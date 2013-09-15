@@ -12,7 +12,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
           "touchstart #enti": "enti",
           "touchstart #_eventi": "eventi",
           "touchstart #partner": "partner",
-          "touchstart #continua_frascati": "continua"
+          "touchstart #continua_frascati": "continua",
+          "touchstart #credits": "credits"
           // "touchmove": "touchMove"
       },
 
@@ -87,11 +88,20 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       },
 
       partner: function(event) {
-        if(this.moving) {
+/*        if(this.moving) {
             this.moving = false;
             return;
-        } 
+        } */
         Backbone.history.navigate("partner", {trigger: true});
+        $("#backbutton").show();
+      },
+
+      credits: function(event) {
+/*        if(this.moving) {
+            this.moving = false;
+            return;
+        } */
+        Backbone.history.navigate("credits", {trigger: true});
         $("#backbutton").show();
       },
 
