@@ -9,6 +9,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
 
         initialize: function() {
             this.title = this.model.get("titolo");
+            this.on("inTheDom", this.attachListener);
           },
 
         template: Handlebars.compile(template),
@@ -62,6 +63,19 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
             }
             functions[i].classList.add("nonvisibile");
           }
+        },
+        
+        attachListener: function() {
+          var self  = this;
+          document.getElementById("video").addEventListener("click", function(e) {
+            if(self.playing) {
+              self.playing = false;
+              this.pause();
+            } else {
+              self.playing = true;
+              this.play();
+            }
+          }, false);
         },
 
         addAgenda: function (event) {
