@@ -471,7 +471,7 @@ margin-bottom: 5px;
 
 
 .home_wrapper{
-
+	padding-top: 44px;
 	position: absolute;
     height: 100%;
     width: 100%;
@@ -482,9 +482,20 @@ margin-bottom: 5px;
     background-position: 50% 50%;
     background-size: 100%;
     background-image: url("../img/home_back.jpg");
-
-	
 }
+
+#titlebar_home {
+    background-color: #fff;
+    position: relative;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;  
+    text-align: center;
+    box-shadow:0px 2px 1px #990000;
+}
+
+
 
 	
 .half_button{
@@ -638,10 +649,10 @@ display: inline-block;
 
 
 .home_button img{
-	margin-top: 5px;
-	width: 25%;
+	/*margin-top: 5px;*/
+	height: 100%;
 	display: inline-block;
-	vertical-align:middle;
+	vertical-align: middle;
 }	
 	
 	
@@ -650,8 +661,8 @@ display: inline-block;
 	/*font-size: 1.5em;*/
 	font-family: 'dax';
 	display: inline-block;
-	width: 60%;
-	margin-right: 2px;
+	width: 65%;
+	margin-bottom: 5px;
 	text-align: center;
 	height: 25%;
 	/*padding-bottom: 10%;*/
@@ -662,6 +673,7 @@ display: inline-block;
 }	
 	
 .backgr_buttons_home{
+	margin-top: 30%;
 	/*margin-top: 10px;*/
 	margin-left: auto;
 	margin-right: auto;
@@ -1060,18 +1072,20 @@ margin-top: 7px;
 
 .day_back img{
 	background: #efefef;
-border-radius: 30px;
-padding: 5px;
-width: 20px;
-margin-left: 5px;
+	border-radius: 30px;
+	padding: 5px;
+	width: 20px;
+	margin-left: 5px;
 }
 
 
 .testoinutile{
 	vertical-align: middle;
-	height: 2.3em;
+	height: 2em;
 	display: inline-block;
-	margin-top: -13px;
+	/*margin-top: -10px;*/
+	margin-top: -15%;
+
 	font-size: .8em;
 	
 }
