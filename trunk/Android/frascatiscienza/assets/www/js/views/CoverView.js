@@ -5,16 +5,17 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
 
         id: "cover", 
 
-        events: {
+/*        events: {
           // "touchend .language": "chooseLanguage"
-          "touchend": "chooseLanguage"
-        },
+          //"touchend": "chooseLanguage"
+        },*/
 
         initialize: function () {
-          this.body = document.getElementsByTagName("body")[0]
+          this.body = document.getElementsByTagName("body")[0];
+          this.on("startData", this.chooseLanguage);
         },
 
-        chooseLanguage: function(event) {
+        chooseLanguage: function() {
           var self = this;
           setTimeout(function(){
             Data.spinner.spin(self.body);
