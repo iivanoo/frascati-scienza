@@ -262,6 +262,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       introcaccia: function () {
         var page = new IntroCacciaView();
+        if(this.currentView instanceof RisultatoCacciaView) {
+          page.stepByStep = true;  
+        } 
         if(this.changePage(page)) {
           $("#backbutton").show();
           $(".button_list_element").css("visibility", "visible"); 
