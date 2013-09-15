@@ -18,11 +18,13 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
 
       $(this.el).empty();
       for (var i = 0; i < this.model.length; i++) {
-        var item = new EntiListItemView({
-          model: this.model.at(i)
-        });
-        $(this.el).append(item.render().el);
-        this.subviews.push(item);
+        if(this.model.at(i).get("__id") != "frascati-scienza") {
+          var item = new EntiListItemView({
+            model: this.model.at(i)
+          });
+          $(this.el).append(item.render().el);
+          this.subviews.push(item);
+        }
       }
       var el = $("#titlebar");
       el.removeClass();
