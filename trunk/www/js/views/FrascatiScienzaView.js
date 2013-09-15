@@ -12,7 +12,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
           "touchstart #enti": "enti",
           "touchstart #_eventi": "eventi",
           "touchstart #partner": "partner",
-          "touchstart #continua_frascati": "continua"
+          "touchstart #frascati": "continua"
           // "touchmove": "touchMove"
       },
 
