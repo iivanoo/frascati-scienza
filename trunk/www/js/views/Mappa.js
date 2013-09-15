@@ -6,7 +6,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "leaf
         tagName: "div",
         id: "map",
 
-        // come model qui bisogna passargli l'evento, l'ente o lo sponsor
+        // come model qui bisogna passargli l'evento, l'ente o la tappa
 
         initialize: function() {
             if(this.model.has("titolo")) {

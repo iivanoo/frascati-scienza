@@ -1,14 +1,16 @@
-define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!templates/introcaccia.html"],
-    function ($, _, Backbone, Handlebars, Data, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datamanager", "text!templates/introcaccia.html"],
+    function ($, _, Backbone, Handlebars, Tappa, Data, template) {
 
     var IntroCacciaView = Backbone.View.extend({
 
         events: {
-          "touchstart #qrcode": "readqrcode"
+          "touchstart #qrcode": "readqrcode",
+          "touchstart #mappa": "showMappa"
           // "touchmove": "touchMove"
         },
 
         initialize: function() {
+          this.model = new Tappa({titolo: "Caccia al tesoro", luogo: {lat: "41.805966", lon: "12.680558"}});
             this.title = "Caccia al tesoro"; 
             // this.moving = false;
             this.on("inTheDom", this.attachListener);
@@ -21,8 +23,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         render: function () {
           // gestione nav bar
           this.updateNavbar();
-
-          $(this.el).html(this.template({}));
+          var context = {stepByStep: this.stepByStep};
+          $(this.el).html(this.template(context));
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("cacciatesoro_top");
@@ -51,15 +53,21 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         
         attachListener: function() {
           var self  = this;
-          document.getElementById("video").addEventListener("click", function(e) {
-            if(self.playing) {
-              self.playing = false;
-              this.pause();
-            } else {
-              self.playing = true;
-              this.play();
-            }
-          }, false);
+          if(!this.stepByStep) {
+            document.getElementById("video").addEventListener("click", function(e) {
+              if(self.playing) {
+                self.playing = false;
+                this.pause();
+              } else {
+                self.playing = true;
+                this.play();
+              }
+            }, false);
+          }
+        },
+
+        showMappa: function(event) {
+          Backbone.history.navigate("mappa", {trigger: true});
         },
 
         readqrcode: function (event) {
