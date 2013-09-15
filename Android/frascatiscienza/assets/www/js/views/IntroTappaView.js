@@ -14,6 +14,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         initialize: function() {
             this.title = this.model.get("titolo");
             this.moving = false;
+            this.on("inTheDom", this.attachListener);
         },
 /*
         touchMove: function() {
@@ -53,6 +54,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
           }
+        },
+        
+        attachListener: function() {
+          var self  = this;
+          document.getElementById("video").addEventListener("click", function(e) {
+            if(self.playing) {
+              self.playing = false;
+              this.pause();
+            } else {
+              self.playing = true;
+              this.play();
+            }
+          }, false);
         },
 
         vaiDomanda: function (e) {

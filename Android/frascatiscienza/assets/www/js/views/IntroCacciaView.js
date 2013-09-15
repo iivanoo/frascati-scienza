@@ -11,6 +11,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         initialize: function() {
             this.title = "Caccia al tesoro"; 
             // this.moving = false;
+            this.on("inTheDom", this.attachListener);
         },
 
         className: "default_wrapper",
@@ -46,6 +47,19 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
           }
+        },
+        
+        attachListener: function() {
+          var self  = this;
+          document.getElementById("video").addEventListener("click", function(e) {
+            if(self.playing) {
+              self.playing = false;
+              this.pause();
+            } else {
+              self.playing = true;
+              this.play();
+            }
+          }, false);
         },
 
         readqrcode: function (event) {

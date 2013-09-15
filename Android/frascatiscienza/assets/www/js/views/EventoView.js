@@ -18,6 +18,7 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           this.on("removed", function(e) {
             localStorage.removeItem("lastVisitedEventTimestamp");
           });
+          this.on("inTheDom", this.attachListener);
         },
 
         template: Handlebars.compile(template),
@@ -45,6 +46,19 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
             }
             functions[i].classList.add("nonvisibile");
           }
+        },
+        
+        attachListener: function() {
+          var self  = this;
+          document.getElementById("video").addEventListener("click", function(e) {
+            if(self.playing) {
+              self.playing = false;
+              this.pause();
+            } else {
+              self.playing = true;
+              this.play();
+            }
+          }, false);
         },
 
         addAgenda: function (event) {
