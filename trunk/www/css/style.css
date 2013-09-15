@@ -338,6 +338,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 
 /* COVER */
 
+
+
 #wrapper_cover{
 	position: absolute;
     height: 100%;
@@ -464,6 +466,24 @@ margin-bottom: 5px;
 	min-height: 60%;
 	overflow-x: hidden;
 
+}
+
+
+
+.home_wrapper{
+
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-image: url("../img/home_back.jpg");
+
+	
 }
 
 	
@@ -614,6 +634,33 @@ display: inline-block;
 		background-color: #888888;
 		color: white;
 	}
+
+
+
+.home_button img{
+	margin-top: 5px;
+	width: 25%;
+	display: inline-block;
+	vertical-align:middle;
+}	
+	
+	
+.home_button{
+
+	color: white;
+	/*font-size: 1.5em;*/
+	font-family: 'dax';
+	display: inline-block;
+	width: 60%;
+	margin-right: 2px;
+	text-align: center;
+	height: 25%;
+	/*padding-bottom: 10%;*/
+	/*margin-top:32%;*/
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+	
+}	
 	
 .backgr_buttons_home{
 	/*margin-top: 10px;*/
@@ -625,7 +672,7 @@ display: inline-block;
 	height: 40%;
 	background-position: 50% 50%;
     background-size: 100%;
-    background-image: url("../img/back_frasche.png");
+   /* background-image: url("../img/back_frasche.png");*/
     text-align: center;
 }	
 	
@@ -1019,6 +1066,15 @@ padding: 5px;
 width: 20px;
 }
 
+
+.testoinutile{
+	vertical-align: middle;
+	height: 2.3em;
+	display: inline-block;
+	margin-top: -13px;
+	font-size: .7em;
+	
+}
 .date{
 	width:38%;
 	vertical-align: middle;
