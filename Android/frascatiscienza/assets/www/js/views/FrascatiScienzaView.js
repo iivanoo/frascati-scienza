@@ -12,14 +12,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
           "touchstart #enti": "enti",
           "touchstart #_eventi": "eventi",
           "touchstart #partner": "partner",
-          "touchstart #continua_frascati": "continua",
-          "touchstart #credits": "credits"
+          "touchstart #frascati": "continua"
           // "touchmove": "touchMove"
       },
 
       initialize: function() {
         this.title = "Home";
         // this.moving = false;
+        this.on("inTheDom", function(e) {document.getElementById("credits").classList.remove("nonvisibile");});
+        this.on("removed", function(e) {document.getElementById("credits").classList.add("nonvisibile");});
       },
 
       /*touchMove: function() {
@@ -93,15 +94,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
             return;
         } */
         Backbone.history.navigate("partner", {trigger: true});
-        $("#backbutton").show();
-      },
-
-      credits: function(event) {
-/*        if(this.moving) {
-            this.moving = false;
-            return;
-        } */
-        Backbone.history.navigate("credits", {trigger: true});
         $("#backbutton").show();
       },
 

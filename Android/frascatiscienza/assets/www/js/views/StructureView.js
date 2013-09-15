@@ -20,7 +20,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           "touchend #www": "showSito",
           "touchend #mappa": "showMappa",
           "touchend #ricerca": "ricerca",
-          "touchend #eventi_ente_butt": "showEventi"
+          "touchend #eventi_ente_butt": "showEventi",
+          "touchend #credits": "credits"
         },
 
         initialize: function() {
@@ -82,6 +83,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
 
         eventi: function(event) {
           Backbone.history.navigate("intronotte", {trigger: true});
+        },
+
+        credits: function(event) {
+          $("#backbutton").show();
+          Backbone.history.navigate("credits", {trigger: true});
         },
 
         caccia: function(event) {

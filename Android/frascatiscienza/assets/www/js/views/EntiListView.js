@@ -7,7 +7,7 @@ define(["jquery", "underscore", "backbone", "collections/Enti", "views/EntiListI
     className: "defaultlist_wrapper",
 
     initialize: function() {
-      this.title = "Enti";
+      this.title = "Centri di Ricerca";
       this.subviews = [];
       this.on("removed", this.removed);
     },
