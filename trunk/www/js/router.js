@@ -45,6 +45,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           $('#content_cover').css({
             'height': $(window).height() - 75
           });
+          page.trigger("startData");
         // }
       },
 
