@@ -113,13 +113,23 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         },
 
         dayBack: function(event) {
-          this.currentDay = this.currentDay - 86400;
-          this.addEvents();
+          var yesterday = this.currentDay - 86400;
+          var pastEvents = this.model.searchTo(yesterday).toArray();
+          if(pastEvents.length != 0) {
+            //this.currentDay = yesterday;
+            this.currentDay = this.getBaseTimestamp(pastEvents[pastEvents.length - 1].get("timestamp"));
+            this.addEvents();
+          }          
         },
 
         dayNext: function(event) {
-          this.currentDay = this.currentDay + 86400;
-          this.addEvents();
+          var tomorrow = this.currentDay + 86400;
+          var nextEvents = this.model.searchFrom(tomorrow).toArray();
+          if(nextEvents.length != 0) {
+            //this.currentDay = tomorrow;
+            this.currentDay = this.getBaseTimestamp(nextEvents[0].get("timestamp"));
+            this.addEvents();
+          } 
         }
       });
 
