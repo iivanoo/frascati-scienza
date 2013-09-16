@@ -1,11 +1,11 @@
 define({
   timestamp: "1376010000", // timestamp (in formato Unix) di quando è stato creato questo file JSON
-  frascatiscienza: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare e soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+  frascatiscienza: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare e soprattutto per far comprendere a tutti come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
   imgfrascatiscienza: "./pics/frascatiscienzacover.jpg",
   enti: [{ 
     id: "frascati-scienza",
     titolo: "Frascati Scienza",
-    descrizione: "La manifestazione organizzata dall'Associazione Frascati Scienza",
+    descrizione: "Associazione per la promozione della Ricerca scientifica",
     logo: "./pics/frascati-scienza/logo.jpg",
     sito: "http://www.frascatiscienza.it",
     email: "info@frascatiscienza.it",

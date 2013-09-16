@@ -480,7 +480,7 @@ display: inline-block;
 .default_coverimage_block img{
 	background: url('../res/loader.gif') no-repeat; 
 	background-position: center; 
-	min-height: 30%; 
+	min-height: 20%; 
 	width: 100%;
 }
 
