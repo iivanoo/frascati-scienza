@@ -30,74 +30,14 @@ body {
 		font-size: .6em;
 	}
 	
-	.contattiTablet{
-		margin-left: auto;
-		margin-right: auto;
-		bottom:0;
-		display: block;
-		width: 100%;
-		height: 40%;
-		background-position: 50% 50%;
-	    background-size: 100%;
-	    background-image: url("../img/contatto.jpg");
-	    text-align: center;
-	
-	    -webkit-touch-callout: default;
-	    -webkit-user-select: text;
-	}
-	
-	.contact_button{
-		color: white;
-		/*font-size: 1.5em;*/
-		font-family: 'dax';
-		display: inline-block;
-		width: 48%;
-		margin-right: 2px;
-		overflow: hidden;
-		text-align: center;
-		text-overflow: ellipsis;
-		height: 25%;
-		/*padding-bottom: 10%;*/
-		margin-top:32%;
-		box-shadow: 0 2px 0px rgba(0,0,0,.2);
-				
-		background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
-		
-		
-	}
-	
-	.contact_button img{
-		margin-top: 5px;
-		width: 25%;
-		display: inline-block;
-		vertical-align:middle;
-	}	
-	
-	.contattiTel{
-		display: none;
-	}
+
 }
 
 @media screen and (max-width: 479px) {
 
     body{font-size: .8em;}
     
-    .contattiTel{
-		margin-left: auto;
-		margin-right: auto;
-		bottom:0;
-		display: block;
-		width: 100%;
-		height: 40%;
-		background-position: 50% 50%;
-	    background-size: 100%;
-	    background-image: url("../img/contatto.jpg");
-	    text-align: center;
-	}	
-	
-	.contattiTablet{
-		display: none;
-	}
+
 }
 
 
@@ -431,6 +371,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	height: 100%;
 	width: 100%;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .default_coverimage_block{
@@ -441,7 +382,7 @@ margin-bottom: 5px;
 
  video{
 	max-width: 100%;
-	height: auto;
+	height: 40%;
 
 }
 
@@ -451,7 +392,35 @@ margin-bottom: 5px;
 
 }
 
-	
+
+
+.home_wrapper{
+	padding-top: 44px;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-image: url("../img/home_back.jpg");
+}
+
+#titlebar_home {
+    background-color: #fff;
+    position: relative;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    box-shadow:0px 2px 1px #990000;
+}
+
+
+
 
 .half_button{
 	color: white;
@@ -465,37 +434,39 @@ margin-bottom: 5px;
 	/*padding-bottom: 10%;*/
 	margin-top:32%;
 	box-shadow: 0 2px 0px rgba(0,0,0,.2);
-			
+
 	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
-	
-	
-}	
+
+
+}
 
 .half_button img{
 	margin-top: 5px;
-	width: 25%;
+	height:100%;
 	display: inline-block;
 	vertical-align:middle;
 }
 
 .text_half{
 margin-top: 8px;
-vertical-align: middle;	
+vertical-align: middle;
 display: inline-block;
-	
 }
 
+
+
+
 .default_coverimage_block img{
-	background: url('../res/loader.gif') no-repeat; 
-	background-position: center; 
-	min-height: 30%; 
+	background: url('../res/loader.gif') no-repeat;
+	background-position: center;
+	min-height: 30%;
 	width: 100%;
 }
 
 .default_coverimage_block video {
-	
+
 	width: 100%;
-	
+
 }
 
 .caption_block{
@@ -503,23 +474,23 @@ display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 120px;
-	
+
 	width: 90%;
 /*	font-size: 1em; */
-	line-height: 1.5em;	
+	line-height: 1.5em;
 }
 
 .caption_block h2{
 	/*font-size: 1em;*/
 	font-family: 'Dax';
-	
-	
+
+
 }
 
 .caption_content{
 	text-align: justify;
 	padding-bottom: 20px;
-	
+
 }
 
 .caption_content h1{
@@ -534,7 +505,7 @@ display: inline-block;
 	margin-left: 80%;
 	padding-bottom: 40px;
 
-	
+
 }
 */
 
@@ -546,17 +517,17 @@ display: inline-block;
 	/*font-size: 1.2em;*/
 	margin-left: 60%;
 	padding: 10px;
-	
+
 }
 
 #continua_frascati{
 
 	box-shadow: 0 2px 0px rgba(0,0,0,.2);
-			
+
 	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
 	border-radius: 5px;
 
-	
+
 }
 
 #cassetto{
@@ -585,7 +556,7 @@ display: inline-block;
 		height: 30px;
 		background-color: white;
 		width: 100%;
-		border-bottom: 2px solid #000;		
+		border-bottom: 2px solid #000;
 	}
 
 
@@ -600,8 +571,35 @@ display: inline-block;
 		background-color: #888888;
 		color: white;
 	}
-	
+
+
+
+.home_button img{
+	/*margin-top: 5px;*/
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.home_button{
+	color: white;
+	/*font-size: 1.5em;*/
+	font-family: 'dax';
+	display: inline-block;
+	width: 65%;
+	margin-bottom: 5px;
+	text-align: center;
+	height: 25%;
+	/*padding-bottom: 10%;*/
+	/*margin-top:32%;*/
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+
+}
+
 .backgr_buttons_home{
+	margin-top: 30%;
 	/*margin-top: 10px;*/
 	margin-left: auto;
 	margin-right: auto;
@@ -610,13 +608,13 @@ display: inline-block;
 	width: 100%;
 	height: 40%;
 	background-position: 50% 50%;
-    background-size: 100% 100%;
-    background-image: url("../img/back_frasche.png");
+    background-size: 100%;
+   /* background-image: url("../img/back_frasche.png");*/
     text-align: center;
-}	
-	
+}
+
 .backgr_buttons_rss{
-	/*	margin-top: 10px;*/
+
 
 	margin-left: auto;
 	margin-right: auto;
@@ -625,11 +623,58 @@ display: inline-block;
 	width: 100%;
 	height: 40%;
 	background-position: 50% 50%;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-image: url("../img/contatto.jpg");
     text-align: center;
-}	
-	
+}
+
+
+.contatti{
+	margin-left: auto;
+	margin-right: auto;
+	bottom:0;
+	display: block;
+	width: 100%;
+	height: 40%;
+	background-position: 50% 50%;
+    background-size: 100%;
+    background-image: url("../img/contatto.jpg");
+    text-align: center;
+
+    -webkit-touch-callout: default;
+    -webkit-user-select: text;
+}
+
+.contact_button{
+	color: white;
+	/*font-size: 1.5em;*/
+	font-family: 'dax';
+	display: inline-block;
+	width: 48%;
+	margin-right: 2px;
+	overflow-x: hidden;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 25%;
+	/*padding-bottom: 10%;*/
+	margin-top:32%;
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));
+
+
+}
+
+.contact_button img{
+	height: 100%;
+	display: inline-block;
+	vertical-align:middle;
+}
+
+
+
+
 /* frascati scienza */
 
 
@@ -662,11 +707,11 @@ display: inline-block;
 	height: 100px;
 	width: 100px;
 	display: block;
-	
+
 }
 
 .img_wrapper img{
-	height:85px;	
+	height:85px;
 }
 
 
@@ -676,9 +721,9 @@ display: inline-block;
 	width:55%;
 	min-width: 120px;
 	display: block;
-	
-	
-	
+
+
+
 }
 
 .legenda_title{
@@ -696,9 +741,9 @@ display: inline-block;
 	width:60%;
 	min-width: 100px;
 	display: inline-block;
-	
-	
-	
+
+
+
 }
 
 .textlist_title{
@@ -712,7 +757,7 @@ display: inline-block;
 }
 
 .textlist_content{
-	
+
 	display: inline-block;
 	margin: 0px;
 	padding:0px;
@@ -721,7 +766,7 @@ display: inline-block;
 	text-overflow: ellipsis;
 	text-align: left;
 	height: 4.2em;
-	
+
 }
 
 .arrow_wrapper{
@@ -733,7 +778,7 @@ display: inline-block;
 	right: 0px;
 	/*width:35px; */
 	height:55px;
-	
+
 }
 
 .arrow_wrapper img{
@@ -754,7 +799,7 @@ display: inline-block;
 		height: 40px;
 		width: 30px;
 
-	
+
 }
 
 
@@ -766,7 +811,7 @@ display: inline-block;
 		height: 40px;
 		width: 30px;
 }
-/* lista */ 
+/* lista */
 
 
 
@@ -786,11 +831,11 @@ display: inline-block;
 	overflow:hidden;
 	text-overflow: ellipsis;
 
-	
+
 }
 
 .event_row_wrapper{
-	
+
 	/* height: 110px; 80px*/
 	width:100%;
 	display: inline-block;
@@ -815,7 +860,7 @@ display: inline-block;
 	overflow:hidden;
 	text-overflow: ellipsis;
 	font-family: 'Dax';
-	
+
 }
 
 .eventlist_time{
@@ -840,7 +885,7 @@ display: inline-block;
 	text-align: justify;
 	height: 55px;
 	*/
-	
+
 	margin: 0px;
 	padding-left: 5px;
 	/*font-size: 10px;*/
@@ -852,7 +897,7 @@ display: inline-block;
 }
 
 .eventlist_dots{
-	
+
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -879,95 +924,95 @@ display: inline-block;
 	width:40px;
 	height:40px;
 	display: inline-block;
-	
+
 }
 /*
 	.ad_famiglia{
 		background-image: url('../img/symbol_green.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_tutti{
 		background-image: url('../img/symbol_blue.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_ragazzi{
 		background-image: url('../img/symbol_orange.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_fisica{
 		background-image: url('../img/symbol_atomo.png');
 		background-size: 40px 40px;
-	}	
-	
+	}
+
 	.ad_astronomia{
 		background-image: url('../img/symbol_pianeta.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_biologia{
 		background-image: url('../img/symbol_provetta.png');
 		background-size: 40px 40px;
 	}
 	*/
-	
+
 	.ad_giovani{
 		background-image: url('../img/symbol_giovani.png');
 		background-size: 40px 40px;
 	}
-	
-	
+
+
 	.ad_pubblicogenerale{
 		background-image: url('../img/symbol_pubblicogenerale.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_medie{
 		background-image: url('../img/symbol_scuolemedie.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_elementari{
 		background-image: url('../img/symbol_scuolaelementare.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_superiori{
 		background-image: url('../img/symbol_scuolesuperiori.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_aperitivi{
 		background-image: url('../img/symbol_aperitiviscientifici.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_giochiscientifici{
 		background-image: url('../img/symbol_giochiscientifici.png');
 		background-size: 40px 40px;
 	}
-	
+
 	.ad_laboratori{
 		background-image: url('../img/symbol_laboratori.png');
 		background-size: 40px 40px;
-		
+
 	}
 
 	.ad_seminari{
 		background-image: url('../img/symbol_seminario.png');
 		background-size: 40px 40px;
-		
+
 	}
-	
+
 	.ad_qrcode{
 		background-image: url('../img/symbol_qr.png');
 		background-size: 40px 40px;
 	}
-	
-	
-	
+
+
+
 .sfoglia_wrapper{
 	/*display: block;
 	text-align: center;*/
@@ -975,9 +1020,10 @@ display: inline-block;
 	height: 40px;
 	background-color: white;
 	border-bottom: 1px solid #9f9f9f;
-	
-	
+
+
 }
+
 .block_sfoglia{
 	display: inline-block;
 height: 60px;
@@ -998,11 +1044,22 @@ margin-top: 7px;
 
 .day_back img{
 	background: #efefef;
-border-radius: 30px;
-padding: 5px;
-width: 20px;
+	border-radius: 30px;
+	padding: 5px;
+	width: 20px;
+	margin-left: 5px;
 }
 
+
+.testoinutile{
+	vertical-align: middle;
+	height: 2em;
+	display: inline-block;
+	margin-top: -12px;
+
+	font-size: .8em;
+
+}
 .date{
 	width:38%;
 	vertical-align: middle;
@@ -1025,9 +1082,10 @@ width: 20px;
 
 .day_next img{
 	background: #efefef;
-border-radius: 30px;
-padding: 5px;
-width: 20px;
+	border-radius: 30px;
+	padding: 5px;
+	width: 20px;
+	margin-right: 5px;
 }
 
 
@@ -1038,7 +1096,7 @@ display: inline-block;
 width: 38px;
 margin-top: 60px;
 margin-left: 20px;
-	
+
 }
 
 .event_arrow_wrapper img{
@@ -1052,7 +1110,7 @@ margin-left: 20px;
 	font-family: 'dax';
 	position: absolute;
 	bottom: 0;
-	font-size: 1.2em;	
+	font-size: 1.2em;
 	margin-bottom: 15px;
 	padding: 5px;
 	padding-bottom: 10px;
@@ -1082,9 +1140,9 @@ margin-left: 20px;
 	background-repeat:no-repeat;
 	background-position:center;
 	border-bottom: 2px inset #fff;
-	
+
 	/*background-color: #ccc;*/
-	
+
 }
 
 
@@ -1097,7 +1155,7 @@ margin-left: 20px;
 	background-repeat:no-repeat;
 	background-position:center;
 
-	
+
 }
 
 
@@ -1106,19 +1164,19 @@ margin-left: 20px;
 	width:50%;
 	margin-left:50%;
 	border-left: 2px solid #fff;
-	
+
 }
 
 
 #ente_dx_top{
-	 position: relative;	
+	 position: relative;
 	width:100%;
 	height: 35%;
 	background-image: url('../pics/_blank/dx_top.png');
 	background-size: auto 100%;
 	background-repeat:no-repeat;
 	background-position:center;
-	border-bottom: 2px inset #fff;	
+	border-bottom: 2px inset #fff;
 }
 
 #ente_dx_bottom{
@@ -1128,7 +1186,7 @@ margin-left: 20px;
 	background-image: url('../pics/_blank/dx_bot.png');
 	background-size: auto 100%;
 	background-repeat:no-repeat;
-	background-position:center;	
+	background-position:center;
 }
 
 
@@ -1156,7 +1214,7 @@ font-family: 'dax';
 }
 
 .simple_element_row{
-	
+
 	width:100%;
 	float: left;
 	box-sizing: border-box;
@@ -1172,10 +1230,10 @@ font-family: 'dax';
 	overflow:hidden;
 	text-overflow: ellipsis;
 	font-weight: bold;
-	
-	
-	
-	
+
+
+
+
 }
 
 .rss_list_content{
@@ -1187,13 +1245,13 @@ font-family: 'dax';
 	/*text-align: justify;*/
 	/*max-height: 22px;*/
 	max-height: 2.5em;
-	
+
 	/*line-height: 11px;*/
-	
+
 }
 
 .rss_list_dots{
-	
+
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -1241,7 +1299,7 @@ float: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background: rgba(255,255,255,0.7);
-	
+
 }
 
 .agenda_title{
@@ -1256,7 +1314,7 @@ float: right;
 
 
 #agenda_empty{
-visibility: visible;	
+visibility: visible;
 text-align: left;
 font-size: 1.2em;
 height: inherit;
@@ -1298,8 +1356,8 @@ display: block;
 	background-color: #ccc;
 	right: 0;
 	height: 100%;
-	
-	
+
+
 }
 
 .simple_text_list{
@@ -1308,8 +1366,8 @@ display: block;
 	display: inline-block;
 	/*font-size: 12px;*/
 /*	float: left;*/
-	
-	
+
+
 	width: 75%;
 min-width: 120px;
 display: inline-block;
@@ -1325,8 +1383,8 @@ float: left;
 	white-space: nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	
-	
+
+
 }
 
 .agenda_list_content{
@@ -1338,11 +1396,11 @@ float: left;
 	text-align: left;
 	max-height: 2.4em;
 	/*line-height: 12px;*/
-	
+
 }
 
 .agenda_list_dots{
-	
+
 	display: block;
 	margin: 0px;
 	padding-left: 5px;
@@ -1376,12 +1434,12 @@ float: left;
 	}
 
 #ling_eventi{
-	background-color: #3f6195;	
+	background-color: #3f6195;
 }
 
 
 #ling_enti{
-	background-color: #a4252a;	
+	background-color: #a4252a;
 }
 
 .agenda_arrow_wrapper{
@@ -1395,9 +1453,9 @@ float: right;
 }
 
 .ruotatesto{
--webkit-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
 width: 40px;
-position: absolute;
+position: fixed;
 margin-top: 60px;
 }
 
@@ -1466,7 +1524,6 @@ margin-top: 60px;
 
 }
 
-
 #wrapper_ricerca select, input{
     font-size: 1.2em;
     background: white;
@@ -1501,8 +1558,8 @@ margin-top: 60px;
 			box-shadow: 0 2px 0px rgba(0,0,0,.2);
 			border-radius: 5px;
 			background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
-		} 
-		
+		}
+
 .wrapper_domanda{
 	width:90%;
 	height: 100%;
@@ -1526,7 +1583,7 @@ margin-top: 60px;
 	.rfalsa{
 		background-color: #e74c3c;
 	}
-	
+
 	.rvera{
 		background-color: #2ecc71;
 	}
@@ -1547,6 +1604,7 @@ margin-top: 60px;
 	width:50%
 }
 
+
 /* IVANO */
 
 #indicazione {
@@ -1562,6 +1620,38 @@ margin-top: 60px;
 #qrcode{
 	margin-left: 60%;
 	text-align: center;
+	margin-top: -45px;
+	}
+
+.mappa_but{
+
+box-shadow: 0 2px 0px rgba(0,0,0,.2);
+border-radius: 5px;
+background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+text-align: center;
+color:white;
+font-family: 'Dax';
+
+padding: 10px;
+width: 40%;
+
+/*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+			box-shadow: 0 2px 0px rgba(0,0,0,.2);
+			border-radius: 5px;
+			background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+
+}
+
+
+.qr_only{
+
+	text-align: center;
+
+}
+
+.qr_only img{
+	width: 40%;
+	margin-top: 6%;
 }
 
 #procedi {
