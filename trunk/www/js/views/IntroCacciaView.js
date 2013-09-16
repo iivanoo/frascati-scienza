@@ -53,7 +53,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
         
         attachListener: function() {
           var self  = this;
-          if(!this.stepByStep) {
+          if(document.getElementById("video")) {
             document.getElementById("video").addEventListener("click", function(e) {
               if(self.playing) {
                 self.playing = false;

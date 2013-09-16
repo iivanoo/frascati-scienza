@@ -50,15 +50,17 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         
         attachListener: function() {
           var self  = this;
-          document.getElementById("video").addEventListener("click", function(e) {
-            if(self.playing) {
-              self.playing = false;
-              this.pause();
-            } else {
-              self.playing = true;
-              this.play();
-            }
-          }, false);
+          if(document.getElementById("video")) {
+            document.getElementById("video").addEventListener("click", function(e) {
+              if(self.playing) {
+                self.playing = false;
+                this.pause();
+              } else {
+                self.playing = true;
+                this.play();
+              }
+            }, false);
+          }
         },
 
         addAgenda: function (event) {
