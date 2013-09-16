@@ -83,6 +83,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             $("#agenda_wrapper_content").append(view.render().el);
             view.trigger("inTheDom");
           }
+          document.getElementById("title").innerHTML = "Agenda Personale - Enti";
         },
 
         showEventi: function() {
@@ -102,6 +103,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
             $("#agenda_wrapper_content").append(view.render().el);
             view.trigger("inTheDom");
           }
+          document.getElementById("title").innerHTML = "Agenda Personale - Eventi";
         }
       });
 

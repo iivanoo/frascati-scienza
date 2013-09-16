@@ -10,7 +10,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
         },
 
         initialize: function() {
-          this.model = new Tappa({titolo: "Caccia al tesoro", luogo: {lat: "41.805966", lon: "12.680558"}});
+          this.model = new Tappa({titolo: "Caccia al tesoro", luogo: {lat: "41.903423", lon: "12.4802"}});
             this.title = "Caccia al tesoro"; 
             // this.moving = false;
             this.on("inTheDom", this.attachListener);
