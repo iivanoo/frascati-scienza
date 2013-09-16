@@ -9,11 +9,13 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         initialize: function() {
           var date = new Date(this.model.get("timestamp") * 1000);
-          var gg, mm, aaaa;
+          var gg, mm, aaaa, hours, mins;
           gg = date.getDate() + "/";
           mm = date.getMonth() + 1 + "/";
           aaaa = date.getFullYear();
-          this.title = gg + mm + aaaa;
+          hours = date.getHours();
+          mins = date.getMinutes();
+          this.title = gg + mm + aaaa + " - " + hours + ":" + mins;
           localStorage.setItem("lastVisitedEventTimestamp", this.model.get("timestamp"));
           this.on("removed", function(e) {
             localStorage.removeItem("lastVisitedEventTimestamp");
@@ -27,7 +29,9 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           // gestione nav bar
           this.updateNavbar();
           this.model.set("descrizione", this.model.get("descrizione").strip());
-
+          var el = $("#titlebar");
+          el.removeClass();
+          el.addClass("nottericerca_top");
           $(this.el).html(this.template(this.model.toJSON()));
           return this;
         },
@@ -37,6 +41,10 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           var functions = document.getElementsByClassName("button_list_element_small");
           for(var i=0; i< functions.length; i++) {
             if(functions[i].id == "mappa") {
+              functions[i].classList.remove("nonvisibile");
+              continue;
+            }
+            if(functions[i].id == "legenda") {
               functions[i].classList.remove("nonvisibile");
               continue;
             }
