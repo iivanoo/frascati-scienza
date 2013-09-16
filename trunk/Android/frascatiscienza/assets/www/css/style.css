@@ -1617,11 +1617,12 @@ margin-top: 60px;
 	box-shadow: 0 3px 0px rgba(0,0,0,.2);
 }
 
-#qrcode{
+/* IVANO */
+.qrcode_tappa {
 	margin-left: 60%;
 	text-align: center;
 	margin-top: -45px;
-	}
+}
 
 .mappa_but{
 

@@ -18,8 +18,14 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         initialize: function() {
             this.title = this.model.get("titolo");
             this.moving = false;
-            this.on("inTheDom", function(e) {document.getElementById("eventi_ente_butt").classList.remove("nonvisibile");});
-            this.on("removed", function(e) {document.getElementById("eventi_ente_butt").classList.add("nonvisibile");});
+            this.on("inTheDom", function(e) {
+              document.getElementById("eventi_ente_butt").classList.remove("nonvisibile");
+              document.getElementsByClassName("default_wrapper")[0].classList.add("not_scrollable");
+            });
+            this.on("removed", function(e) {
+              document.getElementById("eventi_ente_butt").classList.add("nonvisibile");
+              document.getElementsByClassName("default_wrapper")[0].classList.remove("not_scrollable");
+            });
         },
 
         touchMove: function() {

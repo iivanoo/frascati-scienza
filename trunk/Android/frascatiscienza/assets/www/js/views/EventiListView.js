@@ -119,6 +119,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             //this.currentDay = yesterday;
             this.currentDay = this.getBaseTimestamp(pastEvents[pastEvents.length - 1].get("timestamp"));
             this.addEvents();
+          } else {
+            navigator.notification.alert('Non ci sono eventi programmati precedenti a quello corrente.', function() {}, "Attenzione");
           }          
         },
 
@@ -129,6 +131,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             //this.currentDay = tomorrow;
             this.currentDay = this.getBaseTimestamp(nextEvents[0].get("timestamp"));
             this.addEvents();
+          } else {
+            navigator.notification.alert('Non ci sono eventi programmati succesivi a quello corrente.', function() {}, "Attenzione");
           } 
         }
       });
