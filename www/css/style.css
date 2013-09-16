@@ -1633,6 +1633,38 @@ margin-top: 60px;
 #qrcode{
 	margin-left: 60%;
 	text-align: center;
+	margin-top: -45px;
+	}
+
+.mappa_but{
+
+box-shadow: 0 2px 0px rgba(0,0,0,.2);
+border-radius: 5px;
+background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+text-align: center;
+color:white;
+font-family: 'Dax';
+
+padding: 10px;
+width: 40%;
+
+/*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+			box-shadow: 0 2px 0px rgba(0,0,0,.2);
+			border-radius: 5px;
+			background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+	
+}
+
+
+.qr_only{
+
+	text-align: center;
+	
+}
+
+.qr_only img{
+	width: 40%;
+	margin-top: 6%;
 }
 
 #procedi {
