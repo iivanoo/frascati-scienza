@@ -362,14 +362,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         if((page instanceof RisultatoCacciaView) && !((this.currentView instanceof DomandaCacciaView) || (this.currentView instanceof IntroCacciaView))) {
           return false;
         }
-        var contentClasses = document.getElementById("content").classList;
-        if((page instanceof EnteView)) {
-          contentClasses.add("not_scrollable");
-          contentClasses.remove("scrollable");
-        } else {
-          contentClasses.add("scrollable");
-          contentClasses.remove("not_scrollable");
-        }
         if((page instanceof FrascatiScienzaView)) {
           $("#backbutton").hide();
         } else {

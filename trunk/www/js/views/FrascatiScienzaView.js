@@ -102,7 +102,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
             this.moving = false;
             return;
         } */
-        Backbone.history.navigate("enti/" + this.model.get("__id"), {trigger: true});
+        Backbone.history.navigate("enti/frascati-scienza", {trigger: true});
         $("#backbutton").show();
       },
     });
