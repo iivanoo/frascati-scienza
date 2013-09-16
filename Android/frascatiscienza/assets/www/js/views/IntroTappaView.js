@@ -58,15 +58,17 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
         
         attachListener: function() {
           var self  = this;
-          document.getElementById("video").addEventListener("click", function(e) {
-            if(self.playing) {
-              self.playing = false;
-              this.pause();
-            } else {
-              self.playing = true;
-              this.play();
-            }
-          }, false);
+          if(document.getElementById("video")) {
+            document.getElementById("video").addEventListener("click", function(e) {
+              if(self.playing) {
+                self.playing = false;
+                this.pause();
+              } else {
+                self.playing = true;
+                this.play();
+              }
+            }, false);
+          }
         },
 
         vaiDomanda: function (e) {
