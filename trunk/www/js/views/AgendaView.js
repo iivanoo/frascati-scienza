@@ -32,6 +32,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/AgendaListItemV
         },
 
         render: function () {
+          debugger;
           // gestione nav bar
           this.updateNavbar();
 

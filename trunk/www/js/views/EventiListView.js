@@ -47,6 +47,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           return date.getTime() / 1000;
         },
 
+        getUpperTimestamp: function(unix) {
+          var date = new Date(unix * 1000);
+          date.setHours(22);
+          date.setMinutes(0);
+          return date.getTime() / 1000;
+        },
+
         render: function () {
           // gestione nav bar
           this.updateNavbar();
@@ -114,7 +121,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         dayBack: function(event) {
           var yesterday = this.currentDay - 86400;
-          var pastEvents = this.model.searchTo(yesterday).toArray();
+          var pastEvents = this.model.searchTo(this.getUpperTimestamp(yesterday)).toArray();
           if(pastEvents.length != 0) {
             //this.currentDay = yesterday;
             this.currentDay = this.getBaseTimestamp(pastEvents[pastEvents.length - 1].get("timestamp"));
