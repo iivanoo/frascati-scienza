@@ -26,8 +26,26 @@
 		</script>
 
 		<style type="text/css">
-		   .org, section>.org { background-color: #FFF056; }
-		   .tec, section>.tec { background-color: #67BCDB; }
+		   .org, section>.org { 
+		   		text-transform: none;
+		   		/* -webkit-transform: rotate(-2deg); */
+		   	}
+		   .tec, section>.tec {  
+		   		text-transform: none;
+		   		/* -webkit-transform: rotate(-2deg); */
+		   	}
+		   	.org>h2, h3.org, span.org {
+		   		background-color: #FFF056; 
+		   		text-transform: none;
+		   	}
+		   	.tec>h2, h3.tec, span.tec {
+		   		background-color: #67BCDB;
+		   		text-transform: none;
+		   		color: white;
+		   	}
+		   	.number {
+		   		display: inline-block;
+		   	}
 		</style>
 
 		<!--[if lt IE 9]>
@@ -74,7 +92,7 @@
 					<div style="text-align: left; ">
 						<h3>The app</h3>
 						<h3 class="org">Organizational best practices</h3>
-						<h3 class="tec">Technical best practices</h3>
+						<h3 class="tec" style="color: white;">Technical best practices</h3>
 					</div>
 				</section>
 
@@ -224,16 +242,18 @@
 				<section>
 					<h2>Summary</h2>
 					<div style="text-align: left; ">
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
+					<ol>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+						<li><p>Regola</p></li>
+					</ol>
 					</div>
 				</section>
 				</section>
@@ -241,76 +261,125 @@
 				<!-- REGOLE TECNICHE -->
 				<section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<!-- <h2 class="number">1</h2> -->
+					<h2>Establish the software architecture from the beginning</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>First day: search and test already developed components</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Clearly separate concerns</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Keep performance in mind from the beginning</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Views first, then data</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Let the user forget he is looking at a browser</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Minimize network access</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Take special care of images</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>When it's simple, leave it simple</h2>
 					<p></p>
 				</section>
 				<section class="tec">
-					<h2>Regola x</h2>
+					<h2>Test, debug, test, debug</h2>
 					<p></p>
 				</section>
 
 				<section>
 					<h2>Summary</h2>
 					<div style="text-align: left; ">
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
-					<p>Regola x</p>
+					<ol>
+					<li><p>Establish the software architecture from the beginning</p></li>
+					<li><p>First day: earch and test already developed components</p></li>
+					<li><p>Clearly separate concerns</p></li>
+					<li><p>Keep performance in mind from the beginning</p></li>
+					<li><p>Views first, then data</p></li>
+					<li><p>Let the user forget he is looking at a browser</p></li>
+					<li><p>Minimize network access</p></li>
+					<li><p>Take special care of images</p></li>
+					<li><p>When it's simple, leave it simple</p></li>
+					<li><p>Test, debug, test, debug</p></li>
+					</ol>
 					</div>
 				</section>
 				</section>
 
 				<!-- CONCLUSIONI -->
 				<section>
-					<h2>Conclusions</h2>
-					<p></p>
-				</section>
-				<section>
 					<h2>Bonus</h2>
-					<p></p>
-				</section>
+					<p>An RSS reader in 20 lines of pure JavaScript ;)</p>
+					<pre><code data-trim>
+define(["jquery", "underscore", "backbone", "models/Rss"],
+    function ($, _, Backbone, Rss) {
 
-				<section>
-					<h1>THE END</h1>
+        var RssList = Backbone.Collection.extend({
+
+            model: Rss,
+
+            populate: function (feedUrl, view) {
+                var xmlhttp = new XMLHttpRequest();
+                var self = this;
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var feed = xmlhttp.responseXML;
+                        var news = feed.getElementsByTagName("item");
+                        var title, description, link;
+                        for (var i = 0; i news.length; i++) {
+                            title = news[i].getElementsByTagName("title")[0].textContent.strip();
+                            description = news[i].getElementsByTagName("description")[0].textContent.strip();
+                            link = news[i].getElementsByTagName("link")[0].textContent.strip();
+                            if (title && description && link) {
+                                self.create({
+                                    title: title,
+                                    description: description,
+                                    link: link
+                                });
+                            }
+                        }
+                        view.showNews(self);
+                    }
+                }
+                xmlhttp.open("GET", feedUrl, true);
+                xmlhttp.send();
+            }
+        });
+        return RssList;
+});
+					</code></pre>
 				</section>
+				<section>
+					<h2>Conclusions</h2>
+					<div style="text-align: left; ">
+					<ul>	
+					<li style="margin-bottom: 20px;">We extracted a set of <span class="org">organizational</span> and <span class="tec">technical</span> best practices from a true story</li>
+					<li>In any case, step zero to success is to be <strong>technologically ready</strong></li>
+						<ul>	
+						<li style="font-size: 80%">for example, many people tend to underestimate JavaScript, don't!</li>
+						</ul>
+					</ul>
+					</div>
+					<a style="float: right; " href="http://eloquentjavascript.net/"><img style="width: 70%" src="http://eloquentjavascript.net/img/ejs.png"></a>
+				</section>
+				<!-- <section>
+					<h1>THE END</h1>
+				</section> -->
 
 				<section class="present" style="display: block;">
                     <img src="assets/ivano.jpg" style="float:left">
@@ -392,7 +461,7 @@
 				<section>
 					<h2>Point of View</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
+						Press ESC to enter the slide overview.
 					</p>
 					<p>
 						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
@@ -579,7 +648,7 @@ function linkify( selector ) {
 						<ol>
 							<li class="fragment"><code>any type</code></li>
 							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
+							<li class="fragment">fragments</li>
 						</ol>
 
 						<aside class="notes">
