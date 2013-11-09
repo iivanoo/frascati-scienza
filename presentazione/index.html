@@ -34,11 +34,11 @@
 		   		text-transform: none;
 		   		/* -webkit-transform: rotate(-2deg); */
 		   	}
-		   	.org>h2, h3.org, span.org {
+		   	.org>h2, .org>h3, h3.org, span.org {
 		   		background-color: #FFF056; 
 		   		text-transform: none;
 		   	}
-		   	.tec>h2, h3.tec, span.tec {
+		   	.tec>h2, .tec>h3, h3.tec, span.tec {
 		   		background-color: #67BCDB;
 		   		text-transform: none;
 		   		color: white;
@@ -74,8 +74,7 @@
 					</h2>
 					<div>
     					<h2>Ivano Malavolta</h2>
-	                    <h4>Research fellow<br>
-							<a href="http://www.univaq.it" target="_blank" class="roll">
+	                    <h4>Research fellow @<a href="http://www.univaq.it" target="_blank" class="roll">
 	    					<span data-title="University of L'Aquila">University of L'Aquila</span>
 							</a>
 						</h4>
@@ -98,6 +97,10 @@
 
                 <!-- PRESENTAZIONE PROGETTO E COMMESSA -->
                 <section>
+                <section>
+			        <h1>The</h1>
+			        <h1>App</h1>
+		    	</section>
 				<section>
 					<h2>Presentazione App</h2>
 					<p></p>
@@ -121,52 +124,52 @@
 				</section>
 
 				<!-- REGOLE ORGANIZZATIVE -->
-				
+<section>		
     <section>
         <h1>Organize</h1>
         <h1>them</h1>
-        <h1>all.&nbsp;</h1>
+        <h1>all</h1>
     </section>
-    <section>
+    <section class="org">
         <h3>1. Debug contract before the code</h3>
         <div>
             <img src="http://www.troll.me/images/creepy-willy-wonka/so-tell-me-exactly-how-much-is-that-contract-worth.jpg" style="width: 343.5411495706626px; height: 344.79337254834684px; max-height: none; max-width: none;">
             <br>
         </div>
-        <div>Ask about the operational flow, the UI / UX, the intention of the app&nbsp;<span>immediately.</span>
-        <span>&nbsp;Write the whole thing in the contract.&nbsp;</span>
+        <div>Ask about the operational flow, the UI / UX, the intention of the app<span>immediately.</span>
+        <span>Write the whole thing in the contract.</span>
     </div>
     <div>
-        <span>This to avoid to rework parts&nbsp;</span>
+        <span>This to avoid to rework parts</span>
         <span>already completed</span>
-        <span>&nbsp;</span>
+        <span></span>
     </div>
     <div>
         <span>several times.</span>
     </div>
 </section>
-<section>
-    <h3 style="font-style: normal; font-variant: normal;">2. Web - based&nbsp;feasibility</h3>
+<section class="org">
+    <h3>2. Web-based feasibility</h3>
     <div>
         <img src="http://content.endyourif.com/wp-content/uploads/2012/09/phonegap.png" style="width: 737.7972711838245px; height: 308.22102739134544px; max-height: none; max-width: none;">
         <br>
     </div>
-    <div>Evaluate if web-based development (Phonegap) is feasible whether the application is cross-platform.&nbsp;</div>
-    <div>Google and test any components for advanced features&nbsp;</div>
+    <div>Evaluate if web-based development (Phonegap) is feasible whether the application is cross-platform.</div>
+    <div>Google and test any components for advanced features</div>
     <div>(in our case QR-code scanning and childbrowser)<br>
     </div>
 </section>
-<section>
-    <h2>3. Balance efforts&nbsp;</h2>
+<section class="org">
+    <h3>3. Balance efforts</h3>
     <p>
     <img src="http://cdn.business2community.com/wp-content/uploads/2013/02/shutterstock_123126724.jpg" style="width: 591.5555557842143px; height: 393.3719288635933px; max-height: none; max-width: none;">
     <br>
 </p>
-<p>Equally divide the workload, responsibility and testing. &nbsp;Notify quickly to colleagues about bugs.<br>
+<p>Equally divide the workload, responsibilities and testing. Notify quickly to colleagues about bugs.<br>
 </p>
 </section>
-<section>
-    <h2>4. Use code repositories</h2>
+<section class="org">
+    <h3>4. Use code repositories</h3>
     <p>
     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/alessiod-arielli/images/147231/commits.png" style="width: 762.5984407744677px; height: 369.73661158131836px; max-height: none; max-width: none;">
     <br>
@@ -174,20 +177,20 @@
 <p>Using repository for remote collaboration (SVN, git, etc.). Rather than email or other methods that have no chance to undo.<br>
 </p>
 </section>
-<section>
-    <h2>5. Start less things, complete more</h2>
+<section class="org">
+    <h3>5. Start less things, complete more</h3>
     <div>
         <img src="http://cdn.meme.li/i/kha17.jpg" style="width: 491.93762206101746px; height: 373.82984283510166px; max-height: none; max-width: none;">
         <br>
     </div>
     <div>
-        <div>Focus and realise a task at time,&nbsp;</div>
+        <div>Focus and realise a task at time,</div>
         <div>otherwise probability of injecting bug is terribly high.</div>
         <div>Optimize timeline available.</div>
     </div>
 </section>
-<section>
-    <h2>6. Use MVC pattern</h2>
+<section class="org">
+    <h3>6. Use MVC pattern</h3>
     <div>
         <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/alessiod-arielli/images/147267/mvc_decoupling_3.png">
         <br>
@@ -195,39 +198,39 @@
     <div>Structuring the app with MVC pattern, you can work in parallel on JS engine and frontend HTML5/CSS3<br>
     </div>
 </section>
-<section>
-    <h2>7. Modularity&nbsp;</h2>
+<section class="org">
+    <h3>7. Modularity</h3>
     <p>
     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/alessiod-arielli/images/147279/tetris.png">
 </p>
-<p>&nbsp;Maximum simplification of navigation and extreme modularity so any changes to the content or presentation are feasible in a short time without affecting the overall structure.</p>
+<p>Maximum simplification of navigation and extreme modularity so any changes to the content or presentation are feasible in a short time without affecting the overall structure.</p>
 </section>
-<section>
-    <h2>8. Be reactive</h2>
+<section class="org">
+    <h3>8. Be reactive</h3>
     <div>
         <img src="http://a.abcnews.com/images/Technology/abc_tto_email_130426_wg.jpg">
         <br>
     </div>
     <div>
         <div>Maximise reactivity and cooperation <strong>with colleagues</strong>.</div>
-        <div>Not indulge the customer's&nbsp;<span>anxiety</span>
-        <span>&nbsp;</span>
+        <div>Not indulge the customer's<span>anxiety</span>
+        <span></span>
     </div>
     <div>
         <span>responding immediately to every request</span>
     </div>
 </div>
 </section>
-<section>
-    <h2>9. Organize costumer&nbsp;<span>revisions</span>
+<section class="org">
+    <h3>9. Organize revisions with customers</h3>
     <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/alessiod-arielli/images/147317/sfg-meme-generator-brace-yourself-customer-is-coming-7cb97b.jpg" style="font-size: 64.566px; color: rgb(0, 0, 0);">
-    <span style="font-size: 64.566px;">&nbsp;</span>
+    <span style="font-size: 64.566px;"></span>
 </h2>
-<p>Keep customer updated about the status of development &nbsp;organising meetings at the reach of some checkpoints, in order to collect a list of tasks or corrections to be made.
+<p>Keep customer updated about the status of development organising meetings at the reach of some checkpoints, in order to collect a list of tasks or corrections to be made.
 </p>
 </section>
-<section>
-    <h2>10. Get all testing tools</h2>
+<section class="org">
+    <h3>10. Get all testing tools</h3>
     <p>
     <img src="http://www.dbbest.com/blog/wp-content/uploads/2013/07/image_new111.jpg" style="width: 831.4385967198868px; height: 380.2733875162504px; max-height: none; max-width: none;">
     <br>
@@ -243,16 +246,16 @@
 					<h2>Summary</h2>
 					<div style="text-align: left; ">
 					<ol>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
-						<li><p>Regola</p></li>
+						<li><p>Debug contract before the code</p></li>
+						<li><p>Web-based feasibility</p></li>
+						<li><p>Balance efforts</p></li>
+						<li><p>Use code repositories</p></li>
+						<li><p>Start less things, complete more</p></li>
+						<li><p>Use MVC pattern</p></li>
+						<li><p>Modularity</p></li>
+						<li><p>Be reactive</p></li>
+						<li><p>Organize revisions with customers</p></li>
+						<li><p>Get all testing tools</p></li>
 					</ol>
 					</div>
 				</section>
@@ -260,9 +263,14 @@
 
 				<!-- REGOLE TECNICHE -->
 				<section>
+				<section>
+			        <h1>Technical</h1>
+			        <h1>Best</h1>
+			        <h1>Practices</h1>
+			    </section>
 				<section class="tec">
+					<h3>1. First day: search and test already developed components</h3>
 					<img style="border:none; box-shadow: none;" src="assets/technologies.png" />
-					<h2>First day: search and test already developed components</h2>
 				</section>
 				<section class="tec">
 					<pre><code data-trim>
@@ -303,7 +311,7 @@ require.config({
 				</section>
 				<section class="tec">
 					<!-- <h2 class="number">1</h2> -->
-					<h2>Establish the software architecture from the beginning</h2>
+					<h3>2. Establish the software architecture from the beginning</h3>
 					<img style="border:none; box-shadow: none;" src="assets/sa.png" />
 					<p>It will guide the structure of your code</p>
 				</section>
@@ -334,18 +342,18 @@ var EventoView = Backbone.View.extend({
             /**/
         },
 					</code></pre>
-					<p>Define your own coding patterns*</p>
+					<p>3. Define your own coding patterns*</p>
 					<p style="font-size: 0.5em; bottom: 10px; left: 10px;">*more patterns will show up during the presentation</p>
 				</section>
 				
 				<section class="tec">
-					<h2>Clearly separate concerns</h2>
+					<h3>Clearly separate concerns</h3>
 					<img style="border:none; box-shadow: none;" src="assets/logos.png" />
 					<p>It makes the code more testable</p>
 					<p>More easy to extend and refine the app</p>
 					<p>It allowed us to follow a micro-process</p>
 				</section>
-				<section class="tec">
+				<section>
 					<h4>from JS developer's perspective...</h4>
 					<div style="float: left;">
 						<img style="border:none; box-shadow: none;" src="assets/cssMe.png" />
@@ -356,33 +364,223 @@ var EventoView = Backbone.View.extend({
 						<p>after <i>update</i> I see this</p>
 					</div>
 				</section>
-				<section class="tec">
-					<h2>Keep performance in mind from the beginning</h2>
-					<p></p>
+				<section>
+					<h4>Example (home view)</h4>
+					<pre style="width: 80%"><code data-trim>
+define([..., "text!templates/frascatiscienza.html"], /* dependency to template file */
+function ($, _, Backbone, Handlebars, Ente, template) { /* template contains a string now */
+	var FrascatiScienzaView = Backbone.View.extend({
+
+	model: Ente,
+
+	className: "default_wrapper",
+
+	events: {
+	    "touchstart #enti": "enti",
+	    "touchstart #_eventi": "eventi",
+	    "touchstart #partner": "partner",
+	    "touchstart #frascati": "continua"
+	},
+
+	template: Handlebars.compile(template), /* template compilation, it is a function now */
+
+	render: function () {
+	    // gestione nav bar
+	    this.updateNavbar();
+	    $(this.el).html(this.template(this.model.toJSON())); /* template execution */
+	    /* */
+	    return this;
+	}
+	});
+	return FrascatiScienzaView;
+});
+					</pre></code>
+					<img style="border:none; box-shadow: none; position: absolute; right: 0; bottom: 0" src="assets/home.png" />
 				</section>
 				<section class="tec">
-					<h2>Views first, then data</h2>
-					<p></p>
+					<h3>4. Keep performance in mind from the beginning</h3>
+					<ul>
+						<li>Avoid to fall into the fancy-framework trap</li>
+						<li>Use pure JS as much as you can</li>
+						<li>Use native touch events, not onClick (300ms delay)</li>
+						<li>No JS animation, just switch classes + CSS3 transitions/transforms</li>
+						<li>Minimize browser reflows</li>
+						<li>Avoid complex CSS selectors</li>
+						<li>Try to use id-only selectors</li>
+						<li>...</li>
+					</ul>
 				</section>
 				<section class="tec">
-					<h2>Let the user forget he is looking at a browser</h2>
-					<p></p>
+					<h3>5. Views first, then data</h3>
+					<p>Valid especially when data is coming from the network</p>
+					<pre><code data-trim>
+var AppRouter = Backbone.Router.extend({
+    /* */
+changePage: function (page) {
+    if (this.currentView) {
+        this.currentView.trigger("removed");
+        this.currentView.remove();
+    }
+    this.currentView = page;
+    this.structureView.currentView = page;
+    page.render();
+    this.structureView.$el.find("#content").append($(page.el));
+    this.structureView.trigger("updateTitle", page);
+    this.currentView.trigger("inTheDom"); // here the new view can fetch data
+    return true;
+}
+/* */
+					</code></pre>
 				</section>
 				<section class="tec">
-					<h2>Minimize network access</h2>
-					<p></p>
+					<h3>6. Let the user forget he is looking at a browser</h3>
+					<pre><code data-trim>
+@charset "UTF-8";
+/* STANDARD FOR MOBILE */
+
+* {
+	/* transparent link selection */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none; /* no callouts during tap and hold */
+    -webkit-text-size-adjust: none; /* no fonts auto inflation */ 
+    -webkit-user-select: none; /* no copy and paste, etc. */
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#mainContainer { /* get the whole display */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+    top: 0;
+}
+
+.scrollable {
+   -webkit-overflow-scrolling: touch; /* native scrolling */
+}
+					</code></pre>
 				</section>
 				<section class="tec">
-					<h2>Take special care of images</h2>
-					<p></p>
+					<h3>7. Minimize network access</h3>
+					<pre><code data-trim>
+// We launch the App
+require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
+    function (_, Backbone, Spinner, AppRouter, Data) {
+
+        String.prototype.endsWith = function (suffix) {
+            return this.indexOf(suffix, this.length - suffix.length) !== -1;
+        };
+
+        String.prototype.strip = function () {
+            return this.replace(/(<([^>]+)>)/ig, "").replace(/(&lt;([^&gt;]+)&gt;)/ig, "");
+        };
+
+        document.addEventListener("deviceready", run, false);
+
+        function run() {
+            Data.initialize();
+
+            /* */
+        }
+    });
+					</code></pre>
+					<p>Try to prefetch data as much as possible</p>
+					<p>If some data is always the same, bundle it into the app</p>
+					<p>When testing, bypass network access by using data mockups</p>
 				</section>
 				<section class="tec">
-					<h2>When it's simple, leave it simple</h2>
-					<p></p>
+					<h3>8. Take special care of images</h3>
+					<ul>
+						<li>Avoid to resize images (both via CSS and JS)</li>
+						<li>Be robust w.r.t. 404 errors</li>
+						<pre style="margin: 0; width: 70%; margin: 10px"><code data-trim>
+/* in the template */
+<img src="{{ immagine }}" onerror="ImgError(this);">
+
+/* in your JS */
+function ImgError(source){
+  empty1x1png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=";
+  source.src = "data:image/png;base64," + empty1x1png;
+  source.onerror = "";
+  return true;
+}
+						</code></pre>
+						<li>Show a spinner in place of an image while it is loading</li>
+						<pre style="margin: 0; width: 70%; margin: 10px"><code data-trim>
+.heavyImg { 
+	background: url('../res/loader.gif') no-repeat; 
+	background-position: center; 
+	min-height: 20%; 
+	width: 100%;
+}
+						</code></pre>
+					</ul>
 				</section>
 				<section class="tec">
-					<h2>Test, debug, test, debug</h2>
-					<p></p>
+					<h3>9. When it's simple, leave it simple</h3>
+					<p>Don't overelaborate. Complexity will come by itself.</p>
+					<pre><code data-trim>
+goBack: function (self) {
+    var that = (self instanceof StructureView) ? self : this;
+    if (!that.currentView) {
+        return false;
+    }
+    if (that.currentView instanceof IntroTappaView) {
+        return false;
+    }
+    if (that.currentView instanceof DomandaCacciaView) {
+        return false;
+    }
+    if (that.currentView instanceof RisultatoCacciaView) {
+        Backbone.history.navigate("introcaccia", {trigger: true});
+        return false;
+    }
+    if (that.currentView instanceof FineCacciaView) {
+        Backbone.history.navigate("caccia", {trigger: true});
+        return false;
+    }
+    window.history.back();
+}
+					</code></pre>
+					<p style="color: red;">ANTIPATTERN ABOVE</p>
+				</section>
+				<section class="tec">
+					<h3>10. Test, debug, test, debug</h3>
+
+					<h4>In this context, the browser is the killer app!</h4>
+					<ul>
+						<li>Check console</li>
+						<li>Breakpoints</li>
+						<li>Update the DOM at run-time</li>
+						<li>Access to all local DBs</li>
+						<li>Network profiling</li>
+						<li>CPU and memory profiling</li>
+						<li>Monitor event listeners</li>
+						<li>Monitor elements’ rendering time</li>
+					</ul>					
+					<img style="border:none; box-shadow: none; position: absolute; right: 0; bottom: 10%" src="assets/chrome.png" />
+
+				</section>
+				<section>
+					<h4>Here is MY testing process</h4>
+					<ol>
+					<li>Code & test in the Desktop browser</li>
+						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Either by using Chrome or PG-Emulator</p>
+					<li>Run in the simulator & test in the Desktop browser</li>
+						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Very handy & accurate</p>
+					<li>Run on the device & debug in the Desktop browser</li>
+						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Complete control & confidence</p>
+					</ol>
 				</section>
 
 				<section>
