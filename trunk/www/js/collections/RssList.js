@@ -2,7 +2,9 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
     function ($, _, Backbone, Rss) {
 
     var RssList = Backbone.Collection.extend({
+
         model: Rss,
+        
         populate: function (feedUrl, view) {
         	var xmlhttp = new XMLHttpRequest();
         	var self = this;

@@ -42,7 +42,8 @@ body {
   line-height: 0.9em;
   letter-spacing: -0.08em;
   text-transform: uppercase;
-  text-shadow: none; }
+  text-shadow: none;
+  padding: 10px; }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
