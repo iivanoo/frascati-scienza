@@ -1,7 +1,7 @@
 define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text!templates/evento.html"],
     function ($, _, Backbone, Evento, Handlebars, template) {
 
-    var EnteView = Backbone.View.extend({
+    var EventoView = Backbone.View.extend({
 
         model: Evento,
 
@@ -79,6 +79,6 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
         }
       });
 
-    return EnteView;
+    return EventoView;
 
   });

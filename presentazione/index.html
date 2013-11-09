@@ -162,7 +162,7 @@
     <img src="http://cdn.business2community.com/wp-content/uploads/2013/02/shutterstock_123126724.jpg" style="width: 591.5555557842143px; height: 393.3719288635933px; max-height: none; max-width: none;">
     <br>
 </p>
-<p>Equally divide the workload, responsibility and testing. &nbsp;Notify quickly to colleagues about bugs founded.<br>
+<p>Equally divide the workload, responsibility and testing. &nbsp;Notify quickly to colleagues about bugs.<br>
 </p>
 </section>
 <section>
@@ -209,7 +209,7 @@
         <br>
     </div>
     <div>
-        <div>Maximise reactivity and cooperation with colleagues.</div>
+        <div>Maximise reactivity and cooperation <strong>with colleagues</strong>.</div>
         <div>Not indulge the customer's&nbsp;<span>anxiety</span>
         <span>&nbsp;</span>
     </div>
@@ -261,17 +261,100 @@
 				<!-- REGOLE TECNICHE -->
 				<section>
 				<section class="tec">
+					<img style="border:none; box-shadow: none;" src="assets/technologies.png" />
+					<h2>First day: search and test already developed components</h2>
+				</section>
+				<section class="tec">
+					<pre><code data-trim>
+require.config({
+    paths: {
+        jquery: '../lib/jquery/jquery-1.9.1.min', /* '../lib/jquery/zepto', */
+        underscore: '../lib/underscore/underscore-min',
+        backbone: "../lib/backbone/backbone",
+        text: '../lib/require/text-1.0.6',
+        async: '../lib/require/async',
+        handlebars: '../lib/handlebars/handlebars',
+        templates: '../templates',
+        leaflet: '../lib/leaflet/leaflet',
+        datamanager: 'datamanager',
+        spin: '../lib/spin/spin'
+    },
+    shim: {
+        'jquery': {
+            exports: '$'
+        },
+        'underscore': {
+            exports: '_'
+        },
+        'backbone': {
+            deps: ['jquery', 'underscore'],
+            exports: 'Backbone'
+        },
+        'handlebars': {
+            exports: 'Handlebars'
+        },
+        'leaflet': {
+            exports: 'L'
+        }
+    }
+});
+					</code></pre>
+					<p>Once you are done, setup your boilerplate app</p>
+				</section>
+				<section class="tec">
 					<!-- <h2 class="number">1</h2> -->
 					<h2>Establish the software architecture from the beginning</h2>
-					<p></p>
+					<img style="border:none; box-shadow: none;" src="assets/sa.png" />
+					<p>It will guide the structure of your code</p>
 				</section>
 				<section class="tec">
-					<h2>First day: search and test already developed components</h2>
-					<p></p>
+					<!-- <h2 class="number">1</h2> -->
+				    <pre><code data-trim>
+var EnteView = Backbone.View.extend({
+        model: Ente,
+
+        initialize: function () {
+            this.title = this.model.get("titolo");
+
+        },
+					</code></pre>
+					<pre><code data-trim>
+var EventoView = Backbone.View.extend({
+        model: Evento,
+        /**/
+        initialize: function () {
+            var date = new Date(this.model.get("timestamp") * 1000);
+            var gg, mm, aaaa, hours, mins;
+            gg = date.getDate() + "/";
+            mm = date.getMonth() + 1 + "/";
+            aaaa = date.getFullYear();
+            hours = date.getHours();
+            mins = date.getMinutes();
+            this.title = gg + mm + aaaa + " - " + hours + ":" + mins;
+            /**/
+        },
+					</code></pre>
+					<p>Define your own coding patterns*</p>
+					<p style="font-size: 0.5em; bottom: 10px; left: 10px;">*more patterns will show up during the presentation</p>
 				</section>
+				
 				<section class="tec">
 					<h2>Clearly separate concerns</h2>
-					<p></p>
+					<img style="border:none; box-shadow: none;" src="assets/logos.png" />
+					<p>It makes the code more testable</p>
+					<p>More easy to extend and refine the app</p>
+					<p>It allowed us to follow a micro-process</p>
+				</section>
+				<section class="tec">
+					<h4>from JS developer's perspective...</h4>
+					<div style="float: left;">
+						<img style="border:none; box-shadow: none;" src="assets/cssMe.png" />
+						<p>I <i>commit</i> this</p>
+					</div>
+					<div style="float: right;">
+						<img style="border:none; box-shadow: none;" src="assets/cssAlessio.png" />
+						<p>after <i>update</i> I see this</p>
+					</div>
 				</section>
 				<section class="tec">
 					<h2>Keep performance in mind from the beginning</h2>
@@ -306,8 +389,8 @@
 					<h2>Summary</h2>
 					<div style="text-align: left; ">
 					<ol>
+					<li><p>First day: search and test already developed components</p></li>
 					<li><p>Establish the software architecture from the beginning</p></li>
-					<li><p>First day: earch and test already developed components</p></li>
 					<li><p>Clearly separate concerns</p></li>
 					<li><p>Keep performance in mind from the beginning</p></li>
 					<li><p>Views first, then data</p></li>
@@ -362,7 +445,7 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
         });
         return RssList;
 });
-					</code></pre>
+				</code></pre>
 				</section>
 				<section>
 					<h2>Conclusions</h2>
