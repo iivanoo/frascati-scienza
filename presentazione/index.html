@@ -385,12 +385,12 @@ var EventoView = Backbone.View.extend({
             /**/
         },
 					</code></pre>
-					<p>3. Define your own coding patterns*</p>
+					<p>Define your own coding patterns*</p>
 					<p style="font-size: 0.5em; bottom: 10px; left: 10px;">*more patterns will show up during the presentation</p>
 				</section>
 				
 				<section class="tec">
-					<h3>Clearly separate concerns</h3>
+					<h3>3. Clearly separate concerns</h3>
 					<img style="border:none; box-shadow: none;" src="assets/logos.png" />
 					<p>It makes the code more testable</p>
 					<p>More easy to extend and refine the app</p>
@@ -428,7 +428,7 @@ function ($, _, Backbone, Handlebars, Ente, template) { /* template contains a s
 	template: Handlebars.compile(template), /* template compilation, it is a function now */
 
 	render: function () {
-	    // gestione nav bar
+	    /* gestione nav bar */
 	    this.updateNavbar();
 	    $(this.el).html(this.template(this.model.toJSON())); /* template execution */
 	    /* */
@@ -445,8 +445,8 @@ function ($, _, Backbone, Handlebars, Ente, template) { /* template contains a s
 					<ul>
 						<li>Avoid to fall into the fancy-framework trap</li>
 						<li>Use pure JS as much as you can</li>
-						<li>Use native touch events, not onClick (300ms delay)</li>
 						<li>No JS animation, just switch classes + CSS3 transitions/transforms</li>
+						<li>Use native touch events, not onClick (300ms delay)</li>
 						<li>Minimize browser reflows</li>
 						<li>Avoid complex CSS selectors</li>
 						<li>Try to use id-only selectors</li>
@@ -455,7 +455,6 @@ function ($, _, Backbone, Handlebars, Ente, template) { /* template contains a s
 				</section>
 				<section class="tec">
 					<h3>5. Views first, then data</h3>
-					<p>Valid especially when data is coming from the network</p>
 					<pre><code data-trim>
 var AppRouter = Backbone.Router.extend({
     /* */
@@ -474,6 +473,7 @@ changePage: function (page) {
 }
 /* */
 					</code></pre>
+					<p>Valid especially when data is coming from the network</p>
 				</section>
 				<section class="tec">
 					<h3>6. Let the user forget he is looking at a browser</h3>
@@ -539,7 +539,6 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
 					</code></pre>
 					<p>Try to prefetch data as much as possible</p>
 					<p>If some data is always the same, bundle it into the app</p>
-					<p>When testing, bypass network access by using data mockups</p>
 				</section>
 				<section class="tec">
 					<h3>8. Take special care of images</h3>
@@ -600,7 +599,7 @@ goBack: function (self) {
 				<section class="tec">
 					<h3>10. Test, debug, test, debug</h3>
 
-					<h4>In this context, the browser is the killer app!</h4>
+					<h4>In this context, your desktop browser is the killer app!</h4>
 					<ul>
 						<li>Check console</li>
 						<li>Breakpoints</li>
@@ -618,7 +617,7 @@ goBack: function (self) {
 					<h4>Here is MY testing process</h4>
 					<ol>
 					<li>Code & test in the Desktop browser</li>
-						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Either by using Chrome or PG-Emulator</p>
+						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Either by using Chrome or Ripple</p>
 					<li>Run in the simulator & test in the Desktop browser</li>
 						<p style="font-size: 0.8em; bottom: 10px; left: 10px; color: #999999">Very handy & accurate</p>
 					<li>Run on the device & debug in the Desktop browser</li>
@@ -646,6 +645,19 @@ goBack: function (self) {
 				</section>
 
 				<!-- CONCLUSIONI -->
+				<section>
+					<h2>Conclusions</h2>
+					<div style="text-align: left; ">
+					<ul>	
+					<li style="margin-bottom: 20px;">We extracted a set of <span class="org">organizational</span> and <span class="tec">technical</span> best practices from a true story</li>
+					<li>In any case, step zero to success is to be <strong>technologically ready</strong></li>
+						<ul>	
+						<li style="font-size: 80%">for example, many people tend to underestimate JavaScript, don't!</li>
+						</ul>
+					</ul>
+					</div>
+					<a style="float: right; " href="http://eloquentjavascript.net/"><img style="width: 70%" src="http://eloquentjavascript.net/img/ejs.png"></a>
+				</section>
 				<section>
 					<h2>Bonus</h2>
 					<p>An RSS reader in 20 lines of pure JavaScript ;)</p>
@@ -687,19 +699,6 @@ define(["jquery", "underscore", "backbone", "models/Rss"],
         return RssList;
 });
 				</code></pre>
-				</section>
-				<section>
-					<h2>Conclusions</h2>
-					<div style="text-align: left; ">
-					<ul>	
-					<li style="margin-bottom: 20px;">We extracted a set of <span class="org">organizational</span> and <span class="tec">technical</span> best practices from a true story</li>
-					<li>In any case, step zero to success is to be <strong>technologically ready</strong></li>
-						<ul>	
-						<li style="font-size: 80%">for example, many people tend to underestimate JavaScript, don't!</li>
-						</ul>
-					</ul>
-					</div>
-					<a style="float: right; " href="http://eloquentjavascript.net/"><img style="width: 70%" src="http://eloquentjavascript.net/img/ejs.png"></a>
 				</section>
 				<!-- <section>
 					<h1>THE END</h1>
