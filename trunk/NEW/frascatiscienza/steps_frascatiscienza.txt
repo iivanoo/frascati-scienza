@@ -1,0 +1,22 @@
+sudo npm install -g cordova
+sudo npm install -g ios-sim
+
+cordova create frascatiscienza it.univaq.frascatiscienza frascatiscienza
+
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-media-capture.git
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
+cordova plugin add https://github.com/wildabeast/BarcodeScanner.git
+
+cordova plugin list
+
+cordova prepare
+
+cordova emulate ios
+
+
+
+Repository SVN: https://frascati-scienza.googlecode.com/svn/trunk
