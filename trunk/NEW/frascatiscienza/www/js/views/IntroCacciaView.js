@@ -75,8 +75,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
             this.moving = false;
             return;
           }*/
-          scanner = cordova.require("cordova/plugin/BarcodeScanner");
-          scanner.scan(
+
+          //scanner = cordova.require("cordova/plugin/BarcodeScanner");
+          cordova.plugins.barcodeScanner.scan(
             function (result) {
               // var result = {text: "tappa8123"};
               // console.log("We got a barcode\n" +

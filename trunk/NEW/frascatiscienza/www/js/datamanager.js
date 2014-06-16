@@ -108,9 +108,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     downloadNewData: function() {//buttonIndex) {
       //if (buttonIndex == 1) {
         self = this;
-        $.ajaxSetup({
-          async: false
-        });
+        // $.ajaxSetup({
+        //   async: false
+        // });
+        $.ajaxSettings.async = false;
         if (localStorage.getItem("language") == "eng") {
           $.getJSON(this.urlEnti_Eng, function(response) {
             self.staticEnti = response;
@@ -118,7 +119,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           $.getJSON(this.urlEventi_Eng, function(response) {
             self.staticEventi = response;
           });
-        } else { 
+        } else {
           $.getJSON(this.urlEnti_Ita, function(response) {
             self.staticEnti = response;
           });
@@ -126,9 +127,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
             self.staticEventi = response;
           });
         }
-        $.ajaxSetup({
-          async: true
-        });
+        // $.ajaxSetup({
+        //   async: true
+        // });
+        $.ajaxSettings.async = true;
         if(this.staticEnti && this.staticEventi) {
           this.updateDb(this.staticEnti, this.staticEventi, true);
         } else {
