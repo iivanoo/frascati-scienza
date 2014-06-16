@@ -42,7 +42,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
             return false;
           }
           if(that.currentView instanceof FrascatiScienzaView) {
-            return false;
+            if(device.platform === "Android") {
+              navigator.app.exitApp();
+            } else {
+              return false;
+            }
           }
           if(that.currentView instanceof IntroTappaView) {
             return false;

@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    jquery: '../lib/jquery/jquery-1.9.1.min', //'../lib/jquery/zepto',
+    jquery: '../lib/jquery/zepto', //'../lib/jquery/jquery-1.9.1.min', 
     underscore: '../lib/underscore/underscore-min',
     backbone: "../lib/backbone/backbone",
     text: '../lib/require/text-1.0.6',
@@ -32,6 +32,7 @@ require.config({
 });
 
 var db = openDatabase("data", "1", "data", 2048*2048);
+alert();
 
 function ImgError(source){
   empty1x1png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=";
