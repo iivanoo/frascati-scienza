@@ -32,7 +32,6 @@ require.config({
 });
 
 var db = openDatabase("data", "1", "data", 2048*2048);
-alert();
 
 function ImgError(source){
   empty1x1png = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=";

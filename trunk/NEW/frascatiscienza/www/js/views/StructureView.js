@@ -3,12 +3,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
 
     var StructureView = Backbone.View.extend({
 
-        id: "mainContainer", 
+        id: "mainContainer",
 
         events: {
           "touchend #backbutton": "goBack",
           "touchend #frascatiscienza": "frascatiscienza",
           "touchend #eventi": "eventi",
+          "touchend #percorsi": "percorsi",
+          "touchend #percorsiInactive": "percorsi",
           "touchend #caccia": "caccia",
           "touchend #agenda": "agenda",
           "touchend #frascatiscienzaInactive": "frascatiscienza",
@@ -97,6 +99,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         caccia: function(event) {
             // navigator.notification.alert('La caccia al tesoro sarà disponibile a breve!', function() {}, "Coming soon");
             Backbone.history.navigate("caccia", {trigger: true});
+        },
+
+        percorsi: function(event) {
+          Backbone.history.navigate("percorsi", {trigger: true});
         },
         
         agenda: function(event) {
