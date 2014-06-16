@@ -1,4 +1,4 @@
-cordova prepare && cordova emulate ios
+cordova prepare #&& cordova emulate ios
 
 #cordova prepare && if ! pgrep node; then ripple emulate --path platforms/ios/www; exit; fi
 #exec <"$0" || exit; read v; read v; exec /usr/bin/osascript - "$@"; exit
