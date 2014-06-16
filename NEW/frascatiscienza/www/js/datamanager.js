@@ -35,7 +35,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         top: '120px', // Top position relative to parent in px
         left: 'auto' // Left position relative to parent in px
       };
-      this.spinner = new Spinner(opts);   
+      this.spinner = new Spinner(opts);
       // settiamo nel local storage la lista dei preferiti
       if(!localStorage.getItem("agenda")) {
         var agenda = {"enti": {}, "eventi": {}};

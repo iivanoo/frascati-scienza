@@ -86,7 +86,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
               //     "Cancelled: " + result.cancelled);
               if(!result.cancelled) {
                 //Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
-                var tappa = Data.getTappaById(result.text);
+                var qrCodePrefix = "http://www.frascatiscienza.it/percorsi-tematici/";
+                var resultText = result.text;
+                if(resultText.startsWith(qrCodePrefix)) {
+                  resultText = result.text.replace(qrCodePrefix, "");
+                }
+                var tappa = Data.getTappaById(resultText);
                 if(tappa) {
                   // controllare se il QR code era già stato scansionato
                   if(!localStorage.getItem("visitedDomande")) {
@@ -95,23 +100,23 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
                   }
                   var visitedDomande = JSON.parse(localStorage.getItem("visitedDomande")).visited;
                   for(var i=0; i<visitedDomande.length; i++) {
-                    if(visitedDomande[i] == result.text) {
+                    if(visitedDomande[i] == resultText) {
                       navigator.notification.alert('Il QR code scansionato era già stato letto in precedenza.', function() {
-                        Backbone.history.navigate("risultatocaccia/" + result.text, {trigger: true});
+                        Backbone.history.navigate("risultatocaccia/" + resultText, {trigger: true});
                       }, "Attenzione");
                       return;
                     }
                   }
-                  var numberOfTappa = parseInt(result.text.replace("tappa", "").charAt(0));
+                  var numberOfTappa = parseInt(resultText.replace("tappa", "").charAt(0));
                   if(numberOfTappa != (visitedDomande.length + 1)) {
                     navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
                         Backbone.history.navigate("introcaccia", {trigger: true});
                       }, "Attenzione");
                       return;
                   }
-                  visitedDomande.push(result.text);
+                  visitedDomande.push(resultText);
                   localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); 
-                  Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
+                  Backbone.history.navigate("introtappa/" + resultText, {trigger: true});
                 } else {
                   navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
                 }

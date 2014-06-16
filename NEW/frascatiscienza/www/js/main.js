@@ -55,6 +55,10 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
           return this.indexOf(suffix, this.length - suffix.length) !== -1;
       };
 
+      String.prototype.startsWith = function(prefix) {
+          return this.indexOf(prefix) === 0;
+      };
+
       String.prototype.strip = function() {
           return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
       };

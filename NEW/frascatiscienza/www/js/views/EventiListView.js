@@ -10,24 +10,33 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         template: Handlebars.compile(template),
 
         events: {
-          "touchend .day_back": "dayBack",
-          "touchend .day_next": "dayNext"
-        }, 
+          "tap .day_back": "dayBack",
+          "tap .day_next": "dayNext"
+        },
 
         initialize: function() {
+          // in questo if ci si entra se si stanno visualizzando gli eventi direttamente, senza vedere quelli di uno specifico ente
           if(!this.title) {
             this.title = "Eventi";
-          }
+          } 
           var lastVisitedEventTimestamp = localStorage.getItem("lastVisitedEventTimestamp");
           if(lastVisitedEventTimestamp) {
             this.currentDay = this.getBaseTimestamp(lastVisitedEventTimestamp);
           } else {
-            if(this.model.length > 0) {
-              this.currentDay = this.getBaseTimestamp(this.model.at(0).get("timestamp"));
-            } else {
+            // if(this.model.length > 0) {
+            //   this.currentDay = this.getBaseTimestamp(this.model.at(0).get("timestamp"));
+            // } else {
               // 21 settembre 1:00
-              this.currentDay = 1379725200;
-            }
+              //this.currentDay = 1379725200;
+              // il current day adesso è la data di oggi
+
+              // qui ci si entra se NON si stanno visualizzando gli eventi di un ente specifico 
+              if(this.attributes["data-filtered"] && (this.model.length > 0)) {
+                this.currentDay = this.getBaseTimestamp(this.model.at(0).get("timestamp"));
+              } else {
+                this.currentDay = this.getBaseTimestamp(new Date().getTime() / 1000);
+              }
+            // }
           }
           this.subviews = [];
           this.on("inTheDom", this.addEvents);
@@ -42,15 +51,15 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 
         getBaseTimestamp: function(unix) {
           var date = new Date(unix * 1000);
-          date.setHours(4);
+          date.setHours(1);
           date.setMinutes(0);
           return date.getTime() / 1000;
         },
 
         getUpperTimestamp: function(unix) {
           var date = new Date(unix * 1000);
-          date.setHours(22);
-          date.setMinutes(0);
+          date.setHours(23);
+          date.setMinutes(59);
           return date.getTime() / 1000;
         },
 
@@ -92,18 +101,18 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre','dicembre'];
           dateName.innerHTML = date.getDate() + " " + months[date.getMonth()].toUpperCase();
 
-          var filteredModel = this.model.search(this.currentDay, this.currentDay + 86400).toArray();
+          // cerchiamo tutti gli eventi nel giorno attuale (currentDay)
+          var filteredModel = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {return el.get("nottericercatori")});
           for (var i = 0; i < filteredModel.length; i++) {
-            if(!filteredModel[i].nottericercatori) {
-              var item = new EventiListItemView({
-                model: filteredModel[i]
-              });
-              notteWrapper.append(item.render().el);
-              this.subviews.push(item);
-            }
+            var item = new EventiListItemView({
+              model: filteredModel[i]
+            });
+            notteWrapper.append(item.render().el);
+            this.subviews.push(item);
           }
           // popoliamo la lista degli altri eventi
-          var otherEvents = this.model.where({nottericercatori: false});
+          //var otherEvents = this.model.search(this.currentDay, this.currentDay + 86400).toArray().where({nottericercatori: false});
+          var otherEvents = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {return !el.get("nottericercatori")});
           for(var i=0; i<otherEvents.length; i++) {
             var date = new Date(otherEvents[i].get("timestamp") * 1000);
             var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
@@ -115,7 +124,12 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             this.subviews.push(item);
           }
           if((filteredModel.length == 0) && (otherEvents.length == 0)) {
-            navigator.notification.alert('Questa lista degli eventi è purtroppo vuota.', function() {}, "Attenzione");
+            //navigator.notification.alert('Questa lista degli eventi è purtroppo vuota.', function() {}, "Attenzione");
+            debugger;
+            // TODO controllare qui, non si può fare dayNext, perchè non possiamo sapere se stiamo andando avanti e indietro
+            // soprattutto da controllare cosa fare quando qui ci si arriva già premendo daynext o dayback.
+            // controllare perchè filteredModel e otherEvents sono vuoti quando si fa dayback() e daynext()
+            //this.dayNext();
           }
         },
 
@@ -139,7 +153,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             this.currentDay = this.getBaseTimestamp(nextEvents[0].get("timestamp"));
             this.addEvents();
           } else {
-            navigator.notification.alert('Non ci sono eventi programmati succesivi a quello corrente.', function() {}, "Attenzione");
+            navigator.notification.alert('Non ci sono eventi programmati successivi a quello corrente.', function() {}, "Attenzione");
           } 
         }
       });
