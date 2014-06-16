@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/PercorsiView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, PercorsiView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -21,6 +21,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "legenda": "legenda",
         "mappa": "mappa",
         "intronotte": "intronotte",
+        "percorsi": "percorsi",
         "cerca": "cerca",
         "caccia": "caccia",
         "introcaccia": "introcaccia",
@@ -233,6 +234,11 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var page = new MappaView({
           model: this.currentView.model
         });
+        this.changePage(page); 
+      },
+
+      percorsi: function () {
+        var page = new PercorsiView();
         this.changePage(page); 
       },
 
