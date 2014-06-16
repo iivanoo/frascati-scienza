@@ -143,7 +143,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
             }
           }
         }
-        var page = new EventiListView({model: Data.eventi});
+        var page = new EventiListView({model: Data.eventi, attributes: {"data-filtered": false}});
         this.changePage(page); 
       },
 
@@ -161,7 +161,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           }
         }
         var filteredEventi = Data.eventi.getByEnte(id).toArray();
-        var page = new EventiListView({model: new Eventi(filteredEventi)});
+        var page = new EventiListView({model: new Eventi(filteredEventi), attributes: {"data-filtered": true}});
         page.title = "Eventi " + Data.enti.findWhere({"__id": id}).get("titolo");
         this.changePage(page); 
       },
@@ -169,7 +169,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       eventiCerca: function (keyword, tag, organizzatore, da, a) {
         var currentCollection = Data.eventi;
         // filtra per descrizione
-        debugger;
         if(keyword != "__NO") {
           currentCollection = new Eventi(Data.eventi.getByKeyword(keyword).toArray());
         }
@@ -212,7 +211,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
             }
           }
           // var filteredEventi = Data.eventi.getByKeyword(keyword).toArray();
-          var page = new EventiListView({model: currentCollection});
+          var page = new EventiListView({model: currentCollection, attributes: {"data-filtered": true}});
           page.title = 'Risultati Ricerca';
           this.changePage(page); 
         //} else {

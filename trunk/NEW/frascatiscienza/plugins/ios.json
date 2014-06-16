@@ -66,6 +66,12 @@
                             "xml": "true",
                             "count": 1
                         }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 2
+                        }
                     ]
                 }
             },
@@ -103,6 +109,14 @@
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -132,6 +146,12 @@
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         },
         "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "it.univaq.frascatiscienza"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "it.univaq.frascatiscienza"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         }
     },
