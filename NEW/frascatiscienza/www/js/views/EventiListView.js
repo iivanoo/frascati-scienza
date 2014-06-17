@@ -30,11 +30,18 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
               //this.currentDay = 1379725200;
               // il current day adesso è la data di oggi
 
+              var today = new Date().getTime() / 1000;
               // qui ci si entra se NON si stanno visualizzando gli eventi di un ente specifico 
               if(this.attributes["data-filtered"] && (this.model.length > 0)) {
-                this.currentDay = this.getBaseTimestamp(this.model.at(0).get("timestamp"));
+                var filtrati = this.model.searchFrom(today);
+                // qui ci mettiamo il primo evento tra quelli futuri dell'ente, se non ci sono allora ci mettiamo l'ultimo evento organizzato
+                if(filtrati.length > 0) {
+                  this.currentDay = this.getBaseTimestamp(filtrati.at(0).get("timestamp"));
+                } else {
+                  this.currentDay = this.getBaseTimestamp(this.model.at(this.model.length - 1).get("timestamp"));
+                }
               } else {
-                this.currentDay = this.getBaseTimestamp(new Date().getTime() / 1000);
+                this.currentDay = this.getBaseTimestamp(today);
               }
             // }
           }
@@ -90,7 +97,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           }
         },
 
-        addEvents: function() {
+        addEvents: function(movingBack) {
           var notteWrapper =  $("#notte_wrapper").empty();
           var altriWrapper =  $("#altri_wrapper").empty();
           var wrapper;
@@ -99,7 +106,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var date = new Date(this.currentDay * 1000);
           var months = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio',
 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre','dicembre'];
-          dateName.innerHTML = date.getDate() + " " + months[date.getMonth()].toUpperCase();
+          dateName.innerHTML = date.getDate() + " " + months[date.getMonth()].toUpperCase() + " " + date.getFullYear();
 
           // cerchiamo tutti gli eventi nel giorno attuale (currentDay)
           var filteredModel = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {return el.get("nottericercatori")});
@@ -125,11 +132,15 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           }
           if((filteredModel.length == 0) && (otherEvents.length == 0)) {
             //navigator.notification.alert('Questa lista degli eventi è purtroppo vuota.', function() {}, "Attenzione");
-            debugger;
             // TODO controllare qui, non si può fare dayNext, perchè non possiamo sapere se stiamo andando avanti e indietro
             // soprattutto da controllare cosa fare quando qui ci si arriva già premendo daynext o dayback.
             // controllare perchè filteredModel e otherEvents sono vuoti quando si fa dayback() e daynext()
-            //this.dayNext();
+            if(movingBack) {
+              this.dayBack();
+            } else {
+              this.dayNext();
+            }
+            
           }
         },
 
@@ -139,7 +150,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           if(pastEvents.length != 0) {
             //this.currentDay = yesterday;
             this.currentDay = this.getBaseTimestamp(pastEvents[pastEvents.length - 1].get("timestamp"));
-            this.addEvents();
+            this.addEvents(true);
           } else {
             navigator.notification.alert('Non ci sono eventi programmati precedenti a quello corrente.', function() {}, "Attenzione");
           }          
@@ -151,7 +162,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           if(nextEvents.length != 0) {
             //this.currentDay = tomorrow;
             this.currentDay = this.getBaseTimestamp(nextEvents[0].get("timestamp"));
-            this.addEvents();
+            this.addEvents(false);
           } else {
             navigator.notification.alert('Non ci sono eventi programmati successivi a quello corrente.', function() {}, "Attenzione");
           } 
