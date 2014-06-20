@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Tappa", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Percorsi", "models/TappaPercorso", "collections/TappePercorsi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi", "../data/statictappe", "../data/staticpercorsi"],
-  function($, _, Backbone, Ente, Evento, Tappa, Sponsor, Enti, Eventi, Percorsi, TappaPercorso, TappePercorsi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/Evento", "models/Tappa", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Percorsi", "models/TappaPercorso", "collections/TappePercorsi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi", "../data/statictappe", "../data/staticpercorsi"],
+  function($, _, Backbone, Preloader, Ente, Evento, Tappa, Sponsor, Enti, Eventi, Percorsi, TappaPercorso, TappePercorsi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
@@ -93,6 +93,17 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
         // è dopo aver scatenato questo evento che faccio partire il routing
         this.trigger("dataReady");
+        var images = [];
+        var currentElement;
+        for(var i=0; i<this.enti.length; i++) {
+          currentElement = this.enti.at(i);
+          images.push(currentElement.get("logo"));
+          images.push(currentElement.get("chisiamo").immagineCopertina);
+          images.push(currentElement.get("storia").immagineCopertina);
+          images.push(currentElement.get("miglioriamo").immagineCopertina);
+          images.push(currentElement.get("contatti").immagineCopertina);
+        }
+        new Preloader(images);
       }
     },
     loadLocalData: function() {

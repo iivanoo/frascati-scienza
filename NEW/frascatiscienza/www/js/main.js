@@ -9,7 +9,8 @@ require.config({
     templates: '../templates',
     leaflet: '../lib/leaflet/leaflet',
     datamanager: 'datamanager',
-    spin: '../lib/spin/spin'
+    spin: '../lib/spin/spin',
+    preloader: '../lib/preloader/pre-loader',
   },
   shim: {
     'jquery': {
