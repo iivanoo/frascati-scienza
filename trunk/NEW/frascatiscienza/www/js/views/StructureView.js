@@ -6,24 +6,24 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         id: "mainContainer",
 
         events: {
-          "touchend #backbutton": "goBack",
-          "touchend #frascatiscienza": "frascatiscienza",
-          "touchend #eventi": "eventi",
-          "touchend #percorsi": "percorsi",
-          "touchend #percorsiInactive": "percorsi",
-          "touchend #caccia": "caccia",
-          "touchend #agenda": "agenda",
-          "touchend #frascatiscienzaInactive": "frascatiscienza",
-          "touchend #eventiInactive": "eventi",
-          "touchend #cacciaInactive": "caccia",
-          "touchend #agendaInactive": "agenda",
-          "touchend #legenda": "legenda",
-          "touchend #aggiungiAgenda": "addAgenda",
-          "touchend #www": "showSito",
-          "touchend #mappa": "showMappa",
-          "touchend #ricerca": "ricerca",
-          "touchend #eventi_ente_butt": "showEventi",
-          "touchend #credits": "credits"
+          "tap #backbutton": "goBack",
+          "tap #frascatiscienza": "frascatiscienza",
+          "tap #eventi": "eventi",
+          "tap #percorsi": "percorsi",
+          "tap #percorsiInactive": "percorsi",
+          "tap #caccia": "caccia",
+          "tap #agenda": "agenda",
+          "tap #frascatiscienzaInactive": "frascatiscienza",
+          "tap #eventiInactive": "eventi",
+          "tap #cacciaInactive": "caccia",
+          "tap #agendaInactive": "agenda",
+          "tap #legenda": "legenda",
+          "tap #aggiungiAgenda": "addAgenda",
+          "tap #www": "showSito",
+          "tap #mappa": "showMappa",
+          "tap #ricerca": "ricerca",
+          "tap #eventi_ente_butt": "showEventi",
+          "tap #credits": "credits"
         },
 
         initialize: function() {
@@ -88,7 +88,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         },
 
         eventi: function(event) {
-          Backbone.history.navigate("intronotte", {trigger: true});
+          //Backbone.history.navigate("intronotte", {trigger: true});
+          Backbone.history.navigate("eventi", {trigger: true});
+          $("#backbutton").show();
         },
 
         credits: function(event) {
