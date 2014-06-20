@@ -1,9 +1,10 @@
-define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Tappa", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi", "../data/statictappe"], 
-  function($, _, Backbone, Ente, Evento, Tappa, Sponsor, Enti, Eventi, Sponsors, Spinner) {
+define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "models/Tappa", "models/Sponsor", "collections/Enti", "collections/Eventi", "collections/Percorsi", "models/TappaPercorso", "collections/TappePercorsi", "collections/Sponsors", "spin", "../data/staticenti", "../data/staticeventi", "../data/statictappe", "../data/staticpercorsi"],
+  function($, _, Backbone, Ente, Evento, Tappa, Sponsor, Enti, Eventi, Percorsi, TappaPercorso, TappePercorsi, Sponsors, Spinner) {
 
   var Data = {
     enti: new Enti,
     eventi: new Eventi,
+    percorsi: new Percorsi,
     tappe: undefined,
     // sponsors: new Sponsors,
     newDataChecked: false,
@@ -11,10 +12,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     frascatiscienza: undefined,
     imgfrascatiscienza: undefined,
     staticEnti: undefined,
-    urlEnti_Eng: "TODO",
-    urlEventi_Eng: "TODO",
+    staticEventi: undefined,
+    staticPercorsi: undefined,
     urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
     urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
+    urlpercorsi_Ita: "http://www.frascatiscienza.it/pagine/js-percorsi/",
 
     initialize: function() {
       var opts = {
@@ -40,9 +42,10 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       if(!localStorage.getItem("agenda")) {
         var agenda = {"enti": {}, "eventi": {}};
         localStorage.setItem("agenda", JSON.stringify(agenda));
-      } 
+      }
       this.enti.on('reset', this.checkDataReady, this);
       this.eventi.on('reset', this.checkDataReady, this);
+      this.percorsi.on('reset', this.checkDataReady, this);
       // this.sponsors.on('reset', this.checkDataReady, this);
     },
 
@@ -65,16 +68,16 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       var staticTappe = require("../data/statictappe");
       this.tappe = staticTappe.tappe;
       // qui controlliamo se ci sono dati nuovi
-      if(navigator.connection.type == Connection.NONE) {
-        if(localStorage.getItem("dataLoaded")) {
-          this.loadDbData();
-        } else {
-          this.loadLocalData();
-        }
-      } else {
-        this.downloadNewData();
-      }
-      //this.loadLocalData();
+      // if(navigator.connection.type == Connection.NONE) {
+      //   if(localStorage.getItem("dataLoaded")) {
+      //     this.loadDbData();
+      //   } else {
+      //     this.loadLocalData();
+      //   }
+      // } else {
+      //   this.downloadNewData();
+      // }
+      this.loadLocalData();
     },
 
     loadDbData: function() {
@@ -82,10 +85,11 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       this.imgfrascatiscienza = localStorage.getItem("imgfrascatiscienza");
       this.enti.fetch({reset: true});
       this.eventi.fetch({reset: true});
+      this.percorsi.fetch({reset: true});
       // this.sponsors.fetch({reset: true});
     },
     checkDataReady: function() {
-      if((this.enti.length > 0) && (this.eventi.length > 0)) { // && (this.sponsors.length > 0)) {
+      if((this.enti.length > 0) && (this.eventi.length > 0) && (this.percorsi.length > 0)) { // && (this.sponsors.length > 0)) {
         // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
         // è dopo aver scatenato questo evento che faccio partire il routing
         this.trigger("dataReady");
@@ -94,7 +98,8 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
     loadLocalData: function() {
       var staticEnti = require("../data/staticenti");
       var staticEventi = require("../data/staticeventi");
-      this.updateDb(staticEnti, staticEventi, true);
+      var staticPercorsi = require("../data/staticpercorsi");
+      this.updateDb(staticEnti, staticEventi, staticPercorsi, true);
       localStorage.setItem("dataLoaded" , "yes");
     },
 /*    checkNewData: function() {
@@ -119,6 +124,9 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           $.getJSON(this.urlEventi_Eng, function(response) {
             self.staticEventi = response;
           });
+          $.getJSON(this.urlpercorsi_Eng, function(response) {
+            self.staticPercorsi = response;
+          });
         } else {
           $.getJSON(this.urlEnti_Ita, function(response) {
             self.staticEnti = response;
@@ -126,13 +134,16 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           $.getJSON(this.urlEventi_Ita, function(response) {
             self.staticEventi = response;
           });
+          $.getJSON(this.urlpercorsi_Ita, function(response) {
+            self.staticPercorsi = response;
+          });
         }
         // $.ajaxSetup({
         //   async: true
         // });
         $.ajaxSettings.async = true;
-        if(this.staticEnti && this.staticEventi) {
-          this.updateDb(this.staticEnti, this.staticEventi, true);
+        if(this.staticEnti && this.staticEventi && this.staticPercorsi) {
+          this.updateDb(this.staticEnti, this.staticEventi, this.staticPercorsi, true);
         } else {
           if(localStorage.getItem("dataLoaded")) {
             this.loadDbData();
@@ -158,13 +169,14 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
       });
       return result;
     },*/
-    updateDb: function(enti, eventi, clearDb) {
+    updateDb: function(enti, eventi, percorsi, clearDb) {
       var self = this;
       if(clearDb) {
         // cancello tutti i record delle tabelle
         db.transaction(function(tx) {
           tx.executeSql("DELETE FROM enti");
           tx.executeSql("DELETE FROM eventi");
+          tx.executeSql("DELETE FROM percorsi");
           // tx.executeSql("DELETE FROM sponsors");
         }, function() {}, createData);
       } else {
@@ -176,7 +188,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
 
         // gli underscore li aggiungiamo direttamente nel datamanager quando carichiamo i vari eventi
         var tagClasses = {
-          Giovani: "ad_giovani", 
+          Giovani: "ad_giovani",
           Pubblico_Generale: "ad_pubblicogenerale",
           Scuole_Medie: "ad_medie",
           Scuole_Elementari: "ad_elementari",
@@ -214,6 +226,21 @@ define(["jquery", "underscore", "backbone", "models/Ente", "models/Evento", "mod
           delete currentElement.id;
           self.eventi.create(currentElement);
         }
+        for(var i=0; i<percorsi.percorsi.length; i++) {
+          currentElement = percorsi.percorsi[i];
+          currentElement.__id = currentElement.id;
+          delete currentElement.id;
+          var justCreatedModel = self.percorsi.create(currentElement);
+          setTappe(justCreatedModel);
+        }
+
+        function setTappe(modello) {
+          for(var i=0; i<modello.get("tappe").length; i++) {
+            modello.get("tappe")[i] = new TappaPercorso(modello.get("tappe")[i]);
+          }
+          modello.set("tappe", new TappePercorsi(modello.get("tappe")));
+        }
+
 /*        for(var i=0; i<data.sponsors.length; i++) {
           currentElement = data.sponsors[i];
           currentElement.__id = currentElement.id;
