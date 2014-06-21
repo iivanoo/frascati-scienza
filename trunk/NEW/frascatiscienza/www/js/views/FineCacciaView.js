@@ -88,9 +88,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/fineca
           function(buttonIndex) {
             if (buttonIndex == 1) {
               localStorage.removeItem("visitedDomande");
-              Backbone.history.navigate("caccia", {
-                trigger: true
-              });
+              setTimeout(function() {
+                Backbone.history.navigate("caccia", {
+                  trigger: true
+                });
+              }, 0);
             }
           },
           'Conferma',

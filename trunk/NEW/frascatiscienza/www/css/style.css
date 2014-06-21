@@ -1656,6 +1656,27 @@ width: 40%;
 	
 }
 
+.jump_but{
+
+margin-left: 60%;
+text-align: center;
+box-shadow: 0 2px 0px rgba(0,0,0,.2);
+border-radius: 5px;
+background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+text-align: center;
+color:white;
+font-family: 'Dax';
+
+padding: 10px;
+margin-top: 2em;
+
+/*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
+			box-shadow: 0 2px 0px rgba(0,0,0,.2);
+			border-radius: 5px;
+			background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+	
+}
+
 
 .qr_only{
 
