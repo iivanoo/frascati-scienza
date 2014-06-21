@@ -61,13 +61,25 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       return undefined;
     },
 
+    getNextTappa: function(id) {
+      var i = 0;
+      while(i < this.tappe.length - 1) {
+        if(this.tappe[i].id == id) {
+          var tappaModel = new Tappa(this.tappe[i + 1]);
+          return tappaModel;
+        }
+        i++;
+      }
+      return undefined;
+    },
+
     startupData: function() {
       if(!localStorage.getItem("cacciaSeconds")) {
         localStorage.setItem("cacciaSeconds" , "0");
       }
       var staticTappe = require("../data/statictappe");
       this.tappe = staticTappe.tappe;
-      // qui controlliamo se ci sono dati nuovi
+      //qui controlliamo se ci sono dati nuovi
       // if(navigator.connection.type == Connection.NONE) {
       //   if(localStorage.getItem("dataLoaded")) {
       //     this.loadDbData();

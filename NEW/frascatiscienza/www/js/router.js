@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/PercorsiView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, PercorsiView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/PercorsiView", "views/PercorsoView", "views/TappaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, PercorsiView, PercorsoView, TappaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -22,6 +22,8 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "mappa": "mappa",
         "intronotte": "intronotte",
         "percorsi": "percorsi",
+        "percorso/:id": "percorso",
+        "tappa/:id": "tappa",
         "cerca": "cerca",
         "caccia": "caccia",
         "introcaccia": "introcaccia",
@@ -87,6 +89,26 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         });
       },
 
+      percorso: function(id) {
+        var percorso = Data.percorsi.findWhere({"__id": id});
+        var percorsoView = new PercorsoView({
+          model: percorso
+        });
+        this.changePage(percorsoView);
+      },
+
+      tappa: function(id) {
+        var filteredPercorso = _.filter(Data.percorsi.toArray(), function(element) { return element.get("tappe").findWhere({id: id});});
+        var filteredTappa;
+        if(filteredPercorso.length > 0) {
+          filteredTappa = filteredPercorso[0].get("tappe").findWhere({id: id});
+          var tappaView = new TappaView({
+            model: filteredTappa
+          });
+          this.changePage(tappaView);
+        }
+      },
+
       sezioneEnteChiSiamo: function(id) {
         var ente = Data.enti.findWhere({__id: id});
         ente.set("tipo", "chisiamo");
@@ -144,7 +166,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           }
         }
         var page = new EventiListView({model: Data.eventi, attributes: {"data-filtered": false}});
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       eventiEnte: function (id) {
@@ -237,7 +259,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       percorsi: function () {
-        var page = new PercorsiView();
+        var page = new PercorsiView({model: Data.percorsi});
         this.changePage(page); 
       },
 
