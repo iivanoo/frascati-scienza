@@ -4,14 +4,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
     var IntroCacciaView = Backbone.View.extend({
 
         events: {
-          "touchstart #qrcode": "readqrcode",
-          "touchstart #mappa": "showMappa"
+          "tap #qrcode": "readqrcode",
+          "tap #mappa": "showMappa",
+          "tap #jump": "jump"
           // "touchmove": "touchMove"
         },
 
         initialize: function() {
           this.model = new Tappa({titolo: "Caccia al tesoro", luogo: {lat: "41.903423", lon: "12.4802"}});
-            this.title = "Caccia al tesoro"; 
+            this.title = "Caccia al tesoro";
             // this.moving = false;
             this.on("inTheDom", this.attachListener);
         },
@@ -125,7 +126,39 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
             function (error) {
               navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
             }
-          ); 
+          );
+        },
+        jump: function (event) {
+          if(!localStorage.getItem("visitedDomande")) {
+              var visited = {"visited": []};
+              localStorage.setItem("visitedDomande", JSON.stringify(visited));
+            }
+          var visitedDomande = JSON.parse(localStorage.getItem("visitedDomande")).visited;
+          var lastTappa = visitedDomande[visitedDomande.length - 1];
+          var tappa = Data.getNextTappa(lastTappa);
+          if(tappa) {
+            // controllare se il QR code era già stato scansionato
+            for(var i=0; i<visitedDomande.length; i++) {
+              if(visitedDomande[i] == resultText) {
+                navigator.notification.alert('La tappa attuale era già stata letta in precedenza.', function() {
+                  Backbone.history.navigate("risultatocaccia/" + resultText, {trigger: true});
+                }, "Attenzione");
+                return;
+              }
+            }
+            var numberOfTappa = parseInt(resultText.replace("tappa", "").charAt(0));
+            if(numberOfTappa != (visitedDomande.length + 1)) {
+              navigator.notification.alert('Attenzione, è stata saltata qualche tappa, torna all\'ultima tappa visitata e segui il suggerimento.', function() {
+                  Backbone.history.navigate("introcaccia", {trigger: true});
+                }, "Attenzione");
+                return;
+            }
+            visitedDomande.push(resultText);
+            localStorage.setItem("visitedDomande", JSON.stringify({"visited": visitedDomande})); 
+            Backbone.history.navigate("introtappa/" + resultText, {trigger: true});
+          } else {
+            navigator.notification.alert('Errore nel procedere alla prossima tappa della caccia, si prega di riprovare.', function() {}, "Attenzione");
+          }
         }
       });
 

@@ -4,18 +4,33 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
     var PercorsiView = Backbone.View.extend({
 
         initialize: function() {
-            this.title = "Percorsi tematici"; 
+            this.title = "Percorsi tematici";
         },
 
-        className: "default_wrapper",
+        events: {
+          "tap .row_wrapper": "goToPercorso"
+        },
+
+        tagName: "div",
+
+        className: "defaultlist_wrapper",
 
         template: Handlebars.compile(template),
 
         render: function () {
           // gestione nav bar
           this.updateNavbar();
+          $(this.el).empty();
 
-          $(this.el).html(this.template({}));
+          var percorsi = {percorsi: this.model.toJSON()};
+          var numTappe;
+          for(var i=0; i<percorsi.percorsi.length; i++) {
+            numTappe = percorsi.percorsi[i].tappe.length;
+            percorsi.percorsi[i].numtappe = (numTappe === 1) ? numTappe + " tappa" : numTappe + " tappe";
+          }
+          //$(this.el).attr("id", this.model.get("__id"));
+          $(this.el).html(this.template(percorsi));
+
           var el = $("#titlebar");
           el.removeClass();
           el.addClass("frascatiscienze_top");
@@ -39,6 +54,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
           var functions = document.getElementsByClassName("button_list_element_small");
           for(var i=0; i< functions.length; i++) {
             functions[i].classList.add("nonvisibile");
+          }
+        },
+
+        goToPercorso: function (event) {
+          if(event.currentTarget.id === "cacciaList") {
+            Backbone.history.navigate("caccia", {trigger: true});
+          } else {
+            Backbone.history.navigate("percorso/" + event.currentTarget.id, {trigger: true});
           }
         }
       });

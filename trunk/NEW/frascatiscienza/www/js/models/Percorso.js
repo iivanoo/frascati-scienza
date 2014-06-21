@@ -3,10 +3,6 @@ define(["jquery", "underscore", "backbone"], function($, _, Backbone) {
 
 		defaults: {
 			tappePercorsi: undefined
-		},
-
-		ciao: function() {
-			console.log("cioa");
 		}
 	});
 

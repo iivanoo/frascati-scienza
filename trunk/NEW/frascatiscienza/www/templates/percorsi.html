@@ -1,1 +1,39 @@
-CIAO
+{{#each percorsi}}
+<!-- row item -->
+<div class="row_wrapper" id="{{ __id }}">
+		<div class="img_wrapper">
+			<img src="{{ icona }}" onerror="ImgError(this);">
+		</div>
+		<div class="textlist_wrapper">
+			<p class="textlist_title">
+				{{ nome }}
+			</p>
+			<p class="textlist_content">
+				{{ numtappe }}
+			</p>
+		</div>
+		
+		<div class="arrow_wrapper">
+			<img src="img/but_go.png">
+		</div>
+</div>
+{{/each}}
+<!-- caccia -->
+<div class="row_wrapper" id="cacciaList">
+		<div class="img_wrapper">
+			<img src="img/icona_caccia.png" onerror="ImgError(this);">
+		</div>
+		<div class="textlist_wrapper">
+			<p class="textlist_title">
+				Caccia al tesoro
+			</p>
+			<p class="textlist_content">
+				8 tappe
+			</p>
+		</div>
+		
+		<div class="arrow_wrapper">
+			<img src="img/but_go.png">
+		</div>
+</div>
+<!-- row item -->
