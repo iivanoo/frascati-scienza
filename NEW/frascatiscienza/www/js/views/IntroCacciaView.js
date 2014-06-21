@@ -137,6 +137,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
           var lastTappa = visitedDomande[visitedDomande.length - 1];
           var tappa = Data.getNextTappa(lastTappa);
           if(tappa) {
+            var resultText = tappa.get("id");
             // controllare se il QR code era già stato scansionato
             for(var i=0; i<visitedDomande.length; i++) {
               if(visitedDomande[i] == resultText) {
