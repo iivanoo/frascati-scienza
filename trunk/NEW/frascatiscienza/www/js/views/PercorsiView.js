@@ -13,6 +13,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
 
         tagName: "div",
 
+        id: "percorsi_list",
+
         className: "defaultlist_wrapper",
 
         template: Handlebars.compile(template),
@@ -21,7 +23,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
           // gestione nav bar
           this.updateNavbar();
           $(this.el).empty();
-
           var percorsi = {percorsi: this.model.toJSON()};
           var numTappe;
           for(var i=0; i<percorsi.percorsi.length; i++) {
