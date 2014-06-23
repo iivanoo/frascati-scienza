@@ -5,7 +5,7 @@ define({
         icona: "http://upload.wikimedia.org/wikipedia/en/0/0f/Icon_X-Men.jpg",
         tappe: [{
             id: "t1",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "t2",
             titolo: "Centro di Ricerca 1",
@@ -19,7 +19,7 @@ define({
             video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4"
         }, {
             id: "t3",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "t4",
             titolo: "Centro di Ricerca 1",
@@ -33,10 +33,10 @@ define({
             video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4"
         }, {
             id: "t5",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "t6",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }]
     },
     {
@@ -45,22 +45,22 @@ define({
         icona: "http://upload.wikimedia.org/wikipedia/en/0/0f/Icon_X-Men.jpg",
         tappe: [{
             id: "2t1",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "2t2",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "2t3",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "2t4",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "2t5",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }, {
             id: "2t6",
-            id_ente: "asi" // if this is undefined, then we must consider the other fields in this object
+            id_ente: "asi"
         }]
     }]
 });
