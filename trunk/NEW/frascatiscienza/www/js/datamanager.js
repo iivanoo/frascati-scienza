@@ -84,16 +84,16 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         var staticTappe = require("../data/statictappe");
         this.tappe = staticTappe.tappe;
         //qui controlliamo se ci sono dati nuovi
-        if (navigator.connection.type == Connection.NONE) {
-          if (localStorage.getItem("dataLoaded")) {
-            this.loadDbData();
-          } else {
-            this.loadLocalData();
-          }
-        } else {
-          this.downloadNewData();
-        }
-        //this.loadLocalData();
+        // if (navigator.connection.type == Connection.NONE) {
+        //   if (localStorage.getItem("dataLoaded")) {
+        //     this.loadDbData();
+        //   } else {
+        //     this.loadLocalData();
+        //   }
+        // } else {
+        //   this.downloadNewData();
+        // }
+        this.loadLocalData();
       },
 
       loadDbData: function() {
