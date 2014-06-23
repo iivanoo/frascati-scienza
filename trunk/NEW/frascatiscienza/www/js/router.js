@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/PercorsiView", "views/PercorsoView", "views/TappaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
-    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, PercorsiView, PercorsoView, TappaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
+define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi", "views/CoverView", "views/IntroNotteView", "views/FrascatiScienzaView", "views/EntiListView", "views/EnteView", "views/SezioneEnteView", "views/RssEnteView", "views/EventiListView", "views/EventoView", "views/SponsorListView", "views/AgendaView", "views/LegendaView", "views/CacciaView", "views/PercorsiView", "views/PercorsoView", "views/MappaPercorsoView", "views/TappaView", "views/IntroCacciaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/Mappa", "views/RicercaView", "views/PartnerView", "views/CreditsView", "views/StructureView"],
+    function ($, _, Backbone, Data, Eventi, CoverView, IntroNotteView, FrascatiScienzaView, EntiListView, EnteView, SezioneEnteView, RssEnteView, EventiListView, EventoView, SponsorListView, AgendaView, LegendaView, CacciaView, PercorsiView, PercorsoView, MappaPercorsoView, TappaView, IntroCacciaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, MappaView, RicercaView, PartnerView, CreditsView, StructureView) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -23,6 +23,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         "intronotte": "intronotte",
         "percorsi": "percorsi",
         "percorso/:id": "percorso",
+        "mappapercorso/:id": "mappaPercorso",
         "tappa/:id": "tappa",
         "cerca": "cerca",
         "caccia": "caccia",
@@ -45,7 +46,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         // } else {
           var page = new CoverView();
           page.render();
-          $("body").append($(page.el)); 
+          $("body").append($(page.el));
           $('#content_cover').css({
             'height': $(window).height() - 75
           });
@@ -55,27 +56,27 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       enti: function () {
         var page = new EntiListView({model: Data.enti});
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       sponsor: function () {
         var page = new SponsorListView({model: Data.sponsors});
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       credits: function () {
         var page = new CreditsView();
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       intronotte: function () {
         var page = new IntroNotteView();
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       agenda: function () {
         var page = new AgendaView();
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       enteDetails: function(id) {
@@ -95,6 +96,14 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           model: percorso
         });
         this.changePage(percorsoView);
+      },
+
+      mappaPercorso: function(id) {
+        var percorso = Data.percorsi.findWhere({"__id": id});
+        var mappaPercorsoView = new MappaPercorsoView({
+          model: percorso
+        });
+        this.changePage(mappaPercorsoView);
       },
 
       tappa: function(id) {

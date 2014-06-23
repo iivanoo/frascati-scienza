@@ -23,7 +23,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           "tap #mappa": "showMappa",
           "tap #ricerca": "ricerca",
           "tap #eventi_ente_butt": "showEventi",
-          "tap #credits": "credits"
+          "tap #credits": "credits",
+          "tap #mappa_butt": "mappa_butt"
         },
 
         initialize: function() {
@@ -93,6 +94,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           $("#backbutton").show();
         },
 
+        mappa_butt: function(event) {
+          this.currentView.mappa();
+        },
+
         credits: function(event) {
           $("#backbutton").show();
           Backbone.history.navigate("credits", {trigger: true});
@@ -142,4 +147,5 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
 
     return StructureView;
 
-  }); 
+  });
+
