@@ -1524,7 +1524,19 @@ margin-top: 60px;
 
 }
 
-#wrapper_ricerca select, input{
+/*#wrapper_ricerca select, input{
+    font-size: 1.2em;
+    background: white;
+    border: none;
+    color: #333;
+    padding: 12px;
+    margin-bottom: 5%;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+}*/
+
+
+#wrapper_ricerca select{
     font-size: 1.2em;
     background: white;
     border: none;
@@ -1534,6 +1546,18 @@ margin-top: 60px;
     -webkit-appearance: none;
     border: 1px solid #ccc;
 }
+
+#wrapper_ricerca input{
+    font-size: 1.2em;
+    background: white;
+    border: none;
+    color: #333;
+    height: 22px;
+padding-top: 12px;
+padding-bottom: 8px; 
+    margin-bottom: 5%;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
 
 .open_drop{
 	margin-bottom: -7px;
