@@ -1,4 +1,3 @@
-alert();
 require.config({
   paths: {
     jquery: '../lib/jquery/zepto', //'../lib/jquery/jquery-1.9.1.min', 
