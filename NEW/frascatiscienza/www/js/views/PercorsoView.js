@@ -28,7 +28,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         //   numTappe = percorsi.percorsi[i].tappe.length;
         //   percorsi.percorsi[i].numtappe = (numTappe === 1) ? numTappe + " tappa" : numTappe + " tappe";
         // }
-        var tappe = {tappe: this.model.get("tappe").toJSON()};
+        var tappe = {tappe: this.model.get("tappe")};
         for(var i=0; i<tappe.tappe.length; i++) {
           if(tappe.tappe[i].id_ente) {
             tappe.tappe[i].testo = Data.enti.findWhere({__id: tappe.tappe[i].id_ente}).get("titolo");
