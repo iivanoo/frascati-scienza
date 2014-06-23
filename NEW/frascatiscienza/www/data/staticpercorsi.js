@@ -12,7 +12,7 @@ define({
             sito: "http://www.frascatiscienza.it",
             luogo: {
                 lat: "41.805966",
-                lon: "12.680558"
+                lon: "13.680558"
             },
             testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
             immagine: "./pics/frascati-scienza/chisiamo.jpg",
@@ -25,7 +25,7 @@ define({
             titolo: "Centro di Ricerca 1",
             sito: "http://www.frascatiscienza.it",
             luogo: {
-                lat: "41.805966",
+                lat: "41.905966",
                 lon: "12.680558"
             },
             testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",

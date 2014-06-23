@@ -5,6 +5,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
 
       initialize: function() {
         this.title = this.model.get("nome");
+        this.on("inTheDom", function(e) {
+          document.getElementById("mappa_butt").classList.remove("nonvisibile");
+        });
+        this.on("removed", function(e) {document.getElementById("mappa_butt").classList.add("nonvisibile");});
       },
 
       events: {
@@ -70,10 +74,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
       goToTappa: function(event) {
         var tappedTappa = this.model.get("tappe").findWhere({id: event.currentTarget.id});
         if(tappedTappa.has("id_ente")) {
-          Backbone.history.navigate("enti/" + tappedTappa.get("id_ente"), {trigger: true}); 
+          Backbone.history.navigate("enti/" + tappedTappa.get("id_ente"), {trigger: true});
         } else {
-          Backbone.history.navigate("tappa/" + tappedTappa.get("id"), {trigger: true}); 
+          Backbone.history.navigate("tappa/" + tappedTappa.get("id"), {trigger: true});
         }
+      },
+
+      mappa: function(event) {
+          var path = "mappapercorso/" + this.model.get("__id");
+          Backbone.history.navigate(path, {trigger: true});
       }
     });
 
