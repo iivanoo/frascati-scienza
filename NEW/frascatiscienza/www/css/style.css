@@ -1765,15 +1765,8 @@ margin-top: 5%;
 
 
 
-#percorso_list{
-	background-image:url(" ../img/background_percorsi.png");
-	background-size: 100% auto;
-	background-repeat: no-repeat; 	
-	background-position: center center;
-}
 
-
-#percorsi_list{
+.percorsi_list{
 	background-image:url(" ../img/background_percorsi.png");
 	
 	 background-size: 100% auto; 
@@ -1867,7 +1860,7 @@ left:5%;
 	position: absolute;
 	top:80%;
 	left:15%;
-}
+}	
 
 
 
