@@ -1766,18 +1766,108 @@ margin-top: 5%;
 
 
 #percorso_list{
-	background-image:url(" ../img/back_percorsi.png") center fixed;
-	 -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover; 	
+	background-image:url(" ../img/background_percorsi.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat; 	
+	background-position: center center;
 }
 
 
 #percorsi_list{
-	background-image:url(" ../img/back_percorsi.png") center fixed;
-	 -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover; 
+	background-image:url(" ../img/background_percorsi.png");
+	
+	 background-size: 100% auto; 
+	 background-repeat: no-repeat;
+	 background-position: center center;
 }
+
+/* wrapper gruppo bolle con sfondo griglia bianca */
+
+#wrapper_percorsi{
+	width: 100%;
+	top:50%;
+	position: absolute;
+	display: block;
+	min-height: 122vw;
+	margin-top: -61vw;
+	background-image:url("../img/perc_b1.png");
+	background-position: 50% 50%;
+	background-size: 95% auto;
+}
+
+/* wrapper singola bolla */	
+
+.bubble_wrapper{
+	display: block;
+	background-image:url("../img/bolla_singola.png");
+	background-size: 100% auto;
+	width:120px;
+	height:70px;
+		background-repeat: no-repeat;
+			 background-position: center center;
+	
+}
+
+/* stile p etichetta bolla */
+
+.bubble_caption{
+	width:110px;
+	padding-top: 5px;
+	padding-left: 2px;
+	margin:0px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #fff;
+}
+
+/* testo etichetta bolla */
+
+.bubble_caption span{
+	color:#fff;
+	font-family: "dax";
+	font-size: 0.75em;
+}
+
+
+/* posizioni fisse bolle template percorsi */
+
+.bubble1{
+	position: absolute;
+	top:0%;
+	left:43%;
+}
+
+.bubble2{
+	position: absolute;
+top:20%;
+left:5%;
+}
+
+.bubble3{
+	position: absolute;
+	top:30%;
+	left:25%;
+}
+
+.bubble4{
+	position: absolute;
+	top:40%;
+	left:60%;
+}
+
+.bubble5{
+	position: absolute;
+	top:55%;
+	left:25%;
+}
+
+.bubble6{
+	position: absolute;
+	top:80%;
+	left:15%;
+}
+
+
+
