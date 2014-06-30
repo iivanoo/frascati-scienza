@@ -8,14 +8,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
         },
 
         events: {
-          "tap .row_wrapper": "goToPercorso"
+          "tap .bubble_wrapper": "goToPercorso"
         },
 
         tagName: "div",
 
-        id: "percorsi_list",
-
-        className: "defaultlist_wrapper",
+        id: "wrapper_percorsi",
 
         template: Handlebars.compile(template),
 
