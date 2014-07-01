@@ -1,82 +1,20 @@
 <div id="wrapper_percorsi">
-
-<div class="bubble_wrapper bubble1">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Uno </span>
-	</p>
-</div>
-
-<div class="bubble_wrapper bubble2">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Due</span>
-	</p>
-</div>
-
-<div class="bubble_wrapper bubble3">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Tre</span>
-	</p>
-</div>
-
-<div class="bubble_wrapper bubble4">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Quattro</span>
-	</p>
-</div>
-
-<div class="bubble_wrapper bubble5">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Cinque</span>
-	</p>
-</div>
-
-<div class="bubble_wrapper bubble6">
-	<p class="bubble_caption">
-		<img src=""> <span>Percorso Sei</span>
-	</p>
-</div>
-
-
 {{#each percorsi}}
-<!-- row item 
-<div class="row_wrapper" id="{{ __id }}">
-		<div class="img_wrapper">
-			<img src="{{ icona }}" onerror="ImgError(this);">
-		</div>
-		<div class="textlist_wrapper">
-			<p class="textlist_title">
-				{{ nome }}
-			</p>
-			<p class="textlist_content">
-				{{ numtappe }}
-			</p>
-		</div>
-		
-		<div class="arrow_wrapper">
-			<img src="img/but_go.png">
-		</div>
-</div> -->
-
-
+    <div id="{{ __id }}" class="bubble_wrapper bubble{{@index}}">
+        <p class="bubble_caption">
+            <img src="{{ icona }}" onerror="ImgError(this);">
+            <span>
+                {{ nome }}
+            </span>
+        </p>
+    </div>
 {{/each}}
-
+    <div id="cacciaList" class="bubble_wrapper bubble5">
+        <p class="bubble_caption">
+            <img src="img/icona_caccia.png" onerror="ImgError(this);">
+            <span>
+                Caccia al tesoro
+            </span>
+        </p>
+    </div>
 </div>
-<!-- caccia 
-<div class="row_wrapper" id="cacciaList">
-		<div class="img_wrapper">
-			<img src="img/icona_caccia.png" onerror="ImgError(this);">
-		</div>
-		<div class="textlist_wrapper">
-			<p class="textlist_title">
-				Caccia al tesoro
-			</p>
-			<p class="textlist_content">
-				8 tappe
-			</p>
-		</div>
-		
-		<div class="arrow_wrapper">
-			<img src="img/but_go.png">
-		</div>
-</div>-->
-<!-- row item -->
