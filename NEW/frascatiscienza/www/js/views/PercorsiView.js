@@ -8,7 +8,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
         },
 
         events: {
-          "tap .row_wrapper": "goToPercorso"
+          "tap .bubble_wrapper": "goToPercorso"
         },
 
         tagName: "div",

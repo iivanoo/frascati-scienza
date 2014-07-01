@@ -1833,37 +1833,37 @@ margin-top: 5%;
 
 /* posizioni fisse bolle template percorsi */
 
-.bubble1{
+.bubble0{
 	position: absolute;
 	top:0%;
 	left:43%;
 }
 
-.bubble2{
+.bubble1{
 	position: absolute;
 top:20%;
 left:5%;
 }
 
-.bubble3{
+.bubble2{
 	position: absolute;
 	top:30%;
 	left:25%;
 }
 
-.bubble4{
+.bubble3{
 	position: absolute;
 	top:40%;
 	left:60%;
 }
 
-.bubble5{
+.bubble4{
 	position: absolute;
 	top:55%;
 	left:25%;
 }
 
-.bubble6{
+.bubble5{
 	position: absolute;
 	top:80%;
 	left:15%;
