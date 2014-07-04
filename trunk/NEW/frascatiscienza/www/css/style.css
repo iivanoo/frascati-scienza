@@ -1811,7 +1811,7 @@ margin-top: 5%;
 /* stile p etichetta bolla */
 
 .bubble_caption{
-	width:110px;
+	/*width:110px;
 	padding-top: 5px;
 	padding-left: 2px;
 	margin:0px;
@@ -1819,8 +1819,23 @@ margin-top: 5%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	color: #fff;*/
+	
+	width:110px;
+	padding-top: 5px;
+	padding-left: 2px;
+	margin:0px;
+	text-align: left;
+	text-overflow: ellipsis;
+	/* white-space: nowrap; */
+	overflow: hidden;
 	color: #fff;
+	line-height: 0.9em
 }
+
+
+
+
 
 /* testo etichetta bolla */
 
