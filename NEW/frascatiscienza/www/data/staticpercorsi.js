@@ -2,7 +2,7 @@ define({
     percorsi: [{
         id: "p1",
         nome: "Dall'infinitamente piccolo",
-        icona: "http://upload.wikimedia.org/wikipedia/en/0/0f/Icon_X-Men.jpg",
+        icona: "./img/img_dallinf.png",
         tappe: [{
             id: "t1",
             id_ente: "asi"
@@ -41,8 +41,8 @@ define({
     },
     {
         id: "p2",
-        nome: "Dall'infinitamente piccolo",
-        icona: "http://upload.wikimedia.org/wikipedia/en/0/0f/Icon_X-Men.jpg",
+        nome: "Potenza di 10",
+        icona: ".img/img_potenz.png",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
