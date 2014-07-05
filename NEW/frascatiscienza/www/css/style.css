@@ -1781,166 +1781,326 @@ margin-top: 5%;
 	 background-position: center center;
 }
 
-/* wrapper gruppo bolle con sfondo griglia bianca */
 
-#wrapper_percorsi{
-	width: 100%;
-	top:50%;
-	position: absolute;
-	display: block;
-	min-height: 122vw;
-	margin-top: -61vw;
-	background-image:url("../img/perc_b1.png");
-	background-position: 50% 50%;
-	background-size: 95% auto;
+@media screen and (max-width: 599px){
+
+				/* wrapper gruppo bolle con sfondo griglia bianca */
+				
+				#wrapper_percorsi{
+					width: 100%;
+					top:50%;
+					position: absolute;
+					display: block;
+					min-height: 122vw;
+					margin-top: -61vw;
+					background-image:url("../img/perc_b1.png");
+					background-position: 50% 50%;
+					background-size: 95% auto;
+				}
+				
+				
+				#wrapper_tappe{
+					width: 100%;
+					top:50%;
+					position: absolute;
+					display: block;
+					min-height: 122vw;
+					margin-top: -61vw;
+					background-image:url("../img/perc_b2.png");
+					background-position: 50% 50%;
+					background-size: 95% auto;
+				}
+				
+				/* wrapper singola bolla */	
+				
+				.bubble_wrapper{
+					display: block;
+					background-image:url("../img/bolla_singola.png");
+					background-size: 100% auto;
+					width:125px;
+					height:80px;
+						background-repeat: no-repeat;
+							 background-position: center center;
+					
+				}
+				
+				/* stile p etichetta bolla */
+				
+				.bubble_caption{
+					/*width:110px;
+					padding-top: 5px;
+					padding-left: 2px;
+					margin:0px;
+					text-align: center;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					color: #fff;*/
+					
+					width:80px;
+				padding-top: 5px;
+				/* padding-left: 2px; */
+				margin:0px;
+				text-align: left;
+				/* text-overflow: ellipsis; */
+				/* white-space: nowrap; */
+				overflow: hidden;
+				color: #fff;
+				line-height: 0.8em;
+				}
+				
+				
+				
+				
+				
+				/* testo etichetta bolla */
+				
+				.symbol_bubble_caption{
+					width:30px;
+					float:left;
+					margin-left: 5px
+				}
+				
+				.bubble_caption span{
+					color:#fff;
+					font-family: "dax";
+					font-size: 0.75em;
+					padding-left: 10px;
+				}
+				
+				
+				/* posizioni fisse bolle template percorsi */
+				
+				.bubble0{
+					position: absolute;
+					top:0%;
+					left:43%;
+				}
+				
+				.bubble1{
+					position: absolute;
+				top:20%;
+				left:5%;
+				}
+				
+				.bubble2{
+					position: absolute;
+					top:30%;
+					left:25%;
+				}
+				
+				.bubble3{
+					position: absolute;
+					top:40%;
+					left:60%;
+				}
+				
+				.bubble4{
+					position: absolute;
+					top:55%;
+					left:25%;
+				}
+				
+				.bubble5{
+					position: absolute;
+					top:80%;
+					left:15%;
+				}
+				
+				
+				
+				._bubble0{
+					position: absolute;
+					top:4%;
+					left:50%;
+				}
+				
+				._bubble1{
+					position: absolute;
+					top:20%;
+					left:10%;
+				}
+				
+				._bubble2{
+					position: absolute;
+					top:42%;
+					left:7%;
+				}
+				
+				._bubble3{
+					position: absolute;
+					top:35%;
+					left:60%;
+				}
+				
+				._bubble4{
+					position: absolute;
+					top:55%;
+					left:45%;
+				}
+				
+				._bubble5{
+					position: absolute;
+					top:76%;
+					left:35%;
+				}
+
 }
 
 
-#wrapper_tappe{
-	width: 100%;
-	top:50%;
-	position: absolute;
-	display: block;
-	min-height: 122vw;
-	margin-top: -61vw;
-	background-image:url("../img/perc_b2.png");
-	background-position: 50% 50%;
-	background-size: 95% auto;
+
+
+
+@media screen and (min-width: 600px) { 
+
+				/* wrapper gruppo bolle con sfondo griglia bianca */
+				
+				#wrapper_percorsi{
+					width: 100%;
+					top:50%;
+					position: absolute;
+					display: block;
+					min-height: 122vw;
+					margin-top: -61vw;
+					background-image:url("../img/perc_b1.png");
+					background-position: 50% 50%;
+					background-size: 95% auto;
+				}
+				
+				
+				#wrapper_tappe{
+					width: 100%;
+					top:50%;
+					position: absolute;
+					display: block;
+					min-height: 122vw;
+					margin-top: -61vw;
+					background-image:url("../img/perc_b2.png");
+					background-position: 50% 50%;
+					background-size: 95% auto;
+				}
+				
+				/* wrapper singola bolla */	
+				
+				.bubble_wrapper{
+					display: block;
+					background-image:url("../img/bolla_singola.png");
+					background-size: 100% auto;
+					width:145px;
+					height:90px;
+						background-repeat: no-repeat;
+							 background-position: center center;
+					
+				}
+				
+				/* stile p etichetta bolla */
+				
+				.bubble_caption{
+					/*width:100px;*/
+					
+					margin:0px;
+					text-align: left;
+					/* text-overflow: ellipsis; */
+					/* white-space: nowrap; */
+					/* overflow: hidden; */
+					color: #fff;
+					line-height: 0.8em;				}
+			}	
+				
+				
+				
+				
+				/* testo etichetta bolla */
+				
+				.symbol_bubble_caption{
+					width:30px;
+					float:left;
+					margin-left: 5px
+				}
+				
+				.bubble_caption span{
+					color:#fff;
+					font-family: "dax";
+					font-size: 0.6em;
+				}
+				
+				
+				/* posizioni fisse bolle template percorsi */
+				
+				.bubble0{
+					position: absolute;
+					top:2%;
+					left:48%;
+				}
+				
+				.bubble1{
+					position: absolute;
+				top:20%;
+				left:5%;
+				}
+				
+				.bubble2{
+					position: absolute;
+					top:24.6%;
+					left:10.2%;
+				}
+				
+				.bubble3{
+					position: absolute;
+					top:40%;
+					left:60%;
+				}
+				
+				.bubble4{
+					position: absolute;
+					top:55%;
+					left:25%;
+				}
+				
+				.bubble5{
+					position: absolute;
+					top:86.1%;
+					left:19.4%;
+				}
+				
+				
+				
+				._bubble0{
+					position: absolute;
+					top:11.7%;
+					left:52%;
+				}
+				
+				._bubble1{
+					position: absolute;
+					top:20%;
+					left:22%;
+				}
+				
+				._bubble2{
+					position: absolute;
+					top:50%;
+					left:13%;
+				}
+				
+				._bubble3{
+					position: absolute;
+					top:25.2%;
+					left:61.3%;
+				}
+				
+				._bubble4{
+					position: absolute;
+					top:52.6%;
+					left:58.3%;
+				}
+				
+				._bubble5{
+					position: absolute;
+					top:84%;
+					left:41.6%;
+				}
+
 }
-
-/* wrapper singola bolla */	
-
-.bubble_wrapper{
-	display: block;
-	background-image:url("../img/bolla_singola.png");
-	background-size: 100% auto;
-	width:125px;
-	height:80px;
-		background-repeat: no-repeat;
-			 background-position: center center;
-	
-}
-
-/* stile p etichetta bolla */
-
-.bubble_caption{
-	/*width:110px;
-	padding-top: 5px;
-	padding-left: 2px;
-	margin:0px;
-	text-align: center;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	color: #fff;*/
-	
-	width:80px;
-padding-top: 5px;
-/* padding-left: 2px; */
-margin:0px;
-text-align: left;
-/* text-overflow: ellipsis; */
-/* white-space: nowrap; */
-overflow: hidden;
-color: #fff;
-line-height: 0.8em;
-}
-
-
-
-
-
-/* testo etichetta bolla */
-
-.symbol_bubble_caption{
-	width:30px;
-	float:left;
-	margin-left: 5px
-}
-
-.bubble_caption span{
-	color:#fff;
-	font-family: "dax";
-	font-size: 0.75em;
-	padding-left: 10px;
-}
-
-
-/* posizioni fisse bolle template percorsi */
-
-.bubble0{
-	position: absolute;
-	top:0%;
-	left:43%;
-}
-
-.bubble1{
-	position: absolute;
-top:20%;
-left:5%;
-}
-
-.bubble2{
-	position: absolute;
-	top:30%;
-	left:25%;
-}
-
-.bubble3{
-	position: absolute;
-	top:40%;
-	left:60%;
-}
-
-.bubble4{
-	position: absolute;
-	top:55%;
-	left:25%;
-}
-
-.bubble5{
-	position: absolute;
-	top:80%;
-	left:15%;
-}
-
-
-
-._bubble0{
-	position: absolute;
-	top:4%;
-	left:50%;
-}
-
-._bubble1{
-	position: absolute;
-	top:20%;
-	left:10%;
-}
-
-._bubble2{
-	position: absolute;
-	top:42%;
-	left:7%;
-}
-
-._bubble3{
-	position: absolute;
-	top:35%;
-	left:60%;
-}
-
-._bubble4{
-	position: absolute;
-	top:55%;
-	left:45%;
-}
-
-._bubble5{
-	position: absolute;
-	top:76%;
-	left:35%;
-}
-
 
 
