@@ -42,7 +42,7 @@ define({
     {
         id: "p2",
         nome: "Potenza di 10",
-        icona: ".img/img_potenz.png",
+        icona: "./img/img_potenz.png",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -66,7 +66,7 @@ define({
     {
         id: "p3",
         nome: "Potenza di 10",
-        icona: ".img/img_potenz.png",
+        icona: "./img/img_potenz.png",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -90,7 +90,7 @@ define({
     {
         id: "p4",
         nome: "Potenza di 10",
-        icona: ".img/img_potenz.png",
+        icona: "./img/img_potenz.png",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -114,7 +114,7 @@ define({
     {
         id: "p5",
         nome: "Potenza di 10",
-        icona: ".img/img_potenz.png",
+        icona: "./img/img_potenz.png",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
