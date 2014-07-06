@@ -86,17 +86,18 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/fineca
         navigator.notification.confirm(
           'Sei sicuro di iniziare da capo la caccia al tesoro?',
           function(buttonIndex) {
+            debugger;
             if (buttonIndex == 1) {
               localStorage.removeItem("visitedDomande");
               setTimeout(function() {
                 Backbone.history.navigate("caccia", {
                   trigger: true
                 });
-              }, 0);
+              }, 100);
             }
           },
           'Conferma',
-          'Si,No');
+          ['Si', 'No']);
       }
     });
 

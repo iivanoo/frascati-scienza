@@ -110,7 +110,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           } else {
             // gestire domanda sbagliata
             document.getElementById(e.currentTarget.id).classList.add("rfalsa");
-            navigator.notification.vibrate(500);
+            //navigator.notification.vibrate(500);
             // se sbagli, ti sposto lo startTimestamp indietro di 30 secondi
             this.startTimestamp = this.startTimestamp - 30000;
           }

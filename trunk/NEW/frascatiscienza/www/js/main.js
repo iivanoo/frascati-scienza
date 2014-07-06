@@ -61,7 +61,7 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
       };
 
       String.prototype.strip = function() {
-          return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"");
+          return this.replace(/(<([^>]+)>)/ig,"").replace(/(&lt;([^&gt;]+)&gt;)/ig,"").replace(/(&nbsp;+)/ig, "").replace("\n", "").replace("\r", "");
       };
 
       document.addEventListener("deviceready", run, false);

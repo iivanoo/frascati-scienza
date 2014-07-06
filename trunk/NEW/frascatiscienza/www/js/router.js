@@ -309,6 +309,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       introtappa: function (id) {
+        debugger;
         var tappa = Data.getTappaById(id);
         if(tappa) {
           var tappaView = new IntroTappaView({
@@ -380,16 +381,19 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           window.history.back();
           return false;
         }
-        if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
-          return false;
-        }
+        // if((page instanceof CacciaView) && (this.currentView instanceof FineCacciaView)) {
+        //   return false;
+        // }
 /*        if((page instanceof FineCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return;
         }*/
         if((page instanceof IntroCacciaView) && (this.currentView instanceof IntroTappaView)) {
           return false;
         }
-        if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
+        // if((page instanceof IntroTappaView) && !(this.currentView instanceof IntroCacciaView)) {
+        //   return false;
+        // }
+        if((page instanceof IntroTappaView) && !((this.currentView instanceof IntroCacciaView) || (this.currentView instanceof RisultatoCacciaView))) {
           return false;
         }
         if((page instanceof DomandaCacciaView) && !(this.currentView instanceof IntroTappaView)) {
