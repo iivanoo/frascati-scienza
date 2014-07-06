@@ -409,7 +409,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         if(this.currentView) {
           this.currentView.trigger("removed");
-          this.currentView.remove(); 
+          this.currentView.remove();
         }
         this.currentView = page;
         this.structureView.currentView = page;
