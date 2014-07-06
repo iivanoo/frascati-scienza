@@ -62,5 +62,77 @@ define({
             id: "2t6",
             id_ente: "asi"
         }]
+    },
+    {
+        id: "p3",
+        nome: "Potenza di 10",
+        icona: ".img/img_potenz.png",
+        tappe: [{
+            id: "2t1",
+            id_ente: "asi"
+        }, {
+            id: "2t2",
+            id_ente: "asi"
+        }, {
+            id: "2t3",
+            id_ente: "asi"
+        }, {
+            id: "2t4",
+            id_ente: "asi"
+        }, {
+            id: "2t5",
+            id_ente: "asi"
+        }, {
+            id: "2t6",
+            id_ente: "asi"
+        }]
+    },
+    {
+        id: "p4",
+        nome: "Potenza di 10",
+        icona: ".img/img_potenz.png",
+        tappe: [{
+            id: "2t1",
+            id_ente: "asi"
+        }, {
+            id: "2t2",
+            id_ente: "asi"
+        }, {
+            id: "2t3",
+            id_ente: "asi"
+        }, {
+            id: "2t4",
+            id_ente: "asi"
+        }, {
+            id: "2t5",
+            id_ente: "asi"
+        }, {
+            id: "2t6",
+            id_ente: "asi"
+        }]
+    },
+    {
+        id: "p5",
+        nome: "Potenza di 10",
+        icona: ".img/img_potenz.png",
+        tappe: [{
+            id: "2t1",
+            id_ente: "asi"
+        }, {
+            id: "2t2",
+            id_ente: "asi"
+        }, {
+            id: "2t3",
+            id_ente: "asi"
+        }, {
+            id: "2t4",
+            id_ente: "asi"
+        }, {
+            id: "2t5",
+            id_ente: "asi"
+        }, {
+            id: "2t6",
+            id_ente: "asi"
+        }]
     }]
 });

@@ -15,6 +15,9 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           aaaa = date.getFullYear();
           hours = date.getHours();
           mins = date.getMinutes();
+          if(mins < 10) {
+            mins = "0" + mins;
+          }
           this.title = gg + mm + aaaa + " - " + hours + ":" + mins;
           localStorage.setItem("lastVisitedEventTimestamp", this.model.get("timestamp"));
           this.on("removed", function(e) {
