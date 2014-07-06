@@ -34,7 +34,6 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         //   numTappe = percorsi.percorsi[i].tappe.length;
         //   percorsi.percorsi[i].numtappe = (numTappe === 1) ? numTappe + " tappa" : numTappe + " tappe";
         // }
-        debugger;
         var tappe = {tappe: this.model.get("tappe").toJSON()};
         for(var i=0; i<tappe.tappe.length; i++) {
           if(tappe.tappe[i].id_ente) {

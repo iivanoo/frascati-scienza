@@ -1894,44 +1894,42 @@ margin-top: 5%;
 				
 				
 				/* posizioni fisse bolle template percorsi */
-				
-				.bubble0{
+
+				#cacciaList{
 					position: absolute;
 					top:20%;
 					left:5%;
 				}
 				
-				.bubble1{
+				.bubble0{
 					position: absolute;
 					top:30%;
 					left:25%;
 				}
 				
-				.bubble2{
+				.bubble1{
 					position: absolute;
 					top:40%;
 					left:60%;
 				}
 				
-				.bubble3{
+				.bubble2{
 					position: absolute;
 					top:55%;
 					left:25%;
 				}
 				
-				.bubble4{
+				.bubble3{
 					position: absolute;
 					top:80%;
 					left:15%;
 				}
 				
-				.bubble5{
+				.bubble4{
 					position: absolute;
 					top:0%;
 					left:43%;
-				}
-				
-				
+				}				
 				
 				._bubble0{
 					position: absolute;
@@ -2050,35 +2048,41 @@ margin-top: 5%;
 				
 				
 				/* posizioni fisse bolle template percorsi */
-				
-				.bubble0{
+
+				#cacciaList{
 					position: absolute;
 					top:2%;
 					left:48%;
 				}
 				
-				.bubble1{
+				.bubble0{
 					position: absolute;
 					top:24.8%;
 					left:10.2%;
 				}
 				
-				.bubble2{
+				.bubble1{
 					position: absolute;
 					top:24.6%;
 					left:10.2%;
 				}
 				
-				.bubble3{
+				.bubble2{
 					position: absolute;
 					top:40%;
 					left:60%;
 				}
 				
-				.bubble4{
+				.bubble3{
 					position: absolute;
 					top:55%;
 					left:25%;
+				}
+				
+				.bubble4{
+					position: absolute;
+					top:86.1%;
+					left:19.4%;
 				}
 				
 				.bubble5{
@@ -2086,8 +2090,6 @@ margin-top: 5%;
 					top:86.1%;
 					left:19.4%;
 				}
-				
-				
 				
 				._bubble0{
 					position: absolute;

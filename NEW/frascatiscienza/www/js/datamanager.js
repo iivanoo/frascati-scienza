@@ -256,7 +256,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             delete currentElement.id;
             self.eventi.create(currentElement);
           }
-          for (var i = 0; i < percorsi.percorsi.length; i++) {
+
+          // qui limitiamo la lunghezza dell'array dei percorsi a 5 elementi.
+          for (var i = 0; i < percorsi.percorsi.length && (i < 5); i++) {
             currentElement = percorsi.percorsi[i];
             currentElement.__id = currentElement.id;
             delete currentElement.id;
@@ -265,7 +267,8 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
           }
 
           function setTappe(modello) {
-            for (var i = 0; i < modello.get("tappe").length; i++) {
+            // qui limitiamo la lunghezza dell'array delle tappe a 5 elementi.
+            for (var i = 0; i < modello.get("tappe").length && (i < 5); i++) {
               modello.get("tappe")[i] = new TappaPercorso(modello.get("tappe")[i]);
             }
             modello.set("tappe", new TappePercorsi(modello.get("tappe")));
