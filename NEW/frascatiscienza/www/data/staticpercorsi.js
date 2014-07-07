@@ -3,6 +3,9 @@ define({
         id: "p1",
         nome: "Dall'infinitamente piccolo",
         icona: "./img/img_dallinf.png",
+        testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+        immagine: "./pics/frascati-scienza/chisiamo.jpg",
+        video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4",
         tappe: [{
             id: "t1",
             id_ente: "asi"
@@ -43,6 +46,9 @@ define({
         id: "p2",
         nome: "Potenza di 10",
         icona: "./img/img_potenz.png",
+        testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+        immagine: "./pics/frascati-scienza/chisiamo.jpg",
+        video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -67,6 +73,9 @@ define({
         id: "p3",
         nome: "Potenza di 10",
         icona: "./img/img_potenz.png",
+        testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+        immagine: "./pics/frascati-scienza/chisiamo.jpg",
+        video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -91,6 +100,9 @@ define({
         id: "p4",
         nome: "Potenza di 10",
         icona: "./img/img_potenz.png",
+        testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+        immagine: "./pics/frascati-scienza/chisiamo.jpg",
+        video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4",
         tappe: [{
             id: "2t1",
             id_ente: "asi"
@@ -115,6 +127,9 @@ define({
         id: "p5",
         nome: "Potenza di 10",
         icona: "./img/img_potenz.png",
+        testo: "3000 scienziati, 8 istituti di ricerca, 3 università. Questi sono i nostri numeri, ma in realtà siamo un unico elemento che si muove con un unico obiettivo: avvicinare la ricerca alla vita di ogni cittadino. La Regione Lazio, la Provincia di Roma, i comuni di Roma, Frascati e dei castelli romani sono il carbone che fa muovere il nostro treno. Un treno per raggiungere tante destinazioni. Le due più importanti in questo momento? Facilitare lo scambio di esperienze, risultati e strumenti tra ricercatori; stimolare la curiosità del grande pubblico e dei giovani in particolare, soprattutto per far comprendere loro come ogni ricerca abbia un impatto importante e qualificante sulle nostre vite.",
+        immagine: "./pics/frascati-scienza/chisiamo.jpg",
+        video: "http://www.frascatiscienza.it/wp-content/uploads/2013/08/proposta-frascati.mp4",
         tappe: [{
             id: "2t1",
             id_ente: "asi"

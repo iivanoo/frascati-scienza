@@ -1691,6 +1691,22 @@ margin-top: -40px;
 	
 }
 
+#tappe{
+	margin-left: 60%;
+	text-align: center;
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, rgb(242,199,87),rgb(238,185,21));
+	text-align: center;
+	color:white;
+	font-family: 'Dax';
+	padding: 10px;
+	margin-top: 2em;
+	box-shadow: 0 2px 0px rgba(0,0,0,.2);
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, rgb(218,91,91),rgb(174,23,23));	
+}
+
 .reset_but{
 
 margin-left: 60%;

@@ -62,7 +62,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/percor
           if(event.currentTarget.id === "cacciaList") {
             Backbone.history.navigate("caccia", {trigger: true});
           } else {
-            Backbone.history.navigate("percorso/" + event.currentTarget.id, {trigger: true});
+            Backbone.history.navigate("percorsoDetails/" + event.currentTarget.id, {trigger: true});
           }
         }
       });
