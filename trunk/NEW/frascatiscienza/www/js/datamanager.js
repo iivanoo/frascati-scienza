@@ -111,7 +111,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         // this.sponsors.fetch({reset: true});
       },
       checkDataReady: function() {
-        if ((this.enti.length > 0) && (this.eventi.length > 0) && (this.percorsi.length > 0)) { // && (this.sponsors.length > 0)) {
+        if ((this.enti.length > 0) && (this.eventi.length > 0) && (this.percorsi.length >= 0)) { // && (this.sponsors.length > 0)) {
           // quando scateno questo evento, allora ho fatto il fetch di tutti i dati
           // è dopo aver scatenato questo evento che faccio partire il routing
           this.trigger("dataReady");
@@ -273,13 +273,6 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             }
             modello.set("tappe", new TappePercorsi(modello.get("tappe")));
           }
-
-          /*        for(var i=0; i<data.sponsors.length; i++) {
-          currentElement = data.sponsors[i];
-          currentElement.__id = currentElement.id;
-          delete currentElement.id;
-          self.sponsors.create(currentElement);
-        }*/
         }
         setTimeout(function() {
           self.checkDataReady();
