@@ -2047,7 +2047,7 @@ margin-top: 5%;
 					-webkit-box-orient: vertical;
 					color: #fff;
 					line-height: 0.8em;
-			}	
+				}	
 				
 				
 				
@@ -2078,38 +2078,32 @@ margin-top: 5%;
 				
 				.bubble0{
 					position: absolute;
-					top:24.8%;
-					left:10.2%;
+					top: 24.8%;
+					left: 10%;
 				}
 				
 				.bubble1{
 					position: absolute;
-					top:24.6%;
-					left:10.2%;
+					top: 36.3%;
+					left:54.2%;
 				}
 				
 				.bubble2{
 					position: absolute;
-					top:40%;
-					left:60%;
+					top: 60.8%;
+					left: 28%;
 				}
 				
 				.bubble3{
 					position: absolute;
-					top:55%;
-					left:25%;
+					top: 86.1%;
+					left: 19.4%;
 				}
 				
 				.bubble4{
 					position: absolute;
-					top:86.1%;
-					left:19.4%;
-				}
-				
-				.bubble5{
-					position: absolute;
-					top:86.1%;
-					left:19.4%;
+					top: 79.5%;
+					left: 68.5%;
 				}
 				
 				._bubble0{
