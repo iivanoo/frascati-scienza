@@ -352,14 +352,14 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         });
         if(this.changePage(risultatoView)) {
           $("#backbutton").hide();
-          $(".button_list_element").css("visibility", "hidden");
-          $(".button_list_element_small").css("visibility", "hidden");
+          $(".button_list_element").css("visibility", "visible");
+          $(".button_list_element_small").css("visibility", "visible");
         }
       },
 
       cerca: function () {
         var page = new RicercaView();
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       showStructure: function () {

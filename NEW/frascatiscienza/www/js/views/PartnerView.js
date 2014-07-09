@@ -18,7 +18,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/partne
               "inafiaps": "http://www.ifsi-roma.inaf.it/ifsi/index.php?categoryid=25",
               "inafoar": "http://www.oa-roma.inaf.it/",
               "infn": "http://www.lnf.infn.it/",
-              "ingv": "www.ingv.it",
+              "ingv": "http://www.ingv.it",
               "sapienza": "http://www.scienzemfn.uniroma1.it/",
               "tor": "http://www.scienze.uniroma2.it/",
               "romatre": "http://www.smfn.uniroma3.it/",
