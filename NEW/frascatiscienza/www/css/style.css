@@ -1839,12 +1839,19 @@ margin-top: 5%;
 				
 				
 				#wrapper_tappe{
-					width: 100%;
+					/*width: 100%;
 					top:50%;
 					position: absolute;
 					display: block;
 					min-height: 122vw;
-					margin-top: -61vw;
+					margin-top: -61vw;*/
+					width: 100%;
+					/*top:50%;*/
+					position: absolute;
+					display: block;
+					/*min-height: 122vw;
+					margin-top: -61vw;*/
+					height: 100%;
 					background-image:url("../img/perc_b2.png");
 					background-position: 50% 50%;
 					background-size: 95% auto;
@@ -2018,12 +2025,19 @@ margin-top: 5%;
 				
 				
 				#wrapper_tappe{
-					width: 100%;
+					/*width: 100%;
 					top:50%;
 					position: absolute;
 					display: block;
 					min-height: 122vw;
-					margin-top: -61vw;
+					margin-top: -61vw;*/
+					width: 100%;
+					/*top:50%;*/
+					position: absolute;
+					display: block;
+					/*min-height: 122vw;
+					margin-top: -61vw;*/
+					height: 100%;
 					background-image:url("../img/perc_b2.png");
 					background-position: 50% 50%;
 					background-size: 95% auto;
