@@ -1825,11 +1825,13 @@ margin-top: 5%;
 				
 				#wrapper_percorsi{
 					width: 100%;
-					top:50%;
+					/*top:50%;*/
 					position: absolute;
 					display: block;
-					min-height: 122vw;
-					margin-top: -61vw;
+					/*min-height: 122vw;
+					margin-top: -61vw;*/
+					height: 100%;
+					/*margin-top: 44px;*/
 					background-image:url("../img/perc_b1.png");
 					background-position: 50% 50%;
 					background-size: 95% auto;
@@ -1995,12 +1997,20 @@ margin-top: 5%;
 				/* wrapper gruppo bolle con sfondo griglia bianca */
 				
 				#wrapper_percorsi{
-					width: 100%;
+					/*width: 100%;
 					top:50%;
 					position: absolute;
 					display: block;
 					min-height: 122vw;
-					margin-top: -61vw;
+					margin-top: -61vw;*/
+					width: 100%;
+					/*top:50%;*/
+					position: absolute;
+					display: block;
+					/*min-height: 122vw;
+					margin-top: -61vw;*/
+					height: 100%;
+					/*margin-top: 44px;*/
 					background-image:url("../img/perc_b1.png");
 					background-position: 50% 50%;
 					background-size: 95% auto;
