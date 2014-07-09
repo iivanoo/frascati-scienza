@@ -1913,38 +1913,38 @@ margin-top: 5%;
 
 				#cacciaList{
 					position: absolute;
-					top:20%;
-					left:5%;
+					top:-5%;
+					left:43%;
 				}
 				
 				.bubble0{
+					position: absolute;
+					top:15%;
+					left:5%;
+				}
+				
+				.bubble1{
 					position: absolute;
 					top:30%;
 					left:25%;
 				}
 				
-				.bubble1{
+				.bubble2{
 					position: absolute;
 					top:40%;
 					left:60%;
 				}
 				
-				.bubble2{
+				.bubble3{
 					position: absolute;
 					top:55%;
 					left:25%;
 				}
 				
-				.bubble3{
-					position: absolute;
-					top:80%;
-					left:15%;
-				}
-				
 				.bubble4{
 					position: absolute;
-					top:0%;
-					left:43%;
+					top:80%;
+					left:40%;
 				}				
 				
 				._bubble0{
