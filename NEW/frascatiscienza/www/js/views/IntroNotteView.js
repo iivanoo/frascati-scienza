@@ -11,7 +11,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/intron
       },
 
       initialize: function() {
-        this.title = "Notte dei ricercatori";
+        // notteRicercatori è una variabile globale che contiene i dati della notte.
+        this.title = notteRicercatori.titolo;
         // this.moving = false;
       }, /*
 
@@ -25,7 +26,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/intron
         // gestione nav bar
         this.updateNavbar();
 
-        $(this.el).html(this.template({}));
+        $(this.el).html(this.template(notteRicercatori));
         var el = $("#titlebar");
         el.removeClass();
         el.addClass("nottericerca_top");

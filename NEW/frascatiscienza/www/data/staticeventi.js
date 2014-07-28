@@ -1,257 +1,5 @@
 define({
    "eventi": [{
-      "id": "7",
-      "titolo": "Caccia al Tesoro della Scienza - Evento Lancio Notte dei Ricercatori - in collaborazione con Regione Lazio - Ass.to Cultura e Politiche Giovanili",
-      "timestamp": 1379775600,
-      "descrizione": "<i>1921. Una mattina di settembre, Roma si sveglia \u201cprivata\u201d di alcune menti brillanti che popolano\u00a0 laboratori e Universit\u00e0 della citt\u00e0. La polizia brancola nel buio! I giornalisti fiutano la notizia, immaginano scenari loschi e tutti i giornali titolano \u201c<b>La notte dei Ricercatori! Chi ha rapito gli scienziati?<\/b>\u201d.<\/i><i>Un giovane medico si mette alla caccia dei colpevoli. Vuole vederci chiaro, ma ha bisogno di aiuto.<\/i>\r\n\r\nGiovani investigatori aiuteranno a raccogliere gli indizi e risolvere il caso durante la Caccia al tesoro della Scienza.\r\n\r\nLa prima <b>video-caccia al tesoro<\/b> della Scienza! Un gioco a squadre, una passeggiata alla scoperta di alcuni dei luoghi di Roma dove si sono scritte le storie dei ricercatori che hanno fatto la Scienza Italiana.\r\n\r\nAd attendere gli investigatori al centro di Roma, <b>gadget per tutti e premi<\/b> per le migliori squadre.\r\n\r\nVenite a vivere questa avventura !\r\n<div><strong>\u00a0I premi:<\/strong><\/div>\r\n<div>- 10 Cellulari Samsung<\/div>\r\n<div>- 10 corsi di fotografia di un giorno<\/div>\r\n<div>- 10 kindle<\/div>\r\n<strong><a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/caccia-al-tesoro\/\">PARTECIPAZIONE SU PRENOTAZIONE<\/a> \u00a0\u00a0<\/strong>\r\n\r\n&nbsp;",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/caccia_scienza.jpg",
-      "macroevento": [193],
-      "tag": ["Giochi Scientifici", "Giovani"],
-      "idluogo": "7",
-      "organizzatori": ["frascati-scienza"],
-      "luogo": {
-         "lat": "41.9030844",
-         "lon": "12.47882960000004"
-      }
-   }, {
-      "id": "11",
-      "titolo": "Visite Ospedale Pediatrico Bambino Ges\u00f9",
-      "timestamp": 1379925000,
-      "descrizione": "L\u2019Ospedale Pediatrico Bambino Ges\u00f9 (OPBG) \u00e8 un Istituto di Ricovero e Cura a Carattere Scientifico (IRCCS), ed \u00e8 il pi\u00f9 importante Ospedale per l\u2019assistenza e la ricerca pediatrica nel nostro Paese.\r\n\r\nLa ricerca scientifica \u00e8 il fulcro della missione istituzionale dell\u2019OPBG e viene svolta, in ambito nazionale e internazionale a livelli clinico (con i pazienti), di base (nei moderni laboratori di ricerca) e traslazionale (trasferendo nella pratica clinica i successi della ricerca di base).\r\n\r\nL\u2019Ospedale Pediatrio Bambino Ges\u00f9 partecipa con entusiasmo alla <strong>Notte dei Ricercatori<\/strong>, aprendo alle scuole ed al pubblico esterno i propri Laboratori, normalmente non accessibili, ed organizzando incontri e laboratori con i propri ricercatori di livello internazionale.\r\n\r\n<strong>\u00a0PROGRAMMA per le Scuole Superiori<\/strong>\r\n\r\ndal 23 al 26 settembre dalle ore 8:30 alle ore 13:30\r\n\r\n<strong>Modulo I: Incontri interattivi con ricercatori clinici\u00a0<\/strong>\r\n\r\nIl modulo verter\u00e0 sul percorso professionale del ricercatore, mostrando gli aspetti pi\u00f9 appassionanti della vita del ricercatore e come il suo lavoro sia fondamentale in campo sanitario per il progresso delle possibilit\u00e0 di diagnosi e di terapia.\r\n\r\nCiascuna edizione del modulo avr\u00e0 durata di 50 minuti e presenter\u00e0 attraverso l\u2019ausilio di immagini, computer, filmati e testi le esperienze dirette di 3 ricercatori, oltre che\u00a0 i pi\u00f9 recenti progressi nella ricerca nel loro campo.\r\n\r\nCiascun modulo sar\u00e0 coordinato da un moderatore, che illustrer\u00e0 anche gli aspetti generali e le finalit\u00e0 della ricerca clinica in generale.\r\n\r\n<strong>Modulo II: La ricerca di laboratorio<\/strong>\r\n\r\nIl modulo prevede una visita guidata ed interattiva presso i laboratori di ricerca, suddividendo i visitatori in gruppi di 30 visitatori ciascuno, accompagnati dai ricercatori che spiegheranno l\u2019utilizzo e le finalit\u00e0 delle diverse apparecchiature presenti nel laboratorio e svolgeranno alcuni esperimenti.\r\n\r\nCiascun visita accoglier\u00e0, per 50 minuti, gli alunni di una classe.\r\n\r\nOrari di Ingresso ore 8:30, 9:00, 10:45 e 11:35 per classi di max 30 studenti ogni turno\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/visite_opbg.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Medie", "Scuole Superiori", "visite guidate"],
-      "idluogo": "11",
-      "organizzatori": ["frascati-scienza", "ospedale-pediatrico-bambin-gesu"],
-      "luogo": {
-         "lat": "41.897448",
-         "lon": "12.461232999999993"
-      }
-   }, {
-      "id": "99",
-      "titolo": "\u201cTerra chiama Sole\u201d - I. De Angelis e T. Bosco.",
-      "timestamp": 1379930400,
-      "descrizione": "<p style=\"text-align: left;\" align=\"center\"><b>Luned\u00ec 23 e Mercoled\u00ec 25\r\n<\/b>dalle ore 10:30- alle ore 12:00<\/p>\r\n<p style=\"text-align: left;\" align=\"center\"><b>Marted\u00ec 24 e Gioved\u00ec 26<\/b><\/p>\r\n<p style=\"text-align: left;\">dalle ore 14:30 \u2013 alle ore 16:00<b>\u00a0<\/b><\/p>\r\nIl Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0 \u00e8 consigliata per bambini delle elementari.\r\n\r\n<strong>\u00e8 necessaria la prenotazione sul sito http:\/\/sites.google.com\/site\/nottericerca<\/strong>",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
-      "macroevento": [193],
-      "tag": [],
-      "idluogo": "75",
-      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
-      "luogo": {
-         "lat": "41.85545159999999",
-         "lon": "12.467299300000036"
-      }
-   }, {
-      "id": "8",
-      "titolo": "Presentazione Notte dei Ricercatori e \"CoScienza al Verde\" - G. Mazzitelli",
-      "timestamp": 1379962800,
-      "descrizione": "<strong>\"CoScienza al Verde\"<\/strong>\r\n\r\nTerremoti, staminali, big data, energia, nucleare, inquinamento, <strong>sostenibilit\u00e0<\/strong>, malattie rare, ogm, miliardi di euro spesi per la ricerca spaziale, il bosone di Higgs, ITER!\r\n\r\nRicercare costa sempre di pi\u00f9 e solo i paesi ricchi possono permetterselo. In un periodo economicamente difficile \u00e8 ancora pi\u00f9 complesso capire quale debba essere il rapporto fra tecnologia e ricerca e quali siano le responsabilit\u00e0 dei <strong>ricercatori<\/strong>?\u00a0Nel presentare alcuni highlights del programma della settimana della scienza e Notte dei ricercatori 2013, <strong>Giovanni Mazzitelli,<\/strong> ricercatore INFN e presidente di Frascati Scienza, da sempre impegnato nella diffusione della cultura scientifca, affronter\u00e0 il problema delle rapporto fra ricerca, tecnologia e societ\u00e0 e le responsabilit\u00e0 del ricercatore.\r\n\r\n&nbsp;",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/presentazione.jpg",
-      "macroevento": [193],
-      "tag": ["Aperitivo Scientifico"],
-      "idluogo": "14",
-      "organizzatori": ["frascati-scienza"],
-      "luogo": {
-         "lat": "41.8982384",
-         "lon": "12.514250700000048"
-      }
-   }, {
-      "id": "13",
-      "titolo": "Musei aperti: Geologia, Mineralogia e Chimica - UNIVERSITA' SAPIENZA",
-      "timestamp": 1380013200,
-      "descrizione": "Il Museo di <strong>Mineralogia<\/strong> e\u2019 ospitato negli stessi locali del Dipartimento di Scienze della Terra all\u2019Universita\u2019 \u201cLa Sapienza\u201d. Attualmente e\u2019 il pi\u00f9 grande museo mineralogico universitario italiano. Ospita una raccolta di olotipi e paratipi di minerali; una raccolta di <strong>meteoriti<\/strong> in cui sono rappresentate quasi tutte le meteoriti italiane; una piccola collezione gemmologica e la dattylioteca ( raccolta di anelli) donata da papa Leone XIII. Nel piano interrato sono esposti un plastico geomorfologico del Lazio (scala 1:50000), un modello della struttura cristallina della calcite ingrandita un miliardo di volte e il modellino di un macchinario per il filtraggio dell\u2019allume.\r\n\r\nIl Museo di <strong>Geologia<\/strong> fu fondato nel 1873 da Giuseppe Ponzi con collezioni personali e con pezzi provenienti anche dal secentesco Museo Kircheriano. Nel 1935, dalla vecchia sede della Regia Universit\u00e0 a \u201cS.Ivo alla Sapienza\u201d, fu trasferito nella sua sede attuale presso la nuova Universit\u00e0 \u201d Sapienza\u201d . L\u2019edificio \u00e8 opera dell\u2019architetto Giovanni Michelucci. Il Museo, riaperto al pubblico dal 2000, ospita anche alcune collezioni ottocentesche di marmi antichi tra le quali la prestigiosa raccolta di Tommaso Belli che comprende circa 550 marmette, ritagliate da reperti di pietre ornamentali, venuti alla luce in occasione degli scavi di Roma antica. Ospita inoltre un\u2019altra ricca collezione, anch\u2019essa ottocentesca, la \u201cDodwell\u201d di oltre 1000 marmette quadrate, provenienti da varie localita\u2019 europee e, solo in parte, dagli scavi di Roma. I grandi temi della geologia e lo studio del Pianeta Terra sono introdotti all\u2019ingresso del Museo. Nella sala espositiva, mediante rocce, pannelli, modelli in gesso e altri strumenti interattivi e postazioni multimediali, vengono trattati diversi argomenti tra i quali: l\u2019evoluzione della Terra, i rischi geologici e le risorse che derivano dalla sua dinamica, l\u2019origine e la deformazione delle rocce, la registrazione del tempo in geologia.\r\n\r\nIl museo di <strong>Chimica<\/strong> espone e custodisce apparecchiature scientifiche, strumenti didattici, collezioni di sostanze chimiche e documenti appartenuti a S.Cannizzaro e al suo gruppo, e risalenti al 1872, quando Cannizzaro giunse a Roma e istitu\u00ec il Regio Istituto Chimico. Sono da menzionare anche crioscopi, ebullioscopi, termometri, antiche strumentazioni per l'analisi elementare, colorimetri, spettroscopi ele tavole a colori di von Schroeder relative ai primi impianti chimici. Vengono esposte anche alcune apparecchiature per la misura della radioattivit\u00e0, costruite da G.A. Blanc, che lavor\u00f2 presso lo stesso Istituto agli inizi del xx secolo. Il Museo espone anche apparecchiature chimiche pi\u00f9 recenti.\r\n\r\n&nbsp;\r\n\r\nIngressi ore: 9:00; 10:00 e 12:15 per gruppi di 25 studenti per ciascun turno.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/museo_mineralogia.jpg",
-      "macroevento": [193],
-      "tag": ["Mostre", "Scuole Superiori"],
-      "idluogo": "12",
-      "organizzatori": ["frascati-scienza", "universita-sapienza"],
-      "luogo": {
-         "lat": "41.9012278",
-         "lon": "12.512396299999978"
-      }
-   }, {
-      "id": "16",
-      "titolo": "Visite \"Macroarea di Scienze\": Dipartimenti di Biologia, Chimica, Fisica e Matematica -  UNIVERSITA' DI TOR VERGATA",
-      "timestamp": 1380013200,
-      "descrizione": "<strong>DIPARTIMENTO DI BIOLOGIA: LABORATORIO DI MICROBIOLOGIA<\/strong>\r\n\r\nIllustrazione di piastre Petri contenenti terreni di coltura diversi e di batteri luminescenti e mobili.\r\nColorazione di campioni per l'osservazione dei vetrini al microscopio.\r\nValutazione della crescita batterica in un terreno liquido, misurandone la torbidit\u00e0.\r\n\r\n<strong>DIPARTIMENTO DI FISICA: LABORATORIO DI FISICA SOLARE<\/strong>\r\n\r\nOsservazione dello spettro solare, della Cromosfera del Sole e del network magnetico mediante dei filtri a banda stretta nella riga H-alfa e Ca II K presenti sul banco ottico del laboratorio. Selezionando una piccola parte dello spettro elettromagnetico \u00e8 possibile osservare particolari strati dell'atmosfera solare.\r\n\r\n<strong>DIPARTIMENTO DI MATEMATICA: LABORATORIO DI MATEMATICA<\/strong>\r\n\r\nTramite esperienze opportunamente selezionate, verranno illustrati aspetti e applicazioni della ricerca attuale in matematica.\r\nVerr\u00e0 messo in evidenza come la matematica fornisca non solo un linguaggio in grado di descrivere molti fenomeni, ma anche una tecnica di soluzione fattiva alla base di strumenti di uso comune.\r\n\r\n<strong>DIPARTIMENTO DI SCIENZE E TECNOLOGIE CHIMICHE: LABORATORIO DI SPETTROMETRIA DI MASSA<\/strong>\r\n\r\nDescrizione del funzionamento delle apparecchiature e illustrazione dei vari campi di applicazione: ambientale, tossicologico-clinico, alimentare, chimica del restauro.\r\n\r\nIngresso\u00a0<strong>ore 9:00 \u00a0e ore 11:00 per 40 studenti<\/strong> ogni turno di visita.<strong>\r\n<\/strong>\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_lab.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Superiori", "visite guidate"],
-      "idluogo": "13",
-      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
-      "luogo": {
-         "lat": "41.8534197",
-         "lon": "12.605286999999976"
-      }
-   }, {
-      "id": "47",
-      "titolo": "Science Trips - Incontri ravvicinati - Biodiversit\u00e0 in un parco pubblico",
-      "timestamp": 1380013200,
-      "descrizione": "Percorso dedicato a studenti delle scuole <strong>primarie<\/strong>, un laboratorio interattivo e contemporaneamente un' escursione naturalistica promosso dalla <strong>Regione Lazio<\/strong>.\r\n\r\nAttraverso una serie di giochi di squadra e lavori di gruppo, i bambini avranno la possibilit\u00e0 di conoscere da vicino 10 degli organismi (piante e animali) che popolano il Prato. Potranno imparare a identificarli sulla base delle loro caratteristiche morfologiche e scoprire le loro caratteristiche ecologiche, le relazioni che ci legano a loro e il loro ruolo all\u2019interno dell\u2019ecosistema.\r\n\r\nLe attivit\u00e0 offrono la possibilit\u00e0 di guardare con \u201c<strong>occhi nuovi<\/strong>\u201d un ambiente che fa parte dell'esperienza e della vita quotidiana degli alunni.\r\n\r\nL'attivit\u00e0 accoglie 2 gruppi di 50 bambini ciascuno ed ha la durata di 3 ore circa.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/trip_parco.jpg",
-      "macroevento": [193],
-      "tag": ["Trips"],
-      "idluogo": "43",
-      "organizzatori": ["frascati-scienza", "regione-lazio"],
-      "luogo": {
-         "lat": "41.7636066",
-         "lon": "12.704426099999978"
-      }
-   }, {
-      "id": "46",
-      "titolo": "\"Gli straordinari abitanti delle isole. Tra mito e realt\u00e0\" \u2013 Prof.ssa Maria Rita Palombo - UNIVERSITA' SAPIENZA",
-      "timestamp": 1380020400,
-      "descrizione": "Elefanti ed ippopotami in miniatura, lucertole, tartarughe e varani giganti, piccoli cervi dalle corna baculate, \u00a0cani o alti come giraffe, civette grandi quanto un gufo o uccelli che hanno perso l\u2019attitudine al volo, bovini dalle corte zampe e dalla vista stereoscopica, insettivori giganti e roditori che cambiavano mole e modo di vita, forme strane ed affascinanti in cui \u00e8 difficile a volte riconoscere le pur note sembianze delle specie progenitrici, sono queste alcune delle strane creature che popolarono, e popolano, isole grandi o piccole, vicine o lontanissime dai continenti, distribuite in differenti aree geografiche dal Mediterraneo al Mar della Sonda, dal Mar Cinese meridionale al Pacifico orientale, al Mar Glaciale Artico. I loro progenitori continentali avevano raggiunto queste isole in volo, a nuoto o portati dalle correnti, attraversando bracci di mare pi\u00f9 o meno estesi, passando su ponti discontinui o lembi di piattaforma temporaneamente emersi..Le modalit\u00e0 di colonizzazione e di evoluzione delle specie pioniere variarono da isola a isola, o in una stessa isola in tempi diversi. Ne risulta che ogni fauna insulare ha una sua particolare fisionomia alla cui definizione concorrono vari fattori quali natura, estensione e stabilit\u00e0 della barriera, dimensioni, caratteri fisiografici e microclimatici dell\u2019isola, presenza di isole vicine, caratteri ecologici, etologici e consistenza numerica sia delle specie colonizzatrici sia di quelle eventualmente preesistenti. Le faune insulari, tuttavia, condividono caratteri peculiari, tali da consentire ad esempio il riconoscimento di isole \u201cfossili\u201d: sono poco diversificate, non bilanciate, costituite cio\u00e8 da un numero ridotto di taxa pi\u00f9 o meno sensibilmente modificati rispetto ai progenitori per taglia o per caratteri morfofunzionali.\r\n\r\nLa riduzione di mole dei mammiferi di grande taglia e l\u2019aumento di mole dei piccoli mammiferi, dei rettili, degli uccelli rapaci \u00e8 uno dei pi\u00f9 strani e stupefacenti fenomeni evolutivi. Un fenomeno che ha affascinato e continua ad suscitare crescente interesse tra biogegrafi, biologi evoluzionisti e paleontologi.\r\n\r\nL\u2019evoluzione dei proboscidati insulari, che sono fra i pi\u00f9 abili colonizzatori di isole \u00e8 che annoverano esempi estremi di miniaturizzazione, pu\u00f2 fornire chiave interpretativa alla comprensione delle dinamiche evolutive in ambiente insulare.\r\n\r\n300 posti disponibili.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/abitanti_isole.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Superiori", "Seminario"],
-      "idluogo": "26",
-      "organizzatori": ["frascati-scienza", "universita-sapienza"],
-      "luogo": {
-         "lat": "41.9006177",
-         "lon": "12.511967499999969"
-      }
-   }, {
-      "id": "49",
-      "titolo": "\"Il cuore artificiale pediatrico\u201d \u2013 Dr. Amodeo",
-      "timestamp": 1380049200,
-      "descrizione": "La costante riduzione della disponibilit\u00e0 di organi per il <strong>trapianto cardiaco<\/strong> ha indotto la sperimentazione\u00a0 di nuovi presidi per aiutare i piccoli pazienti affetti da miocardiopatia in fase terminale.\r\n\r\nLe nuove frontiere della ricerca attualmente sono orientate allo sviluppo di cuori artificiali miniaturizzati utilizzati sia come bridge a trapianto che come \u201c<strong>destination therapy<\/strong>\u201d ed alla rigenerazione miocardica con cellule staminali autologhe.",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/cuore_pediatrico.jpg",
-      "macroevento": [193],
-      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
-      "idluogo": "14",
-      "organizzatori": ["frascati-scienza", "ospedale-pediatrico-bambin-gesu", "assaggi-science-bookshop"],
-      "luogo": {
-         "lat": "41.8982384",
-         "lon": "12.514250700000048"
-      }
-   }, {
-      "id": "10",
-      "titolo": "Dottor Stranamore: un ricercatore in corsia",
-      "timestamp": 1380099600,
-      "descrizione": "All\u2019interno dell\u2019Ospedale Bambino Ges\u00f9, i <strong>piccoli pazienti<\/strong> potranno vivere una mattinata invertendo i ruoli con i ricercatori. Ai piccoli partecipanti verranno offerte delle esperienze all\u2019interno della ludoteca dell\u2019Ospedale.\r\n\r\nRealizzeranno esperimenti-gioco assieme ai ricercatori di <strong>Frascati Scienza<\/strong> e si trasformeranno loro stessi in ricercatori per un giorno.\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/DR_strange.jpg",
-      "macroevento": [193],
-      "tag": ["Laboratorio", "Scuole Elementari", "Scuole Medie"],
-      "idluogo": "11",
-      "organizzatori": ["frascati-scienza", "ospedale-pediatrico-bambin-gesu"],
-      "luogo": {
-         "lat": "41.897448",
-         "lon": "12.461232999999993"
-      }
-   }, {
-      "id": "51",
-      "titolo": "Science Trips -\u00a0La Mummia - Catacombe di San Sebastiano",
-      "timestamp": 1380099600,
-      "descrizione": "Percorso dedicato a studenti delle <strong>scuole medie<\/strong>, un'escursione naturalistica ed una visita guidata ad uno dei principali siti archeologici di Roma e del Lazio, le Catacombe di S. Sebastiano. Promosso dalla <strong>Regione Lazio<\/strong>.\r\n\r\nEsistono davvero le <strong>Mummie<\/strong>? Esseri vissuti migliaia di anni fa possono tornare in vita?\r\n\r\nCertamente no, ma grazie alle moderne tecnologie di estrazione del DNA possiamo in un certo senso fare un check up completo di questi nostri antenati ed imparare da queste conoscenze a ricostruire il percorso della nostra <strong>evoluzione<\/strong>.\r\n\r\nL'attivit\u00e0 accoglie un gruppo di 100 studenti delle scuole \u00a0medie ed ha la durata di circa 2 ore.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/trip_catacombe1.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Medie", "Trips"],
-      "idluogo": "44",
-      "organizzatori": ["frascati-scienza", "regione-lazio"],
-      "luogo": {
-         "lat": "41.8559592",
-         "lon": "12.516289799999981"
-      }
-   }, {
-      "id": "52",
-      "titolo": "Visita al nascente Orto Botanico e Mostra Evoluzione umana -  UNIVERSITA' DI TOR VERGATA",
-      "timestamp": 1380099600,
-      "descrizione": "<p style=\"text-align: justify;\" align=\"center\">Viaggio attraverso il mondo vegetale, esplorando diversi ambienti: l\u2019arboreto con specie autoctone della regione Lazio (macchia mediterranea, bosco mesofilo, lecceta) ed il giardino Biblico.<\/p>\r\nall'interno della visita: <strong>Mostra Evoluzione Umana<\/strong>\r\n\r\nVengono ripercorse le varie tappe dell'ominazione, a partire da circa 6 milioni di anni fa, quando la \u00a0linea evolutiva degli ominidi si \u00e8 separata da quella degli scimpanz\u00e9, fino alla nascita della nostra specie, Homo sapiens, attraverso una serie di calchi e di immagini dei reperti pi\u00f9 famosi.\r\n\r\n<strong>ore 9:00 e ore 11:00<\/strong>\u00a0<strong>una classe<\/strong>\u00a0per ogni turno di visita\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_ortob.jpg",
-      "macroevento": [193],
-      "tag": ["Mostre", "Scuole Superiori"],
-      "idluogo": "15",
-      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
-      "luogo": {
-         "lat": "41.8431636",
-         "lon": "12.647210200000018"
-      }
-   }, {
-      "id": "53",
-      "titolo": "International Cosmic Day - \"Dalla scoperta dei raggi cosmici alle missioni spaziali\" - P. Lipari - UNIVERSITA' SAPIENZA",
-      "timestamp": 1380106800,
-      "descrizione": "A 101 anni dalla scoperta dei raggi cosmici, il 25 settembre si celebra in tutto il mondo l'<strong>International Cosmic Day<\/strong>. Al termine di un seminario sui raggi cosmici e sui moderni esperimenti che li riguardano, gli studenti potranno eseguire misure e osservazioni.\r\n\r\nI risultati potranno essere discussi in videoconferenza con gli studenti di altri Paesi che partecipano all'evento.\r\n<a href=\"http:\/\/ippog.web.cern.ch\/resources\/2013\/international-cosmic-day-2013\/\">http:\/\/ippog.web.cern.ch\/resources\/2013\/international-cosmic-day-2013\/<\/a>\r\n\r\n300 posti disponibili.\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/international_cosmic1.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Superiori", "Seminario"],
-      "idluogo": "27",
-      "organizzatori": ["frascati-scienza", "universita-sapienza"],
-      "luogo": {
-         "lat": "41.9012278",
-         "lon": "12.512396299999978"
-      }
-   }, {
-      "id": "19",
-      "titolo": "La fisica incontra la letteratura: i libri di Luigi Malerba commentati da un Fisico - G. Organtini",
-      "timestamp": 1380135600,
-      "descrizione": "La scienza ha sempre ispirato molti artisti nella realizzazione delle loro opere e spesso ne ha influenzato la produzione. Anche <strong>Luigi Malerba<\/strong> sub\u00ec il fascino della fisica moderna, tanto da affermare che \"la vera avanguardia della letteratura \u00e8 la fisica\".\r\n\r\nNei suoi romanzi sono presenti alcuni brani che rappresentano delle perfette metafore del metodo scientifico, che forse l'Autore ha inserito nelle sue opere senza rendersene conto fino in fondo. I brani, letti da un attore, saranno commentati da <strong>Giovanni Organtini<\/strong>, del Dipartimento di Fisica della \"Sapienza\".",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/malerba.jpg",
-      "macroevento": [193],
-      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
-      "idluogo": "14",
-      "organizzatori": ["universita-sapienza", "frascati-scienza", "assaggi-science-bookshop"],
-      "luogo": {
-         "lat": "41.8982384",
-         "lon": "12.514250700000048"
-      }
-   }, {
-      "id": "91",
-      "titolo": "Scienza D.O.P. - Il gusto di sfatare miti, leggende ed enormi bufale - D. Galluzzo, A. Berlingeri",
-      "timestamp": 1380135600,
-      "descrizione": "Un divertente\u00a0excursus fra le idee \"<em>complottistiche\"<\/em> che hanno fatto storia e le virali leggende metropolitane di tutti i giorni. Dalle scie chimiche all'allunaggio, dai cerchi nel grano al cucciolo di drago.\r\nCercheremo assieme al pubblico di vederci chiaro su quanto c'\u00e8 di vero o di assurdo in ci\u00f2 che si insinua nella nostra cultura popolare: le <strong>Bufale<\/strong>.\r\n\r\nIntrattenimento con Musica dal vivo degli SlashPit e aperitivo per tutti a prezzo fisso!",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/scienza_dop.jpg",
-      "macroevento": [193],
-      "tag": [],
-      "idluogo": "16",
-      "organizzatori": ["frascati-scienza"],
-      "luogo": {
-         "lat": "41.8068309",
-         "lon": "12.68085689999998"
-      }
-   }, {
-      "id": "56",
-      "titolo": "Science Trips -\u00a0I Predatori delle Catacombe - Catacombe di San Callisto",
-      "timestamp": 1380186000,
-      "descrizione": "Percorso dedicato a studenti delle <strong>scuole medie<\/strong>, un'escursione naturalistica ed una visita guidata ad uno dei principali siti archeologici di Roma e del Lazio, le Catacombe di S. Callisto. Promosso dalla <strong>Regione Lazio<\/strong>.\r\n\r\nUn viaggio nel sottosuolo di <strong>Roma<\/strong> alla scoperta di un mondo che tutto \u00e8 tranne disabitato.\r\n\r\nI predatori di reperti e strutture archeologiche non sono altro che piccoli batteri che intaccano costantemente la superficie delle catacombe causandone il deterioramento. Impareremo a conoscere questi nemici <strong>microscopici<\/strong> e le tecniche utili a preservare il nostro patrimonio storico.\r\n\r\nL'attivit\u00e0 accoglie un gruppo di 100 studenti delle scuole \u00a0medie ed ha la durata di circa 2 ore.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/trip_catacombe2.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Medie", "Trips"],
-      "idluogo": "45",
-      "organizzatori": ["frascati-scienza", "regione-lazio"],
-      "luogo": {
-         "lat": "41.8563391",
-         "lon": "12.515756499999952"
-      }
-   }, {
-      "id": "21",
-      "titolo": "Visite al laboratorio di ecologia sperimentale e Acquacoltura -  UNIVERSITA' DI TOR VERGATA",
-      "timestamp": 1380186000,
-      "descrizione": "Il Laboratorio di <strong>Ecologia Sperimentale ed Acquacoltura<\/strong> \u00e8 ubicato in un parco dove la ricerca sperimentale si integra con la gestione delle risorse naturali secondo i principi dello sviluppo sostenibile.\r\n\r\nCon l\u2019aiuto di ricercatori del Dipartimento di Scienze e Tecnologie della Formazione, che operano nella didattica dell\u2019ecologia, gli studenti potranno scoprire la bellezza di alcuni <strong>ecosistemi<\/strong> naturali presenti nel parco e riflettere sull'importanza di innovativi sistemi di conservazione e gestione delle risorse naturali.\r\n\r\ningresso <strong>ore 9:00 e ore 11:00 una classe<\/strong> per turno di visita\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_acquacoltura.jpg",
-      "macroevento": [193],
-      "tag": ["Scuole Superiori", "visite guidate"],
-      "idluogo": "52",
-      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
-      "luogo": {
-         "lat": "41.851429",
-         "lon": "12.629232799999954"
-      }
-   }, {
-      "id": "22",
-      "titolo": "Gioco della Stelloca",
-      "timestamp": 1380186000,
-      "descrizione": "Scopriamo <strong>l\u2019Universo<\/strong> giocando. Questo \u00e8 lo scopo dello Stelloca. I bambini potranno scatenare tutta la loro fantasia e creativit\u00e0 nel disegno di pianeti, stelle e galassie. I loro <strong>disegni<\/strong> costituiranno un grande percorso a quiz, dove si fronteggeranno squadre agguerrite di astronomi in erba.\r\n\r\nInizio ore 8:30 per 80 bambini delle scuole elementari. Durata attivit\u00e0 2 ore.\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)\r\n\r\n&nbsp;",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/stelloca.jpg",
-      "macroevento": [193],
-      "tag": ["Giochi Scientifici", "Scuole Elementari"],
-      "idluogo": "18",
-      "organizzatori": ["frascati-scienza", "inaf"],
-      "luogo": {
-         "lat": "41.8061212",
-         "lon": "12.68045200000006"
-      }
-   }, {
       "id": "54",
       "titolo": "Dottor Stranamore: un ricercatore in corsia",
       "timestamp": 1380186000,
@@ -280,6 +28,62 @@ define({
          "lon": "12.512396299999978"
       }
    }, {
+      "id": "21",
+      "titolo": "Visite al laboratorio di ecologia sperimentale e Acquacoltura -  UNIVERSITA' DI TOR VERGATA",
+      "timestamp": 1380186000,
+      "descrizione": "Il Laboratorio di <strong>Ecologia Sperimentale ed Acquacoltura<\/strong> \u00e8 ubicato in un parco dove la ricerca sperimentale si integra con la gestione delle risorse naturali secondo i principi dello sviluppo sostenibile.\r\n\r\nCon l\u2019aiuto di ricercatori del Dipartimento di Scienze e Tecnologie della Formazione, che operano nella didattica dell\u2019ecologia, gli studenti potranno scoprire la bellezza di alcuni <strong>ecosistemi<\/strong> naturali presenti nel parco e riflettere sull'importanza di innovativi sistemi di conservazione e gestione delle risorse naturali.\r\n\r\ningresso <strong>ore 9:00 e ore 11:00 una classe<\/strong> per turno di visita\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_acquacoltura.jpg",
+      "macroevento": [193],
+      "tag": ["Scuole Superiori", "visite guidate"],
+      "idluogo": "52",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.851429",
+         "lon": "12.629232799999954"
+      }
+   }, {
+      "id": "56",
+      "titolo": "Science Trips -\u00a0I Predatori delle Catacombe - Catacombe di San Callisto",
+      "timestamp": 1380186000,
+      "descrizione": "Percorso dedicato a studenti delle <strong>scuole medie<\/strong>, un'escursione naturalistica ed una visita guidata ad uno dei principali siti archeologici di Roma e del Lazio, le Catacombe di S. Callisto. Promosso dalla <strong>Regione Lazio<\/strong>.\r\n\r\nUn viaggio nel sottosuolo di <strong>Roma<\/strong> alla scoperta di un mondo che tutto \u00e8 tranne disabitato.\r\n\r\nI predatori di reperti e strutture archeologiche non sono altro che piccoli batteri che intaccano costantemente la superficie delle catacombe causandone il deterioramento. Impareremo a conoscere questi nemici <strong>microscopici<\/strong> e le tecniche utili a preservare il nostro patrimonio storico.\r\n\r\nL'attivit\u00e0 accoglie un gruppo di 100 studenti delle scuole \u00a0medie ed ha la durata di circa 2 ore.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/trip_catacombe2.jpg",
+      "macroevento": [193],
+      "tag": ["Scuole Medie", "Trips"],
+      "idluogo": "45",
+      "organizzatori": ["frascati-scienza", "regione-lazio"],
+      "luogo": {
+         "lat": "41.8563391",
+         "lon": "12.515756499999952"
+      }
+   }, {
+      "id": "22",
+      "titolo": "Gioco della Stelloca",
+      "timestamp": 1380186000,
+      "descrizione": "Scopriamo <strong>l\u2019Universo<\/strong> giocando. Questo \u00e8 lo scopo dello Stelloca. I bambini potranno scatenare tutta la loro fantasia e creativit\u00e0 nel disegno di pianeti, stelle e galassie. I loro <strong>disegni<\/strong> costituiranno un grande percorso a quiz, dove si fronteggeranno squadre agguerrite di astronomi in erba.\r\n\r\nInizio ore 8:30 per 80 bambini delle scuole elementari. Durata attivit\u00e0 2 ore.\r\n\r\n&nbsp;\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/stelloca.jpg",
+      "macroevento": [193],
+      "tag": ["Giochi Scientifici", "Scuole Elementari"],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza", "inaf"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "24",
+      "titolo": "Astrokids - A spasso nel Sistema Solare",
+      "timestamp": 1380193200,
+      "descrizione": "Siete pronti a partire per un viaggio emozionante ai confini del sistema solare? Allacciate le cinture e lasciatevi accompagnare tra giganti gassosi, comete e satelliti! Ricercatori dell'INAF-IAPS, Istituto di Astrofisica e Planetologia Spaziali saranno le vostre guide in questo viaggio appassionante, insieme a lei imparerete ad orientarvi tra i pianeti e potrete costruire un asteroide con le vostre mani!\r\n\r\nInizio ore 11:00 per 30 bambini delle scuole elementari. Durata attivit\u00e0 1 ora.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/spasso_pianeti.jpg",
+      "macroevento": [193],
+      "tag": ["Giochi Scientifici", "Scuole Elementari"],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza", "inaf"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
       "id": "59",
       "titolo": "\"La chimica: una scienza centrale\" \u2013 Prof. Cesare Manetti - UNIVERSITA' SAPIENZA",
       "timestamp": 1380193200,
@@ -306,20 +110,6 @@ define({
       "luogo": {
          "lat": "41.9012278",
          "lon": "12.512396299999978"
-      }
-   }, {
-      "id": "24",
-      "titolo": "Astrokids - A spasso nel Sistema Solare",
-      "timestamp": 1380193200,
-      "descrizione": "Siete pronti a partire per un viaggio emozionante ai confini del sistema solare? Allacciate le cinture e lasciatevi accompagnare tra giganti gassosi, comete e satelliti! Ricercatori dell'INAF-IAPS, Istituto di Astrofisica e Planetologia Spaziali saranno le vostre guide in questo viaggio appassionante, insieme a lei imparerete ad orientarvi tra i pianeti e potrete costruire un asteroide con le vostre mani!\r\n\r\nInizio ore 11:00 per 30 bambini delle scuole elementari. Durata attivit\u00e0 1 ora.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:\r\n\r\nPaola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/spasso_pianeti.jpg",
-      "macroevento": [193],
-      "tag": ["Giochi Scientifici", "Scuole Elementari"],
-      "idluogo": "18",
-      "organizzatori": ["frascati-scienza", "inaf"],
-      "luogo": {
-         "lat": "41.8061212",
-         "lon": "12.68045200000006"
       }
    }, {
       "id": "58",
@@ -406,20 +196,6 @@ define({
          "lon": "12.680260999999973"
       }
    }, {
-      "id": "20",
-      "titolo": "Star Trek e la velocit\u00e0 della luce - A. Berlingeri , D. Galluzzo",
-      "timestamp": 1380222000,
-      "descrizione": "Un viaggio attraverso idee, fantasie e tecniche per esplorare la nostra <strong>galassia<\/strong>. Un approfondimento sulla fantascienza che ha fatto storia, le idee pionieristiche che sono divenute realt\u00e0, che hanno portato a sviluppare tecnologie che erano solo un <strong>sogno<\/strong> fino a qualche anno fa ed altre che lo saranno ancora per un po' di tempo.\r\n\r\nUn mondo pronto a stuzzicare il sogno innato nell'Uomo: <strong>esplorare<\/strong>.\r\n\r\nIntrattenimento con Musica dal vivo degli SlashPit e aperitivo per tutti a prezzo fisso!",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/star_trek.jpg",
-      "macroevento": [193],
-      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
-      "idluogo": "16",
-      "organizzatori": ["frascati-scienza"],
-      "luogo": {
-         "lat": "41.8068309",
-         "lon": "12.68085689999998"
-      }
-   }, {
       "id": "26",
       "titolo": "Presentazione del libro: Pianeti per caso - E. Perozzi, A. Celletti",
       "timestamp": 1380222000,
@@ -432,6 +208,20 @@ define({
       "luogo": {
          "lat": "41.8982384",
          "lon": "12.514250700000048"
+      }
+   }, {
+      "id": "20",
+      "titolo": "Star Trek e la velocit\u00e0 della luce - A. Berlingeri , D. Galluzzo",
+      "timestamp": 1380222000,
+      "descrizione": "Un viaggio attraverso idee, fantasie e tecniche per esplorare la nostra <strong>galassia<\/strong>. Un approfondimento sulla fantascienza che ha fatto storia, le idee pionieristiche che sono divenute realt\u00e0, che hanno portato a sviluppare tecnologie che erano solo un <strong>sogno<\/strong> fino a qualche anno fa ed altre che lo saranno ancora per un po' di tempo.\r\n\r\nUn mondo pronto a stuzzicare il sogno innato nell'Uomo: <strong>esplorare<\/strong>.\r\n\r\nIntrattenimento con Musica dal vivo degli SlashPit e aperitivo per tutti a prezzo fisso!",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/star_trek.jpg",
+      "macroevento": [193],
+      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
+      "idluogo": "16",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8068309",
+         "lon": "12.68085689999998"
       }
    }, {
       "id": "67",
@@ -490,6 +280,20 @@ define({
          "lon": "12.672862200000054"
       }
    }, {
+      "id": "31",
+      "titolo": "Science kids",
+      "timestamp": 1380292200,
+      "descrizione": "<div>Per rispondere alla grande interesse manifestato nelle scorse edizioni della Notte da parte di bambini in et\u00e0 scolare (6-12 anni) la sala Espositiva delle <strong>Scuderie Aldobrandini<\/strong>, propone uno spazio dedicato \u00a0ai pi\u00f9 piccoli e ai ragazzi delle scuole medie.<\/div>\r\n<div>Le attivit\u00e0 pratiche, tutte carattarizzate da un approccio partecipativo e interattivo in cui la sperimentazione diretta consente di trasmettere i principi del pensiero scientifico, sono realizzate in collaborazione con giovani ricercatori delle universit\u00e0 romane.<\/div>\r\n<div><\/div>\r\n<div><strong>Dalle 14:30 alle 16:30 scuole elementari<\/strong><\/div>\r\n<div>5 postazioni dedicate a tematiche diverse che propongono attivit\u00e0 della durata di 20 minuti circa.<\/div>\r\n<div>I bambini di et\u00e0 compresa tra i 6 e i 10 anni possono svolgere l'intero percorso della durata di 2 ore.<\/div>\r\n<div>Tra le attivit\u00e0 proposte un laboratorio multimediale sulle energie rinnovabili realizzato da ENI.<\/div>\r\n<div><\/div>\r\n<div><strong>Dalle 17:00 alle 19:00 scuole medie\u00a0<\/strong><\/div>\r\n<div>Le stesse postazioni diventano pi\u00f9 veloci e accolgono bambini e ragazzi interessati e curiosi con pillole di scienza fruibili all'interno di un percorso strutturato o libero della durata di circa 1 ora.<\/div>\r\n<div>Ore 17:00 \u00a0e ore 18:00 100 ragazzi per ogni turno.<\/div>\r\n<div><\/div>\r\n<div><\/div>\r\n<div>All'interno degli spazi sar\u00e0 esposta la mostra fotografica \"<strong>Comunicazione<\/strong>\", realizzata dalla scuola di fotografia 1.4 Photostudio in collaborazione con il Museo Storico della Comunicazione di Roma.<\/div>\r\n<div><\/div>\r\n<div><\/div>\r\n<div>Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:Paola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)\r\n\r\n<\/div>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/science_kids.jpg",
+      "macroevento": [193],
+      "tag": ["Laboratorio", "Scuole Elementari", "Scuole Medie"],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
       "id": "32",
       "titolo": "Spazio multimediale Energia \u2013 ENI",
       "timestamp": 1380292200,
@@ -532,34 +336,6 @@ define({
          "lon": "12.680260999999973"
       }
    }, {
-      "id": "31",
-      "titolo": "Science kids",
-      "timestamp": 1380292200,
-      "descrizione": "<div>Per rispondere alla grande interesse manifestato nelle scorse edizioni della Notte da parte di bambini in et\u00e0 scolare (6-12 anni) la sala Espositiva delle <strong>Scuderie Aldobrandini<\/strong>, propone uno spazio dedicato \u00a0ai pi\u00f9 piccoli e ai ragazzi delle scuole medie.<\/div>\r\n<div>Le attivit\u00e0 pratiche, tutte carattarizzate da un approccio partecipativo e interattivo in cui la sperimentazione diretta consente di trasmettere i principi del pensiero scientifico, sono realizzate in collaborazione con giovani ricercatori delle universit\u00e0 romane.<\/div>\r\n<div><\/div>\r\n<div><strong>Dalle 14:30 alle 16:30 scuole elementari<\/strong><\/div>\r\n<div>5 postazioni dedicate a tematiche diverse che propongono attivit\u00e0 della durata di 20 minuti circa.<\/div>\r\n<div>I bambini di et\u00e0 compresa tra i 6 e i 10 anni possono svolgere l'intero percorso della durata di 2 ore.<\/div>\r\n<div>Tra le attivit\u00e0 proposte un laboratorio multimediale sulle energie rinnovabili realizzato da ENI.<\/div>\r\n<div><\/div>\r\n<div><strong>Dalle 17:00 alle 19:00 scuole medie\u00a0<\/strong><\/div>\r\n<div>Le stesse postazioni diventano pi\u00f9 veloci e accolgono bambini e ragazzi interessati e curiosi con pillole di scienza fruibili all'interno di un percorso strutturato o libero della durata di circa 1 ora.<\/div>\r\n<div>Ore 17:00 \u00a0e ore 18:00 100 ragazzi per ogni turno.<\/div>\r\n<div><\/div>\r\n<div><\/div>\r\n<div>All'interno degli spazi sar\u00e0 esposta la mostra fotografica \"<strong>Comunicazione<\/strong>\", realizzata dalla scuola di fotografia 1.4 Photostudio in collaborazione con il Museo Storico della Comunicazione di Roma.<\/div>\r\n<div><\/div>\r\n<div><\/div>\r\n<div>Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire dal\u00a0<strong>2 settembre\u00a02013,\u00a0<\/strong>rivolgendosi dal luned\u00ec al venerd\u00ec dalle ore 9:00 alle ore 18:00 a:Paola Reati (<a href=\"mailto:scuole@frascatiscienza.it\">scuole@frascatiscienza.it<\/a>\u00a0-\u00a0mobile: +39 320 28 76 116)\r\n\r\n<\/div>",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/science_kids.jpg",
-      "macroevento": [193],
-      "tag": ["Laboratorio", "Scuole Elementari", "Scuole Medie"],
-      "idluogo": "18",
-      "organizzatori": ["frascati-scienza"],
-      "luogo": {
-         "lat": "41.8061212",
-         "lon": "12.68045200000006"
-      }
-   }, {
-      "id": "81",
-      "titolo": "CNR e INAF IAPS",
-      "timestamp": 1380294000,
-      "descrizione": "Gli Istituti del <strong>CNR<\/strong> (Consiglio Nazionale delle Ricerche) e lo <strong>IAPS<\/strong> dell\u2019INAF (Istituto Nazionale di Astrofisica) dell\u2019Area di Ricerca di Tor Vergata, partecipano alla Notte dei Ricercatori\u00a0 2013. Per l\u2019occasione l\u2019Area sar\u00e0 aperta al pubblico svolgendo le seguenti attivit\u00e0:\r\n\r\n&nbsp;\r\n\r\n<strong>Ore 15:00 \u2013 19:00<\/strong> Visite dei laboratori di Ricerca:\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR- IDASC di acustica in aria: \u201clo stato di conservazione dei manufatti artistici\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-IDASC di acustica subacquea: \u201calla scoperta dei fondali\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISM di microscopia: \u201cla scienza al microscopio\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISC: \u201cspettroscopia ottica\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISAC di misurazioni atmosferiche: \u201cil campo sperimentale\u201d (Lab. all\u2019aperto) *\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio IAPS della fisica del Plasma e del Mezzo Interplanetario\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio IAPS di Gravitazione Sperimentale\r\n\r\n&nbsp;\r\n\r\n<strong>Ore 15:00 \u2013 19:00<\/strong> A passeggio tra gli esperimenti:\r\n\r\n<b>ZooMarine, <\/b>i biologi di Zoomarine allestiranno uno stand, per illustrare al pubblico le attivit\u00e0 di ricerca del parco (in collaborazione CNR - Zoomarine)\r\n\r\n<strong>Esperimenti di Fisica dell\u2019atmosfera<\/strong>, spiegazione di elementi base della fisica dell\u2019atmosfera per arrivare a far comprendere alcuni concetti e fenomeni atmosferici (CNR-ISAC)\r\n\r\n<strong>Il robot che spiega la fisica<\/strong>, attraverso il robottino Lego sar\u00e0 possibile spiegare alcuni principi elementari dell\u2019ottica e semplici esempi di robotica (CNR-ISC)\r\n\r\n<strong>Il suono in 3D<\/strong>, esperimento che permetter\u00e0 ai partecipanti, attraverso la tridimensionalit\u00e0 del suono, di immergersi in ambienti sonori diversi da quello circostante \u2013 baster\u00e0 chiudere gli occhi, ascoltare e lasciarsi andare all\u2019immaginazione (CNR-IDASC)\r\n\r\n&nbsp;\r\n\r\n<strong>I sensori per l\u2019ambiente e la salute<\/strong>, i ricercatori mostreranno e spiegheranno alcuni dispositivi basati su sensori progettati e realizzati per essere utilizzati nel campo dell\u2019ambiente e della salute (CNR-IMM)\r\n\r\n<strong>Che scienziato sei?<\/strong>, un gioco che inviter\u00e0 grandi e piccoli in una virtuale citt\u00e0 delle scienze\u00a0 (CNR)\u00a0 in collaborazione con CreativaMente\r\n\r\n<strong>Le missioni spaziali di astrofisica delle alte energie<\/strong>, i ricercatori racconteranno l\u2019astrofisica delle alte energie, con l\u2019aiuto di modelli di sonde spaziali (tra cui Integral) e strumenti scientifici costruiti nel nostro Istituto per queste missioni (per esempio, per Agile) (INAF-IAPS)\r\n\r\n<strong>La spettroscopia e l\u2019esplorazione del Sistema Solare<\/strong>, esperimenti dal vivo sulla luce per spiegare la spettroscopia e come viene utilizzata per studiare il Sistema Solare da missioni come Venus Express, Dawn, Cassini-Huygens, Rosetta e Juno. I ricercatori useranno uno spettrometro da campo per studiare lo spettro dei vari materiali (INAF-IAPS)\r\n\r\n<strong>L\u2019astrofisica per tutti<\/strong>, attivit\u00e0 ed esperimenti adatti anche ai pi\u00f9 piccoli su temi della fisica e dell\u2019 astrofisica come Tutti i colori del Sole o Lo Zoo Infrarosso. Nel pomeriggio, sempre per i pi\u00f9 piccoli e per tutti gli appassionati di esplorazione spaziale, verranno realizzate delle prove di lancio di razzi giocattolo* con varie tecniche propulsive (INAF-IAPS)\u00a0 con il supporto dell\u2019Ing. Francesco Aloisi.\r\n\r\n<strong>FISICAST: La Teoria della Relativit\u00e0 in 20 minuti<\/strong>, perch\u00e9 Einstein \u00e8 cos\u00ec famoso? Ma la relativit\u00e0 \u00e8 proprio cos\u00ec difficile? E perch\u00e9 non si pu\u00f2 andare pi\u00f9 veloci della luce? Per rispondere a queste ed altre domande sulla Relativit\u00e0, una puntata live del podcast della fisica condotto da Gianluca Li Causi (INAF-IAPS)\r\n\r\nIl podcast FISICAST \u00e8 realizzato da: Riccardo Faccini, Gianluca Li Causi, Carlo Mancini, Giovanni Mazzitelli, Giovanni Organtini, Chiara Piselli.\r\n\r\n<strong>Il Sistema Solare, ieri oggi e domani<\/strong>, mostra fotografica che ripercorre le tappe dell\u2019affascinante viaggio compiuto attraverso il sistema solare dall\u2019occhio umano, prima da terra e poi nello spazio, attraverso una carrellata di immagini storiche, fornite dalla Fototeca SRPIF della NASA, messe a confronto con le pi\u00f9 recenti scoperte delle missioni interplanetarie (INAF-IAPS)\r\n\r\n<strong>90 anni di ricerca<\/strong>, saranno proiettati alcuni video per ripercorrere i momenti salienti di questi 90 anni del Cnr\r\n\r\n&nbsp;\r\n\r\n<strong>ingresso 15:00-17:00<\/strong>\u00a0150 visitatori\r\n\r\n<strong>ingresso 17:00- 19:00<\/strong>\u00a0150 visitatori\r\n\r\n<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\">INGRESSO SU PRENOTAZIONE<\/a>\r\n\r\n<strong>*<\/strong> In caso di avverse condizioni meteo le attivit\u00e0 segnalate potranno subire variazioni rispetto al programma\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n<p align=\"center\"><b><i>Per proseguire insieme la serata Artov propone\u2026.<\/i><\/b><\/p>\r\n<p align=\"center\"><b>\u00a0<\/b><b>sar\u00e0 a disposizione del pubblico il Bar e un servizio di ristoro per cenare<\/b><\/p>\r\n<p align=\"center\"><b><i>\u00a0<\/i><\/b><b>\u00a0<\/b><\/p>\r\n<b>Ore 19:00 - 20:00 Seminario su Scienza e Subacquea: Esplorando i fondali marini\u00a0 <\/b><b><\/b>\r\n\r\nIl seminario illustrer\u00e0 alcuni aspetti di fisiologia delle immersioni subacquee prolungate e gli strumenti per lo studio della morfologia dell\u2019ambiente marino (Cnr)\r\n\r\nevento proposto in collaborazione con Claudio Barchesi Ufficio Stampa Cnr\r\n\r\n<strong>INGRESSO LIBERO FINO A ESAURIMENTO POSTI<\/strong> (100 posti)\r\n\r\n&nbsp;\r\n\r\n<b>Ore 20:00 - 21:00 Astroconcerto Live di Angelina Yershova<\/b>:<b> VOYAGER CORDS<\/b><b><\/b>\r\n\r\n\u00e8 un invito ad esplorare il Sistema Solare ed espandere lo sguardo oltre i limiti fisici e tangibili dell\u2019Universo. VOYAGER CORDS \u00e8 un Astroconcerto Live di Angelina Yershova, pianista e compositrice di musica elettronica. La simbiosi fra\u00a0 il suono acustico del piano e la raffinata elaborazione elettronica che prende spunto dai dati raccolti da Voyager e dalle altre sonde spaziali, vi accompagner\u00e0 in questo magico viaggio, sonoro e visivo.\r\n<p style=\"text-align: left;\" align=\"center\">evento organizzato da INAF-IAPS e proposto grazie al supporto della\u00a0 Dr. M.L. Moriconi (ISAC-CNR)<b><\/b><\/p>\r\n<p style=\"text-align: left;\" align=\"center\"><strong>INGRESSO LIBERO FINO A ESAURIMENTO POSTI<\/strong>\u00a0(100 posti)<\/p>\r\nSar\u00e0 a disposizione del pubblico il Bar ad orario continuato e un servizio di ristoro, aperto dalle 19:30 alle 21:30.\r\n\r\n<b>L\u2019Area \u00e8 collegata alla stazione Metro Anagnina con l\u2019autobus 509 fino alle 19:30, dopo sar\u00e0 possibile usufruire di un servizio di trasporto (con Pullman) Anagnina - Tor Vergata, fino alle 24:00.<\/b>\r\n\r\n<b><span style=\"text-decoration: underline;\">Solo su prenotazione entro mercoled\u00ec mattina ore 12!<\/span><\/b>\r\n\r\n<b>Per le prenotazioni scrivere a:<\/b> <a href=\"mailto:in-formazione.artov@artov.rm.cnr.it\">in-formazione.artov@artov.rm.cnr.it<\/a>\r\n\r\nAl termine della serata un grande evento per celebrare i\u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/programma\/?bytarget=&amp;bycategory=&amp;bytown=&amp;byday=2013-09-27&amp;evs=101\"><b>90 anni del CNR<\/b>.\u00a0<b>Vai alla pagina dedicata all'evento.<\/a>\r\n",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ARTOV_visite.jpg",
-      "macroevento": [193],
-      "tag": ["Pubblico Generale", "Visite Centri di Ricerca"],
-      "idluogo": "37",
-      "organizzatori": ["cnr", "frascati-scienza", "inaf"],
-      "luogo": {
-         "lat": "41.839729",
-         "lon": "12.648944000000029"
-      }
-   }, {
       "id": "84",
       "titolo": "INGV",
       "timestamp": 1380294000,
@@ -586,6 +362,20 @@ define({
       "luogo": {
          "lat": "41.8207198",
          "lon": "12.672862200000054"
+      }
+   }, {
+      "id": "81",
+      "titolo": "CNR e INAF IAPS",
+      "timestamp": 1380294000,
+      "descrizione": "Gli Istituti del <strong>CNR<\/strong> (Consiglio Nazionale delle Ricerche) e lo <strong>IAPS<\/strong> dell\u2019INAF (Istituto Nazionale di Astrofisica) dell\u2019Area di Ricerca di Tor Vergata, partecipano alla Notte dei Ricercatori\u00a0 2013. Per l\u2019occasione l\u2019Area sar\u00e0 aperta al pubblico svolgendo le seguenti attivit\u00e0:\r\n\r\n&nbsp;\r\n\r\n<strong>Ore 15:00 \u2013 19:00<\/strong> Visite dei laboratori di Ricerca:\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR- IDASC di acustica in aria: \u201clo stato di conservazione dei manufatti artistici\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-IDASC di acustica subacquea: \u201calla scoperta dei fondali\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISM di microscopia: \u201cla scienza al microscopio\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISC: \u201cspettroscopia ottica\u201d\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio CNR-ISAC di misurazioni atmosferiche: \u201cil campo sperimentale\u201d (Lab. all\u2019aperto) *\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio IAPS della fisica del Plasma e del Mezzo Interplanetario\r\n\r\n\u2022\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Laboratorio IAPS di Gravitazione Sperimentale\r\n\r\n&nbsp;\r\n\r\n<strong>Ore 15:00 \u2013 19:00<\/strong> A passeggio tra gli esperimenti:\r\n\r\n<b>ZooMarine, <\/b>i biologi di Zoomarine allestiranno uno stand, per illustrare al pubblico le attivit\u00e0 di ricerca del parco (in collaborazione CNR - Zoomarine)\r\n\r\n<strong>Esperimenti di Fisica dell\u2019atmosfera<\/strong>, spiegazione di elementi base della fisica dell\u2019atmosfera per arrivare a far comprendere alcuni concetti e fenomeni atmosferici (CNR-ISAC)\r\n\r\n<strong>Il robot che spiega la fisica<\/strong>, attraverso il robottino Lego sar\u00e0 possibile spiegare alcuni principi elementari dell\u2019ottica e semplici esempi di robotica (CNR-ISC)\r\n\r\n<strong>Il suono in 3D<\/strong>, esperimento che permetter\u00e0 ai partecipanti, attraverso la tridimensionalit\u00e0 del suono, di immergersi in ambienti sonori diversi da quello circostante \u2013 baster\u00e0 chiudere gli occhi, ascoltare e lasciarsi andare all\u2019immaginazione (CNR-IDASC)\r\n\r\n&nbsp;\r\n\r\n<strong>I sensori per l\u2019ambiente e la salute<\/strong>, i ricercatori mostreranno e spiegheranno alcuni dispositivi basati su sensori progettati e realizzati per essere utilizzati nel campo dell\u2019ambiente e della salute (CNR-IMM)\r\n\r\n<strong>Che scienziato sei?<\/strong>, un gioco che inviter\u00e0 grandi e piccoli in una virtuale citt\u00e0 delle scienze\u00a0 (CNR)\u00a0 in collaborazione con CreativaMente\r\n\r\n<strong>Le missioni spaziali di astrofisica delle alte energie<\/strong>, i ricercatori racconteranno l\u2019astrofisica delle alte energie, con l\u2019aiuto di modelli di sonde spaziali (tra cui Integral) e strumenti scientifici costruiti nel nostro Istituto per queste missioni (per esempio, per Agile) (INAF-IAPS)\r\n\r\n<strong>La spettroscopia e l\u2019esplorazione del Sistema Solare<\/strong>, esperimenti dal vivo sulla luce per spiegare la spettroscopia e come viene utilizzata per studiare il Sistema Solare da missioni come Venus Express, Dawn, Cassini-Huygens, Rosetta e Juno. I ricercatori useranno uno spettrometro da campo per studiare lo spettro dei vari materiali (INAF-IAPS)\r\n\r\n<strong>L\u2019astrofisica per tutti<\/strong>, attivit\u00e0 ed esperimenti adatti anche ai pi\u00f9 piccoli su temi della fisica e dell\u2019 astrofisica come Tutti i colori del Sole o Lo Zoo Infrarosso. Nel pomeriggio, sempre per i pi\u00f9 piccoli e per tutti gli appassionati di esplorazione spaziale, verranno realizzate delle prove di lancio di razzi giocattolo* con varie tecniche propulsive (INAF-IAPS)\u00a0 con il supporto dell\u2019Ing. Francesco Aloisi.\r\n\r\n<strong>FISICAST: La Teoria della Relativit\u00e0 in 20 minuti<\/strong>, perch\u00e9 Einstein \u00e8 cos\u00ec famoso? Ma la relativit\u00e0 \u00e8 proprio cos\u00ec difficile? E perch\u00e9 non si pu\u00f2 andare pi\u00f9 veloci della luce? Per rispondere a queste ed altre domande sulla Relativit\u00e0, una puntata live del podcast della fisica condotto da Gianluca Li Causi (INAF-IAPS)\r\n\r\nIl podcast FISICAST \u00e8 realizzato da: Riccardo Faccini, Gianluca Li Causi, Carlo Mancini, Giovanni Mazzitelli, Giovanni Organtini, Chiara Piselli.\r\n\r\n<strong>Il Sistema Solare, ieri oggi e domani<\/strong>, mostra fotografica che ripercorre le tappe dell\u2019affascinante viaggio compiuto attraverso il sistema solare dall\u2019occhio umano, prima da terra e poi nello spazio, attraverso una carrellata di immagini storiche, fornite dalla Fototeca SRPIF della NASA, messe a confronto con le pi\u00f9 recenti scoperte delle missioni interplanetarie (INAF-IAPS)\r\n\r\n<strong>90 anni di ricerca<\/strong>, saranno proiettati alcuni video per ripercorrere i momenti salienti di questi 90 anni del Cnr\r\n\r\n&nbsp;\r\n\r\n<strong>ingresso 15:00-17:00<\/strong>\u00a0150 visitatori\r\n\r\n<strong>ingresso 17:00- 19:00<\/strong>\u00a0150 visitatori\r\n\r\n<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\">INGRESSO SU PRENOTAZIONE<\/a>\r\n\r\n<strong>*<\/strong> In caso di avverse condizioni meteo le attivit\u00e0 segnalate potranno subire variazioni rispetto al programma\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n<p align=\"center\"><b><i>Per proseguire insieme la serata Artov propone\u2026.<\/i><\/b><\/p>\r\n<p align=\"center\"><b>\u00a0<\/b><b>sar\u00e0 a disposizione del pubblico il Bar e un servizio di ristoro per cenare<\/b><\/p>\r\n<p align=\"center\"><b><i>\u00a0<\/i><\/b><b>\u00a0<\/b><\/p>\r\n<b>Ore 19:00 - 20:00 Seminario su Scienza e Subacquea: Esplorando i fondali marini\u00a0 <\/b><b><\/b>\r\n\r\nIl seminario illustrer\u00e0 alcuni aspetti di fisiologia delle immersioni subacquee prolungate e gli strumenti per lo studio della morfologia dell\u2019ambiente marino (Cnr)\r\n\r\nevento proposto in collaborazione con Claudio Barchesi Ufficio Stampa Cnr\r\n\r\n<strong>INGRESSO LIBERO FINO A ESAURIMENTO POSTI<\/strong> (100 posti)\r\n\r\n&nbsp;\r\n\r\n<b>Ore 20:00 - 21:00 Astroconcerto Live di Angelina Yershova<\/b>:<b> VOYAGER CORDS<\/b><b><\/b>\r\n\r\n\u00e8 un invito ad esplorare il Sistema Solare ed espandere lo sguardo oltre i limiti fisici e tangibili dell\u2019Universo. VOYAGER CORDS \u00e8 un Astroconcerto Live di Angelina Yershova, pianista e compositrice di musica elettronica. La simbiosi fra\u00a0 il suono acustico del piano e la raffinata elaborazione elettronica che prende spunto dai dati raccolti da Voyager e dalle altre sonde spaziali, vi accompagner\u00e0 in questo magico viaggio, sonoro e visivo.\r\n<p style=\"text-align: left;\" align=\"center\">evento organizzato da INAF-IAPS e proposto grazie al supporto della\u00a0 Dr. M.L. Moriconi (ISAC-CNR)<b><\/b><\/p>\r\n<p style=\"text-align: left;\" align=\"center\"><strong>INGRESSO LIBERO FINO A ESAURIMENTO POSTI<\/strong>\u00a0(100 posti)<\/p>\r\nSar\u00e0 a disposizione del pubblico il Bar ad orario continuato e un servizio di ristoro, aperto dalle 19:30 alle 21:30.\r\n\r\n<b>L\u2019Area \u00e8 collegata alla stazione Metro Anagnina con l\u2019autobus 509 fino alle 19:30, dopo sar\u00e0 possibile usufruire di un servizio di trasporto (con Pullman) Anagnina - Tor Vergata, fino alle 24:00.<\/b>\r\n\r\n<b><span style=\"text-decoration: underline;\">Solo su prenotazione entro mercoled\u00ec mattina ore 12!<\/span><\/b>\r\n\r\n<b>Per le prenotazioni scrivere a:<\/b> <a href=\"mailto:in-formazione.artov@artov.rm.cnr.it\">in-formazione.artov@artov.rm.cnr.it<\/a>\r\n\r\nAl termine della serata un grande evento per celebrare i\u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/programma\/?bytarget=&amp;bycategory=&amp;bytown=&amp;byday=2013-09-27&amp;evs=101\"><b>90 anni del CNR<\/b>.\u00a0<b>Vai alla pagina dedicata all'evento.<\/a>\r\n",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ARTOV_visite.jpg",
+      "macroevento": [193],
+      "tag": ["Pubblico Generale", "Visite Centri di Ricerca"],
+      "idluogo": "37",
+      "organizzatori": ["cnr", "frascati-scienza", "inaf"],
+      "luogo": {
+         "lat": "41.839729",
+         "lon": "12.648944000000029"
       }
    }, {
       "id": "86",
@@ -658,20 +448,6 @@ define({
          "lon": "12.678936000000022"
       }
    }, {
-      "id": "102",
-      "titolo": "Le Stelle in Comune ",
-      "timestamp": 1380304800,
-      "descrizione": "<div>Spettacoli al planetario digitale gonfiabile.<\/div>\r\n<div><\/div>\r\n<div>Ingresso ogni ora per gruppi di 40 persone.<\/div>\r\n<div>\r\n<div><\/div>\r\n<div>Prenotazioni Planetario tramite email a\u00a0<a href=\"mailto:segreteria@ataonweb.it\">segreteria@ataonweb.it<\/a>\u00a0\u00a0indicare l\u2019orario richiesto dello spettacolo e il numero dei partecipanti.<\/div>\r\n<div>Le prenotazioni si chiuderanno <strong>gioved\u00ec 26 settembre<\/strong><\/div>\r\n<\/div>",
-      "immagine": "",
-      "macroevento": [193],
-      "tag": ["Spettacolo"],
-      "idluogo": "78",
-      "organizzatori": ["associazione-tuscolana-di-astronomia-ata"],
-      "luogo": {
-         "lat": "41.806677",
-         "lon": "12.680260999999973"
-      }
-   }, {
       "id": "36",
       "titolo": "Le particelle medicali",
       "timestamp": 1380304800,
@@ -686,18 +462,32 @@ define({
          "lon": "12.672862200000054"
       }
    }, {
-      "id": "82",
-      "titolo": "INAF OAR e ASI ASDC",
-      "timestamp": 1380308400,
-      "descrizione": "L\u2019osservazione del cielo rimane una delle attivit\u00e0 pi\u00f9 affascinanti nelle serate estive. Ancora una volta l\u2019Osservatorio Astronomico di Roma mette a disposizione gratuitamente i suoi strumenti per un\u2019altra Notte che si preannuncia ricca di appuntamenti con le stelle e con lo spazio.\r\n\r\n<strong>\u00a0PROGRAMMA Venerd\u00ec 27 settembre<\/strong>\r\n\r\n<strong><strong>Astronomo<\/strong>\u00a0per una Notte<\/strong>\r\n\r\n<strong>dalle ore 19:00 alle ore 21:30 - \u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>INGRESSO SU PRENOTAZIONE<\/strong><\/a><\/strong>\r\n\r\n<strong><strong><\/strong><\/strong>Attivit\u00e0 dedicate a bambini e in parallelo intrattenimento per adulti con un programma di visite al museo\/conferenza e\u00a0 \u00a0osservazioni al telescopio.\r\n\r\nIl numero massimo di partecipanti \u00e8 definito come segue:\r\n\r\n70 bambini <strong>Prenotazione obbligatoria compilando<\/strong> il <a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>modulo dedicato<\/strong><\/a>\r\n50 adulti\/accompagnatori non \u00e8 necessaria la prenotazione\r\n\r\n<strong>Visite guidate - Cupola degli Scozzesi<\/strong>\r\n\r\n<strong>dalle ore 19:30 \u00a0alle ore 23:00\u00a0\u00a0- \u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>INGRESSO SU PRENOTAZIONE<\/strong><\/a><\/strong>\r\n\r\nIngressi ogni 30 minuti per gruppi di 25 persone\r\n<div>\r\n\r\n<strong>Ciclo di Conferenze - \u00a0Aula Gratton<\/strong>\r\n\r\n<strong>dalle ore 21:30 alle ore 23:15<\/strong>\u00a0 <strong>Ingresso libero<\/strong>\r\n\r\n<\/div>\r\n<div>\r\n\r\n<strong>\u00a0 \u00a0<\/strong>- Le attivit\u00e0 ASI-ASDC - Dott.ssa Barbara Negri\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0- Sulla scia di una cometa: Rosetta - Ing. Mario Salatti\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0- GAIA, il cielo in 6D - Dott. Giuliano Giuffrida\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0-\u00a0NUSTAR: una nuova finestra sull\u2019Universo - Dott. Matteo Perri\r\n\r\n<strong>Osservazioni astronomiche organizzate nel parco lato ovest<\/strong>\r\n\r\n<strong>dalle ore 21:30 alle ore 24:00 \u00a0- Ingresso Libero<\/strong>\r\n\r\n<\/div>\r\nCi sar\u00e0 la possibilit\u00e0 di parcheggiare all\u2019interno dell\u2019Osservatorio fino ad esaurimento posti.\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/OAR_visite.jpg",
+      "id": "102",
+      "titolo": "Le Stelle in Comune ",
+      "timestamp": 1380304800,
+      "descrizione": "<div>Spettacoli al planetario digitale gonfiabile.<\/div>\r\n<div><\/div>\r\n<div>Ingresso ogni ora per gruppi di 40 persone.<\/div>\r\n<div>\r\n<div><\/div>\r\n<div>Prenotazioni Planetario tramite email a\u00a0<a href=\"mailto:segreteria@ataonweb.it\">segreteria@ataonweb.it<\/a>\u00a0\u00a0indicare l\u2019orario richiesto dello spettacolo e il numero dei partecipanti.<\/div>\r\n<div>Le prenotazioni si chiuderanno <strong>gioved\u00ec 26 settembre<\/strong><\/div>\r\n<\/div>",
+      "immagine": "",
       "macroevento": [193],
-      "tag": ["Pubblico Generale", "Visite Centri di Ricerca"],
-      "idluogo": "59",
-      "organizzatori": ["frascati-scienza", "inaf"],
+      "tag": ["Spettacolo"],
+      "idluogo": "78",
+      "organizzatori": ["associazione-tuscolana-di-astronomia-ata"],
       "luogo": {
-         "lat": "41.8132916",
-         "lon": "12.70734630000004"
+         "lat": "41.806677",
+         "lon": "12.680260999999973"
+      }
+   }, {
+      "id": "92",
+      "titolo": "Ricerche tecnologiche e innovative per l'arte. Un appuntamento a Evora",
+      "timestamp": 1380308400,
+      "descrizione": "\"Ricerche tecnologiche e innovative per l'arte. Un appuntamento a Evora\" a cura di <strong>Michela Botticelli<\/strong>.\r\nIl video \u00e8 stato realizzato con il finanziamento per dottorandi previsto dal Premio di comunicazione della scienza \"as<strong>SAGGI<\/strong> di buon sapere 2013\".\r\nLo scopo del filmato \u00e8 divulgare le conoscenze acquisite durante l'esperienza \"InArt\", mediante immagini e interviste ai relatori.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/assaggi_evora.jpg",
+      "macroevento": [193],
+      "tag": [],
+      "idluogo": "65",
+      "organizzatori": ["frascati-scienza", "assaggi-science-bookshop"],
+      "luogo": {
+         "lat": "41.8982384",
+         "lon": "12.514250700000048"
       }
    }, {
       "id": "70",
@@ -714,18 +504,18 @@ define({
          "lon": "12.68085689999998"
       }
    }, {
-      "id": "92",
-      "titolo": "Ricerche tecnologiche e innovative per l'arte. Un appuntamento a Evora",
+      "id": "82",
+      "titolo": "INAF OAR e ASI ASDC",
       "timestamp": 1380308400,
-      "descrizione": "\"Ricerche tecnologiche e innovative per l'arte. Un appuntamento a Evora\" a cura di <strong>Michela Botticelli<\/strong>.\r\nIl video \u00e8 stato realizzato con il finanziamento per dottorandi previsto dal Premio di comunicazione della scienza \"as<strong>SAGGI<\/strong> di buon sapere 2013\".\r\nLo scopo del filmato \u00e8 divulgare le conoscenze acquisite durante l'esperienza \"InArt\", mediante immagini e interviste ai relatori.",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/assaggi_evora.jpg",
+      "descrizione": "L\u2019osservazione del cielo rimane una delle attivit\u00e0 pi\u00f9 affascinanti nelle serate estive. Ancora una volta l\u2019Osservatorio Astronomico di Roma mette a disposizione gratuitamente i suoi strumenti per un\u2019altra Notte che si preannuncia ricca di appuntamenti con le stelle e con lo spazio.\r\n\r\n<strong>\u00a0PROGRAMMA Venerd\u00ec 27 settembre<\/strong>\r\n\r\n<strong><strong>Astronomo<\/strong>\u00a0per una Notte<\/strong>\r\n\r\n<strong>dalle ore 19:00 alle ore 21:30 - \u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>INGRESSO SU PRENOTAZIONE<\/strong><\/a><\/strong>\r\n\r\n<strong><strong><\/strong><\/strong>Attivit\u00e0 dedicate a bambini e in parallelo intrattenimento per adulti con un programma di visite al museo\/conferenza e\u00a0 \u00a0osservazioni al telescopio.\r\n\r\nIl numero massimo di partecipanti \u00e8 definito come segue:\r\n\r\n70 bambini <strong>Prenotazione obbligatoria compilando<\/strong> il <a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>modulo dedicato<\/strong><\/a>\r\n50 adulti\/accompagnatori non \u00e8 necessaria la prenotazione\r\n\r\n<strong>Visite guidate - Cupola degli Scozzesi<\/strong>\r\n\r\n<strong>dalle ore 19:30 \u00a0alle ore 23:00\u00a0\u00a0- \u00a0<a href=\"http:\/\/www.frascatiscienza.it\/pagine\/notte-europea-dei-ricercatori-2013\/prenotazioni\/notte-dei-ricercatori\/\" target=\"_blank\"><strong>INGRESSO SU PRENOTAZIONE<\/strong><\/a><\/strong>\r\n\r\nIngressi ogni 30 minuti per gruppi di 25 persone\r\n<div>\r\n\r\n<strong>Ciclo di Conferenze - \u00a0Aula Gratton<\/strong>\r\n\r\n<strong>dalle ore 21:30 alle ore 23:15<\/strong>\u00a0 <strong>Ingresso libero<\/strong>\r\n\r\n<\/div>\r\n<div>\r\n\r\n<strong>\u00a0 \u00a0<\/strong>- Le attivit\u00e0 ASI-ASDC - Dott.ssa Barbara Negri\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0- Sulla scia di una cometa: Rosetta - Ing. Mario Salatti\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0- GAIA, il cielo in 6D - Dott. Giuliano Giuffrida\r\n\r\n<\/div>\r\n<div>\r\n\r\n\u00a0 \u00a0-\u00a0NUSTAR: una nuova finestra sull\u2019Universo - Dott. Matteo Perri\r\n\r\n<strong>Osservazioni astronomiche organizzate nel parco lato ovest<\/strong>\r\n\r\n<strong>dalle ore 21:30 alle ore 24:00 \u00a0- Ingresso Libero<\/strong>\r\n\r\n<\/div>\r\nCi sar\u00e0 la possibilit\u00e0 di parcheggiare all\u2019interno dell\u2019Osservatorio fino ad esaurimento posti.\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/OAR_visite.jpg",
       "macroevento": [193],
-      "tag": [],
-      "idluogo": "65",
-      "organizzatori": ["frascati-scienza", "assaggi-science-bookshop"],
+      "tag": ["Pubblico Generale", "Visite Centri di Ricerca"],
+      "idluogo": "59",
+      "organizzatori": ["frascati-scienza", "inaf"],
       "luogo": {
-         "lat": "41.8982384",
-         "lon": "12.514250700000048"
+         "lat": "41.8132916",
+         "lon": "12.70734630000004"
       }
    }, {
       "id": "38",
@@ -784,20 +574,6 @@ define({
          "lon": "12.512396299999978"
       }
    }, {
-      "id": "37",
-      "titolo": "Bones: scene dal crimine",
-      "timestamp": 1380315600,
-      "descrizione": "Venite a scoprire e sperimentare come <strong>l'antropologo<\/strong> analizza i resti umani con lo scopo di ricostruirne l'identit\u00e0.\r\n\r\nNelle indagini giudiziarie lo studio delle ossa presenti sulla \"scena del crimine\", permette di risalire alla vittima, alle sue generalit\u00e0 (sesso, et\u00e0 alla morte, provenienza geografica, statura, attivit\u00e0 fisica\u2026) e ad accertare le ipotetiche cause della sua <strong>morte<\/strong>.\r\n\r\nInfine, la ricostruzione facciale tridimensionale rende possibile restituire un volto utile per <strong>l\u2019identificazione<\/strong> personale.\r\n\r\n&nbsp;\r\n\r\nIntrattenimento con Musica dal vivo a cura del duo Jazz Gianluca Pagliaricci\u00a0e\u00a0Emiliano Pizzicannella\r\n\r\nAperitivo per tutti a prezzo fisso!",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/bones.jpg",
-      "macroevento": [193],
-      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
-      "idluogo": "16",
-      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
-      "luogo": {
-         "lat": "41.8068309",
-         "lon": "12.68085689999998"
-      }
-   }, {
       "id": "89",
       "titolo": "Osservatorio Astronomico di Gorga",
       "timestamp": 1380315600,
@@ -810,6 +586,20 @@ define({
       "luogo": {
          "lat": "41.6556666",
          "lon": "13.107466599999952"
+      }
+   }, {
+      "id": "37",
+      "titolo": "Bones: scene dal crimine",
+      "timestamp": 1380315600,
+      "descrizione": "Venite a scoprire e sperimentare come <strong>l'antropologo<\/strong> analizza i resti umani con lo scopo di ricostruirne l'identit\u00e0.\r\n\r\nNelle indagini giudiziarie lo studio delle ossa presenti sulla \"scena del crimine\", permette di risalire alla vittima, alle sue generalit\u00e0 (sesso, et\u00e0 alla morte, provenienza geografica, statura, attivit\u00e0 fisica\u2026) e ad accertare le ipotetiche cause della sua <strong>morte<\/strong>.\r\n\r\nInfine, la ricostruzione facciale tridimensionale rende possibile restituire un volto utile per <strong>l\u2019identificazione<\/strong> personale.\r\n\r\n&nbsp;\r\n\r\nIntrattenimento con Musica dal vivo a cura del duo Jazz Gianluca Pagliaricci\u00a0e\u00a0Emiliano Pizzicannella\r\n\r\nAperitivo per tutti a prezzo fisso!",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/bones.jpg",
+      "macroevento": [193],
+      "tag": ["Aperitivo Scientifico", "Pubblico Generale"],
+      "idluogo": "16",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8068309",
+         "lon": "12.68085689999998"
       }
    }, {
       "id": "72",
@@ -1428,20 +1218,6 @@ define({
          "lon": "12.672862200000054"
       }
    }, {
-      "id": "155",
-      "titolo": "Hyperon production study in pp collisions at \u221as = 2.76, 7 and 8 TeV in the ALICE experiment.",
-      "timestamp": 1386340200,
-      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/12\/Diaz1.jpg\"><img class=\"alignnone size-full wp-image-12371\" alt=\"Diaz1\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/12\/Diaz1.jpg\" width=\"720\" height=\"960\" \/><\/a>",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/logo_infn.jpg",
-      "macroevento": [],
-      "tag": [],
-      "idluogo": "35",
-      "organizzatori": ["infn-2"],
-      "luogo": {
-         "lat": "41.8642178",
-         "lon": "12.470738100000062"
-      }
-   }, {
       "id": "144",
       "titolo": "From the Higgs to Dark Matter",
       "timestamp": 1386340200,
@@ -1454,6 +1230,20 @@ define({
       "luogo": {
          "lat": "41.85545159999999",
          "lon": "12.467299300000036"
+      }
+   }, {
+      "id": "155",
+      "titolo": "Hyperon production study in pp collisions at \u221as = 2.76, 7 and 8 TeV in the ALICE experiment.",
+      "timestamp": 1386340200,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/12\/Diaz1.jpg\"><img class=\"alignnone size-full wp-image-12371\" alt=\"Diaz1\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/12\/Diaz1.jpg\" width=\"720\" height=\"960\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/logo_infn.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "35",
+      "organizzatori": ["infn-2"],
+      "luogo": {
+         "lat": "41.8642178",
+         "lon": "12.470738100000062"
       }
    }, {
       "id": "152",
@@ -1646,7 +1436,7 @@ define({
       "macroevento": [],
       "tag": [],
       "idluogo": "77",
-      "organizzatori": ["esa-esrin", "inaf", "eta-carinae", "comune-di-frascati", "egovirgo", "g-eco", "associazione-culturale-scienzimpresa", "cnr", "universita-sapienza", "regione-lazio", "infn-2", "associazione-tuscolana-di-astronomia-ata", "libreria-assaggi-2", "frascati-scienza", "universita-tor-vergata", "accatagliato", "enea", "ospedale-pediatrico-bambin-gesu", "istituto-villa-sora", "ingv-2", "ludis", "universita-bocconi", "asi", "universita-roma-tre", "assaggi-science-bookshop"],
+      "organizzatori": ["associazione-culturale-scienzimpresa", "ospedale-pediatrico-bambin-gesu", "universita-sapienza", "universita-roma-tre", "universita-tor-vergata", "egovirgo", "ingv-2", "infn-2", "esa-esrin", "enea", "associazione-tuscolana-di-astronomia-ata", "ludis", "g-eco", "universita-bocconi", "libreria-assaggi-2", "eta-carinae", "inaf", "istituto-villa-sora", "regione-lazio", "assaggi-science-bookshop", "accatagliato", "cnr", "asi", "frascati-scienza", "comune-di-frascati"],
       "luogo": {
          "lat": "41.806677",
          "lon": "12.680260999999973"
@@ -2478,6 +2268,20 @@ define({
          "lon": "12.707444900000041"
       }
    }, {
+      "id": "228",
+      "titolo": "Search for Baryon Number Violation at European Spallation Source (ESS)",
+      "timestamp": 1403622000,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/Kamyshkov.jpeg\"><img class=\"alignnone size-full wp-image-12910\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/Kamyshkov.jpeg\" alt=\"Kamyshkov\" width=\"480\" height=\"640\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/logo_infn.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "133",
+      "organizzatori": [],
+      "luogo": {
+         "lat": "41.8207198",
+         "lon": "12.672862200000054"
+      }
+   }, {
       "id": "221",
       "titolo": "Search for Baryon Number Violation at European Spallation Source (ESS)",
       "timestamp": 1403622000,
@@ -2505,6 +2309,1537 @@ define({
          "lat": "41.9032068",
          "lon": "12.514659199999983"
       }
+   }, {
+      "id": "229",
+      "titolo": "Ten years of Cassini-VIMS at Saturn",
+      "timestamp": 1404212400,
+      "descrizione": "On July 1st 2004, after a 90 minutes-long orbital insertion manoeuvre, the Cassini-Huygens mission has started the exploration of the Saturn system. After ten years from that event, an overview of the Cassini mission, including the more relevant results obtained by VIMS, the Visual and Infrared Mapping Spectrometer, is given. VIMS is an imaging spectrometer covering the 0.35-5.1 \u00b5m spectral range, whose VIS channel was realized in our institute under Angioletta Coradini's guide. VIMS scientific objectives are mainly focused on Saturn and Titan atmospheres, Titan surface composition through narrowband spectral windows in the infrared range, identification of compositional units and surface properties of satellites and ring particles. The principal results obtained by the IAPS VIMS team on these arguments shall be discussed. Scheduled to terminate in 2017, Cassini will complete its mission by flying above Saturn's poles and through the D ring, allowing us to achieve the most comprehensive view of the gaseous giant planet and surrounding environment.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/logo-iaps-big.png",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "92",
+      "organizzatori": ["inaf"],
+      "luogo": {
+         "lat": "41.839729",
+         "lon": "12.648944000000029"
+      }
+   }, {
+      "id": "232",
+      "titolo": "RMQ14: Commedia Quantistica Relativistica",
+      "timestamp": 1404320400,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/RMQ14a.jpg\"><img class=\"size-full wp-image-12940 aligncenter\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/RMQ14a.jpg\" alt=\"RMQ14a\" width=\"454\" height=\"640\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/RMQ_13.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "136",
+      "organizzatori": ["universita-sapienza"],
+      "luogo": {
+         "lat": "41.9011251",
+         "lon": "12.51615419999996"
+      }
+   }, {
+      "id": "230",
+      "titolo": "Observation of the Resonant Coherent Excitation of highly-CHARGED IONS in Crystals",
+      "timestamp": 1404399600,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/Ananyeva2.jpg\"><img class=\"alignnone size-full wp-image-12915\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/Ananyeva2.jpg\" alt=\"Ananyeva2\" width=\"720\" height=\"960\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/logo_infn.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "134",
+      "organizzatori": ["infn-2"],
+      "luogo": {
+         "lat": "41.8207198",
+         "lon": "12.672862200000054"
+      }
+   }, {
+      "id": "231",
+      "titolo": "MoonDay",
+      "timestamp": 1404752400,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/MoONDAY-04-2.jpg\"><img class=\"aligncenter wp-image-12932 size-large\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/MoONDAY-04-2-723x1024.jpg\" alt=\"MoONDAY 04 (2)\" width=\"723\" height=\"1024\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/06\/MoONDAY-03-1.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "135",
+      "organizzatori": ["scienzimpresa"],
+      "luogo": {
+         "lat": "41.8681066",
+         "lon": "12.502564699999994"
+      }
+   }, {
+      "id": "233",
+      "titolo": "Symmetries and interactions: the challenge of higher spins",
+      "timestamp": 1404835200,
+      "descrizione": "Our present knowledge of fundamental interactions rests on the\u00a0implementation of local symmetries, like the SU(3)xSU(2)xU(1) gauge\u00a0symmetry underlying the Standard Model or general coordinate\u00a0invariance for Einstein's theory of Gravity. As noticed by Feynman,\u00a0among others, the crucial difference between the gravitational force\u00a0and the other types of interactions lies in the different spin carried\u00a0by the corresponding quantum messengers, leading to speculate about\u00a0the possible meaning of forces mediated by higher-spin massless\u00a0particles.\r\n\r\nOn the other hand, infinite towers of massive particles\u00a0with arbitrary spins, fulfilling the general classification provided\u00a0by Wigner long ago, do enter the spectrum of String Theory as\u00a0different vibrating modes of elementary quantum strings. Partly driven by the search of a most symmetric phase of String Theory, from which the masses of its higher-spin excitations would emerge a' la Higgs after spontaneous symmetry breaking, sizeable progress has been made in the last two decades in the formulation of consistent theories of particles with zero mass and any spin. We shall illustrate the main outcomes of these searches trying to indicate how, as also suggested by recent advances in the framework of the AdS\/CFT correspondence, linking the conventional low spin gauuge symmetries to their higher-spin extensions can affect our current views of space time, with potentially profound lessons for Quantum Gravity.\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/colloqui.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "117",
+      "organizzatori": ["universita-roma-tre"],
+      "luogo": {
+         "lat": "41.85545159999999",
+         "lon": "12.467299300000036"
+      }
+   }, {
+      "id": "235",
+      "titolo": "Operation Status Report and Phase I and II Accelerator Upgrade Programme",
+      "timestamp": 1406214000,
+      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Pantaleo.jpg\"><img class=\"alignnone size-full wp-image-12971\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Pantaleo.jpg\" alt=\"Pantaleo\" width=\"720\" height=\"960\" \/><\/a>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/logo_infn.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "121",
+      "organizzatori": ["infn-2"],
+      "luogo": {
+         "lat": "41.8207198",
+         "lon": "12.672862200000054"
+      }
+   }, {
+      "id": "260",
+      "titolo": "Hey kids \u2013 Il Prato",
+      "timestamp": 1411376400,
+      "descrizione": "<span style=\"color: #000000;\">Il prato sotto casa pu\u00f2 diventare una vera e propria \"culla della bellezza\", basta osservare i piccoli meravigliosi organismi che lo abitano e la complessit\u00e0 delle interazioni esistenti in questo ambiente per rendersene conto.\u00a0 Quante piante diverse ci sono in un prato? Cosa mangia la chiocciola? Dove vive il lombrico? Chi sta aspettando la mantide nascosta tra le foglie? Un affascinante viaggio in tre tappe tra piante, animali e sottosuolo, per rispondere a queste e molte altre domande e per imparare ad osservare questo ecosistema in una prospettiva del tutto nuova. All\u2019interno della ricostruzione gigante di un prato i partecipanti saranno coinvolti in divertenti giochi di squadra e potranno osservare dal vivo e alcuni organismi tipici di questo ambiente.<\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/flickr.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza", "g-eco"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "358",
+      "titolo": "Feed your future - Cibo per il futuro",
+      "timestamp": 1411380000,
+      "descrizione": "Iniziano insieme la caccia alle idee per il cibo di domani.\r\n\r\nL'umanit\u00e0 si trova nuovamente di fronte ad una svolta epocale, destinata ad aprire nuovi scenari. L'eterna crescita \u00e8 un dogma che non ha futuro, le risorse sono limitate e nel frattempo la popolazione mondiale \u00e8 destinata a raddoppiare. Come ci sfameremo? Mangeremo zanzare e berremo in pillole?\r\n\r\nLa Scienza e i produttori <em>visionari<\/em> , tra nutrigenomica, metabolomica, fitotecnologia... sono al lavoro.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/cibo_futuro.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "188",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8060816",
+         "lon": "12.680225999999948"
+      }
+   }, {
+      "id": "245",
+      "titolo": "\u201cTerra chiama Sole\u201d - I. De Angelis",
+      "timestamp": 1411381800,
+      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari <strong>e delle medie.<\/strong>\r\n\r\n<strong>\u00e8 necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "75",
+      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
+      "luogo": {
+         "lat": "41.85545159999999",
+         "lon": "12.467299300000036"
+      }
+   }, {
+      "id": "318",
+      "titolo": "Laboratori del Dipartimento di Fisica - INFN Pavia",
+      "timestamp": 1411394400,
+      "descrizione": "Dentro ai Laboratori del Dipartimento di Fisica si svolgono vari esperimenti sia nel campo della Fisica Nucleare che in quello della Fisica dello Stato Solido e delle applicazioni alla Medicina. Questa visita sar\u00e0 un'occasione per mostrare ai cittadini quello che succede quotidianamente nei laboratori e in cosa consiste il lavoro dei ricercatori, in particolare di quelli che si occupano di fisica sperimentale.\r\n<em>Durata visita 2 h per gruppo di 40 persone.<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/6-infn-pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "354",
+      "titolo": " Incontri con i ricercatori",
+      "timestamp": 1411408800,
+      "descrizione": "Ciclo di conferenze",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/enea_1.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "185",
+      "organizzatori": ["frascati-scienza", "infn-2", "inaf", "universita-di-cagliari"],
+      "luogo": {
+         "lat": "39.2560191",
+         "lon": "9.145357900000022"
+      }
+   }, {
+      "id": "320",
+      "titolo": "A cosa serve il bosone di Higgs nella vita di tutti i giorni",
+      "timestamp": 1411419600,
+      "descrizione": "<strong>Oreste Nicrosini<\/strong> e <strong>Marco Fraternali <\/strong>\r\n<em>A cosa serve il bosone di Higgs nella vita di tutti i giorni<\/em>\r\nDurante l'incontro verranno presentati l'attuale teoria sulla struttura della materia a livello elementare, i principali risultati sperimentali che la supportano nonch\u00e9 i principali strumenti utilizzati.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/1-infn-pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "242",
+      "titolo": "Science Trips - Il Parco dei Castelli Romani",
+      "timestamp": 1411462800,
+      "descrizione": "&nbsp;\r\n\r\n<strong>Gli esploratori del bosco!<\/strong>\r\n\r\n<em>Chi si nasconde sotto i tronchi morti? Cosa mangia un istrice? Chi ha lasciato questa traccia?<\/em>\r\n\r\nAttraverso una serie di giochi e grazie all\u2019osservazione di animali dal vivo o di loro tracce, i bambini avranno la possibilit\u00e0 di conoscere pi\u00f9 da vicino la vita nascosta del bosco, di imparare a riconoscere alcuni degli abitanti di questo ambiente e di scoprire le relazioni che li legano gli uni agli altri.\r\n\r\nL\u2019attivit\u00e0 offre l'occasione di approfondire la conoscenza dell'ambiente boschivo e delle sue caratteristiche ecologiche.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/sentiero_parco.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "192",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.7700866",
+         "lon": "12.65853709999999"
+      }
+   }, {
+      "id": "265",
+      "titolo": "Hey kids \u2013 Il Prato",
+      "timestamp": 1411462800,
+      "descrizione": "<span style=\"color: #000000;\">Il prato sotto casa pu\u00f2 diventare una vera e propria \"culla della bellezza\", basta osservare i piccoli meravigliosi organismi che lo abitano e la complessit\u00e0 delle interazioni esistenti in questo ambiente per rendersene conto.\u00a0 Quante piante diverse ci sono in un prato? Cosa mangia la chiocciola? Dove vive il lombrico? Chi sta aspettando la mantide nascosta tra le foglie? Un affascinante viaggio in tre tappe tra piante, animali e sottosuolo, per rispondere a queste e molte altre domande e per imparare ad osservare questo ecosistema in una prospettiva del tutto nuova. All\u2019interno della ricostruzione gigante di un prato i partecipanti saranno coinvolti in divertenti giochi di squadra e potranno osservare dal vivo e alcuni organismi tipici di questo ambiente.<\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Lanuvio_ponte_Loreto1.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "239",
+      "titolo": "Hey kids \u2013 Suono in 3D",
+      "timestamp": 1411466400,
+      "descrizione": "Basta chiudere gli occhi e ascoltare, per immaginare luoghi, percepire sensazioni, costruire forme nella mente... L'orecchio umano \u00e8 un sensore molto raffinato; e i suoni che percepiamo veicolano informazioni non solo relative al segnale sonoro ma anche informazioni anche l'ambiente in cui li stiamo ascoltando. Ci\u00f2 che raggiunge il nostro orecchio \u00e8 infatti il risultato della combinazione dell'onda sonora generata da una determinata sorgente con quella che viene chiamata risposta impulsiva, ossia il contributo che apporta l'ambiente in cui l'onda si propaga.\r\n\r\nL'acustica applicata ci fornisce gli strumenti per costruire ambienti sonori tridimensionali, frutto della possibilit\u00e0 di riprodurre un determinato suono in maniera del tutto analoga a quella che sperimenterebbe un ascoltatore se potesse ascoltarli nel momento e nel luogo in cui sono stati effettivamente prodotti.\r\n\r\nEcco quindi che l'esperienza di ascolto pu\u00f2 trasportarci in una vera e propria realt\u00e0 virtuale, in luoghi che sono il prodotto della nostra mente, della nostra percezione.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/problemi_aperti_in-matemati.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "263",
+      "titolo": "Visita guidata ai giardini dell'Orto Botanico e  \"La nostra storia evolutiva: studio dell'evoluzione umana\" ",
+      "timestamp": 1411466400,
+      "descrizione": "Vengono ripercorse le varie tappe dell'ominazione, a partire da circa 6 milioni di anni fa, quando la linea evolutiva degli ominini si \u00e8 separata da quella degli scimpanz\u00e9, fino alla nascita della nostra specie, <em>Homo sapiens<\/em>, attraverso lo studio delle modifiche anatomiche del nostro scheletro e di una serie di calchi e immagini dei reperti pi\u00f9 famosi.\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_ortob.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "15",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8431636",
+         "lon": "12.647210200000018"
+      }
+   }, {
+      "id": "345",
+      "titolo": "Laboratorio di Culture Creative",
+      "timestamp": 1411470000,
+      "descrizione": "La Notte Europea dei Ricercatori \u00e8 un\u2019iniziativa che si svolge simultaneamente ogni anno in oltre 300 citt\u00e0 europee l\u2019ultimo venerd\u00ec di settembre. La Fondazione Golinelli, con INFN-Istituto Nazionale di Fisica Nucleare e INAF-Istituto Nazionale di Astrofisica, dedicher\u00e0 la settima che precede la sera del venerd\u00ec 26 settembre ai temi dell\u2019anno legati alla sostenibilit\u00e0. Si svolgeranno laboratori sulla sostenibilita\u2019 ambientale Dalla Stazione Spaziale fino all\u2019astronave-Terra.\r\n\r\nIl programma sara\u2019 disponibile su http:\/\/www.startlab.org\/",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hacklab-terni.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "0",
+      "organizzatori": ["inaf", "infn-2", "frascati-scienza", "fondazione-golinelli"],
+      "luogo": {
+         "lat": "41.839729",
+         "lon": "12.648944000000029"
+      }
+   }, {
+      "id": "264",
+      "titolo": "\"Kary Mullis: il \u201cballerino nudo\u201d che ha cambiato la scienza in un fine settimana\" - B. Trombetta",
+      "timestamp": 1411470000,
+      "descrizione": "Tra esperienze psichedeliche, donne e surf, Mullis cambia le prospettive della scienza inventando una tecnica, chiamata PCR, per amplificare enormemente piccole quantit\u00e0 di DNA. Una scoperta rivoluzionaria che gli valse il premio Nobel e che permise, fra le altre cose, di realizzare il Progetto Genoma Umano, di comprendere l\u2019evoluzione umana e di risolvere casi giudiziari apparentemente irrisolvibili.\r\n\r\nIn questo breve incontro ripercorreremo le idee (e le avventure) del pi\u00f9 irriverente ed eccentrico degli scienziati moderni, cercheremo di capire come ha cambiato il modo di pensare \u201cla ricerca biologica\u201d e vedremo alcune delle scoperte che sono state possibili grazie alla sua invenzione.\r\n\r\n&nbsp;\r\n\r\n<strong>\u00e8 necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/DNA-structure.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "184",
+      "organizzatori": ["frascati-scienza", "universita-sapienza"],
+      "luogo": {
+         "lat": "41.9012278",
+         "lon": "12.512396299999978"
+      }
+   }, {
+      "id": "316",
+      "titolo": "Laboratorio di Energia Nucleare Applicata - LENA",
+      "timestamp": 1411480800,
+      "descrizione": "Il LENA ospita un reattore nucleare di ricerca di tipo TRIGA, l\u2019unico attualmente operante in Italia. Il reattore \u00e8 utilizzato come sorgente di neutroni per varie applicazioni di tipo industriale, ambientale e medicale. I tecnici del reattore illustreranno il funzionamento e l\u2019utilizzo del reattore accompagnando i partecipanti dentro l\u2019impianto e descrivendo gli esperimenti in corso.\r\n<em>Durata visita 2 h per gruppo di 40 persone.<\/em>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/4-infn-pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "159",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1949893",
+         "lon": "9.14229290000003"
+      }
+   }, {
+      "id": "266",
+      "titolo": "\u201cTerra chiama Sole\u201d - I. De Angelis",
+      "timestamp": 1411482600,
+      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "75",
+      "organizzatori": ["universita-roma-tre", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.85545159999999",
+         "lon": "12.467299300000036"
+      }
+   }, {
+      "id": "267",
+      "titolo": "Visita guidata ai giardini dell'Orto Botanico e \"La nostra storia evolutiva: studio dell'evoluzione umana\" ",
+      "timestamp": 1411488000,
+      "descrizione": "Vengono ripercorse le varie tappe dell'ominazione, a partire da circa 6 milioni di anni fa, quando la\u00a0 linea evolutiva degli ominini si \u00e8 separata da quella degli scimpanz\u00e9, fino alla nascita della nostra specie, <em>Homo sapiens<\/em>, attraverso lo studio delle modifiche anatomiche del nostro scheletro e di una serie di calchi e immagini dei reperti pi\u00f9 famosi",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_ortob.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "15",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8431636",
+         "lon": "12.647210200000018"
+      }
+   }, {
+      "id": "321",
+      "titolo": "Gli elettroni si respingono... e si attraggono! Magnetismo e superconduttivit\u00e0 nella materia",
+      "timestamp": 1411506000,
+      "descrizione": "<strong>Pietro Carretta<\/strong>\r\n<em>Gli elettroni si respingono... e si attraggono! Magnetismo e superconduttivit\u00e0 nella materia<\/em>\r\nSaranno introdotte le interazioni che danno origine al magnetismo e alla superconduttivit\u00e0 e verranno descritti i fenomeni pi\u00f9 interessanti, osservabili anche a livello macroscopico, che caratterizzano i materiali magnetici e superconduttori. Saranno quindi mostrate le diverse applicazioni di questi materiali nei settori dell\u2019energia, dell\u2019informazione e della medicina.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/1-infn-pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "269",
+      "titolo": "Hey kids \u2013 Il Prato",
+      "timestamp": 1411549200,
+      "descrizione": "<span style=\"color: #000000;\">Il prato sotto casa pu\u00f2 diventare una vera e propria \"culla della bellezza\", basta osservare i piccoli meravigliosi organismi che lo abitano e la complessit\u00e0 delle interazioni esistenti in questo ambiente per rendersene conto.\u00a0 Quante piante diverse ci sono in un prato? Cosa mangia la chiocciola? Dove vive il lombrico? Chi sta aspettando la mantide nascosta tra le foglie? Un affascinante viaggio in tre tappe tra piante, animali e sottosuolo, per rispondere a queste e molte altre domande e per imparare ad osservare questo ecosistema in una prospettiva del tutto nuova. All\u2019interno della ricostruzione gigante di un prato i partecipanti saranno coinvolti in divertenti giochi di squadra e potranno osservare dal vivo e alcuni organismi tipici di questo ambiente.<\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hacklab-terni.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "270",
+      "titolo": "Laboratorio di Biologia, Chimica, Fisica e Matematica - UNIVERSITA' DEGLI STUDI DI ROMA TOR VERGATA",
+      "timestamp": 1411549200,
+      "descrizione": "<strong>DIPARTIMENTO DI BIOLOGIA: LABORATORIO DI MICROBIOLOGIA<\/strong>\r\n\r\nIllustrazione di piastre Petri contenenti terreni di coltura diversi e di batteri luminescenti e mobili.\r\nColorazione di campioni per l\u2019osservazione dei vetrini al microscopio.\r\nValutazione della crescita batterica in un terreno liquido, misurandone la torbidit\u00e0.\r\n\r\n<strong>DIPARTIMENTO DI FISICA: LABORATORIO DI FISICA SOLARE<\/strong>\r\n\r\nOsservazione dello spettro solare, della Cromosfera del Sole e del network magnetico mediante dei filtri a banda stretta nella riga H-alfa e Ca II K presenti sul banco ottico del laboratorio. Selezionando una piccola parte dello spettro elettromagnetico \u00e8 possibile osservare particolari strati dell\u2019atmosfera solare.\r\n\r\n<strong>DIPARTIMENTO DI MATEMATICA: LABORATORIO DI MATEMATICA<\/strong>\r\n\r\nTramite esperienze opportunamente selezionate, verranno illustrati aspetti e applicazioni della ricerca attuale in matematica.\r\nVerr\u00e0 messo in evidenza come la matematica fornisca non solo un linguaggio in grado di descrivere molti fenomeni, ma anche una tecnica di soluzione fattiva alla base di strumenti di uso comune.\r\n\r\n<strong>DIPARTIMENTO DI SCIENZE E TECNOLOGIE CHIMICHE: LABORATORIO DI SPETTROMETRIA DI MASSA<\/strong>\r\n\r\nDescrizione del funzionamento delle apparecchiature e illustrazione dei vari campi di applicazione: ambientale, tossicologico-clinico, alimentare, chimica del restauro.\r\n\r\nIngresso\u00a0<strong>ore 9:00 \u00a0e ore 11:00 per 40 studenti<\/strong>\u00a0ogni turno di visita.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_lab.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "13",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8534197",
+         "lon": "12.605286999999976"
+      }
+   }, {
+      "id": "268",
+      "titolo": "Science Trips - Il Parco dei Castelli Romani",
+      "timestamp": 1411549200,
+      "descrizione": "<strong>Gli esploratori del bosco!<\/strong>\r\n\r\n<em>Chi si nasconde sotto i tronchi morti? Cosa mangia un istrice? Chi ha lasciato questa traccia?<\/em>\r\n\r\nAttraverso una serie di giochi e grazie all\u2019osservazione di animali dal vivo o di loro tracce, i bambini avranno la possibilit\u00e0 di conoscere pi\u00f9 da vicino la vita nascosta del bosco, di imparare a riconoscere alcuni degli abitanti di questo ambiente e di scoprire le relazioni che li legano gli uni agli altri.\r\n\r\nL\u2019attivit\u00e0 offre l'occasione di approfondire la conoscenza dell'ambiente boschivo e delle sue caratteristiche ecologiche.\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/flickr.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "192",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.7700866",
+         "lon": "12.65853709999999"
+      }
+   }, {
+      "id": "271",
+      "titolo": "\u201cTerra chiama Sole\u201d - I. De Angelis",
+      "timestamp": 1411554600,
+      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "75",
+      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
+      "luogo": {
+         "lat": "41.85545159999999",
+         "lon": "12.467299300000036"
+      }
+   }, {
+      "id": "272",
+      "titolo": "\"La materia oscura\" - M. Vignati",
+      "timestamp": 1411556400,
+      "descrizione": "Tutte le osservazioni sperimentali, e in particolar modo quelle di tipo astrofisico, suggeriscono che l\u2019Universo sia composto di materia e radiazione ordinaria per una frazione piccolissima della sua massa. Pi\u00f9 dell\u201980% dell\u2019Universo sembra essere composto di un tipo di materia che non abbiamo mai osservato, che non interagisce con la radiazione elettromagnetica e che, per questo, \u00e8 chiamata \u201cmateria oscura\u201d. In questo incontro vedremo quali sono gli indizi che ci fanno ritenere che la materia oscura esista, valuteremo alcune ipotesi sulla sua costituzione e illustreremo gli esperimenti che intendono rivelarla.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hawking.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "184",
+      "organizzatori": ["frascati-scienza", "universita-sapienza"],
+      "luogo": {
+         "lat": "41.9012278",
+         "lon": "12.512396299999978"
+      }
+   }, {
+      "id": "341",
+      "titolo": "Hey kids \u2013  Tutti i colori del Sole",
+      "timestamp": 1411556400,
+      "descrizione": "Il Sole e\u2019 giallo, rosso, verde, blu: devi solo decidere quale colore vuoi vedere tu!| I ricercatori dell\u2019INAF \u2013 Osservatorio Astronomico di Roma mostreranno ai bambini tutti i colori del Sole, la stella del di\u2019 che ci appare con aspetto diverso a seconda del momento nella quale la osserviamo e dello strumento che utilizziamo per osservarla. I bambini si cimenteranno nella realizzazione del\u00a0 mega-puzzle del Sole colorato con la loro fantasia.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/astro-pictionary.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza", "inaf"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "319",
+      "titolo": "Visita Guidata ai Laboratori in Dipartimento - INFN Pavia",
+      "timestamp": 1411567200,
+      "descrizione": "Dentro ai Laboratori del Dipartimento di Fisica si svolgono vari esperimenti sia nel campo della Fisica Nucleare che in quello della Fisica dello Stato Solido e delle applicazioni alla Medicina. Questa visita sar\u00e0 un'occasione per mostrare ai cittadini quello che succede quotidianamente nei laboratori e in cosa consiste il lavoro dei ricercatori, in particolare di quelli che si occupano di fisica sperimentale.\r\n<em>Durata visita 2 h per gruppo di 40 persone.<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/2-Infn-Pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "163",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1977742",
+         "lon": "9.142374099999984"
+      }
+   }, {
+      "id": "273",
+      "titolo": "Rilievi e modelli matematici dal Circo Massimo a San Carlino",
+      "timestamp": 1411574400,
+      "descrizione": "Passeggiate scientifiche a cura di Marco Canciani, Corrado Falcolini Laboratorio www.formulas.it e Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma <strong>Tre <\/strong><strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/anfitestro-tuscolo.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "168",
+      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
+      "luogo": {
+         "lat": "41.88613340000001",
+         "lon": "12.48513349999996"
+      }
+   }, {
+      "id": "322",
+      "titolo": "Siamo tutti radioattivi - INFN Pavia",
+      "timestamp": 1411592400,
+      "descrizione": "<strong>Saverio Altieri <\/strong> <em>Siamo tutti radioattivi<\/em>\r\nNel corso del seminario si cercher\u00e0 di esorcizzare la <em>paura da radiazioni<\/em> partendo dalla constatazione della radioattivit\u00e0 presente nel corpo umano dovuta al fondo della radioattivit\u00e0 naturale; si cercher\u00e0 di far cogliere al pubblico l\u2019entit\u00e0 del rischio legato all\u2019uso delle radiazioni con quello associato alla radioattivit\u00e0 naturale e ad altre attivit\u00e0 umane normalmente percepite come sicure ed accettabili.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/3-infn-pavia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "274",
+      "titolo": "\"Dal BIG BANG alla civilt\u00e0 in 6 immagini\" - A. Balbi e A. Pascale",
+      "timestamp": 1411592400,
+      "descrizione": "Antonio Pascale e Amedeo Balbi, un astrofisico e uno scrittore intrecciano un racconto a due voci che ci porta dall\u2019origine dell\u2019universo fino ai giorni nostri, usando come filo conduttore sei immagini: sei icone che rappresentano altrettanti punti di svolta nell\u2019evoluzione fisica del cosmo e nell\u2019evoluzione culturale della specie umana. Dal Big Bang alle pitture rupestri, dalla nascita e morte delle stelle al sorgere del pensiero razionale e scientifico, dall\u2019arrivo delle prime molecole organiche sulla Terra al progresso tecnologico: una narrazione ricca di suggestioni scientifiche, intellettuali e artistiche, per mostrare che la specie Homo Sapiens \u00e8 legata pi\u00f9 di quanto si pensi all\u2019universo e alla sua storia, ma \u00e8 allo stesso tempo in grado, grazie alla ragione, alla cultura e alla tecnica, di orientare il cammino della sua evoluzione e della sua felicit\u00e0.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/bigbang-immagine-di-anateprima.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "241",
+      "titolo": "Science Trips - Il Parco dei Castelli Romani",
+      "timestamp": 1411635600,
+      "descrizione": "<strong>Gli esploratori del bosco!<\/strong>\r\n\r\n<em>Chi si nasconde sotto i tronchi morti? Cosa mangia un istrice? Chi ha lasciato questa traccia?<\/em>\r\n\r\nAttraverso una serie di giochi e grazie all\u2019osservazione di animali dal vivo o di loro tracce, i bambini avranno la possibilit\u00e0 di conoscere pi\u00f9 da vicino la vita nascosta del bosco, di imparare a riconoscere alcuni degli abitanti di questo ambiente e di scoprire le relazioni che li legano gli uni agli altri.\r\n\r\nL\u2019attivit\u00e0 offre l'occasione di approfondire la conoscenza dell'ambiente boschivo e delle sue caratteristiche ecologiche.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Lanuvio_ponte_Loreto1.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "192",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.7700866",
+         "lon": "12.65853709999999"
+      }
+   }, {
+      "id": "243",
+      "titolo": " Hey kids \u2013 Il Prato",
+      "timestamp": 1411635600,
+      "descrizione": "<span style=\"color: #000000;\">Il prato sotto casa pu\u00f2 diventare una vera e propria \"culla della bellezza\", basta osservare i piccoli meravigliosi organismi che lo abitano e la complessit\u00e0 delle interazioni esistenti in questo ambiente per rendersene conto.\u00a0 Quante piante diverse ci sono in un prato? Cosa mangia la chiocciola? Dove vive il lombrico? Chi sta aspettando la mantide nascosta tra le foglie? Un affascinante viaggio in tre tappe tra piante, animali e sottosuolo, per rispondere a queste e molte altre domande e per imparare ad osservare questo ecosistema in una prospettiva del tutto nuova. All\u2019interno della ricostruzione gigante di un prato i partecipanti saranno coinvolti in divertenti giochi di squadra e potranno osservare dal vivo e alcuni organismi tipici di questo ambiente.<\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/ecospacet.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "240",
+      "titolo": " Visita guidata ai giardini dell'Orto Botanico e  \"La nostra storia evolutiva: studio dell'evoluzione umana\" ",
+      "timestamp": 1411639200,
+      "descrizione": "Vengono ripercorse le varie tappe dell'ominazione, a partire da circa 6 milioni di anni fa, quando la linea evolutiva degli ominidi si \u00e8 separata da quella degli scimpanz\u00e9, fino alla nascita della nostra specie, <strong>Homo sapiens<\/strong>, attraverso lo studio delle modifiche anatomiche del nostro scheletro e di una serie di calchi e immagini dei reperti pi\u00f9 famosi.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_ortob.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "15",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8431636",
+         "lon": "12.647210200000018"
+      }
+   }, {
+      "id": "343",
+      "titolo": "Hey kids \u2013  Astropictionary",
+      "timestamp": 1411642800,
+      "descrizione": "<strong>Astropictionary<\/strong> uno dei giochi da tavola pi\u00f9 famosi, ma questa volta a tema astronomico.\u00a0I bambini si cimenteranno nel gioco da tavola ASTRO-Pictionary cercando di farsi capire dai componenti della propria squadra attraverso i disegni di tutti gli oggetti astronomici conosciuti nel nostro universo.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/astro-pictionary_OAR.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza", "inaf"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "291",
+      "titolo": "\"Il teorema vivente: un genio matematico della nostra generazione e le sue scoperte\" - G. Panati",
+      "timestamp": 1411642800,
+      "descrizione": "Nella Vienna di fine Ottocento il fisico Ludwig Boltzmann sostiene, contro l'opinione della maggior parte dei suoi colleghi, che le leggi fondamentali della Termodinamica possano essere spiegate a partire da un'unica equazione che governa la dinamica di atomi e molecole, legando cos\u00ec le leggi del macrocosmo alla dinamica del mondo microscopico. E' l'inizio della Meccanica Statistica e della moderna teoria della Probabilit\u00e0. La strenua opposizione dei colleghi, molti dei quali contrari alla cosiddetta ipotesi atomica, contribuir\u00e0 alla tragica fine della sua vita.\r\n\r\nCento anni dopo, gli occhi del giovane matematico C\u00e9dric Villani brillano dello scintillio febbrile\r\n\r\ndi chi ha trovato la sfida della vita: dimostrare, matematicamente, che Ludwig Boltzmann aveva\r\n\r\nragione. Il seminario racconter\u00e0 la storia di un'equazione, e dei due geni \u2013 della fisica e della matematica \u2013 che l'hanno resa viva.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/problemi_aperti_in-matemati.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "184",
+      "organizzatori": ["frascati-scienza", "universita-sapienza"],
+      "luogo": {
+         "lat": "41.9012278",
+         "lon": "12.512396299999978"
+      }
+   }, {
+      "id": "317",
+      "titolo": "Laboratorio di Energia Nucleare Applicata - LENA",
+      "timestamp": 1411653600,
+      "descrizione": "Il LENA ospita un reattore nucleare di ricerca di tipo TRIGA, l\u2019unico attualmente operante in Italia. Il reattore \u00e8 utilizzato come sorgente di neutroni per varie applicazioni di tipo industriale, ambientale e medicale. I tecnici del reattore illustreranno il funzionamento e l\u2019utilizzo del reattore accompagnando i partecipanti dentro l\u2019impianto e descrivendo gli esperimenti in corso.\r\n<em>Durata visita 2 h per gruppo di 40 persone.<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/2-Infn-Pavia.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "159",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "45.1949893",
+         "lon": "9.14229290000003"
+      }
+   }, {
+      "id": "250",
+      "titolo": "Visita guidata ai giardini dell'Orto Botanico e La nostra storia evolutiva: studio dell'evoluzione umana ",
+      "timestamp": 1411660800,
+      "descrizione": "Vengono ripercorse le varie tappe dell'ominazione, a partire da circa 6 milioni di anni fa, quando la linea evolutiva degli ominidi si \u00e8 separata da quella degli scimpanz\u00e9, fino alla nascita della nostra specie, <strong>Homo sapiens<\/strong>, attraverso lo studio delle modifiche anatomiche del nostro scheletro e di una serie di calchi e immagini dei reperti pi\u00f9 famosi.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_ortob.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "15",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8431636",
+         "lon": "12.647210200000018"
+      }
+   }, {
+      "id": "246",
+      "titolo": "Science Trips - Sotto i ponti pi\u00f9 di una storia",
+      "timestamp": 1411660800,
+      "descrizione": "Passeggiate scientifiche a cura di Fabio Brancaleoni, Maurizio Gargano Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre <strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/rome_683.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "143",
+      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
+      "luogo": {
+         "lat": "41.8891492",
+         "lon": "12.479059099999972"
+      }
+   }, {
+      "id": "248",
+      "titolo": "Osservazione della Terra dallo spazio: uno strumento a servizio della sostenibilit\u00e0 del Pianeta.",
+      "timestamp": 1411668000,
+      "descrizione": "Conferenza di <strong>Roberto Somma<\/strong>\u00a0(Senior Advisor del Presidente ed Amministratore delegato di Thales Alenia Space Italia)\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0  saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/osserviamo_notturno.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "21",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8103734",
+         "lon": "12.670798399999967"
+      }
+   }, {
+      "id": "323",
+      "titolo": "Il mistero del clima: conosciamo meglio i buchi neri del clima terrestre",
+      "timestamp": 1411678800,
+      "descrizione": "<span style=\"color: #000000;\">L'evoluzione del clima della Terra \u00e8 da tempo al centro di un importante dibattito, non solo scientifico. Nella conferenza, tenuta da un fisico e da un geologo, verranno richiamate le caratteristiche fondamentali del clima della <strong>Terra<\/strong> e della sua evoluzione nel tempo. Verranno illustrati e discussi dati ed evidenze provenienti dal monitoraggio e da esperimenti sia su scala mondiale sia locale, con particolare riferimento agli effetti dei cambiamenti climatici sulla criosfera alpina (ghiacciai e permafrost). <\/span>\r\n\r\n<span style=\"color: #000000;\">I \u00a0possibili effetti delle attivit\u00e0 umane sul sistema saranno discussi alla luce di alcuni dati e di recenti modelli di evoluzione <strong>climatica<\/strong>. Da qui si prender\u00e0 \u00a0lo spunto per una discussione, di tipo scientifico, sulle attuali strategie in politica energetica.<\/span>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hawking.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "312",
+      "titolo": "Notte musicale e spettacolo",
+      "timestamp": 1411689600,
+      "descrizione": "Momento clou della serata per la fascia pi\u00f9 giovane con proposte di musica rapper e la partecipazione di diversi gruppi.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/notte-musicale-e-spettacolo.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "251",
+      "titolo": "Scopri l'ambiente: caccia al tesoro didattica",
+      "timestamp": 1411740000,
+      "descrizione": "",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/discover.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "15",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "41.8431636",
+         "lon": "12.647210200000018"
+      }
+   }, {
+      "id": "252",
+      "titolo": "Hey kids \u2013 Il Prato",
+      "timestamp": 1411740000,
+      "descrizione": "<span style=\"color: #000000;\">Il prato sotto casa pu\u00f2 diventare una vera e propria \"culla della bellezza\", basta osservare i piccoli meravigliosi organismi che lo abitano e la complessit\u00e0 delle interazioni esistenti in questo ambiente per rendersene conto.\u00a0 Quante piante diverse ci sono in un prato? Cosa mangia la chiocciola? Dove vive il lombrico? Chi sta aspettando la mantide nascosta tra le foglie? Un affascinante viaggio in tre tappe tra piante, animali e sottosuolo, per rispondere a queste e molte altre domande e per imparare ad osservare questo ecosistema in una prospettiva del tutto nuova. All\u2019interno della ricostruzione gigante di un prato i partecipanti saranno coinvolti in divertenti giochi di squadra e potranno osservare dal vivo e alcuni organismi tipici di questo ambiente.<\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Lanuvio_ponte_Loreto1.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "18",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8061212",
+         "lon": "12.68045200000006"
+      }
+   }, {
+      "id": "327",
+      "titolo": "Stand Espositivi con Esperienze di Fisica",
+      "timestamp": 1411740000,
+      "descrizione": "Nel suggestivo spazio della Cupola Arnaboldi saranno allestiti degli stand dove le persone potranno venire a contatto diretto con alcuni aspetti della fisica: magnetismo e superconduttivit\u00e0, ottica e applicazioni al fotovoltaico, rivelazione di raggi cosmici, applicazioni della fisica alla medicina. Esperimenti, video, poster e esperti delle varie discipline saranno a disposizione del pubblico. Uno stand sar\u00e0 dedicato solo ai bambini, con esperimenti e video pensate per stupire e far riflettere il pubblico pi\u00f9 speciale!",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/ecospacet.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "165",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1854203",
+         "lon": "9.155218999999988"
+      }
+   }, {
+      "id": "283",
+      "titolo": "INFN \u2013 Laboratori Nazionali di Frascati",
+      "timestamp": 1411740000,
+      "descrizione": "I <strong>Laboratori Nazionali di Frascati<\/strong> (LNF) sono i pi\u00f9 grandi tra i quattro Laboratori dell\u2019Istituto Nazionale di Fisica Nucleare (INFN), l\u2019ente che promuove e finanzia la ricerca, teorica e sperimentale, nel campo della fisica delle particelle elementari, nucleare, astroparticellare e le ricerche tecnologiche a esse connesse.\r\n\r\nI Laboratori ospitano al loro interno uno dei pi\u00f9 moderni e importanti acceleratori al mondo, DAFNE, con il quale si stanno compiendo studi particolarmente accurati nel campo della fisica delle particelle elementari, grazie al rivelatore KLOE, e in quello della materia condensata, tramite la luce di sincrotrone.\r\n\r\nNei Laboratori sono inoltre presenti il progetto <strong>SPARC<\/strong>, per la realizzazione di un laser ad elettroni liberi, il laser di grande potenza FLAME per lo studio di nuove tecniche di accelerazione di particelle e l\u2019esperimento NAUTILUS per la rivelazione delle onde gravitazionali previste dalla relativit\u00e0 generale di Einstein.\r\n\r\nIl pubblico potr\u00e0 visitare i LNF e in particolare le attivit\u00e0 scientifiche presenti e gli esperimenti pi\u00f9 grandi attualmente in funzione.\r\n\r\n<strong>PROGRAMMA Venerd\u00ec 26 settembre<\/strong>\r\n\r\ndalle ore 14:00 alle ore 18:30\r\n\r\nVisita guidate alle attivit\u00e0 scientifiche e agli esperimenti pi\u00f9 grandi attualmente in funzione nei LNF (Laboratori Nazionali di Frascati).\r\n\r\nIngresso organizzato in 3 turni:\r\n\r\n14,15 \u2013 15,30\r\n\r\n15,45 \u2013 17,00\r\n\r\n17,15 \u2013 18,30\r\n\r\nNumero massimo di partecipanti: 100 per ogni turno\r\n\r\n<strong>INGRESSO SU PRENOTAZIONE<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0  saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/INFN_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "63",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "41.8207198",
+         "lon": "12.672862200000054"
+      }
+   }, {
+      "id": "328",
+      "titolo": "\"Dalle prime stelle alle prime cellule\" - D. Billi e R. Schneider",
+      "timestamp": 1411741800,
+      "descrizione": "<strong>Laboratorio interattivo<\/strong> - <em>Dalle prime stelle alle prime cellule<\/em>.Un viaggio nel tempo dal Big Bang, alla formazione delle prime stelle e galassie, fino alla comparsa del nostro sistema planetario e della vita come noi la conosciamo. Attraverso filmati illustrativi verranno proposte le prime tappe della comparsa di protostelle e protocellule. La tenacia della vita sulla terra verr\u00e0 inoltre trattata come presupposto scientifico della ricerca di vita nel nostro sistema solare ed intorno ad altre stelle.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Dalle-prime__-stelle-alle-prime-cellule_National-Astronomical-Observatory__-of-Japan.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "139",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata", "osservatorio-di-roma"],
+      "luogo": {
+         "lat": "",
+         "lon": ""
+      }
+   }, {
+      "id": "255",
+      "titolo": "Il Tempo dell\u2019Arte presenta: Il lavoro dell\u2019uomo e la natura. Mostra fotografica de \u201cI Fratelli Larocca\u201d",
+      "timestamp": 1411743600,
+      "descrizione": "Sostenibilit\u00e0 vuol dire anche restituire valore al lavoro dell\u2019uomo e alla bellezza della Natura.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/mostra-al-campania.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "22",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8114374",
+         "lon": "12.668950099999961"
+      }
+   }, {
+      "id": "294",
+      "titolo": "Interferometro per la rivelazione delle onde gravitazionali - VIRGO",
+      "timestamp": 1411743600,
+      "descrizione": "Dopo un seminario introduttivo (30\u2019), si visiter\u00e0 la sala di controllo, l\u2019edificio centrale con le grandi campane da vuoto di 12 metri, i tunnel dei due bracci perpendicolari contenenti i tubi a vuoto di 3 km per la propagazione dei fasci laser, i laboratori. Verificheremo anche sperimentalmente che una piuma, nel vuoto, cade come un sasso, su una caduta di 3 metri, una delle pi\u00f9\u2019 lunghe esistenti. L\u2019esperimento che Galileo aveva immaginato e descritto perfettamente, pur non avendo i mezzi per farlo.\r\n\r\n<em>L'Attivit\u00e0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul <a href=\"http:\/\/outreach.ego-gw.it\/ \" target=\"_blank\">sito<\/a> a partire dal 1 Settembre 2014<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/giocare-con-la-luce.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "313",
+      "titolo": "ENEA Frascati - Energia: Conoscere per poter scegliere",
+      "timestamp": 1411743600,
+      "descrizione": "L\u2019Unit\u00e0 Tecnica Fusione propone un percorso didattico-scientifico al fine di comprendere i principi della fusione termonucleare e di avvicinare i visitatori al metodo scientifico come strumento di conoscenza. \u00a0La possibilit\u00e0 di fare direttamente degli esperimenti e di farsi guidare in visite ai laboratori dai ricercatori permette di familiarizzare con queste discipline scientifiche.\u00a0A tal fine si propone l\u2019allestimento di:\r\n- esperimenti di elettrostatica, magnetismo ed elettromagnetismo, einerenti alla fisica dei laser, portando alla luce il \u00a0 \u00a0susseguirsi dei fenomeni nella vita quotidiana;\r\n- pannelli esplicativi sulla fusione termonucleare, alcuni adatti ai bambini ed altri ad un pubblico adulto;\r\n- una visita guidata al Tokamak FTU\r\n- una visita guidata al laboratorio Laser ABC.\r\n- esperimenti di superconduttivit\u00e0\r\n\r\n<em>Entrate alle 15.00, 17.30, 20.00 \u2013 \u00a0I percorsi e le visite avranno la durata di circa 2 h.<\/em>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/enea_frascati.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "157",
+      "organizzatori": ["enea", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.8203161",
+         "lon": "12.67258419999996"
+      }
+   }, {
+      "id": "298",
+      "titolo": "Costruisci il tuo interferometro ",
+      "timestamp": 1411743600,
+      "descrizione": "Un gruppo di 6-10 ragazzi verr\u00e0 guidato al montaggio del suo interferometro (laser, specchi, cacciaviti, trapano, colla\u2026.), lo far\u00e0 funzionare e lo porter\u00e0 in regalo alla sua scuola.\r\n\r\n<em>L'Attivit\u00e0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul <a href=\"http:\/\/outreach.ego-gw.it\/\">sito<\/a> a partire dal 1 Settembre 2014<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/esperienze-di-fisica.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "355",
+      "titolo": "Laboratori di Ricerca di Cagliari",
+      "timestamp": 1411743600,
+      "descrizione": "<div style=\"color: #000000;\">Visite guidate ai laboratori del dipartimento di fisica e al museo.<\/div>\r\n<div style=\"color: #000000;\">\u00a0Osservazioni al telescopio<\/div>",
+      "immagine": "",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "185",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "39.2560191",
+         "lon": "9.145357900000022"
+      }
+   }, {
+      "id": "254",
+      "titolo": "\"Estremofili nello spazio\"- D. Billi e studenti del Liceo Scientifico e Linguistico di Ceccano",
+      "timestamp": 1411745400,
+      "descrizione": "<strong>Laboratorio interattivo<\/strong> - <strong> Estremofili nello spazio<\/strong>.\r\nEsperimenti di astrobiologia in bassa orbita terrestre raccontati da studenti del liceo che hanno frequentato il Laboratorio di Astrobiologia (PLS-fisica). Verranno utilizzati cortometraggi realizzati da ragazzi per scoprire la tenacia della vita come noi la conosciamo ed evidenziare il ruolo degli estremofili nella ricerca di vita oltre la Terra e nello sviluppo di sistemi biologici a sostegno dell\u2019esplorazione umana dello spazio.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/estremofili-nello-spazio.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "139",
+      "organizzatori": ["frascati-scienza", "universita-tor-vergata"],
+      "luogo": {
+         "lat": "",
+         "lon": ""
+      }
+   }, {
+      "id": "335",
+      "titolo": "ENEA Frascati - Dalla valvola al multicore",
+      "timestamp": 1411745400,
+      "descrizione": "Il costituendo <strong>Museo di Informatica<\/strong> \u00e8 un primo piccolo tentativo di illustrare la storia dell\u2019informatica in ENEA, dal primo calcolatore analogico costruito in Casaccia ed utilizzato soprattutto per la progettazione delle centrali nucleari, italiane e non, fino al supercalcolatore CRESCO4 appena inaugurato a Portici nello scorso mese di marzo. La visita del Museo offre un\u2019occasione per capire i fondamenti dell\u2019Informatica e prendere visione delle enormi potenzialit\u00e0 del computer e di tutte le possibili applicazioni presenti e future.\r\n\r\nEntrate alle 16.00, 18.30, 21.00 \u2013 i percorsi e le visite avranno la durata di 1h circa\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/100_4333.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "34",
+      "organizzatori": ["frascati-scienza", "enea"],
+      "luogo": {
+         "lat": "41.8207198",
+         "lon": "12.672862200000054"
+      }
+   }, {
+      "id": "314",
+      "titolo": "ENEA Frascati - Giocare con la luce: percorso didattico tra fisica e percezione",
+      "timestamp": 1411745400,
+      "descrizione": "I visitatori potranno vedere diverse sorgenti di <strong>luce<\/strong>, dalle pi\u00f9 tradizionali a quelle pi\u00f9 <em>esotiche<\/em>, verificandone caratteristiche ed utilizzo. Saranno presentati semplici esperimenti di ottica, con sorgenti incoerenti e con fasci laser. Dallo studio dei fenomeni fisici si passer\u00e0 quindi ai fenomeni legati alla percezione della luce ed alla sua interpretazione, con una serie di illusioni ottiche e le relative spiegazioni, fino all'affascinante arte dell\u2019anamorfosi.\r\n\r\nSaranno presenti in sala esperimenti di ottica, laser e apparati sperimentali oltre ad un apparato 3D utilizzato per lo studio e la salvaguardia delle opere d'arte.\r\n<em>Entrate alle 15.00, 17.30, 20.00 \u2013 I percorsi e le visite avranno la durata di circa 2 h.<\/em>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/enea_1.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "158",
+      "organizzatori": ["enea", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.8203161",
+         "lon": "12.67258419999996"
+      }
+   }, {
+      "id": "256",
+      "titolo": "Percorsi didattici sostenibili e apprendimento significativo",
+      "timestamp": 1411747200,
+      "descrizione": "<strong>Francesco Larocca <\/strong>(Docente di Scienze e Direttore dell\u2019Osservatorio astronomico la Torretta).\r\nLo studio del sistema cardiocircolatorio tra immagini virtuali di una App e l'esplorazione mirata di una dissezione anatomica.\r\n<strong>Luciano Bernardo<\/strong> (Biologo marino).\r\nLa biologia marina insegnata attraverso l\u2019osservazione diretta: una passeggiata sulla spiaggia per divertirsi a scoprire e riconoscere i <em>tesori<\/em> che le onde gettano a riva.\r\n<strong>Filippo Pergola<\/strong> (Psicoterapeuta, Docente Universit\u00e0 Tor Vergata).\r\nI nuclei fondanti dell\u2019apprendimento significativo.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/amazon.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "22",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8114374",
+         "lon": "12.668950099999961"
+      }
+   }, {
+      "id": "259",
+      "titolo": "Science Trips - Geometrie dei pavimenti medievali romani",
+      "timestamp": 1411747200,
+      "descrizione": "Passeggiate scientifiche a cura di Laura Tedeschini Lalli, Alessandra Carlini \u2013 Laboratorio www.formulas.it - Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre<strong> (CON PRENOTAZIONE massimo 30 persone )<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/pavimenti.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "141",
+      "organizzatori": ["frascati-scienza", "universita-roma-tre"],
+      "luogo": {
+         "lat": "41.8893347",
+         "lon": "12.49757569999997"
+      }
+   }, {
+      "id": "277",
+      "titolo": "ARTOV CNR e INAF-IAPS",
+      "timestamp": 1411747200,
+      "descrizione": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"191\">Per maggiori informazioni sulle attivit\u00e0:<\/td>\r\n<td width=\"301\"><strong>http:\/\/eventi.artov.rm.cnr.it\/<\/strong><\/td>\r\n<\/tr>\r\n<\/tbody>\r\n<\/table>\r\nPer la\u00a0Notte europea dei Ricercatori\u00a0 2014, l\u2019Area di Ricerca di Tor Vergata proporr\u00e0 dei percorsi supportati da servizio di interpretariato lingua dei segni (<strong>LIS<\/strong>). Per i <strong>dettagli consultare il sito Eventi Artov<\/strong>\r\n<h5>L'ingresso all'Area \u00e8 libero fino ad esaurimento posti. Sar\u00e0 a disposizione degli ospiti un <em>Info Point<\/em> dedicato agli eventi, dove verranno indicati orari e le modalit\u00e0 di svolgimento delle visite. Ogni visita avr\u00e0 una durata di circa 30 minuti. Per contattarci scrivi a:\u00a0<a href=\"mailto:comunicazione@artov.rm.cnr.it\"><strong>comunicazione@artov.rm.cnr.it<\/strong><\/a><\/h5>\r\n<strong>Dove mangiare<\/strong>:\u00a0Sar\u00e0 a disposizione dei visitatori il bar ad orario continuato fino a chiusura dell'area e un servizio di ristoro aperto dalle 19:30 alle 21:30;\r\n<strong>Come raggiungerci<\/strong>:\u00a0L\u2019Area \u00e8 collegata alla stazione Metro Anagnina con l\u2019autobus 509 fino alle 19:30,\u00a0Per ulteriori informazioni su come raggiungerci consulta\u00a0l'apposita sezione sul sito\r\n\r\nINGRESSO SU PRENOTAZIONE\r\ndalle 16 alle 20 con accesso max 500 persone\r\ndalle 20 alle 23 con accesso max 200 persone\r\n\r\n<strong>Le nostre attivit\u00e0<\/strong>\r\n\r\n<strong><em>Dalle 16:00 alle 20:00 InSide Artov*<\/em><\/strong><em>\r\n<\/em><em>All\u2019arrivo in Artov \u00e8 possibile, secondo le disponibilit\u00e0 del momento, scegliere i laboratori da visitare,.<\/em>\r\n\r\n&nbsp;\r\n\r\n<strong>Visite ai laboratori di Ricerca Cnr<\/strong> - ultimo ingresso ore 19:15\r\n<ul>\r\n\t<li>Laboratorio di Acustica (Idasc): <em>Ascolta l\u2019Arte che si svela<\/em>\u2026<\/li>\r\n\t<li>Laboratorio con percorso virtuale (Itabc M. Libretti in collaborazione con Idasc): <em>A spasso nel tempo<\/em><\/li>\r\n\t<li>Laboratorio di misurazioni atmosferiche (Isac): <em>Il campo sperimentale<\/em> (Lab. all\u2019aperto)<\/li>\r\n\t<li>Laboratorio di misurazioni atmosferiche (Isac): <em>Il Diapason, per la qualit\u00e0 dell\u2019aria<\/em> (Lab. all\u2019aperto)<\/li>\r\n\t<li>Laboratorio di spettroscopia ottica (Isc): <em>Cellule sotto il microscopio<\/em><\/li>\r\n\t<li>Laboratorio di Microscopia (Ism): <em>Attraverso il \u2018tunnel\u2019\u2026per vedere gli atomi<\/em><\/li>\r\n\t<li>Laboratorio di Spettroscopia Elettronica (Ism):<em>Alla scoperta delle propriet\u00e0 dei materiali<\/em><\/li>\r\n<\/ul>\r\n<strong>Visite ai laboratori di Ricerca Iaps (Inaf)<\/strong> - ultimo ingresso ore 19:15\r\n<ul>\r\n\t<li>Laboratorio Iaps di Spettroscopia<\/li>\r\n\t<li>Laboratorio Iaps di Astrofisica delle Alte Energie<\/li>\r\n\t<li>Laboratorio Iaps di Fisica del Plasma e del Mezzo Interplanetario<\/li>\r\n\t<li>Laboratorio Iaps di Gravitazione Sperimentale<\/li>\r\n\t<li>Laboratorio Iaps Giada, lo strumento che cattura le comete<\/li>\r\n\t<li>Laboratorio Integral, il telescopio a raggi gamma<\/li>\r\n<\/ul>\r\n<h3>dalle 16:00 alle 20:00 Artov On theRoad*<\/h3>\r\n<h5><strong>Giocando con l\u2019atmosfera, <\/strong><em>Cos\u2019\u00e8 l\u2019atmosfera? Quali sono le sue propriet\u00e0? Per svelare alcuni elementi base della fisica dell\u2019atmosfera e arrivare a far comprendere in modo semplice alcuni concetti e fenomeni atmosferici (come per es. i cicloni),<\/em> <em>a volte basta un po\u2019 di ghiaccio, dei coloranti, qualche palloncini e\u2026tanta fantasia!\r\n<\/em><strong>a cura dell'Isac - Accesso libero dalle 16\r\n<\/strong>Attivit\u00e0 consigliata a un pubblico<strong> da 6 anni<\/strong><\/h5>\r\n<h5><strong>La scienza? Un gioco da ragazzi!, <\/strong><em>Chi da bambino non ha giocato con i Lego? Costruire casette, automobili o quant\u2019altro la nostra fantasia ci stimolava\u2026era un gioco divertente. Oggi con i robottini Lego possiamo imparare alcuni principi di ottica, microscopia e robotica.\r\n<\/em><strong>a cura di Isc e Isac Accesso libero dalle ore 16:00\r\n<\/strong>Attivit\u00e0 consigliata a un pubblico<strong> da 6 anni<\/strong><\/h5>\r\n<strong>Il suono in 3D, <\/strong><em>Un\u2019esperienza da assaporare ad occhi chiusi! Baster\u00e0 ascoltare e lasciarsi andare all\u2019immaginazione\u2026Questa esperienza permetter\u00e0 ai partecipanti, di immergersi in ambienti sonori diversi da quello circostante, il tutto giocando con la tridimensionalit\u00e0 del suono.\r\n<\/em><strong>a cura dell'Idasc - Accesso con prenotazione presso l\u2019info point di Artov\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <\/strong><em>\r\n<\/em><em>Attivit\u00e0 consigliata a un pubblico <strong>da 6 anni<\/strong><\/em>\r\n\r\n<strong>Il ruolo degli animali nella ricerca, <\/strong><em>Questa attivit\u00e0 intende illustrare ai visitatori alcuni aspetti significativi sulla sperimentazione degli animali da laboratorio. La diffusione delle conoscenze scientifiche per il corretto allevamento, mantenimento e trattamento degli animali da laboratorio secondo un codice etico professionale e la qualificazione professionale degli addetti alla sperimentazione animale, sono due elementi imprescindibili per permettere una adeguata attuazione della normativa <\/em><em>relativa alla salvaguardia del benessere animale<\/em><em>.\r\n<\/em><strong>a cura dell'Ift \u2013 Accesso libero dalle ore 16:00\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <\/strong>\r\nAttivit\u00e0 consigliata a un pubblico<strong> da 6 anni<\/strong>\r\n\r\n<strong>Il mondo visto dai droni, <\/strong><em>Il mondo \u00e8 diverso visto dall\u2019alto. Riprese video, rilievi, controllo del territorio e tanto altro\u2026 i droni sono ormai utilizzati in molti ambiti, da quelli militari a quelli civili. Questi aeromobili a pilotaggio remoto, di dimensioni piuttosto variabili, sono utilizzati anche in molte operazioni di prevenzione e intervento in emergenza e in missioni \u2018potenzialmente pericolose\u2019, per gli esseri umani.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <\/em>\r\n<strong>Evento Speciale in collaborazione<\/strong><strong>con <\/strong><strong> Accesso libero dalle ore 16:00\r\n<\/strong>Attivit\u00e0 consigliata a un pubblico<strong> da 8 anni<\/strong>\r\n\r\n<strong>Il miglior amico dell\u2019uomo\u2026\r\n<\/strong><strong><em>Dimostrazione Cinofila della Protezione Civile,\u00a0\u00a0 <\/em><\/strong><em>Da molti anni la Protezione Civile si avvale del supporto di Unit\u00e0 Cinofili di soccorso, indispensabili per la ricerca di persone disperse. Verr\u00e0 effettuata una dimostrazione di come le unit\u00e0 cinofili si addestrano per fronteggiare queste situazioni\r\n<\/em><strong>Evento Speciale in collaborazione con <\/strong><strong>Protezione Civile<\/strong><strong> - <\/strong><strong>2 turni con Accesso libero dalle 18:30\r\n<\/strong>Attivit\u00e0 consigliata a un pubblico<strong> da 8 anni<\/strong>\r\n\r\n<strong>A passeggio nello spettro elettromagnetico, <\/strong><em>esperimenti dal vivo sulla luce per spiegare la spettroscopia e come viene utilizzata per studiare il Sistema Solare da missioni come Venus Express, Dawn, Cassini-Huygens, Rosetta e Juno e per studiare la nostra Galassia usando il telescopio Herschel. I ricercatori useranno uno spettrometro da campo per studiare lo spettro dei vari materiali <\/em>\r\n<strong>a cura dell'Iaps - Accesso libero dalle 16:00\u00a0\u00a0 <\/strong><em>\r\n<\/em><em>Attivit\u00e0 consigliata a un pubblico <\/em><strong>da 6 anni<\/strong>\r\n\r\n<strong>L\u2019astronomia fatta in casa,<\/strong><em>Saranno presentati alcuni strumenti per la didattica dell\u2019astronomia grazie ai quali, persone \u00a0vedenti e non vedenti, con e senza preparazione di base, \u00a0possono \u00a0comprendere facilmente fenomeni astronomici che solo \u00a0con\u00a0 parole ed immagini \u00e8 difficile spiegare e capire.<\/em><em>\r\n<\/em><strong>a cura dell'Iaps - Accesso libero dalle 16:00\u00a0\u00a0 <\/strong><em>\r\n<\/em><em>Attivit\u00e0 consigliata a un pubblico <\/em><strong>da 6 anni<\/strong>\r\n\r\n<strong>Osservazione del cielo, <\/strong><em>Grazie all\u2019ausilio di alcune postazioni, costituite da un \u2018\u2019newton\u2019\u2019 da 40 cm automatizzato, uno \u2018\u2019 schmidt-cassengrain\u2019\u2019 da 28 cm automatizzato e un telescopio con filtro solare da 8 cm,<\/em>\r\n\r\n<em>sar\u00e0 possibile osservare le macchie solari e i pianeti del Sistema Solare.<\/em>\r\n\r\n<strong>a cura dell'Iaps - Accesso libero dalle 17:30 alle 23:00<\/strong><em>\r\nAttivit\u00e0 consigliata a un pubblico <\/em><strong>da 6 anni<\/strong>\r\n\r\n<strong>Street Science, <\/strong><em>Brevi interventi a cura dei ricercatori dello IAPS daranno una panoramica su cosa sono le meteoriti, come si generano, quali sono le conseguenze di un loro impatto<\/em><strong>\r\na cura <\/strong><strong>dello IAPS - Accesso libero 16:00<\/strong><strong>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <\/strong><em>\r\n<\/em><em>Attivit\u00e0 consigliata a un pubblico <\/em><strong>da 6 anni<\/strong>\r\n<h5><strong>*NOTA<\/strong>:\u00a0<strong>Le attivit\u00e0 proposte potranno subire variazioni rispetto al programma e in caso di avverse condizioni meteo, alcune potranno essere annullate. <\/strong><\/h5>\r\n<strong><em>Per proseguire insieme la serata\u2026<\/em><\/strong>\r\n\r\n<strong>20:00 - 21:30 <\/strong><strong>Concerto Live\u00a0\u00a0\u00a0 <\/strong><strong>\r\n<\/strong><strong><em>\r\nSulle note di Nathalie,<\/em><\/strong><em> Una cantante emergente che ci intratterr\u00e0 con un\u2019esibizione dal vivo\u2026\r\nNathalie ha studiato nella scuola di canto jazz, pop e blues presso la Fonderia delle Arti e tutt\u2019oggi frequenta la scuola Saint Louis College of Music di Roma.\r\n<strong>Concerto per pianoforte, <\/strong> a cura della solista Antonella D\u2019Orio e realizzato con il patrocinio della dott.ssa <\/em><em>Maria Luisa Moriconi \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <\/em><strong>\r\nAccesso libero fino a <\/strong><strong>esaurimento posti<\/strong>\u00a0(200) - Evento adatto a TUTTI\r\n\r\n<strong>21:30 - 23:00 <\/strong><strong><em>: S.O.S.TENIAMO il Pianeta!<\/em><\/strong>\r\n\r\n<em>L\u2019uomo con l\u2019uso di combustibili fossili consuma in un anno la stessa quantit\u00e0 di carbonio che la biosfera accumula in 400 anni. Le conseguenze dei comportamenti umani potrebbero risultare irreparabili e i cambiamenti climatici sono il segnale pi\u00f9 evidente di come l\u2019ambiente circostante ne \u00e8 sempre pi\u00f9 condizionano: aumento delle temperature, scioglimento dei ghiacciai, frequenti episodi di siccit\u00e0 e alluvioni\u2026\r\nDa molti anni scienziati e ricercatori studiano piani e sistemi di sostenibilit\u00e0 che possano ridurre i danni e allontanare il cos\u00ec detto \u201cpunto di non ritorno\u201d. L\u2019umanit\u00e0 si appresta ad affrontare un\u2019importante e lunga sfida. Ricercatori ed esperti interverranno su questi delicati argomenti.<\/em>\r\n\r\n<strong>Accesso libero fino a <\/strong><strong>esaurimento posti<\/strong>\u00a0(200)\r\nattivit\u00e0 consigliata <strong>da 14 anni<\/strong>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ARTOV_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "37",
+      "organizzatori": ["artov", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.839729",
+         "lon": "12.648944000000029"
+      }
+   }, {
+      "id": "334",
+      "titolo": "Agenzia Spaziale Italiana e INAF-IAPS",
+      "timestamp": 1411747200,
+      "descrizione": "<span style=\"color: #000000;\">Per la prima volta apre al grande pubblico la nuova sede dell'Agenzia Spaziale Italiana con un evento organizzato in collaborazione con l'Istituto di Astrofisica e Planetologia Spaziali dell'INAF.\u00a0<\/span>Il programma sar\u00e0 estremamente ricco.\r\n\r\nA partire dalle 16 si susseguiranno <strong>seminari divulgativi<\/strong> su alcune delle missioni spaziali pi\u00f9 recenti e appassionanti: da Mars Express a Venus Espress, passando per Rosetta e il suo imminiente arrivo alla cometa, scopriremo gli ultimi risultati di Planck, delle missioni Pamela, Agile, Fermi e Lares e impareremo a conoscere Gaia e il grande array di telescopi CTA, due tra i pi\u00f9 interessanti osservatori del futuro. Alle 19:30 avremo <strong>interventi istituzionali<\/strong>, come quello di Roberto Battiston, Presidente dell'ASI, e quello di Pietro Ubertini, Direttore dell'Istituto di Astrofisica e Planetologia Spaziali.\r\n\r\nMoltissime le <strong>attivit\u00e0 per bambini <\/strong>della durata di circa 20 minuti l'una, a rotazione dalle 16 alle 20: la Giornata dell'Astronauta, alla scoperta di ci\u00f2 che accade a bordo della Stazione Spaziale Internazionale in una giornata tipica, il Cibo dell'Astronauta, con attivit\u00e0 manuali e didattiche, e il Grande Gioco dell'Universo\", un'avventura a tappe per scoprire tutti i segreti del cosmo e diventare \"astronomi per un giorno\".\r\n\r\nNumerose anche le attivit\u00e0 di <strong>laboratorio<\/strong>, sempre dalle 16 alle 20. I visitatori potranno scoprire come funzionano i rivelatori ad alte energie, quanto \u00e8 alto il monte pi\u00f9 alto del Sistema Solare e quanto sarebbe faticoso raggiungere la sua vetta... in sella ad una bicicletta!\r\n\r\nEsperimenti e simulazioni realizzate in collaborazione con la Sezione Italiana della British Interplanetary Society (<a href=\"http:\/\/www.bis-italia.it\">http:\/\/www.bis-italia.it<\/a>)\u00a0permetteranno di sperimentare il funzionamento di un rover come quelli marziani, la costruzione e il lancio di razzi, <span style=\"color: #000000;\">mettersi alla prova con simulatori di volo spaziale, per agganciarsi alla Stazione Spaziale, fino a provare un vero e proprio allunaggio<\/span>\u00a0con esplorazione del suolo lunare.\r\n\r\nDa non perdere gli <strong>spettacoli:<\/strong>\r\n\r\n- Concerti e conferenze \u201cSole, stelle e stagioni nella musica e nella scienza\u201d (ore 18), \"Per musica\u2026. ad astra: la musica e l\u2019astronomia\" (ore 21) ideati da Luciano Garramone, musicista ed ingegnere dell'ASI\r\n\r\n- In collaborazione con l'Associazione Tuscolana Astronomia (<a href=\"http:\/\/nuke.ataonweb.it\/\">http:\/\/nuke.ataonweb.it<\/a>), dalle 16 alle 24 verranno proposti spettacoli di planetario all'interno del planetario digitale itinerante dell'ATA, e osservazioni del Sole durante le ore diurne, e dei corpi celesti pi\u00f9 brillanti del cielo estivo nonappena caler\u00e0 la sera.\r\n\r\n&nbsp;\r\n\r\n<strong>Le Mostre esposte:<\/strong>\r\n\r\n- \u201cIl Sistema Solare, ieri, oggi e domani, una mostra fotografica che ripercorre le tappe dell\u2019affascinante viaggio compiuto attraverso il Sistema Solare dall\u2019occhio umano, prima da terra e in seguito nello spazio, attraverso una carrellata di immagini storiche, fornite dalla Fototeca SRPIF della NASA, messe a confronto con le pi\u00f9 recenti scoperte delle missioni interplanetarie.\r\n\r\n- \"Cassini esplora Saturno\": Con questa mostra \u00e8 possibile conoscere la missione Cassini-Huygens e visitare da vicino Saturno, il pianeta pi\u00f9 bello del Sistema Solare, insieme alle sue lune e ai suoi anelli.\r\n\r\n- Mostra comete e ROSETTA\r\n\r\n- Mostra storia dell\u2019astronomia\r\n\r\n- Mostra missioni scientifiche\r\n\r\n- Esposizione modellini\r\n\r\n&nbsp;\r\n\r\nPer scelta logistica le prenotazioni delle singole attivit\u00e0 saranno gestite in sede, si considerano ingressi fino a un massimo di 650 persone ogni due ore (16-18, 18-20, 20-22, 22-24).",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/sedeASI4.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "167",
+      "organizzatori": ["asi", "frascati-scienza", "iaps"],
+      "luogo": {
+         "lat": "41.8555903",
+         "lon": "12.621029499999963"
+      }
+   }, {
+      "id": "278",
+      "titolo": "Giochiamo con la scienza: piccoli scienziati crescono",
+      "timestamp": 1411747200,
+      "descrizione": "I ragazzi potranno vestire i panni dello scienziato utilizzando degli exhibits e partecipando a dei laboratori. Esploreranno il mondo della fisica, dell\u2019astronomia e della scienza dell\u2019 alimentazione\u00a0 divertendosi e giocando. Si faranno la doccia con i raggi cosmici, accelereranno e faranno collidere \u201cparticelle\u201d, pedaleranno per il sistema solare e salteranno sulla luna. Saranno disponibili spettacoli verso un planetario posto nelle vicinanze degli exhibits.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/newfotondr.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "145",
+      "organizzatori": ["italia-in-miniatura", "universita-di-bologna", "fondazione-golinelli", "inaf", "ingv-2", "infn-2", "frascati-scienza", "comune-di-bologna"],
+      "luogo": {
+         "lat": "44.4935774",
+         "lon": "11.342823299999964"
+      }
+   }, {
+      "id": "337",
+      "titolo": "Play with us  (Experimenta la fisica) - INFN Bari",
+      "timestamp": 1411747200,
+      "descrizione": "Piccoli esperimenti interattivi per entrare in contatto con i fenomeni fisici che ci circondano.\r\n\r\n<strong>Le attivit\u00e0 sono ad ingresso libero fino ad esaurimento posti.\u00a0<\/strong><strong>200 posti disponibili<\/strong>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hacklab-terni.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "169",
+      "organizzatori": ["infn-2", "frascati-scienza", "scienzaviva"],
+      "luogo": {
+         "lat": "41.1283245",
+         "lon": "16.873776099999986"
+      }
+   }, {
+      "id": "339",
+      "titolo": "Donne alla guida della pi\u00f9 grande macchina mai costruita dall'Uomo",
+      "timestamp": 1411747200,
+      "descrizione": "La mostra racconta di donne che sulla ricerca stanno costruendo una carriera di successo internazionale. Essa raccoglie oltre trenta ritratti di ricercatrici italiane, del nord e del sud, che hanno offerto importanti contributi alla sfida straordinaria di LHC.\r\n\r\n<strong>Le attivit\u00e0 sono ad ingresso libero fino ad esaurimento posti.\u00a0<\/strong><strong>200 posti disponibili<\/strong>\r\n\r\n<strong>\u00a0<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/atlas-large.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "169",
+      "organizzatori": ["frascati-scienza", "infn-2", "universita-di-bari"],
+      "luogo": {
+         "lat": "41.1283245",
+         "lon": "16.873776099999986"
+      }
+   }, {
+      "id": "340",
+      "titolo": "ESA-ESRIN - 1964-2014 cinquant\u2019anni di cooperazione europea nello spazio",
+      "timestamp": 1411747200,
+      "descrizione": "<strong>1964-2014: cinquant\u2019anni di cooperazione europea nello spazio:<\/strong>\r\n\r\nDue sessioni di visita, durante la quale i visitatori saranno divisi in gruppi e saranno virtualmente portati nello spazio attraverso presentazioni interattive in 3-D. Il programma di visita prevede, dopo una breve introduzione dell'Agenzia Spaziale Europea, una serie di presentazioni sui temi strettamente collegati alle attivit\u00e0 di stabilimento, quali: lo sviluppo del lanciatore Vega, le attivit\u00e0 di Osservazione della Terra, utili per monitorare l'ambiente, il <strong>clima<\/strong>, gli oceani, ma anche in caso di disastri naturali o causati dall'uomo per aiutare, con le mappe ricavate dal telerilevamento, nelle operazioni di soccorso. ATA Star Party: telescopi amatoriali ed astrofili che puntano il cielo e i principali oggetti visibili, affiancati da ricercatori che illustreranno attivit\u00e0, sonde spaziali, esperimenti e strumenti realizzati nei laboratori degli enti di ricerca, che hanno consentito di saperne molto di pi\u00f9 sugli oggetti mostrati nei telescopi.\r\n\r\n<strong>Paolo Nespoli, astronauta dell\u2019ESA<\/strong> parler\u00e0 del suo soggiorno a bordo della Stazione Spaziale Internazionale (ISS), dove gli astronauti vivono e lavorano in un ambiente molto diverso da quello sulla Terra. Tuttavia, devono mangiare, bere e fare esercizio fisico per tenersi in\r\nforma e in buona salute. Significa che devono adattarsi alle condizioni di\r\nmicrogravit\u00e0 che trovano sulla ISS.\r\n\r\nNel Space Rock Caff\u00e8, area ristorazione, il pubblico sceglier\u00e0 la sua canzone preferita da una lista attraverso la quale apprender\u00e0 \u00a0l\u2019astronomia e le scienze spaziali. Sempre nell\u2019area ristorazione i visitatori saranno chiamati a \u2018giudicare\u2019 colore, gusto ed aspetto del vero cibo spaziale, sperimenteranno cosa significhi \u2018mangiare come un astronauta\u2019. \u00a0Ci sar\u00e0 vero cibo spaziale in vendita per adulti, come barrette di Spirulina e Goji, preparati appositamente per la missione di Samantha Cristoforetti, giovane astronauta donna dell\u2019ESA.\r\n\r\nSono previste DUE sessioni di visite con presentazioni ed attivit\u00e0 interattive, entrambe con lo stesso programma, con 400 persone a sessione con inizio 16:00 e 20:00 rispettivamente. Ciascuna sessione dura circa tre ore e mezza pi\u00f9 la possibilit\u00e0 di discutere gli argomenti di interesse con i ricercatori, gli scienziati e gli ingegneri presenti nell'area della mostra allestita e durante le attivit\u00e0 interattive.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ESRIN_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "173",
+      "organizzatori": ["esa-esrin", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.8142052",
+         "lon": "12.70708250000007"
+      }
+   }, {
+      "id": "342",
+      "titolo": "Sessanta anni del CERN: il contributo dei fisici della sezione di Trieste dell\u2019INFN",
+      "timestamp": 1411750800,
+      "descrizione": "In occasione del 60<sup>o<\/sup> del <strong>CERN<\/strong> durante\u00a0 Trieste NEXT una piccola mostra sul contributo dei fisici della sezione di Trieste al CERN, con presentazione di materiale \u00a0iconografico e qualche testo che illustri il contributo attuale e \"storico\" allo sviluppo delle ricerche fatte al CERN da parte di colleghi afferenti alla locale sezione negli anni.\r\n\r\nInoltre alcune presentazioni\u00a0 di fisici triestini che ricordano la loro pionieristica presenza al CERN (con esperienze personali) e proiezioni di un video sulla fisica delle particelle al CERN.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/COMPASS.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "175",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.6492431",
+         "lon": "13.768556900000021"
+      }
+   }, {
+      "id": "287",
+      "titolo": "Expo Scienza",
+      "timestamp": 1411750800,
+      "descrizione": "<em>Un\u2019esposizione per conversare con i ricercatori e vedere da vicino i risultati del lavoro quotidiano dei ricercatori<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/museo_geologia1.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "150",
+      "organizzatori": ["frascati-scienza", "infn-2", "universita-di-pisa"],
+      "luogo": {
+         "lat": "43.7173487",
+         "lon": "10.402142899999944"
+      }
+   }, {
+      "id": "288",
+      "titolo": "A tu per tu con i ricercatori",
+      "timestamp": 1411750800,
+      "descrizione": "<em>Ricercatori dell'Istituto di Fisica Nucleare a disposizione del pubblico per poter conversare sui misteri dell'Universo, sulle possibili nuove applicazioni e sviluppi tecnologici della ricerca, ecc.<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ricercatore_notte.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "150",
+      "organizzatori": ["universita-di-pisa", "infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "43.7173487",
+         "lon": "10.402142899999944"
+      }
+   }, {
+      "id": "289",
+      "titolo": "I luoghi della ricerca - INFN Pisa",
+      "timestamp": 1411750800,
+      "descrizione": "<em>Porte aperte ai laboratori dell'Istituto Nazionale di Fisica Nucleare di Pisa con possibilita' di visitare: camere di alta tecnologia, centro di supercalcolo, laboratorio dei raggi cosmici, ludoteca scientifica per bambini, e molto altro<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/INFN_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "151",
+      "organizzatori": ["infn-2", "frascati-scienza", "universita-di-pisa"],
+      "luogo": {
+         "lat": "43.7198114",
+         "lon": "10.407322600000043"
+      }
+   }, {
+      "id": "325",
+      "titolo": "L\u2019Europa per la Ricerca - INFN Pavia",
+      "timestamp": 1411750800,
+      "descrizione": "L\u2019Europa finanzia la ricerca e aiuta i ricercatori a muoversi, fare nuove esperienze, imparare e collaborare. In questa occasione alcuni esperti di tematiche europee e alcuni ricercatori che hanno approfittato di opportunit\u00e0 di finanziamento per svolgere periodi di ricerca all\u2019estero e in Italia racconteranno le loro esperienze. Sar\u00e0 un\u2019occasione perch\u00e8 il pubblico conosca alcune delle possibilit\u00e0 concrete offerte dalla Comunit\u00e0 Europea",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/europa-per-la-ricerca.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "275",
+      "titolo": "Science is a common tool",
+      "timestamp": 1411750800,
+      "descrizione": "La scienza pi\u00f9 incredibile a portata di mano. Giovani laureati mostreranno ai curiosi di tutte le et\u00e0 i segreti della\u00a0<strong>scienza<\/strong>, con\u00a0<strong>esperimenti<\/strong>\u00a0ed esibizioni dal vivo.\r\n\r\nRisponderanno alle domande sulle diverse discipline scientifiche o sulle loro esperienze personali e professionali nella\u00a0<strong>ricerca\u00a0<\/strong>italiana.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/chimica_scienza_centrale.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "31",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8058828",
+         "lon": "12.678936000000022"
+      }
+   }, {
+      "id": "276",
+      "titolo": "Info Point e European Corner ",
+      "timestamp": 1411750800,
+      "descrizione": "Il ruolo della Ricerca Italiana in Europa, come la Commissione Europea agisce sul territorio per promuovere e finanziare progetti di ricerca negli enti",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/european.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "31",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "41.8058828",
+         "lon": "12.678936000000022"
+      }
+   }, {
+      "id": "292",
+      "titolo": "A spasso con i dinosauri",
+      "timestamp": 1411752600,
+      "descrizione": "Dopo la proiezione del film \u201cA spasso con i dinosauri\u201d, il paleontologo Raffaele Sardella, dell\u2019Universit\u00e0 \u201cSapienza\u201d di Roma, incontra il pubblico e risponde alle domande, commentando le scene del film e raccontando la sua esperienza di ricercatore. Raffaele Sardella si \u00e8 laureato con una tesi alle tigri dai denti a sciabola e da allora si occupa di ricerche sull\u2019evoluzione dei carnivori, anche in relazione ai cambiamenti climatici che hanno sconvolto la Terra nel passato.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0  saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/a-spasso-con-i-dinosauri-2.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "183",
+      "organizzatori": ["frascati-scienza", "universita-sapienza"],
+      "luogo": {
+         "lat": "41.9012278",
+         "lon": "12.512396299999978"
+      }
+   }, {
+      "id": "344",
+      "titolo": "INAF - OAR",
+      "timestamp": 1411754400,
+      "descrizione": "<strong>Gli alieni siamo noi dalle 18 alle 20:30<\/strong>\u00a0Insieme ai ricercatori dell\u2019Osservatorio andremo tutti alla scoperta di pianeti lontani e forse anche abitabili, che ruotano attorno ad altre stelle lontane da noi. I bambini giocheranno insieme a noi e con la loro fantasia a trasformarsi tutti in abitanti di questi particolari pianeti con spettacolo finale per i genitori!\r\n\r\n<strong>Fisicast Dalle 18 alle 24<\/strong> FISICAST \u00e8 un podcast pensato per tutti coloro che vogliano capire meglio il mondo che li circonda. La spiegazione dei concetti generali si alterna a quella delle tecnologie piu\u2019 moderne, con un\u2019esposizione semplice che tiene sempre in mente le leggi fondamentali della fisica. I ricercatori della Sapienza e dell\u2019Osservatorio Astronomico di Roma si alterneranno per parlarci dei principi generali della fisica ogni mezz\u2019ora. Ingresso libero che non necessita di prenotazione\r\n\r\n<strong>Spettacolo sotto le stelle<\/strong> Dalle 21:30 Spettacolo di musica e stelle condotto dai ricercatori dell\u2019Osservatorio Astronomico di Roma\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/OAR_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "38",
+      "organizzatori": ["inaf", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.8130631",
+         "lon": "12.707444900000041"
+      }
+   }, {
+      "id": "348",
+      "titolo": "Sperimenta con Noi - Hands on",
+      "timestamp": 1411754400,
+      "descrizione": "Esperimenti di fisica interattivi ad alto contenuto di innovazione tecnologica. Robotica, sistema di monitoraggio ambientale, sorgenti di plasma , rivelazione di raggi cosmici , idrofoni per acustica sottomarina, generatore di carica elettrostatica Van de Graaf.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/hands-on-catania.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "349",
+      "titolo": "Un mare di ricerca",
+      "timestamp": 1411754400,
+      "descrizione": "Presentazione del progetto per la costruzione di un telescopio sottomarino per neutrini e applicazioni multidisciplinari alla geologia e biologia.(Km3NeT-EMSO).\r\n\r\nAscolto dei suoni dei mammiferi marini captati nello Jonio meridionale e ascolto di brani attraverso la tecnica della sonificazione, elaborati dal dott. Domenico Vicinanza, che consiste nell\u2019esprimere in musica i dati e i grafici acquisiti durante gli esperimenti scientifici e la registrazione dei dati dei terremoti e delle eruzioni vulcaniche.\r\n\r\nPartership INGV\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/catania_2.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["ingv-2", "infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "350",
+      "titolo": "La fisica per l\u2019arte",
+      "timestamp": 1411754400,
+      "descrizione": "Tecniche non distruttive per l\u2019analisi chimico-fisica di opere artistiche e reperti archeologici. Esposizione di quadri e illustrazione delle metodologie di analisi con strumentazione.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/catania_3.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "353",
+      "titolo": "Il ricercatore uno di noi",
+      "timestamp": 1411754400,
+      "descrizione": "Incontro e dialogo con i ricercatori, a tempo indeterminato e precari. Mostra ed esposizione dei loro hobby e attivit\u00e0 fuori dal contesto di lavoro.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/amazon.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "281",
+      "titolo": "\"L\u2019energia nella societ\u00e0 moderna\" \u2013 P. Dalpiaz",
+      "timestamp": 1411754400,
+      "descrizione": "Viene presentata una storia dell\u2019energia e della sua rilevanza nella societ\u00e0 nel corso del tempo, ponendo particolare accento sugli aspetti innovative e sostenibili.\r\n\r\n<strong>Le attivit\u00e0 sono a ingresso libero fino ad esaurimento posti.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/NotteRicercatori2011-015.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "148",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "44.8360225",
+         "lon": "11.61892910000006"
+      }
+   }, {
+      "id": "338",
+      "titolo": "Cosa fa un ricercatore - Skype on night",
+      "timestamp": 1411754400,
+      "descrizione": "Incontro con ricercatori baresi che fanno ricerca all\u2019estero.\r\n\r\n<strong>Le attivit\u00e0 sono ad ingresso libero fino ad esaurimento posti.\u00a0<\/strong><strong>200 posti disponibili<\/strong>\r\n\r\n<strong>\u00a0<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/ricercatore_notte.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "169",
+      "organizzatori": ["frascati-scienza", "infn-2", "universita-di-bari"],
+      "luogo": {
+         "lat": "41.1283245",
+         "lon": "16.873776099999986"
+      }
+   }, {
+      "id": "285",
+      "titolo": "Rivelatori di particelle nella storia",
+      "timestamp": 1411756200,
+      "descrizione": "UA1, Delphi, <strong>Babar<\/strong>: che cosa significano queste parole? A partire dai dispositivi conservati al <strong>Museo<\/strong> e dal racconto dei ricercatori, scopriamo alcuni esperimenti importanti nella storia della fisica delle particelle elementari e il lavoro d'\u00e9quipe che ha permesso di realizzarli.\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/atla_cern.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "149",
+      "organizzatori": ["infn-2", "frascati-scienza", "museo-nazionale-scienza-e-tecnologia-di-milano"],
+      "luogo": {
+         "lat": "45.4626867",
+         "lon": "9.17108840000003"
+      }
+   }, {
+      "id": "286",
+      "titolo": "Terremoti per la scienza",
+      "timestamp": 1411756200,
+      "descrizione": "&nbsp;\r\n\r\nCome si studia un terremoto e cosa ci permette di sapere? Avventuriamoci in un incontro ravvicinato con una stazione sismologica e seguiamo i racconti di una ricercatrice alle prese con lo studio dell\u2019interno della Terra. Potremmo intercettare conoscenze fondamentali riguardo al nostro pianeta e scoprire la storia avvincente di come le abbiamo acquisite.\r\n\r\ncon Gemma Musacchio, Istituto Nazionale di Geofisica e Vulcanologia",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/3.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "149",
+      "organizzatori": ["museo-nazionale-scienza-e-tecnologia-di-milano", "infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.4626867",
+         "lon": "9.17108840000003"
+      }
+   }, {
+      "id": "284",
+      "titolo": "Particelle elementari e fantasia",
+      "timestamp": 1411756200,
+      "descrizione": "Che cosa significa rivelare una <strong>particella elementare<\/strong>? Come si progetta un rivelatore? E se toccasse a noi?\r\n\r\nCon alcuni esperimenti e moltissimi mattoncini di LEGO esploriamo queste domande insieme ai ricercatori e proviamo a scoprire perch\u00e9 l'immaginazione fa parte del mestiere.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/milano_museo_scienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "149",
+      "organizzatori": ["museo-nazionale-scienza-e-tecnologia-di-milano", "infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.4626867",
+         "lon": "9.17108840000003"
+      }
+   }, {
+      "id": "307",
+      "titolo": "Orchestra \u201cFalcone Borsellino\u201d",
+      "timestamp": 1411758000,
+      "descrizione": "Orchestra giovanile di 40 elementi formata da bambini e giovani dei quartieri a rischio di Catania che utilizza il metodo realizzato da <strong>Jos\u00e8 Antono Ebreu<\/strong>, il maestro di musica del Venezuela che \u00e8 riuscito a strappare alle bande criminali migliaia di giovani. I giovani musicisti fanno parte della fondazione <em>La citt\u00e0 invisibile<\/em> i bambini che nessuno vede e ai quali la musica,la scienza e altre discipline vuole proporre la possibilit\u00e0 di una scelta che li renda visibili.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/orchestra-falcone-borsellino3.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "326",
+      "titolo": "L\u2019Aperitivo delle scienze",
+      "timestamp": 1411758000,
+      "descrizione": "INFN offrir\u00e0 ai cittadini un aperitivo durante il quale saranno a disposizione degli esperti di varie aree di ricerca della fisica, illustrate da poster esposti nella sala. Gli esperti risponderanno a domande del pubblico secondo la formula <em>lascia la tua domanda in questa bacheca<\/em>. Alla fine dell\u2019aperitivo sar\u00e0 conferito un premio al vincitore del Concorso di Fotografia indetto per la Notte dei Ricercatori: <em>Spunti di Scienza dietro un angolo della tua citt\u00e0 \u2013 immagini di fisica, chimica, ingegneria da dove non ti aspetti<\/em>.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/aperitivo-della-scienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "257",
+      "titolo": "Presentazione del Nuovo libro di Davide Giacalone \"Senza Paura\"",
+      "timestamp": 1411758000,
+      "descrizione": "L\u2019autore presenter\u00e0 il suo nuovo libro. Si parler\u00e0 delle paure collettive e sulla loro infondatezza. In particolare la scienza evocata a sproposito, come certificatrice di apocalissi e catastrofi, quindi usata come superstizioni. L\u2019ambientalismo \u00e8 una cosa seria. La scienza, quella vera, ha sempre portato progresso e ottimismo, non paura e cupezza. ",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Superstizione-Imc.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "21",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8103734",
+         "lon": "12.670798399999967"
+      }
+   }, {
+      "id": "336",
+      "titolo": "Omaggio a GALILEO a quattrocentocinquanta anni dalla nascita",
+      "timestamp": 1411758000,
+      "descrizione": "A 450 anni dalla nascita di Galileo l\u2019associazione ScinezaViva presenta uno spettacolo interattivo sulla vita e le opere di galileo. Ne verr\u00e0 raccontata la storia e ripercorse le tappe fondamentali della sua vita di scienza mediante piccoli esperimenti interattivi che coinvolgeranno il pubblico.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Galileo-sustermans.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "169",
+      "organizzatori": ["frascati-scienza", "infn-2", "scienzaviva"],
+      "luogo": {
+         "lat": "41.1283245",
+         "lon": "16.873776099999986"
+      }
+   }, {
+      "id": "280",
+      "titolo": "ENEA Casaccia - Tecnologie avanzate per la sostenibilit\u00e0 ",
+      "timestamp": 1411758000,
+      "descrizione": "Il Centro della Casaccia si apre per la prima volta al pubblico della Notte della Ricerca per mostrare il grande coinvolgimento dei ricercatori <strong>dell\u2019ENEA<\/strong> nel campo della sostenibilit\u00e0.\r\n\r\nLe visite si articoleranno in <strong>4 tour<\/strong> della durata di un\u2019ora e mezza circa, che avranno come temi le Nuove Tecnologie, le Tecnologie per l\u2019Energia (Energia e Nucleare), le Fonti Rinnovabili e l\u2019Efficienza Energetica (Energia per la Vita), \u00a0le Tecnologie per il Sistema Agroindustriale e le Biotecnologie (Nutrire e Curare il Pianeta).\r\n\r\nContemporaneamente ai tour si svolgeranno sessioni informative e proiezioni nella principale Sala Conferenze del Centro Casaccia (Sala Mimose)\u201d.\r\n\r\n<strong>TOUR 1 Nuove Tecnologie - Visita ai laboratori<\/strong>\r\n\r\n<em>Hall Tavole Sismiche\u00a0(simulazione di terremoti e realizzazione di dispositivi antisismici)\r\n<\/em>\r\n\r\n<em>Camera semi-anecoica\u00a0(test di compatibilit\u00e0 elettromagnetica)<\/em>\r\n\r\n<em>Robotica<\/em>\r\n\r\n<em>Microscopia elettronica<\/em>\r\n\r\nOrari delle partenze 19 - 19:45 - 20:30 - 21.15 - 22.00 (durata del tour: h. 1.30)\r\n\r\n<strong>TOUR 2 Energia e Nucleare -\u00a0<strong>Visita ai laboratori<\/strong><\/strong>\r\n\r\n<em>Reattore TRIGA <span style=\"background-color: #ff0;\">(*)<\/span><\/em>\r\n\r\n<em>Impianto ZECOMIX\u00a0(impianto per l\u2019utilizzo pulito del carbone)<\/em>\r\n\r\n<em>Impianto VALKIRIA\u00a0(impianto per l\u2019utilizzo pulito del carbone)<\/em>\r\n\r\nOrari delle partenze 19.00 - 19.45 - 20.30 - 21.15 - 22.00 (durata del tour: h. 1.30)\r\n\r\n<strong>TOUR 3 Energia per la vita\u00a0-\u00a0<strong>Visita ai laboratori<\/strong><\/strong>\r\n\r\n<em>Impianto Solare Termodinamico<\/em>\r\n\r\n<em>Climatizzazione sostenibile per il futuro<\/em>\r\n\r\n<em>Orari delle partenze 19.00 - 20.30 - 22.00 (durata del tour: h. 1.30)<\/em>\r\n\r\n<strong>TOUR 4\u00a0Nutrire e curare il Pianeta - \u00a0<strong>Visita ai laboratori<\/strong><\/strong>\r\n\r\n<em>Serra a Contenimento\u00a0(coltivazione di piante fuori suolo)<\/em>\r\n\r\n<em>Scienze Omiche\u00a0(profilo genetico globale degli esseri viventi)<\/em>\r\n\r\n<em>Biofarmaceutici\u00a0(produzione a basso costo di farmaci attraverso le piante)<\/em>\r\n\r\n<em>Hall Tecnologica\u00a0(innovazione agro-industriale)<\/em>\r\n\r\nOrari delle partenze 19.00 - 19.45 - 20.30 - 21.15 - 22.00 (durata del tour: h. 1.30)\r\n\r\n<span style=\"background-color: #ff0;\"><em>*AVVISO:<\/em><em>\u00a0la visita al Reattore \u00e8 subordinata all\u2019invio dei propri dati anagrafici \u00a0(nome, cognome, data e luogo di nascita, cittadinanza, indirizzo di residenza, estremi di un documento valido,\u00a0che dovr\u00e0 essere esibito al momento della visita) al seguente indirizzo e-mail:\u00a0<\/em><em>reanuc@enea.it<\/em><em>\u00a0.<\/em><\/span>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/casaccia.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "147",
+      "organizzatori": ["enea", "frascati-scienza"],
+      "luogo": {
+         "lat": "42.0410967",
+         "lon": "12.306303299999968"
+      }
+   }, {
+      "id": "302",
+      "titolo": "Aspettando la Scena - Cascina",
+      "timestamp": 1411759800,
+      "descrizione": "In attesa dello spettacolo teatrale, pubblico, scienziati e attori si scambieranno idee attorno ad un allettante bancone (solo le bevande saranno a pagamento).\r\n\r\n<em>L'Attivit\u00e0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul\u00a0<a href=\"http:\/\/outreach.ego-gw.it\/\">sito<\/a>\u00a0a partire dal 1 Settembre 2014<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/aperitivo-della-scienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "154",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.6780562",
+         "lon": "10.534387400000014"
+      }
+   }, {
+      "id": "346",
+      "titolo": "Tutti per Uno, Uno per Tutti - La Sostenibilit\u00e0 siamo Noi",
+      "timestamp": 1411759800,
+      "descrizione": "Quanto \u00e8 sostenibile il nostro pranzo? Quanti litri di acqua servono per un uovo? Che impatto hanno sulla salute della terra le nostre scelte a tavola? Questi sono alcuni degli spunti sul tema della \u201c<strong>Sostenibilit\u00e0<\/strong>\u201d che Explora offrir\u00e0 grazie alla presenza dei Ricercatori del CRA-NUT Il Consiglio per la Ricerca e la Sperimentazione in Agricoltura e Centro di Ricerca per gli Alimenti e la Nutrizione in occasione della Notte Europea dei Ricercatori.\r\n\r\nObiettivi: <strong>scoprire<\/strong> che la <strong>salute <\/strong>della <strong>terra<\/strong> \u00e8 la nostra salute e che crescere con <strong>un\u2019alimentazione sana<\/strong> fa bene anche all\u2019ambiente; <strong>sperimentare<\/strong> <strong>l\u2019impronta idrica<\/strong> dei prodotti che scegliamo per le nostre tavole; <strong>approfondire<\/strong> in una nuova cucina il significato di \u201c<strong>consumo consapevole<\/strong>\u201d e capire che dal <strong>cibo<\/strong> dipende il futuro del nostro <strong>pianeta<\/strong>.\r\n\r\n&nbsp;\r\n\r\nI laboratori\r\n\r\nI frutti delle Stagioni, Stagionalit\u00e0, Frutta e Verdura, 3\/5 anni:\r\n\r\nAcqua Invisibile! L'impronta dell'acqua sui cibi che mangiamo, 6\/7 anni;\r\n\r\nL'Energia che non ti aspetti\" CO2 e Consumo consapevole, 8\/12 anni;\r\n\r\nPizza Lab, Gluten Free\u201d nell\u2019Officina in Cucina, 5\/12 anni;\r\n\r\nIngresso gratuito, prenotazione obbligatoria\u00a0<a href=\"http:\/\/www.mdbr.it\">www.mdbr.it<\/a> 06 3613776",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/explora_scienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "178",
+      "organizzatori": ["frascati-scienza", "museo-dei-bambini-scs-onlus"],
+      "luogo": {
+         "lat": "41.915309",
+         "lon": "12.474483599999985"
+      }
+   }, {
+      "id": "308",
+      "titolo": "L\u2019apprendista Stregone",
+      "timestamp": 1411761600,
+      "descrizione": "<span style=\"color: #000000;\">Momento musicale col\u00a0<strong>Trio Anima Mundi<\/strong>\u00a0(flauto-clarinetto-fagotto) e intervalli con lettura di brani<\/span><span style=\"color: #000000;\">\u00a0di letteratura scientifica e coreografie. Recitano Roberta Spart\u00e0 e Francesco Romano, giovani ricercatori precari dei LNS.<\/span>\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/catania_5.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "290",
+      "titolo": "Una notte sulla sostenibilit\u00e0 sotto le stelle di \u201cRoma Tre\u201d",
+      "timestamp": 1411763400,
+      "descrizione": "Il pubblico avr\u00e0 modo di incontrare i docenti, i giovani ricercatori, i dottorandi e gli studenti e di entrare in contatto personalmente con la realt\u00e0 della ricerca scientifica svolta presso la Facolt\u00e0 e gli enti di ricerca.\r\n\r\n<strong>PROGRAMMA DELLE ESPOSIZIONI, DEI LABORATORI E DEGLI SPETTACOLI<\/strong>\r\n\r\n<strong>SPAZI ESTERNI<\/strong>\r\n<ul>\r\n\t<li><strong>CORO di benvenuto<\/strong> \u2013\u00a0Confusion 193D, diretto da Alessandra Corso<\/li>\r\n<\/ul>\r\nCoro a cui partecipano anche ricercatori e docenti di altri dipartimenti di Roma Tre e universit\u00e0 romane.\r\n<ul>\r\n\t<li><strong style=\"color: #000000;\">Star party<\/strong><span style=\"color: #000000;\">\u00a0\u2013 Enrico Bernieri &amp; Ilaria De Angelis<\/span>\u00a0- Universit\u00e0 Roma Tre Dipartimento di Matematica e Fisica, INFN<\/li>\r\n<\/ul>\r\nOsservazioni astronomiche guidate. Per chi vuole partecipare portando anche il proprio telescopio, c'\u00e8 la possibilit\u00e0 di ospitare fino ad un massimo di 5 strumenti. Ogni telescopio deve essere autonomo e dotato di propria (eventuale) alimentazione. Per motivi di sicurezza eventuali cavi di alimentazione dovranno necessariamente rimanere sotto il cavalletto del telescopio.\r\n<ul>\r\n\t<li><strong>Fossili Viventi: attivit\u00e0 interattiva<\/strong> - Gabriele Sansalone Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nUn esperto paleontologo dei vertebrati condurr\u00e0 i visitatori in un breve ma affascinante viaggio attraverso l'evoluzione delle specie al fresco di un ombroso Ginko biloba, vero e proprio fossile vivente attualmente piantato nel mezzo del nostro giardino\r\n<ul>\r\n\t<li><strong>Il cielo in una stanza: il Planetario a Roma Tre: visite guidate<\/strong> - Maurizio Chirri, Massimo Mattei, Giulia Botticelli, Anna Laudenzi, Livia Lombardi Universit\u00e0 Roma Tre - Dipartimento di Scienze, Museo geopaleontologico di Rocca di Cave, Associazione Hipparcos<\/li>\r\n<\/ul>\r\nQuattro turni dello spettacolo del cielo stellato di oggi e d'importanti notti del passato attraverso una narrazione rigorosa e affascinante al tempo stesso: per partecipare allo spettacolo gratuito nei quattro turni delle ore 20:30 21:15 22:00 e 22:45 \u00e8 necessaria la prenotazione\r\n<ul>\r\n\t<li><strong>Immagini dalla Natura e messaggi sulla sostenibilit\u00e0 - <\/strong>Massimiliano Lagona e Gabriele Vizzini Studenti di Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nGli spazi esterni in cui si svolgeranno le attivit\u00e0 saranno accompagnati da messaggi e immagini sulla natura e la sostenibilit\u00e0 ambientale\r\n<ul>\r\n\t<li><strong>La Societ\u00e0 Geologica Italiana: le radici della cultura geologica italiana<\/strong> - Alessandro Zuccari, Fabio Petti Societ\u00e0 Geologica Italiana<\/li>\r\n<\/ul>\r\nLa Societ\u00e0 Geologica Italiana \u00e8 stata fondata a Bologna il 29 Settembre 1881. \u00c8 la pi\u00f9 antica e rappresentativa associazione scientifica italiana nel campo delle Geoscienze. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 della SGI per la promozione e la diffusione delle conoscenze geologiche\r\n<ul>\r\n\t<li><strong>La conservazione della natura a Roma: la sfida dei Parchi metropolitani (materiale parchi, info Roma Natura): attivit\u00e0 divulgativa<\/strong> - Antonella Lo Re Roma Natura Regione Lazio<\/li>\r\n<\/ul>\r\nRomaNatura \u00e8 l\u2019Ente Regionale per la Gestione del Sistema delle Aree Naturali Protette nel Comune di Roma. Attualmente RomaNatura gestisce oltre 16.000 ettari di natura protetta. La ricchezza del territorio gestito dall\u2019Ente \u00e8 immensa: preesistenze archeologiche, monumenti, ville e casali rappresentano solo una parte del suo valore, il cui vero tesoro \u00e8 rappresentato da nicchie ecologiche che contano la presenza di oltre 1000 specie vegetali, 5000 specie di insetti e altre 150 specie fra mammiferi, uccelli, anfibi e rettili. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 di RomaNatura per la promozione della conoscenza di queste aree protette.\r\n<ul>\r\n\t<li><strong>I tropici fuoriporta: Un antico mare tropicale a due passi da Roma - <\/strong>Francesco Grossi e Andrea Bollati Universit\u00e0 Roma Tre Dipartimento di Scienze e Associazione Hipparcos<\/li>\r\n<\/ul>\r\nDue ricercatori esperti della geologia dell'Appennino saranno a disposizione del pubblico per illustrare attraverso carte geologiche, campioni rocce e fossili come le rocce affioranti a due passi da Roma rappresentino i resti di un antico mare mare tropicale\r\n<ul>\r\n\t<li><strong>Due chiacchiere sulla sostenibilit\u00e0 ambientale: presentazione di libri sul tema - <\/strong>Giulia Caneva Universit\u00e0 Roma Tre Dipartimento di Scienze e Pierluigi Vecchia Commissione Energia Ordine Geologi Lazio<\/li>\r\n<\/ul>\r\nLa sostenibilit\u00e0 ambientale \u00e8 diventato tema centrale nella pianificazione e nello sviluppo della nostra societ\u00e0: servono scelte realmente sostenibili, che influenzino la nostra vita a ogni livello \u2013 dalla pianificazione urbanistica alla gestione delle risorse naturali e dell\u2019energia \u2013 trasformando l\u2019imperativo della sostenibilit\u00e0 ambientale da mero slogan, capace solo di generare un consenso tanto acritico quanto inefficace, in motore di progetti concreti, capaci di cambiare la vita e le abitudini di ognuno di noi. Una biologa e un geologo, esperti di sostenibilit\u00e0 ambientale, ce ne parleranno prendendo come spunto le loro recenti fatiche editoriali sui temi dell'Etnobotanica e delle Smart Cities\r\n<ul>\r\n\t<li><strong>Natural Heritage: I Geositi d\u2019Italia - <\/strong>Chiara D\u2019Ambrogi, Marco Pantaloni, Rita Maria Pichezzi, Rinalda Di Stefano, Maria Cristina Giovagnoli Dip. Difesa suolo e Difesa della Natura-ISPRA<\/li>\r\n<\/ul>\r\nI Dipartimenti \u201cDifesa del Suolo\u201d e \u201cDifesa della Natura\u201d dell\u2019ISPRA propongono un viaggio virtuale alla scoperta geologica del nostro territorio. Mostreremo i pi\u00f9 interessanti geositi italiani e della nostra regione; scopriremo dove sono questi \u201cmonumenti geologici\u201d, cosa significano, perch\u00e9 e quando si sono formati. Un\u2019esplorazione per conoscere e tutelare il nostro territorio; un viaggio virtuale nello spazio e nel tempo alla conoscenza della storia geologica della nostra regione. Alla scoperta dei geositi andremo attraverso:\r\n\r\nItinerari virtuali nel Lazio; ;\r\n- Riconoscimento di Fossili al microscopio;\r\n- Le storie raccontate dalle rocce;\r\n- La partecipazione a Geoquiz (per tutte le fasce di et\u00e0)\r\n<ul>\r\n\t<li><strong>Pannello Micro Macro - <\/strong>Alessandro Di Cicco Dipartimento di Matematica e Fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\nUn giovane ricercatore condurr\u00e0 gli interessati in un avvincente viaggio dal microscopico al macroscopico attraverso la lettura di un lungo pannello affisso nell'area di accoglienza al pubblico\r\n<ul>\r\n\t<li><strong>La terra sotto i nostri piedi: Georadar - <\/strong>Barbara Cosciotti Roma Tre - Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nEsperimenti di geofisica applicata nel nostro giardino in compagnia di una esperta di georadar.\r\n\r\n<strong>\u00a0<\/strong>\r\n\r\n<strong>SPAZI INTERNI<\/strong>\r\n<ul>\r\n\t<li><strong>Attivit\u00e0 divulgativa - <\/strong>Sveva Corrado, Claudio Faccenna e Francesca Funiciello -\u00a0\u00a0Universit\u00e0 Roma Tre Dipartimento di Scienze.<\/li>\r\n<\/ul>\r\nL'esperienza dei ricercatori coinvolti nei progetti europei dei nostri dipartimenti con distribuzione anche di materiale divulgativo\r\n<ul>\r\n\t<li>AULA E <strong>Frammenti di cielo e di terra - <\/strong>Vincenzo Nasti, Paolo Aloe, Chiara Amadori Gruppo Mineralogico Romano e Dipartimento di Scienze Univ. Roma Tre<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di minerali, rocce e meteoriti\r\n<ul>\r\n\t<li>LABORATORIO <strong>Le montagne e i terremoti \u201cin scatola\u201d - <\/strong>Francesca Cifelli e Maurizio Parotto - Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nEsperimenti in laboratorio\r\n<ul>\r\n\t<li>AULA B2 <strong>DNA Cellule e Vita - <\/strong>Manuela Cervelli, Monica Carosi Universit\u00e0 Roma Dipartimento di Scienze Emanuela Angellucci, Francesca Greco, Luana Barone, Anna Fracassi, Michela Onorati, Barbara D'Orio<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di materiale biologico\r\n<ul>\r\n\t<li>ATRIO MATEMATICA <strong>I rivelatori di particelle: gli strumenti <\/strong>Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nOsservazione di raggi cosmici con coincidenza tra scintillatori e illustrazione di apparati sperimentali via via piu' complessi\r\n<ul>\r\n\t<li>AULA 9 <strong>Caccia alle Particelle <\/strong>(con prenotazione massimo 30 persone) Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nMetodi di identificazione delle particelle elementari illustrati e poi applicati in un avvincente gioco di squadra, una vera e propria caccia al tesoro.\r\n<ul>\r\n\t<li>AULA C <strong>Come la scienza combatte la contraffazione: vedere oltre la nostra vista -<\/strong>Giuseppe Schirripa Dipartimento di Matematica e Fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\n<strong>\u00a0<\/strong>\r\n\r\n<strong>PROGRAMMA DELLE CONFERENZE<\/strong>\r\n\r\nAULA D blocco aule - seminari di biologia sul tema della salute dell\u2019uomo (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cL\u2019obesit\u00e0 e il cibo spazzatura: il ruolo del senso del gusto\u201d Maria Marino - Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n<\/ul>\r\n<ul>\r\n\t<li>21:15: \u201cIl doppio ruolo del colesterolo: da benefattore a killer\u201d Valentina Pallottini - Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cCellule staminali: cosa sono? Come possono essere utilizzate?\u201d Sandra Moreno - Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n<\/ul>\r\n<ul>\r\n\t<li>22:45: \u201cI virus: da dove vengono e dove vanno\u201d Elisabetta Affabris - Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nAULA G blocco aule - Seminari prenotazione della sostenibilit\u00e0 ambientale (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLa Geotermia a Roma: possibilit\u00e0 e prospettive\u201d <em>Massimo Ranaldi e Luca Tarchini \u2013 Dipartimento di Scienze \u2013 Sezione di Geologia<\/em><\/li>\r\n\t<li>21:30: \u201cQuale via per la resilienza?\u201d Claudio Baffioni \u2013 RomaCapitale, Osservatorio Ambientale sui Cambiamenti Climatici<\/li>\r\n\t<li>22:30: \"Triceratops vs Torosaurus: la sfida continua\" Leonardo Maiorino \u2013 Dipartimento di Scienze - Sezione di Geologia<\/li>\r\n<\/ul>\r\nAULA B1 Momenti di matematica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \"Cento anni di Alan Turing\" Roberto Di Pietro - Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:30: \u201cLa precessione del perielio di Mercurio e la teoria delle perturbazioni\u201d Alessandro Giuliani - Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>22:30: \u201cGuida galattica per analisti numerici\u201d Roberto Ferretti - Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nAULA B3 Seminari di fisica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLe frontiere della fisica, La Fisica del Volo: dal moscerino all\u2019Airbus \u201d Luciano Teresi - Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:15: \u201cL\u2019acqua: Cosi\u2019 comune e cosi\u2019 stravagante\u201d Maria Antonietta Ricci - Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cNanotecnologie per l\u2019Energia\u201d Andrea Notargiacomo - CNR- IFN Dipartimento di Scienze<\/li>\r\n\t<li>22:45: \"Il lato nascosto dell'Universo: DarkSide alla ricerca della materia oscura.\"\u00a0 Laura Marini e Andrea Mandarano. - Dipartimento di Matematica e fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\nAULA F Con la serie di spettacoli \u201cViaggi spaziali\u201d, McQuadro offre l\u2019emozione di un viaggio nello spazio e persino nel tempo: una originale esperienza interattiva, accompagnata da musiche e immagini memorabili. Per un viaggio tranquillo ci si pu\u00f2 recare tra le valli di Marte, oppure a vedere un\u2019eclisse direttamente dalla Luna, o magari a bagno tra i laghi di Titano . Per destinazioni pi\u00f9 esotiche si pu\u00f2 uscire dal Sistema Solare e visitare Rigel e Antares, oppure qualche pianeta extrasolare, ma anche uscire dalla Via Lattea e volare su Andromeda. Per i pi\u00f9 avventurosi si pu\u00f2 viaggiare nel tempo e osservare il cielo diecimila anni fa , oppure si possono sfidare le macchie solari e le tempeste di Giove, e persino tentare l\u2019avvicinamento a un buco nero. (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>21:00: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n\t<li>22:30: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n<\/ul>\r\n<strong>La partecipazione a tutte le attivit\u00e0 \u00e8 gratuita<\/strong>\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/roma_tre.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "180",
+      "organizzatori": ["universita-roma-tre", "frascati-scienza"],
+      "luogo": {
+         "lat": "41.8542968",
+         "lon": "12.465580499999987"
+      }
+   }, {
+      "id": "324",
+      "titolo": "L'atomo che guarisce. Quando la fisica e la medicina si danno la mano.",
+      "timestamp": 1411765200,
+      "descrizione": "<strong>Adele Rimoldi<\/strong> e <strong>Nicoletta Protti<\/strong>\r\n<em>L'atomo che guarisce. Quando la fisica e la medicina si danno la mano.<\/em>\r\n\r\n<span style=\"color: #000000;\">Questo seminario verte alla presentazione dei concetti fondamentali della fisica applicata alla medicina, con particolare riguardo alla presentazione dell\u2019evoluzione delle tecnologie diagnostiche. Enfasi viene data alla illustrazione di alcune tecnologie quali la Tomografia Assiale Computerizzata (TAC), la Positron Emission Therapy (PET) e l\u2019 adroterapia. Nel seguito vengono presentate le strutture del CNAO, il Centro pavese Nazionale di Adroterapia Oncologica, e le prospettive prossime di sviluppo. Nella seconda parte del seminario si presenteranno i principi della Terapia per Cattura<\/span><br style=\"color: #000000;\" \/><span style=\"color: #000000;\">Neutronica sul Boro (Boron Neutron Capture Therapy, BNCT) e le sue principali applicazioni nel mondo, in Italia e in particolare a Pavia. In particolare si mostrer\u00e0 l'applicazione del trattamento al singolo organo espiantato combinata ad autotrapianto, realizzata per la prima volta nel mondo a Pavia su due pazienti affetti da metastasi epatiche. Questa esperienza rappresenta tuttora una pietra miliare nella ricerca oncologica e di BNCT.<\/span>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/biomedicina.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "161",
+      "organizzatori": ["infn-2", "frascati-scienza"],
+      "luogo": {
+         "lat": "45.1846694",
+         "lon": "9.15420359999996"
+      }
+   }, {
+      "id": "309",
+      "titolo": "La ricerca e la societ\u00e0",
+      "timestamp": 1411765200,
+      "descrizione": "Dibattito condotto da <strong>Mario Tozzi <\/strong>con la partecipazione di autorevoli esponenti del mondo della cultura e della scienza.",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/9.ricerca-e-la-societ\u00e0.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "258",
+      "titolo": "La Compagnia Sbandieratori Teatrali di Borgo Spante",
+      "timestamp": 1411765200,
+      "descrizione": "<strong>Spettacolo in notturna: COSMOS<\/strong>\r\nTra suggestive coreografie, avvolte da atmosfere surreali di luce e fuoco, condotti sarete in un viaggio fuori dal Tempo tra i misteri che regnano la Volta Celeste...",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/notte1.png",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "21",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8103734",
+         "lon": "12.670798399999967"
+      }
+   }, {
+      "id": "293",
+      "titolo": "Smetto quando Voglio",
+      "timestamp": 1411765200,
+      "descrizione": "La proiezione del film \u201c<strong>Smetto quando voglio<\/strong>\u201d \u00e8 il pretesto per riflettere sulla sostenibilit\u00e0 del sistema formativo italiano. Nonostante gli stereotipi e i luoghi comuni, la situazione lavorativa dei laureati italiani non \u00e8 poi cos\u00ec tragica, come sembra emergere dalle statistiche. \u00c8 vero: chi intraprende lo studio di una materia scientifica non ha oggi molte opportunit\u00e0 di trovare un lavoro stabile come ricercatore, ma con un po\u2019 d\u2019ingegno e un pizzico di fortuna si possono comunque raggiungere obiettivi importanti.\r\n\r\nDopo il film, ne parliamo con alcuni ospiti, tutti laureati in materie scientifiche, ma che hanno seguito percorsi molto diversi l\u2019uno dall\u2019altro.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/clip-la-banda-smetto-quando-voglio-16829.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "183",
+      "organizzatori": ["frascati-scienza", "universita-sapienza"],
+      "luogo": {
+         "lat": "41.9012278",
+         "lon": "12.512396299999978"
+      }
+   }, {
+      "id": "279",
+      "titolo": "Dallo spettacolo della scienza alla vita di tutti i giorni",
+      "timestamp": 1411765200,
+      "descrizione": "La serata ruoter\u00e0 attorno a tre domande fondamentali: quali sono le grandi domande a cui dare una risposta, con quali strumenti e con quali ricadute sulla vita di tutti i giorni. Il presentatore sar\u00e0 Patrizio Roversi (\u201cvelisti per caso\u201d) con 2\/3 (Prof. Antonio Zoccoli, Prof. Fabrizio Bignami, \u2026) ospiti che punzecchier\u00e0 fisici e astronomi per avere delle risposte alla portata di tutti.\r\n\r\nLo spettacolo sar\u00e0 intervallato da filmati, collegamenti in streaming e\u00a0<span style=\"color: #000000;\">e da un'artista che ci preparer\u00e0 una sorpresa.<\/span>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/foto_serata_bo_nologo.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "177",
+      "organizzatori": ["fondazione-golinelli", "inaf", "ingv-2", "infn-2", "frascati-scienza", "comune-di-bologna"],
+      "luogo": {
+         "lat": "44.4935774",
+         "lon": "11.342823299999964"
+      }
+   }, {
+      "id": "303",
+      "titolo": "Maria Sklodowska  ",
+      "timestamp": 1411767000,
+      "descrizione": "Lettura drammatica di un testo originale scritto per la Notte del 2014, da Dario Focardi e I Teatri della Resistenza, sulla vita di Maria Sklodowska (Madame Curie).\r\n\r\n<em>L'Attivit\u00e0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul\u00a0<a href=\"http:\/\/outreach.ego-gw.it\/\">sito<\/a>\u00a0a partire dal 1 Settembre 2014<\/em>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/1204_sklodowska-curie.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "154",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.6780562",
+         "lon": "10.534387400000014"
+      }
+   }, {
+      "id": "310",
+      "titolo": "I Beans reunion day",
+      "timestamp": 1411768800,
+      "descrizione": "Noto gruppo musicale con partecipazione al festival di Sanremo e numerosi brani di enorme successo discografico. Grazie al chitarrista che lavora ai LNS il gruppo torna a riunirsi dopo parecchi anni.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/6.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "352",
+      "titolo": "Cabaret con Gino Astorina",
+      "timestamp": 1411770600,
+      "descrizione": "Momento di relax grazie alla verve, all\u2019arguzia e simpatia di uno dei principali esponenti del teatro comico dialettale.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/aperitivo-della-scienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "311",
+      "titolo": "InCantami Galileo",
+      "timestamp": 1411772400,
+      "descrizione": "Concorso fotografico e di poesie. Mostra dei migliori lavori selezionati dalla giuria.\r\n\r\n<strong>Evento su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/Galileo-sustermans.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "351",
+      "titolo": "Visite guidate dei LNS ",
+      "timestamp": 1411812000,
+      "descrizione": "Visite guidate a cura dei ricercatori dei LNS nella sala <strong>acceleratore di particelle<\/strong> e nella sala per il trattamento di protonterapia per la cura dei tumori oculari.\r\n\r\n<strong>Dalle 10:00 alle 13:00 e dalle 15:00 alle 18:00.<\/strong>\r\n\r\n<strong>Eventi su prenotazione. Le prenotazioni apriranno nei primi giorni di settembre.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/12.visite-guidate.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "156",
+      "organizzatori": ["frascati-scienza", "infn-2"],
+      "luogo": {
+         "lat": "37.5236435",
+         "lon": "15.069866600000069"
+      }
+   }, {
+      "id": "297",
+      "titolo": "Interferometro per la rivelazione delle onde gravitazionali \u2013 VIRGO",
+      "timestamp": 1411830000,
+      "descrizione": "Dopo un seminario introduttivo (30\u2019), si visiter\u00e0 la sala di controllo, l\u2019edificio centrale con le grandi campane da vuoto di 12 metri, i tunnel dei due bracci perpendicolari contenenti i tubi a vuoto di 3 km per la propagazione dei fasci laser, i laboratori. Verificheremo anche sperimentalmente che una piuma, nel vuoto, cade come un sasso, su una caduta di 3 metri, una delle pi\u00f9 lunghe esistenti. L\u2019esperimento che Galileo aveva immaginato e descritto perfettamente, pur non avendo i mezzi per farlo.\r\n\r\n<em style=\"color: #000000;\">La partecipazione\u00a0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul\u00a0<a href=\"http:\/\/outreach.ego-gw.it\/\">sito<\/a>\u00a0a partire dal 1 Settembre 2014<\/em>\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/VIRGO_visite.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "356",
+      "titolo": "La Ricerca in Piazza",
+      "timestamp": 1411830000,
+      "descrizione": "<span lang=\"EN-US\" style=\"color: #000000;\">\u00a0la Piazza Municipale di Ferrara si trasforma in uno spazio dedicato alla ricerca e alla sostenibilit<\/span><span style=\"color: #000000;\">\u00e0. Dal primo pomeriggio fino a tarda sera<\/span><span lang=\"EN-US\" style=\"color: #000000;\">\u00a0I ricercatori di INFN e UNIFE organizzano mostre, giochi scientifici, esperimenti interattivi, volti a trasmettere al pubblico di tutte le et\u00e0 il valore della ricerca e l\u2019importanza dei suoi risultati per la vita quotidiana, in modo il pi\u00f9 possibile semplice, ludico e creativo.<\/span>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/20110529_paesaggio.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "186",
+      "organizzatori": ["frascati-scienza"],
+      "luogo": {
+         "lat": "44.8360225",
+         "lon": "11.61892910000006"
+      }
+   }, {
+      "id": "301",
+      "titolo": "Costruisci il tuo interferometro ",
+      "timestamp": 1411830000,
+      "descrizione": "Un gruppo di 6-10 ragazzi verr\u00e0 guidato al montaggio del suo interferometro (laser, specchi, cacciaviti, trapano, colla\u2026.), lo far\u00e0 funzionare e lo porter\u00e0 in regalo alla sua scuola.\r\n\r\n<em>L'Attivit\u00e0 \u00e8 gratuita, ma necessita di prenotazione da farsi sul <a href=\"http:\/\/outreach.ego-gw.it\/ \">sito<\/a> a partire dal 1 Settembre 2014<\/em>",
+      "immagine": "",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "299",
+      "titolo": "La sostenibilit\u00e0 dell'illuminazione urbana",
+      "timestamp": 1411840800,
+      "descrizione": "Salvatore Curcuruto - Dirigente Servizio Agenti Fisici - Istituto Superiore per la Protezione e la Ricerca Ambientale (ISPRA). La nuova tecnologia LED per l'illuminazione urbana: aspetti ambientali di rilievo.\r\nGianluca Masi - Dottore di Ricerca in Astronomia, curatore scientifico del Planetario di Roma e responsabile del progetto Virtual Telescope. Timide Stelle, tra Tetti e Luci: l'osservazione del cielo dalla citt\u00e0.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/ngc4438_050508_2000.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "21",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8103734",
+         "lon": "12.670798399999967"
+      }
+   }, {
+      "id": "282",
+      "titolo": "Sostenibilit\u00e0 - UNIFE",
+      "timestamp": 1411851600,
+      "descrizione": "<strong>Le attivit\u00e0 sono a ingresso libero fino ad esaurimento posti.<\/strong>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/20110529_paesaggio.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "148",
+      "organizzatori": ["frascati-scienza", "universita-degli-studi-di-ferrara"],
+      "luogo": {
+         "lat": "44.8360225",
+         "lon": "11.61892910000006"
+      }
+   }, {
+      "id": "300",
+      "titolo": "Serata osservativa condotta da Gianluca Masi nell'Osservatorio Astronomico \"La Torretta\" sito in Istituto",
+      "timestamp": 1411851600,
+      "descrizione": "",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/osserviamo_notturno.jpg",
+      "macroevento": [],
+      "tag": [],
+      "idluogo": "21",
+      "organizzatori": ["frascati-scienza", "istituto-villa-sora"],
+      "luogo": {
+         "lat": "41.8103734",
+         "lon": "12.670798399999967"
+      }
+   }, {
+      "id": "306",
+      "titolo": "Il Caff\u00e8 della Scienza",
+      "timestamp": 1411853400,
+      "descrizione": "Un ricercatore ad ogni tavolo offrir\u00e0 una bevanda e sara' pronto a rispondere alle domande dei visitatori in attesa di accedere ai telescopi.\r\n\r\n&nbsp;",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/caffescienza.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "357",
+      "titolo": "Osserva il cielo",
+      "timestamp": 1411853400,
+      "descrizione": "<span style=\"color: #000000;\">Osservazioni astronomiche guidate dagli Astrofili Pisani della Associazione Galileo Galilei con strumenti moderni, forniti anche dalla Limonaia.<\/span>",
+      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/osserviamo_notturno.jpg",
+      "macroevento": [290],
+      "tag": [],
+      "idluogo": "153",
+      "organizzatori": ["frascati-scienza", "egovirgo"],
+      "luogo": {
+         "lat": "43.658165",
+         "lon": "10.505651700000044"
+      }
+   }, {
+      "id": "notte2014",
+      "titolo": "Notte Europea dei Ricercatori e la Settimana della Scienza 2014",
+      "descrizione": "Il prossimo 26 settembre torna la Notte Europea dei Ricercatori, il grande evento che da ormai 9 anni porta la scienza ed i ricercatori tra i cittadini, i giovani, gli studenti. Una iniziativa che ha riscosso un successo crescente, coinvolgendo migliaia di persone sui grandi temi della ricerca e del futuro.\r\nQuest\u2019anno dedicheremo la Notte alla \u201cSostenibilit\u00e0\u201c, argomento ampio e senza dubbio impegnativo , che coinvolge esigenze sociali, sviluppo economico, questioni ambientali, buon governo. Ma anche lo stile di vita di noi tutti ed addirittura il concetto stesso che abbiamo di \u201cdomani\u201d.\r\nI Ricercatori italiani sono in prima fila in questa affascinante sfida. Come cittadini e come scienziati sono chiamati a contribuire a costruire gli strumenti che potranno rendere concreto questo futuro, pi\u00f9 sostenibile e, quindi, pi\u00f9 umano. Sono loro che con  innovazioni e creativit\u00e0, migliorano la vita di tutti noi.\r\nLa grande novit\u00e0 della Notte Europea dei Ricercatori 2014 \u00e8 che alle sedi di Roma e Frascati si sono aggiunte quelle di Trieste, Bologna, Milano, Ferrara, Catania, Bari, Cagliari, Pavia,e Pisa.\r\nUndici citt\u00e0 collegate tra di loro dal filo della ricerca e della sostenibilit\u00e0. L\u2019edizione 2014 della Notte Europea dei Ricercatori \u00e8 quindi divenuta a tutti gli effetti un grande evento nazionale.\r\nContinuate a seguirci sui social e sul sito e scoprirete tutte le iniziative in programma per voi.\r\nLa Notte Europea dei Ricercatori \u00e8 un progetto promosso dalla Commissione Europea, coordinato e realizzato da Frascati Scienza in collaborazione con l\u2019Assessorato alla Cultura e Politiche Giovanili della Regione Lazio, Comune di Frascati, ASI, CNR, ENEA Frascati e Casaccia, EGO VIRGO, ESA-ESRIN, INAF Osservatorio Astronomico di Roma, INAF-Istituto di Astrofisica e Planetologia Spaziali e INAF Bologna, INFN Bari, Bologna, Cagliari, Catania, Ferrara, Frascati, Milano, Pavia, Pisa, Roma e Trieste, con Sapienza Universit\u00e0 di Roma e il Dipartimento di Management, Universit\u00e0 Tor Vergata e Universit\u00e0 Roma Tre. L\u2019evento vede la partecipazione, in qualit\u00e0 di Partner di Frascati Scienza, di INGV, Telethon, G.Eco, Associazione Tuscolana di Astronomia (ATA), Accatagliato, Associazione Arte e Scienza e Istituto Salesiano Villa Sora.\r\nSono partners: Museo Tuscolano delle Scuderie Aldobrandini, STS Multiservizi.",
+      "immagine": "http:\/\/static.frascatiscienza.it\/wp-content\/uploads\/2014\/05\/manifesto-dpi-100_1.jpg"
    }],
-   "timestamp": 1403120649
+   "timestamp": 1406370868
 });

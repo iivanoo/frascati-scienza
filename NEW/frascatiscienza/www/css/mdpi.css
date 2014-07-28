@@ -1089,7 +1089,9 @@ margin-top: 7px;
 	display: inline-block;
 	text-align: center;
 	margin-top: -10px;
-
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
 }
 
 
