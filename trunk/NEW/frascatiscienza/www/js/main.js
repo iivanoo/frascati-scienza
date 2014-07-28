@@ -41,6 +41,12 @@ function ImgError(source){
   return true;
 }
 
+function pickImmagineNotte(source) {
+  source.src = "img/manifesto-dpi-100_1.jpg";
+  source.onerror = "";
+  return true;
+}
+
 var isEmpty = function(obj) {
         for (var prop in obj) {
             if (obj.hasOwnProperty(prop)) return false;

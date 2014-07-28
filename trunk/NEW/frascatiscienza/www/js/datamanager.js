@@ -16,7 +16,8 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       staticPercorsi: undefined,
       urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
       urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
-      urlpercorsi_Ita: "http://localhost/frascatiPercorsi.json",
+      //urlpercorsi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiPercorsi.json",
+      urlpercorsi_Ita: "http://www.frascatiscienza.it/pagine/js-percorsi/",
 
       initialize: function() {
         var opts = {
@@ -84,16 +85,16 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         var staticTappe = require("../data/statictappe");
         this.tappe = staticTappe.tappe;
         //qui controlliamo se ci sono dati nuovi
-        // if (navigator.connection.type == Connection.NONE) {
-        //   if (localStorage.getItem("dataLoaded")) {
-        //     this.loadDbData();
-        //   } else {
-        //     this.loadLocalData();
-        //   }
-        // } else {
-        //   this.downloadNewData();
-        // }
-        this.loadLocalData();
+        if (navigator.connection.type == Connection.NONE) {
+          if (localStorage.getItem("dataLoaded")) {
+            this.loadDbData();
+          } else {
+            this.loadLocalData();
+          }
+        } else {
+          this.downloadNewData();
+        }
+        //this.loadLocalData();
       },
 
       loadDbData: function() {
@@ -150,28 +151,31 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         //   async: false
         // });
         $.ajaxSettings.async = false;
-        $.getJSON(this.urlEventi_Ita, function(response) {
-          self.staticEventi = response;
-          console.log(response);
-        }).fail(function() {
-          console.log("error2");
-        });
+        $.ajaxSettings.crossDomain = true;
+        $.ajaxSettings.timeout = 30000;
         $.getJSON(this.urlEnti_Ita, function(response) {
           self.staticEnti = response;
           console.log(response);
         }).fail(function() {
-          console.log("error1");
+          self.staticEnti = require("../data/staticenti");
         });
         $.getJSON(this.urlpercorsi_Ita, function(response) {
           self.staticPercorsi = response;
           console.log(response);
         }).fail(function() {
-          console.log("error3");
+          self.staticPercorsi = require("../data/staticpercorsiempty");
+        });
+        $.getJSON(this.urlEventi_Ita, function(response) {
+          self.staticEventi = response;
+          console.log(response);
+        }).fail(function(error) {
+          self.staticEventi = require("../data/staticeventi");
         });
         // $.ajaxSetup({
         //   async: true
         // });
         $.ajaxSettings.async = true;
+        $.ajaxSettings.crossDomain = false;
         if (this.staticEnti && this.staticEventi && this.staticPercorsi) {
           this.updateDb(this.staticEnti, this.staticEventi, this.staticPercorsi, true);
         } else {
@@ -244,17 +248,28 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
           }
           for (var i = 0; i < eventi.eventi.length; i++) {
             currentElement = eventi.eventi[i];
-            currentElement.__id = currentElement.id;
-            for (var j = 0; j < currentElement.tag.length; j++) {
-              currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
-            }
-            if (currentElement.macroevento == 193) {
-              currentElement.nottericercatori = true;
+            // dobbiamo scartare l'evento con id uguale a notte2014, perchè è l'evento fittizio che rappresenta la Notte dei Ricercatori 2014.
+            if(currentElement.id != "notte2014") {
+              currentElement.__id = currentElement.id;
+              for (var j = 0; j < currentElement.tag.length; j++) {
+                currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
+              }
+              if (currentElement.macroevento == 193) {
+                currentElement.nottericercatori = true;
+              } else {
+                currentElement.nottericercatori = false;
+              }
+              delete currentElement.id;
+              var justCreatedModel = self.eventi.create(currentElement);
+              justCreatedModel.isNotte = isNotte;
             } else {
-              currentElement.nottericercatori = false;
+              // qui mettiamo in una variabile globale la url e descrizione del'evento fittizio della Notte dei Ricercatori
+              notteRicercatori = currentElement;
             }
-            delete currentElement.id;
-            self.eventi.create(currentElement);
+          }
+
+          function isNotte() {
+            return _.contains(this.get("macroevento"), 290);
           }
 
           // qui limitiamo la lunghezza dell'array dei percorsi a 5 elementi.

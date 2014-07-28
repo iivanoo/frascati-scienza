@@ -87,10 +87,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "datam
               //     "Cancelled: " + result.cancelled);
               if(!result.cancelled) {
                 //Backbone.history.navigate("introtappa/" + result.text, {trigger: true});
-                var qrCodePrefix = "http://www.frascatiscienza.it/percorsi-tematici/";
+                var qrCodePrefix = "http://www.frascatiscienza.it/pagine/app/?percorso=";
                 var resultText = result.text;
                 if(resultText.startsWith(qrCodePrefix)) {
-                  resultText = result.text.replace(qrCodePrefix, "");
+                  //resultText = result.text.replace(qrCodePrefix, "");
+                  // tolgo la parte relativa a &tappa=
+                  // la stringa completa ha il pattern http://www.frascatiscienza.it/pagine/app/?percorso=<ID_PERCORSO>&tappa=<ID_TAPPA> 
+                  resultText = resultText.substring(resultText.indexOf("&tappa=") + 7, resultText.length);
                 }
                 var tappa = Data.getTappaById(resultText);
                 if(tappa) {

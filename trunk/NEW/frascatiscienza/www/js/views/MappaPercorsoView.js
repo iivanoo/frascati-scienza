@@ -58,7 +58,7 @@ define(["jquery", "underscore", "backbone", "models/Percorso", "handlebars", "le
 
           var options = {
             center: new L.LatLng(tappe[0].luogo.lat, tappe[0].luogo.lon),
-            zoom: 12
+            zoom: 11
           };
           var map = L.map('map', options);
           var marker;

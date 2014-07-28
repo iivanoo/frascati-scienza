@@ -171,6 +171,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       eventi: function () {
+        if(!(this.currentView instanceof EventoView)) {
+          localStorage.removeItem("lastVisitedEventTimestamp");
+        }
         var elements = document.getElementsByClassName("button_list_element");
         for(var i=0; i<elements.length; i++) {
           if(elements[i].id == "eventi") {
@@ -203,7 +206,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var filteredEventi = Data.eventi.getByEnte(id).toArray();
         var page = new EventiListView({model: new Eventi(filteredEventi), attributes: {"data-filtered": true}});
         page.title = "Eventi " + Data.enti.findWhere({"__id": id}).get("titolo");
-        this.changePage(page); 
+        this.changePage(page);
       },
 
       eventiCerca: function (keyword, tag, organizzatore, da, a) {

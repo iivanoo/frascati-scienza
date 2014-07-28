@@ -89,8 +89,8 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         },
 
         eventi: function(event) {
-          //Backbone.history.navigate("intronotte", {trigger: true});
-          Backbone.history.navigate("eventi", {trigger: true});
+          Backbone.history.navigate("intronotte", {trigger: true});
+          //Backbone.history.navigate("eventi", {trigger: true});
           $("#backbutton").show();
         },
 
