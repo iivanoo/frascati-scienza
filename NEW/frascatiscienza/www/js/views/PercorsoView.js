@@ -12,7 +12,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
       },
 
       events: {
-        "tap .bubble_wrapper": "goToTappa"
+        "tap .bubble_wrapper_tappa": "goToTappa"
       },
 
       tagName: "div",
