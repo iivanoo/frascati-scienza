@@ -16,7 +16,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       staticPercorsi: undefined,
       urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
       urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
-      //urlpercorsi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiPercorsi.json",
+      //urlpercorsi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiPercorsiEmpty.json",
       urlpercorsi_Ita: "http://www.frascatiscienza.it/pagine/js-percorsi/",
 
       initialize: function() {
@@ -109,6 +109,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         this.percorsi.fetch({
           reset: true
         });
+        notteRicercatori = JSON.parse(localStorage.getItem("notte2014"));
         // this.sponsors.fetch({reset: true});
       },
       checkDataReady: function() {
@@ -265,6 +266,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             } else {
               // qui mettiamo in una variabile globale la url e descrizione del'evento fittizio della Notte dei Ricercatori
               notteRicercatori = currentElement;
+              localStorage.setItem("notte2014", JSON.stringify(notteRicercatori));
             }
           }
 
