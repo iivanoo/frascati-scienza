@@ -1650,7 +1650,7 @@ padding-bottom: 8px;
 .qrcode_tappa {
 	margin-left: 60%;
 	text-align: center;
-	margin-top: -45px;
+	margin-top: -40px;
 }
 
 .mappa_but{
@@ -1684,7 +1684,7 @@ color:white;
 font-family: 'Dax';
 
 padding: 10px;
-margin-top: -40px;
+margin-top: 40px;
 
 /*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
 			box-shadow: 0 2px 0px rgba(0,0,0,.2);
@@ -1943,7 +1943,8 @@ margin-top: 5%;
 				.symbol_bubble_caption{
 					width:30px;
 					float:left;
-					margin-left: 5px
+					margin-left: 10px;
+					margin-top: 5px
 				}
 				
 				.bubble_caption span{
@@ -2148,7 +2149,8 @@ margin-top: 5%;
 				.symbol_bubble_caption{
 					width:30px;
 					float:left;
-					margin-left: 5px
+					margin-left: 10px;
+					margin-top: 5px
 				}
 				
 				.bubble_caption span{

@@ -106,9 +106,12 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "leafl
           localStorage.setItem("visitedDomande", JSON.stringify({
             "visited": visitedDomande
           }));
-          Backbone.history.navigate("introtappa/" + resultText, {
+          Backbone.history.navigate("introcaccia", {
             trigger: true
           });
+          // Backbone.history.navigate("introtappa/" + resultText, {
+          //   trigger: true
+          // });
         } else {
           navigator.notification.alert('Errore nel procedere alla prossima tappa della caccia, si prega di riprovare.', function() {}, "Attenzione");
         }

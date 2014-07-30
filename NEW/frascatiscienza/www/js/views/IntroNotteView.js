@@ -12,7 +12,11 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/intron
 
       initialize: function() {
         // notteRicercatori è una variabile globale che contiene i dati della notte.
-        this.title = notteRicercatori.titolo;
+        if(notteRicercatori) {
+          this.title = notteRicercatori.titolo;
+        } else {
+          this.title = "";
+        }
         // this.moving = false;
       }, /*
 
