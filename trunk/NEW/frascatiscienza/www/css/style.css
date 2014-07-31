@@ -278,12 +278,32 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.refresh_butt{
+	position:absolute;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	
+    left: -4px;
+   font-size: .9em;
+   top: -3px;
+    margin: 4px;
+    height: 43px;
+     /*width: 95px;    */
+    width: 28%;
+   
+    color: white;
+   /* border-color: #fff;
+    border-right: 0.1px solid;*/
+    text-align: center;
+    line-height: 38px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* END STRUCTURA */
 
 
 /* COVER */
-
-
 
 #wrapper_cover{
 	position: absolute;
@@ -297,7 +317,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     background-position: 50% 50%;
     background-size: 100%;
     background-image: url("../img/stars_back_cover.png");
-	
+	z-index: 100;
 }
 
 

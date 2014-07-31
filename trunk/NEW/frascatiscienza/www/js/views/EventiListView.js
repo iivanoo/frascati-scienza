@@ -109,7 +109,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           dateName.innerHTML = date.getDate() + " " + months[date.getMonth()].toUpperCase() + " " + date.getFullYear();
 
           // cerchiamo tutti gli eventi nel giorno attuale (currentDay)
-          var filteredModel = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {return el.isNotte()});
+          var filteredModel = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {
+            if(el.isNotte) {
+              return el.isNotte();
+            } else {
+              return false;
+            }
+          });
           for (var i = 0; i < filteredModel.length; i++) {
             var item = new EventiListItemView({
               model: filteredModel[i]
@@ -119,7 +125,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           }
           // popoliamo la lista degli altri eventi
           //var otherEvents = this.model.search(this.currentDay, this.currentDay + 86400).toArray().where({nottericercatori: false});
-          var otherEvents = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {return !el.isNotte()});
+          var otherEvents = _.filter(this.model.search(this.currentDay, this.currentDay + 86400).toArray(), function(el) {
+            if(el.isNotte) {
+              return !el.isNotte();
+            } else {
+              return false;
+            }
+          });
           for(var i=0; i<otherEvents.length; i++) {
             var date = new Date(otherEvents[i].get("timestamp") * 1000);
             var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();

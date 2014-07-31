@@ -5,6 +5,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
 
       routes: {
         "": "cover",
+        "cover": "cover",
         "frascatiscienza": "frascatiScienza",
         "enti": "enti",
         "sponsor": "sponsor",
@@ -376,6 +377,9 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         if(!this.structureView) {
           $("#cover").remove();
           this.showStructure();
+        }
+        if(document.getElementById("cover")) {
+          $("#cover").remove();
         }
         var frascatiModel =  Data.enti.findWhere({__id :"frascati-scienza"});
         if(frascatiModel) {

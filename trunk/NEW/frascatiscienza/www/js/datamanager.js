@@ -253,7 +253,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             if(currentElement.id != "notte2014") {
               currentElement.__id = currentElement.id;
               for (var j = 0; j < currentElement.tag.length; j++) {
-                currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
+                if(tagClasses[currentElement.tag[j].replace(" ", "_")]) {
+                  currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
+                }
               }
               if (currentElement.macroevento == 193) {
                 currentElement.nottericercatori = true;
