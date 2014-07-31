@@ -10,8 +10,8 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
         template: Handlebars.compile(template),
 
         events: {
-          "tap .day_back": "dayBack",
-          "tap .day_next": "dayNext"
+          "tap .day_back": "dayBackTap",
+          "tap .day_next": "dayNextTap"
         },
 
         initialize: function() {
@@ -31,7 +31,7 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
               // il current day adesso è la data di oggi
 
               var today = new Date().getTime() / 1000;
-              // qui ci si entra se NON si stanno visualizzando gli eventi di un ente specifico 
+              // qui NON ci si entra se si stanno visualizzando gli eventi di un ente specifico 
               if(this.attributes["data-filtered"] && (this.model.length > 0)) {
                 var filtrati = this.model.searchFrom(today);
                 // qui ci mettiamo il primo evento tra quelli futuri dell'ente, se non ci sono allora ci mettiamo l'ultimo evento organizzato
@@ -102,6 +102,10 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
           var altriWrapper =  $("#altri_wrapper").empty();
           var wrapper;
 
+          if(this.title != "Eventi") {
+            document.getElementById("firstEvent").classList.add("nonvisibile");
+          }
+
           var dateName = document.getElementsByClassName("date")[0];
           var date = new Date(this.currentDay * 1000);
           var months = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio',
@@ -154,6 +158,16 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             }
             
           }
+        },
+
+        dayBackTap: function(event) {
+          document.getElementById("firstEvent").classList.add("nonvisibile");
+          this.dayBack(event);
+        },
+
+        dayNextTap: function(event) {
+          document.getElementById("firstEvent").classList.add("nonvisibile");
+          this.dayNext(event);
         },
 
         dayBack: function(event) {
