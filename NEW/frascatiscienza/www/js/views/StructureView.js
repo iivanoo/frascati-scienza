@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienzaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "text!templates/structure.html"],
-    function ($, _, Backbone, Handlebars, FrascatiScienzaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, template) {
+define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienzaView", "views/IntroTappaView", "views/DomandaCacciaView", "views/RisultatoCacciaView", "views/FineCacciaView", "views/CoverView", "text!templates/structure.html"],
+    function ($, _, Backbone, Handlebars, FrascatiScienzaView, IntroTappaView, DomandaCacciaView, RisultatoCacciaView, FineCacciaView, CoverView, template) {
 
     var StructureView = Backbone.View.extend({
 
@@ -24,6 +24,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           "tap #ricerca": "ricerca",
           "tap #eventi_ente_butt": "showEventi",
           "tap #credits": "credits",
+          "tap #refresh": "refresh",
           "tap #mappa_butt": "mappa_butt"
         },
 
@@ -50,6 +51,10 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
             } else {
               return false;
             }
+          }
+          if(that.currentView instanceof CoverView) {
+            Backbone.history.navigate("frascatiscienza", {trigger: true});
+            return false;
           }
           if(that.currentView instanceof IntroTappaView) {
             return false;
@@ -101,6 +106,15 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
         credits: function(event) {
           $("#backbutton").show();
           Backbone.history.navigate("credits", {trigger: true});
+        },
+
+        refresh: function(event) {
+          if(navigator.connection.type == Connection.NONE) {
+            navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
+            return;
+          } else {
+            Backbone.history.navigate("cover", {trigger: true});
+          }
         },
 
         caccia: function(event) {

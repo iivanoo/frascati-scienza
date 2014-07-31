@@ -19,8 +19,14 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
       initialize: function() {
         this.title = "Home";
         // this.moving = false;
-        this.on("inTheDom", function(e) {document.getElementById("credits").classList.remove("nonvisibile");});
-        this.on("removed", function(e) {document.getElementById("credits").classList.add("nonvisibile");});
+        this.on("inTheDom", function(e) {
+          document.getElementById("credits").classList.remove("nonvisibile");
+          document.getElementById("refresh").classList.remove("nonvisibile");
+      });
+        this.on("removed", function(e) {
+          document.getElementById("credits").classList.add("nonvisibile");
+          document.getElementById("refresh").classList.add("nonvisibile");
+        });
       },
 
       /*touchMove: function() {
@@ -48,7 +54,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Ente", "text!t
               elements[i].classList.remove("nonvisibile");
             }
           }
-        }        
+        }
         return this;
       },
 

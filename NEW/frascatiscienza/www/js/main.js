@@ -89,6 +89,18 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
         // }
         Backbone.history.start();
 
+        localStorage.setItem("lastaccess", new Date().getTime());
+
+        document.addEventListener("resume", function() {
+          setTimeout(function() {
+            var days = 2;
+            var seconds = days * 86400000;
+            if(((new Date().getTime()) - localStorage.getItem("lastaccess")) > seconds) {
+              Backbone.history.navigate("cover", {trigger: true});
+            }
+          }, 0);
+        }, false);
+
 /*
         if(!localStorage.getItem("dataLoaded")) {
           Data.loadLocalData();
