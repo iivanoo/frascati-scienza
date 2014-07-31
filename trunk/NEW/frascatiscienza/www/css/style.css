@@ -875,6 +875,10 @@ display: inline-block;
 	
 }
 
+#firstEvent {
+	text-align: center;
+}
+
 .event_row_wrapper{
 	
 	/* height: 110px; 80px*/

@@ -79,6 +79,10 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       },
 
       startupData: function() {
+        this.enti = new Enti;
+        this.eventi = new Eventi;
+        this.percorsi = new Percorsi;
+        this.tappe =  undefined;
         if (!localStorage.getItem("cacciaSeconds")) {
           localStorage.setItem("cacciaSeconds", "0");
         }
