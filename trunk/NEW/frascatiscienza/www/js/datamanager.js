@@ -162,19 +162,34 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
           self.staticEnti = response;
           console.log(response);
         }).fail(function() {
-          self.staticEnti = require("../data/staticenti");
+          if (localStorage.getItem("dataLoaded")) {
+            self.loadDbData();
+          } else {
+            self.loadLocalData();
+          }
+          //self.staticEnti = require("../data/staticenti");
         });
         $.getJSON(this.urlpercorsi_Ita, function(response) {
           self.staticPercorsi = response;
           console.log(response);
         }).fail(function() {
-          self.staticPercorsi = require("../data/staticpercorsiempty");
+          if (localStorage.getItem("dataLoaded")) {
+            self.loadDbData();
+          } else {
+            self.loadLocalData();
+          }
+          //self.staticPercorsi = require("../data/staticpercorsiempty");
         });
         $.getJSON(this.urlEventi_Ita, function(response) {
           self.staticEventi = response;
           console.log(response);
         }).fail(function(error) {
-          self.staticEventi = require("../data/staticeventi");
+          if (localStorage.getItem("dataLoaded")) {
+            self.loadDbData();
+          } else {
+            self.loadLocalData();
+          }
+          //self.staticEventi = require("../data/staticeventi");
         });
         // $.ajaxSetup({
         //   async: true

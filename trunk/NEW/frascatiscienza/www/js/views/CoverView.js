@@ -3,7 +3,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
 
     var CoverView = Backbone.View.extend({
 
-        id: "cover", 
+        id: "cover",
 
 /*        events: {
           // "touchend .language": "chooseLanguage"
@@ -11,6 +11,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "datamanager", "text!t
         },*/
 
         initialize: function () {
+          Data.initialize();
           this.body = document.getElementsByTagName("body")[0];
           this.on("startData", this.chooseLanguage);
         },
