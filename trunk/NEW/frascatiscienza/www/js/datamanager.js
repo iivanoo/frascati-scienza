@@ -239,7 +239,6 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
 
         // enti e eventi qui sono accessibili dalla closure
         function createData() {
-
           // gli underscore li aggiungiamo direttamente nel datamanager quando carichiamo i vari eventi
           var tagClasses = {
             Giovani: "ad_giovani",
