@@ -73,7 +73,6 @@ require(['underscore', 'backbone', 'spin', 'router', 'datamanager'],
       document.addEventListener("deviceready", run, false);
 
       function run() {
-        Data.initialize();
         var router = new AppRouter();
         // var b = document.getElementsByTagName("body")[0];
         // if(localStorage.getItem("language")) {
