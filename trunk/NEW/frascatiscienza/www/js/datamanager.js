@@ -16,7 +16,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       staticPercorsi: undefined,
       urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
       urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
-      //urlpercorsi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiPercorsiEmpty.json",
+      //urlEventi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiEventi.json",
       urlpercorsi_Ita: "http://www.frascatiscienza.it/pagine/js-percorsi/",
 
       initialize: function() {
@@ -114,6 +114,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
           reset: true
         });
         notteRicercatori = JSON.parse(localStorage.getItem("notte2014"));
+        setTimeout(function() {
+          self.checkDataReady();
+        }, 1000);
         // this.sponsors.fetch({reset: true});
       },
       checkDataReady: function() {
@@ -160,35 +163,20 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         $.ajaxSettings.timeout = 30000;
         $.getJSON(this.urlEnti_Ita, function(response) {
           self.staticEnti = response;
-          console.log(response);
         }).fail(function() {
-          if (localStorage.getItem("dataLoaded")) {
-            self.loadDbData();
-          } else {
-            self.loadLocalData();
-          }
+          self.staticEnti = undefined;
           //self.staticEnti = require("../data/staticenti");
         });
         $.getJSON(this.urlpercorsi_Ita, function(response) {
           self.staticPercorsi = response;
-          console.log(response);
         }).fail(function() {
-          if (localStorage.getItem("dataLoaded")) {
-            self.loadDbData();
-          } else {
-            self.loadLocalData();
-          }
+          self.staticPercorsi = undefined;
           //self.staticPercorsi = require("../data/staticpercorsiempty");
         });
         $.getJSON(this.urlEventi_Ita, function(response) {
           self.staticEventi = response;
-          console.log(response);
         }).fail(function(error) {
-          if (localStorage.getItem("dataLoaded")) {
-            self.loadDbData();
-          } else {
-            self.loadLocalData();
-          }
+          self.staticEventi = undefined;
           //self.staticEventi = require("../data/staticeventi");
         });
         // $.ajaxSetup({
@@ -311,6 +299,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             modello.set("tappe", new TappePercorsi(modello.get("tappe")));
           }
         }
+        localStorage.setItem("dataLoaded", "yes");
         setTimeout(function() {
           self.checkDataReady();
         }, 1000);
