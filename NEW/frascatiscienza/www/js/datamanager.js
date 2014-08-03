@@ -83,6 +83,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         this.eventi = new Eventi;
         this.percorsi = new Percorsi;
         this.tappe =  undefined;
+        this.enti.on('reset', this.checkDataReady, this);
+        this.eventi.on('reset', this.checkDataReady, this);
+        this.percorsi.on('reset', this.checkDataReady, this);
         if (!localStorage.getItem("cacciaSeconds")) {
           localStorage.setItem("cacciaSeconds", "0");
         }
@@ -114,6 +117,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
           reset: true
         });
         notteRicercatori = JSON.parse(localStorage.getItem("notte2014"));
+        var self = this;
         setTimeout(function() {
           self.checkDataReady();
         }, 1000);
@@ -133,6 +137,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             images.push(currentElement.get("storia").immagineCopertina);
             images.push(currentElement.get("miglioriamo").immagineCopertina);
             images.push(currentElement.get("contatti").immagineCopertina);
+          }
+          for(var i=0; i<this.eventi.length; i++) {
+            this.eventi.at(i).isNotte = isNotte;
           }
           new Preloader(images);
         }
@@ -278,10 +285,6 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             }
           }
 
-          function isNotte() {
-            return _.contains(this.get("macroevento"), 290);
-          }
-
           // qui limitiamo la lunghezza dell'array dei percorsi a 5 elementi.
           for (var i = 0; i < percorsi.percorsi.length && (i < 5); i++) {
             currentElement = percorsi.percorsi[i];
@@ -310,3 +313,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
     return Data;
 
   });
+
+function isNotte() {
+  return _.contains(this.get("macroevento"), 290);
+}
