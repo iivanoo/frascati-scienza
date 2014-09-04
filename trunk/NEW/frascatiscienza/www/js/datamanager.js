@@ -147,7 +147,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       loadLocalData: function() {
         var staticEnti = require("../data/staticenti");
         var staticEventi = require("../data/staticeventi");
-        var staticPercorsi = require("../data/staticpercorsiempty");
+        var staticPercorsi = {
+          percorsi: []
+        };
         this.updateDb(staticEnti, staticEventi, staticPercorsi, true);
         localStorage.setItem("dataLoaded", "yes");
       },
