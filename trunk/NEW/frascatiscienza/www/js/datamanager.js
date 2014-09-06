@@ -16,7 +16,7 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
       staticPercorsi: undefined,
       urlEnti_Ita: "http://www.frascatiscienza.it/pagine/js-enti/",
       urlEventi_Ita: "http://www.frascatiscienza.it/pagine/js-eventi/",
-      //urlEventi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiEventi.json",
+      //urlEventi_Ita: "http://www.di.univaq.it/malavolta/files/frascatiEventi2.json",
       urlpercorsi_Ita: "http://www.frascatiscienza.it/pagine/js-percorsi/",
 
       initialize: function() {
