@@ -87,8 +87,17 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
           model: ente
         });
         this.changePage(enteView);
-        $('.default_wrapper').css({
-            'height': $(window).height() - 88
+
+        var titlebarHeight = 44;
+        var navbarHeight;
+        if(device.platform === "Android") {
+          navbarHeight = 64;
+        } else {
+          navbarHeight = 44;
+        }
+
+        $('#default_wrapper').css({
+          'height': $(window).height() - (titlebarHeight + navbarHeight)
         });
       },
 
