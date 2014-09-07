@@ -83,8 +83,17 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           this.title = "Test";
           $(this.el).html(this.template({}));
           $('body').append($(this.el));
+
+          var titlebarHeight = 44;
+          var navbarHeight;
+          if(device.platform === "Android") {
+            navbarHeight = 64;
+          } else {
+            navbarHeight = 44;
+          }
+
           $('#content').css({
-            'height': $(window).height() - 88
+            'height': $(window).height() - (titlebarHeight + navbarHeight)
           });
           return this;
         },
