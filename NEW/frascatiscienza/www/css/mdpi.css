@@ -333,7 +333,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     background-position: 50% 50%;
     background-size: 100%;
     background-image: url("../img/stars_back_cover.png");
-	
+	z-index: 100;
 }
 
 
