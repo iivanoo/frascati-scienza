@@ -89,7 +89,9 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #navbar {
     background-color: #000;
     position: fixed;
-    height: 44px;
+   /* height: 44px; ANDROID ONLY */
+     height: 64px; 
+    
     width: 100%;
     left: 0;
     bottom: 0;  
@@ -112,7 +114,12 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 }
 
 .spacer_button{
-	height: 44px;
+	/* height: 44px; ANDROID ONLY */
+	
+	height: 64px;
+	
+	
+	
 	}
 	
 .spacer_button img{
@@ -139,7 +146,11 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 #button_list img{
 	/*height:38px;*/
 	
-	height: 43px;
+	/* height: 43px; ANDROID ONLY */
+	
+	height: 63px;
+	
+	
 	margin-left: -8px;
 	
 }
@@ -222,7 +233,10 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     width: 100%;
     left: 0;
     top: 44px;
-    bottom:44px;
+    
+    /* bottom:44px; ANDROID ONLY */
+    bottom: 64px;
+    
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -285,11 +299,11 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	padding-top: 2px;
 	
     left: -4px;
-	font-size: .9em;
-	top: -3px;
+   font-size: .9em;
+   top: -3px;
     margin: 4px;
     height: 43px;
-    /*width: 95px;    */
+     /*width: 95px;    */
     width: 28%;
    
     color: white;
@@ -1116,7 +1130,6 @@ margin-top: 7px;
 	overflow:hidden;
 }
 
-
 .day_next{
 	/*width:50px;*/
 	width: 30%;
@@ -1405,6 +1418,7 @@ display: block;
 	
 	
 }
+
 
 .simple_text_list{
 	/*width:70%;
@@ -1985,7 +1999,8 @@ margin-top: 5%;
 					font-size: 0.6em;
 					padding-left: 10px;
 				}
-
+				
+				
 				/* posizioni fisse bolle template percorsi */
 
 				#cacciaList{
@@ -2186,7 +2201,7 @@ margin-top: 5%;
 				
 				
 				/* testo etichetta bolla */
-
+				
 				.symbol_bubble_caption{
 					width:30px;
 					float:left;
@@ -2277,4 +2292,3 @@ margin-top: 5%;
 				}
 
 }
-
