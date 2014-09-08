@@ -342,7 +342,13 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
             $(".button_list_element_small").css("visibility", "hidden");
           }
         } else {
-          navigator.notification.alert('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
+          var alertFunc;
+          if(device.platform === "Android") {
+            alertFunc = alert;
+          } else {
+            alertFunc = navigator.notification.alert;
+          }
+          alertFunc('Errore nella lettura del QR code, si prega di riprovare.', function() {}, "Attenzione");
         }
       },
 

@@ -62,6 +62,19 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
 
         manageDoubleTap: function() {
           var self = this;
+          if(device.platform === "Android") {
+            var preferiti = JSON.parse(localStorage.getItem("agenda"));
+            if(self.model.get("chisiamo")) {
+              // è un ente
+              delete preferiti.enti[self.model.get("__id")];
+            } else {
+              // è un evento
+              delete preferiti.eventi[self.model.get("__id")];
+            }
+            self.superView.preferiti = preferiti;
+            localStorage.setItem("agenda", JSON.stringify(preferiti));
+            self.remove();
+          } else {
           navigator.notification.confirm(
                     'Sei sicuro di voler eliminare "' + this.model.get("titolo") + '" dalla tua agenda personale?',
                      function(buttonIndex) {
@@ -81,6 +94,7 @@ define(["jquery", "underscore", "backbone", "models/Sponsor", "handlebars", "mod
                      }, 
                     'Conferma',
                     'Si,No');
+          }
         }
       });
 

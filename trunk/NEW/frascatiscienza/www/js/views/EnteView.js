@@ -79,7 +79,13 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
             return;
           } 
           if(navigator.connection.type == Connection.NONE) {
-            navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
+            var alertFunc;
+            if(device.platform === "Android") {
+              alertFunc = alert;
+            } else {
+              alertFunc = navigator.notification.alert;
+            }
+            alertFunc('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
             return;
           }
           var path = "sezioneEnte/contatti/" + this.model.get("__id");
@@ -115,7 +121,13 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
           var agenda = JSON.parse(localStorage.getItem("agenda"));
           agenda.enti[this.model.get("__id")] = this.model.toJSON();
           localStorage.setItem("agenda", JSON.stringify(agenda));
-          navigator.notification.alert('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "Agenda");
+          var alertFunc;
+          if(device.platform === "Android") {
+            alertFunc = alert;
+          } else {
+            alertFunc = navigator.notification.alert;
+          }
+          alertFunc('"' + this.model.get("titolo") + '" è stato salvato in agenda', function() {}, "Agenda");
         }
       });
 
