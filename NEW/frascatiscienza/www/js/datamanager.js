@@ -82,6 +82,9 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         this.enti = new Enti;
         this.eventi = new Eventi;
         this.percorsi = new Percorsi;
+        this.staticEnti = undefined;
+        this.staticEventi = undefined;
+        this.staticPercorsi = undefined;
         this.tappe =  undefined;
         this.enti.on('reset', this.checkDataReady, this);
         this.eventi.on('reset', this.checkDataReady, this);
@@ -173,20 +176,20 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         $.getJSON(this.urlEnti_Ita, function(response) {
           self.staticEnti = response;
         }).fail(function() {
-          self.staticEnti = undefined;
-          //self.staticEnti = require("../data/staticenti");
+          //self.staticEnti = undefined;
+          self.staticEnti = require("../data/staticenti");
         });
         $.getJSON(this.urlpercorsi_Ita, function(response) {
           self.staticPercorsi = response;
         }).fail(function() {
-          self.staticPercorsi = undefined;
-          //self.staticPercorsi = require("../data/staticpercorsiempty");
+          //self.staticPercorsi = undefined;
+          self.staticPercorsi = {percorsi: []};
         });
         $.getJSON(this.urlEventi_Ita, function(response) {
           self.staticEventi = response;
         }).fail(function(error) {
-          self.staticEventi = undefined;
-          //self.staticEventi = require("../data/staticeventi");
+          //self.staticEventi = undefined;
+          self.staticEventi = require("../data/staticeventi");
         });
         // $.ajaxSetup({
         //   async: true
