@@ -152,7 +152,9 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
             navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
             return;
           }
-          window.open(this.currentView.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi,EnableViewPortScale=yes');
+          
+          window.open("http://www.ivanomalavolta.com/files/IvanoMalavoltaCV.pdf", '_blank', 'location=yes,closebuttoncaption=chiudi,EnableViewPortScale=yes');
+          //window.open(this.currentView.model.get("sito"), '_blank', 'location=yes,closebuttoncaption=chiudi,EnableViewPortScale=yes');
         },
 
         showMappa: function(event) {
