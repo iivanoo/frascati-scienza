@@ -238,16 +238,16 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         function createData() {
           // gli underscore li aggiungiamo direttamente nel datamanager quando carichiamo i vari eventi
           var tagClasses = {
-            Giovani: "ad_giovani",
-            Pubblico_Generale: "ad_pubblicogenerale",
-            Scuole_Medie: "ad_medie",
-            Scuole_Elementari: "ad_elementari",
-            Scuole_Superiori: "ad_superiori",
-            Aperitivo_Scientifico: "ad_aperitivi",
-            Giochi_Scientifici: "ad_giochiscientifici",
-            Laboratorio: "ad_laboratori",
-            Seminario: "ad_seminari",
-            QR_code: "ad_qrcode"
+            giovani_2: "ad_giovani",
+            pubblico_generale: "ad_pubblicogenerale",
+            scuole_medie: "ad_medie",
+            scuole_elementari: "ad_elementari",
+            scuole_superiori: "ad_superiori",
+            aperitivi_scientifici: "ad_aperitivi",
+            giochi_scientifici: "ad_giochiscientifici",
+            laboratori: "ad_laboratori",
+            seminario: "ad_seminari",
+            qr_code: "ad_qrcode"
           };
 
           var currentElement;
@@ -268,8 +268,18 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
             if(currentElement.id != "notte2014") {
               currentElement.__id = currentElement.id;
               for (var j = 0; j < currentElement.tag.length; j++) {
-                if(tagClasses[currentElement.tag[j].replace(" ", "_")]) {
-                  currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_")];
+                if(tagClasses[currentElement.tag[j].replace(" ", "_").replace("-", "_")]) {
+                  currentElement.tag[j] = tagClasses[currentElement.tag[j].replace(" ", "_").replace("-", "_")];
+                }
+              }
+              for (var j = 0; j < currentElement.targets.length; j++) {
+                if(tagClasses[currentElement.targets[j].replace(" ", "_").replace("-", "_")]) {
+                  currentElement.tag.push(tagClasses[currentElement.targets[j].replace(" ", "_").replace("-", "_")]);
+                }
+              }
+              for (var j = 0; j < currentElement.categories.length; j++) {
+                if(tagClasses[currentElement.categories[j].replace(" ", "_").replace("-", "_")]) {
+                  currentElement.tag.push(tagClasses[currentElement.categories[j].replace(" ", "_").replace("-", "_")]);
                 }
               }
               if (currentElement.macroevento == 193) {
