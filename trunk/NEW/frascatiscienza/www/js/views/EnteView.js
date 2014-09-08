@@ -16,6 +16,7 @@ define(["jquery", "underscore", "backbone", "models/Ente", "handlebars", "text!t
         className: "default_wrapper",
 
         initialize: function() {
+            alert(2);
             this.title = this.model.get("titolo");
             this.moving = false;
             this.on("inTheDom", function(e) {
