@@ -82,7 +82,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
       },
 
       enteDetails: function(id) {
-        alert(1);
         var ente = Data.enti.findWhere({"__id": id});
         var enteView = new EnteView({
           model: ente
@@ -100,7 +99,6 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         $('#default_wrapper').css({
           'height': $(window).height() - (titlebarHeight + navbarHeight)
         });
-        alert(3);
       },
 
       percorso: function(id) {

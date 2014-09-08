@@ -176,20 +176,20 @@ define(["jquery", "underscore", "backbone", "preloader", "models/Ente", "models/
         $.getJSON(this.urlEnti_Ita, function(response) {
           self.staticEnti = response;
         }).fail(function() {
-          //self.staticEnti = undefined;
-          self.staticEnti = require("../data/staticenti");
+          self.staticEnti = undefined;
+          //self.staticEnti = require("../data/staticenti");
         });
         $.getJSON(this.urlpercorsi_Ita, function(response) {
           self.staticPercorsi = response;
         }).fail(function() {
-          //self.staticPercorsi = undefined;
-          self.staticPercorsi = {percorsi: []};
+          self.staticPercorsi = undefined;
+          //self.staticPercorsi = {percorsi: []};
         });
         $.getJSON(this.urlEventi_Ita, function(response) {
           self.staticEventi = response;
         }).fail(function(error) {
-          //self.staticEventi = undefined;
-          self.staticEventi = require("../data/staticeventi");
+          self.staticEventi = undefined;
+          //self.staticEventi = require("../data/staticeventi");
         });
         // $.ajaxSetup({
         //   async: true
