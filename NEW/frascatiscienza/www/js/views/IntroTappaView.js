@@ -89,7 +89,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "models/Tappa", "text!
           if(visitedDomande && JSON.parse(visitedDomande).visited.length == 8) {
             Backbone.history.navigate("finecaccia", {trigger: true});
           } else {
-            navigator.notification.alert('Attenzione, ti mancano delle tappe da completare!', function() {
+            var alertFunc;
+            if(device.platform === "Android") {
+              alertFunc = alert;
+            } else {
+              alertFunc = navigator.notification.alert;
+            }
+            alertFunc('Attenzione, ti mancano delle tappe da completare!', function() {
               Backbone.history.navigate("caccia/", {trigger: true});
             }, "Attenzione");
             //Backbone.history.navigate("caccia/", {trigger: true});

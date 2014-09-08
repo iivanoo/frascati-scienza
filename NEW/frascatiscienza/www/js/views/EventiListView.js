@@ -178,7 +178,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             this.currentDay = this.getBaseTimestamp(pastEvents[pastEvents.length - 1].get("timestamp"));
             this.addEvents(true);
           } else {
-            navigator.notification.alert('Non ci sono eventi programmati precedenti a quello corrente.', function() {}, "Attenzione");
+            var alertFunc;
+            if(device.platform === "Android") {
+              alertFunc = alert;
+            } else {
+              alertFunc = navigator.notification.alert;
+            }
+            alertFunc('Non ci sono eventi programmati precedenti a quello corrente.', function() {}, "Attenzione");
           }          
         },
 
@@ -190,7 +196,13 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
             this.currentDay = this.getBaseTimestamp(nextEvents[0].get("timestamp"));
             this.addEvents(false);
           } else {
-            navigator.notification.alert('Non ci sono eventi programmati successivi a quello corrente.', function() {}, "Attenzione");
+            var alertFunc;
+            if(device.platform === "Android") {
+              alertFunc = alert;
+            } else {
+              alertFunc = navigator.notification.alert;
+            }
+            alertFunc('Non ci sono eventi programmati successivi a quello corrente.', function() {}, "Attenzione");
           } 
         }
       });

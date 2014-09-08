@@ -77,7 +77,13 @@ define(["jquery", "underscore", "backbone", "handlebars", "text!templates/partne
             return;
           } 
           if(navigator.connection.type == Connection.NONE) {
-            navigator.notification.alert('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
+            var alertFunc;
+            if(device.platform === "Android") {
+              alertFunc = alert;
+            } else {
+              alertFunc = navigator.notification.alert;
+            }
+            alertFunc('Questa funzionalità ha bisogno di una connessione ad Internet. Sembra che non sei connesso ad Internet, potresti riprovare più tardi?', function() {}, "Problema di connessione");
             return;
           }
           window.open(this.partners[event.currentTarget.id], '_blank', 'location=yes,closebuttoncaption=chiudi,EnableViewPortScale=yes');
