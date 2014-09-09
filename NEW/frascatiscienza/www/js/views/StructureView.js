@@ -87,7 +87,7 @@ define(["jquery", "underscore", "backbone", "handlebars", "views/FrascatiScienza
           var titlebarHeight = 44;
           var navbarHeight;
           if(device.platform === "Android") {
-            navbarHeight = 64;
+            navbarHeight = 52;
           } else {
             navbarHeight = 44;
           }
