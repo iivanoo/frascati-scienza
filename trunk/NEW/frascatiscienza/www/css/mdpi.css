@@ -90,7 +90,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     background-color: #000;
     position: fixed;
    /* height: 44px; ANDROID ONLY */
-     height: 64px; 
+     height: 52px; 
     
     width: 100%;
     left: 0;
@@ -116,7 +116,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .spacer_button{
 	/* height: 44px; ANDROID ONLY */
 	
-	height: 64px;
+	height: 52px;
 	
 	
 	
@@ -148,7 +148,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	
 	/* height: 43px; ANDROID ONLY */
 	
-	height: 63px;
+	height: 51px;
 	
 	
 	margin-left: -8px;
@@ -235,7 +235,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     top: 44px;
     
     /* bottom:44px; ANDROID ONLY */
-    bottom: 64px;
+    bottom: 52px;
     
     overflow-y: scroll;
     overflow-x: hidden;

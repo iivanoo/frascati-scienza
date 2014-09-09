@@ -25,7 +25,7 @@ body {
 
 @media screen and (min-width: 600px) { 
 
-body{font-size: 1.2em;} 
+body{font-size: 1.5em;} 
 
 .text_contact{
 	margin-top: 0px;
@@ -92,7 +92,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     
     
     /* height: 44px; ANDROID ONLY */
-     height: 64px; 
+     height: 54px; 
     width: 100%;
     left: 0;
     bottom: 0;  
@@ -117,7 +117,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 .spacer_button{
 	/* height: 44px; ANDROID ONLY */
 	
-	height: 64px;
+	height: 54px;
 	}
 	
 .spacer_button img{
@@ -146,7 +146,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	
 	/* height: 43px; ANDROID ONLY */
 	
-	height: 63px;
+	height: 53px;
 		margin-left: -8px;
 	
 }
@@ -230,7 +230,7 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
     left: 0;
     top: 44px;
     /* bottom:44px; ANDROID ONLY */
-    bottom: 64px;
+    bottom: 54px;
     
     overflow-y: scroll;
     overflow-x: hidden;
@@ -272,7 +272,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	padding-top: 2px;
 	
     right: -4px;
-   font-size: .9em;
+   /* font-size: .9em; */
+   font-size: 1.2em;
    top: -3px;
     margin: 4px;
     height: 43px;
@@ -294,7 +295,8 @@ src: url('../fonts/DaxBold.ttf') format('truetype');
 	padding-top: 2px;
 	
     left: -4px;
-	font-size: .9em;
+	/*font-size: .9em;*/
+	font-size: 1.2em;
 	top: -3px;
     margin: 4px;
     height: 43px;

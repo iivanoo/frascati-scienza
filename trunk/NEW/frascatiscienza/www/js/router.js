@@ -91,7 +91,7 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         var titlebarHeight = 44;
         var navbarHeight;
         if(device.platform === "Android") {
-          navbarHeight = 64;
+          navbarHeight = 52;
         } else {
           navbarHeight = 44;
         }
