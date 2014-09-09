@@ -1,69 +1,6 @@
 define({
   "eventi": [
     {
-      "id": "123",
-      "titolo": "Plasma wakefields \u2013 a revolution in particle acceleration ",
-      "timestamp": 1383836400,
-      "descrizione": "<a href=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/Caldwell.jpg\"><img class=\"alignnone size-full wp-image-12215\" alt=\"Caldwell\" src=\"http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/Caldwell.jpg\" width=\"720\" height=\"960\" \/><\/a>",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/logo_infn.jpg",
-      "macroevento": [
-        
-      ],
-      "tag": [
-        
-      ],
-      "idluogo": "23",
-      "organizzatori": [
-        "infn-2"
-      ],
-      "luogo": {
-        "lat": "41.8207198",
-        "lon": "12.672862200000054"
-      }
-    },
-    {
-      "id": "128",
-      "titolo": "La teoria della relativit\u00e0... ovvero perch\u00e9 Einstein \u00e8 cos\u00ec famoso",
-      "timestamp": 1383942600,
-      "descrizione": "\"Perch\u00e9 non si pu\u00f2 andare pi\u00f9 veloci della luce?\r\nTutti sanno che agli inizi del '900 un fisico geniale di nome <strong>Albert Einstein<\/strong> ha fatto qualcosa di importante: la Teoria della Relativit\u00e0, nota al pubblico per aver spiegato che lo spazio e il tempo sono relativi e che nulla pu\u00f2 superare la velocit\u00e0 della luce. Ma di cosa si tratta? Ed \u00e8 davvero incompresibile come si dice in giro? Noi siamo convinti del contrario e ve la spiegheremo con parole semplici, che pi\u00f9 semplici non si pu\u00f2...!\"\r\nI ricercatori accoglieranno gli ospiti e li accompagneranno nella visita alle sale storiche dedicate a Padre Angelo Secchi e Athanasius Kircher. Un gustoso aperitivo seguir\u00e0 l\u2019incontro scientifico, e sar\u00e0 occasione per conversare con il relatore e lo staff di ricerca sul tema della serata.\r\n\r\n<strong>Programma<\/strong>\r\n\r\nore 20:30 \u2013 ingresso e accoglienza da parte dei ricercatori\r\nore 20:45 - aperitivo e visita delle sale storiche\r\nore 21:00 - \u201cLa teoria della relativit\u00e0...ovvero perch\u00e8 Einstein \u00e8 cos\u00ec famoso\u201d - G. Licausi\r\na seguire - Osservazioni astronomiche (compatibilmente con le condizioni meteo)\r\nPrenotazione obbligatoria con ticket online di 10 \u20ac sul sito <a href=\"http:\/\/webdiva2.oaroma.inaf.it\/index.php?option=com_content&amp;view=article&amp;id=130&amp;Itemid=95\" target=\"_blank\">http:\/\/webdiva2.oaroma.inaf.it\/index.php?option=com_content&amp;view=article&amp;id=130&amp;Itemid=95<\/a> , la serata non \u00e8 adatta ai bambini, per loro si potr\u00e0 richiedere eventualmente una visita alla mostra Astrolab, l\u2019aperitivo si svolger\u00e0 all\u2019interno e in caso di tempo avverso\r\nle osservazioni potranno essere sostituite da una visita all\u2019Astrolab per tutti i convenuti",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/11\/banner-fisicast1.jpg",
-      "macroevento": [
-        
-      ],
-      "tag": [
-        
-      ],
-      "idluogo": "38",
-      "organizzatori": [
-        "inaf"
-      ],
-      "luogo": {
-        "lat": "41.8130631",
-        "lon": "12.707444900000041"
-      }
-    },
-    {
-      "id": "124",
-      "titolo": "Le collisioni cosmiche. Quando il cielo fa paura",
-      "timestamp": 1383945300,
-      "descrizione": "L\u2019inizio del corrente anno \u00e8 stato testimone di ben 2 eventi che hanno riscosso molta eco nei media. Il passaggio molto ravvicinato di un asteroide e l\u2019impatto di un meteoroide con la nostra Terra incredibilmente avvenuti nel medesimo giorno! Quanto sono pericolosi questi eventi? Si ripeteranno nel futuro? Siamo certi di stare al sicuro rispetto ad eventuali collisioni spaziali?\r\n\r\nPer info e iscrizioni <b><a href=\"mailto:segreteria@ataonweb.it\">segreteria@ataonweb.it<\/a><\/b>",
-      "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/10\/Meteorite-Russia-2013-21.jpg",
-      "macroevento": [
-        
-      ],
-      "tag": [
-        
-      ],
-      "idluogo": "88",
-      "organizzatori": [
-        "associazione-tuscolana-di-astronomia-ata"
-      ],
-      "luogo": {
-        "lat": "41.750183",
-        "lon": "12.769833000000062"
-      }
-    },
-    {
       "id": "134",
       "titolo": "Determination of the b-quark mass and B mesons decay constant from non-pertubatively renormalized HQET in two-flavor lattice QCDDetermination of the b-quark mass and B mesons decay constant from non-pertubatively renormalized HQET in two-flavor lattice QCD",
       "timestamp": 1384354800,
@@ -78,6 +15,12 @@ define({
       "idluogo": "94",
       "organizzatori": [
         "universita-roma-tre"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.85545159999999",
@@ -100,6 +43,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -120,6 +69,12 @@ define({
       "idluogo": "14",
       "organizzatori": [
         "libreria-assaggi-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8982384",
@@ -142,6 +97,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -162,6 +123,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -184,6 +151,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8354173",
         "lon": "12.592988600000012"
@@ -204,6 +177,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -226,6 +205,12 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -246,6 +231,12 @@ define({
       "idluogo": "63",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -268,6 +259,12 @@ define({
       "organizzatori": [
         "enea"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -288,6 +285,12 @@ define({
       "idluogo": "98",
       "organizzatori": [
         "universita-bocconi"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "45.4483415",
@@ -310,6 +313,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -330,6 +339,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -352,6 +367,15 @@ define({
       "organizzatori": [
         "associazione-culturale-scienzimpresa"
       ],
+      "targets": [
+        "giovani-2",
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8571665",
         "lon": "12.523457699999994"
@@ -372,6 +396,12 @@ define({
       "idluogo": "108",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -394,6 +424,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8624406",
         "lon": "12.479029399999945"
@@ -414,6 +450,12 @@ define({
       "idluogo": "63",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -436,6 +478,13 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -456,6 +505,12 @@ define({
       "idluogo": "35",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8642178",
@@ -479,6 +534,12 @@ define({
         "infn-2",
         "universita-roma-tre"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.85545159999999",
         "lon": "12.467299300000036"
@@ -499,6 +560,12 @@ define({
       "idluogo": "59",
       "organizzatori": [
         
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8132916",
@@ -521,6 +588,12 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -542,6 +615,12 @@ define({
       "organizzatori": [
         "universita-bocconi"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "45.4483066",
         "lon": "9.18924800000002"
@@ -562,6 +641,12 @@ define({
       "idluogo": "24",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -585,6 +670,12 @@ define({
         "infn-2",
         "inaf"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -605,6 +696,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -627,6 +724,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -647,6 +750,12 @@ define({
       "idluogo": "116",
       "organizzatori": [
         "comune-di-frascati"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "41.8085208",
@@ -669,6 +778,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -689,6 +804,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -711,6 +832,12 @@ define({
       "organizzatori": [
         "libreria-assaggi-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8982384",
         "lon": "12.514250700000048"
@@ -732,6 +859,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -752,6 +885,12 @@ define({
       "idluogo": "14",
       "organizzatori": [
         "libreria-assaggi-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8982384",
@@ -798,6 +937,31 @@ define({
         "frascati-scienza",
         "comune-di-frascati"
       ],
+      "targets": [
+        "14-18-anni",
+        "specialisti",
+        "scuole",
+        "11-13-anni",
+        "pubblico-generale",
+        "18-25-anni",
+        "giovani-2",
+        "06-10-anni",
+        "roma",
+        "25-99-anni",
+        "famiglie"
+      ],
+      "categories": [
+        "aperitivi-scientifici",
+        "giochi-scientifici",
+        "laboratori",
+        "tipo_mostre",
+        "seminario",
+        "spettacoli",
+        "tavole-rotonde",
+        "tipo_trips",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -818,6 +982,12 @@ define({
       "idluogo": "29",
       "organizzatori": [
         "comune-di-frascati"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "41.806677",
@@ -840,6 +1010,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -860,6 +1036,12 @@ define({
       "idluogo": "59",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8132916",
@@ -882,6 +1064,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -902,6 +1090,12 @@ define({
       "idluogo": "96",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8354173",
@@ -924,6 +1118,13 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -944,6 +1145,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -966,6 +1173,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.85545159999999",
         "lon": "12.467299300000036"
@@ -986,6 +1199,14 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "giovani-2",
+        "famiglie"
+      ],
+      "categories": [
+        "aperitivi-scientifici",
+        "giochi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1008,6 +1229,12 @@ define({
       "organizzatori": [
         "cnr"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "41.8998749",
         "lon": "12.514116599999966"
@@ -1028,6 +1255,13 @@ define({
       "idluogo": "119",
       "organizzatori": [
         "gne"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8534197",
@@ -1050,6 +1284,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1070,6 +1310,12 @@ define({
       "idluogo": "120",
       "organizzatori": [
         "sapio"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "41.8994181",
@@ -1092,6 +1338,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -1112,6 +1364,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1134,6 +1392,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1154,6 +1418,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1176,6 +1446,13 @@ define({
       "organizzatori": [
         "istituto-villa-sora"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8114374",
         "lon": "12.668950099999961"
@@ -1196,6 +1473,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1218,6 +1501,12 @@ define({
       "organizzatori": [
         "associazione-tuscolana-di-astronomia-ata"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -1238,6 +1527,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1260,6 +1555,13 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "scuole",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -1280,6 +1582,12 @@ define({
       "idluogo": "86",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "",
@@ -1302,6 +1610,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1322,6 +1636,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1344,6 +1664,12 @@ define({
       "organizzatori": [
         "associazione-tuscolana-di-astronomia-ata"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -1364,6 +1690,13 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1386,6 +1719,13 @@ define({
       "organizzatori": [
         "associazione-tuscolana-di-astronomia-ata"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -1406,6 +1746,13 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1428,6 +1775,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8624406",
         "lon": "12.479029399999945"
@@ -1448,6 +1801,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1470,6 +1829,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1490,6 +1855,12 @@ define({
       "idluogo": "96",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8354173",
@@ -1512,6 +1883,12 @@ define({
       "organizzatori": [
         "mediterranea"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "conferenza-stampa"
+      ],
       "luogo": {
         "lat": "41.9086353",
         "lon": "12.475901900000054"
@@ -1532,6 +1909,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1554,6 +1937,12 @@ define({
       "organizzatori": [
         "associazione-tuscolana-di-astronomia-ata"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.806677",
         "lon": "12.680260999999973"
@@ -1575,6 +1964,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -1595,6 +1990,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1618,6 +2019,12 @@ define({
         "infn-2",
         "inaf"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -1638,6 +2045,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1660,6 +2073,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1680,6 +2099,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1702,6 +2127,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.85545159999999",
         "lon": "12.467299300000036"
@@ -1722,6 +2153,12 @@ define({
       "idluogo": "124",
       "organizzatori": [
         "university-of-strathclyde"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "55.8611312",
@@ -1744,6 +2181,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1764,6 +2207,12 @@ define({
       "idluogo": "123",
       "organizzatori": [
         
+      ],
+      "targets": [
+        
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8060779",
@@ -1786,6 +2235,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -1807,6 +2262,12 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -1827,6 +2288,18 @@ define({
       "idluogo": "63",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori",
+        "tipo_mostre",
+        "seminario",
+        "spettacoli",
+        "tavole-rotonde",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -1850,6 +2323,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.9006177",
         "lon": "12.511967499999969"
@@ -1870,6 +2349,12 @@ define({
       "idluogo": "126",
       "organizzatori": [
         "macsis"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "45.5177027",
@@ -1892,6 +2377,15 @@ define({
       "organizzatori": [
         "gne"
       ],
+      "targets": [
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "laboratori",
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "41.8457904",
         "lon": "12.628152099999966"
@@ -1912,6 +2406,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1934,6 +2434,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8624406",
         "lon": "12.479029399999945"
@@ -1954,6 +2460,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -1976,6 +2488,13 @@ define({
       "organizzatori": [
         "universita-tor-vergata"
       ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "laboratori",
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8534197",
         "lon": "12.605286999999976"
@@ -1996,6 +2515,13 @@ define({
       "idluogo": "38",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        "giovani-2",
+        "famiglie"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -2020,6 +2546,14 @@ define({
       "organizzatori": [
         "inaf"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8132916",
         "lon": "12.70734630000004"
@@ -2040,6 +2574,12 @@ define({
       "idluogo": "38",
       "organizzatori": [
         
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.8130631",
@@ -2062,6 +2602,12 @@ define({
       "organizzatori": [
         "infn-2"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -2082,6 +2628,12 @@ define({
       "idluogo": "133",
       "organizzatori": [
         
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -2104,6 +2656,13 @@ define({
       "organizzatori": [
         "universita-sapienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.9032068",
         "lon": "12.514659199999983"
@@ -2124,6 +2683,12 @@ define({
       "idluogo": "92",
       "organizzatori": [
         "inaf"
+      ],
+      "targets": [
+        
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.839729",
@@ -2146,6 +2711,12 @@ define({
       "organizzatori": [
         "universita-sapienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.9011251",
         "lon": "12.51615419999996"
@@ -2166,6 +2737,12 @@ define({
       "idluogo": "134",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -2188,6 +2765,13 @@ define({
       "organizzatori": [
         "scienzimpresa"
       ],
+      "targets": [
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8681066",
         "lon": "12.502564699999994"
@@ -2209,6 +2793,12 @@ define({
       "organizzatori": [
         "universita-roma-tre"
       ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.85545159999999",
         "lon": "12.467299300000036"
@@ -2229,6 +2819,12 @@ define({
       "idluogo": "121",
       "organizzatori": [
         "infn-2"
+      ],
+      "targets": [
+        "specialisti"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -2252,6 +2848,12 @@ define({
         "frascati-scienza",
         "ingv-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "41.90209710000001",
         "lon": "12.476643599999989"
@@ -2273,6 +2875,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "39.2560191",
@@ -2296,6 +2904,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -2318,6 +2932,14 @@ define({
         "frascati-scienza",
         "g-eco"
       ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -2327,7 +2949,7 @@ define({
       "id": "358",
       "titolo": "Feed your future - Cibo per il futuro",
       "timestamp": 1411380000,
-      "descrizione": "<strong>I Giornalisti Nell'Erba<\/strong> iniziano la caccia alle idee per il cibo di domani.\r\nL'umanit\u00e0 si trova nuovamente di fronte ad una svolta epocale, destinata ad aprire nuovi scenari. L'eterna crescita \u00e8 un dogma che non ha futuro, le risorse sono limitate e nel frattempo la popolazione mondiale \u00e8 destinata a raddoppiare. Come ci sfameremo? Mangeremo zanzare e berremo in pillole?\r\nLa Scienza e i produttori visionari , tra nutrigenomica, metabolomica, fitotecnologia... sono al lavoro.\r\n\r\nIntroduce Paola Bolaffio, direttore Giornalisti Nell'Erba, referente formazione FIMA, federazione italiana media ambientali\r\n\r\nCon\r\nAlex Sorokin, presidente Interenergy, esperto internazionale su questioni legate alla sostenibilit\u00e0, componente comitato scientifico di FIMA, federazione italiana media ambientali\r\nCinzia Forni, biologa e docente fitotecnologie Macroarea di Scienze Universita di Roma TorVergata\r\n<div style=\"color: #000000;\"><strong>Consiglio per la Ricerca e la sperimentazione in Agricoltura \u2013 Centro Alimenti e Nutrizione (C.R.A \u2013 NUT)<\/strong>: Cristina Gianetti e Marika Ferrari<\/div>\r\n<strong>Produttori<\/strong>:\u00a0Oreste Molinari e Cristiano Ponzo\u00a0- ASSOCIAZIONE PRODUTTORI UVE FRASCATI\r\n\r\nModera <strong>Enrica Battifoglia,<\/strong> giornalista, responsabile canale Scienza e Tecnica ANSA\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "descrizione": "<strong>I Giornalisti Nell'Erba<\/strong> iniziano la caccia alle idee per il cibo di domani.\r\nL'umanit\u00e0 si trova nuovamente di fronte ad una svolta epocale, destinata ad aprire nuovi scenari. L'eterna crescita \u00e8 un dogma che non ha futuro, le risorse sono limitate e nel frattempo la popolazione mondiale \u00e8 destinata a raddoppiare. Come ci sfameremo? Mangeremo zanzare e berremo in pillole?\r\nLa Scienza e i produttori visionari , tra nutrigenomica, metabolomica, fitotecnologia... sono al lavoro.\r\n\r\nIntroduce Paola Bolaffio, direttore Giornalisti Nell'Erba, referente formazione FIMA, federazione italiana media ambientali\r\n\r\nCon\r\nAlex Sorokin, presidente Interenergy, esperto internazionale su questioni legate alla sostenibilit\u00e0, componente comitato scientifico di FIMA, federazione italiana media ambientali\r\nCinzia Forni, biologa e docente fitotecnologie Macroarea di Scienze Universita di Roma TorVergata\r\n<div style=\"color: #000000;\"><strong>Consiglio per la Ricerca e la sperimentazione in Agricoltura \u2013 Centro Alimenti e Nutrizione (C.R.A \u2013 NUT)<\/strong>: Cristina Gianetti e Marika Ferrari<\/div>\r\n<strong>Produttori<\/strong>:\u00a0Oreste Molinari e Cristiano Ponzo\u00a0- ASSOCIAZIONE PRODUTTORI UVE FRASCATI\r\n\r\nModera <strong>Enrica Battifoglia,<\/strong> giornalista, responsabile canale Scienza e Tecnica ANSA\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>\r\n<p style=\"color: #000000;\">Per partecipare \u00e8 necessario prenotarsi inviando una richiesta a\u00a0<a style=\"color: #c40a00;\" href=\"mailto:info@giornalistinellerba.org\">info@giornalistinellerba.org<\/a><\/p>\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/cibo_futuro.jpg",
       "macroevento": [
         290
@@ -2338,6 +2960,15 @@ define({
       "idluogo": "188",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "41.8060816",
@@ -2361,6 +2992,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2282507",
         "lon": "9.11783749999995"
@@ -2382,6 +3019,14 @@ define({
       "organizzatori": [
         "universita-roma-tre",
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole-medie",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.85545159999999",
@@ -2405,6 +3050,15 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole-superiori",
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -2426,6 +3080,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "39.2560191",
@@ -2451,6 +3111,13 @@ define({
         "inaf",
         "universita-di-cagliari"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.268882869969445",
         "lon": "9.121826822967478"
@@ -2473,6 +3140,13 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -2493,6 +3167,14 @@ define({
       "idluogo": "192",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.7700866",
@@ -2515,6 +3197,14 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -2535,6 +3225,15 @@ define({
       "idluogo": "18",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8061212",
@@ -2558,6 +3257,14 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "scuole",
+        "scuole-superiori"
+      ],
+      "categories": [
+        "tipo_mostre",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8431636",
         "lon": "12.647210200000018"
@@ -2579,6 +3286,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-sapienza"
+      ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.9012278",
@@ -2604,6 +3317,14 @@ define({
         "frascati-scienza",
         "fondazione-golinelli"
       ],
+      "targets": [
+        "famiglie",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -2626,6 +3347,15 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole-superiori",
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "45.1949893",
         "lon": "9.14229290000003"
@@ -2635,7 +3365,7 @@ define({
       "id": "266",
       "titolo": "Terra chiama Sole - I. De Angelis",
       "timestamp": 1411482600,
-      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n&nbsp;\r\n\r\n<b style=\"color: #000000;\">E\u2019 necessaria la prenotazione.\r\n<\/b><span style=\"color: #000000;\">Le\u00a0<\/span><b style=\"color: #000000;\">prenotazioni<\/b><span style=\"color: #000000;\">\u00a0delle attivit\u00e0 dedicate alle\u00a0<\/span><b style=\"color: #000000;\">scuole<\/b><span style=\"color: #000000;\">\u00a0si effettua\u00a0<\/span><b style=\"color: #000000;\">inviando una mail a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>\r\n<\/b>",
+      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n<b style=\"color: #000000;\">E\u2019 necessaria la prenotazione.\r\n<\/b><span style=\"color: #000000;\">Le\u00a0<\/span><b style=\"color: #000000;\">prenotazioni<\/b><span style=\"color: #000000;\">\u00a0delle attivit\u00e0<\/span><span style=\"color: #000000;\">\u00a0si effettua\u00a0<\/span><b style=\"color: #000000;\">inviando una mail a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>\r\n<\/b>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
       "macroevento": [
         290
@@ -2647,6 +3377,15 @@ define({
       "organizzatori": [
         "universita-roma-tre",
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole-elementari",
+        "scuole-medie",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.85545159999999",
@@ -2670,6 +3409,12 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "famiglie"
+      ],
+      "categories": [
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8431636",
         "lon": "12.647210200000018"
@@ -2690,6 +3435,13 @@ define({
       "idluogo": "199",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.80583045920301",
@@ -2713,6 +3465,13 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -2733,6 +3492,13 @@ define({
       "idluogo": "199",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.80583045920301",
@@ -2756,6 +3522,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -2776,6 +3548,13 @@ define({
       "idluogo": "192",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.7700866",
@@ -2798,6 +3577,15 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -2805,9 +3593,9 @@ define({
     },
     {
       "id": "270",
-      "titolo": "Visita al laboratorio di Biologia, Chimica, Fisica e Matematica - UNIVERSITA' DEGLI STUDI DI ROMA TOR VERGATA",
+      "titolo": "Visita al laboratorio di Biologia - UNIVERSITA' DEGLI STUDI DI ROMA TOR VERGATA",
       "timestamp": 1411549200,
-      "descrizione": "<strong>DIPARTIMENTO DI BIOLOGIA: LABORATORIO DI MICROBIOLOGIA<\/strong>\r\n\r\nIllustrazione di piastre Petri contenenti terreni di coltura diversi e di batteri luminescenti e mobili.\r\nColorazione di campioni per l\u2019osservazione dei vetrini al microscopio.\r\nValutazione della crescita batterica in un terreno liquido, misurandone la torbidit\u00e0.\r\n\r\n<strong>DIPARTIMENTO DI FISICA: LABORATORIO DI FISICA SOLARE<\/strong>\r\n\r\nOsservazione dello spettro solare, della Cromosfera del Sole e del network magnetico mediante dei filtri a banda stretta nella riga H-alfa e Ca II K presenti sul banco ottico del laboratorio. Selezionando una piccola parte dello spettro elettromagnetico \u00e8 possibile osservare particolari strati dell\u2019atmosfera solare.\r\n\r\n<strong>DIPARTIMENTO DI MATEMATICA: LABORATORIO DI MATEMATICA<\/strong>\r\n\r\nTramite esperienze opportunamente selezionate, verranno illustrati aspetti e applicazioni della ricerca attuale in matematica.\r\nVerr\u00e0 messo in evidenza come la matematica fornisca non solo un linguaggio in grado di descrivere molti fenomeni, ma anche una tecnica di soluzione fattiva alla base di strumenti di uso comune.\r\n\r\n<strong>DIPARTIMENTO DI SCIENZE E TECNOLOGIE CHIMICHE: LABORATORIO DI SPETTROMETRIA DI MASSA<\/strong>\r\n\r\nDescrizione del funzionamento delle apparecchiature e illustrazione dei vari campi di applicazione: ambientale, tossicologico-clinico, alimentare, chimica del restauro.\r\n\r\nIngresso\u00a0<strong>ore 9:00 \u00a0e ore 11:00 per 40 studenti<\/strong>\u00a0ogni turno di visita.\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "descrizione": "<strong>LABORATORIO DI MICROBIOLOGIA\r\n<\/strong>\r\n\r\nIllustrazione di piastre Petri contenenti terreni di coltura diversi e di batteri luminescenti e mobili.\r\nColorazione di campioni per l\u2019osservazione dei vetrini al microscopio.\r\nValutazione della crescita batterica in un terreno liquido, misurandone la torbidit\u00e0.\r\n\r\nIngresso <b>ore 9:00 \u00a0<\/b>e ore<b> 11:00 <\/b>per<b> 40 studenti<\/b> ogni turno di visita.\r\n<b>E\u2019 necessaria la prenotazione. <\/b><b>\r\n<\/b>Le <b>prenotazioni<\/b> delle attivit\u00e0 dedicate alle <b>scuole<\/b> saranno attive a partire da<b> settembre 2014.<\/b>\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/06\/tor_v_lab.jpg",
       "macroevento": [
         290
@@ -2820,6 +3608,13 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "scuole",
+        "16-18-anni"
+      ],
+      "categories": [
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8534197",
         "lon": "12.605286999999976"
@@ -2827,9 +3622,9 @@ define({
     },
     {
       "id": "271",
-      "titolo": "\u201cTerra chiama Sole\u201d - I. De Angelis",
+      "titolo": "Terra chiama Sole - I. De Angelis",
       "timestamp": 1411554600,
-      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "descrizione": "Il Dipartimento di Matematica e Fisica dell' Universit\u00e0 Roma Tre propone attivit\u00e0 di astronomia presso l\u2019Astrogarden!\r\n<b><\/b>\r\nNel giardino del Dipartimento di Fisica sar\u00e0 possibile osservare il Sole al telescopio e, con l'aiuto del Mappamondo Orientato, si potranno sperimentare in tempo reale le condizioni di illuminazione della Terra. Non mancheranno curiosit\u00e0 sul sistema solare e sui pianeti visibili ad occhio nudo.\r\n\r\nL'attivit\u00e0\u00a0 \u00e8 consigliata per bambini delle elementari\u00a0<strong>e delle medie.<\/strong>\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 dedicate alle\u00a0<strong>scuole<\/strong>\u00a0<span style=\"color: #000000;\">si effettua\u00a0<\/span><b style=\"color: #000000;\">inviando una mail a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a><\/b>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/09\/astrogarden.jpg",
       "macroevento": [
         290
@@ -2839,8 +3634,16 @@ define({
       ],
       "idluogo": "75",
       "organizzatori": [
-        "frascati-scienza",
-        "universita-roma-tre"
+        "universita-roma-tre",
+        "frascati-scienza"
+      ],
+      "targets": [
+        "scuole-medie",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.85545159999999",
@@ -2864,6 +3667,14 @@ define({
         "frascati-scienza",
         "inaf"
       ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -2885,6 +3696,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "39.2560191",
@@ -2908,6 +3725,12 @@ define({
         "frascati-scienza",
         "universita-sapienza"
       ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.9012278",
         "lon": "12.512396299999978"
@@ -2929,6 +3752,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "scuole",
+        "16-18-anni"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "39.2560191",
@@ -2952,6 +3782,15 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole-superiori",
+        "pubblico-generale",
+        "scuole"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "45.1977742",
         "lon": "9.142374099999984"
@@ -2959,9 +3798,9 @@ define({
     },
     {
       "id": "273",
-      "titolo": "Rilievi e modelli matematici dal Circo Massimo a San Carlino",
+      "titolo": "Science Trips: rilievi e modelli matematici dal Circo Massimo a San Carlino",
       "timestamp": 1411574400,
-      "descrizione": "Vedere Roma con gli occhi di un matematico. Durante le passeggiate scientifiche a cura di Marco Canciani, Corrado Falcolini e del il Laboratorio di Matematica\u00a0e Dipartimento di Architettura \u00a0dell'Universit\u00e0 Roma Tre si scopriranno i modelli e le teorie matematiche sui pi\u00f9 famosi monumenti romani\u00a0<strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "descrizione": "Vedere Roma con gli occhi di un matematico. Durante le passeggiate scientifiche a cura di Marco Canciani, Corrado Falcolini e del il Laboratorio di Matematica\u00a0e Dipartimento di Architettura \u00a0dell'Universit\u00e0 Roma Tre si scopriranno i modelli e le teorie matematiche sui pi\u00f9 famosi monumenti romani\u00a0<strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>\r\n\r\nPer informazioni e prenotazioni scrivete a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/anfitestro-tuscolo.jpg",
       "macroevento": [
         290
@@ -2973,6 +3812,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-roma-tre"
+      ],
+      "targets": [
+        "25-99-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.88613340000001",
@@ -2994,6 +3841,13 @@ define({
       "idluogo": "199",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.80583045920301",
@@ -3017,6 +3871,13 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -3037,6 +3898,13 @@ define({
       "idluogo": "18",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "41.8061212",
@@ -3059,6 +3927,15 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -3079,6 +3956,13 @@ define({
       "idluogo": "192",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.7700866",
@@ -3102,6 +3986,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2282507",
         "lon": "9.11783749999995"
@@ -3123,6 +4013,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-tor-vergata"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-superiori"
+      ],
+      "categories": [
+        "tipo_mostre",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8431636",
@@ -3146,6 +4044,14 @@ define({
         "frascati-scienza",
         "inaf"
       ],
+      "targets": [
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8061212",
         "lon": "12.68045200000006"
@@ -3168,6 +4074,12 @@ define({
         "frascati-scienza",
         "universita-sapienza"
       ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.9012278",
         "lon": "12.512396299999978"
@@ -3188,6 +4100,13 @@ define({
       "idluogo": "159",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        
+      ],
+      "categories": [
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "45.1949893",
@@ -3211,6 +4130,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -3220,7 +4145,7 @@ define({
       "id": "246",
       "titolo": "Science Trips - Sotto i ponti pi\u00f9 di una storia",
       "timestamp": 1411660800,
-      "descrizione": "Passeggiate scientifiche a cura di Fabio Brancaleoni, Maurizio Gargano Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre <strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>",
+      "descrizione": "Passeggiate scientifiche a cura di Fabio Brancaleoni, Maurizio Gargano Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre <strong>(CON PRENOTAZIONE\u00a0 massimo 30 persone)<\/strong>\r\n\r\nPer informazioni e prenotazioni scrivete a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/rome_683.jpg",
       "macroevento": [
         290
@@ -3232,6 +4157,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-roma-tre"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.8891492",
@@ -3255,6 +4186,13 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "famiglie"
+      ],
+      "categories": [
+        "tipo_mostre",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8431636",
         "lon": "12.647210200000018"
@@ -3277,6 +4215,13 @@ define({
         "frascati-scienza",
         "istituto-villa-sora"
       ],
+      "targets": [
+        "scuole",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8103734",
         "lon": "12.670798399999967"
@@ -3298,6 +4243,13 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.8060816",
         "lon": "12.680225999999948"
@@ -3318,6 +4270,13 @@ define({
       "idluogo": "199",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.80583045920301",
@@ -3341,6 +4300,13 @@ define({
         "frascati-scienza",
         "municipio-xv"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.9574522",
         "lon": "12.455428799999936"
@@ -3361,6 +4327,14 @@ define({
       "idluogo": "202",
       "organizzatori": [
         "universita-roma-tre"
+      ],
+      "targets": [
+        "giovani-2",
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8509426",
@@ -3384,6 +4358,13 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -3406,6 +4387,13 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "37.5236435",
         "lon": "15.069866600000069"
@@ -3415,7 +4403,7 @@ define({
       "id": "381",
       "titolo": "In missione al Polo Sud",
       "timestamp": 1411722000,
-      "descrizione": "Si tratta di una attivit\u00e0 rivolta ad una scuola primaria o secondaria di primo grado che si propone di realizzare e sperimentare un percorso educativo sul Polo sud, sviluppando l\u2019idea <strong>dell\u2019Antartide<\/strong> come laboratorio naturale, non soltanto da un punto di vista strettamente scientifico, ma come laboratorio di esperienze umane condivise. Finalit\u00e0 del laboratorio \u00e8 introdurre i bambini al mondo dell\u2019Antartide, l\u2019unico continente interamente dedicato alla ricerca scientifica.\r\n\r\n<strong>Attraverso i percorsi educativi<\/strong> i bambini saranno in grado di: acquisire conoscenze sull\u2019Antartide (area del sapere); esplorare le caratteristiche dell\u2019Antartide come laboratorio naturale e sperimentare una educazione emotiva attraverso esperienze individuali e di gruppo (area del saper fare); sviluppare percorsi di educazione civica legati \u201cal senso di appartenenza e di cittadinanza\u201d che li porteranno ad assumere consapevolezza rispetto al fatto che l\u2019Antartide non \u00e8 di nessuno ma \u00e8 di tutti, \u00e8 un bene comune ed unico (area del saper essere).\r\n\r\nI bambini, insieme ai ricercatori dell\u2019INGV, parteciperanno ad una missione scientifica al Polo Sud. In forma di <strong>laboratorio<\/strong> riceveranno tutte le informazioni per la preparazione e la partecipazione ad una missione scientifica in Antartide. Durante la missione avranno modo di sperimentare la vita in base e di effettuare una missione in esterno, lontani dalla base. Al rientro saranno chiamati a raccontare e a condividere la loro esperienza. A conclusione del laboratorio i bambini potranno intervistare i partecipanti alla spedizione invernale italo\/francese in collegamento con la base Concordia in Antartide.\r\n<div style=\"color: #000000;\">Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong><\/div>\r\nPer prenotazioni:\r\n\r\n<a href=\"http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=8&amp;Itemid=132&amp;lang=it\" target=\"_blank\">http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=8&amp;Itemid=132&amp;lang=it<\/a>\r\n\r\ninfoscuole@ingv.it\r\n\r\ntel 06\/51860277 fax 06 51860705",
+      "descrizione": "Si tratta di una attivit\u00e0 rivolta ad una scuola primaria che si propone di realizzare e sperimentare un percorso educativo sul Polo sud, sviluppando l\u2019idea <strong>dell\u2019Antartide<\/strong> come laboratorio naturale, non soltanto da un punto di vista strettamente scientifico, ma come laboratorio di esperienze umane condivise. Finalit\u00e0 del laboratorio \u00e8 introdurre i bambini al mondo dell\u2019Antartide, l\u2019unico continente interamente dedicato alla ricerca scientifica.\r\n\r\n<strong>Attraverso i percorsi educativi<\/strong> i bambini saranno in grado di: acquisire conoscenze sull\u2019Antartide (area del sapere); esplorare le caratteristiche dell\u2019Antartide come laboratorio naturale e sperimentare una educazione emotiva attraverso esperienze individuali e di gruppo (area del saper fare); sviluppare percorsi di educazione civica legati \u201cal senso di appartenenza e di cittadinanza\u201d che li porteranno ad assumere consapevolezza rispetto al fatto che l\u2019Antartide non \u00e8 di nessuno ma \u00e8 di tutti, \u00e8 un bene comune ed unico (area del saper essere).\r\n\r\nI bambini, insieme ai ricercatori dell\u2019INGV, parteciperanno ad una missione scientifica al Polo Sud. In forma di <strong>laboratorio<\/strong> riceveranno tutte le informazioni per la preparazione e la partecipazione ad una missione scientifica in Antartide. Durante la missione avranno modo di sperimentare la vita in base e di effettuare una missione in esterno, lontani dalla base. Al rientro saranno chiamati a raccontare e a condividere la loro esperienza. A conclusione del laboratorio i bambini potranno intervistare i partecipanti alla spedizione invernale italo\/francese in collegamento con la base Concordia in Antartide.\r\n<div style=\"color: #000000;\">Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong><\/div>\r\nPer prenotazioni:\r\n\r\n<a href=\"http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=8&amp;Itemid=132&amp;lang=it\" target=\"_blank\">http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=8&amp;Itemid=132&amp;lang=it<\/a>\r\n\r\ninfoscuole@ingv.it\r\n\r\ntel 06\/51860277 fax 06 51860705",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/08\/ingv_antartide.jpg",
       "macroevento": [
         290
@@ -3427,6 +4415,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "ingv-2"
+      ],
+      "targets": [
+        "06-10-anni",
+        "scuole",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8273999",
@@ -3449,6 +4445,15 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "irccs-san-raffaele-pisana"
+      ],
+      "targets": [
+        "scuole",
+        "scuole-medie",
+        "scuole-superiori"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "visite-centri-di-ricerca"
       ],
       "luogo": {
         "lat": "41.8930481",
@@ -3473,6 +4478,12 @@ define({
         "frascati-scienza",
         "ingv-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.9007517",
         "lon": "12.478505400000017"
@@ -3494,6 +4505,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -3517,6 +4535,13 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "famiglie"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8431636",
         "lon": "12.647210200000018"
@@ -3537,6 +4562,12 @@ define({
       "idluogo": "18",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole-elementari"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8061212",
@@ -3559,6 +4590,16 @@ define({
       "organizzatori": [
         "infn-2",
         "frascati-scienza"
+      ],
+      "targets": [
+        "scuole-elementari",
+        "pubblico-generale",
+        "famiglie",
+        "06-10-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
       ],
       "luogo": {
         "lat": "45.1854203",
@@ -3583,6 +4624,14 @@ define({
         "universita-tor-vergata",
         "osservatorio-di-roma"
       ],
+      "targets": [
+        "11-13-anni",
+        "scuole-medie"
+      ],
+      "categories": [
+        "laboratori",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "",
         "lon": ""
@@ -3605,6 +4654,12 @@ define({
         "frascati-scienza",
         "egovirgo"
       ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "43.658165",
         "lon": "10.505651700000044"
@@ -3625,6 +4680,16 @@ define({
       "idluogo": "194",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2"
+      ],
+      "categories": [
+        "laboratori",
+        "tipo_mostre",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "39.268882869969445",
@@ -3648,6 +4713,12 @@ define({
         "frascati-scienza",
         "istituto-villa-sora"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "41.8114374",
         "lon": "12.668950099999961"
@@ -3669,6 +4740,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "egovirgo"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "43.658165",
@@ -3692,6 +4769,14 @@ define({
         "frascati-scienza",
         "irccs-san-raffaele-pisana"
       ],
+      "targets": [
+        "giovani-2",
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori"
+      ],
       "luogo": {
         "lat": "41.8930481",
         "lon": "12.403318500000069"
@@ -3714,6 +4799,13 @@ define({
         "frascati-scienza",
         "universita-tor-vergata"
       ],
+      "targets": [
+        "scuole-medie"
+      ],
+      "categories": [
+        "laboratori",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "",
         "lon": ""
@@ -3723,7 +4815,7 @@ define({
       "id": "313",
       "titolo": "ENEA Frascati - Energia: Conoscere per poter scegliere",
       "timestamp": 1411745400,
-      "descrizione": "L\u2019Unit\u00e0 Tecnica Fusione propone un percorso didattico-scientifico al fine di comprendere i principi della fusione termonucleare e di avvicinare i visitatori al metodo scientifico come strumento di conoscenza. \u00a0La possibilit\u00e0 di fare direttamente degli esperimenti e di farsi guidare in visite ai laboratori dai ricercatori permette di familiarizzare con queste discipline scientifiche.\u00a0A tal fine si propone l\u2019allestimento di:\r\n- esperimenti di elettrostatica, magnetismo ed elettromagnetismo, einerenti alla fisica dei laser, portando alla luce il susseguirsi dei fenomeni nella vita quotidiana;\r\n- pannelli esplicativi sulla fusione termonucleare, alcuni adatti ai bambini ed altri ad un pubblico adulto;\r\n- una visita guidata al Tokamak FTU\r\n- una visita guidata al laboratorio Laser ABC.\r\n- esperimenti di superconduttivit\u00e0\r\n\r\n<em>Entrate alle 15.00, 17.30, 20.00 \u2013 \u00a0I percorsi e le visite avranno la durata di circa 2 h.<\/em>\r\n\r\n&nbsp;\r\n\r\n<strong>E' necessaria la prenotazione.<\/strong>\r\n\r\nLe\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong> settembre\u00a02014.<\/strong>",
+      "descrizione": "L\u2019Unit\u00e0 Tecnica Fusione propone un percorso didattico-scientifico al fine di comprendere i principi della fusione termonucleare e di avvicinare i visitatori al metodo scientifico come strumento di conoscenza. La possibilit\u00e0 di fare direttamente degli esperimenti e di farsi guidare in visite ai laboratori dai ricercatori permette di familiarizzare con queste discipline scientifiche.\r\nA tal fine si propone l\u2019allestimento di:\r\n\r\nEsperimenti di elettrostatica, magnetismo ed elettromagnetismo, e inerenti alla fisica dei laser, portando alla luce il susseguirsi dei fenomeni nella vita quotidiana\r\nEsperimenti di superconduttivit\u00e0\r\nPannelli esplicativi sulla fusione termonucleare, alcuni adatti ai bambini ed altri ad un pubblico adulto\r\nVisita guidata al Tokamak FTU\r\nVisita guidata al laboratorio Laser ABC\r\n\r\nIngresso <b>ore 15:00, 17.30 <\/b>e<b> ore 20:00. <\/b>Le visite avranno la durata di circa 2h.\u00a0<b>E\u2019 necessaria la prenotazione.\r\n<\/b>Le <b>prenotazioni<\/b> delle attivit\u00e0 dedicate alle <b>scuole<\/b> saranno attive a partire da<b> settembre 2014.<\/b>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/enea_frascati.jpg",
       "macroevento": [
         290
@@ -3735,6 +4827,18 @@ define({
       "organizzatori": [
         "enea",
         "frascati-scienza"
+      ],
+      "targets": [
+        "specialisti",
+        "scuole-superiori",
+        "pubblico-generale",
+        "giovani-2",
+        "scuole-medie"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8203161",
@@ -3758,6 +4862,14 @@ define({
         "frascati-scienza",
         "enea"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale",
+        "scuole-superiori"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "41.8207198",
         "lon": "12.672862200000054"
@@ -3779,6 +4891,17 @@ define({
       "organizzatori": [
         "enea",
         "frascati-scienza"
+      ],
+      "targets": [
+        "specialisti",
+        "scuole-superiori",
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8203161",
@@ -3803,6 +4926,15 @@ define({
         "frascati-scienza",
         "scienzaviva"
       ],
+      "targets": [
+        "pubblico-generale",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.1283245",
         "lon": "16.873776099999986"
@@ -3825,6 +4957,12 @@ define({
         "frascati-scienza",
         "ingv-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "41.8273999",
         "lon": "12.515178300000002"
@@ -3846,6 +4984,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "irccs-san-raffaele-pisana"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8930481",
@@ -3870,6 +5014,14 @@ define({
         "infn-2",
         "universita-di-bari"
       ],
+      "targets": [
+        "11-13-anni",
+        "14-18-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.1283245",
         "lon": "16.873776099999986"
@@ -3891,6 +5043,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "fondazione-golinelli"
+      ],
+      "targets": [
+        "06-10-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "44.494887",
@@ -3914,6 +5072,21 @@ define({
         "esa-esrin",
         "frascati-scienza"
       ],
+      "targets": [
+        "specialisti",
+        "scuole-superiori",
+        "pubblico-generale",
+        "giovani-2",
+        "scuole"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "incontri-con-i-ricercatori",
+        "laboratori",
+        "spettacoli",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "41.8142052",
         "lon": "12.70708250000007"
@@ -3935,6 +5108,20 @@ define({
       "organizzatori": [
         "esa-esrin",
         "frascati-scienza"
+      ],
+      "targets": [
+        "specialisti",
+        "pubblico-generale",
+        "giovani-2",
+        "scuole"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "incontri-con-i-ricercatori",
+        "laboratori",
+        "spettacoli",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "41.8142052",
@@ -3958,6 +5145,13 @@ define({
         "frascati-scienza",
         "ingv-2"
       ],
+      "targets": [
+        "06-10-anni",
+        "scuole-elementari"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8273999",
         "lon": "12.515178300000002"
@@ -3967,7 +5161,7 @@ define({
       "id": "256",
       "titolo": "Percorsi didattici sostenibili e apprendimento significativo",
       "timestamp": 1411747200,
-      "descrizione": "Durante la sessione tre docenti universitari seguiranno tre percorsi didattici che avvicineranno la scienza alla sostenibilit\u00e0 ambientale.\r\n\r\n<strong>Francesco Larocca <\/strong>(Docente di Scienze e Direttore dell\u2019Osservatorio astronomico la Torretta).\r\nLo studio del sistema cardiocircolatorio tra immagini virtuali di una App e l'esplorazione mirata di una dissezione anatomica.\r\n\r\n<strong>Luciano Bernardo<\/strong> (Biologo marino).\r\nLa biologia marina insegnata attraverso l\u2019osservazione diretta: una passeggiata sulla spiaggia per divertirsi a scoprire e riconoscere i <em>tesori<\/em> che le onde gettano a riva.\r\n\r\n<strong>Filippo Pergola<\/strong> (Psicoterapeuta, Docente Universit\u00e0 Tor Vergata).\r\nI nuclei fondanti dell\u2019apprendimento significativo.\r\n\r\n&nbsp;",
+      "descrizione": "Durante la sessione tre docenti universitari seguiranno tre percorsi didattici che avvicineranno la scienza alla sostenibilit\u00e0 ambientale.\r\n\r\n<strong>Francesco Larocca -\u00a0<\/strong>Docente di Scienze e Direttore dell\u2019Osservatorio astronomico la Torretta.\r\nLo studio del sistema cardiocircolatorio tra immagini virtuali di una App e l'esplorazione mirata di una dissezione anatomica.\r\n\r\n<strong>Luciano Bernardo<\/strong>\u00a0- Biologo marino.\r\nLa biologia marina insegnata attraverso l\u2019osservazione diretta: una passeggiata sulla spiaggia per divertirsi a scoprire e riconoscere i <em>tesori<\/em> che le onde gettano a riva.\r\n\r\n<strong>Filippo Pergola<\/strong>\u00a0- Psicoterapeuta, Docente Universit\u00e0 Tor Vergata.\r\nI nuclei fondanti dell\u2019apprendimento significativo.\r\n\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/amazon.jpg",
       "macroevento": [
         290
@@ -3979,6 +5173,14 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "25-99-anni",
+        "scuole",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8114374",
         "lon": "12.668950099999961"
@@ -3988,7 +5190,7 @@ define({
       "id": "259",
       "titolo": "Science Trips - Geometrie dei pavimenti medievali romani",
       "timestamp": 1411747200,
-      "descrizione": "Passeggiate scientifiche a cura di Laura Tedeschini Lalli, Alessandra Carlini \u2013 Laboratorio www.formulas.it - Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre<strong> (CON PRENOTAZIONE massimo 30 persone )<\/strong>",
+      "descrizione": "Passeggiate scientifiche a cura di Laura Tedeschini Lalli, Alessandra Carlini \u2013 Laboratorio www.formulas.it - Dipartimento di Architettura -\u00a0 Universit\u00e0 Roma Tre<strong> (CON PRENOTAZIONE massimo 30 persone )<\/strong>\r\n\r\nPer informazioni e prenotazioni scrivete a\u00a0<a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/pavimenti.jpg",
       "macroevento": [
         290
@@ -4000,6 +5202,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-roma-tre"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_trips"
       ],
       "luogo": {
         "lat": "41.8893347",
@@ -4023,6 +5232,18 @@ define({
         "artov",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "incontri-con-i-ricercatori",
+        "laboratori",
+        "spettacoli",
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "41.839729",
         "lon": "12.648944000000029"
@@ -4045,6 +5266,21 @@ define({
         "asi",
         "frascati-scienza",
         "iaps"
+      ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori",
+        "tipo_mostre",
+        "seminario",
+        "spettacoli",
+        "visite-centri-di-ricerca"
       ],
       "luogo": {
         "lat": "41.8555903",
@@ -4074,6 +5310,16 @@ define({
         "frascati-scienza",
         "comune-di-bologna"
       ],
+      "targets": [
+        "giovani-2",
+        "14-18-anni",
+        "06-10-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "44.4935774",
         "lon": "11.342823299999964"
@@ -4095,6 +5341,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "ingv-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "41.8273999",
@@ -4118,6 +5370,12 @@ define({
         "frascati-scienza",
         "irccs-san-raffaele-pisana"
       ],
+      "targets": [
+        
+      ],
+      "categories": [
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "41.8930481",
         "lon": "12.403318500000069"
@@ -4139,6 +5397,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "fondazione-golinelli"
+      ],
+      "targets": [
+        "06-10-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "44.494887",
@@ -4163,6 +5427,12 @@ define({
         "infn-2",
         "universita-di-pisa"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori"
+      ],
       "luogo": {
         "lat": "43.7173487",
         "lon": "10.402142899999944"
@@ -4184,6 +5454,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
       ],
       "luogo": {
         "lat": "45.6492431",
@@ -4208,6 +5484,14 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "aperitivi-scientifici",
+        "incontri-con-i-ricercatori"
+      ],
       "luogo": {
         "lat": "43.7173487",
         "lon": "10.402142899999944"
@@ -4231,6 +5515,13 @@ define({
         "frascati-scienza",
         "universita-di-pisa"
       ],
+      "targets": [
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "43.7198114",
         "lon": "10.407322600000043"
@@ -4252,6 +5543,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "45.1846694",
@@ -4275,6 +5573,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -4296,6 +5600,12 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8058828",
         "lon": "12.678936000000022"
@@ -4316,6 +5626,13 @@ define({
       "idluogo": "31",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.8058828",
@@ -4339,6 +5656,15 @@ define({
         "frascati-scienza",
         "universita-sapienza"
       ],
+      "targets": [
+        "11-13-anni",
+        "14-18-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.9012278",
         "lon": "12.512396299999978"
@@ -4360,6 +5686,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "44.8360225",
@@ -4384,6 +5716,14 @@ define({
         "infn-2",
         "universita-di-bari"
       ],
+      "targets": [
+        "11-13-anni",
+        "14-18-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.1283245",
         "lon": "16.873776099999986"
@@ -4405,6 +5745,15 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "14-18-anni",
+        "18-25-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "seminario"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -4428,6 +5777,12 @@ define({
         "frascati-scienza",
         "fondazione-mario-golinelli"
       ],
+      "targets": [
+        "06-10-anni"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "44.494887",
         "lon": "11.342616300000032"
@@ -4449,6 +5804,13 @@ define({
       "organizzatori": [
         "gruppo-astrofili-monti-lepini",
         "comune-di-gorga"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.6556666",
@@ -4472,6 +5834,17 @@ define({
         "inaf",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "06-10-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "spettacoli",
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -4494,6 +5867,17 @@ define({
         "inaf",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "06-10-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "spettacoli",
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -4515,6 +5899,16 @@ define({
       "organizzatori": [
         "infn-2",
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -4539,6 +5933,16 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "37.5236435",
         "lon": "15.069866600000069"
@@ -4560,6 +5964,17 @@ define({
       "organizzatori": [
         "infn-2",
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "tipo_mostre",
+        "seminario"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -4584,6 +5999,20 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "incontri-con-i-ricercatori",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "45.4626867",
         "lon": "9.17108840000003"
@@ -4606,6 +6035,19 @@ define({
         "infn-2",
         "frascati-scienza",
         "museo-nazionale-scienza-e-tecnologia-di-milano"
+      ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "tipo_mostre",
+        "visite-guidate"
       ],
       "luogo": {
         "lat": "45.4626867",
@@ -4630,6 +6072,19 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "25-99-anni",
+        "18-25-anni",
+        "14-18-anni",
+        "11-13-anni"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "tipo_mostre"
+      ],
       "luogo": {
         "lat": "45.4626867",
         "lon": "9.17108840000003"
@@ -4650,6 +6105,12 @@ define({
       "idluogo": "23",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "41.8207198",
@@ -4673,6 +6134,14 @@ define({
         "enea",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "visite-centri-di-ricerca",
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "42.0410967",
         "lon": "12.306303299999968"
@@ -4694,6 +6163,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "11-13-anni",
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -4717,6 +6194,13 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "giovani-2"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -4739,6 +6223,15 @@ define({
         "frascati-scienza",
         "istituto-villa-sora"
       ],
+      "targets": [
+        "18-25-anni",
+        "25-99-anni",
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "41.8103734",
         "lon": "12.670798399999967"
@@ -4759,6 +6252,12 @@ define({
       "idluogo": "188",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "41.8060816",
@@ -4781,6 +6280,13 @@ define({
       "organizzatori": [
         "frascati-scienza"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "41.80583045920301",
         "lon": "12.679235869789181"
@@ -4788,7 +6294,7 @@ define({
     },
     {
       "id": "391",
-      "titolo": "Un' Enigma per la comunicazione",
+      "titolo": "Un Enigma per la comunicazione",
       "timestamp": 1411758000,
       "descrizione": "<div style=\"color: #000000;\">La comunicazione \u00e8 sempre stata fondamentale per raggiungere degli obiettivi importanti. Durante la Seconda guerra mondiale le macchine <strong>Enigma<\/strong> utilizzate dai soldati tedeschi, giapponesi ed italiani servivano a trasmettere messaggi senza che il nemico potesse decifrarli.<\/div>\r\n<div style=\"color: #000000;\">Uno strumento di guerra, ma in realt\u00e0 una macchina che nasceva per scopi commerciali.<\/div>\r\n<div style=\"color: #000000;\">Costruire un futuro migliore spesso vuol dire anche saper guardare al proprio passato con il giusto occhio critico. Durante la Notte Europea dei Ricercatori, in alcune delle sedi coinvolte, alcune macchine enigma saranno messe in mostra e, per la prima volta dopo tanti anni, riprenderanno vista e verranno utilizzate per trasmettere messaggi di pace.<\/div>\r\n<div style=\"color: #000000;\">Attivit\u00e0 in collaborazione con Museo Storico della Comunicazione.<\/div>\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/08\/enigma.jpg",
@@ -4801,6 +6307,12 @@ define({
       "idluogo": "188",
       "organizzatori": [
         
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
       ],
       "luogo": {
         "lat": "41.8060816",
@@ -4825,6 +6337,14 @@ define({
         "infn-2",
         "scienzaviva"
       ],
+      "targets": [
+        "11-13-anni",
+        "14-18-anni",
+        "giovani-2"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.1283245",
         "lon": "16.873776099999986"
@@ -4834,7 +6354,7 @@ define({
       "id": "346",
       "titolo": "Tutti per Uno, Uno per Tutti - La Sostenibilit\u00e0 siamo Noi",
       "timestamp": 1411759800,
-      "descrizione": "Quanto \u00e8 sostenibile il nostro pranzo? Quanti litri di acqua servono per un uovo? Che impatto hanno sulla salute della terra le nostre scelte a tavola? Questi sono alcuni degli spunti sul tema della \u201c<strong>Sostenibilit\u00e0<\/strong>\u201d che Explora offrir\u00e0 grazie alla presenza dei Ricercatori del CRA-NUT Il Consiglio per la Ricerca e la Sperimentazione in Agricoltura e Centro di Ricerca per gli Alimenti e la Nutrizione in occasione della Notte Europea dei Ricercatori.\r\n\r\nObiettivi: <strong>scoprire<\/strong> che la <strong>salute <\/strong>della <strong>terra<\/strong> \u00e8 la nostra salute e che crescere con <strong>un\u2019alimentazione sana<\/strong> fa bene anche all\u2019ambiente; <strong>sperimentare<\/strong> <strong>l\u2019impronta idrica<\/strong> dei prodotti che scegliamo per le nostre tavole; <strong>approfondire<\/strong> in una nuova cucina il significato di \u201c<strong>consumo consapevole<\/strong>\u201d e capire che dal <strong>cibo<\/strong> dipende il futuro del nostro <strong>pianeta<\/strong>.\r\n\r\n&nbsp;\r\n\r\nI laboratori\r\n\r\nI frutti delle Stagioni, Stagionalit\u00e0, Frutta e Verdura, 3\/5 anni:\r\n\r\nAcqua Invisibile! L'impronta dell'acqua sui cibi che mangiamo, 6\/7 anni;\r\n\r\nL'Energia che non ti aspetti\" CO2 e Consumo consapevole, 8\/12 anni;\r\n\r\nPizza Lab, Gluten Free\u201d nell\u2019Officina in Cucina, 5\/12 anni;\r\n\r\nIngresso gratuito, prenotazione obbligatoria\u00a0<a href=\"http:\/\/www.mdbr.it\">www.mdbr.it<\/a> 06 3613776",
+      "descrizione": "Quanto \u00e8 sostenibile il nostro pranzo? Quanti litri di acqua servono per un uovo? Che impatto hanno sulla salute della terra le nostre scelte a tavola? Questi sono alcuni degli spunti sul tema della \u201c<b>Sostenibilit\u00e0<\/b>\u201d che <b>Explora<\/b> offrir\u00e0 grazie alla presenza dei Ricercatori del <b>CRA-NUT<\/b> , il Consiglio per la Ricerca e la Sperimentazione in Agricoltura e Centro di Ricerca per gli Alimenti e la Nutrizione, in occasione della Notte Europea dei Ricercatori.\r\nObiettivi? <b>Scoprire<\/b> che la <b>salute <\/b>della <b>terra<\/b> \u00e8 la nostra salute e che crescere con <b>un\u2019alimentazione sana<\/b> fa bene anche all\u2019ambiente; <b>Sperimentare<\/b><b>l\u2019impronta idrica<\/b> dei prodotti che scegliamo per le nostre tavole;\r\n<b>Approfondire<\/b> in una nuova cucina il significato di \u201c<b>consumo consapevole<\/b>\u201d e capire che dal <b>cibo<\/b> dipende il futuro del nostro <b>pianeta<\/b>.\r\n\r\n<b>\r\n<\/b><b><strong><b>I LABORATORI<\/b><\/strong><\/b>\r\n\r\nI FRUTTI DELLE STAGIONI\r\nStagionalit\u00e0, Frutta e Verdura, per bambini 3\/5 anni\r\n\r\nACQUA INVISIBILE!\r\nL'impronta dell'acqua sui cibi che mangiamo, per bambini 6\/7 anni\r\n\r\nL'ENERGIA CHE NON TI ASPETTI\r\nCO2 e Consumo consapevole, per bambini 8\/12 anni\r\n\r\nPIZZA LAB, GLUTEN FREE\r\nnell\u2019Officina in Cucina, per bambini 5\/12 anni;\r\n\r\n<b>Ingresso gratuito. E\u2019 necessaria la prenotazione.\u00a0<\/b><b>Info T\u00a0<\/b>06 3613776 <a title=\"EXPLORA\" href=\"https:\/\/www.mdbr.it\/\"><b>EXPLORA<\/b><\/a>\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/07\/explora_scienza.jpg",
       "macroevento": [
         290
@@ -4846,6 +6366,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "museo-dei-bambini-scs-onlus"
+      ],
+      "targets": [
+        "famiglie",
+        "3-12-anni"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "41.915309",
@@ -4869,6 +6396,14 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "11-13-anni",
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "37.5236435",
         "lon": "15.069866600000069"
@@ -4891,6 +6426,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -4900,7 +6441,7 @@ define({
       "id": "290",
       "titolo": "Una notte sulla sostenibilit\u00e0 sotto le stelle di \u201cRoma Tre\u201d",
       "timestamp": 1411763400,
-      "descrizione": "Il pubblico avr\u00e0 modo di incontrare i docenti, i giovani ricercatori, i dottorandi e gli studenti e di entrare in contatto personalmente con la realt\u00e0 della ricerca scientifica svolta presso la Facolt\u00e0 e gli enti di ricerca.\r\n\r\n<strong>PROGRAMMA DELLE ESPOSIZIONI, DEI LABORATORI E DEGLI SPETTACOLI<\/strong>\r\n\r\n<strong>SPAZI ESTERNI<\/strong>\r\n\r\n&nbsp;\r\n<ul>\r\n\t<li><strong>Star party<\/strong> \u2013 Enrico Bernieri &amp; Ilaria De Angelis - Universit\u00e0 Roma Tre Dipartimento di Matematica e Fisica, INFN<\/li>\r\n<\/ul>\r\nOsservazioni astronomiche guidate. Per chi vuole partecipare portando anche il proprio telescopio, c\u2019\u00e8 la possibilit\u00e0 di ospitare fino ad un massimo di 5 strumenti. Ogni telescopio deve essere autonomo e dotato di propria (eventuale) alimentazione. Per motivi di sicurezza eventuali cavi di alimentazione dovranno necessariamente rimanere sotto il cavalletto del telescopio.\r\n<ul>\r\n\t<li><strong>Fossili Viventi: attivit\u00e0 interattiva<\/strong> \u2013 Gabriele Sansalone Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nUn esperto paleontologo dei vertebrati condurr\u00e0 i visitatori in un breve ma affascinante viaggio attraverso l\u2019evoluzione delle specie al fresco di un ombroso Ginkgo biloba, vero e proprio fossile vivente attualmente piantato nel mezzo del nostro giardino\r\n<ul>\r\n\t<li><strong>Il cielo in una stanza: il Planetario a Roma Tre: visite guidate<\/strong> \u2013 Maurizio Chirri, Massimo Mattei, Giulia Botticelli, Livia Lombardi, Lucilla Fabrizi Universit\u00e0 Roma Tre \u2013 Dipartimento di Scienze, Museo geopaleontologico di Rocca di Cave, Associazione Hipparcos<\/li>\r\n<\/ul>\r\nQuattro turni dello spettacolo del cielo stellato di oggi e d\u2019importanti notti del passato attraverso una narrazione rigorosa e affascinante al tempo stesso: per partecipare allo spettacolo gratuito nei quattro turni delle ore 20:30 21:15 22:00 e 22:45 \u00e8 necessaria la prenotazione\r\n<ul>\r\n\t<li><strong>Immagini dalla Natura e messaggi sulla sostenibilit\u00e0 \u2013 <\/strong>Massimiliano Lagona e Gabriele Vizzini Studenti di Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nGli spazi esterni in cui si svolgeranno le attivit\u00e0 saranno accompagnati da messaggi e immagini sulla natura e la sostenibilit\u00e0 ambientale\r\n<ul>\r\n\t<li><strong>La Societ\u00e0 Geologica Italiana: le radici della cultura geologica italiana<\/strong> \u2013 Alessandro Zuccari, Fabio Petti Societ\u00e0 Geologica Italiana La Societ\u00e0 Geologica Italiana \u00e8 stata fondata a Bologna il 29 Settembre 1881. \u00c8 la pi\u00f9 antica e rappresentativa associazione scientifica italiana nel campo delle Geoscienze. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 della SGI per la promozione e la diffusione delle conoscenze geologiche<\/li>\r\n\t<li><strong>La conservazione della natura a Roma: la sfida dei Parchi metropolitani (materiale parchi, info Roma Natura): attivit\u00e0 divulgativa<\/strong> \u2013 Antonella Lo Re Roma Natura Regione Lazio<\/li>\r\n<\/ul>\r\nRomaNatura \u00e8 l\u2019Ente Regionale per la Gestione del Sistema delle Aree Naturali Protette nel Comune di Roma. Attualmente RomaNatura gestisce oltre 16.000 ettari di natura protetta. La ricchezza del territorio gestito dall\u2019Ente \u00e8 immensa: preesistenze archeologiche, monumenti, ville e casali rappresentano solo una parte del suo valore, il cui vero tesoro \u00e8 rappresentato da nicchie ecologiche che contano la presenza di oltre 1000 specie vegetali, 5000 specie di insetti e altre 150 specie fra mammiferi, uccelli, anfibi e rettili. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 di RomaNatura per la promozione della conoscenza di queste aree protette.\r\n<ul>\r\n\t<li><strong>I tropici fuoriporta: Un antico mare tropicale a due passi da Roma \u2013 <\/strong>Francesco Grossi e Andrea Bollati Universit\u00e0 Roma Tre Dipartimento di Scienze e Associazione Hipparcos<\/li>\r\n<\/ul>\r\nDue ricercatori esperti della geologia dell\u2019Appennino saranno a disposizione del pubblico per illustrare attraverso carte geologiche, campioni rocce e fossili come le rocce affioranti a due passi da Roma rappresentino i resti di un antico mare mare tropicale\r\n<ul>\r\n\t<li><strong>Due chiacchiere sulla sostenibilit\u00e0 ambientale: presentazione di libri sul tema \u2013 <\/strong>Giulia Caneva Universit\u00e0 Roma Tre Dipartimento di Scienze e Pierluigi Vecchia Commissione Energia Ordine Geologi Lazio<\/li>\r\n<\/ul>\r\nLa sostenibilit\u00e0 ambientale \u00e8 diventato tema centrale nella pianificazione e nello sviluppo della nostra societ\u00e0: servono scelte realmente sostenibili, che influenzino la nostra vita a ogni livello \u2013 dalla pianificazione urbanistica alla gestione delle risorse naturali e dell\u2019energia \u2013 trasformando l\u2019imperativo della sostenibilit\u00e0 ambientale da mero slogan, capace solo di generare un consenso tanto acritico quanto inefficace, in motore di progetti concreti, capaci di cambiare la vita e le abitudini di ognuno di noi. Una biologa e un geologo, esperti di sostenibilit\u00e0 ambientale, ce ne parleranno prendendo come spunto le loro recenti fatiche editoriali sui temi dell\u2019Etnobotanica e delle Smart Cities\r\n<ul>\r\n\t<li><strong>Natural Heritage: I Geositi d\u2019Italia \u2013 <\/strong>Chiara D\u2019Ambrogi, Marco Pantaloni, Rita Maria Pichezzi, Rinalda Di Stefano, Maria Cristina Giovagnoli Dip. Difesa suolo e Difesa della Natura-ISPRA<\/li>\r\n<\/ul>\r\n&nbsp;\r\n\r\nI Dipartimenti \u201cDifesa del Suolo\u201d e \u201cDifesa della Natura\u201d dell\u2019ISPRA propongono un viaggio virtuale alla scoperta geologica del nostro territorio. Mostreremo i pi\u00f9 interessanti geositi italiani e della nostra regione; scopriremo dove sono questi \u201cmonumenti geologici\u201d, cosa significano, perch\u00e9 e quando si sono formati. Un\u2019esplorazione per conoscere e tutelare il nostro territorio; un viaggio virtuale nello spazio e nel tempo alla conoscenza della storia geologica della nostra regione. Alla scoperta dei geositi andremo attraverso:\r\n\r\nItinerari virtuali nel Lazio; ;\r\n\r\n- Riconoscimento di Fossili al microscopio;\r\n\r\n- Le storie raccontate dalle rocce;\r\n\r\n- La partecipazione a Geoquiz (per tutte le fasce di et\u00e0)\r\n<ul>\r\n\t<li><strong>La scienza del quotidiano - <\/strong>Ilaria Carlomagno, Gian Marco Pierantozzi, Andrea scaparro e Luciano Sperandio Roma Tre \u2013 Dipartimenti di Scienze e di Matematica e Fisica<\/li>\r\n<\/ul>\r\nGesti all'apparenza banali e strumenti di uso quotidiano saranno lo spunto per comprendere\u00a0 quali sono le domande che i fisici si pongono. Ma come nascono queste domande? Come gli scienziati cercano di studiare il mondo? Una serie di piccoli esperimenti ci apriranno la via per trovare le risposte\r\n\r\n&nbsp;\r\n<ul>\r\n\t<li><strong>La terra sotto i nostri piedi: Georadar \u2013 <\/strong>Barbara Cosciotti Roma Tre \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nEsperimenti di geofisica applicata nel nostro giardino in compagnia di una esperta di georadar.\r\n\r\n&nbsp;\r\n\r\n<strong>SPAZI INTERNI<\/strong>\r\n<ul>\r\n\t<li><strong>Attivit\u00e0 divulgativa \u2013 <\/strong>Sveva Corrado, Claudio Faccenna e Francesca Funiciello - Universit\u00e0 Roma Tre Dipartimento di Scienze.<\/li>\r\n<\/ul>\r\nL\u2019esperienza dei ricercatori coinvolti nei progetti europei dei nostri dipartimenti con distribuzione anche di materiale divulgativo\r\n<ul>\r\n\t<li>ATRIO PRIMO PIANO - <strong>La ricerca della vita extraterrestre <\/strong>Ilaria De Angelis, Enrico Bernieri, Andrea Bonchi, Adriana Postiglione Roma Tre Dipartimenti di Matematica e Fisica\r\n\"Infiniti soli, innumerabili mondi\" sosteneva Giordano Bruno nel 1600. Se esistano o meno altri pianeti al di fuori del nostro Sistema Solare possiamo rispondere oggi in modo affermativo: dal 1992, infatti, sono stati scoperti quasi duemila esopianeti. Ma esistono pianeti simili alla Terra? Esistono altri pianeti che ospitano la vita?<\/li>\r\n\t<li>AULA E <strong>Frammenti di cielo e di terra \u2013 <\/strong>Vincenzo Nasti, Paolo Aloe, Chiara Amadori Gruppo Mineralogico Romano e Dipartimento di Scienze Univ. Roma Tre<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di minerali, rocce e meteoriti\r\n<ul>\r\n\t<li>LABORATORIO <strong>Le montagne e i terremoti \u201cin scatola\u201d \u2013 <\/strong>Francesca Cifelli e Maurizio Parotto \u2013 Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nEsperimenti in laboratorio\r\n<ul>\r\n\t<li>AULA B2 <strong>DNA Cellule e Vita \u2013 <\/strong>Manuela Cervelli, Monica Carosi Universit\u00e0 Roma Dipartimento di Scienze Emanuela Angellucci, Francesca Greco, Luana Barone, Anna Fracassi, Michela Onorati, Barbara D\u2019Orio<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di materiale biologico\r\n<ul>\r\n\t<li>ATRIO MATEMATICA <strong>I rivelatori di particelle: gli strumenti <\/strong>Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nOsservazione di raggi cosmici con coincidenza tra scintillatori e illustrazione di apparati sperimentali via via piu\u2019 complessi\r\n<ul>\r\n\t<li>AULA 9 <strong>Caccia alle Particelle <\/strong>(con prenotazione massimo 30 persone) Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nMetodi di identificazione delle particelle elementari illustrati e poi applicati in un avvincente gioco di squadra, una vera e propria caccia al tesoro.\r\n<ul>\r\n\t<li>AULA C <strong>Come la scienza combatte la contraffazione: vedere oltre la nostra vista -<\/strong>Giuseppe Schirripa Dipartimento di Matematica e Fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\n<strong>PROGRAMMA DELLE CONFERENZE<\/strong>\r\n\r\nAULA D blocco aule \u2013 seminari di biologia sul tema della salute dell\u2019uomo (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cL\u2019obesit\u00e0 e il cibo spazzatura: il ruolo del senso del gusto\u201d Maria Marino \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>21:15: \u201cIl doppio ruolo del colesterolo: da benefattore a killer\u201d Valentina Pallottini \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cCellule staminali: cosa sono? Come possono essere utilizzate?\u201d Sandra Moreno \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:45: \u201cI virus: da dove vengono e dove vanno\u201d Elisabetta Affabris \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nAULA G blocco aule \u2013 Seminari prenotazione della sostenibilit\u00e0 ambientale (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLa Geotermia a Roma: possibilit\u00e0 e prospettive\u201d <em>Massimo Ranaldi e Luca Tarchini \u2013 Dipartimento di Scienze \u2013 Sezione di Geologia<\/em><\/li>\r\n\t<li>21:30: \u201cQuale via per la resilienza?\u201d Claudio Baffioni \u2013 RomaCapitale, Osservatorio Ambientale sui Cambiamenti Climatici<\/li>\r\n\t<li>22:30: \u201cTriceratops vs Torosaurus: la sfida continua\u201d Leonardo Maiorino \u2013 Dipartimento di Scienze \u2013 Sezione di Geologia<\/li>\r\n<\/ul>\r\nAULA B1 Momenti di matematica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cCento anni di Alan Turing\u201d Roberto Di Pietro \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:30: \u201cLa precessione del perielio di Mercurio e la teoria delle perturbazioni\u201d Alessandro Giuliani \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>22:30: \u201cGuida galattica per analisti numerici\u201d Roberto Ferretti \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nAULA B3 Seminari di fisica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLa Fisica del Volo: dal moscerino all\u2019Airbus \u201d Luciano Teresi \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:15: \u201cL\u2019acqua: Cosi\u2019 comune e cosi\u2019 stravagante\u201d Maria Antonietta Ricci \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cNanotecnologie per l\u2019Energia\u201d Andrea Notargiacomo \u2013 CNR- IFN Dipartimento di Scienze<\/li>\r\n\t<li>22:45: \u201cIl lato nascosto dell\u2019Universo: DarkSide alla ricerca della materia oscura.\u201d Andrea Mandarano e Laura Marini. \u2013 Dipartimento di Matematica e fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\nAULA F Con la serie di spettacoli \u201cViaggi spaziali\u201d, McQuadro offre l\u2019emozione di un viaggio nello spazio e persino nel tempo: una originale esperienza interattiva, accompagnata da musiche e immagini memorabili. Per un viaggio tranquillo ci si pu\u00f2 recare tra le valli di Marte, oppure a vedere un\u2019eclisse direttamente dalla Luna, o magari a bagno tra i laghi di Titano . Per destinazioni pi\u00f9 esotiche si pu\u00f2 uscire dal Sistema Solare e visitare Rigel e Antares, oppure qualche pianeta extrasolare, ma anche uscire dalla Via Lattea e volare su Andromeda. Per i pi\u00f9 avventurosi si pu\u00f2 viaggiare nel tempo e osservare il cielo diecimila anni fa , oppure si possono sfidare le macchie solari e le tempeste di Giove, e persino tentare l\u2019avvicinamento a un buco nero. (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>21:00: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n\t<li>22:30: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n<\/ul>\r\n<b style=\"color: #000000;\">Per i seminari in aula \u00e8 necessaria la prenotazione\r\n<\/b>",
+      "descrizione": "Il pubblico avr\u00e0 modo di incontrare i docenti, i giovani ricercatori, i dottorandi e gli studenti e di entrare in contatto personalmente con la realt\u00e0 della ricerca scientifica svolta presso la Facolt\u00e0 e gli enti di ricerca.\r\n\r\nPer prenotazioni:\u00a0<a href=\"https:\/\/ricerca.mat.uniroma3.it\/nottericercatori\/registrazioni.php\">https:\/\/ricerca.mat.uniroma3.it\/nottericercatori\/registrazioni.php<\/a>\r\n\r\n<strong>PROGRAMMA DELLE ESPOSIZIONI, DEI LABORATORI E DEGLI SPETTACOLI<\/strong>\r\n\r\n<strong>SPAZI ESTERNI<\/strong>\r\n\r\n&nbsp;\r\n<ul>\r\n\t<li><strong>Star party<\/strong> \u2013 Enrico Bernieri &amp; Ilaria De Angelis - Universit\u00e0 Roma Tre Dipartimento di Matematica e Fisica, INFN<\/li>\r\n<\/ul>\r\nOsservazioni astronomiche guidate. Per chi vuole partecipare portando anche il proprio telescopio, c\u2019\u00e8 la possibilit\u00e0 di ospitare fino ad un massimo di 5 strumenti (su prenotazione alla mail <a href=\"mailto:nottericerca@gmail.com\">nottericerca@gmail.com<\/a>). Ogni telescopio deve essere autonomo e dotato di propria (eventuale) alimentazione. Per motivi di sicurezza eventuali cavi di alimentazione dovranno necessariamente rimanere sotto il cavalletto del telescopio.\r\n<ul>\r\n\t<li><strong>Fossili Viventi: attivit\u00e0 interattiva<\/strong> \u2013 Gabriele Sansalone Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nUn esperto paleontologo dei vertebrati condurr\u00e0 i visitatori in un breve ma affascinante viaggio attraverso l\u2019evoluzione delle specie al fresco di un ombroso Ginkgo biloba, vero e proprio fossile vivente attualmente piantato nel mezzo del nostro giardino\r\n<ul>\r\n\t<li><strong>Il cielo in una stanza: il Planetario a Roma Tre: visite guidate<\/strong> \u2013 Maurizio Chirri, Massimo Mattei, Giulia Botticelli, Livia Lombardi, Lucilla Fabrizi Universit\u00e0 Roma Tre \u2013 Dipartimento di Scienze, Museo geopaleontologico di Rocca di Cave, Associazione Hipparcos<\/li>\r\n<\/ul>\r\nQuattro turni dello spettacolo del cielo stellato di oggi e d\u2019importanti notti del passato attraverso una narrazione rigorosa e affascinante al tempo stesso: per partecipare allo spettacolo gratuito nei quattro turni delle ore 20:30 21:15 22:00 e 22:45 \u00e8 necessaria la prenotazione\r\n<ul>\r\n\t<li><strong>Immagini dalla Natura e messaggi sulla sostenibilit\u00e0 \u2013 <\/strong>Massimiliano Lagona e Gabriele Vizzini Studenti di Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nGli spazi esterni in cui si svolgeranno le attivit\u00e0 saranno accompagnati da messaggi e immagini sulla natura e la sostenibilit\u00e0 ambientale\r\n<ul>\r\n\t<li><strong>La Societ\u00e0 Geologica Italiana: le radici della cultura geologica italiana<\/strong> \u2013 Alessandro Zuccari, Fabio Petti Societ\u00e0 Geologica Italiana La Societ\u00e0 Geologica Italiana \u00e8 stata fondata a Bologna il 29 Settembre 1881. \u00c8 la pi\u00f9 antica e rappresentativa associazione scientifica italiana nel campo delle Geoscienze. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 della SGI per la promozione e la diffusione delle conoscenze geologiche<\/li>\r\n\t<li><strong>La conservazione della natura a Roma: la sfida dei Parchi metropolitani (materiale parchi, info Roma Natura): attivit\u00e0 divulgativa<\/strong> \u2013 Antonella Lo Re Roma Natura Regione Lazio<\/li>\r\n<\/ul>\r\nRomaNatura \u00e8 l\u2019Ente Regionale per la Gestione del Sistema delle Aree Naturali Protette nel Comune di Roma. Attualmente RomaNatura gestisce oltre 16.000 ettari di natura protetta. La ricchezza del territorio gestito dall\u2019Ente \u00e8 immensa: preesistenze archeologiche, monumenti, ville e casali rappresentano solo una parte del suo valore, il cui vero tesoro \u00e8 rappresentato da nicchie ecologiche che contano la presenza di oltre 1000 specie vegetali, 5000 specie di insetti e altre 150 specie fra mammiferi, uccelli, anfibi e rettili. Due esperti saranno a disposizione del pubblico per far conoscere le attivit\u00e0 di RomaNatura per la promozione della conoscenza di queste aree protette.\r\n<ul>\r\n\t<li><strong>I tropici fuoriporta: Un antico mare tropicale a due passi da Roma \u2013 <\/strong>Francesco Grossi e Andrea Bollati Universit\u00e0 Roma Tre Dipartimento di Scienze e Associazione Hipparcos<\/li>\r\n<\/ul>\r\nDue ricercatori esperti della geologia dell\u2019Appennino saranno a disposizione del pubblico per illustrare attraverso carte geologiche, campioni rocce e fossili come le rocce affioranti a due passi da Roma rappresentino i resti di un antico mare mare tropicale\r\n<ul>\r\n\t<li><strong>Due chiacchiere sulla sostenibilit\u00e0 ambientale: presentazione di libri sul tema \u2013 <\/strong>Giulia Caneva Universit\u00e0 Roma Tre Dipartimento di Scienze e Pierluigi Vecchia Commissione Energia Ordine Geologi Lazio<\/li>\r\n<\/ul>\r\nLa sostenibilit\u00e0 ambientale \u00e8 diventato tema centrale nella pianificazione e nello sviluppo della nostra societ\u00e0: servono scelte realmente sostenibili, che influenzino la nostra vita a ogni livello \u2013 dalla pianificazione urbanistica alla gestione delle risorse naturali e dell\u2019energia \u2013 trasformando l\u2019imperativo della sostenibilit\u00e0 ambientale da mero slogan, capace solo di generare un consenso tanto acritico quanto inefficace, in motore di progetti concreti, capaci di cambiare la vita e le abitudini di ognuno di noi. Una biologa e un geologo, esperti di sostenibilit\u00e0 ambientale, ce ne parleranno prendendo come spunto le loro recenti fatiche editoriali sui temi dell\u2019Etnobotanica e delle Smart Cities\r\n<ul>\r\n\t<li><strong>Natural Heritage: I Geositi d\u2019Italia \u2013 <\/strong>Chiara D\u2019Ambrogi, Marco Pantaloni, Rita Maria Pichezzi, Maria Cristina Giovagnoli Dip. Difesa suolo e Difesa della Natura-ISPRA<\/li>\r\n<\/ul>\r\n&nbsp;\r\n\r\nI Dipartimenti \u201cDifesa del Suolo\u201d e \u201cDifesa della Natura\u201d dell\u2019ISPRA propongono un viaggio virtuale alla scoperta geologica del nostro territorio. Mostreremo i pi\u00f9 interessanti geositi italiani e della nostra regione; scopriremo dove sono questi \u201cmonumenti geologici\u201d, cosa significano, perch\u00e9 e quando si sono formati. Un\u2019esplorazione per conoscere e tutelare il nostro territorio; un viaggio virtuale nello spazio e nel tempo alla conoscenza della storia geologica della nostra regione. Alla scoperta dei geositi andremo attraverso:\r\n\r\nItinerari virtuali nel Lazio; ;\r\n\r\n- Riconoscimento di Fossili al microscopio;\r\n\r\n- Le storie raccontate dalle rocce;\r\n\r\n- La partecipazione a Geoquiz (per tutte le fasce di et\u00e0)\r\n<ul>\r\n\t<li><strong>La scienza del quotidiano - <\/strong>Ilaria Carlomagno, Gian Marco Pierantozzi\u00a0e Luciano Sperandio Roma Tre \u2013 Dipartimenti di Scienze e di Matematica e Fisica<\/li>\r\n<\/ul>\r\nGesti all'apparenza banali e strumenti di uso quotidiano saranno lo spunto per comprendere\u00a0 quali sono le domande che i fisici si pongono. Ma come nascono queste domande? Come gli scienziati cercano di studiare il mondo? Una serie di piccoli esperimenti ci apriranno la via per trovare le risposte\r\n\r\n&nbsp;\r\n<ul>\r\n\t<li><strong>La terra sotto i nostri piedi: Georadar \u2013 <\/strong>Barbara Cosciotti Roma Tre \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nEsperimenti di geofisica applicata nel nostro giardino in compagnia di una esperta di georadar.\r\n\r\n&nbsp;\r\n\r\n<strong>SPAZI INTERNI<\/strong>\r\n<ul>\r\n\t<li><strong>Attivit\u00e0 divulgativa \u2013 <\/strong>Sveva Corrado, Claudio Faccenna e Francesca Funiciello - Universit\u00e0 Roma Tre Dipartimento di Scienze.<\/li>\r\n<\/ul>\r\nL\u2019esperienza dei ricercatori coinvolti nei progetti europei dei nostri dipartimenti con distribuzione anche di materiale divulgativo\r\n<ul>\r\n\t<li>ATRIO PRIMO PIANO - <strong>La ricerca della vita extraterrestre <\/strong>Ilaria De Angelis, Enrico Bernieri, Andrea Bonchi, Adriana Postiglione Roma Tre Dipartimenti di Matematica e Fisica\r\n\"Infiniti soli, innumerabili mondi\" sosteneva Giordano Bruno nel 1600. Se esistano o meno altri pianeti al di fuori del nostro Sistema Solare possiamo rispondere oggi in modo affermativo: dal 1992, infatti, sono stati scoperti quasi duemila esopianeti. Ma esistono pianeti simili alla Terra? Esistono altri pianeti che ospitano la vita?\u00a0(La mostra \u00e8 aperta al pubblico, ma alle ore 21, 22, 23 per una mezz'ora sar\u00e0 \u00a0possibile parlare con un ricercatore)<\/li>\r\n\t<li>AULA E <strong>Frammenti di cielo e di terra \u2013 <\/strong>Vincenzo Nasti, Paolo Aloe, Chiara Amadori Gruppo Mineralogico Romano e Dipartimento di Scienze Univ. Roma Tre<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di minerali, rocce e meteoriti\r\n<ul>\r\n\t<li>LABORATORIO <strong>Le montagne e i terremoti \u201cin scatola\u201d \u2013 <\/strong>Francesca Cifelli e Maurizio Parotto \u2013 Universit\u00e0 Roma Tre Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nEsperimenti in laboratorio\r\n<ul>\r\n\t<li>AULA B2 <strong>DNA Cellule e Vita \u2013 <\/strong>Manuela Cervelli, Monica Carosi Universit\u00e0 Roma Dipartimento di Scienze Emanuela Angellucci, Francesca Greco, Luana Barone, Anna Fracassi, Michela Onorati, Barbara D\u2019Orio<\/li>\r\n<\/ul>\r\nOsservazione guidata al riconoscimento di materiale biologico\r\n<ul>\r\n\t<li>ATRIO MATEMATICA <strong>I rivelatori di particelle: gli strumenti <\/strong>Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nOsservazione di raggi cosmici con coincidenza tra scintillatori e illustrazione di apparati sperimentali via via piu\u2019 complessi\r\n<ul>\r\n\t<li>AULA 9 <strong>Caccia alle Particelle <\/strong>(con prenotazione massimo 30 persone) Domizia Orestano e Fabrizio Petrucci Dipartimento di Matematica e Fisica INFN<\/li>\r\n<\/ul>\r\nMetodi di identificazione delle particelle elementari illustrati e poi applicati in un avvincente gioco di squadra, una vera e propria caccia al tesoro.\r\n<ul>\r\n\t<li>AULA C <strong>Come la scienza combatte la contraffazione: vedere oltre la nostra vista -<\/strong>Giuseppe Schirripa Dipartimento di Matematica e Fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\n<strong>PROGRAMMA DELLE CONFERENZE<\/strong>\r\n\r\nAULA D blocco aule \u2013 seminari di biologia sul tema della salute dell\u2019uomo (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cL\u2019obesit\u00e0 e il cibo spazzatura: il ruolo del senso del gusto\u201d Maria Marino \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>21:15: \u201cIl doppio ruolo del colesterolo: da benefattore a killer\u201d Valentina Pallottini \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cCellule staminali: cosa sono? Come possono essere utilizzate?\u201d Sandra Moreno \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:45: \u201cI virus: da dove vengono e dove vanno\u201d Elisabetta Affabris \u2013 Roma Tre \u2013 Dipartimento di Scienze<\/li>\r\n<\/ul>\r\nAULA G blocco aule \u2013 Seminari prenotazione della sostenibilit\u00e0 ambientale (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLa Geotermia a Roma: possibilit\u00e0 e prospettive\u201d <em>Massimo Ranaldi e Luca Tarchini \u2013 Dipartimento di Scienze \u2013 Sezione di Geologia<\/em><\/li>\r\n\t<li>21:30: \u201cQuale via per la resilienza?\u201d Claudio Baffioni \u2013 RomaCapitale, Osservatorio Ambientale sui Cambiamenti Climatici<\/li>\r\n\t<li>22:30: \u201cTriceratops vs Torosaurus: la sfida continua\u201d Leonardo Maiorino \u2013 Dipartimento di Scienze \u2013 Sezione di Geologia<\/li>\r\n<\/ul>\r\nAULA B1 Momenti di matematica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cCento anni di Alan Turing\u201d Roberto Di Pietro \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:30: \u201cLa precessione del perielio di Mercurio e la teoria delle perturbazioni\u201d Alessandro Giuliani \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>22:30: \u201cGuida galattica per analisti numerici\u201d Roberto Ferretti \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n<\/ul>\r\nAULA B3 Seminari di fisica (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>20:30: \u201cLa Fisica del Volo: dal moscerino all\u2019Airbus \u201d Luciano Teresi \u2013 Dipartimento di Matematica e Fisica<\/li>\r\n\t<li>21:15: \u201cL\u2019acqua: Cosi\u2019 comune e cosi\u2019 stravagante\u201d Maria Antonietta Ricci \u2013 Dipartimento di Scienze<\/li>\r\n\t<li>22:00: \u201cNanotecnologie per l\u2019Energia\u201d Andrea Notargiacomo \u2013 CNR- IFN Dipartimento di Scienze<\/li>\r\n\t<li>22:45: \u201cIl lato nascosto dell\u2019Universo: DarkSide alla ricerca della materia oscura.\u201d Andrea Mandarano\u00a0. \u2013 Dipartimento di Matematica e fisica Universit\u00e0 Roma Tre<\/li>\r\n<\/ul>\r\nAULA F Con la serie di spettacoli \u201cViaggi spaziali\u201d, McQuadro offre l\u2019emozione di un viaggio nello spazio e persino nel tempo: una originale esperienza interattiva, accompagnata da musiche e immagini memorabili. Per un viaggio tranquillo ci si pu\u00f2 recare tra le valli di Marte, oppure a vedere un\u2019eclisse direttamente dalla Luna, o magari a bagno tra i laghi di Titano . Per destinazioni pi\u00f9 esotiche si pu\u00f2 uscire dal Sistema Solare e visitare Rigel e Antares, oppure qualche pianeta extrasolare, ma anche uscire dalla Via Lattea e volare su Andromeda. Per i pi\u00f9 avventurosi si pu\u00f2 viaggiare nel tempo e osservare il cielo diecimila anni fa , oppure si possono sfidare le macchie solari e le tempeste di Giove, e persino tentare l\u2019avvicinamento a un buco nero. (prenotazione obbligatoria)\r\n<ul>\r\n\t<li>21:00: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n\t<li>22:30: \u201cCrociere cosmiche: L\u2019infinito ed oltre\u201d Associazione Mc Quadro<\/li>\r\n<\/ul>\r\n<b style=\"color: #000000;\">Per i seminari in aula \u00e8 necessaria la prenotazione\r\n<\/b>\r\n\r\nPer prenotazioni:\u00a0<a href=\"https:\/\/ricerca.mat.uniroma3.it\/nottericercatori\/registrazioni.php\">https:\/\/ricerca.mat.uniroma3.it\/nottericercatori\/registrazioni.php<\/a>\r\n\r\n&nbsp;",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2013\/08\/roma_tre.jpg",
       "macroevento": [
         290
@@ -4913,6 +6454,18 @@ define({
         "universita-roma-tre",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori",
+        "tipo_mostre",
+        "seminario",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8542968",
         "lon": "12.465580499999987"
@@ -4922,7 +6475,7 @@ define({
       "id": "378",
       "titolo": "Terremoti e vulcani extraterrestri",
       "timestamp": 1411765200,
-      "descrizione": "La Terra non \u00e8 l\u2019unico corpo celeste che manifesti attivit\u00e0 vulcanica e sismica. La maggior parte degli apparati vulcanici scoperti all'interno del sistema solare si sono formati milioni di anni fa, quando il nostro sistema solare era molto pi\u00f9 giovane e i pianeti e le lune avevano temperature interne molto pi\u00f9 elevate.\r\n\r\nOggi l'attivit\u00e0 vulcania nel sistema solare non \u00e8 pi\u00f9 cos\u00ec diffusa. Sulla base di osservazioni effettuate da Terra e dalle sonde spaziali, solo quattro corpi all'interno del sistema solare presentano un'attivit\u00e0 vulcanica: la Terra, Io, una luna di Giove, con pi\u00f9 di 300 vulcani attivi in questo momento; Tritone, una luna di Nettuno; Encelado, una luna di Saturno.\r\n\r\nMarte e Venere presentano evidenze di attivit\u00e0 vulcanica passata, ma non sono state ancora osservate eruzioni in diretta.\r\n\r\nLo studio della sismicit\u00e0 dei corpi del sistema solare \u00e8 invece ancora ad una fase iniziale. Nel marzo 2016 la NASA lancer\u00e0 alla volta di Marte\u00a0<strong>InSight<\/strong>\u00a0(<strong><em>In<\/em><\/strong><em>terior Exploration using\u00a0<strong>S<\/strong>eismic\u00a0<strong>I<\/strong>nvestigations,<strong>G<\/strong>eodesy and\u00a0<strong>H<\/strong>eat\u00a0<strong>T<\/strong>ransport<\/em>). La missione prevede la dislocazione sul pianeta di un lander equipaggiato con un sismometro e un sensore termico, per ricavare informazioni sulle fasi pi\u00f9 remote della formazione dei pianeti terrestri e pi\u00f9 in generale della formazione del sistema solare\".\r\n\r\n<span style=\"color: #000000;\">Incontro con Francesco Salese, ricercatore \u00a0di Geologia Planetaria, e gli esperti vulcanologi\u00a0<\/span><span style=\"color: #000000;\">\u00a0<\/span><span style=\"color: #000000;\">Franco Barberi e Maria Luisa \u00a0Carapezza.<\/span>\r\n<div style=\"color: #000000;\">Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong><\/div>\r\nNumero max partecipanti 80\r\n<div style=\"color: #000000;\">sistema di prenotazione INGV<\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\">Prenotazioni sul sito<\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\"><a href=\"http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=12&amp;Itemid=132&amp;lang=it\" target=\"_blank\">http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=12&amp;Itemid=132&amp;lang=it<\/a><\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\"><a href=\"mailto:infoscuole@ingv.it\" target=\"_blank\">infoscuole@ingv.it<\/a><\/div>",
+      "descrizione": "La Terra non \u00e8 l\u2019unico corpo celeste che manifesti attivit\u00e0 vulcanica e sismica. La maggior parte degli apparati vulcanici scoperti all'interno del sistema solare si sono formati milioni di anni fa, quando il nostro sistema solare era molto pi\u00f9 giovane e i pianeti e le lune avevano temperature interne molto pi\u00f9 elevate.\r\n\r\nOggi l'attivit\u00e0 vulcania nel sistema solare non \u00e8 pi\u00f9 cos\u00ec diffusa. Sulla base di osservazioni effettuate da Terra e dalle sonde spaziali, solo quattro corpi all'interno del sistema solare presentano un'attivit\u00e0 vulcanica: la Terra, Io, una luna di Giove, con pi\u00f9 di 300 vulcani attivi in questo momento; Tritone, una luna di Nettuno; Encelado, una luna di Saturno.\r\n\r\nMarte e Venere presentano evidenze di attivit\u00e0 vulcanica passata, ma non sono state ancora osservate eruzioni in diretta.\r\n\r\nLo studio della sismicit\u00e0 dei corpi del sistema solare \u00e8 invece ancora ad una fase iniziale. Nel marzo 2016 la NASA lancer\u00e0 alla volta di Marte\u00a0<strong>InSight<\/strong>\u00a0(<strong><em>In<\/em><\/strong><em>terior Exploration using\u00a0<strong>S<\/strong>eismic\u00a0<strong>I<\/strong>nvestigations,<strong>G<\/strong>eodesy and\u00a0<strong>H<\/strong>eat\u00a0<strong>T<\/strong>ransport<\/em>). La missione prevede la dislocazione sul pianeta di un lander equipaggiato con un sismometro e un sensore termico, per ricavare informazioni sulle fasi pi\u00f9 remote della formazione dei pianeti terrestri e pi\u00f9 in generale della formazione del sistema solare\".\r\n\r\n<span style=\"color: #000000;\">Incontro con Francesco Salese, SGI-Sezione Giovani, ricercatore \u00a0di Geologia Planetaria\u00a0e gli esperti vulcanologi\u00a0<\/span><span style=\"color: #000000;\">\u00a0<\/span><span style=\"color: #000000;\">Franco Barberi e Maria Luisa \u00a0Carapezza.<\/span>\r\n<div style=\"color: #000000;\">Le\u00a0<strong>prenotazioni<\/strong>\u00a0delle attivit\u00e0 saranno attive a partire da<strong>\u00a0settembre\u00a02014.<\/strong><\/div>\r\nNumero max partecipanti 80\r\n<div style=\"color: #000000;\">sistema di prenotazione INGV<\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\">Prenotazioni sul sito<\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\"><a href=\"http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=12&amp;Itemid=132&amp;lang=it\" target=\"_blank\">http:\/\/annomercalliano.ingv.it\/index.php?option=com_icagenda&amp;view=list&amp;layout=event&amp;id=12&amp;Itemid=132&amp;lang=it<\/a><\/div>\r\n<div style=\"color: #000000;\"><\/div>\r\n<div style=\"color: #000000;\"><a href=\"mailto:infoscuole@ingv.it\" target=\"_blank\">infoscuole@ingv.it<\/a><\/div>",
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/08\/ingv_visite1.jpg",
       "macroevento": [
         290
@@ -4934,6 +6487,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "ingv-2"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori"
       ],
       "luogo": {
         "lat": "41.8273999",
@@ -4955,6 +6514,13 @@ define({
       "idluogo": "188",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "41.8060816",
@@ -4978,6 +6544,13 @@ define({
         "infn-2",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario",
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "45.1846694",
         "lon": "9.15420359999996"
@@ -4999,6 +6572,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -5022,6 +6602,13 @@ define({
         "frascati-scienza",
         "istituto-villa-sora"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8103734",
         "lon": "12.670798399999967"
@@ -5044,6 +6631,13 @@ define({
         "frascati-scienza",
         "universita-sapienza"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "incontri-con-i-ricercatori",
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.9012278",
         "lon": "12.512396299999978"
@@ -5064,6 +6658,13 @@ define({
       "idluogo": "199",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "41.80583045920301",
@@ -5092,6 +6693,12 @@ define({
         "frascati-scienza",
         "comune-di-bologna"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tavole-rotonde"
+      ],
       "luogo": {
         "lat": "44.4935774",
         "lon": "11.342823299999964"
@@ -5113,6 +6720,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "egovirgo"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori"
       ],
       "luogo": {
         "lat": "43.658165",
@@ -5136,6 +6749,15 @@ define({
         "inaf",
         "frascati-scienza"
       ],
+      "targets": [
+        "pubblico-generale",
+        "famiglie",
+        "giovani-2",
+        "06-10-anni"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "41.8130631",
         "lon": "12.707444900000041"
@@ -5157,6 +6779,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "egovirgo"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
       ],
       "luogo": {
         "lat": "43.658165",
@@ -5180,6 +6808,12 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
+      ],
       "luogo": {
         "lat": "39.2560191",
         "lon": "9.145357900000022"
@@ -5201,6 +6835,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -5224,6 +6865,16 @@ define({
         "frascati-scienza",
         "infn-2"
       ],
+      "targets": [
+        "11-13-anni",
+        "14-18-anni",
+        "18-25-anni",
+        "25-99-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "37.5236435",
         "lon": "15.069866600000069"
@@ -5245,6 +6896,13 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "tipo_mostre"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -5269,6 +6927,13 @@ define({
         "infn-2",
         "cnao"
       ],
+      "targets": [
+        "giovani-2",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca"
+      ],
       "luogo": {
         "lat": "45.2024581",
         "lon": "9.146703600000023"
@@ -5290,6 +6955,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "infn-2"
+      ],
+      "targets": [
+        "18-25-anni",
+        "25-99-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-centri-di-ricerca"
       ],
       "luogo": {
         "lat": "37.5236435",
@@ -5313,6 +6986,13 @@ define({
         "gruppo-astrofili-monti-lepini",
         "comune-di-gorga"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.6556666",
         "lon": "13.107466599999952"
@@ -5335,6 +7015,12 @@ define({
         "frascati-scienza",
         "egovirgo"
       ],
+      "targets": [
+        "scuole-superiori"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "43.658165",
         "lon": "10.505651700000044"
@@ -5355,6 +7041,14 @@ define({
       "idluogo": "186",
       "organizzatori": [
         "frascati-scienza"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "giochi-scientifici",
+        "laboratori",
+        "tipo_mostre"
       ],
       "luogo": {
         "lat": "44.8360225",
@@ -5378,6 +7072,12 @@ define({
         "frascati-scienza",
         "egovirgo"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "visite-guidate"
+      ],
       "luogo": {
         "lat": "43.658165",
         "lon": "10.505651700000044"
@@ -5399,6 +7099,14 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "istituto-villa-sora"
+      ],
+      "targets": [
+        "18-25-anni",
+        "25-99-anni",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "41.8103734",
@@ -5422,6 +7130,12 @@ define({
         "frascati-scienza",
         "egovirgo"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "aperitivi-scientifici"
+      ],
       "luogo": {
         "lat": "43.6780562",
         "lon": "10.534387400000014"
@@ -5443,6 +7157,12 @@ define({
       "organizzatori": [
         "frascati-scienza",
         "universita-degli-studi-di-ferrara"
+      ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "seminario"
       ],
       "luogo": {
         "lat": "44.8360225",
@@ -5466,6 +7186,16 @@ define({
         "frascati-scienza",
         "istituto-villa-sora"
       ],
+      "targets": [
+        "18-25-anni",
+        "25-99-anni",
+        "giovani-2",
+        "famiglie",
+        "pubblico-generale"
+      ],
+      "categories": [
+        "laboratori"
+      ],
       "luogo": {
         "lat": "41.8103734",
         "lon": "12.670798399999967"
@@ -5488,6 +7218,12 @@ define({
         "frascati-scienza",
         "egovirgo"
       ],
+      "targets": [
+        "pubblico-generale"
+      ],
+      "categories": [
+        "spettacoli"
+      ],
       "luogo": {
         "lat": "43.6780562",
         "lon": "10.534387400000014"
@@ -5500,5 +7236,5 @@ define({
       "immagine": "http:\/\/www.frascatiscienza.it\/wp-content\/uploads\/2014\/08\/strip700x350.jpg"
     }
   ],
-  "timestamp": 1409953437
+  "timestamp": 1410267995
 });
