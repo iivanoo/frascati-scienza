@@ -13,7 +13,8 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
           gg = date.getDate() + "/";
           mm = date.getMonth() + 1 + "/";
           aaaa = date.getFullYear();
-          hours = date.getHours();
+          // check, this is after Livia's comments on Dates
+          hours = date.getHours() - 2;
           mins = date.getMinutes();
           if(mins < 10) {
             mins = "0" + mins;

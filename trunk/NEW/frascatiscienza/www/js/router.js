@@ -240,14 +240,15 @@ define(["jquery", "underscore", "backbone", "datamanager", "collections/Eventi",
         }
         // filtra per data "A"
         if((a != "__NO") && currentCollection.length) {
-          a = parseDate(a).getTime() / 1000;
+          // la somma di 86400 server per dire che gli eventi corrispondenti al giorno "a" devono essere considerati
+          a = (parseDate(a).getTime() / 1000) + 86400;
           currentCollection = new Eventi(currentCollection.searchTo(a).toArray());
         }
 
         // parsiamo la data in questo formato: yyyy-mm-dd
         function parseDate(data) {
           var sezioni = data.split('-');
-          return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]); 
+          return new Date(sezioni[0], sezioni[1] - 1, sezioni[2]);
         }
 
         // if(currentCollection.length) {
