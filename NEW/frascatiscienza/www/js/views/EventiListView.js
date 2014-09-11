@@ -31,12 +31,12 @@ define(["jquery", "underscore", "backbone", "collections/Eventi", "views/EventiL
               // il current day adesso è la data di oggi
 
               var today = new Date().getTime() / 1000;
-              // qui NON ci si entra se si stanno visualizzando gli eventi di un ente specifico 
+              // qui ci si entra se si stanno visualizzando gli eventi di un ente specifico 
               if(this.attributes["data-filtered"] && (this.model.length > 0)) {
                 var filtrati = this.model.searchFrom(today);
                 // qui ci mettiamo il primo evento tra quelli futuri dell'ente, se non ci sono allora ci mettiamo l'ultimo evento organizzato
-                if(filtrati.length > 0) {
-                  this.currentDay = this.getBaseTimestamp(filtrati.at(0).get("timestamp"));
+                if(filtrati._wrapped.length > 0) {
+                  this.currentDay = this.getBaseTimestamp(filtrati._wrapped[0].get("timestamp"));
                 } else {
                   this.currentDay = this.getBaseTimestamp(this.model.at(this.model.length - 1).get("timestamp"));
                 }

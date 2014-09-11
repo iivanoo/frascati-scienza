@@ -46,7 +46,8 @@ define(["jquery", "underscore", "backbone", "models/Evento", "handlebars", "text
 
         convertDate: function(unix) {
           var date = new Date(unix * 1000);
-          var hours = date.getHours();
+          // check, this is after Livia's comments on Dates
+          var hours = date.getHours() - 2;
           var minutes = (date.getMinutes() < 10? '0' : '') + date.getMinutes();
           return (hours + ':' + minutes);
         }
