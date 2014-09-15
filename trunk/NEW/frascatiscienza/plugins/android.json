@@ -21,14 +21,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Capture\"><param name=\"android-package\" value=\"org.apache.cordova.mediacapture.Capture\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
                         },
@@ -38,6 +30,14 @@
                         },
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Capture\"><param name=\"android-package\" value=\"org.apache.cordova.mediacapture.Capture\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -63,15 +63,15 @@
                             "count": 3
                         },
                         {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
                             "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
                             "count": 1
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.RECORD_VIDEO\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
                             "count": 1
                         }
                     ],
@@ -602,20 +602,20 @@
         "org.apache.cordova.camera": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         },
-        "org.apache.cordova.media-capture": {
-            "PACKAGE_NAME": "it.univaq.frascatiscienza"
-        },
         "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
-        }
-    },
-    "dependent_plugins": {
+        },
         "org.apache.cordova.file": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         },
+        "org.apache.cordova.media-capture": {
+            "PACKAGE_NAME": "it.univaq.frascatiscienza"
+        }
+    },
+    "dependent_plugins": {
         "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "it.univaq.frascatiscienza"
         },
